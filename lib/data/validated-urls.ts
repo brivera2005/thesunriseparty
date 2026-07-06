@@ -18,6 +18,7 @@ export const validatedUrls = new Set<string>([
   "https://fixthecourt.com/fix/term-limits/",
   "https://freedomhouse.org/country/united-states",
   "https://giffords.org/lawcenter/gun-laws/policy-areas/background-checks/universal-background-checks/",
+  "https://github.com/brivera2005/thesunriseparty/issues",
   "https://grants.nih.gov/grants/guide/notice-files/NOT-OD-25-068.html",
   "https://home.treasury.gov/news/press-releases",
   "https://opendatapolicyhub.sunlightfoundation.com/guidelines/",

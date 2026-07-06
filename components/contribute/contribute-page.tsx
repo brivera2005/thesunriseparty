@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowLeft, ExternalLink, Github, Mail } from "lucide-react";
+import { ArrowLeft, ExternalLink, Mail } from "lucide-react";
 import { SiteHeader } from "@/components/layout/site-header";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SkipLink } from "@/components/layout/skip-link";
@@ -67,7 +67,7 @@ export function ContributePage() {
                 rel="noopener noreferrer"
                 className={cn(buttonVariants({ variant: "outline", size: "sm" }), "gap-2")}
               >
-                <Github className="size-3.5" />
+                <ExternalLink className="size-3.5" />
                 GitHub issues
               </a>
             </div>
