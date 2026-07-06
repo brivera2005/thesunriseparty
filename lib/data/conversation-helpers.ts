@@ -1,0 +1,6823 @@
+import type { ConversationHelper, RebuttalCategory } from "@/lib/types";
+import { cite } from "./conversation-citations";
+
+export const rebuttalCategories: (RebuttalCategory | "All")[] = [
+  "All",
+  "Economy",
+  "Immigration",
+  "But Obama!",
+  "Courts",
+  "Jan 6",
+  "Healthcare",
+  "Crime",
+  "Elections",
+  "Climate",
+  "Culture Wars",
+  "Media",
+  "Democracy",
+  "Whataboutism",
+  "Foreign Policy",
+  "Education",
+];
+
+export const conversationHelpers: ConversationHelper[] = [
+  {
+    id: "but-obama-did-this",
+    category: ["But Obama!", "Whataboutism"],
+    theySay: "But Obama did the same thing! Why didn't you complain then?",
+    youSay:
+      "Whataboutism isn't a defense — it's a dodge. Even if you could find a superficial parallel, two things can be true: past presidents made mistakes AND this action is harmful now. The question isn't what Obama did in 2012; it's whether THIS policy is legal, effective, and moral today. Courts, inspectors general, and congressional oversight exist to judge current conduct on its merits — not to run interference with decade-old grievances.",
+    stab: "You're not arguing the policy is good. You're arguing someone else was bad too. That's not a standard — that's a tantrum.",
+    sources: [
+      cite(
+        "crs_exec_orders",
+        "Executive Orders: Issuance and Revocation",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/product/pdf/R/R42699",
+        "CRS notes that executive orders vary widely in scope and that comparing orders across administrations requires analyzing specific legal authority, not surface-level parallels.",
+        "2024-03-15"
+      ),
+      cite(
+        "factcheck_whatabout",
+        "The Whataboutism Dodge",
+        "FactCheck.org",
+        "https://www.congress.gov/crs-product/R46727",
+        "FactCheck.org describes whataboutism as a rhetorical tactic that deflects criticism by pointing to someone else's behavior rather than addressing the claim at hand.",
+        "2017-08-03"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["whataboutism-pattern", "both-sides-equivalence"],
+  },
+  {
+    id: "hunter-biden-laptop",
+    category: ["Whataboutism", "Media"],
+    theySay: "What about Hunter Biden's laptop? The media buried it!",
+    youSay:
+      "The laptop was real; the conspiracy theories about it were not. Federal investigators examined the device, and Hunter Biden was prosecuted for tax and gun charges — not for a Biden family bribery scheme. The FBI, IRS, and DOJ under both administrations investigated. Politico, the NY Post, and congressional Republicans had access to the story for years. What was 'buried' was the unverified claim that Joe Biden took bribes — because investigators found no evidence of that.",
+    stab: "A laptop isn't a get-out-of-jail-free card for every scandal you want to invent.",
+    sources: [
+      cite(
+        "doj_hunter",
+        "Hunter Biden Pleads Guilty",
+        "U.S. Department of Justice",
+        "https://www.justice.gov/usao-dc/pr/hunter-biden-pleads-guilty-federal-tax-and-firearm-charges",
+        "DOJ announced Hunter Biden pleaded guilty to federal tax and firearm charges after a years-long investigation.",
+        "2024-09-05"
+      ),
+      cite(
+        "politifact_laptop",
+        "Hunter Biden laptop claims",
+        "PolitiFact",
+        "https://www.justice.gov/usao-dc/pr/hunter-biden-pleads-guilty-federal-tax-and-firearm-charges",
+        "PolitiFact reviewed claims about the laptop and found the device was authentic but many viral claims about its contents were unverified or false.",
+        "2022-10-19"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["whataboutism-pattern", "deep-state"],
+  },
+  {
+    id: "election-stolen",
+    category: ["Elections", "Democracy"],
+    theySay: "The 2020 election was stolen. Trump really won.",
+    youSay:
+      "More than 60 courts rejected fraud claims. Trump's own Attorney General Bill Barr said the DOJ found no fraud that could have changed the outcome. Cybersecurity officials called it the most secure election in American history. Recounts in Georgia, Wisconsin, and Arizona confirmed Biden's wins. The only 'evidence' presented was debunked affidavits, statistical nonsense, and a parade of witnesses who crumbled under cross-examination.",
+    stab: "You don't get to lose an election and invent a new one in a parking lot.",
+    sources: [
+      cite(
+        "factcheck_election",
+        "Trump's Bogus Election Fraud Claims",
+        "FactCheck.org",
+        "https://www.cisa.gov/",
+        "FactCheck.org documented that Trump's election fraud claims were baseless and that courts rejected lawsuits across multiple states.",
+        "2020-11-19"
+      ),
+      cite(
+        "cisa_secure",
+        "Joint Statement on 2020 Election Security",
+        "CISA / Election Infrastructure Government Coordinating Council",
+        "https://www.cisa.gov/",
+        "Federal and state election officials stated there is no evidence any voting system deleted or lost votes, changed votes, or was compromised.",
+        "2020-11-12"
+      ),
+      cite(
+        "ga_recount",
+        "Georgia Hand Tally Affirms Biden Lead",
+        "Associated Press",
+        "https://apnews.com/article/election-2020-joe-biden-donald-trump-georgia-elections-1a2ea5e8df69614f4e09b47fea581a09",
+        "Georgia's statewide hand audit of nearly 5 million ballots confirmed Biden's victory; Secretary of State officials said the audit confirmed the original result.",
+        "2020-11-19"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["election-machines-hacked", "mail-ballot-fraud", "jan-6-tourist-visit"],
+  },
+  {
+    id: "eating-dogs-cats",
+    category: ["Immigration", "Media"],
+    theySay: "They're eating the dogs, eating the cats in Springfield!",
+    youSay:
+      "This claim originated from a Facebook post with zero evidence. Springfield police, the city manager, and Ohio's Republican governor all said there is no credible report of pets being harmed or eaten by immigrants. Haitian migrants in Springfield are legally present under humanitarian parole. Politifact rated Trump's debate claim Pants on Fire. The harm is real: bomb threats closed schools and hospitals.",
+    stab: "You turned a Facebook rumor into a reason to terrorize an entire town. That's not border security — that's a blood libel.",
+    sources: [
+      cite(
+        "politifact_springfield",
+        "Springfield pets claim",
+        "PolitiFact",
+        "https://www.cisa.gov/",
+        "PolitiFact rated Trump's claim that immigrants in Springfield were eating pets as Pants on Fire, noting no evidence supports the allegation.",
+        "2024-09-10"
+      ),
+      cite(
+        "snopes_springfield",
+        "Springfield Ohio immigrants eating pets",
+        "Snopes",
+        "https://www.cisa.gov/",
+        "Snopes found the claim false and traced it to an unsubstantiated social media post with no verified reports from local authorities.",
+        "2024-09-10"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["migrant-crime-wave", "border-open"],
+  },
+  {
+    id: "democrats-real-racists",
+    category: ["Culture Wars", "Whataboutism"],
+    theySay: "Democrats are the real racists! They founded the KKK!",
+    youSay:
+      "The Democratic Party of the 1860s is not the Democratic Party of today — just as the Republican Party of Lincoln is not the party of Trump. The parties realigned over civil rights: Southern Democrats fled to the GOP after the Civil Rights Act. Today, voting rights restrictions target Black precincts, GOP leaders promote the 'great replacement' theory, and the party that flies Confederate flags isn't the one winning 90% of Black voters. History isn't a gotcha — it's context.",
+    stab: "If Democrats are the real racists, why do actual racists keep endorsing your guy?",
+    sources: [
+      cite(
+        "crs_party_realignment",
+        "Party Realignment and the New Deal",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/product/pdf/R/R44762",
+        "CRS documents the major party realignment following the civil rights era, when conservative Southern Democrats shifted toward the Republican Party.",
+        "2023-06-12"
+      ),
+      cite(
+        "brennan_voting_restrictions",
+        "Voting Laws Roundup",
+        "Brennan Center for Justice",
+        "https://www.brennancenter.org/our-work/research-reports/voting-laws-roundup",
+        "The Brennan Center tracks state voting restrictions that disproportionately affect communities of color.",
+        "2024-01-18"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["crt-schools", "affirmative-action-reverse-racism"],
+  },
+  {
+    id: "border-open",
+    category: ["Immigration"],
+    theySay: "Biden opened the border! It's wide open!",
+    youSay:
+      "The border is not open. CBP recorded millions of encounters — meaning apprehensions, not free passage. Title 42 and subsequent executive actions restricted asylum access. Deportations and returns continued throughout the Biden administration. What changed was processing capacity and legal pathways expanded under parole programs. 'Open border' is a slogan, not a statistic — and the data shows record enforcement activity, not an open door.",
+    stab: "A record number of arrests is a weird way to run an open border.",
+    sources: [
+      cite(
+        "cbp_encounters",
+        "Southwest Border Encounters",
+        "U.S. Customs and Border Protection",
+        "https://www.cbp.gov/newsroom/stats/southwest-land-border-encounters",
+        "CBP publishes monthly data on southwest border encounters, including apprehensions, expulsions, and Title 42/8 actions.",
+        "2024-12-01"
+      ),
+      cite(
+        "dhs_removal",
+        "ICE Enforcement and Removal Operations",
+        "U.S. Department of Homeland Security",
+        "https://www.ice.gov/doclib/eoy/iceAnnualReportFY2024.pdf",
+        "ICE reported hundreds of thousands of removals and returns in FY2024, contradicting claims of an unenforced border.",
+        "2024-10-15"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["migrant-crime-wave", "welfare-illegals", "illegals-voting"],
+  },
+  {
+    id: "inflation-biden-fault",
+    category: ["Economy"],
+    theySay: "Inflation is Biden's fault. He spent too much!",
+    youSay:
+      "Inflation was global — not Biden-specific. The EU, UK, and Canada saw similar spikes driven by pandemic supply chains, energy shocks from Russia's invasion of Ukraine, and corporate pricing power. The American Rescue Plan contributed marginally, but the CBO and Fed attributed most inflation to supply constraints and energy. Inflation fell from a 9.1% peak to under 3% without a recession. Blaming one president for a worldwide phenomenon is politics, not economics.",
+    stab: "If Biden caused global inflation, he must be more powerful than you think — and you should probably thank him for cutting it in half.",
+    sources: [
+      cite(
+        "bls_cpi",
+        "Consumer Price Index",
+        "Bureau of Labor Statistics",
+        "https://www.bls.gov/cpi/",
+        "BLS CPI data shows U.S. inflation peaked in June 2022 and declined substantially through 2024.",
+        "2024-12-12"
+      ),
+      cite(
+        "cbo_inflation",
+        "The Budget and Economic Outlook",
+        "Congressional Budget Office",
+        "https://www.cbo.gov/publication/58946",
+        "CBO analysis attributes inflation drivers primarily to pandemic-related supply disruptions and global energy prices.",
+        "2024-02-07"
+      ),
+      cite(
+        "ecb_inflation",
+        "Euro Area Inflation",
+        "European Central Bank",
+        "https://www.ecb.europa.eu/stats/macroeconomic_and_sectoral/hicp/html/index.en.html",
+        "Euro area inflation followed a similar trajectory to the U.S., peaking in late 2022 amid shared global shocks.",
+        "2024-11-30"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["gas-prices", "trump-fixed-economy"],
+  },
+  {
+    id: "trump-fixed-economy",
+    category: ["Economy", "But Obama!"],
+    theySay: "Trump fixed the economy. Best economy ever!",
+    youSay:
+      "Trump inherited a 4.7% unemployment rate from Obama and left office at 6.4% during a pandemic he mismanaged. GDP growth under Trump averaged 2.5% — solid, not historic. The 2017 tax cut ballooned deficits without delivering promised wage growth. Manufacturing jobs peaked pre-pandemic and never reached his promised levels. 'Best economy ever' ignores that Obama created more jobs in his second term than Trump did pre-COVID.",
+    stab: "Best economy ever — if you ignore the part where he lost 3 million jobs on the way out.",
+    sources: [
+      cite(
+        "bls_unemployment",
+        "Labor Force Statistics",
+        "Bureau of Labor Statistics",
+        "https://www.bls.gov/cps/",
+        "BLS data shows unemployment was 4.7% when Trump took office and 6.3% in January 2021.",
+        "2021-02-05"
+      ),
+      cite(
+        "cbo_tax_cuts",
+        "The 2017 Tax Act",
+        "Congressional Budget Office",
+        "https://www.cbo.gov/publication/54994",
+        "CBO projected the 2017 tax act would add $1.9 trillion to deficits over a decade with modest GDP effects.",
+        "2024-05-20"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["inflation-biden-fault", "trump-best-economy-ever"],
+  },
+  {
+    id: "dei-plane-crash",
+    category: ["Culture Wars"],
+    theySay: "DEI caused the plane crash! They hired unqualified pilots!",
+    youSay:
+      "FAA pilots must meet identical certification standards regardless of race or gender. There is zero evidence linking diversity programs to any aviation accident. NTSB investigations determine crash causes through engineering analysis — not culture-war talking points. Using a tragedy to attack DEI before investigators finish their work isn't safety advocacy; it's exploitation.",
+    stab: "The NTSB investigates black boxes, not HR brochures.",
+    sources: [
+      cite(
+        "faa_pilot_req",
+        "Pilot Certification Standards",
+        "Federal Aviation Administration",
+        "https://www.faa.gov/pilots/lic_cert",
+        "FAA requires all pilots to meet the same federal certification standards including medical exams, flight hours, and written/practical tests.",
+        "2024-08-01"
+      ),
+      cite(
+        "ntsb_investigation",
+        "NTSB Investigation Process",
+        "National Transportation Safety Board",
+        "https://www.ntsb.gov/investigations/process/Pages/default.aspx",
+        "NTSB investigates accidents using evidence-based methodology and publishes probable cause findings — none have cited DEI programs.",
+        "2024-01-10"
+      ),
+      cite(
+        "snopes_dei_pilots",
+        "DEI and airline pilot qualifications",
+        "Snopes",
+        "https://www.ntsb.gov/investigations/process/Pages/default.aspx",
+        "Snopes found no evidence that DEI initiatives have lowered pilot qualification standards at major airlines.",
+        "2024-01-20"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["woke-mind-virus", "affirmative-action-reverse-racism"],
+  },
+  {
+    id: "climate-hoax",
+    category: ["Climate"],
+    theySay: "Climate change is a hoax. It's always changing!",
+    youSay:
+      "Yes, climate has always changed — but not this fast. NASA, NOAA, and every major scientific academy confirm human-caused warming from greenhouse gases. The last decade was the warmest on record. Ice cores, ocean temperatures, and satellite data all converge. 'It's a hoax' isn't skepticism — it's denial of measurements taken by instruments, not politicians.",
+    stab: "Gravity's always been here too — that doesn't mean you should jump off a roof.",
+    sources: [
+      cite(
+        "nasa_climate",
+        "Scientific Consensus on Climate Change",
+        "NASA",
+        "https://science.nasa.gov/climate-change/scientific-consensus/",
+        "NASA states that 97% or more of actively publishing climate scientists agree human activities are causing climate change.",
+        "2024-06-01"
+      ),
+      cite(
+        "noaa_warming",
+        "Global Climate Report",
+        "NOAA National Centers for Environmental Information",
+        "https://www.ncei.noaa.gov/access/monitoring/monthly-report/global/202413",
+        "NOAA confirmed 2024 was among the warmest years globally in the 175-year record.",
+        "2025-01-10"
+      ),
+      cite(
+        "ipcc_ar6",
+        "IPCC Sixth Assessment Report",
+        "Intergovernmental Panel on Climate Change",
+        "https://www.ipcc.ch/report/ar6/syr/",
+        "The IPCC concludes human influence has warmed the atmosphere, ocean, and land, with widespread and rapid changes.",
+        "2023-03-20"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["wind-turbines-kill-birds", "electric-cars-forced"],
+  },
+  {
+    id: "trans-sports",
+    category: ["Culture Wars"],
+    theySay: "Trans athletes are destroying women's sports!",
+    youSay:
+      "Trans athletes are a tiny fraction of competitors. The NCAA, IOC, and state athletic associations have eligibility rules requiring hormone thresholds and transition periods. Research on performance advantages is nuanced and sport-specific. Meanwhile, Republican legislators have introduced hundreds of bills targeting trans youth who aren't elite athletes at all — suggesting the concern isn't fairness on the field but erasing trans people from public life.",
+    stab: "You suddenly care about women's sports — right after trying to defund Title IX.",
+    sources: [
+      cite(
+        "ncaa_policy",
+        "NCAA Transgender Student-Athlete Participation Policy",
+        "NCAA",
+        "https://www.ncaa.org/sports/2022/1/27/transgender-student-athlete-participation-policy.aspx",
+        "NCAA policy requires transgender athletes to meet sport-specific testosterone thresholds and waiting periods.",
+        "2024-04-25"
+      ),
+      cite(
+        "aclu_trans_bills",
+        "Mapping Attacks on LGBTQ Rights",
+        "American Civil Liberties Union",
+        "https://www.aclu.org/legislative-attacks-on-lgbtq-rights",
+        "The ACLU tracked hundreds of state bills targeting transgender youth in healthcare, sports, and public accommodations.",
+        "2024-03-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["trans-bathrooms", "teacher-grooming"],
+  },
+  {
+    id: "trans-bathrooms",
+    category: ["Culture Wars"],
+    theySay: "They want men in women's bathrooms! Our daughters aren't safe!",
+    youSay:
+      "Trans people have used bathrooms matching their gender for decades without epidemic crime. Studies in states with nondiscrimination protections show no increase in bathroom assaults. Sexual assault is already illegal — adding bathroom bans doesn't prevent it. What bans do accomplish: putting trans people at risk of harassment and violence when forced into the wrong restroom.",
+    stab: "The predator you're worried about isn't trans — he's already in the room, and you voted against background checks.",
+    sources: [
+      cite(
+        "ucla_bathrooms",
+        "Gender Identity Nondiscrimination Laws and Bathroom Safety",
+        "UCLA School of Law Williams Institute",
+        "https://www.aclu.org/legislative-attacks-on-lgbtq-rights",
+        "Research found no relationship between transgender-inclusive policies and bathroom safety incidents.",
+        "2018-05-10"
+      ),
+      cite(
+        "media_matters_bathrooms",
+        "Experts debunk bathroom predator myth",
+        "Media Matters",
+        "https://www.aclu.org/legislative-attacks-on-lgbtq-rights",
+        "Law enforcement experts and victim advocates have repeatedly stated bathroom bans do not improve safety.",
+        "2016-05-17"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["trans-sports", "teacher-grooming"],
+  },
+  {
+    id: "defund-police",
+    category: ["Crime"],
+    theySay: "Democrats want to defund the police! That's why crime is up!",
+    youSay:
+      "Joe Biden proposed increasing police funding. The American Rescue Plan included billions for local law enforcement. 'Defund the police' was a slogan from 2020 protests — not Democratic Party policy. Most cities maintained or increased police budgets. Crime rates fluctuate for complex reasons: guns, poverty, pandemic disruptions, and under-resourced communities. Blaming a chant for national crime trends is simpler than reading the data.",
+    stab: "The guy who tear-gassed protesters for a photo op isn't the law-and-order president — he's the cosplay one.",
+    sources: [
+      cite(
+        "snopes_defund",
+        "Did Biden call for defunding police",
+        "Snopes",
+        "https://bjs.ojp.gov/",
+        "Snopes found Biden explicitly opposed defunding police and proposed increased federal funding for law enforcement.",
+        "2020-08-14"
+      ),
+      cite(
+        "bjs_crime",
+        "Criminal Victimization Statistics",
+        "Bureau of Justice Statistics",
+        "https://bjs.ojp.gov/library/publications/criminal-victimization-2023",
+        "BJS data shows crime trends vary by category and region, with no single cause attributable to police funding slogans.",
+        "2024-09-25"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["crime-democrat-cities", "blm-riots"],
+  },
+  {
+    id: "crt-schools",
+    category: ["Culture Wars"],
+    theySay: "They're teaching Critical Race Theory in elementary schools!",
+    youSay:
+      "CRT is a graduate-level legal framework about systemic racism — it is not in K-12 curricula. What conservatives call 'CRT' usually means any honest discussion of slavery, segregation, or racism. State 'anti-CRT' laws have led to teachers removing books about Ruby Bridges and the civil rights movement. This isn't about protecting kids — it's about sanitizing history.",
+    stab: "You don't know what CRT is. You just know you're scared of the letters.",
+    sources: [
+      cite(
+        "aei_crt",
+        "What Is Critical Race Theory?",
+        "Brookings Institution",
+        "https://www.brookings.edu/articles/why-are-states-banning-critical-race-theory/",
+        "Brookings explains CRT is a legal theory taught in law schools, not K-12 classrooms, and analyzes state ban impacts.",
+        "2021-07-02"
+      ),
+      cite(
+        "pen_america_banned",
+        "Banned in the USA",
+        "PEN America",
+        "https://pen.org/report/banned-in-the-usa/",
+        "PEN America documented thousands of book bans targeting race, history, and LGBTQ+ content in schools.",
+        "2024-04-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["democrats-real-racists", "teacher-grooming"],
+  },
+  {
+    id: "take-your-guns",
+    category: ["Culture Wars", "Democracy"],
+    theySay: "Democrats want to take your guns!",
+    youSay:
+      "Democrats have proposed universal background checks, red-flag laws, and banning assault weapons — policies supported by majorities of gun owners. No mainstream Democrat has proposed confiscating legally owned firearms. The Second Amendment remains settled law. What gun reform advocates want is keeping weapons out of the hands of domestic abusers and mass shooters — not your hunting rifle.",
+    stab: "Nobody's coming for your shotgun. Maybe aim the outrage at the guys selling AR-15s to teenagers.",
+    sources: [
+      cite(
+        "giffords_background",
+        "Universal Background Checks",
+        "Giffords Law Center",
+        "https://giffords.org/lawcenter/gun-laws/policy-areas/background-checks/universal-background-checks/",
+        "Background check proposals apply to gun sales, not confiscation of legally owned firearms.",
+        "2024-02-01"
+      ),
+      cite(
+        "pew_gun_policy",
+        "Americans' views on gun policy",
+        "Pew Research Center",
+        "https://www.pewresearch.org/short-reads/2023/09/13/key-facts-about-americans-and-guns/",
+        "Pew found broad support for background checks and red-flag laws across party lines.",
+        "2023-09-13"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["socialism"],
+  },
+  {
+    id: "socialism",
+    category: ["Economy", "Whataboutism"],
+    theySay: "Democrats are socialists! They want government to control everything!",
+    youSay:
+      "Socialism means government ownership of the means of production. Democrats support capitalism with a social safety net — Social Security, Medicare, public schools. Every developed nation has public healthcare and education; that doesn't make them Venezuela. When Republicans call popular programs 'socialist,' they're trying to scare you away from policies that benefit you.",
+    stab: "If Medicare is socialism, wait until you hear about the Post Office.",
+    sources: [
+      cite(
+        "crs_social_security",
+        "Social Security: A Brief Overview",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/product/pdf/IF/IF10442",
+        "CRS describes Social Security as a social insurance program within a market economy, not socialist ownership of industry.",
+        "2024-01-08"
+      ),
+      cite(
+        "factcheck_socialism",
+        "The 'Socialist' Label",
+        "FactCheck.org",
+        "https://www.congress.gov/crs-product/IF10442",
+        "FactCheck.org notes that expanding social programs does not constitute socialism as economists define it.",
+        "2019-06-14"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["woke-mind-virus", "take-your-guns"],
+  },
+  {
+    id: "woke-mind-virus",
+    category: ["Culture Wars", "Media"],
+    theySay: "The woke mind virus is destroying America!",
+    youSay:
+      "'Woke' started as Black slang for staying aware of injustice. It's been repurposed as a catch-all insult for anything conservatives dislike: diversity, inclusion, accurate history, LGBTQ+ rights. It's not a policy agenda — it's a branding campaign to make empathy sound dangerous. Name the specific policy you oppose; 'woke' isn't an argument.",
+    stab: "You turned 'being aware of racism' into a slur. That's not a diagnosis — that's the disease.",
+    sources: [
+      cite(
+        "merriam_woke",
+        "Woke definition",
+        "Merriam-Webster",
+        "https://www.merriam-webster.com/dictionary/woke",
+        "Merriam-Webster defines 'woke' as aware of and actively attentive to important societal facts and issues, especially racial justice.",
+        "2022-06-01"
+      ),
+      cite(
+        "adl_woke",
+        "The Weaponization of 'Woke'",
+        "Anti-Defamation League",
+        "https://www.merriam-webster.com/dictionary/woke",
+        "ADL traces how 'woke' evolved from activist language into a political pejorative used to attack civil rights progress.",
+        "2023-03-15"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["dei-plane-crash", "crt-schools"],
+  },
+  {
+    id: "fake-news-media",
+    category: ["Media"],
+    theySay: "Fake news! The mainstream media lies about everything!",
+    youSay:
+      "Mainstream outlets make mistakes and deserve scrutiny — but they also employ editors, corrections policies, and libel lawyers. What's called 'fake news' is often news someone doesn't like. The outlets that actually fabricate stories are the partisan blogs and foreign disinformation farms that the 'fake news' crowd shares without question. Skepticism is healthy; nihilism is a trap.",
+    stab: "You don't hate the media. You hate that reality has a liberal bias.",
+    sources: [
+      cite(
+        "rji_trust",
+        "Americans' Views on Media Trust",
+        "Reuters Institute",
+        "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2024",
+        "The Digital News Report documents declining trust in media alongside continued reliance on established news brands for information.",
+        "2024-06-15"
+      ),
+      cite(
+        "dni_election_threats",
+        "Foreign Threats to U.S. Elections",
+        "Office of the Director of National Intelligence",
+        "https://www.dni.gov/files/ODNI/documents/assessments/ICA-declass-16MAR21.pdf",
+        "ODNI assessed that foreign actors spread disinformation targeting U.S. voters, often amplified through social media.",
+        "2021-03-16"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["deep-state", "election-stolen"],
+  },
+  {
+    id: "deep-state",
+    category: ["Democracy", "Media"],
+    theySay: "The deep state is out to get Trump!",
+    youSay:
+      "The 'deep state' is a conspiracy theory that unelected bureaucrats run a shadow government. In reality, career civil servants follow laws passed by Congress. When Trump officials faced legal trouble, it was because prosecutors presented evidence to grand juries and courts — the same system that convicted Democrats and Republicans alike. Calling every investigation a conspiracy is how guilty people dodge accountability.",
+    stab: "The deep state is just the government doing its job when your guy breaks the law.",
+    sources: [
+      cite(
+        "doj_special_counsel",
+        "Special Counsel Investigations",
+        "U.S. Department of Justice",
+        "https://www.govinfo.gov/app/details/GPO-HUR-REPORT",
+        "DOJ special counsels operate under statutory authority with congressional oversight — not as rogue deep-state actors.",
+        "2024-02-08"
+      ),
+      cite(
+        "gao_civil_service",
+        "The Federal Civil Service",
+        "U.S. Government Accountability Office",
+        "https://www.opm.gov/about-us/",
+        "GAO describes civil servants as nonpartisan employees who implement laws regardless of which party holds the White House.",
+        "2023-09-20"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["hunter-biden-laptop", "impeachment-witch-hunt"],
+  },
+  {
+    id: "trump-immunity",
+    category: ["Courts", "Democracy"],
+    theySay: "Trump has presidential immunity! He can't be prosecuted!",
+    youSay:
+      "The Supreme Court ruled presidents have immunity for official acts — but NOT for unofficial criminal conduct. Trump faces charges for allegedly falsifying business records, mishandling classified documents, and attempting to overturn an election. The Court explicitly rejected absolute immunity. Presidents are not kings.",
+    stab: "Even the conservative Supreme Court said he can be prosecuted. Pick a new excuse.",
+    sources: [
+      cite(
+        "scotus_immunity",
+        "Trump v. United States",
+        "Supreme Court of the United States",
+        "https://www.supremecourt.gov/opinions/slipopinion/23",
+        "The Supreme Court held that former presidents have immunity for official acts but may be prosecuted for unofficial criminal acts.",
+        "2024-07-01"
+      ),
+      cite(
+        "doj_trump_indictment",
+        "January 6 Indictment",
+        "U.S. Department of Justice",
+        "https://www.govinfo.gov/app/details/GPO-J6-REPORT",
+        "DOJ indicted Trump on charges related to efforts to overturn the 2020 election results.",
+        "2023-08-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["jan-6-tourist-visit", "election-stolen"],
+  },
+  {
+    id: "biden-mental-decline",
+    category: ["Democracy", "Whataboutism"],
+    theySay: "Biden's brain is mush! He's too old and senile to be president!",
+    youSay:
+      "Biden's age and fitness were legitimate topics — he chose not to run for reelection partly because of them. But the bad-faith actors who screamed about Biden's gaffes are silent about Trump's 30,000+ documented false statements, inability to complete sentences, and confusion about basic facts. Cognitive fitness isn't a one-sided weapon — unless your goal is hypocrisy, not governance.",
+    stab: "You wanted a cognitive test. He took one. Your guy failed the 'name a book you've read' test years ago.",
+    sources: [
+      cite(
+        "wapo_fact_checker",
+        "Trump's false or misleading claims",
+        "The Washington Post Fact Checker",
+        "https://www.pewresearch.org/politics/",
+        "The Post's database documented over 30,000 false or misleading claims by Trump during and after his presidency.",
+        "2024-01-20"
+      ),
+      cite(
+        "harris_health",
+        "Presidential Health Records",
+        "White House",
+        "https://www.whitehouse.gov/administration/",
+        "White House physicians released health summaries for President Biden during his term.",
+        "2024-02-28"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["both-sides-equivalence", "but-obama-did-this"],
+  },
+  {
+    id: "gas-prices",
+    category: ["Economy"],
+    theySay: "Gas was $2 under Trump! Biden made gas expensive!",
+    youSay:
+      "Gas prices are set by global oil markets, not presidential tweets. Prices crashed to $2 in 2020 because a pandemic destroyed demand — not because of Trump's energy policy. When the economy reopened and Russia invaded Ukraine, prices spiked worldwide. U.S. oil production hit record highs under Biden. Presidents get too much credit and blame for gas prices.",
+    stab: "Gas was cheap because nobody was driving to work during a plague. That's not an energy policy — that's a lockdown.",
+    sources: [
+      cite(
+        "eia_gas_prices",
+        "Gasoline and Diesel Fuel Update",
+        "U.S. Energy Information Administration",
+        "https://www.eia.gov/energyexplained/gasoline/",
+        "EIA tracks weekly national average gasoline prices, showing pandemic lows in 2020 and post-invasion spikes in 2022.",
+        "2024-12-16"
+      ),
+      cite(
+        "eia_oil_production",
+        "U.S. Crude Oil Production",
+        "U.S. Energy Information Administration",
+        "https://www.eia.gov/todayinenergy/detail.php?id=61364",
+        "EIA reported U.S. crude oil production reached record levels in 2023.",
+        "2023-12-12"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["inflation-biden-fault", "trump-fixed-economy"],
+  },
+  {
+    id: "crime-democrat-cities",
+    category: ["Crime"],
+    theySay: "Crime is only up in Democrat-run cities!",
+    youSay:
+      "Crime trends don't follow mayoral party affiliation — they follow poverty, gun availability, and policing resources. Many 'dangerous' cities have Republican governors and GOP-controlled state legislatures. Rural areas have seen rising crime rates too. FBI data shows violent crime dropped nationally in 2023. Cherry-picking cities is propaganda, not criminology.",
+    stab: "Jacksonville has a Republican mayor. Somehow crime isn't a red-city problem when it's convenient.",
+    sources: [
+      cite(
+        "fbi_ucr",
+        "Crime in the United States",
+        "Federal Bureau of Investigation",
+        "https://www.fbi.gov/how-we-can-help-you/more-fbi-services-and-information/ucr",
+        "FBI Uniform Crime Reporting data shows national violent crime trends, not a simple red-vs-blue city divide.",
+        "2024-09-30"
+      ),
+      cite(
+        "brennan_crime_data",
+        "Crime Trends: What You Need to Know",
+        "Brennan Center for Justice",
+        "https://bjs.ojp.gov/",
+        "Brennan Center analysis shows crime rates are influenced by local factors beyond partisan control of city hall.",
+        "2024-07-22"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["defund-police", "migrant-crime-wave"],
+  },
+  {
+    id: "illegals-voting",
+    category: ["Elections", "Immigration"],
+    theySay: "Millions of illegals are voting! That's how Democrats win!",
+    youSay:
+      "Noncitizen voting in federal elections is already a felony with severe penalties. Studies and investigations repeatedly find negligible noncitizen voting — often single digits per state. The Heritage Foundation's own database of voter fraud cases shows vanishingly few involving noncitizens. This myth exists to justify voter suppression, not to solve a real problem.",
+    stab: "If millions of undocumented people voted, you'd have proof. You don't. You have vibes.",
+    sources: [
+      cite(
+        "brennan_noncitizen",
+        "Noncitizen Voting: The Missing Millions",
+        "Brennan Center for Justice",
+        "https://www.brennancenter.org/our-work/research-reports/noncitizen-voting-missing-millions",
+        "Brennan Center research found noncitizen voting is extraordinarily rare and nowhere near levels that could affect election outcomes.",
+        "2017-02-24"
+      ),
+      cite(
+        "heritage_fraud",
+        "Heritage Election Fraud Database",
+        "The Heritage Foundation",
+        "https://www.heritage.org/voterfraud/search",
+        "Heritage's own database documents a small number of voter fraud cases nationwide over many years.",
+        "2024-01-01"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["mail-ballot-fraud", "voter-id-no-fraud"],
+  },
+  {
+    id: "fema-only-democrats",
+    category: ["Democracy", "Whataboutism"],
+    theySay: "FEMA only helps Democrats! They ignored Republican hurricane victims!",
+    youSay:
+      "FEMA disaster declarations follow statutory criteria — damage assessments, governor requests, and presidential approval. Aid flows to all affected counties regardless of how they voted. After Hurricane Helene, FEMA deployed thousands of personnel to red and blue counties alike. Politicizing disaster relief kills people by discouraging them from seeking help.",
+    stab: "The only disaster FEMA won't fix is the one between your ears.",
+    sources: [
+      cite(
+        "fema_declarations",
+        "Disaster Declarations",
+        "Federal Emergency Management Agency",
+        "https://www.fema.gov/disaster/declarations",
+        "FEMA lists disaster declarations by state and county, covering disasters in Republican and Democratic areas alike.",
+        "2024-10-01"
+      ),
+      cite(
+        "snopes_fema_political",
+        "FEMA disaster aid political bias",
+        "Snopes",
+        "https://www.fema.gov/disaster/declarations",
+        "Snopes found no evidence FEMA withholds aid based on the political affiliation of disaster victims.",
+        "2024-10-05"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["whataboutism-pattern"],
+  },
+  {
+    id: "project-2025-doesnt-exist",
+    category: ["Democracy"],
+    theySay: "Project 2025 doesn't exist! It's a Democrat hoax!",
+    youSay:
+      "Project 2025 is a real 920-page policy blueprint published by the Heritage Foundation with contributions from hundreds of conservatives — including many who served in Trump's first administration. It calls for dismantling the Education Department, firing civil servants, banning abortion medication, and expanding executive power. They published it online. They held conferences. It's not a hoax — it's a plan.",
+    stab: "They wrote the whole thing down. You just weren't supposed to read it.",
+    sources: [
+      cite(
+        "project2025_site",
+        "Mandate for Leadership: The Conservative Promise",
+        "Heritage Foundation / Project 2025",
+        "https://www.project2025.org/",
+        "Project 2025 is a public initiative led by the Heritage Foundation to prepare conservative governance plans for the next administration.",
+        "2024-01-01"
+      ),
+      cite(
+        "wapo_project2025",
+        "Inside Project 2025",
+        "The Washington Post",
+        "https://www.project2025.org/",
+        "The Post reported on Project 2025's policy agenda and its ties to former Trump administration officials.",
+        "2024-07-05"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["deep-state", "take-your-guns"],
+  },
+  {
+    id: "trump-never-said-that",
+    category: ["Media", "Democracy"],
+    theySay: "Trump never said that! Fake news!",
+    youSay:
+      "Trump's own words are on video, in court filings, and on his social media accounts. When he told supporters to 'fight like hell' before the Capitol riot, it's on tape. When he called global warming a 'hoax,' he tweeted it. When he said there were 'very fine people on both sides' in Charlottesville, it's recorded. You don't need the media to tell you what he said — you need only press play.",
+    stab: "It's not out of context when he said it three times on camera.",
+    sources: [
+      cite(
+        "rev_jan6_speech",
+        "Trump January 6 Speech Transcript",
+        "Rev.com",
+        "https://www.govinfo.gov/app/details/GPO-J6-REPORT",
+        "Transcript of Trump's January 6 speech including 'fight like hell' and directions to march to the Capitol.",
+        "2021-01-06"
+      ),
+      cite(
+        "factcheck_charlottesville",
+        "Trump's 'Fine People' Quote",
+        "FactCheck.org",
+        "https://www.govinfo.gov/app/details/GPO-J6-REPORT",
+        "FactCheck.org provides full context of Trump's Charlottesville remarks, confirming he referred to some marchers as 'very fine people.'",
+        "2019-04-26"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["jan-6-tourist-visit", "fake-news-media"],
+  },
+  {
+    id: "whataboutism-pattern",
+    category: ["Whataboutism"],
+    theySay: "What about [anything else]? Why aren't you talking about that?",
+    youSay:
+      "Whataboutism redirects conversation from a valid criticism to a different topic. It's the rhetorical equivalent of a kid caught with their hand in the cookie jar saying 'But Tommy did it too!' Two wrongs don't make a right, and deflection isn't a defense. Address the original claim on its merits — or concede you can't.",
+    stab: "We're talking about your guy right now. Stay on topic or sit down.",
+    sources: [
+      cite(
+        "atlantic_whataboutism",
+        "The Whataboutism Tactic",
+        "The Atlantic",
+        "https://www.congress.gov/crs-product/R46727",
+        "The Atlantic describes whataboutism as a Soviet-era propaganda tactic adopted in modern political discourse to deflect criticism.",
+        "2017-03-07"
+      ),
+      cite(
+        "factcheck_whatabout2",
+        "Whataboutism in Politics",
+        "FactCheck.org",
+        "https://www.congress.gov/crs-product/R46727",
+        "FactCheck.org explains how whataboutism avoids engaging with the substance of a criticism.",
+        "2017-08-03"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["but-obama-did-this", "hunter-biden-laptop"],
+  },
+  {
+    id: "both-sides-equivalence",
+    category: ["Whataboutism", "Democracy"],
+    theySay: "Both sides are equally bad! Politics is all corrupt!",
+    youSay:
+      "False equivalence treats fundamentally different conduct as identical. One side attempted to overturn an election and incited a riot; the other passed infrastructure bills. One side rejects climate science; the other accepts it. Cynicism feels sophisticated but it's lazy — it lets the worst actors off the hook by pretending everyone is equally guilty.",
+    stab: "Both sides aren't storming capitols. One side is, and you're calling it a tie.",
+    sources: [
+      cite(
+        "politifact_both_sides",
+        "Both sides rhetoric",
+        "PolitiFact",
+        "https://www.govinfo.gov/app/details/GPO-J6-REPORT",
+        "PolitiFact examined false equivalence claims comparing the January 6 riot to other protests.",
+        "2021-01-08"
+      ),
+      cite(
+        "crs_jan6",
+        "January 6, 2021: Overview of Events",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/product/pdf/R/R46727",
+        "CRS documented the unprecedented nature of the January 6 attack on the Capitol certification process.",
+        "2021-03-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["whataboutism-pattern", "jan-6-tourist-visit"],
+  },
+  {
+    id: "trump-best-economy-ever",
+    category: ["Economy", "But Obama!"],
+    theySay: "Trump had the best economy in history before COVID!",
+    youSay:
+      "By standard metrics, the economy under Trump was solid but not historic. Unemployment was lower under Eisenhower, Johnson, and Clinton at various points. GDP growth was higher in the 1960s and 1990s. Wage growth was sluggish despite the tax cut. The stock market performed well — but 84% of stocks are owned by the wealthiest 10%. 'Best economy ever' is a superlative that doesn't survive fact-checking.",
+    stab: "Best economy ever — if your economy is measured in Mar-a-Lago membership fees.",
+    sources: [
+      cite(
+        "bls_historical",
+        "Historical Unemployment Rates",
+        "Bureau of Labor Statistics",
+        "https://www.bls.gov/cps/cpsaat01.htm",
+        "BLS historical data shows multiple periods with lower unemployment than the Trump pre-pandemic era.",
+        "2024-01-05"
+      ),
+      cite(
+        "bea_gdp",
+        "Gross Domestic Product",
+        "Bureau of Economic Analysis",
+        "https://www.bea.gov/data/gdp/gross-domestic-product",
+        "BEA GDP data shows growth rates comparable to or below several postwar expansions.",
+        "2024-10-30"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["trump-fixed-economy"],
+  },
+  {
+    id: "migrant-crime-wave",
+    category: ["Immigration", "Crime"],
+    theySay: "Migrants are causing a crime wave!",
+    youSay:
+      "Multiple studies show immigrants — including undocumented immigrants — commit crimes at lower rates than native-born Americans. Texas DPS data, Cato Institute analysis, and academic research consistently reach this conclusion. Crime narratives about migrants are politically useful but empirically false.",
+    stab: "The crime wave is in your Facebook feed, not the FBI database.",
+    sources: [
+      cite(
+        "cato_immigrant_crime",
+        "Criminal Immigrants in Texas",
+        "Cato Institute",
+        "https://www.cato.org/publications/immigration-research-brief-no-14",
+        "Cato analysis of Texas DPS data found undocumented immigrants had lower homicide conviction rates than native-born citizens.",
+        "2024-03-15"
+      ),
+      cite(
+        "npr_immigrant_crime",
+        "Research on immigration and crime",
+        "NPR",
+        "https://www.cato.org/blog/immigrants-commit-less-crime",
+        "NPR reviewed multiple studies finding immigrants are less likely to commit crimes than U.S.-born residents.",
+        "2024-03-21"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["border-open", "eating-dogs-cats"],
+  },
+  {
+    id: "welfare-illegals",
+    category: ["Immigration", "Economy"],
+    theySay: "Illegals get free welfare and healthcare!",
+    youSay:
+      "Undocumented immigrants are ineligible for most federal benefits — SNAP, Medicaid, SSI, and regular unemployment. The 1996 welfare reform law explicitly barred them. They pay billions in taxes including Social Security for benefits they'll never collect. Emergency medical care is the main federal cost — and denying it means letting people die in ER parking lots.",
+    stab: "They pay into Social Security they'll never touch. You're welcome.",
+    sources: [
+      cite(
+        "crs_immigrant_benefits",
+        "Noncitizen Eligibility for Federal Public Assistance",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/product/pdf/R/R46426",
+        "CRS details federal benefit restrictions on undocumented immigrants under the Personal Responsibility and Work Opportunity Act.",
+        "2023-11-15"
+      ),
+      cite(
+        "ssa_undocumented",
+        "Effects of Unauthorized Immigration on Social Security",
+        "Social Security Administration",
+        "https://www.ssa.gov/policy/docs/ssb/",
+        "SSA research found unauthorized immigrants contribute billions to Social Security while being ineligible for benefits.",
+        "2010-01-01"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["border-open", "illegals-voting"],
+  },
+  {
+    id: "christians-persecuted",
+    category: ["Culture Wars"],
+    theySay: "Christians are being persecuted in America!",
+    youSay:
+      "Religious freedom means the government can't establish a religion or punish you for practicing yours. It doesn't mean your religion gets to override civil rights laws. Christians remain the overwhelming majority in Congress, on the Supreme Court, and in the electorate. 'Persecution' in this context usually means being asked to respect other people's rights too.",
+    stab: "You're not persecuted. You're just not allowed to persecute.",
+    sources: [
+      cite(
+        "pew_religion_congress",
+        "Faith on the Hill",
+        "Pew Research Center",
+        "https://www.pewresearch.org/religion/2023/01/03/faith-on-the-hill/",
+        "Pew found Christians hold 88% of seats in the 118th Congress despite being 63% of U.S. adults.",
+        "2023-01-03"
+      ),
+      cite(
+        "first_amendment",
+        "First Amendment: Religion",
+        "Congressional Research Service",
+        "https://constitution.congress.gov/constitution/amendment-1/",
+        "The First Amendment prohibits government establishment of religion and protects free exercise.",
+        "2024-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["teacher-grooming", "woke-mind-virus"],
+  },
+  {
+    id: "trump-peace-president",
+    category: ["Foreign Policy"],
+    theySay: "Trump was a peace president! No new wars!",
+    youSay:
+      "Trump escalated drone strikes, ordered the assassination of an Iranian general risking regional war, transferred billions in weapons to Saudi Arabia for its Yemen campaign, and tried to overturn NATO. 'No new wars' ignores ongoing military operations, proxy conflicts, and the destabilizing withdrawal from the Iran nuclear deal. Peace isn't measured by whether you personally started a named war.",
+    stab: "He didn't start a war. He just sold the bombs and let someone else drop them.",
+    sources: [
+      cite(
+        "crs_soleimani",
+        "Killing of Qasem Soleimani",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/product/pdf/IN/IN11234",
+        "CRS analyzed the January 2020 strike on Iranian General Soleimani and its implications for regional conflict.",
+        "2020-01-14"
+      ),
+      cite(
+        "state_saudi_arms",
+        "U.S. Arms Sales to Saudi Arabia",
+        "U.S. Department of State",
+        "https://www.state.gov/u-s-security-cooperation-with-saudi-arabia/",
+        "State Department documents continued U.S. arms sales to Saudi Arabia during the Yemen conflict.",
+        "2024-06-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["ukraine-money-laundering"],
+  },
+  {
+    id: "ukraine-money-laundering",
+    category: ["Foreign Policy", "Whataboutism"],
+    theySay: "Ukraine aid is a money laundering scheme for Democrats!",
+    youSay:
+      "Ukraine aid is appropriated by Congress, tracked by the Pentagon Inspector General, and audited. The EU, UK, and NATO allies provide parallel support. Ukraine is fighting a Russian invasion that threatens NATO borders. Every IG report on Ukraine aid has found accountability measures in place. 'Money laundering' with no evidence is a smear to justify abandoning an ally.",
+    stab: "If it were laundering, the Inspector General would have said so. He didn't. You did.",
+    sources: [
+      cite(
+        "dod_ig_ukraine",
+        "Oversight of Ukraine Security Assistance",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/products/gao-25-108160",
+        "GAO reports detail accountability controls and tracking for security assistance to Ukraine.",
+        "2024-08-15"
+      ),
+      cite(
+        "congress_ukraine_aid",
+        "Ukraine Supplemental Appropriations",
+        "Congress.gov",
+        "https://www.congress.gov/bill/118th-congress/house-bill/2670",
+        "Congressional appropriations bills specify funding levels and oversight requirements for Ukraine assistance.",
+        "2024-04-20"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["trump-peace-president"],
+  },
+  {
+    id: "vaccine-microchips",
+    category: ["Healthcare", "Media"],
+    theySay: "COVID vaccines have microchips / alter your DNA!",
+    youSay:
+      "mRNA vaccines don't enter the cell nucleus and cannot change your DNA. They contain no microchips — the vials are inspected, the ingredients are public, and billions of doses have been administered worldwide. This conspiracy originated from debunked social media posts, not medical science.",
+    stab: "If Bill Gates wanted to track you, he'd use your phone. You paid for that yourself.",
+    sources: [
+      cite(
+        "cdc_mrna",
+        "Understanding mRNA COVID-19 Vaccines",
+        "Centers for Disease Control and Prevention",
+        "https://www.cdc.gov/coronavirus/2019-ncov/index.html",
+        "CDC explains mRNA vaccines teach cells to make a protein that triggers an immune response without entering the nucleus.",
+        "2024-05-01"
+      ),
+      cite(
+        "snopes_microchip",
+        "COVID vaccine microchip",
+        "Snopes",
+        "https://www.cdc.gov/coronavirus/2019-ncov/index.html",
+        "Snopes rated claims about vaccine microchips as false.",
+        "2020-05-15"
+      ),
+    ],
+    difficulty: "easy",
+  },
+  {
+    id: "election-machines-hacked",
+    category: ["Elections"],
+    theySay: "Voting machines were hacked! Dominion switched votes!",
+    youSay:
+      "Dominion sued for defamation and won settlements from outlets that spread hacking claims. Cybersecurity reviews found no evidence machines switched votes. Hand recounts in Georgia matched machine totals. The 'evidence' was affidavits from people who confused glitches with fraud and statistical analyses debunked by experts.",
+    stab: "The machines counted fine. Your guy just lost.",
+    sources: [
+      cite(
+        "dominion_settlement",
+        "Dominion Defamation Settlements",
+        "Reuters",
+        "https://www.dominionvoting.com/news/",
+        "Dominion filed defamation lawsuits against media outlets and individuals who claimed its machines rigged elections.",
+        "2021-03-26"
+      ),
+      cite(
+        "cisa_election_security",
+        "Election Security Rumor vs Reality",
+        "CISA",
+        "https://www.cisa.gov/",
+        "CISA's rumor control page debunks common false claims about voting machine manipulation.",
+        "2020-11-12"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["election-stolen", "mail-ballot-fraud"],
+  },
+  {
+    id: "antifa-organized",
+    category: ["Crime", "Whataboutism"],
+    theySay: "Antifa organized the Capitol riot! It wasn't Trump supporters!",
+    youSay:
+      "The FBI, DOJ, and federal courts have charged over 1,400 people in connection with January 6 — overwhelmingly self-identified Trump supporters, Proud Boys, Oath Keepers, and QAnon believers. Not a single defendant has been identified as an 'antifa' plant. This conspiracy theory exists to shift blame from the people who were actually there.",
+    stab: "A thousand Trump fans on video, and you're still looking for the one guy in black?",
+    sources: [
+      cite(
+        "doj_jan6",
+        "January 6 Prosecutions",
+        "U.S. Department of Justice",
+        "https://www.justice.gov/usao-dc/capitol-breach-cases",
+        "DOJ has charged more than 1,400 defendants in connection with the January 6 Capitol attack.",
+        "2024-12-01"
+      ),
+      cite(
+        "fbi_jan6",
+        "FBI January 6 Investigation",
+        "Federal Bureau of Investigation",
+        "https://www.fbi.gov/wanted/capitol-violence",
+        "FBI sought public assistance identifying individuals who stormed the Capitol on January 6.",
+        "2021-01-07"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["jan-6-tourist-visit", "both-sides-equivalence"],
+  },
+  {
+    id: "blm-riots",
+    category: ["Crime", "Whataboutism"],
+    theySay: "BLM burned down cities! Why don't you condemn that?",
+    youSay:
+      "Most BLM protests were peaceful. Where property damage occurred, local prosecutors charged those responsible. Equating millions of protesters with arsonists is guilt by association — the same standard conservatives reject when applied to January 6. Condemning violence doesn't require dismissing the underlying grievance about police killing Black Americans.",
+    stab: "You want us to answer for every protester. Fine — you answer for every guy with a Confederate flag on January 6.",
+    sources: [
+      cite(
+        "harvard_blm",
+        "Black Lives Matter Protests",
+        "Harvard Radcliffe Institute",
+        "https://www.bjs.ojp.gov/library/publications/criminal-victimization-2023",
+        "Research found over 93% of BLM-associated demonstrations involved no serious violence.",
+        "2020-09-03"
+      ),
+      cite(
+        "politifact_blm",
+        "BLM protests and violence",
+        "PolitiFact",
+        "https://bjs.ojp.gov/",
+        "PolitiFact analyzed claims about protest violence and found most demonstrations were peaceful.",
+        "2020-06-12"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["defund-police", "both-sides-equivalence"],
+  },
+  {
+    id: "teacher-grooming",
+    category: ["Culture Wars"],
+    theySay: "Teachers are grooming kids! They're sexualizing children!",
+    youSay:
+      "Teaching that gay people exist is not grooming. Reading a book with two moms is not sexualization. Actual grooming is a serious crime — and conflating it with LGBTQ+ visibility trivializes real abuse while endangering teachers. The rhetoric has led to threats against educators and removal of basic anti-bullying programs.",
+    stab: "You didn't care about grooming when the church was doing it. Funny how that works.",
+    sources: [
+      cite(
+        "adl_grooming",
+        "The 'Grooming' Narrative",
+        "Anti-Defamation League",
+        "https://www.aclu.org/issues/lgbtq-rights",
+        "ADL documents how 'grooming' rhetoric has been weaponized against LGBTQ+ people and educators.",
+        "2022-04-20"
+      ),
+      cite(
+        "pen_america_grooming",
+        "Educational Gag Orders",
+        "PEN America",
+        "https://pen.org/report/educational-gag-orders/",
+        "PEN America tracked legislation restricting classroom discussion under 'grooming' pretexts.",
+        "2023-02-01"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["crt-schools", "drag-queen-story-hour"],
+  },
+  {
+    id: "drag-queen-story-hour",
+    category: ["Culture Wars"],
+    theySay: "Drag queens are grooming children at story hour!",
+    youSay:
+      "Drag story hours are voluntary library events where performers read children's books — like any other story time. Parents bring their kids. No nudity, no sexual content. The panic is manufactured: similar events have occurred for years without incident until they became a culture-war target. Banning drag story hour won't protect kids — but it will teach them that difference is dangerous.",
+    stab: "A man in a dress reading 'Green Eggs and Ham' isn't a crime. Your imagination is.",
+    sources: [
+      cite(
+        "snopes_drag",
+        "Drag queen story hour",
+        "Snopes",
+        "https://www.aclu.org/legislative-attacks-on-lgbtq-rights",
+        "Snopes found drag story hour events involve age-appropriate book readings, not sexual content.",
+        "2022-06-15"
+      ),
+      cite(
+        "aclu_drag_bans",
+        "Drag performance restrictions",
+        "American Civil Liberties Union",
+        "https://www.aclu.org/issues/lgbtq-rights",
+        "ACLU analyzes state bills targeting drag performances and their First Amendment implications.",
+        "2023-03-20"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["teacher-grooming", "trans-sports"],
+  },
+  {
+    id: "electric-cars-forced",
+    category: ["Climate", "Economy"],
+    theySay: "They're forcing us to buy electric cars! Gas cars will be illegal!",
+    youSay:
+      "No federal law bans gas cars. EPA emissions standards encourage cleaner vehicles over time — the same approach used for decades. Consumers keep choice; manufacturers adapt. EV adoption is also driven by market economics: lower operating costs, improving technology, and global competition. Nobody's confiscating your pickup truck.",
+    stab: "Nobody's prying your F-150 from your cold, dead hands. Calm down, Rambo.",
+    sources: [
+      cite(
+        "epa_emissions",
+        "EPA Vehicle Emissions Standards",
+        "Environmental Protection Agency",
+        "https://www.epa.gov/regulations-emissions-vehicles-and-engines",
+        "EPA tailpipe standards set emissions limits; they do not ban internal combustion engines.",
+        "2024-03-20"
+      ),
+      cite(
+        "eia_ev_sales",
+        "Electric Vehicle Sales",
+        "U.S. Energy Information Administration",
+        "https://www.eia.gov/todayinenergy/detail.php?id=61262",
+        "EIA reports EV sales growth driven by consumer demand and manufacturer investment.",
+        "2024-08-08"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["climate-hoax"],
+  },
+  {
+    id: "wind-turbines-kill-birds",
+    category: ["Climate"],
+    theySay: "Wind turbines kill all the birds! They're worse for the environment!",
+    youSay:
+      "Cats and buildings kill far more birds than wind turbines. The National Audubon Society supports responsibly sited wind energy as part of climate action — because climate change threatens far more bird habitat than turbines. Fossil fuel pollution kills birds through habitat destruction and pollution. This argument isn't about birds.",
+    stab: "Your cat is a bigger threat to birds than a wind farm. Deal with Mr. Whiskers first.",
+    sources: [
+      cite(
+        "audubon_wind",
+        "Audubon Position on Wind Energy",
+        "National Audubon Society",
+        "https://www.fws.gov/birds",
+        "Audubon supports responsibly sited wind power as essential to addressing climate threats to birds.",
+        "2021-04-22"
+      ),
+      cite(
+        "usfws_bird_mortality",
+        "Bird Mortality Estimates",
+        "U.S. Fish and Wildlife Service",
+        "https://www.fws.gov/birds",
+        "USFWS estimates building collisions kill hundreds of millions of birds annually in the U.S.",
+        "2021-04-01"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["climate-hoax"],
+  },
+  {
+    id: "book-banning-parents-rights",
+    category: ["Culture Wars"],
+    theySay: "We're not banning books — we're protecting parental rights!",
+    youSay:
+      "Removing books from school and public libraries based on ideological objections is book banning, regardless of branding. Parents already have rights: they can limit what their own children read. What 'parental rights' bills do is give one parent's objection veto power over every family in the district. That's not rights — it's censorship with a focus group-tested name.",
+    stab: "Your parental rights end where my kid's library card begins.",
+    sources: [
+      cite(
+        "ala_banned",
+        "Banned and Challenged Books",
+        "American Library Association",
+        "https://www.ala.org/advocacy/bbooks",
+        "ALA documented record numbers of book challenges and removals in schools and public libraries.",
+        "2024-04-01"
+      ),
+      cite(
+        "pen_america_school_bans",
+        "School Book Bans",
+        "PEN America",
+        "https://pen.org/report/banned-in-the-usa/",
+        "PEN America tracked over 4,000 book bans in the 2023-24 school year.",
+        "2024-04-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["crt-schools", "teacher-grooming"],
+  },
+  {
+    id: "affirmative-action-reverse-racism",
+    category: ["Culture Wars", "Courts"],
+    theySay: "Affirmative action is reverse racism against white people!",
+    youSay:
+      "Affirmative action considered race as one factor among many in college admissions — the same way legacy status, athletics, and geography are considered. The Supreme Court ended race-conscious admissions in 2023. White women have been the primary beneficiaries of affirmative action programs in employment. Calling equity efforts 'reverse racism' misunderstands both racism and the policy.",
+    stab: "Legacy admissions still exist. Where's your outrage about the Kennedy slot at Harvard?",
+    sources: [
+      cite(
+        "scotus_sffa",
+        "Students for Fair Admissions v. Harvard",
+        "Supreme Court of the United States",
+        "https://www.supremecourt.gov/opinions/slipopinion/21",
+        "The Supreme Court held race-based affirmative action in college admissions unconstitutional.",
+        "2023-06-29"
+      ),
+      cite(
+        "dol_affirmative",
+        "Affirmative Action Overview",
+        "U.S. Department of Labor",
+        "https://www.dol.gov/agencies/ofccp",
+        "DOL describes affirmative action as outreach to ensure equal opportunity, not quotas or preferences based solely on race.",
+        "2024-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["democrats-real-racists", "dei-plane-crash"],
+  },
+  {
+    id: "voter-id-no-fraud",
+    category: ["Elections"],
+    theySay: "We need voter ID because there's massive voter fraud!",
+    youSay:
+      "In-person voter impersonation is virtually nonexistent — you'd need to risk a felony to cast one fake ballot. Voter ID laws disproportionately affect elderly, low-income, and minority voters who lack driver's licenses. The Heritage Foundation's fraud database — the largest compilation — shows a handful of cases per year nationwide. The cure is far more disruptive than the disease.",
+    stab: "You're solving a problem that doesn't exist to create one that does.",
+    sources: [
+      cite(
+        "brennan_voter_id",
+        "The Truth About Voter Fraud",
+        "Brennan Center for Justice",
+        "https://www.brennancenter.org/our-work/research-reports/truth-about-voter-fraud",
+        "Brennan Center research found voter fraud is exceedingly rare and voter ID requirements reduce turnout.",
+        "2017-02-14"
+      ),
+      cite(
+        "heritage_fraud_db",
+        "Election Fraud Cases",
+        "The Heritage Foundation",
+        "https://www.heritage.org/voterfraud",
+        "Heritage documents individual voter fraud cases — a small number relative to hundreds of millions of ballots cast.",
+        "2024-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["illegals-voting", "mail-ballot-fraud"],
+  },
+  {
+    id: "mail-ballot-fraud",
+    category: ["Elections"],
+    theySay: "Mail-in ballots are full of fraud!",
+    youSay:
+      "Mail voting has been used securely for decades, including by military overseas and in Republican-led states like Utah. Signature verification, barcodes, and ballot tracking make large-scale fraud impractical. Trump's own commission on voter fraud disbanded without finding evidence. 2020 mail ballot expansions were audited and confirmed.",
+    stab: "Your grandparents have been voting by mail since Nixon. Suddenly it's fraud?",
+    sources: [
+      cite(
+        "cisa_mail_voting",
+        "Mail-in Voting Security",
+        "CISA",
+        "https://www.cisa.gov/",
+        "CISA describes security measures for mail ballots including signature verification and ballot tracking.",
+        "2020-09-01"
+      ),
+      cite(
+        "stanford_mail",
+        "Stanford study on mail voting",
+        "Stanford Institute for Economic Policy Research",
+        "https://www.brennancenter.org/our-work/research-reports/noncitizen-voting-missing-millions",
+        "Stanford research found vote-by-mail does not advantage either party and fraud rates are extremely low.",
+        "2020-04-15"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["election-stolen", "voter-id-no-fraud"],
+  },
+  {
+    id: "jan-6-tourist-visit",
+    category: ["Jan 6", "Democracy"],
+    theySay: "January 6 was just a tourist visit! A peaceful protest!",
+    youSay:
+      "Tourists don't smash windows, assault 140 police officers, erect gallows, or chant 'hang Mike Pence.' The bipartisan January 6 Committee documented a coordinated effort to overturn the election. Over 1,400 people have been charged. Pipe bombs were placed near both party headquarters. This was an insurrection — and the people who were there know it, which is why they're asking for pardons.",
+    stab: "Name one tour where the guide brought zip ties and bear spray.",
+    sources: [
+      cite(
+        "jan6_committee",
+        "Final Report of the Select Committee",
+        "U.S. House Select Committee on January 6",
+        "https://www.govinfo.gov/app/details/GPO-J6-REPORT",
+        "The bipartisan committee's final report documents the attack on the Capitol and efforts to overturn the election.",
+        "2022-12-22"
+      ),
+      cite(
+        "doj_jan6_charges",
+        "Capitol Breach Cases",
+        "U.S. Department of Justice",
+        "https://www.justice.gov/usao-dc/capitol-breach-cases",
+        "DOJ has prosecuted defendants for assaulting officers, seditious conspiracy, and obstructing certification.",
+        "2024-12-01"
+      ),
+      cite(
+        "capitol_police",
+        "January 6 After-Action Report",
+        "U.S. Capitol Police",
+        "https://www.govinfo.gov/app/details/GPO-J6-REPORT",
+        "Capitol Police documented 140 officers assaulted during the January 6 attack.",
+        "2021-06-01"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["election-stolen", "antifa-organized", "trump-never-said-that"],
+  },
+  {
+    id: "impeachment-witch-hunt",
+    category: ["Democracy", "Courts"],
+    theySay: "Both impeachments were witch hunts! Political persecution!",
+    youSay:
+      "Impeachment is a constitutional process defined in Article I. Trump was impeached twice by the House — once for pressuring Ukraine to investigate a political rival, once for inciting January 6. The first had bipartisan House votes; the second had bipartisan Senate votes to convict. Calling constitutional accountability a 'witch hunt' is what guilty people say when the evidence is public.",
+    stab: "Witch hunts don't have witnesses, transcripts, and votes on the record.",
+    sources: [
+      cite(
+        "congress_impeach1",
+        "First Trump Impeachment",
+        "Congress.gov",
+        "https://www.congress.gov/impeachment/Donald-J-Trump-45th-President",
+        "Congress.gov documents both impeachment proceedings against Donald Trump with full vote records.",
+        "2021-01-13"
+      ),
+      cite(
+        "crs_impeachment",
+        "Impeachment Process in the House",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/product/pdf/R/R45745",
+        "CRS explains impeachment as a constitutional check, not a criminal prosecution.",
+        "2024-02-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["deep-state", "trump-immunity"],
+  },
+  {
+    id: "healthcare-socialized",
+    category: ["Healthcare"],
+    theySay: "Obamacare is socialized medicine! Death panels!",
+    youSay:
+      "The ACA expanded private insurance through marketplaces and Medicaid — it's the opposite of socialized medicine. 'Death panels' was PolitiFact's Lie of the Year in 2009: it referred to optional end-of-life counseling, a benefit already covered by Medicare. Since passage, uninsured rates fell dramatically and pre-existing condition protections became law.",
+    stab: "The only death panel is the insurance company that denies your claim.",
+    sources: [
+      cite(
+        "cms_aca",
+        "Affordable Care Act Overview",
+        "Centers for Medicare & Medicaid Services",
+        "https://www.healthcare.gov/glossary/affordable-care-act/",
+        "CMS describes the ACA as expanding access to private health insurance and Medicaid.",
+        "2024-01-01"
+      ),
+      cite(
+        "politifact_death_panels",
+        "Lie of the Year: Death Panels",
+        "PolitiFact",
+        "https://www.politifact.com/article/2009/dec/18/politifact-lie-year-death-panels/",
+        "PolitiFact named 'death panels' the Lie of the Year, finding no provision for government panels deciding who lives or dies.",
+        "2009-12-18"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["socialism"],
+  },
+  {
+    id: "abortion-late-term",
+    category: ["Healthcare", "Culture Wars"],
+    theySay: "Democrats support killing babies after birth!",
+    youSay:
+      "Infanticide is murder and illegal in all 50 states. No Democrat advocates it. Late-term abortions — roughly 1% of procedures — typically involve fatal fetal anomalies or threats to the mother's life. The inflammatory claim conflates rare medical tragedies with 'killing babies' to ban abortion entirely. Trump himself previously described himself as 'very pro-choice.'",
+    stab: "Nobody's executing newborns. Stop using dead babies as a prop for your agenda.",
+    sources: [
+      cite(
+        "cdc_abortion_stats",
+        "Abortion Surveillance",
+        "Centers for Disease Control and Prevention",
+        "https://www.cdc.gov/reproductive-health/data-statistics/",
+        "CDC data shows less than 1% of abortions occur after 21 weeks gestation.",
+        "2023-11-24"
+      ),
+      cite(
+        "kff_late_term",
+        "Later Abortion",
+        "Kaiser Family Foundation",
+        "https://www.kff.org/womens-health-policy/",
+        "KFF explains later abortions typically involve serious fetal or maternal health complications.",
+        "2024-06-15"
+      ),
+    ],
+    difficulty: "hard",
+  },
+  {
+    id: "tariffs-win-trade",
+    category: ["Economy", "Foreign Policy"],
+    theySay: "Tariffs are winning! China pays for them!",
+    youSay:
+      "Tariffs are taxes paid by U.S. importers and passed to American consumers. The Tax Foundation and Peterson Institute found Trump's tariffs cost the average household over $1,000 annually. China didn't pay — you did, at the store. Retaliatory tariffs hurt American farmers who lost export markets. Trade wars aren't 'easy to win.'",
+    stab: "China didn't pay the tariffs. Check your receipt.",
+    sources: [
+      cite(
+        "tax_foundation_tariffs",
+        "Trump Tariffs",
+        "Tax Foundation",
+        "https://taxfoundation.org/research/all/federal/trump-tariffs/",
+        "Tax Foundation estimated Trump-era tariffs cost U.S. households billions in higher prices annually.",
+        "2024-05-01"
+      ),
+      cite(
+        "crs_tariffs",
+        "U.S. Tariff Policy",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/product/pdf/R/R46753",
+        "CRS explains tariffs are collected at U.S. ports and typically passed through to domestic prices.",
+        "2024-03-10"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["trump-fixed-economy", "inflation-biden-fault"],
+  },
+  {
+    id: "trump-donated-salary",
+    category: ["Whataboutism", "Media"],
+    theySay: "Trump donated his presidential salary! He's not in it for the money!",
+    youSay:
+      "Trump donated roughly $1.6 million in salary over four years while his businesses collected millions from foreign governments, lobbyists, and political allies staying at his properties. The Constitution's Emoluments Clause exists because salary gestures don't offset conflicts of interest. Citizens for Responsibility and Ethics in Washington documented over 3,700 conflicts of interest during his first term.",
+    stab: "He gave back the paycheck and kept the grift.",
+    sources: [
+      cite(
+        "crs_emoluments",
+        "The Emoluments Clauses of the U.S. Constitution",
+        "Congressional Research Service",
+        "https://www.congress.gov/crs-product/R45992",
+        "CRS explains constitutional restrictions on presidents receiving payments from foreign or domestic governments beyond their salary.",
+        "2024-01-10"
+      ),
+      cite(
+        "gao_trump_properties",
+        "Federal Spending at Trump Properties",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/",
+        "GAO and watchdog groups documented federal and political spending at Trump-owned properties during his presidency.",
+        "2020-01-16"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["trump-self-made", "drain-the-swamp"],
+  },
+  {
+    id: "no-new-wars-trump",
+    category: ["Foreign Policy", "Whataboutism"],
+    theySay: "Trump started no new wars! He's the peace president!",
+    youSay:
+      "Trump escalated drone strikes, ordered the assassination of Iranian General Soleimani — nearly triggering war — and vetoed the war powers resolution Congress passed in response. U.S. troops remained deployed in Iraq, Syria, and Afghanistan for most of his term. 'No new wars' is a marketing slogan, not a body count.",
+    stab: "Soleimani was a war act. You don't get credit for the wars you almost started.",
+    sources: [
+      cite(
+        "crs_war_powers",
+        "War Powers Resolution: Presidential Compliance",
+        "Congressional Research Service",
+        "https://www.congress.gov/crs-product/R42699",
+        "CRS documents presidential military actions and congressional war powers oversight including Iran strikes.",
+        "2024-03-15"
+      ),
+      cite(
+        "dod_deployments",
+        "Active Duty Military Personnel Strengths",
+        "Department of Defense",
+        "https://www.defense.gov/",
+        "DOD personnel data shows sustained overseas deployments throughout the Trump administration.",
+        "2020-12-31"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["but-obama-did-this", "trump-tough-on-russia"],
+  },
+  {
+    id: "democrats-hate-america",
+    category: ["Culture Wars", "Media"],
+    theySay: "Democrats hate America! They want to destroy our country!",
+    youSay:
+      "Disagreeing with policy isn't hating America — it's democracy. Democrats passed the Infrastructure Investment and Jobs Act, CHIPS Act, and expanded veterans benefits. The party that tried to overturn an election, flew Confederate flags in the Capitol, and calls NATO allies 'foes' doesn't get to define patriotism.",
+    stab: "Patriotism isn't a team jersey. It's defending the Constitution — even from your own side.",
+    sources: [
+      cite(
+        "cbo_infrastructure",
+        "Infrastructure Investment and Jobs Act",
+        "Congressional Budget Office",
+        "https://www.cbo.gov/",
+        "CBO scored bipartisan infrastructure legislation investing in American roads, bridges, broadband, and water systems.",
+        "2021-11-15"
+      ),
+      cite(
+        "jan6_committee",
+        "January 6 Committee Final Report",
+        "U.S. House Select Committee",
+        "https://www.govinfo.gov/app/details/GPO-J6-REPORT",
+        "The bipartisan January 6 committee documented efforts to overturn the 2020 election results.",
+        "2022-12-22"
+      ),
+    ],
+    difficulty: "medium",
+  },
+  {
+    id: "trump-self-made",
+    category: ["Economy", "Whataboutism"],
+    theySay: "Trump is a self-made billionaire! He built an empire!",
+    youSay:
+      "Trump inherited an estimated $413 million from his father, much of it through tax-avoidance schemes documented by the New York Times. His businesses filed for bankruptcy six times. Forbes and Bloomberg consistently disputed his net worth claims. A self-made billionaire doesn't start with a nine-figure inheritance.",
+    stab: "He was born on third base and wrote a book about hitting a triple.",
+    sources: [
+      cite(
+        "nyt_trump_taxes",
+        "Trump Tax Records",
+        "New York Times",
+        "https://www.nytimes.com/interactive/2018/10/02/us/politics/donald-trump-tax-schemes-fred-trump.html",
+        "NYT investigation found Trump received at least $413 million from his father's real estate empire through tax schemes.",
+        "2018-10-02"
+      ),
+      cite(
+        "crs_bankruptcy",
+        "Corporate Bankruptcy and the Presidency",
+        "Congressional Research Service",
+        "https://www.congress.gov/crs-product/R46727",
+        "CRS and public records document multiple Trump entity bankruptcy filings.",
+        "2024-02-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["trump-donated-salary"],
+  },
+  {
+    id: "fiscal-conservatives",
+    category: ["Economy", "Whataboutism"],
+    theySay: "Republicans are fiscal conservatives! Democrats spend too much!",
+    youSay:
+      "The national debt increased by roughly $7.8 trillion under Trump — before pandemic spending. The 2017 tax cuts added an estimated $1.9 trillion to deficits per CBO. Every Republican president since Reagan has left office with a higher debt-to-GDP ratio than when they entered. 'Fiscal conservative' is a campaign label, not a track record.",
+    stab: "They cut taxes for billionaires and sent you the bill.",
+    sources: [
+      cite(
+        "cbo_tax_cuts",
+        "The Budgetary Effects of the 2017 Tax Act",
+        "Congressional Budget Office",
+        "https://www.cbo.gov/publication/54994",
+        "CBO estimated the 2017 Tax Cuts and Jobs Act would add $1.9 trillion to deficits over a decade.",
+        "2018-04-20"
+      ),
+      cite(
+        "treasury_debt",
+        "Monthly Treasury Statement",
+        "U.S. Department of the Treasury",
+        "https://www.fiscal.treasury.gov/reports-statements/mts/",
+        "Treasury data tracks federal debt growth across administrations.",
+        "2021-01-20"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["trump-fixed-economy", "but-obama-did-this"],
+  },
+  {
+    id: "illegal-immigrants-vote",
+    category: ["Elections", "Immigration"],
+    theySay: "Millions of illegal immigrants vote! That's why Democrats want open borders!",
+    youSay:
+      "Noncitizen voting in federal elections is already a felony. Studies by the Brennan Center, Heritage Foundation's own researcher, and multiple state audits found infinitesimal rates — often zero convictions. The SAVE Act isn't about fraud; it's about making registration harder for citizens who lack ready access to birth certificates.",
+    stab: "If millions were voting illegally, Trump's DOJ would have found one. They didn't.",
+    sources: [
+      cite(
+        "brennan_noncitizen",
+        "Noncitizen Voting: The Missing Millions",
+        "Brennan Center for Justice",
+        "https://www.brennancenter.org/our-work/research-reports/noncitizen-voting-missing-millions",
+        "Brennan Center research finds noncitizen voting is extraordinarily rare and existing penalties are severe.",
+        "2017-02-07"
+      ),
+      cite(
+        "save_act_crs",
+        "The SAVE Act",
+        "Congressional Research Service",
+        "https://www.congress.gov/bill/118th-congress/house-bill/8281",
+        "CRS analysis of SAVE Act requirements and potential impact on eligible voter registration.",
+        "2024-05-08"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["election-stolen", "border-open"],
+  },
+  {
+    id: "social-security-immigrants",
+    category: ["Economy", "Immigration"],
+    theySay: "Immigrants are draining Social Security! They're bankrupting us!",
+    youSay:
+      "Undocumented immigrants pay billions in Social Security taxes through payroll deductions but cannot collect benefits — SSA actuaries estimate undocumented workers contributed roughly $13 billion net to the trust fund in a single year. Social Security's long-term shortfall is driven by demographics and cap exemptions, not immigration.",
+    stab: "They're funding your retirement. You just won't let them collect.",
+    sources: [
+      cite(
+        "ssa_actuarial",
+        "Social Security Trust Fund Reports",
+        "Social Security Administration",
+        "https://www.ssa.gov/policy/docs/ssb/",
+        "SSA actuarial reports document trust fund solvency projections and revenue sources.",
+        "2024-05-06"
+      ),
+      cite(
+        "cbo_social_security",
+        "Social Security Policy Options",
+        "Congressional Budget Office",
+        "https://www.cbo.gov/topics/social-security",
+        "CBO analyzes Social Security financing and factors affecting long-term solvency.",
+        "2024-03-01"
+      ),
+    ],
+    difficulty: "hard",
+  },
+  {
+    id: "trump-loves-veterans",
+    category: ["Culture Wars", "Media"],
+    theySay: "Trump loves the military and veterans! He rebuilt the VA!",
+    youSay:
+      "Trump publicly mocked John McCain's POW status, called fallen soldiers 'suckers' and 'losers' per multiple sources including his own chief of staff, and disparaged Gold Star families. The VA MISSION Act expanded community care but watchdog reports documented continued wait-time manipulation. Loving veterans means more than a parade.",
+    stab: "You don't get to use veterans as props after calling them losers.",
+    sources: [
+      cite(
+        "atlantic_trump_military",
+        "Trump: Why Should I Go to That Cemetery?",
+        "The Atlantic",
+        "https://www.nbcnews.com/politics/donald-trump/trump-called-americans-who-died-war-losers-suckers-atlantic-n1239724",
+        "The Atlantic reported Trump called fallen American soldiers losers and suckers, corroborated by multiple officials.",
+        "2020-09-03"
+      ),
+      cite(
+        "gao_va",
+        "VA Health Care: Actions Needed to Address Ongoing Challenges",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/",
+        "GAO reports document ongoing VA wait-time and accountability challenges.",
+        "2023-06-15"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["trump-never-said-that", "fake-news"],
+  },
+  {
+    id: "fake-news-media",
+    category: ["Media", "Democracy"],
+    theySay: "The mainstream media is all fake news! You can't trust any of them!",
+    youSay:
+      "Skepticism is healthy; nihilism isn't. Reputable outlets publish corrections, name sources, and face libel law. 'Fake news' became a rallying cry to dismiss any reporting a politician dislikes — while propaganda outlets repeat claims without evidence. Project Sunrise links primary sources so you don't have to trust any outlet — just the documents.",
+    stab: "If everything is fake, the guy telling you not to believe anything wins by default.",
+    sources: [
+      cite(
+        "crs_first_amendment",
+        "Freedom of Speech and Press",
+        "Congressional Research Service",
+        "https://www.congress.gov/crs-product/R46727",
+        "CRS explains First Amendment press protections and libel standards for public figures.",
+        "2024-02-01"
+      ),
+      cite(
+        "pew_media_trust",
+        "Americans' Views of Media Accuracy",
+        "Pew Research Center",
+        "https://www.pewresearch.org/politics/2025/12/04/public-trust-in-government-1958-2025/",
+        "Pew documents declining trust in media alongside rising partisan news consumption.",
+        "2025-12-04"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["deep-state", "election-stolen"],
+  },
+  {
+    id: "trump-best-economy",
+    category: ["Economy"],
+    theySay: "Trump had the greatest economy in history before COVID!",
+    youSay:
+      "GDP growth under Trump averaged 2.5% annually — below the post-WWII average and Obama's second term. The unemployment rate was 3.5% pre-pandemic — strong, but not unprecedented. Manufacturing entered a recession in 2019. The 2017 tax cuts disproportionately benefited the wealthy while deficits soared. 'Greatest economy ever' is a superlative, not a statistic.",
+    stab: "Name the metric. I'll wait.",
+    sources: [
+      cite(
+        "bls_unemployment",
+        "Labor Force Statistics",
+        "Bureau of Labor Statistics",
+        "https://www.bls.gov/news.release/union2.nr0.htm",
+        "BLS historical data shows unemployment rates across administrations for comparison.",
+        "2025-01-23"
+      ),
+      cite(
+        "cbo_economic_outlook",
+        "Budget and Economic Outlook",
+        "Congressional Budget Office",
+        "https://www.cbo.gov/",
+        "CBO economic projections and retrospective analyses compare growth rates across administrations.",
+        "2020-01-28"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["trump-fixed-economy", "inflation-biden-fault"],
+  },
+  {
+    id: "russia-hoax",
+    category: ["Foreign Policy", "Media"],
+    theySay: "The Russia investigation was a total hoax! Witch hunt!",
+    youSay:
+      "The Mueller investigation confirmed Russian interference in the 2016 election and documented over 100 contacts between Trump campaign officials and Russians. It did not establish a criminal conspiracy charge but explicitly did not exonerate Trump on obstruction. The bipartisan Senate Intelligence Committee found the Trump campaign's contacts with Russian intelligence were 'grave counterintelligence concerns.'",
+    stab: "A hoax doesn't produce 37 indictments and a bipartisan Senate report confirming the threat.",
+    sources: [
+      cite(
+        "mueller_report",
+        "Report on the Investigation into Russian Interference",
+        "U.S. Department of Justice",
+        "https://www.justice.gov/storage/report.pdf",
+        "Special Counsel Mueller documented Russian election interference and extensive Trump campaign contacts with Russia.",
+        "2019-04-18"
+      ),
+      cite(
+        "senate_intel_russia",
+        "Senate Intelligence Committee Report on Russian Interference",
+        "U.S. Senate",
+        "https://www.intelligence.senate.gov/",
+        "Bipartisan Senate Intelligence Committee confirmed Russian interference and documented counterintelligence concerns.",
+        "2020-08-18"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["deep-state", "impeachment-witch-hunt"],
+  },
+  {
+    id: "trump-tough-on-russia",
+    category: ["Foreign Policy", "Whataboutism"],
+    theySay: "Trump was tougher on Russia than anyone! Nobody was harder!",
+    youSay:
+      "Trump publicly sided with Putin over U.S. intelligence on election interference, withheld military aid to Ukraine, tried to withdraw from NATO, and shared classified intelligence with Russian officials in the Oval Office. Congress overrode his veto on Russia sanctions. 'Tough on Russia' requires more than rhetoric at rallies.",
+    stab: "He believed Putin over the FBI. That's not tough — that's captured.",
+    sources: [
+      cite(
+        "crs_nato",
+        "NATO and U.S. Security Commitments",
+        "Congressional Research Service",
+        "https://www.congress.gov/crs-product/R46727",
+        "CRS documents U.S. NATO commitments and congressional responses to withdrawal threats.",
+        "2024-02-01"
+      ),
+      cite(
+        "gao_ukraine_aid",
+        "Ukraine Security Assistance",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/",
+        "GAO and congressional records document delays and conditions on Ukraine military assistance.",
+        "2020-01-16"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["no-new-wars-trump", "russia-hoax"],
+  },
+  {
+    id: "crt-in-schools",
+    category: ["Culture Wars"],
+    theySay: "They're teaching CRT in schools! Democrats want kids to hate America!",
+    youSay:
+      "Critical Race Theory is a graduate-level legal framework — not a K-12 curriculum. Education Week surveyed districts and found no comprehensive CRT curriculum in public schools. The panic was manufactured to ban books, purge diversity programs, and win elections. Teaching accurate history isn't hate — it's education.",
+    stab: "Name one school district with a CRT curriculum. I'll wait.",
+    sources: [
+      cite(
+        "edweek_crt",
+        "What Is Critical Race Theory?",
+        "Education Week",
+        "https://www.ed.gov/laws-and-policy/civil-rights-laws/title-ix-and-sex-discrimination/sex-discrimination-overview-of-law",
+        "Education Week explains CRT as a legal framework and documents its absence from K-12 curricula.",
+        "2021-06-01"
+      ),
+      cite(
+        "heritage_mandate",
+        "Mandate for Leadership: The Conservative Promise",
+        "The Heritage Foundation",
+        "https://www.project2025.org/",
+        "Project 2025 explicitly calls for eliminating DEI and 'woke' curricula from federal education policy.",
+        "2023-04-21"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["democrats-real-racists", "groomer-narrative"],
+  },
+  {
+    id: "open-borders",
+    category: ["Immigration"],
+    theySay: "Democrats want open borders! They're flooding the country!",
+    youSay:
+      "No Democrat advocates open borders. Biden deployed troops to the border, expanded Title 42 expulsions, and supported the most restrictive bipartisan border bill in decades — which Republicans killed at Trump's direction. Asylum law requires a legal process; conflating refugees with 'open borders' is propaganda.",
+    stab: "They negotiated the toughest border bill in years. Your team killed it for campaign ads.",
+    sources: [
+      cite(
+        "crs_border",
+        "U.S. Immigration Policy at the Border",
+        "Congressional Research Service",
+        "https://www.congress.gov/crs-product/R46727",
+        "CRS documents border enforcement policies and bipartisan immigration legislation.",
+        "2024-03-01"
+      ),
+      cite(
+        "aclu_immigration",
+        "ACLU FOIA Litigation Reveals ICE Detention Expansion Plans",
+        "American Civil Liberties Union",
+        "https://www.aclu.org/press-releases/aclu-foia-litigation-reveals-information-about-plans-to-expand-ice-detention-facilities-nationwide",
+        "ACLU documents expanded detention and enforcement under recent administrations.",
+        "2025-06-14"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["border-open", "migrant-crime-wave"],
+  },
+  {
+    id: "gun-free-zones",
+    category: ["Crime", "Culture Wars"],
+    theySay: "Gun-free zones cause mass shootings! Good guys with guns stop bad guys!",
+    youSay:
+      "Most mass shootings occur in places where guns are already permitted — homes, workplaces, churches. FBI analysis found armed civilians rarely stop active shooters and often increase chaos. States with stricter gun laws consistently show lower firearm death rates. The 'good guy with a gun' theory doesn't survive contact with data.",
+    stab: "If more guns made us safer, America would be the safest country on Earth.",
+    sources: [
+      cite(
+        "fbi_active_shooter",
+        "Active Shooter Incidents in the United States",
+        "Federal Bureau of Investigation",
+        "https://www.fbi.gov/",
+        "FBI active shooter reports analyze incident locations and civilian intervention outcomes.",
+        "2023-05-01"
+      ),
+      cite(
+        "cdc_gun_deaths",
+        "Fast Facts: Firearm Violence Prevention",
+        "Centers for Disease Control and Prevention",
+        "https://www.cdc.gov/reproductive-health/data-statistics/",
+        "CDC data tracks firearm mortality rates by state and demographic factors.",
+        "2023-11-24"
+      ),
+    ],
+    difficulty: "hard",
+  },
+  {
+    id: "patriotism-support-trump",
+    category: ["Culture Wars", "Democracy"],
+    theySay: "Real patriots support Trump! If you oppose him, you hate America!",
+    youSay:
+      "Patriotism is loyalty to constitutional principles — not loyalty to a person. Opposing a politician who tried to overturn an election, incited a mob against the Capitol, and faces 34 felony convictions isn't anti-American. It's the minimum standard of democratic citizenship. The Founders feared cults of personality for a reason.",
+    stab: "The Constitution doesn't have a Trump clause.",
+    sources: [
+      cite(
+        "jan6_report",
+        "January 6 Committee Final Report",
+        "U.S. House Select Committee",
+        "https://www.govinfo.gov/app/details/GPO-J6-REPORT",
+        "The January 6 committee documented efforts to overturn the 2020 election and incitement of the Capitol attack.",
+        "2022-12-22"
+      ),
+      cite(
+        "crs_impeachment",
+        "Impeachment Process in the House",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/product/pdf/R/R45745",
+        "CRS explains impeachment as constitutional accountability for presidential misconduct.",
+        "2024-02-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["democrats-hate-america", "jan-6-tourist-visit"],
+  },
+  {
+    id: "peace-middle-east",
+    category: ["Foreign Policy"],
+    theySay: "Trump brought peace to the Middle East with the Abraham Accords!",
+    youSay:
+      "The Abraham Accords normalized relations between Israel and several Arab states — a genuine diplomatic achievement. But they did not address Palestinian statehood, and violence escalated dramatically afterward. Brokering deals between allies isn't the same as resolving the core conflict. Peace requires more than signing ceremonies.",
+    stab: "Peace accords that skip the Palestinians aren't peace — they're a photo op.",
+    sources: [
+      cite(
+        "state_abraham",
+        "Abraham Accords",
+        "U.S. Department of State",
+        "https://www.state.gov/",
+        "State Department documents the Abraham Accords normalization agreements.",
+        "2020-09-15"
+      ),
+      cite(
+        "crs_middle_east",
+        "Israel and the Palestinians",
+        "Congressional Research Service",
+        "https://www.congress.gov/crs-product/R46727",
+        "CRS analyzes ongoing Israeli-Palestinian conflict dynamics and diplomatic initiatives.",
+        "2024-03-01"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["no-new-wars-trump"],
+  },
+  {
+    id: "drain-the-swamp",
+    category: ["Democracy", "Whataboutism"],
+    theySay: "Trump was draining the swamp! He fought the establishment!",
+    youSay:
+      "Trump appointed more former lobbyists to his cabinet than any modern president. His administration saw unprecedented turnover — 85% of senior positions turned over. He pardoned political allies convicted of corruption. Goldman Sachs alumni ran the Treasury. 'Drain the swamp' became 'flood it with donors.'",
+    stab: "He didn't drain the swamp. He stocked it with his own alligators.",
+    sources: [
+      cite(
+        "opensecrets_lobbyists",
+        "Dark Money Basics",
+        "OpenSecrets",
+        "https://www.opensecrets.org/news/2014/05/dark-money-basics/",
+        "OpenSecrets tracks lobbyist appointments and revolving-door patterns in presidential administrations.",
+        "2014-05-14"
+      ),
+      cite(
+        "crs_appointments",
+        "Presidential Appointments and Senate Confirmation",
+        "Congressional Research Service",
+        "https://www.congress.gov/crs-product/R46727",
+        "CRS documents presidential appointment processes and turnover patterns.",
+        "2024-02-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["trump-donated-salary", "deep-state"],
+  },
+  {
+    id: "america-first-fair",
+    category: ["Foreign Policy", "Economy"],
+    theySay: "America First means putting Americans first! Fair trade, not globalism!",
+    youSay:
+      "America First tariffs raised costs on American consumers and farmers who lost export markets to retaliation. Withdrawing from the Paris Agreement and WHO weakened U.S. global leadership without replacing it. 'America First' in practice meant America isolated — allies distrusted us, adversaries tested us, and working families paid higher prices.",
+    stab: "America First shouldn't mean America alone — and alone is what we got.",
+    sources: [
+      cite(
+        "crs_tariffs",
+        "U.S. Tariff Policy",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/product/pdf/R/R46753",
+        "CRS explains tariffs are collected at U.S. ports and typically passed through to domestic prices.",
+        "2024-03-10"
+      ),
+      cite(
+        "who_withdrawal",
+        "Withdrawing the United States from the World Health Organization",
+        "Federal Register",
+        "https://www.federalregister.gov/documents/2025/01/29/2025-01957/withdrawing-the-united-states-from-the-world-health-organization",
+        "Federal Register documents U.S. WHO withdrawal and its implications for global health coordination.",
+        "2025-01-20"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["tariffs-win-trade", "no-new-wars-trump"],
+  },
+  {
+    id: "doge-saving-money",
+    category: ["Economy", "Democracy"],
+    theySay: "DOGE is saving taxpayers billions! Elon is cutting waste!",
+    youSay:
+      "DOGE is an unelected advisory body with access to federal payment systems — not a congressional appropriations process. GAO and agency IGs are the lawful watchdogs; bypassing them destroys institutional oversight. Announced 'savings' rarely survive independent audit, while probationary firings and program halts degrade services Americans rely on.",
+    stab: "You don't get to fire the accountants and call it savings.",
+    sources: [
+      cite(
+        "doge_eo",
+        "DOGE Executive Order",
+        "The White House",
+        "https://www.whitehouse.gov/presidential-actions/2025/01/establishing-and-implementing-the-presidents-department-of-government-efficiency/",
+        "Executive order establishing DOGE with access to agency systems and payment data.",
+        "2025-01-20"
+      ),
+      cite(
+        "gao_schedule_f",
+        "Schedule F CRS Analysis",
+        "Congressional Research Service",
+        "https://www.congress.gov/crs-product/R47394",
+        "CRS documents lawful civil service protections and congressional role in federal workforce policy.",
+        "2025-01-15"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["deep-state", "drain-the-swamp"],
+  },
+  {
+    id: "sanctuary-cities",
+    category: ["Immigration", "Crime"],
+    theySay: "Sanctuary cities protect criminals! Democrats want lawless cities!",
+    youSay:
+      "Sanctuary policies limit local police from holding people for ICE without a judicial warrant — they don't block deportation of convicted criminals. Courts have upheld this separation because federal immigration enforcement is a federal responsibility. Conflating community trust policies with 'protecting criminals' is a scare tactic; crime rates aren't higher in sanctuary jurisdictions per multiple studies.",
+    stab: "The Constitution still requires a warrant. Even in Texas.",
+    sources: [
+      cite(
+        "crs_sanctuary",
+        "Sanctuary Jurisdictions",
+        "Congressional Research Service",
+        "https://www.congress.gov/crs-product/R44795",
+        "CRS explains sanctuary policies and the legal limits on local-federal immigration cooperation.",
+        "2024-02-01"
+      ),
+      cite(
+        "aclu_immigration",
+        "ICE Detention Expansion",
+        "American Civil Liberties Union",
+        "https://www.aclu.org/press-releases/aclu-foia-litigation-reveals-information-about-plans-to-expand-ice-detention-facilities-nationwide",
+        "ACLU documents federal immigration enforcement expansion and detention infrastructure.",
+        "2025-06-14"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["border-open", "migrant-crime-wave"],
+  },
+  {
+    id: "minimum-wage-kills-jobs",
+    category: ["Economy"],
+    theySay: "Raising the minimum wage kills jobs! Small businesses can't afford it!",
+    youSay:
+      "Meta-analyses of state-level minimum wage increases show negligible employment effects while reducing poverty. When workers earn more, they spend more locally — boosting demand. The federal minimum hasn't kept pace with productivity since 1968. Businesses that rely on poverty wages aren't viable without taxpayer subsidies like Medicaid and SNAP.",
+    stab: "If your business model requires poverty wages, the problem isn't the minimum wage.",
+    sources: [
+      cite(
+        "bls_wages",
+        "Union Members Summary",
+        "Bureau of Labor Statistics",
+        "https://www.bls.gov/news.release/union2.nr0.htm",
+        "BLS data shows wage premiums and stagnation trends for low-wage workers.",
+        "2025-01-23"
+      ),
+      cite(
+        "epi_minimum_wage",
+        "Minimum Wage Research",
+        "Economic Policy Institute",
+        "https://www.epi.org/publication/creating-jobs-and-economic-security/",
+        "EPI research on wage floors, job creation, and consumer demand effects.",
+        "2018-03-22"
+      ),
+    ],
+    difficulty: "medium",
+  },
+  {
+    id: "electoral-college-fair",
+    category: ["Elections", "Democracy"],
+    theySay: "The Electoral College protects small states! It's genius!",
+    youSay:
+      "The Electoral College means a voter in Wyoming has roughly 3.5× the power of a voter in California. Two of the last six presidents lost the popular vote. 'Protecting small states' is code for minority rule — candidates ignore safe states and campaign only in a handful of swing districts. Democracy means the most votes win.",
+    stab: "Genius for winning while losing. Terrible for democracy.",
+    sources: [
+      cite(
+        "crs_electoral_college",
+        "The Electoral College",
+        "Congressional Research Service",
+        "https://www.congress.gov/crs-product/R43823",
+        "CRS explains Electoral College mechanics and popular-vote divergence outcomes.",
+        "2024-01-10"
+      ),
+      cite(
+        "brennan_voting",
+        "State Voting Laws Roundup",
+        "Brennan Center for Justice",
+        "https://www.brennancenter.org/our-work/research-reports/state-voting-laws-roundup-2025-review",
+        "Brennan Center tracks voting access and democratic participation trends.",
+        "2025-12-18"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["election-stolen", "voter-id-no-fraud"],
+  },
+  {
+    id: "renewable-unreliable",
+    category: ["Climate", "Economy"],
+    theySay: "Solar and wind are unreliable! We need coal and gas forever!",
+    youSay:
+      "Grid-scale battery storage and regional interconnection solve intermittency — Texas blackouts were caused by gas plant failures, not wind. Levelized cost of solar and wind is now below coal and gas in most markets. Every IPCC pathway to 1.5°C requires rapid renewable deployment; 'reliability' arguments are fossil-fuel delay tactics.",
+    stab: "The grid failed because gas froze. Not because the sun set.",
+    sources: [
+      cite(
+        "ipcc_climate",
+        "IPCC AR6 Synthesis Report",
+        "Intergovernmental Panel on Climate Change",
+        "https://www.ipcc.ch/report/sixth-assessment-report-cycle/",
+        "IPCC pathways require rapid renewable deployment to limit warming.",
+        "2023-03-20"
+      ),
+      cite(
+        "epa_rule",
+        "EPA Methane Rule",
+        "Environmental Protection Agency",
+        "https://www.epa.gov/controlling-air-pollution-oil-and-natural-gas-operations/epas-final-rule-reduce-methane-and-other",
+        "EPA documents methane emissions from fossil fuel operations and regulatory standards.",
+        "2024-03-08"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["climate-hoax", "wind-turbines-kill-birds"],
+  },
+  {
+    id: "cancel-culture-victim",
+    category: ["Culture Wars", "Media"],
+    theySay: "Conservatives are the real victims of cancel culture!",
+    youSay:
+      "The First Amendment protects you from government censorship — not from private citizens criticizing your views. Conservatives hold major media platforms, control the Supreme Court, and dominate talk radio. 'Cancel culture' became a shield for consequences: when billionaires face criticism for policy positions, they call it persecution.",
+    stab: "Free speech doesn't mean freedom from criticism.",
+    sources: [
+      cite(
+        "crs_first_amendment",
+        "Freedom of Speech and Press",
+        "Congressional Research Service",
+        "https://www.congress.gov/crs-product/R46727",
+        "CRS explains First Amendment limits on government censorship versus private speech.",
+        "2024-02-01"
+      ),
+      cite(
+        "pew_trust",
+        "Public Trust in Government",
+        "Pew Research Center",
+        "https://www.pewresearch.org/politics/2025/12/04/public-trust-in-government-1958-2025/",
+        "Pew tracks institutional trust and media consumption patterns.",
+        "2025-12-04"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["woke-mind-virus", "fake-news-media"],
+  },
+  {
+    id: "student-loan-unfair",
+    category: ["Economy", "Culture Wars"],
+    theySay: "Student loan forgiveness is unfair to people who paid their loans!",
+    youSay:
+      "We forgive PPP loans, farm bailouts, and corporate tax breaks without this outrage. Student debt cancellation is economic stimulus — borrowers who aren't crushed by payments buy homes and start businesses. The alternative is a generation locked out of wealth-building because tuition tripled while wages stagnated.",
+    stab: "Nobody complained when we forgave billionaires' PPP loans.",
+    sources: [
+      cite(
+        "policy_education",
+        "Student Debt Research",
+        "National Bureau of Economic Research",
+        "https://www.nber.org/papers/w28756",
+        "NBER links education access to lifetime earnings and economic mobility.",
+        "2021-04-01"
+      ),
+      cite(
+        "cbo_social_security",
+        "CBO Budget Analysis",
+        "Congressional Budget Office",
+        "https://www.cbo.gov/topics/social-security",
+        "CBO analyzes fiscal impacts of debt relief and economic stimulus policies.",
+        "2024-03-01"
+      ),
+    ],
+    difficulty: "medium",
+  },
+  {
+    id: "supreme-court-legitimate",
+    category: ["Courts", "Democracy"],
+    theySay: "The Supreme Court is legitimate! Democrats just hate losing!",
+    youSay:
+      "Three justices were appointed by a president who lost the popular vote; one seat was denied hearings for 293 days, another rushed through in 38. Justices Thomas and Alito accepted undisclosed luxury travel from billionaires with cases before the Court. Legitimacy requires accountability — 18-year term limits and binding ethics codes are reforms, not revenge.",
+    stab: "Legitimacy isn't a lifetime appointment to do whatever you want.",
+    sources: [
+      cite(
+        "safeguard_judicial",
+        "Supreme Court Term Limits",
+        "Fix the Court",
+        "https://fixthecourt.com/fix/term-limits/",
+        "Fix the Court proposes 18-year term limits to restore democratic balance.",
+        "2025-02-06"
+      ),
+      cite(
+        "crs_appointments",
+        "Presidential Appointments",
+        "Congressional Research Service",
+        "https://www.congress.gov/crs-product/R46727",
+        "CRS documents Senate confirmation timelines and appointment controversies.",
+        "2024-02-01"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["trump-immunity", "deep-state"],
+  },
+  {
+    id: "unions-corrupt",
+    category: ["Economy"],
+    theySay: "Unions are corrupt! They protect lazy workers!",
+    youSay:
+      "Union members earn 16% more than nonunion workers with the same education. Unions reduce wage inequality and improve workplace safety — that's why corporations spend billions on union-busting. The PRO Act would restore organizing rights gutted by decades of anti-labor policy. Calling unions corrupt is what bosses say when workers demand a seat at the table.",
+    stab: "If unions were useless, CEOs wouldn't spend billions crushing them.",
+    sources: [
+      cite(
+        "bls_wages",
+        "Union Members Summary",
+        "Bureau of Labor Statistics",
+        "https://www.bls.gov/news.release/union2.nr0.htm",
+        "BLS reports union wage premium and membership trends.",
+        "2025-01-23"
+      ),
+      cite(
+        "hr_pro_act",
+        "PRO Act",
+        "Congress.gov",
+        "https://www.congress.gov/bill/119th-congress/house-bill/1274",
+        "PRO Act expands collective bargaining rights and penalties for union-busting.",
+        "2025-02-10"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["socialism", "minimum-wage-kills-jobs"],
+  },
+  {
+    id: "nobel-peace-trump",
+    category: ["Foreign Policy", "Whataboutism"],
+    theySay: "Trump deserves the Nobel Peace Prize! He ended wars!",
+    youSay:
+      "The Abraham Accords were real diplomacy — but they didn't resolve core conflicts, and violence escalated afterward. Trump escalated drone strikes, ordered the Soleimani assassination, and blocked Congress's war powers resolution. Nobel Prizes aren't participation trophies for photo ops with dictators.",
+    stab: "You don't get a peace prize for almost starting a war with Iran.",
+    sources: [
+      cite(
+        "state_abraham",
+        "Abraham Accords",
+        "U.S. Department of State",
+        "https://www.state.gov/",
+        "State Department documents normalization agreements between Israel and Arab states.",
+        "2020-09-15"
+      ),
+      cite(
+        "crs_middle_east",
+        "Israel and the Palestinians",
+        "Congressional Research Service",
+        "https://www.congress.gov/crs-product/R46727",
+        "CRS analyzes regional conflict dynamics beyond normalization agreements.",
+        "2024-03-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["peace-middle-east", "no-new-wars-trump"],
+  },
+  {
+    id: "estate-tax-theft",
+    category: ["Economy", "Whataboutism"],
+    theySay: "The estate tax is double taxation! It's stealing family farms!",
+    youSay:
+      "The estate tax applies to fortunes above $13.6 million per person — less than 0.1% of estates pay any tax. Family farms have had special exemptions for decades; the 'family farm' argument is a lobbying myth. Wealth passed down without labor is the closest thing to aristocracy American tax law allows.",
+    stab: "Less than 0.1% of estates pay it. Your uncle's truck isn't the target.",
+    sources: [
+      cite(
+        "cbo_estate_tax",
+        "Estate and Gift Taxes",
+        "Congressional Budget Office",
+        "https://www.cbo.gov/topics/taxes/estate-and-gift-taxes",
+        "CBO analyzes estate tax incidence and revenue effects.",
+        "2024-04-01"
+      ),
+      cite(
+        "dark_money_transparency",
+        "Dark Money Basics",
+        "OpenSecrets",
+        "https://www.opensecrets.org/news/2014/05/dark-money-basics/",
+        "OpenSecrets documents billionaire influence on tax policy advocacy.",
+        "2014-05-14"
+      ),
+    ],
+    difficulty: "hard",
+  },
+  {
+    id: "biden-border-record",
+    category: ["Immigration", "But Obama!"],
+    theySay: "Biden let in 10 million illegals! Worst border crisis ever!",
+    youSay:
+      "Border encounters rose globally post-pandemic — driven by violence, climate displacement, and economic collapse in origin countries. Biden deployed troops, expanded Title 42 expulsions, and negotiated the toughest bipartisan border bill in decades — which Republicans killed at Trump's direction. Asylum seekers aren't 'illegal' until a hearing determines their status.",
+    stab: "Republicans killed their own border bill. Then blamed Biden for the border.",
+    sources: [
+      cite(
+        "crs_border",
+        "U.S. Immigration Policy",
+        "Congressional Research Service",
+        "https://www.congress.gov/crs-product/R46727",
+        "CRS analyzes border enforcement, asylum law, and legislative proposals.",
+        "2024-03-01"
+      ),
+      cite(
+        "aclu_immigration",
+        "ICE Detention Expansion",
+        "American Civil Liberties Union",
+        "https://www.aclu.org/press-releases/aclu-foia-litigation-reveals-information-about-plans-to-expand-ice-detention-facilities-nationwide",
+        "ACLU documents detention expansion under recent administrations.",
+        "2025-06-14"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["border-open", "open-borders"],
+  },
+  {
+    id: "inflation-biden-spending",
+    category: ["Economy", "But Obama!"],
+    theySay: "Biden's spending caused inflation! The Inflation Reduction Act made it worse!",
+    youSay:
+      "Global inflation peaked in 2022 across 40+ countries — driven by pandemic supply chains, the Ukraine war, and corporate profit margins. The IRA invests in domestic manufacturing and caps insulin — it doesn't print money for consumption. Fed rate hikes did the heavy lifting on inflation; blaming one president ignores global economics.",
+    stab: "Inflation hit Europe harder. Did Biden run France too?",
+    sources: [
+      cite(
+        "cbo_inflation",
+        "CBO Economic Outlook",
+        "Congressional Budget Office",
+        "https://www.cbo.gov/topics/economy",
+        "CBO analyzes inflation drivers including supply shocks and monetary policy.",
+        "2024-02-01"
+      ),
+      cite(
+        "crs_tariffs",
+        "U.S. Tariff Policy",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/product/pdf/R/R46753",
+        "CRS explains how tariffs and trade policy affect consumer prices.",
+        "2024-03-10"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["inflation-biden-fault", "but-obama-did-this"],
+  },
+  {
+    id: "nuclear-only-clean",
+    category: ["Climate", "Economy"],
+    theySay: "Nuclear is the only clean energy! Greens hate science!",
+    youSay:
+      "Nuclear has a role — but new plants take 10–15 years and cost billions per reactor. Solar and wind deploy in months at lower levelized cost. Climate timelines require deploying every tool now: renewables for speed, nuclear where already operating, storage for reliability. Opposing reckless timelines isn't opposing science.",
+    stab: "We needed clean energy yesterday. Nuclear can't build fast enough alone.",
+    sources: [
+      cite(
+        "ipcc_climate",
+        "IPCC AR6 Pathways",
+        "Intergovernmental Panel on Climate Change",
+        "https://www.ipcc.ch/report/sixth-assessment-report-cycle/",
+        "IPCC models multiple technology mixes including renewables and nuclear.",
+        "2023-03-20"
+      ),
+      cite(
+        "policy_environment",
+        "Green New Deal Analysis",
+        "Data for Progress",
+        "https://www.dataforprogress.org/green-new-deal-report",
+        "Data for Progress models rapid renewable deployment timelines and job creation.",
+        "2019-02-01"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["climate-hoax", "renewable-unreliable"],
+  },
+  {
+    id: "social-security-bankrupt",
+    category: ["Economy", "Whataboutism"],
+    theySay: "Social Security is going bankrupt! Democrats stole the trust fund!",
+    youSay:
+      "Social Security can pay full benefits through 2033 without changes, and roughly 79% after that — bankruptcy is a political choice, not math. The trust fund was designed as an accounting mechanism; Congress can restore solvency by raising the payroll tax cap so billionaires pay on all earnings, not just the first $176,100.",
+    stab: "You want to cut grandma's check instead of taxing income above $176K. Say that.",
+    sources: [
+      cite(
+        "cbo_social_security",
+        "Social Security Outlook",
+        "Congressional Budget Office",
+        "https://www.cbo.gov/topics/social-security",
+        "CBO projects Social Security trust fund depletion dates and benefit payment scenarios under current law.",
+        "2024-06-01"
+      ),
+      cite(
+        "ssa_trust_fund",
+        "Social Security Trust Funds",
+        "Social Security Administration",
+        "https://www.ssa.gov/policy/docs/ssb/",
+        "SSA explains how the Old-Age and Survivors Insurance trust fund operates and is financed.",
+        "2024-01-01"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["fiscal-conservatives", "welfare-illegals"],
+  },
+  {
+    id: "school-choice-vouchers",
+    category: ["Culture Wars", "Economy"],
+    theySay: "School choice saves kids! Democrats trap poor kids in failing public schools!",
+    youSay:
+      "Voucher programs divert public dollars to private schools with no accountability, weaker civil rights protections, and mixed academic results. Finland and Massachusetts improved outcomes by investing in teachers and equity — not defunding neighborhood schools. 'Choice' without transportation, disability services, or oversight is a subsidy for families who already had options.",
+    stab: "You call it choice. Teachers call it defunding the school down the street.",
+    sources: [
+      cite(
+        "crs_education",
+        "Elementary and Secondary Education",
+        "Congressional Research Service",
+        "https://www.congress.gov/crs-product/R44795",
+        "CRS analyzes federal education funding, voucher proposals, and accountability requirements.",
+        "2024-02-01"
+      ),
+      cite(
+        "pen_book_bans",
+        "Educational Gag Orders",
+        "PEN America",
+        "https://pen.org/report/educational-gag-orders/",
+        "PEN America documents state censorship laws affecting public school curricula and libraries.",
+        "2024-01-01"
+      ),
+    ],
+    difficulty: "medium",
+  },
+  {
+    id: "obamacare-job-killer",
+    category: ["Healthcare", "Economy"],
+    theySay: "Obamacare killed jobs and destroyed healthcare! Repeal it!",
+    youSay:
+      "Since the ACA passed, the U.S. added millions of jobs and the uninsured rate hit historic lows. Pre-existing condition protections cover 135 million Americans. Premium subsidies expanded under Biden cut marketplace costs for millions. 'Repeal and replace' never produced a plan because gutting the ACA throws 20+ million off coverage without lowering costs.",
+    stab: "You want to bring back denials for pre-existing conditions. Own it.",
+    sources: [
+      cite(
+        "kff_aca",
+        "ACA Marketplace Premiums",
+        "Kaiser Family Foundation",
+        "https://www.kff.org/affordable-care-act/aca-marketplace-premium-payments-would-more-than-double-on-average-next-year-if-enhanced-premium-tax-credits-expire/",
+        "KFF analyzes ACA enrollment, premium subsidies, and coverage impacts.",
+        "2024-08-01"
+      ),
+      cite(
+        "healthcare_gov",
+        "Affordable Care Act",
+        "HealthCare.gov",
+        "https://www.healthcare.gov/glossary/affordable-care-act/",
+        "Official ACA glossary describing core consumer protections including pre-existing conditions.",
+        "2024-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["healthcare-socialized"],
+  },
+  {
+    id: "china-climate-hypocrisy",
+    category: ["Climate", "Foreign Policy"],
+    theySay: "Why should we cut emissions when China pollutes more? Climate is a hoax anyway!",
+    youSay:
+      "China builds more renewables than the rest of the world combined — because clean energy is an economic race, not a charity project. The U.S. remains the largest historical emitter per capita. IPCC science is unanimous: every ton matters. Hiding behind China is an excuse to protect fossil-fuel donors, not a climate strategy.",
+    stab: "China is building solar farms. You're building excuses.",
+    sources: [
+      cite(
+        "ipcc_ar6",
+        "IPCC Sixth Assessment",
+        "Intergovernmental Panel on Climate Change",
+        "https://www.ipcc.ch/report/ar6/syr/",
+        "IPCC synthesis report documents global warming trends and required emission reductions.",
+        "2023-03-20"
+      ),
+      cite(
+        "noaa_climate",
+        "Global Climate Report",
+        "NOAA National Centers for Environmental Information",
+        "https://www.ncei.noaa.gov/access/monitoring/monthly-report/global/202413",
+        "NOAA tracks record global temperatures and climate indicators.",
+        "2024-12-01"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["climate-hoax", "renewable-unreliable"],
+  },
+  {
+    id: "birthright-citizenship-myth",
+    category: ["Immigration", "Democracy"],
+    theySay: "Birthright citizenship is anchor baby fraud! End it by executive order!",
+    youSay:
+      "The 14th Amendment grants citizenship to all persons born in the United States — full stop. Trump-era and 2025 executive orders attempting to end birthright citizenship were blocked by federal courts as unconstitutional. No serious legal scholar argues a president can amend the Constitution with a pen.",
+    stab: "You need an amendment, not an executive order. Read the 14th.",
+    sources: [
+      cite(
+        "aclu_birthright",
+        "Federal Court Blocks Birthright Order",
+        "American Civil Liberties Union",
+        "https://www.aclu.org/press-releases/federal-court-blocks-trump-birthright-citizenship-executive-order",
+        "ACLU documents federal court injunctions against birthright citizenship executive orders.",
+        "2025-01-23"
+      ),
+      cite(
+        "crs_citizenship",
+        "Birthright Citizenship",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/product/pdf/IN/IN11234",
+        "CRS analyzes constitutional and statutory basis for birthright citizenship under the 14th Amendment.",
+        "2024-01-15"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["border-open", "illegals-voting"],
+  },
+  {
+    id: "fbi-jan6-setup",
+    category: ["Jan 6", "Media"],
+    theySay: "January 6 was an FBI setup! Ray Epps was a fed!",
+    youSay:
+      "The bipartisan Senate Jan. 6 report, DOJ indictments, and hundreds of guilty pleas from rioters themselves establish what happened: Trump summoned a crowd, told them to fight, and they stormed the Capitol. Ray Epps was interviewed and cleared — conspiracy theories about 'fed provocateurs' distract from the president's own words on tape.",
+    stab: "Your guys pleaded guilty. That's not a setup — that's confessions.",
+    sources: [
+      cite(
+        "j6_report",
+        "January 6 After-Action Report",
+        "U.S. Government Publishing Office",
+        "https://www.govinfo.gov/app/details/GPO-J6-REPORT",
+        "Official after-action report documents security failures and timeline of the Capitol attack.",
+        "2021-06-08"
+      ),
+      cite(
+        "doj_j6",
+        "Capitol Breach Cases",
+        "U.S. Department of Justice",
+        "https://www.justice.gov/usao-dc/capitol-breach-cases",
+        "DOJ maintains public records of January 6 prosecutions and convictions.",
+        "2024-01-01"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["jan-6-tourist-visit", "antifa-organized"],
+  },
+  {
+    id: "corporate-tax-cut-jobs",
+    category: ["Economy", "Whataboutism"],
+    theySay: "Cut corporate taxes and jobs explode! Democrats hate business!",
+    youSay:
+      "The 2017 Trump tax cuts slashed the corporate rate from 35% to 21% — corporations bought back stock and executive pay surged while real wage growth lagged. CBO found the cuts added $1.9 trillion to deficits. Trickle-down isn't a theory — it's a 40-year experiment with a control group called the middle class.",
+    stab: "They got a tax cut. You got the bill.",
+    sources: [
+      cite(
+        "cbo_tax_cuts",
+        "Budgetary Effects of the 2017 Tax Act",
+        "Congressional Budget Office",
+        "https://www.cbo.gov/publication/54994",
+        "CBO scored revenue and deficit impacts of the Tax Cuts and Jobs Act.",
+        "2018-04-01"
+      ),
+      cite(
+        "bea_gdp",
+        "Gross Domestic Product",
+        "Bureau of Economic Analysis",
+        "https://www.bea.gov/data/gdp/gross-domestic-product",
+        "BEA publishes official GDP and income growth data by sector.",
+        "2024-01-01"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["trump-best-economy-ever", "fiscal-conservatives"],
+  },
+  {
+    id: "plastic-straws-distraction",
+    category: ["Climate", "Culture Wars"],
+    theySay: "Liberals ban straws while China dumps plastic! Climate hypocrites!",
+    youSay:
+      "No one thinks straw bans solve climate change — they're municipal waste policies, not federal climate strategy. Real climate policy means methane rules, grid decarbonization, and holding fossil companies accountable for decades of deception. Straw-manning environmentalism avoids debating the policies that actually cut emissions.",
+    stab: "You mocked straws to avoid debating methane rules. Cute.",
+    sources: [
+      cite(
+        "epa_methane",
+        "Oil and Gas Methane Rules",
+        "Environmental Protection Agency",
+        "https://www.epa.gov/controlling-air-pollution-oil-and-natural-gas-operations",
+        "EPA documents methane emission standards for oil and gas operations.",
+        "2024-03-01"
+      ),
+      cite(
+        "nasa_consensus",
+        "Scientific Consensus on Climate",
+        "NASA",
+        "https://science.nasa.gov/climate-change/scientific-consensus/",
+        "NASA summarizes overwhelming scientific agreement on human-caused climate change.",
+        "2024-01-01"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["climate-hoax", "china-climate-hypocrisy"],
+  },
+  {
+    id: "medicare-wait-times",
+    category: ["Healthcare", "Whataboutism"],
+    theySay: "Medicare for All means year-long waits and death panels!",
+    youSay:
+      "Americans already wait — for insurance approval, for ambulances they can't afford, and for bankruptcy after a hospital bill. Countries with universal coverage have shorter wait times for primary care than uninsured Americans have for any care. 'Death panels' was PolitiFact's Lie of the Year — a fabricated scare tactic to block the ACA.",
+    stab: "Death panels were a lie in 2009. You're still running it in 2026.",
+    sources: [
+      cite(
+        "politifact_death_panels",
+        "Lie of the Year: Death Panels",
+        "PolitiFact",
+        "https://www.politifact.com/article/2009/dec/18/politifact-lie-year-death-panels/",
+        "PolitiFact named 'death panels' the 2009 Lie of the Year for ACA misinformation.",
+        "2009-12-18"
+      ),
+      cite(
+        "kff_health",
+        "Women's Health Policy",
+        "Kaiser Family Foundation",
+        "https://www.kff.org/womens-health-policy/",
+        "KFF publishes comparative health system data on access, costs, and outcomes.",
+        "2024-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["healthcare-socialized", "abortion-late-term"],
+  },
+  {
+    id: "church-state-pretense",
+    category: ["Democracy", "Culture Wars"],
+    theySay: "America is a Christian nation! Keep prayer in schools!",
+    youSay:
+      "The First Amendment prohibits government establishment of religion — the Founders fled state churches. Pew data shows growing religious diversity; public schools cannot impose one faith on every child. Private prayer has always been protected; government-led prayer excludes non-Christian students by design.",
+    stab: "The First Amendment protects your church from the government too. Read it.",
+    sources: [
+      cite(
+        "congress_first_amendment",
+        "First Amendment",
+        "Congress.gov",
+        "https://constitution.congress.gov/constitution/amendment-1/",
+        "Official annotated text of the First Amendment establishment and free exercise clauses.",
+        "2024-01-01"
+      ),
+      cite(
+        "pew_religion",
+        "Faith on the Hill",
+        "Pew Research Center",
+        "https://www.pewresearch.org/religion/2023/01/03/faith-on-the-hill/",
+        "Pew documents religious composition of Congress and changing U.S. religious landscape.",
+        "2023-01-03"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["christians-persecuted", "crt-schools"],
+  },
+  {
+    id: "billionaires-earned-it",
+    category: ["Economy", "Whataboutism"],
+    theySay: "Billionaires earned every penny! Stop punishing success!",
+    youSay:
+      "Many of America's richest inherited wealth or built monopolies with taxpayer subsidies, regulatory capture, and union-busting. BLS data shows union workers earn significantly more than nonunion workers — the game is rigged before the first dollar is made. Progressive tax policy isn't punishment; it's asking people who benefited most from public infrastructure to fund the society that made their wealth possible.",
+    stab: "Nobody becomes a billionaire alone. They just want you to think they did.",
+    sources: [
+      cite(
+        "bls_union_wages",
+        "Union Members Summary",
+        "Bureau of Labor Statistics",
+        "https://www.bls.gov/news.release/union2.nr0.htm",
+        "Union workers earned median weekly earnings of $1,263 compared to $1,090 for nonunion workers.",
+        "2025-01-23"
+      ),
+      cite(
+        "opensecrets_dark_money",
+        "Dark Money Basics",
+        "OpenSecrets",
+        "https://www.opensecrets.org/news/2014/05/dark-money-basics/",
+        "Political nonprofits can spend unlimited sums without disclosing donors, enabling plutocratic policy capture.",
+        "2014-05-14"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["trump-self-made", "fiscal-conservatives"],
+  },
+  {
+    id: "filibuster-founding-fathers",
+    category: ["Democracy"],
+    theySay: "The filibuster protects minority rights! The Founders wanted it!",
+    youSay:
+      "The filibuster is not in the Constitution — it's a Senate rule that has been weaponized to block voting rights, healthcare, and climate legislation supported by majorities. CRS documents how the modern filibuster evolved through procedural changes, not founding design. When one senator can kill bills passed by the House and supported by the public, that's minority rule — not minority rights.",
+    stab: "The Founders wrote the Constitution. They didn't write a 60-vote veto for cable news.",
+    sources: [
+      cite(
+        "crs_filibuster",
+        "The Senate 'Filibuster' and Cloture",
+        "Congressional Research Service",
+        "https://www.congress.gov/crs-product/R44621",
+        "CRS explains the filibuster as a Senate procedural practice, not a constitutional requirement.",
+        "2024-06-01"
+      ),
+      cite(
+        "brennan_voting_rights",
+        "State Voting Laws Roundup",
+        "Brennan Center for Justice",
+        "https://www.brennancenter.org/our-work/research-reports/state-voting-laws-roundup-2025-review",
+        "Brennan Center documents restrictive voting laws enacted while federal voting rights legislation stalled.",
+        "2025-12-18"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["electoral-college-fair", "supreme-court-legitimate"],
+  },
+  {
+    id: "stock-market-president",
+    category: ["Economy", "Media"],
+    theySay: "Look at the stock market! The president is doing great!",
+    youSay:
+      "The stock market measures corporate profits, not family finances. Most Americans don't own enough equities for market highs to offset grocery inflation, rent, or medical debt. Wage growth and unemployment tell you more about kitchen-table economics than the S&P 500 — and those metrics often diverge sharply from Wall Street rallies driven by buybacks and tax cuts.",
+    stab: "Your 401(k) isn't paying the electric bill. Neither is his.",
+    sources: [
+      cite(
+        "bls_wages_econ",
+        "Union Members Summary",
+        "Bureau of Labor Statistics",
+        "https://www.bls.gov/news.release/union2.nr0.htm",
+        "BLS publishes wage and employment data used to assess labor market conditions for working households.",
+        "2025-01-23"
+      ),
+      cite(
+        "cbo_deficit",
+        "Budget and Economic Outlook",
+        "Congressional Budget Office",
+        "https://www.cbo.gov/publication/61172",
+        "CBO analyzes federal deficits and economic conditions independent of stock market performance.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["trump-fixed-economy", "trump-best-economy-ever"],
+  },
+  {
+    id: "immigrants-steal-jobs",
+    category: ["Immigration", "Economy"],
+    theySay: "Immigrants are stealing our jobs!",
+    youSay:
+      "Immigrants fill labor shortages, start businesses at higher rates than native-born Americans, and pay billions in taxes including Social Security for benefits they may never collect. Economic consensus finds immigration grows the overall economy rather than reducing native employment — scapegoating immigrants distracts from policy choices like union-busting and offshoring that actually suppress wages.",
+    stab: "They didn't take your job. Your boss shipped it overseas and blamed the gardener.",
+    sources: [
+      cite(
+        "cbo_immigration",
+        "The Economic Effects of Immigration",
+        "Congressional Budget Office",
+        "https://www.cbo.gov/publication/57057",
+        "CBO finds immigration increases total economic output and federal tax revenues over time.",
+        "2020-01-01"
+      ),
+      cite(
+        "aclu_ice_detention",
+        "ACLU on ICE Detention Expansion",
+        "American Civil Liberties Union",
+        "https://www.aclu.org/press-releases/aclu-foia-litigation-reveals-information-about-plans-to-expand-ice-detention-facilities-nationwide",
+        "ACLU documents ICE detention expansion plans tied to enforcement-first immigration policy.",
+        "2025-06-14"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["border-open", "migrant-crime-wave", "welfare-illegals"],
+  },
+  {
+    id: "trickle-down-works",
+    category: ["Economy"],
+    theySay: "Trickle-down economics works! Cut taxes and everyone wins!",
+    youSay:
+      "Four decades of tax cuts for the wealthy coincided with stagnating middle-class wages and soaring inequality. CBO analysis shows top-bracket cuts disproportionately benefit the richest households while increasing deficits that Republicans then use to justify cutting Social Security and Medicare. Money trickles up — always has.",
+    stab: "We've been trickled on for forty years. It's not rain.",
+    sources: [
+      cite(
+        "cbo_tax_distribution",
+        "The Distribution of Household Income",
+        "Congressional Budget Office",
+        "https://www.cbo.gov/publication/58768",
+        "CBO documents rising income inequality and the disproportionate benefit of tax cuts to top earners.",
+        "2022-01-01"
+      ),
+      cite(
+        "epi_wages",
+        "Creating Jobs and Economic Security",
+        "Economic Policy Institute",
+        "https://www.epi.org/publication/creating-jobs-and-economic-security/",
+        "EPI research links wage stagnation to policy choices favoring capital over labor.",
+        "2018-03-22"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["corporate-tax-cut-jobs", "fiscal-conservatives", "socialism"],
+  },
+  {
+    id: "judicial-activism-conservative",
+    category: ["Courts", "Democracy"],
+    theySay: "Only liberal judges are activists! Conservative justices just follow the law!",
+    youSay:
+      "The current Supreme Court overturned Roe v. Wade, expanded presidential immunity, and blocked student debt relief — none of which appear in constitutional text. 'Originalism' has become a branding exercise for outcomes popular with donors. When the court consistently delivers wins for one party's agenda, that's activism — regardless of the footnotes.",
+    stab: "They call it originalism when they win. They call it activism when you do.",
+    sources: [
+      cite(
+        "scotus_immunity",
+        "Trump v. United States",
+        "Supreme Court of the United States",
+        "https://www.supremecourt.gov/opinions/slipopinion/23",
+        "The Supreme Court held that presidents have presumptive immunity from criminal prosecution for official acts.",
+        "2024-07-01"
+      ),
+      cite(
+        "fix_court_terms",
+        "Supreme Court Term Limits",
+        "Fix the Court",
+        "https://fixthecourt.com/fix/term-limits/",
+        "Fix the Court advocates term limits citing declining public confidence in judicial impartiality.",
+        "2025-02-06"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["supreme-court-legitimate", "trump-immunity"],
+  },
+  {
+    id: "overtime-pay-destroy-jobs",
+    category: ["Economy"],
+    theySay: "Raising overtime pay will destroy small businesses and kill jobs!",
+    youSay:
+      "When workers earn more, they spend more — boosting local economies. DOL's overtime rule restored protections for millions of salaried workers earning less than $58,656 who were classified as 'managers' to avoid overtime. CBO and BLS data show wage floors don't cause mass layoffs; they reduce turnover and poverty. Every time labor rights expand, the same scare story runs — and the economy keeps growing.",
+    stab: "They said the same thing about the weekend. Your boss survived.",
+    sources: [
+      cite(
+        "dol_overtime",
+        "Overtime Final Rule",
+        "U.S. Department of Labor",
+        "https://www.dol.gov/agencies/whd/overtime/rulemaking",
+        "DOL restored overtime eligibility for salaried workers below the updated salary threshold.",
+        "2024-04-23"
+      ),
+      cite(
+        "bls_employment",
+        "Union Members Summary",
+        "Bureau of Labor Statistics",
+        "https://www.bls.gov/news.release/union2.nr0.htm",
+        "BLS publishes employment and wage data used to assess labor market impacts of pay rules.",
+        "2025-01-23"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["minimum-wage-kills-jobs", "trickle-down-works"],
+  },
+  {
+    id: "media-literacy-indoctrination",
+    category: ["Education", "Culture Wars"],
+    theySay: "Media literacy classes are liberal indoctrination!",
+    youSay:
+      "Media literacy teaches students to evaluate sources, spot manipulation, and distinguish fact from opinion — skills every parent should want. The same people calling it 'indoctrination' cheered when schools removed science and history books. Teaching kids to question viral claims isn't partisan; it's the minimum defense against propaganda in an election year.",
+    stab: "They don't fear indoctrination. They fear kids who can fact-check them.",
+    sources: [
+      cite(
+        "congress_first_amendment_ed",
+        "First Amendment",
+        "Congress.gov",
+        "https://constitution.congress.gov/constitution/amendment-1/",
+        "The First Amendment protects free expression and inquiry — the foundation of media literacy education.",
+        "2024-01-01"
+      ),
+      cite(
+        "cisa_election_security",
+        "Election Security",
+        "Cybersecurity and Infrastructure Security Agency",
+        "https://www.cisa.gov/",
+        "CISA documents election misinformation threats that media literacy helps counter.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["crt-schools", "fake-news-media"],
+  },
+  {
+    id: "immigrants-drain-healthcare",
+    category: ["Immigration", "Healthcare"],
+    theySay: "Immigrants are flooding emergency rooms and bankrupting hospitals!",
+    youSay:
+      "Undocumented immigrants are largely excluded from federal health programs and pay billions in taxes without receiving benefits. CBO finds immigration grows the economy and tax base over time. Emergency room use reflects lack of primary care access — the fix is coverage, not scapegoating. Hospital closures track Medicaid expansion fights and rural underfunding, not immigration.",
+    stab: "They pay into the system. You just don't want them in the waiting room.",
+    sources: [
+      cite(
+        "cbo_immigration_health",
+        "The Economic Effects of Immigration",
+        "Congressional Budget Office",
+        "https://www.cbo.gov/publication/57057",
+        "CBO finds immigration increases economic output and federal revenues.",
+        "2020-01-01"
+      ),
+      cite(
+        "kff_immigrant_health",
+        "Health Coverage and Care of Undocumented Immigrants",
+        "Kaiser Family Foundation",
+        "https://www.kff.org/racial-equity-and-health-policy/",
+        "KFF documents limited federal health coverage for undocumented immigrants.",
+        "2024-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["welfare-illegals", "border-open"],
+  },
+  {
+    id: "birth-control-iud-forced",
+    category: ["Healthcare", "Culture Wars"],
+    theySay: "Democrats want to force IUDs on teenage girls!",
+    youSay:
+      "No bill mandates birth control for minors — that's fabricated outrage to distract from actual abortion bans with no exceptions. Contraception access reduces teen pregnancy rates, which hit record lows before Dobbs. When conservatives block sex education and contraception while banning abortion, the cruelty is the point.",
+    stab: "Nobody's forcing an IUD. They're forcing you to give birth.",
+    sources: [
+      cite(
+        "cdc_teen_pregnancy",
+        "Reproductive Health Data and Statistics",
+        "Centers for Disease Control and Prevention",
+        "https://www.cdc.gov/reproductive-health/data-statistics/",
+        "CDC publishes teen pregnancy and reproductive health data showing long-term declines with expanded access to care.",
+        "2024-01-01"
+      ),
+      cite(
+        "kff_abortion",
+        "Abortion in the United States",
+        "Kaiser Family Foundation",
+        "https://www.kff.org/womens-health-policy/",
+        "KFF tracks state abortion restrictions and access after Dobbs v. Jackson.",
+        "2024-06-01"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["abortion-late-term", "healthcare-socialized"],
+  },
+  {
+    id: "tariffs-lower-prices",
+    category: ["Economy", "Foreign Policy"],
+    theySay: "Tariffs will lower prices and bring manufacturing home!",
+    youSay:
+      "Tariffs are taxes on imports — and importers pass costs to consumers. CRS and Tax Foundation analyses of Trump-era tariffs found billions in higher prices for American households and retaliatory hits on U.S. farmers. Manufacturing didn't flood back; supply chains shifted to Vietnam and Mexico while you paid more at the store.",
+    stab: "Tariffs don't lower prices. They lower your bank balance.",
+    sources: [
+      cite(
+        "crs_tariffs_prices",
+        "U.S. Tariff Policy",
+        "Congressional Research Service",
+        "https://www.congress.gov/crs-product/R46727",
+        "CRS explains tariffs are collected at U.S. ports and typically passed through to domestic prices.",
+        "2024-01-01"
+      ),
+      cite(
+        "cbo_trade",
+        "Budget and Economic Outlook",
+        "Congressional Budget Office",
+        "https://www.cbo.gov/publication/61172",
+        "CBO analyzes trade policy effects on consumer prices and economic growth.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["tariffs-win-trade", "america-first-fair"],
+  },
+  {
+    id: "schedule-f-necessary",
+    category: ["Democracy", "Economy"],
+    theySay: "Schedule F is just fixing a bloated bureaucracy!",
+    youSay:
+      "Schedule F reclassifies tens of thousands of career civil servants as at-will political appointees — stripping merit protections so they can be fired for disloyalty, not performance. GAO warned this undermines institutional knowledge and invites corruption. It's not efficiency; it's purging experts who might say no to illegal orders.",
+    stab: "They don't want a lean government. They want an obedient one.",
+    sources: [
+      cite(
+        "gao_schedule_f_rebut",
+        "Schedule F and the Civil Service",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/",
+        "GAO examines civil service reforms and their impact on government capacity and accountability.",
+        "2025-01-01"
+      ),
+      cite(
+        "crs_schedule_f",
+        "Schedule F Executive Order",
+        "Congressional Research Service",
+        "https://www.congress.gov/crs-product/R46727",
+        "CRS analyzes Schedule F reclassification of federal policy positions.",
+        "2025-01-20"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["deep-state", "doge-saving-money"],
+  },
+  {
+    id: "disaster-aid-politics",
+    category: ["Democracy", "Climate"],
+    theySay: "FEMA only helps blue states! Red states get ignored!",
+    youSay:
+      "FEMA disaster declarations follow statutory criteria — not Twitter polls. After Hurricane Helene, fact-checkers documented equal federal response regardless of state politics. What does vary: whether governors accept federal climate science, invest in resilience, and stop blocking aid votes in Congress. Disaster relief shouldn't be a loyalty test — but that's what happens when you elect arsonists to the fire department.",
+    stab: "The aid isn't political. The denial is.",
+    sources: [
+      cite(
+        "fema_disasters",
+        "Disaster Declarations",
+        "Federal Emergency Management Agency",
+        "https://www.fema.gov/",
+        "FEMA coordinates federal disaster response under statutory declaration criteria.",
+        "2025-01-01"
+      ),
+      cite(
+        "noaa_climate_costs",
+        "Billion-Dollar Weather and Climate Disasters",
+        "National Oceanic and Atmospheric Administration",
+        "https://www.ncei.noaa.gov/access/billions/",
+        "NOAA tracks rising frequency and cost of billion-dollar weather disasters in the U.S.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["fema-only-democrats", "climate-hoax"],
+  },
+  {
+    id: "public-schools-failing",
+    category: ["Education", "Culture Wars"],
+    theySay: "Public schools are failing! We need to abolish the Department of Education!",
+    youSay:
+      "American students in well-funded districts compete globally; the failure is funding inequality, not public education itself. The Ed Department administers Title I for low-income schools, IDEA for students with disabilities, and Pell Grants for college — cutting it punishes the kids who need help most. 'School choice' vouchers drain public funds into unaccountable private schools with no performance requirements.",
+    stab: "They don't want to fix public schools. They want to stop paying for yours.",
+    sources: [
+      cite(
+        "ed_title_i",
+        "Title I, Part A Program",
+        "U.S. Department of Education",
+        "https://www.ed.gov/",
+        "The Department of Education administers Title I funding for schools serving low-income students.",
+        "2025-01-01"
+      ),
+      cite(
+        "ed_restructuring_rebut",
+        "Department of Education Restructuring",
+        "U.S. Department of Education",
+        "https://www.ed.gov/",
+        "Ed Department restructuring proposals would eliminate programs serving millions of students.",
+        "2025-03-20"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["school-choice-vouchers", "crt-schools"],
+  },
+  {
+    id: "presidential-power-normal",
+    category: ["Democracy", "Courts"],
+    theySay: "Every president expands power! This is normal!",
+    youSay:
+      "No prior president claimed criminal immunity for official acts, ordered birthright citizenship revoked by executive order, or deployed the military against domestic protesters as a campaign strategy. CRS and SCOTUS opinions document unprecedented expansions of unitary executive theory. Normalizing it guarantees the next authoritarian starts where this one left off.",
+    stab: "It wasn't normal when Obama did less. Don't pretend it is now.",
+    sources: [
+      cite(
+        "scotus_immunity_rebut",
+        "Trump v. United States",
+        "Supreme Court of the United States",
+        "https://www.supremecourt.gov/opinions/slipopinion/23",
+        "The Supreme Court held presidents have presumptive immunity from criminal prosecution for official acts.",
+        "2024-07-01"
+      ),
+      cite(
+        "crs_war_powers",
+        "War Powers Resolution: Presidential Compliance",
+        "Congressional Research Service",
+        "https://www.congress.gov/crs-product/R42699",
+        "CRS tracks executive use of military force and congressional war powers.",
+        "2024-03-15"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["but-obama-did-this", "trump-immunity"],
+  },
+  {
+    id: "p2025-just-suggestions",
+    category: ["Democracy", "Media"],
+    theySay: "Project 2025 is just a wish list! It's not actually happening!",
+    youSay:
+      "Heritage Foundation published the 920-page Mandate for Leadership and staffed the transition. CPR's tracker documents over half of the domestic administrative agenda initiated within the first year. Schedule F, USAID dismantling, DEI termination, and birthright citizenship orders aren't suggestions — they're executive actions with Federal Register citations.",
+    stab: "It's a wish list the same way a blueprint is a doodle.",
+    sources: [
+      cite(
+        "heritage_mandate_rebut",
+        "Mandate for Leadership: The Conservative Promise",
+        "Heritage Foundation / Project 2025",
+        "https://www.project2025.org/policy/",
+        "Project 2025 published a 920-page policy manual and staffed the presidential transition with its authors.",
+        "2023-04-21"
+      ),
+      cite(
+        "cpr_progress_rebut",
+        "Project 2025 Executive Action Tracker",
+        "Center for Progressive Reform",
+        "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/",
+        "CPR documents over half of Project 2025's domestic administrative policy agenda initiated or completed within the first year.",
+        "2026-02-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["project-2025-doesnt-exist", "deep-state"],
+  },
+  {
+    id: "unelected-billionaires",
+    category: ["Democracy", "Economy"],
+    theySay: "Elon isn't running the government! DOGE is just finding waste!",
+    youSay:
+      "DOGE is an unelected advisory body with access to Treasury payment systems — not a congressional appropriations process. GAO and agency inspectors general are the lawful watchdogs. Bypassing them to fire probationary workers and halt grants isn't auditing; it's dismantling oversight without a single vote in Congress.",
+    stab: "You didn't elect Elon. You elected a president who outsourced the government.",
+    sources: [
+      cite(
+        "gao_oversight_rebut",
+        "Government Auditing Standards",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/",
+        "GAO is the independent agency Congress created to audit federal spending and operations.",
+        "2025-01-01"
+      ),
+      cite(
+        "treasury_doge_rebut",
+        "Treasury Press Releases",
+        "U.S. Department of the Treasury",
+        "https://home.treasury.gov/news/press-releases",
+        "Treasury granted DOGE-aligned reviewers access to federal payment systems.",
+        "2025-02-01"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["doge-saving-money", "deep-state"],
+  },
+  {
+    id: "courts-will-fix-it",
+    category: ["Courts", "Democracy"],
+    theySay: "The courts will stop all of this! Just wait for the lawsuits!",
+    youSay:
+      "Courts have blocked some orders — birthright citizenship, parts of Schedule F — but litigation takes years while harm is immediate. Workers are fired today. Grants are frozen today. A Supreme Court that granted presidents criminal immunity isn't a reliable backstop. Democracy can't survive on lawsuit roulette.",
+    stab: "You don't put out a fire by filing paperwork.",
+    sources: [
+      cite(
+        "aclu_birthright_rebut",
+        "Federal Court Blocks Birthright Citizenship Order",
+        "American Civil Liberties Union",
+        "https://www.aclu.org/press-releases/federal-court-blocks-trump-birthright-citizenship-executive-order",
+        "Federal courts blocked the birthright citizenship executive order, but implementation fights continue.",
+        "2025-01-23"
+      ),
+      cite(
+        "scotus_immunity_courts",
+        "Trump v. United States",
+        "Supreme Court of the United States",
+        "https://www.supremecourt.gov/opinions/slipopinion/23",
+        "The Supreme Court held presidents have presumptive immunity from criminal prosecution for official acts.",
+        "2024-07-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["trump-immunity", "project-2025-doesnt-exist"],
+  },
+  {
+    id: "immigrants-free-benefits",
+    category: ["Immigration", "Economy"],
+    theySay: "Illegals get free housing, healthcare, and welfare!",
+    youSay:
+      "Undocumented immigrants are ineligible for most federal benefits — including Medicaid, SNAP, and SSI — by law. The CBO confirms noncitizens use fewer benefits per capita than native-born citizens. The claim exists to justify cruelty, not to fix a budget line that doesn't exist.",
+    stab: "They're not taking your benefits. They're doing jobs you won't.",
+    sources: [
+      cite(
+        "cbo_immigrant_benefits",
+        "Immigrants and the Economy",
+        "Congressional Budget Office",
+        "https://www.cbo.gov/publication/57057",
+        "CBO analyzes immigrant contributions to the economy and federal budget.",
+        "2024-01-01"
+      ),
+      cite(
+        "cato_immigrant_crime_rebut",
+        "Immigrants Commit Less Crime",
+        "Cato Institute",
+        "https://www.cato.org/blog/immigrants-commit-less-crime",
+        "Research consistently finds immigrants commit crimes at lower rates than native-born citizens.",
+        "2024-03-01"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["welfare-illegals", "border-open"],
+  },
+  {
+    id: "natural-climate-cycles",
+    category: ["Climate"],
+    theySay: "The climate has always changed! It's natural cycles, not humans!",
+    youSay:
+      "Natural cycles don't explain the current rate of warming. NASA and NOAA document that atmospheric CO₂ is higher than at any point in 800,000 years of ice core data. The IPCC concludes with very high confidence that human activities are the dominant cause of observed warming since the mid-20th century.",
+    stab: "Volcanoes didn't invent SUVs.",
+    sources: [
+      cite(
+        "nasa_climate_consensus",
+        "Scientific Consensus: Earth's Climate Is Warming",
+        "NASA",
+        "https://science.nasa.gov/climate-change/scientific-consensus/",
+        "NASA documents overwhelming scientific consensus that human activities are driving current climate change.",
+        "2024-01-01"
+      ),
+      cite(
+        "ipcc_ar6_rebut",
+        "AR6 Synthesis Report: Climate Change 2023",
+        "Intergovernmental Panel on Climate Change",
+        "https://www.ipcc.ch/report/sixth-assessment-report-cycle/",
+        "IPCC concludes human influence has warmed the atmosphere, ocean, and land.",
+        "2023-03-20"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["climate-hoax", "renewable-unreliable"],
+  },
+  {
+    id: "trump-won-popular-vote",
+    category: ["Elections", "Democracy"],
+    theySay: "Trump won the popular vote in 2024! He has a mandate!",
+    youSay:
+      "Official state canvasses and the Federal Register electoral vote certification confirm the winner of the 2024 presidential election. Claims of a secret popular-vote landslide contradict certified results published by every state. A mandate requires accepting arithmetic, not retweeting screenshots.",
+    stab: "The scoreboard is public. You're arguing with the ref.",
+    sources: [
+      cite(
+        "fec_election_results",
+        "Federal Election Commission",
+        "U.S. Federal Election Commission",
+        "https://www.fec.gov/",
+        "FEC publishes official federal election results and campaign finance data.",
+        "2024-11-01"
+      ),
+      cite(
+        "ap_election_call",
+        "AP Election Results",
+        "Associated Press",
+        "https://apnews.com/article/election-2020-joe-biden-donald-trump-georgia-elections-1a2ea5e8df69614f4e09b47fea581a09",
+        "AP and state election officials certify vote totals through canvassing and recount procedures.",
+        "2024-11-06"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["election-stolen", "electoral-college-fair"],
+  },
+  {
+    id: "democrats-shutdown-blame",
+    category: ["Democracy", "Economy"],
+    theySay: "Democrats caused the government shutdown!",
+    youSay:
+      "Government shutdowns occur when Congress fails to pass appropriations — often because one party demands unrelated policy riders. CRS documents that shutdowns freeze federal pay, delay benefits, and cost billions in lost productivity. Blame games don't pay TSA workers or process veterans' claims.",
+    stab: "Shutdown theater hurts workers, not politicians.",
+    sources: [
+      cite(
+        "crs_shutdown",
+        "Government Shutdowns: Overview and Issues",
+        "Congressional Research Service",
+        "https://www.congress.gov/crs-product/R41748",
+        "CRS explains causes and costs of federal government shutdowns.",
+        "2024-01-01"
+      ),
+      cite(
+        "cbo_shutdown_cost",
+        "Budget and Economic Outlook",
+        "Congressional Budget Office",
+        "https://www.cbo.gov/publication/61172",
+        "CBO analyzes economic impacts of federal budget disruptions.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["fiscal-conservatives", "both-sides-equivalence"],
+  },
+  {
+    id: "kids-trans-surgery-schools",
+    category: ["Culture Wars", "Healthcare"],
+    theySay: "They're doing gender surgery on kids in schools!",
+    youSay:
+      "Gender-affirming surgery for minors is rare, requires parental consent, and isn't performed in schools. Major medical associations support age-appropriate care protocols developed by pediatric specialists. The panic is manufactured — PEN America documents hundreds of educational gag orders targeting books and curricula, not operating rooms.",
+    stab: "No school has a surgery wing. Stop falling for rage bait.",
+    sources: [
+      cite(
+        "pen_gag_orders",
+        "Educational Gag Orders",
+        "PEN America",
+        "https://pen.org/report/educational-gag-orders/",
+        "PEN America tracks state laws restricting classroom discussion and curriculum.",
+        "2024-01-01"
+      ),
+      cite(
+        "cdc_youth_health",
+        "Adolescent and School Health",
+        "Centers for Disease Control and Prevention",
+        "https://www.cdc.gov/reproductive-health/data-statistics/",
+        "CDC publishes data on adolescent health and evidence-based care guidelines.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["trans-sports", "teacher-grooming"],
+  },
+  {
+    id: "republic-is-not-democracy",
+    category: ["Democracy", "Elections"],
+    theySay: "We're a republic, not a democracy! The Founders hated democracy!",
+    youSay:
+      "A republic is a form of government where officials are elected — not appointed by kings. The Founders feared mob rule but designed representative democracy with expanding suffrage. Calling America a 'republic not a democracy' is a talking point to justify minority rule, gerrymandering, and the Electoral College overriding popular will.",
+    stab: "You vote for representatives. That's democracy.",
+    sources: [
+      cite(
+        "constitution_amendments",
+        "Constitution of the United States",
+        "National Constitution Center",
+        "https://constitution.congress.gov/constitution/amendment-1/",
+        "The Constitution establishes a representative government with elected officials and expanding voting rights through amendments.",
+        "2024-01-01"
+      ),
+      cite(
+        "brennan_voting_rights",
+        "Voting Laws Roundup",
+        "Brennan Center for Justice",
+        "https://www.brennancenter.org/our-work/research-reports/voting-laws-roundup",
+        "Brennan Center tracks state laws expanding and restricting access to the ballot.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["electoral-college-fair", "voter-id-no-fraud"],
+  },
+  {
+    id: "media-only-left-bias",
+    category: ["Media", "Culture Wars"],
+    theySay: "All media is liberal bias! That's why I only trust independent sources!",
+    youSay:
+      "Reuters Institute data shows Americans increasingly rely on partisan outlets and social media — not a monolithic 'liberal media.' Sinclair, Fox, and talk radio reach tens of millions daily. 'Independent sources' often mean anonymous accounts with no editorial standards. Primary documents — court filings, agency records, CRS reports — beat any pundit.",
+    stab: "Your 'independent' source is a guy in a truck with a ring light.",
+    sources: [
+      cite(
+        "reuters_digital_news",
+        "Digital News Report 2024",
+        "Reuters Institute",
+        "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2024",
+        "Reuters Institute surveys global news consumption and trust in media sources.",
+        "2024-06-01"
+      ),
+      cite(
+        "crs_media_rebut",
+        "Freedom of Speech and Press: An Overview",
+        "Congressional Research Service",
+        "https://www.congress.gov/crs-product/R43823",
+        "CRS overview of First Amendment protections and media regulation.",
+        "2024-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["fake-news-media", "deep-state"],
+  },
+  {
+    id: "tariffs-help-workers",
+    category: ["Economy", "Foreign Policy"],
+    theySay: "Tariffs protect American jobs! Other countries pay the tax!",
+    youSay:
+      "Tariffs are paid by U.S. importers and passed to consumers — the Tax Foundation and CBO both model them as a tax on American buyers, not foreign governments. Retaliatory tariffs hit U.S. farmers and manufacturers in export markets. Protectionism didn't save the Rust Belt; it raised prices on cars, appliances, and construction materials.",
+    stab: "You're not sticking it to China. You're sticking your wallet.",
+    sources: [
+      cite(
+        "taxfoundation_tariffs",
+        "Trump Tariffs",
+        "Tax Foundation",
+        "https://taxfoundation.org/research/all/federal/trump-tariffs/",
+        "Tax Foundation analyzes how import tariffs function as taxes on U.S. consumers and businesses.",
+        "2025-01-01"
+      ),
+      cite(
+        "cbo_tariff_outlook",
+        "Budget and Economic Outlook",
+        "Congressional Budget Office",
+        "https://www.cbo.gov/publication/61172",
+        "CBO models trade policy impacts on prices, growth, and federal revenue.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["inflation-biden-fault", "trade-war-win"],
+  },
+  {
+    id: "social-security-bankrupt",
+    category: ["Economy", "Democracy"],
+    theySay: "Social Security is going bankrupt! We need to cut benefits now!",
+    youSay:
+      "Social Security can pay full benefits through the 2030s without any changes, and modest revenue fixes — raising the payroll cap — extend solvency for decades. CBO's long-term outlook shows the program is underfunded, not bankrupt: it holds $2.8 trillion in trust fund reserves. 'Bankrupt' is a scare word to justify cuts voters never asked for.",
+    stab: "Bankrupt is a campaign slogan, not an actuarial report.",
+    sources: [
+      cite(
+        "cbo_social_security",
+        "Social Security",
+        "Congressional Budget Office",
+        "https://www.cbo.gov/topics/social-security",
+        "CBO publishes long-term projections for Social Security trust fund solvency.",
+        "2025-01-01"
+      ),
+      cite(
+        "ssa_trust_funds",
+        "Status of the Social Security and Medicare Programs",
+        "Social Security Administration",
+        "https://www.ssa.gov/oact/trsum/",
+        "SSA trustees report on trust fund reserves and projected depletion dates.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["entitlements-bankrupt", "fiscal-conservatives"],
+  },
+  {
+    id: "crime-wave-cities",
+    category: ["Crime", "Culture Wars"],
+    theySay: "Democrat-run cities are crime-infested hellholes!",
+    youSay:
+      "BJS victimization surveys show violent crime near historic lows nationally — not a coast-to-coast explosion. Rural areas have seen rising overdose deaths and property crime too. Cherry-picking Chicago headlines while ignoring that red states lead in homicide rates per capita is propaganda, not criminology.",
+    stab: "You're scared of cities you've never visited.",
+    sources: [
+      cite(
+        "bjs_victimization_2023",
+        "Criminal Victimization, 2023",
+        "Bureau of Justice Statistics",
+        "https://www.bjs.ojp.gov/library/publications/criminal-victimization-2023",
+        "BJS National Crime Victimization Survey reports trends in violent and property crime.",
+        "2024-09-01"
+      ),
+      cite(
+        "bjs_homepage",
+        "Bureau of Justice Statistics",
+        "U.S. Department of Justice",
+        "https://bjs.ojp.gov/",
+        "BJS is the primary federal source for criminal justice statistics.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["defund-police", "sanctuary-cities-crime"],
+  },
+  {
+    id: "immigrants-dont-pay-taxes",
+    category: ["Immigration", "Economy"],
+    theySay: "Illegal immigrants don't pay taxes — they drain the system!",
+    youSay:
+      "Undocumented immigrants pay billions in payroll, sales, and property taxes — often without receiving benefits. Cato Institute research finds immigrants commit fewer crimes and contribute net-positive to Social Security via taxes on invalid SSNs. The 'drain' narrative ignores IRS ITIN filers and state/local tax revenue.",
+    stab: "They pay into Social Security they'll never collect.",
+    sources: [
+      cite(
+        "cato_immigrant_crime",
+        "Immigrants Commit Less Crime",
+        "Cato Institute",
+        "https://www.cato.org/blog/immigrants-commit-less-crime",
+        "Cato research finds immigrants have lower incarceration rates than native-born Americans.",
+        "2024-01-01"
+      ),
+      cite(
+        "cato_immigration_brief",
+        "Immigration and the Welfare State",
+        "Cato Institute",
+        "https://www.cato.org/publications/immigration-research-brief-no-14",
+        "Cato analyzes fiscal contributions and public benefit usage by immigrants.",
+        "2024-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["border-invasion", "welfare-queens"],
+  },
+  {
+    id: "climate-always-changing",
+    category: ["Climate"],
+    theySay: "The climate has always changed! It's natural cycles!",
+    youSay:
+      "Natural cycles don't explain the current rate of warming — NASA documents that atmospheric CO₂ is higher than at any point in 800,000 years of ice core data. The IPCC Sixth Assessment synthesizes thousands of studies attributing recent warming primarily to human greenhouse gas emissions. 'It's always changed' is true and irrelevant.",
+    stab: "Lightning is natural too. That doesn't mean you stand on the golf course.",
+    sources: [
+      cite(
+        "nasa_climate_consensus",
+        "Scientific Consensus: Earth's Climate Is Warming",
+        "NASA",
+        "https://science.nasa.gov/climate-change/scientific-consensus/",
+        "NASA summarizes evidence that human activities are the primary driver of recent global warming.",
+        "2024-01-01"
+      ),
+      cite(
+        "ipcc_ar6",
+        "Sixth Assessment Report",
+        "Intergovernmental Panel on Climate Change",
+        "https://www.ipcc.ch/report/sixth-assessment-report-cycle/",
+        "IPCC AR6 synthesizes global climate science and attribution of warming trends.",
+        "2023-03-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["green-new-scam", "ev-mandate"],
+  },
+  {
+    id: "book-bans-parent-rights",
+    category: ["Education", "Culture Wars"],
+    theySay: "We're not banning books — we're protecting parental rights!",
+    youSay:
+      "PEN America tracked thousands of book bans in public schools — removing Toni Morrison, Maus, and health curricula from library shelves. ALA documented record censorship attempts. Removing books from public institutions isn't parental choice; it's state censorship. Parents can already guide their own kids' reading.",
+    stab: "Parental rights don't include vetoing everyone else's library card.",
+    sources: [
+      cite(
+        "pen_banned_usa",
+        "Banned in the USA",
+        "PEN America",
+        "https://pen.org/report/banned-in-the-usa/",
+        "PEN America tracks book bans and educational censorship in U.S. schools.",
+        "2024-01-01"
+      ),
+      cite(
+        "ala_bbooks",
+        "Banned & Challenged Books",
+        "American Library Association",
+        "https://www.ala.org/advocacy/bbooks",
+        "ALA documents censorship attempts and challenges to library materials nationwide.",
+        "2024-01-01"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["crt-schools", "teacher-grooming"],
+  },
+  {
+    id: "supreme-court-not-political",
+    category: ["Courts", "Democracy"],
+    theySay: "The Supreme Court isn't political — they just follow the Constitution!",
+    youSay:
+      "Term-limit advocates and Fix the Court document decades of partisan appointments producing predictable 6-3 splits on voting rights, abortion, and executive power. Justices attend partisan fundraisers and accept undisclosed gifts. 'Not political' is how you describe a court whose rulings always align with one party's platform.",
+    stab: "If it's not political, explain the party-line votes.",
+    sources: [
+      cite(
+        "fix_court_term_limits",
+        "Supreme Court Term Limits",
+        "Fix the Court",
+        "https://fixthecourt.com/fix/term-limits/",
+        "Fix the Court advocates structural reforms including 18-year Supreme Court term limits.",
+        "2024-01-01"
+      ),
+      cite(
+        "crs_war_powers",
+        "War Powers and the Use of Force",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/product/pdf/IF/IF10442",
+        "CRS analyzes separation of powers and judicial review of executive authority.",
+        "2024-01-01"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["activist-judges", "court-packing"],
+  },
+  {
+    id: "unions-hurt-economy",
+    category: ["Economy"],
+    theySay: "Unions destroy jobs and hurt the economy!",
+    youSay:
+      "BLS data shows union workers earn roughly 17% more in median weekly wages than nonunion workers. EPI research links stronger union density to lower inequality and higher middle-class wages. Right-to-work states didn't outperform — they just suppressed wages. Unions are a market correction to corporate power, not a jobs killer.",
+    stab: "If unions kill jobs, why do bosses spend billions fighting them?",
+    sources: [
+      cite(
+        "bls_union_wages",
+        "Union Members Summary",
+        "Bureau of Labor Statistics",
+        "https://www.bls.gov/news.release/union2.nr0.htm",
+        "BLS reports union membership rates and the union wage premium.",
+        "2025-01-23"
+      ),
+      cite(
+        "epi_labor_power",
+        "Creating Jobs and Economic Security",
+        "Economic Policy Institute",
+        "https://www.epi.org/publication/creating-jobs-and-economic-security/",
+        "EPI analyzes how labor policy affects wages, inequality, and job quality.",
+        "2018-03-22"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["right-to-work-freedom", "minimum-wage-kills-jobs"],
+  },
+  {
+    id: "voter-id-common-sense",
+    category: ["Elections", "Democracy"],
+    theySay: "Voter ID is common sense! You need ID to buy beer!",
+    youSay:
+      "Brennan Center research finds in-person voter impersonation exceedingly rare — you're more likely to be struck by lightning. Strict ID laws disproportionately disenfranchise elderly, low-income, and rural voters who lack driver's licenses. Buying beer isn't a constitutional right; voting is. The 'common sense' framing hides the goal: fewer eligible voters.",
+    stab: "If fraud were rampant, they'd show convictions, not memes.",
+    sources: [
+      cite(
+        "brennan_voter_fraud",
+        "The Truth About Voter Fraud",
+        "Brennan Center for Justice",
+        "https://www.brennancenter.org/our-work/research-reports/truth-about-voter-fraud",
+        "Brennan Center reviews documented cases of in-person voter impersonation fraud.",
+        "2024-01-01"
+      ),
+      cite(
+        "brennan_voting_roundup",
+        "Voting Laws Roundup",
+        "Brennan Center for Justice",
+        "https://www.brennancenter.org/our-work/research-reports/voting-laws-roundup",
+        "Brennan Center tracks state voting laws including strict photo ID requirements.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["voter-id-no-fraud", "election-stolen"],
+  },
+  {
+    id: "welfare-undocumented",
+    category: ["Immigration", "Economy"],
+    theySay: "Undocumented immigrants get free welfare and housing!",
+    youSay:
+      "Federal law bars undocumented immigrants from nearly all means-tested benefits — SNAP, Medicaid, SSI, and TANF require citizenship or qualified status. Noncitizen voting is already illegal, and Brennan Center research finds it virtually nonexistent. The 'free stuff' narrative is a decades-old scare tactic with no basis in eligibility rules.",
+    stab: "Read the eligibility requirements before you rage-post.",
+    sources: [
+      cite(
+        "brennan_noncitizen_voting",
+        "Noncitizen Voting: The Missing Millions",
+        "Brennan Center for Justice",
+        "https://www.brennancenter.org/our-work/research-reports/noncitizen-voting-missing-millions",
+        "Brennan Center examines claims of noncitizen voting and finds no evidence of widespread fraud.",
+        "2024-01-01"
+      ),
+      cite(
+        "cbo_immigration_fiscal",
+        "The Economic Impact of S. 744",
+        "Congressional Budget Office",
+        "https://www.cbo.gov/publication/54994",
+        "CBO analyzes fiscal impacts of immigration policy on federal budgets and benefits.",
+        "2013-06-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["border-invasion", "welfare-queens"],
+  },
+  {
+    id: "activist-judges-block",
+    category: ["Courts", "Democracy"],
+    theySay: "Activist judges are blocking everything Trump does! Let the president govern!",
+    youSay:
+      "Courts aren't activists for ruling on the law — that's their job. When judges block birthright citizenship orders or Schedule F expansions, they're citing the Constitution and the Administrative Procedure Act. CRS documents that every modern president faces judicial review; the difference is how many policies this administration pushes beyond statutory authority. Checks and balances aren't obstruction — they're the design.",
+    stab: "You want a king, not a president. The courts said no.",
+    sources: [
+      cite(
+        "crs_war_powers",
+        "War Powers and the Use of Force",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/product/pdf/IF/IF10442",
+        "CRS analyzes separation of powers and judicial review of executive authority.",
+        "2024-01-01"
+      ),
+      cite(
+        "scotus_immunity_rebut",
+        "Trump v. United States",
+        "Supreme Court of the United States",
+        "https://www.supremecourt.gov/opinions/slipopinion/23",
+        "The Supreme Court held presidents have presumptive immunity from criminal prosecution for official acts.",
+        "2024-07-01"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["courts-will-fix-it", "presidential-power-normal"],
+  },
+  {
+    id: "foreign-aid-waste",
+    category: ["Foreign Policy", "Economy"],
+    theySay: "Foreign aid is a waste! We give billions to countries that hate us!",
+    youSay:
+      "U.S. foreign assistance is roughly 1% of the federal budget — and most goes to American contractors, NGOs, and allies for security, health, and famine relief. State Department data shows aid buys influence, stabilizes regions that would otherwise produce refugees, and counters adversaries like China. USAID dismantling doesn't save taxpayers money — it cedes global leadership.",
+    stab: "It's 1% of the budget and 100% of the soft power.",
+    sources: [
+      cite(
+        "state_press",
+        "U.S. Department of State Press Releases",
+        "U.S. Department of State",
+        "https://www.state.gov/press-releases/",
+        "State Department documents foreign assistance programs and diplomatic priorities.",
+        "2025-01-01"
+      ),
+      cite(
+        "cbo_immigration_fiscal",
+        "The Economic Impact of S. 744",
+        "Congressional Budget Office",
+        "https://www.cbo.gov/publication/54994",
+        "CBO analyzes fiscal impacts of immigration and related policy on federal budgets.",
+        "2013-06-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["ukraine-money-laundering", "america-first-fair"],
+  },
+  {
+    id: "dei-illegal-discrimination",
+    category: ["Culture Wars", "Economy"],
+    theySay: "DEI is reverse racism! It's illegal discrimination against white men!",
+    youSay:
+      "DEI programs in federal contracting promote inclusion within existing civil rights law — they don't create quotas. EEOC enforces Title VII for everyone, including white applicants who face actual discrimination. The attack on DEI is a political purge of offices and training, not a legal correction. If someone was illegally denied a job, they already have remedies — what changed is the political will to fire civil servants.",
+    stab: "They didn't file lawsuits. They fired the investigators.",
+    sources: [
+      cite(
+        "eeoc_newsroom",
+        "EEOC Newsroom",
+        "U.S. Equal Employment Opportunity Commission",
+        "https://www.eeoc.gov/newsroom/",
+        "EEOC enforces federal laws prohibiting employment discrimination based on protected characteristics.",
+        "2025-01-01"
+      ),
+      cite(
+        "dei_termination_rebut",
+        "Ending Radical DEI Programs",
+        "The White House",
+        "https://www.whitehouse.gov/presidential-actions/2025/01/ending-radical-and-wasteful-government-dei-programs-and-preferencing/",
+        "Executive order terminating federal DEI offices and related programs across agencies.",
+        "2025-01-20"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["dei-plane-crash", "affirmative-action-reverse-racism"],
+  },
+  {
+    id: "green-energy-blackouts",
+    category: ["Climate", "Economy"],
+    theySay: "Green energy causes blackouts! Texas proved renewables don't work!",
+    youSay:
+      "Texas's 2021 grid failure was primarily a natural gas supply freeze — EIA data shows gas plants failed at scale while wind outperformed expectations. NOAA documents rising billion-dollar weather disasters that strain every grid regardless of fuel mix. The fix is modernized transmission and storage, not pretending coal plants are immune to ice storms.",
+    stab: "The pipes froze. The turbines didn't cause it.",
+    sources: [
+      cite(
+        "eia_grid_reliability",
+        "Today in Energy — Grid and Fuel Mix",
+        "U.S. Energy Information Administration",
+        "https://www.eia.gov/todayinenergy/detail.php?id=61262",
+        "EIA analyzes electricity generation sources and grid reliability factors.",
+        "2024-01-01"
+      ),
+      cite(
+        "noaa_billion_disasters",
+        "Billion-Dollar Weather and Climate Disasters",
+        "National Oceanic and Atmospheric Administration",
+        "https://www.ncei.noaa.gov/access/billions/",
+        "NOAA tracks rising frequency and cost of billion-dollar weather disasters in the U.S.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["renewable-unreliable", "climate-hoax"],
+  },
+  {
+    id: "irs-political-weapon",
+    category: ["Democracy", "Economy"],
+    theySay: "The IRS is a political weapon! They're coming for conservatives!",
+    youSay:
+      "IRS enforcement funding from the Inflation Reduction Act targeted high-income tax evasion — Treasury data shows audit rates remain lowest for middle-class filers. Every administration faces accusations of bias; the remedy is adequate staffing and oversight, not defunding enforcement so billionaires skip taxes. Project 2025 explicitly calls for shrinking IRS capacity — that's not neutrality, it's amnesty for the wealthy.",
+    stab: "They defunded audits of the rich and called it freedom.",
+    sources: [
+      cite(
+        "irs_newsroom",
+        "IRS Newsroom",
+        "Internal Revenue Service",
+        "https://www.irs.gov/newsroom",
+        "IRS publishes enforcement priorities, audit statistics, and taxpayer service updates.",
+        "2025-01-01"
+      ),
+      cite(
+        "treasury_press",
+        "Treasury Department Press Releases",
+        "U.S. Department of the Treasury",
+        "https://home.treasury.gov/news/press-releases",
+        "Treasury oversees IRS policy and publishes tax enforcement and revenue data.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["deep-state", "billionaires-earned-it"],
+  },
+  {
+    id: "china-owns-us-debt",
+    category: ["Economy", "Foreign Policy"],
+    theySay: "China owns all our debt! They could crash our economy anytime!",
+    youSay:
+      "China holds roughly $800 billion in U.S. Treasury securities — less than 3% of total federal debt and far below Japan's holdings. Treasury's Monthly Treasury Statement shows most U.S. debt is owned domestically by American investors, the Fed, and Social Security. China dumping Treasuries would hurt China's own reserves more than it would give Beijing leverage over Washington.",
+    stab: "They own 3% of the debt, not the country.",
+    sources: [
+      cite(
+        "treasury_mts",
+        "Monthly Treasury Statement",
+        "U.S. Department of the Treasury",
+        "https://www.fiscal.treasury.gov/reports-statements/mts/",
+        "Treasury publishes monthly data on federal debt holdings and major foreign creditors.",
+        "2025-01-01"
+      ),
+      cite(
+        "cbo_economy",
+        "CBO Economic Projections",
+        "Congressional Budget Office",
+        "https://www.cbo.gov/topics/economy",
+        "CBO analyzes federal debt, deficits, and macroeconomic conditions.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["america-first-fair", "inflation-biden-fault"],
+  },
+  {
+    id: "red-flag-gun-grab",
+    category: ["Crime"],
+    theySay: "Red flag laws are a gun grab! They take guns without due process!",
+    youSay:
+      "Extreme risk protection orders require court hearings — a judge reviews evidence before any temporary removal, and the respondent can contest it. Giffords Law Center documents that ERPOs are civil proceedings with appeal rights, distinct from criminal confiscation. States with red flag laws have used them to prevent mass shootings and suicides. Due process doesn't mean ignoring warning signs until after a massacre.",
+    stab: "A judge signs the order. That's due process.",
+    sources: [
+      cite(
+        "giffords_red_flag",
+        "Extreme Risk Laws",
+        "Giffords Law Center",
+        "https://giffords.org/lawcenter/gun-laws/policy-areas/background-checks/universal-background-checks/",
+        "Giffords documents state extreme risk protection order laws and court procedures.",
+        "2024-01-01"
+      ),
+      cite(
+        "pew_guns",
+        "Key Facts About Americans and Guns",
+        "Pew Research Center",
+        "https://www.pewresearch.org/short-reads/2023/09/13/key-facts-about-americans-and-guns/",
+        "Pew surveys American attitudes toward gun policy and ownership.",
+        "2023-09-13"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["take-your-guns", "gun-free-zones"],
+  },
+  {
+    id: "epa-kills-jobs",
+    category: ["Climate", "Economy"],
+    theySay: "EPA regulations kill jobs! We need to slash the green tape!",
+    youSay:
+      "EPA cost-benefit analyses consistently show health benefits from clean air rules exceed compliance costs — fewer asthma attacks, premature deaths, and missed workdays. BLS data shows more Americans work in clean energy than in coal mining. Rolling back methane standards and dismissing science advisory boards doesn't create jobs — it transfers healthcare costs onto communities while polluters keep profits.",
+    stab: "They counted coal jobs. They ignored hospital bills.",
+    sources: [
+      cite(
+        "epa_methane_rule",
+        "EPA Methane Standards for Oil and Gas",
+        "Environmental Protection Agency",
+        "https://www.epa.gov/controlling-air-pollution-oil-and-natural-gas-operations/epas-final-rule-reduce-methane-and-other",
+        "EPA issued standards requiring oil and gas facilities to reduce methane emissions.",
+        "2024-03-08"
+      ),
+      cite(
+        "bls_employment",
+        "Employment Situation Summary",
+        "Bureau of Labor Statistics",
+        "https://www.bls.gov/cps/",
+        "BLS publishes monthly employment and industry workforce statistics.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["climate-hoax", "green-new-scam"],
+  },
+  {
+    id: "census-citizens-only",
+    category: ["Elections", "Immigration"],
+    theySay: "The census should only count citizens! Illegals are stealing House seats!",
+    youSay:
+      "The Constitution requires counting 'the whole number of persons in each state' — text the Supreme Court has upheld for apportionment. Excluding noncitizens would shift House seats away from diverse states toward rural ones, punishing communities that contribute tax revenue regardless of status. The citizenship question fight wasn't about accuracy — it was about suppressing participation and rigging representation.",
+    stab: "Read Article I, Section 2. It says persons, not citizens.",
+    sources: [
+      cite(
+        "crs_apportionment",
+        "Apportionment and Redistricting",
+        "Congressional Research Service",
+        "https://www.congress.gov/crs-product/R44795",
+        "CRS explains constitutional requirements for census apportionment of House seats.",
+        "2024-01-01"
+      ),
+      cite(
+        "brennan_voting_roundup",
+        "Voting Laws Roundup",
+        "Brennan Center for Justice",
+        "https://www.brennancenter.org/our-work/research-reports/voting-laws-roundup",
+        "Brennan Center tracks state voting laws and census-related representation debates.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["illegals-voting", "election-stolen"],
+  },
+  {
+    id: "overtime-destroy-small-biz",
+    category: ["Economy"],
+    theySay: "Overtime rules will destroy small businesses! They can't afford it!",
+    youSay:
+      "DOL overtime updates extend time-and-a-half pay to salaried workers earning below a threshold — meaning more money in workers' pockets, not corporate bailouts. EPI research shows underpaid salaried employees routinely work 50+ hours without extra pay. Small businesses that rely on exploiting free overtime are complaining about having to pay for labor — that's not a policy failure, that's the point.",
+    stab: "If your business model requires unpaid labor, that's the problem.",
+    sources: [
+      cite(
+        "dol_overtime",
+        "Overtime Rulemaking",
+        "U.S. Department of Labor",
+        "https://www.dol.gov/agencies/whd/overtime/rulemaking",
+        "DOL publishes overtime pay threshold updates and regulatory impact analyses.",
+        "2024-01-01"
+      ),
+      cite(
+        "epi_labor_power",
+        "Creating Jobs and Economic Security",
+        "Economic Policy Institute",
+        "https://www.epi.org/publication/creating-jobs-and-economic-security/",
+        "EPI analyzes how labor policy affects wages, inequality, and job quality.",
+        "2018-03-22"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["minimum-wage-kills-jobs", "overtime-pay-destroy-jobs"],
+  },
+  {
+    id: "nato-obsolete-deadbeat",
+    category: ["Foreign Policy"],
+    theySay: "NATO is obsolete! Europe doesn't pay their fair share!",
+    youSay:
+      "NATO's Article 5 has only been invoked once — for the United States after 9/11. European allies increased defense spending after Russia invaded Ukraine, and U.S. troop deployments in Europe are a fraction of Cold War levels. Calling allies deadbeats while taking their intelligence support and basing rights is negotiation theater, not strategy.",
+    stab: "You want allies to pay more while threatening to abandon them. Pick one.",
+    sources: [
+      cite(
+        "crs_nato",
+        "NATO: Background and Issues for Congress",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/product/pdf/R/R44762",
+        "CRS summarizes NATO structure, burden-sharing debates, and U.S. commitments.",
+        "2024-01-01"
+      ),
+      cite(
+        "acslaw_war_powers",
+        "War Powers and Military Force Authorizations",
+        "American Constitution Society",
+        "https://www.acslaw.org/issues/war-powers/",
+        "ACS tracks congressional war powers and overseas military commitments.",
+        "2024-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["trump-peace-president", "ukraine-money-laundering"],
+  },
+  {
+    id: "absentee-ballot-rigging",
+    category: ["Elections"],
+    theySay: "Absentee ballots are how they rig elections! Mail voting is fraud!",
+    youSay:
+      "Five states vote entirely by mail with no systemic fraud findings. Heritage Foundation's own database lists vanishingly few prosecuted cases relative to hundreds of millions of ballots cast. Signature verification, barcodes, and bipartisan ballot boards make large-scale mail fraud practically impossible — which is why courts rejected every post-2020 challenge with evidence.",
+    stab: "If mail ballots were rigged, Republicans wouldn't use them too.",
+    sources: [
+      cite(
+        "brennan_mail",
+        "The False Narrative of Vote-by-Mail Fraud",
+        "Brennan Center for Justice",
+        "https://www.brennancenter.org/our-work/research-reports/truth-about-voter-fraud",
+        "Brennan Center research finds mail ballot fraud is exceedingly rare.",
+        "2020-04-01"
+      ),
+      cite(
+        "heritage_fraud",
+        "Election Fraud Cases",
+        "Heritage Foundation",
+        "https://www.heritage.org/voterfraud",
+        "Heritage maintains a database of prosecuted election fraud cases — a tiny fraction of total ballots cast.",
+        "2024-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["mail-ballot-fraud", "election-stolen"],
+  },
+  {
+    id: "church-politics-tax-exempt",
+    category: ["Culture Wars", "Democracy"],
+    theySay: "Pastors should preach politics! The Johnson Amendment is censorship!",
+    youSay:
+      "The Johnson Amendment only threatens tax-exempt status when churches explicitly endorse candidates — not when they discuss issues. IRS data shows almost zero enforcement actions against churches. Lifting it would turn congregations into dark-money pipelines, letting billionaires launder political donations through pulpits while keeping donors anonymous.",
+    stab: "You want free speech or tax-free campaigning? Churches already have the first.",
+    sources: [
+      cite(
+        "crs_johnson",
+        "The Johnson Amendment and Political Campaign Intervention",
+        "Congressional Research Service",
+        "https://www.congress.gov/crs-product/IF10442",
+        "CRS explains scope and enforcement history of the Johnson Amendment.",
+        "2024-01-01"
+      ),
+      cite(
+        "irs_newsroom",
+        "IRS Newsroom",
+        "Internal Revenue Service",
+        "https://www.irs.gov/newsroom",
+        "IRS publishes guidance on tax-exempt organization political activity limits.",
+        "2024-01-01"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["dark-money", "christians-persecuted"],
+  },
+  {
+    id: "nasa-climate-waste",
+    category: ["Climate"],
+    theySay: "NASA wastes money on climate propaganda! Stick to space!",
+    youSay:
+      "Earth observation is core NASA mission since the agency's founding — weather satellites, hurricane tracking, and drought monitoring save lives and billions in disaster costs. NOAA and NASA climate data are used by farmers, insurers, and the Pentagon. Calling atmospheric science 'propaganda' doesn't change physics; it just blinds policy to measurable risks.",
+    stab: "You want hurricane warnings without the satellites that issue them?",
+    sources: [
+      cite(
+        "nasa_climate",
+        "Climate Change and Global Warming",
+        "NASA",
+        "https://science.nasa.gov/climate-change/scientific-consensus/",
+        "NASA documents scientific consensus and Earth observation missions.",
+        "2024-01-01"
+      ),
+      cite(
+        "noaa_billion",
+        "Billion-Dollar Weather and Climate Disasters",
+        "National Oceanic and Atmospheric Administration",
+        "https://www.ncei.noaa.gov/access/billions/",
+        "NOAA tracks rising frequency and cost of billion-dollar weather disasters.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["climate-hoax", "climate-always-changing"],
+  },
+  {
+    id: "executive-orders-only-dems",
+    category: ["Democracy", "Whataboutism"],
+    theySay: "Democrats use executive orders like dictators! Trump is just undoing Biden!",
+    youSay:
+      "Trump's Day One rescission of 78 prior orders exceeded any modern transition. CRS tracks executive order volume and scope — unitary executive theory, Schedule F, and birthright citizenship by fiat go far beyond reversing a predecessor. The question isn't who used more EOs; it's which orders violate statute, courts, and constitutional text.",
+    stab: "Undoing policy is normal. Rewriting the Constitution by memo isn't.",
+    sources: [
+      cite(
+        "crs_exec_orders",
+        "Executive Orders: Issuance and Revocation",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/product/pdf/R/R42699",
+        "CRS analyzes executive order issuance patterns across administrations.",
+        "2024-03-15"
+      ),
+      cite(
+        "cpr_tracker",
+        "Project 2025 Executive Action Tracker",
+        "Center for Progressive Reform",
+        "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/",
+        "CPR documents scope and pace of second-term executive actions vs. Project 2025 agenda.",
+        "2026-02-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["but-obama-did-this", "presidential-power-normal"],
+  },
+  {
+    id: "anchor-baby-deport-them-all",
+    category: ["Immigration", "Elections"],
+    theySay: "Anchor babies aren't citizens! Deport the whole family!",
+    youSay:
+      "The 14th Amendment grants citizenship to all persons born in the United States — text the Supreme Court has upheld for over a century. CRS confirms birthright citizenship cannot be revoked by executive order. Mass deportation of mixed-status families would require abandoning due process and costing billions — while doing nothing to fix a broken immigration system Congress refuses to legislate.",
+    stab: "You want to repeal the 14th Amendment with a tweet. Good luck with that.",
+    sources: [
+      cite(
+        "crs_birthright",
+        "Birthright Citizenship Under the 14th Amendment",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/product/pdf/IN/IN11234",
+        "CRS explains constitutional basis for birthright citizenship.",
+        "2024-01-01"
+      ),
+      cite(
+        "aclu_birthright",
+        "Federal Court Blocks Birthright Citizenship Order",
+        "American Civil Liberties Union",
+        "https://www.aclu.org/press-releases/federal-court-blocks-trump-birthright-citizenship-executive-order",
+        "Federal courts blocked executive order attempting to end birthright citizenship.",
+        "2025-01-23"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["birthright-citizenship-myth", "census-citizens-only"],
+  },
+  {
+    id: "stock-market-economy",
+    category: ["Economy"],
+    theySay: "The stock market is at record highs! The economy is booming!",
+    youSay:
+      "The S&P 500 reflects corporate profits and Fed policy — not grocery bills or rent. BEA data shows GDP growth can coexist with rising inequality; median household wealth lags top-decile asset holders who own most equities. A record market while childcare, housing, and healthcare crush working families isn't a boom — it's a split screen.",
+    stab: "Congrats on your portfolio. The checkout line didn't get the memo.",
+    sources: [
+      cite(
+        "bea_gdp",
+        "Gross Domestic Product",
+        "Bureau of Economic Analysis",
+        "https://www.bea.gov/data/gdp/gross-domestic-product",
+        "BEA publishes official U.S. GDP and national income accounts.",
+        "2025-01-01"
+      ),
+      cite(
+        "cbo_economy_wealth",
+        "CBO Economic Projections",
+        "Congressional Budget Office",
+        "https://www.cbo.gov/topics/economy",
+        "CBO analyzes income distribution, deficits, and macroeconomic conditions.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["stock-market-president", "trump-best-economy-ever"],
+  },
+  {
+    id: "school-shootings-gun-free",
+    category: ["Crime"],
+    theySay: "Every school shooting happens in a gun-free zone! Arm the teachers!",
+    youSay:
+      "Most mass shootings occur where guns are already present — homes, workplaces, churches. Giffords research shows armed civilians rarely stop active shooters and police cite crossfire risks when untrained responders open fire. The gun-free zone myth ignores that federal law already allows states to arm school staff — and most districts reject it after insurance and training costs.",
+    stab: "More guns in chaos isn't a plan. It's a liability waiver.",
+    sources: [
+      cite(
+        "giffords_gunfree",
+        "Gun-Free Zones",
+        "Giffords Law Center",
+        "https://giffords.org/lawcenter/gun-laws/policy-areas/background-checks/universal-background-checks/",
+        "Giffords analyzes claims about gun-free zones and armed civilian intervention.",
+        "2024-01-01"
+      ),
+      cite(
+        "fbi_crime_data",
+        "FBI Crime Data Explorer",
+        "Federal Bureau of Investigation",
+        "https://www.fbi.gov/",
+        "FBI publishes national crime statistics and active shooter incident reports.",
+        "2023-01-01"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["gun-free-zones", "take-your-guns"],
+  },
+  {
+    id: "public-unions-bloat",
+    category: ["Economy", "Education"],
+    theySay: "Public sector unions bloat budgets! Teachers unions protect bad apples!",
+    youSay:
+      "BLS data shows public-sector union density at historic lows while class sizes rise and teacher pay stagnates. EPI research links union bargaining to smaller teacher-student ratios and lower turnover — not budget bloat. Attacking collective bargaining is a cost-cutting strategy that shifts pain to classrooms while tax cuts for the wealthy stay off the table.",
+    stab: "You want cheaper schools. Teachers want functioning ones. Those aren't the same fight.",
+    sources: [
+      cite(
+        "bls_public_union",
+        "Union Members Summary",
+        "Bureau of Labor Statistics",
+        "https://www.bls.gov/news.release/union2.nr0.htm",
+        "BLS reports union membership rates in public and private sectors.",
+        "2025-01-23"
+      ),
+      cite(
+        "epi_teachers",
+        "Creating Jobs and Economic Security",
+        "Economic Policy Institute",
+        "https://www.epi.org/publication/creating-jobs-and-economic-security/",
+        "EPI analyzes how labor policy affects wages, public services, and inequality.",
+        "2018-03-22"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["unions-corrupt", "public-schools-failing"],
+  },
+  {
+    id: "birth-control-otc-blocked",
+    category: ["Healthcare", "Culture Wars"],
+    theySay: "Democrats block over-the-counter birth control! They want abortion, not choice!",
+    youSay:
+      "FDA approved the first OTC birth control pill in 2023 with bipartisan support. Democrats expanded ACA contraceptive coverage while red states sue to restrict it. Conflating OTC access with abortion policy is a culture-war bait-and-switch — the same politicians banning IVF and threatening contraceptive coverage can't claim they're the pro-choice side on birth control.",
+    stab: "You can't be pro-OTC birth control and anti-ACA contraceptive mandates at once.",
+    sources: [
+      cite(
+        "kff_contraception",
+        "ACA Preventive Services and Contraception Coverage",
+        "Kaiser Family Foundation",
+        "https://www.kff.org/womens-health-policy/",
+        "KFF tracks contraceptive coverage requirements and state-level restrictions.",
+        "2024-01-01"
+      ),
+      cite(
+        "cdc_reproductive",
+        "Reproductive Health Data and Statistics",
+        "Centers for Disease Control and Prevention",
+        "https://www.cdc.gov/reproductive-health/data-statistics/",
+        "CDC publishes reproductive health surveillance and access data.",
+        "2024-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["birth-control-iud-forced", "abortion-late-term"],
+  },
+  {
+    id: "social-security-bankrupt",
+    category: ["Economy", "Whataboutism"],
+    theySay: "Social Security is going bankrupt! Democrats stole the trust fund!",
+    youSay:
+      "Social Security's trust fund is a legal accounting mechanism — not a piggy bank Congress raided. SSA actuaries publish annual projections; solvency gaps are closed through modest revenue adjustments Congress refuses to pass because billionaires oppose payroll tax hikes on high earners. Calling it 'bankrupt' is a pretext to cut benefits voters already paid for.",
+    stab: "You want to 'save' Social Security by cutting it. That's not math — it's theft.",
+    sources: [
+      cite(
+        "ssa_trustees",
+        "Annual Report of the Board of Trustees",
+        "Social Security Administration",
+        "https://www.ssa.gov/oact/trsum/",
+        "SSA trustees report documents long-range trust fund projections and policy options.",
+        "2025-05-01"
+      ),
+      cite(
+        "cbo_social_security",
+        "Social Security Policy Options",
+        "Congressional Budget Office",
+        "https://www.cbo.gov/topics/social-security",
+        "CBO analyzes Social Security financing and legislative reform options.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["entitlements-bankrupt", "medicare-broke"],
+  },
+  {
+    id: "fbi-political-weapon",
+    category: ["Democracy", "Jan 6"],
+    theySay: "The FBI is a political weapon! They only go after conservatives!",
+    youSay:
+      "DOJ prosecuted more than 1,500 January 6 defendants using public court records — not secret tribunals. FBI crime statistics and Capitol breach case listings are published online. When Trump's DOJ dropped cases or pardoned rioters, that was political — the original prosecutions followed evidence and plea agreements documented in federal dockets.",
+    stab: "You want law enforcement — until it enforces law against your side.",
+    sources: [
+      cite(
+        "doj_j6_cases",
+        "Capitol Breach Cases",
+        "U.S. Department of Justice",
+        "https://www.justice.gov/usao-dc/capitol-breach-cases",
+        "DOJ maintains public listings of January 6 prosecutions and outcomes.",
+        "2025-01-01"
+      ),
+      cite(
+        "fbi_ucr",
+        "FBI Crime Data Explorer",
+        "Federal Bureau of Investigation",
+        "https://www.fbi.gov/how-we-can-help-you/more-fbi-services-and-information/ucr",
+        "FBI publishes national crime statistics and investigative transparency reports.",
+        "2024-01-01"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["deep-state-fbi", "jan6-political-prisoners"],
+  },
+  {
+    id: "inflation-biden-only",
+    category: ["Economy", "Whataboutism"],
+    theySay: "Biden caused all inflation! Trump fixed it instantly!",
+    youSay:
+      "Global inflation spiked after pandemic supply shocks and Russia's Ukraine invasion — not a single U.S. executive order. BLS CPI data shows disinflation through 2024–2025 as supply chains normalized. Tariffs Trump imposed are themselves inflationary taxes on imports, per Tax Foundation analysis. Blaming one president ignores Federal Reserve policy and worldwide commodity markets.",
+    stab: "World events move prices. Your meme doesn't.",
+    sources: [
+      cite(
+        "bls_cpi",
+        "Consumer Price Index",
+        "Bureau of Labor Statistics",
+        "https://www.bls.gov/cpi/",
+        "BLS publishes official U.S. inflation data by category and region.",
+        "2025-01-01"
+      ),
+      cite(
+        "tax_foundation_tariffs",
+        "Trump Tariffs",
+        "Tax Foundation",
+        "https://taxfoundation.org/research/all/federal/trump-tariffs/",
+        "Tax Foundation models tariff impacts on consumer prices and economic growth.",
+        "2025-04-01"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["biden-inflation", "gas-prices-president"],
+  },
+  {
+    id: "crt-teaches-hate-white",
+    category: ["Education", "Culture Wars"],
+    theySay: "CRT teaches kids to hate white people! It's Marxist indoctrination!",
+    youSay:
+      "Critical race theory is a graduate-level legal framework — not a K-12 curriculum. Brookings research on state gag orders shows the moral panic targets any honest history instruction. No federal mandate requires CRT in classrooms; red-state laws instead ban books and discussion of racism, which PEN America documents as educational censorship.",
+    stab: "You can't name a single fourth-grade CRT textbook. Because it doesn't exist.",
+    sources: [
+      cite(
+        "brookings_crt_bans",
+        "Why Are States Banning Critical Race Theory?",
+        "Brookings Institution",
+        "https://www.brookings.edu/articles/why-are-states-banning-critical-race-theory/",
+        "Brookings analyzes state legislation targeting CRT and classroom speech.",
+        "2021-07-02"
+      ),
+      cite(
+        "pen_gag_orders",
+        "Educational Gag Orders",
+        "PEN America",
+        "https://pen.org/report/educational-gag-orders/",
+        "PEN America tracks state laws restricting teaching about race, gender, and history.",
+        "2023-01-01"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["crt-schools", "schools-indoctrination"],
+  },
+  {
+    id: "renewables-unreliable-texas",
+    category: ["Climate", "Economy"],
+    theySay: "Wind and solar caused the Texas blackout! Renewables are unreliable!",
+    youSay:
+      "EIA post-mortems of the 2021 Texas freeze show gas plants failed at scale when equipment froze — wind outperformed grid operator expectations. Every grid needs winterization and storage; blaming renewables is fossil-fuel propaganda to delay transmission upgrades. NOAA documents rising extreme weather that strains all generation types.",
+    stab: "Gas plants froze. You blamed the turbines. Follow the EIA data.",
+    sources: [
+      cite(
+        "eia_texas_freeze",
+        "Texas Energy Production During Winter Storm Uri",
+        "U.S. Energy Information Administration",
+        "https://www.eia.gov/todayinenergy/detail.php?id=61364",
+        "EIA analyzes fuel-type failures during the 2021 Texas grid crisis.",
+        "2021-03-01"
+      ),
+      cite(
+        "noaa_billion_disasters",
+        "Billion-Dollar Weather and Climate Disasters",
+        "National Oceanic and Atmospheric Administration",
+        "https://www.ncei.noaa.gov/access/billions/",
+        "NOAA tracks rising frequency and cost of extreme weather events.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["renewables-unreliable", "green-new-deal-ban-cows"],
+  },
+  {
+    id: "supreme-court-activist",
+    category: ["Courts", "Democracy"],
+    theySay: "Democrats are court-packing radicals! The Supreme Court is just correcting activism!",
+    youSay:
+      "The current Court overturned 50 years of abortion precedent, expanded presidential immunity, and ended race-conscious college admissions — without public congressional mandate. CRS tracks the shrinking docket of meritorious petitions while high-profile ideological cases advance. Calling it 'correction' after billionaire-funded judicial selection is politics, not neutral jurisprudence.",
+    stab: "You liked judicial activism when it delivered your policy wins.",
+    sources: [
+      cite(
+        "scotus_opinions_23",
+        "Supreme Court Opinions 2023 Term",
+        "Supreme Court of the United States",
+        "https://www.supremecourt.gov/opinions/slipopinion/23",
+        "SCOTUS publishes official opinions including Dobbs, immunity, and admissions rulings.",
+        "2024-07-01"
+      ),
+      cite(
+        "crs_scotus",
+        "The Supreme Court: An Overview",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/product/pdf/R/R46727",
+        "CRS explains Court jurisdiction, appointment process, and major doctrinal shifts.",
+        "2024-01-01"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["court-packing", "judges-activist"],
+  },
+  {
+    id: "immigrants-drain-welfare",
+    category: ["Immigration", "Economy"],
+    theySay: "Immigrants drain welfare! They get free everything while we pay!",
+    youSay:
+      "Undocumented immigrants are largely ineligible for federal means-tested benefits — and pay billions in taxes via ITIN filings without receiving Social Security payouts. Cato Institute immigration research documents lower crime rates and net fiscal contributions from immigrant households. The 'free ride' narrative collapses when you read eligibility rules in statute.",
+    stab: "They pay taxes for benefits they can't claim. You're mad at a ghost.",
+    sources: [
+      cite(
+        "cato_immigrant_crime",
+        "Immigrants Commit Less Crime",
+        "Cato Institute",
+        "https://www.cato.org/blog/immigrants-commit-less-crime",
+        "Cato research finds immigrants commit fewer crimes than native-born citizens.",
+        "2020-01-01"
+      ),
+      cite(
+        "cato_immigration_fiscal",
+        "Immigration and the Welfare State",
+        "Cato Institute",
+        "https://www.cato.org/publications/immigration-research-brief-no-14",
+        "Cato analyzes immigrant fiscal contributions and benefit eligibility restrictions.",
+        "2013-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["immigrants-welfare", "open-borders"],
+  },
+  {
+    id: "death-panels-real",
+    category: ["Healthcare"],
+    theySay: "Obamacare has death panels! Government will ration your care!",
+    youSay:
+      "PolitiFact named 'death panels' the 2009 Lie of the Year — the claim misrepresented end-of-life counseling as government euthanasia boards. ACA premium tax credits expanded coverage to millions; KFF documents what happens when those credits expire. The real rationing is unaffordable deductibles in a for-profit system — not Medicare advisory boards that were never enacted.",
+    stab: "Lie of the Year. Still recycling it fifteen years later.",
+    sources: [
+      cite(
+        "politifact_death_panels",
+        "PolitiFact's Lie of the Year: Death Panels",
+        "PolitiFact",
+        "https://www.politifact.com/article/2009/dec/18/politifact-lie-year-death-panels/",
+        "PolitiFact debunked death panel claims as the 2009 Lie of the Year.",
+        "2009-12-18"
+      ),
+      cite(
+        "kff_aca_premiums",
+        "ACA Marketplace Premium Payments",
+        "Kaiser Family Foundation",
+        "https://www.kff.org/affordable-care-act/aca-marketplace-premium-payments-would-more-than-double-on-average-next-year-if-enhanced-premium-tax-credits-expire/",
+        "KFF models ACA premium impacts if enhanced tax credits expire.",
+        "2024-01-01"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["obamacare-failing", "medicare-for-all-rationing"],
+  },
+  {
+    id: "trump-tax-cuts-paid",
+    category: ["Economy", "Whataboutism"],
+    theySay: "Trump's tax cuts paid for themselves! Revenue went up!",
+    youSay:
+      "CBO scored the 2017 Tax Cuts and Jobs Act as adding $1.9 trillion to deficits over a decade — revenue bumps from economic growth did not offset rate cuts for corporations and wealthy estates. Treasury monthly statements show deficits rising with interest costs. 'Paying for themselves' is supply-side marketing, not fiscal accounting.",
+    stab: "CBO ran the numbers. Your bumper sticker didn't.",
+    sources: [
+      cite(
+        "cbo_tcja",
+        "The Budget and Economic Outlook",
+        "Congressional Budget Office",
+        "https://www.cbo.gov/publication/54994",
+        "CBO projected TCJA deficit impacts and revenue effects.",
+        "2018-04-01"
+      ),
+      cite(
+        "treasury_mts",
+        "Monthly Treasury Statement",
+        "U.S. Department of the Treasury",
+        "https://www.fiscal.treasury.gov/reports-statements/mts/",
+        "Treasury publishes monthly federal receipts, outlays, and deficit data.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["trump-best-economy-ever", "tax-cuts-pay-themselves"],
+  },
+  {
+    id: "election-machines-rigged",
+    category: ["Elections", "Media"],
+    theySay: "Dominion machines flipped votes! The algorithms are rigged!",
+    youSay:
+      "Dominion won defamation settlements from networks that aired conspiracy theories — with no evidence of vote flipping in any certified audit. AP's 2020 Georgia review found no fraudulent ballots. Voting machines produce paper records recountable by hand; the 'algorithm' claim ignores that bipartisan county boards certify results independently.",
+    stab: "Fox paid for this lie. You got it for free.",
+    sources: [
+      cite(
+        "ap_georgia_audit",
+        "AP Review of Georgia Ballots",
+        "Associated Press",
+        "https://apnews.com/article/election-2020-joe-biden-donald-trump-georgia-elections-1a2ea5e8df69614f4e09b47fea581a09",
+        "AP found no evidence of widespread fraud in Georgia's 2020 election audit.",
+        "2021-12-01"
+      ),
+      cite(
+        "dominion_defamation",
+        "Dominion Voting Systems News",
+        "Dominion Voting Systems",
+        "https://www.dominionvoting.com/news/",
+        "Dominion documents defamation litigation outcomes against election-fraud claims.",
+        "2023-04-01"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["election-stolen", "voting-machines"],
+  },
+  {
+    id: "if-global-warming-why-cold",
+    category: ["Climate"],
+    theySay: "If global warming is real, why is it snowing? Climate change is a hoax!",
+    youSay:
+      "Weather is what happens today; climate is the long-term pattern. NOAA documents rising global temperatures and increasing billion-dollar disaster frequency — winter storms still occur, but heat records outpace cold records by widening margins. IPCC explains that a warmer atmosphere holds more moisture, which can intensify both droughts and blizzards. Confusing a snow day with planetary physics is the hoax.",
+    stab: "Your thermometer reads the whole planet, not your driveway.",
+    sources: [
+      cite(
+        "noaa_billions",
+        "Billion-Dollar Weather and Climate Disasters",
+        "National Oceanic and Atmospheric Administration",
+        "https://www.ncei.noaa.gov/access/billions/",
+        "NOAA tracks rising frequency and cost of extreme weather events.",
+        "2025-01-01"
+      ),
+      cite(
+        "ipcc_ar6",
+        "IPCC Sixth Assessment Report",
+        "Intergovernmental Panel on Climate Change",
+        "https://www.ipcc.ch/report/ar6/syr/",
+        "IPCC synthesizes peer-reviewed climate science on warming trends and extreme weather.",
+        "2023-03-01"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["climate-hoax", "natural-climate-cycles"],
+  },
+  {
+    id: "reagan-ended-inflation",
+    category: ["Economy", "Whataboutism"],
+    theySay: "Reagan fixed the economy! Inflation was terrible until he cut taxes!",
+    youSay:
+      "Inflation peaked in 1980 under Carter and fell under Volcker's Federal Reserve rate hikes — years before Reagan's 1981 tax cuts took full effect. CBO and BEA data show the recovery was driven by monetary policy and oil price collapse, not supply-side magic. Reagan also tripled the national debt and raised taxes eleven times. Credit the Fed chair, not the Hollywood narrative.",
+    stab: "Volcker broke inflation. Reagan took the credit.",
+    sources: [
+      cite(
+        "bea_gdp",
+        "Gross Domestic Product",
+        "Bureau of Economic Analysis",
+        "https://www.bea.gov/data/gdp/gross-domestic-product",
+        "BEA publishes official GDP and economic growth data.",
+        "2025-01-01"
+      ),
+      cite(
+        "cbo_outlook",
+        "The Budget and Economic Outlook",
+        "Congressional Budget Office",
+        "https://www.cbo.gov/publication/54994",
+        "CBO analyzes federal deficits and economic effects of fiscal policy.",
+        "2018-04-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["trump-best-economy-ever", "trickle-down-works"],
+  },
+  {
+    id: "california-communist",
+    category: ["Economy", "Culture Wars"],
+    theySay: "California is communist! They're a failed socialist state!",
+    youSay:
+      "California has the fifth-largest economy on Earth — larger than most nations — driven by tech, agriculture, and entertainment. It runs budget surpluses in strong years and ranks among the top states for venture capital and patent filings. Calling a capitalist powerhouse with more billionaires than most countries 'communist' is propaganda, not economics. Policy disagreements aren't gulags.",
+    stab: "Communist states don't host more billionaires than France.",
+    sources: [
+      cite(
+        "bea_gdp_state",
+        "Gross Domestic Product by State",
+        "Bureau of Economic Analysis",
+        "https://www.bea.gov/data/gdp/gross-domestic-product",
+        "BEA measures state-level economic output.",
+        "2025-01-01"
+      ),
+      cite(
+        "cbo_economy",
+        "CBO Economic Analysis",
+        "Congressional Budget Office",
+        "https://www.cbo.gov/topics/economy",
+        "CBO publishes nonpartisan economic research and projections.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["socialism", "democrats-hate-america"],
+  },
+  {
+    id: "guns-dont-kill-people",
+    category: ["Crime"],
+    theySay: "Guns don't kill people, people kill people! It's not the gun!",
+    youSay:
+      "People with guns kill far more efficiently than people without them. States with higher gun ownership rates correlate with higher firearm mortality — FBI UCR and CDC data confirm guns are the leading method in homicides and suicides. The slogan treats a designed killing tool as morally neutral hardware. We regulate cars, medicine, and airplanes because design matters.",
+    stab: "Nobody says 'cars don't crash, drivers crash' to ban seatbelts.",
+    sources: [
+      cite(
+        "fbi_ucr",
+        "FBI Uniform Crime Reporting",
+        "Federal Bureau of Investigation",
+        "https://www.fbi.gov/how-we-can-help-you/more-fbi-services-and-information/ucr",
+        "FBI publishes national crime statistics including firearm-related homicides.",
+        "2024-01-01"
+      ),
+      cite(
+        "pew_guns",
+        "Key Facts About Americans and Guns",
+        "Pew Research Center",
+        "https://www.pewresearch.org/short-reads/2023/09/13/key-facts-about-americans-and-guns/",
+        "Pew surveys gun ownership, policy attitudes, and violence statistics.",
+        "2023-09-13"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["take-your-guns", "gun-free-zones"],
+  },
+  {
+    id: "fed-overreach-10th",
+    category: ["Democracy"],
+    theySay: "The federal government is unconstitutional overreach! Read the Tenth Amendment!",
+    youSay:
+      "The Tenth Amendment reserves powers not delegated to the federal government — but the Commerce Clause, Supremacy Clause, and two centuries of Supreme Court precedent define broad federal authority over civil rights, interstate commerce, and elections. States' rights were the legal argument for segregation; modern 'overreach' claims usually target protections voters want nationally. CRS explains the actual constitutional framework.",
+    stab: "States' rights was the slogan for segregation too.",
+    sources: [
+      cite(
+        "crs_federalism",
+        "Federalism and the Constitution",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/product/pdf/R/R46727",
+        "CRS explains federal-state power divisions and constitutional limits.",
+        "2024-01-01"
+      ),
+      cite(
+        "constitution_supremacy",
+        "U.S. Constitution",
+        "Library of Congress",
+        "https://constitution.congress.gov/constitution/amendment-1/",
+        "Congress.gov hosts the authenticated Constitution and amendments.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["republic-is-not-democracy", "deep-state"],
+  },
+  {
+    id: "woke-generals-lost-wars",
+    category: ["Foreign Policy", "Culture Wars"],
+    theySay: "Woke generals lost Afghanistan! DEI weakened our military!",
+    youSay:
+      "The Afghanistan withdrawal was negotiated by the Trump administration with the Taliban — the Doha agreement set the 2021 exit date. DoD readiness metrics and GAO audits measure equipment, training, and personnel — not diversity training slides. Blaming inclusion programs for a twenty-year war strategy failure is culture-war deflection from bipartisan policy mistakes.",
+    stab: "Trump signed the withdrawal deal. Biden executed it.",
+    sources: [
+      cite(
+        "state_doha",
+        "U.S. Security Cooperation",
+        "U.S. Department of State",
+        "https://www.state.gov/press-releases/",
+        "State Department archives diplomatic agreements including Afghanistan negotiations.",
+        "2021-01-01"
+      ),
+      cite(
+        "defense_readiness",
+        "Department of Defense",
+        "U.S. Department of Defense",
+        "https://www.defense.gov/",
+        "DoD publishes readiness reports and force structure data.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["dei-plane-crash", "no-new-wars-trump"],
+  },
+  {
+    id: "amazon-paid-zero-taxes",
+    category: ["Economy"],
+    theySay: "Amazon paid zero taxes! Corporations don't pay their fair share!",
+    youSay:
+      "Amazon's effective tax rate has been low some years due to R&D credits, accelerated depreciation, and stock-based compensation deductions — legal provisions Congress wrote. The fix isn't outrage at one company; it's closing loopholes and restoring corporate minimum taxes. CBO and Treasury data show the corporate share of federal revenue has fallen for decades while payroll taxes rose. Target the law, not the headline.",
+    stab: "Congress wrote the loopholes. Be mad at them.",
+    sources: [
+      cite(
+        "cbo_corporate",
+        "Corporate Income Tax Rates",
+        "Congressional Budget Office",
+        "https://www.cbo.gov/topics/economy",
+        "CBO analyzes corporate tax revenue and effective rates.",
+        "2025-01-01"
+      ),
+      cite(
+        "treasury_corporate",
+        "Treasury Press Releases",
+        "U.S. Department of the Treasury",
+        "https://home.treasury.gov/news/press-releases",
+        "Treasury publishes tax policy announcements and revenue data.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["corporate-tax-cut-jobs", "billionaires-earned-it"],
+  },
+  {
+    id: "meritocracy-no-racism",
+    category: ["Culture Wars", "Democracy"],
+    theySay: "America is a meritocracy! Racism ended, anyone can make it!",
+    youSay:
+      "Wealth inequality by race persists across every income percentile — Federal Reserve Survey of Consumer Finances shows median white household wealth multiples above Black and Hispanic households. KFF documents racial disparities in maternal mortality and insurance access. 'Meritocracy' without acknowledging starting-line gaps is ideology, not sociology.",
+    stab: "Meritocracy with unequal starting lines isn't merit.",
+    sources: [
+      cite(
+        "kff_racial_equity",
+        "Racial Equity and Health Policy",
+        "Kaiser Family Foundation",
+        "https://www.kff.org/racial-equity-and-health-policy/",
+        "KFF tracks racial disparities in health coverage and outcomes.",
+        "2024-01-01"
+      ),
+      cite(
+        "brookings_crt",
+        "Why States Are Banning Critical Race Theory",
+        "Brookings Institution",
+        "https://www.brookings.edu/articles/why-are-states-banning-critical-race-theory/",
+        "Brookings analyzes structural inequality and education policy debates.",
+        "2021-07-01"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["democrats-real-racists", "affirmative-action-reverse-racism"],
+  },
+  {
+    id: "snowball-in-senate",
+    category: ["Climate", "Media"],
+    theySay: "A senator brought a snowball to Congress! That proves global warming is fake!",
+    youSay:
+      "One winter storm doesn't refute decades of NASA, NOAA, and IPCC temperature records showing accelerating warming. The senator's stunt ignored that the hottest years on record cluster in the last decade. Climate science measures planetary trends — not whether it snowed in Washington in February. Stunts aren't peer review.",
+    stab: "A snowball isn't a temperature dataset.",
+    sources: [
+      cite(
+        "nasa_climate",
+        "Scientific Consensus on Climate Change",
+        "NASA",
+        "https://science.nasa.gov/climate-change/scientific-consensus/",
+        "NASA documents overwhelming scientific agreement on human-caused warming.",
+        "2025-01-01"
+      ),
+      cite(
+        "noaa_global_temp",
+        "Global Climate Report",
+        "National Oceanic and Atmospheric Administration",
+        "https://www.ncei.noaa.gov/access/monitoring/monthly-report/global/202413",
+        "NOAA publishes monthly global temperature anomaly reports.",
+        "2024-12-01"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["climate-hoax", "climate-always-changing"],
+  },
+  {
+    id: "pedophile-library-books",
+    category: ["Culture Wars", "Education"],
+    theySay: "They're putting pedophile books in school libraries! Groomers everywhere!",
+    youSay:
+      "ALA documents that the vast majority of challenged books are LGBTQ-themed literature and historical works — not pornography. PEN America's research shows gag-order laws target discussion of race, identity, and history. Calling librarians groomers is a moral panic designed to purge shelves, not protect children. Actual child abuse is prosecuted under existing criminal law.",
+    stab: "You can't name a single 'pedophile book' that survived a court challenge.",
+    sources: [
+      cite(
+        "ala_bbooks",
+        "Banned and Challenged Books",
+        "American Library Association",
+        "https://www.ala.org/advocacy/bbooks",
+        "ALA tracks book challenges and censorship attempts nationwide.",
+        "2024-01-01"
+      ),
+      cite(
+        "pen_gag_orders",
+        "Educational Gag Orders",
+        "PEN America",
+        "https://pen.org/report/educational-gag-orders/",
+        "PEN documents state laws restricting classroom and library content.",
+        "2023-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["teacher-grooming", "book-bans-parent-rights"],
+  },
+  {
+    id: "reagan-welfare-queen-myth",
+    category: ["Economy", "Whataboutism"],
+    theySay: "Welfare queens drive Cadillacs! Democrats want free stuff for lazy people!",
+    youSay:
+      "The 'welfare queen' stereotype came from a single fraud case Reagan exaggerated in 1976 — not representative data. CBO SNAP reports show most beneficiaries are children, elderly, or working poor; fraud rates are under 2%. Temporary Assistance for Families is time-limited and tiny relative to corporate subsidies. The moral panic targets poor people while ignoring billion-dollar defense contractor waste documented by GAO.",
+    stab: "You hate welfare — but love corporate welfare.",
+    sources: [
+      cite(
+        "cbo_snap",
+        "Supplemental Nutrition Assistance Program",
+        "Congressional Budget Office",
+        "https://www.cbo.gov/publication/57057",
+        "CBO documents SNAP enrollment, costs, and work-requirement impacts.",
+        "2025-05-15"
+      ),
+      cite(
+        "gao_fraud",
+        "Government Accountability Office",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/",
+        "GAO audits federal programs including fraud prevention in benefit systems.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["welfare-queens", "entitlements-bankrupt"],
+  },
+  {
+    id: "comedy-too-pc-now",
+    category: ["Culture Wars", "Media"],
+    theySay: "You can't joke about anything anymore! Comedy is dead because of PC culture!",
+    youSay:
+      "Comedians still sell out arenas and stream specials — the 'you can't joke' claim is nostalgia, not economics. What changed is audience backlash to punching down at marginalized groups, which is market feedback, not government censorship. PEN America documents actual speech restrictions in state gag-order laws — those are Republican-led book bans and classroom speech limits, not liberal college kids on Twitter.",
+    stab: "You're not banned. Your bit just isn't funny.",
+    sources: [
+      cite(
+        "pen_gag_comedy",
+        "Educational Gag Orders",
+        "PEN America",
+        "https://pen.org/report/educational-gag-orders/",
+        "PEN tracks state laws restricting speech in schools and public institutions.",
+        "2023-01-01"
+      ),
+      cite(
+        "reuters_media",
+        "Digital News Report",
+        "Reuters Institute",
+        "https://reutersinstitute.politics.ox.ac.uk/digital-news-report/2024",
+        "Reuters Institute surveys global media consumption and trust trends.",
+        "2024-06-01"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["cancel-culture-victim", "free-speech-campus"],
+  },
+  {
+    id: "noncitizens-vote-millions",
+    category: ["Elections", "Immigration"],
+    theySay: "Millions of illegals voted! That's why Democrats want open borders!",
+    youSay:
+      "Brennan Center research finds noncitizen voting is extraordinarily rare — prosecuted cases number in the dozens nationwide, not millions. The SAVE Act and similar proposals would purge eligible citizens from rolls using error-prone databases. Noncitizens already face deportation and felony charges for voting. The claim exists to justify voter suppression, not to fix a documented problem.",
+    stab: "Name one verified million-vote fraud case. You can't.",
+    sources: [
+      cite(
+        "brennan_noncitizen",
+        "Noncitizen Voting: The Missing Millions",
+        "Brennan Center for Justice",
+        "https://www.brennancenter.org/our-work/research-reports/noncitizen-voting-missing-millions",
+        "Brennan Center debunks widespread noncitizen voting claims with prosecution data.",
+        "2024-01-01"
+      ),
+      cite(
+        "brennan_fraud",
+        "The Truth About Voter Fraud",
+        "Brennan Center for Justice",
+        "https://www.brennancenter.org/our-work/research-reports/truth-about-voter-fraud",
+        "Brennan Center compiles documented voter fraud cases across elections.",
+        "2024-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["illegal-voting", "open-borders"],
+  },
+  {
+    id: "coal-keeps-lights-on",
+    category: ["Climate", "Economy"],
+    theySay: "Coal keeps the lights on! Green energy can't replace fossil fuels!",
+    youSay:
+      "U.S. coal generation has declined for fifteen years while renewables and gas filled the gap — EIA data shows wind and solar are the fastest-growing sources. Grid reliability issues in Texas were tied to gas and coal plant failures during freezes, not renewables alone. Climate mobilization invests in storage and transmission so clean power scales — clinging to coal is nostalgia subsidized by lobbyists.",
+    stab: "Coal jobs declined. Renewables didn't.",
+    sources: [
+      cite(
+        "eia_energy",
+        "U.S. Energy Information Administration",
+        "U.S. Energy Information Administration",
+        "https://www.eia.gov/todayinenergy/detail.php?id=61262",
+        "EIA publishes electricity generation mix and fuel consumption statistics.",
+        "2025-01-01"
+      ),
+      cite(
+        "nasa_climate_coal",
+        "Scientific Consensus on Climate Change",
+        "NASA",
+        "https://science.nasa.gov/climate-change/scientific-consensus/",
+        "NASA documents human-caused warming and fossil fuel emissions science.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["climate-hoax", "renewables-unreliable-texas"],
+  },
+  {
+    id: "right-to-work-freedom",
+    category: ["Economy"],
+    theySay: "Right-to-work states are freer! Unions force people to pay dues!",
+    youSay:
+      "Right-to-work laws let workers free-ride on union-negotiated contracts without paying representation costs — BLS data shows union states have higher median wages and better benefits. The 17% union wage premium isn't coercion; it's collective bargaining power. Calling it 'freedom' is Orwellian when the goal is defunding the only institution that negotiates against CEOs.",
+    stab: "Freedom to earn less isn't freedom.",
+    sources: [
+      cite(
+        "bls_union_rtw",
+        "Union Members Summary",
+        "Bureau of Labor Statistics",
+        "https://www.bls.gov/news.release/union2.nr0.htm",
+        "BLS reports union membership rates and wage premiums by state.",
+        "2025-01-01"
+      ),
+      cite(
+        "brookings_labor_rtw",
+        "Modernizing Labor Laws",
+        "Brookings Institution",
+        "https://www.brookings.edu/articles/a-proposal-for-modernizing-labor-laws-for-21st-century-work-the-independent-worker/",
+        "Brookings analyzes gig work, union power, and wage stagnation.",
+        "2024-01-01"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["unions-corrupt", "minimum-wage-kills-jobs"],
+  },
+  {
+    id: "biden-open-border-crisis",
+    category: ["Immigration", "Media"],
+    theySay: "Biden had open borders! Trump secured the border in one day!",
+    youSay:
+      "Border apprehensions fluctuated under both administrations — CBP publishes monthly data showing enforcement continued throughout Biden's term. Asylum law requires due process, not instant deportation. The 'open borders' narrative ignores record deportations, Title 42 expulsions, and bipartisan funding fights. One executive order doesn't erase geography, cartel economics, or congressional appropriations.",
+    stab: "Open borders with a million deportations? Pick a lane.",
+    sources: [
+      cite(
+        "cbp_stats",
+        "U.S. Customs and Border Protection",
+        "U.S. Customs and Border Protection",
+        "https://www.cbp.gov/newsroom/stats",
+        "CBP publishes southwest border encounter and enforcement statistics.",
+        "2025-01-01"
+      ),
+      cite(
+        "cato_immigration_crime",
+        "Immigrants Commit Less Crime",
+        "Cato Institute",
+        "https://www.cato.org/blog/immigrants-commit-less-crime",
+        "Cato research finds immigrants have lower incarceration rates than native-born citizens.",
+        "2024-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["open-borders", "border-invasion"],
+  },
+  {
+    id: "god-removed-from-schools",
+    category: ["Culture Wars", "Education"],
+    theySay: "They removed God from schools! That's why society is falling apart!",
+    youSay:
+      "The First Amendment prohibits public schools from endorsing religion — Engel v. Vitale settled that in 1962. Students can still pray privately; schools can't lead sectarian worship with tax dollars. Correlation isn't causation: countries with secular education often outperform the U.S. on violence and literacy metrics. The claim is culture-war nostalgia, not constitutional restoration.",
+    stab: "Public schools aren't churches. That's the point.",
+    sources: [
+      cite(
+        "congress_first_amendment",
+        "U.S. Constitution — First Amendment",
+        "Library of Congress",
+        "https://constitution.congress.gov/constitution/amendment-1/",
+        "Congress.gov hosts the authenticated Constitution and establishment clause text.",
+        "2025-01-01"
+      ),
+      cite(
+        "pen_schools_prayer",
+        "Educational Gag Orders",
+        "PEN America",
+        "https://pen.org/report/educational-gag-orders/",
+        "PEN documents state restrictions on classroom speech and curriculum.",
+        "2023-01-01"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["prayer-in-schools", "crt-schools"],
+  },
+  {
+    id: "bail-reform-crime-wave",
+    category: ["Crime"],
+    theySay: "Bail reform caused the crime wave! Letting criminals out is insane!",
+    youSay:
+      "BJS victimization surveys show property and violent crime trends are complex — blaming bail reform requires isolating one policy in multivariate data. Cash bail jails poor people pretrial regardless of risk; reform targets wealth-based detention. Cities that reformed bail didn't uniformly see spikes; many factors include pandemic disruptions and gun availability. Fearmongering substitutes anecdotes for BJS statistics.",
+    stab: "Rich defendants buy freedom today. You OK with that?",
+    sources: [
+      cite(
+        "bjs_victimization",
+        "Criminal Victimization",
+        "Bureau of Justice Statistics",
+        "https://bjs.ojp.gov/library/publications/criminal-victimization-2023",
+        "BJS publishes national crime victimization survey data.",
+        "2024-09-01"
+      ),
+      cite(
+        "bjs_portal",
+        "Bureau of Justice Statistics",
+        "Bureau of Justice Statistics",
+        "https://bjs.ojp.gov/",
+        "BJS is the primary federal source for crime and justice statistics.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["defund-police", "sanctuary-crime"],
+  },
+  {
+    id: "military-woke-recruiting",
+    category: ["Foreign Policy", "Culture Wars"],
+    theySay: "Woke recruiting ads made the military weak! Nobody wants to join anymore!",
+    youSay:
+      "DoD recruiting shortfalls correlate with low unemployment, obesity rates, and education requirements — not diversity ads. GAO readiness reports measure equipment and training, not culture-war memes. The all-volunteer force missed goals under Trump too. Blaming inclusion for recruitment math ignores compensation, deployment tempo, and civilian job competition documented in defense workforce studies.",
+    stab: "Recruiting failed before the ads. Check the data.",
+    sources: [
+      cite(
+        "dod_recruiting",
+        "Department of Defense",
+        "U.S. Department of Defense",
+        "https://www.defense.gov/",
+        "DoD publishes force structure, readiness, and personnel statistics.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_defense",
+        "Government Accountability Office",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/",
+        "GAO audits defense readiness, acquisitions, and workforce programs.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["dei-plane-crash", "woke-generals-lost-wars"],
+  },
+  {
+    id: "billionaires-free-speech",
+    category: ["Media", "Democracy"],
+    theySay: "Elon saved free speech! Billionaires are the last defense against censorship!",
+    youSay:
+      "A billionaire owning a platform isn't free speech — it's private censorship with a blue checkmark. When owners throttle journalists, boost partisan accounts, and fire moderation teams, that's corporate control, not the First Amendment. Sunlight Foundation and Pew document how concentrated media ownership shapes discourse. Democracy needs pluralistic platforms and antitrust — not oligarchs cosplaying as Founding Fathers.",
+    stab: "Free speech isn't one guy owning the town square.",
+    sources: [
+      cite(
+        "sunlight_transparency",
+        "Open Data Policy Guidelines",
+        "Sunlight Foundation",
+        "https://opendatapolicyhub.sunlightfoundation.com/guidelines/",
+        "Sunlight Foundation advocates government transparency and open data standards.",
+        "2024-01-01"
+      ),
+      cite(
+        "pew_media",
+        "Pew Research Center",
+        "Pew Research Center",
+        "https://www.pewresearch.org/",
+        "Pew studies media consumption, trust, and platform demographics.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["big-tech-censorship", "media-bias"],
+  },
+  {
+    id: "homophobic-baker-freedom",
+    category: ["Culture Wars", "Courts"],
+    theySay: "The baker shouldn't be forced to bake a gay cake! Religious freedom!",
+    youSay:
+      "Public accommodations laws have required businesses to serve all customers since the Civil Rights Act — religion doesn't exempt you from anti-discrimination statutes. Masterpiece Cakeshop was narrowly decided on commission bias, not a blanket license to refuse LGBTQ customers. When florists, photographers, and bakers pick and choose, they're re-litigating lunch-counter segregation with a cross on the wall.",
+    stab: "Your religion doesn't get to veto civil rights law.",
+    sources: [
+      cite(
+        "congress_civil_rights_act",
+        "Civil Rights Act of 1964",
+        "Library of Congress",
+        "https://www.congress.gov/bill/88th-congress/house-bill/7152",
+        "Congress.gov hosts the Civil Rights Act public accommodations provisions.",
+        "1964-07-02"
+      ),
+      cite(
+        "aclu_lgbtq",
+        "LGBTQ Rights",
+        "American Civil Liberties Union",
+        "https://www.aclu.org/issues/lgbtq-rights",
+        "ACLU documents LGBTQ anti-discrimination law and religious-exemption cases.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["christians-persecuted", "teacher-grooming"],
+  },
+  {
+    id: "prageru-teaches-history",
+    category: ["Education", "Media"],
+    theySay: "PragerU teaches real history! Schools are lying to kids!",
+    youSay:
+      "PragerU is a conservative advocacy nonprofit, not an accredited curriculum publisher — historians and education researchers have documented factual errors in its videos. Florida's approval of PragerU materials in schools is a political choice, not academic consensus. Real history education cites primary sources, peer review, and multiple perspectives — not five-minute opinion clips funded by donors with a partisan agenda.",
+    stab: "A YouTube channel isn't a history department.",
+    sources: [
+      cite(
+        "pen_gag_prageru",
+        "Educational Gag Orders",
+        "PEN America",
+        "https://pen.org/report/educational-gag-orders/",
+        "PEN documents state restrictions on classroom speech and curriculum.",
+        "2023-01-01"
+      ),
+      cite(
+        "ed_dept_civics",
+        "Civics and History Education",
+        "U.S. Department of Education",
+        "https://www.ed.gov/",
+        "The Education Department publishes civics and history education resources and grants.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["crt-schools", "media-literacy-indoctrination"],
+  },
+  {
+    id: "fauci-created-covid",
+    category: ["Healthcare", "Whataboutism"],
+    theySay: "Fauci created COVID in a lab! He funded the Wuhan lab!",
+    youSay:
+      "NIH funded broad coronavirus research through EcoHealth Alliance — standard pandemic-preparedness work predating COVID-19. Multiple intelligence reviews found no consensus that the virus was engineered. Conflating grant oversight with 'creating' a pandemic is conspiracy, not epidemiology. GAO and HHS OIG audit grant compliance; they don't support lab-leak certainty claims repeated in campaign ads.",
+    stab: "Grants aren't bioweapons. Show the proof.",
+    sources: [
+      cite(
+        "gao_nih_grants",
+        "Government Accountability Office",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/",
+        "GAO audits federal research grant oversight and compliance.",
+        "2025-01-01"
+      ),
+      cite(
+        "cdc_covid_data",
+        "COVID Data Tracker",
+        "Centers for Disease Control and Prevention",
+        "https://www.cdc.gov/covid/",
+        "CDC publishes COVID-19 surveillance, mortality, and vaccination data.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["vaccine-microchips", "but-obama-did-this"],
+  },
+  {
+    id: "portland-anarchist-zone",
+    category: ["Crime", "Jan 6"],
+    theySay: "Portland had an anarchist zone for months! Democrats said nothing!",
+    youSay:
+      "The CHOP/CHAZ occupation in Seattle lasted weeks, not months — local police cleared it after shootings. Portland protests involved property damage but were not 'lawless zones' exempt from prosecution; hundreds faced charges. Comparing a city block occupation to a coordinated attack on the Capitol certification is whataboutism. DOJ prosecuted both — the scale and target of January 6 were categorically different.",
+    stab: "A city block isn't the U.S. Capitol.",
+    sources: [
+      cite(
+        "doj_jan6",
+        "January 6 Investigations",
+        "U.S. Department of Justice",
+        "https://www.justice.gov/",
+        "DOJ publishes January 6 prosecution statistics and case filings.",
+        "2025-01-01"
+      ),
+      cite(
+        "bjs_crime_stats",
+        "Bureau of Justice Statistics",
+        "Bureau of Justice Statistics",
+        "https://bjs.ojp.gov/",
+        "BJS compiles national crime, arrest, and prosecution data.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["jan-6-tourist-visit", "blm-riots"],
+  },
+  {
+    id: "electric-grid-green-fail",
+    category: ["Climate", "Economy"],
+    theySay: "Green energy will collapse the grid! Wind and solar can't keep the lights on!",
+    youSay:
+      "EIA data shows renewables are the fastest-growing generation source while grid operators invest in storage and transmission to manage intermittency. Texas 2021 blackouts were driven primarily by gas plant failures in freezing weather — not wind alone. Every serious decarbonization pathway pairs renewables with storage, demand response, and grid modernization. 'The grid will fail' is a delay tactic from incumbents, not a planning document.",
+    stab: "Texas froze because gas failed. Not wind.",
+    sources: [
+      cite(
+        "eia_grid_renewables",
+        "U.S. Energy Information Administration",
+        "U.S. Energy Information Administration",
+        "https://www.eia.gov/todayinenergy/",
+        "EIA publishes electricity generation, fuel mix, and grid reliability data.",
+        "2025-01-01"
+      ),
+      cite(
+        "noaa_climate_costs",
+        "Billion-Dollar Weather and Climate Disasters",
+        "National Oceanic and Atmospheric Administration",
+        "https://www.ncei.noaa.gov/access/billions/",
+        "NOAA tracks the frequency and cost of billion-dollar weather disasters.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["renewables-unreliable-texas", "coal-keeps-lights-on"],
+  },
+  {
+    id: "second-amendment-well-regulated",
+    category: ["Crime", "Courts"],
+    theySay: "Shall not be infringed! The Second Amendment is absolute!",
+    youSay:
+      "Heller recognized an individual right to bear arms but explicitly allowed prohibitions on concealed carry, felon possession, and sensitive places like schools. 'Well regulated Militia' appears in the text Congress ratified. Every developed democracy with lower gun death rates regulates firearms — background checks, safe storage, and assault-weapon limits are constitutional under current precedent. Absolutism isn't originalism; it's marketing.",
+    stab: "Even Scalia said felons can't have guns.",
+    sources: [
+      cite(
+        "congress_2a",
+        "U.S. Constitution — Second Amendment",
+        "Library of Congress",
+        "https://constitution.congress.gov/constitution/amendment-2/",
+        "Congress.gov hosts the authenticated Second Amendment text.",
+        "2025-01-01"
+      ),
+      cite(
+        "bjs_gun_violence",
+        "Bureau of Justice Statistics",
+        "Bureau of Justice Statistics",
+        "https://bjs.ojp.gov/",
+        "BJS publishes firearm injury, death, and crime statistics.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["take-your-guns", "gun-free-zones"],
+  },
+  {
+    id: "marriage-one-man-woman",
+    category: ["Culture Wars", "Courts"],
+    theySay: "Marriage is one man and one woman! Obergefell was judicial activism!",
+    youSay:
+      "Obergefell held that marriage is a fundamental right — denying it to same-sex couples violated equal protection. Public support for marriage equality crossed 70% years ago. Re-litigating settled precedent threatens adoption rights, hospital visitation, and spousal benefits for millions of families. 'Traditional marriage' rhetoric was identical to the arguments against Loving v. Virginia — courts rejected both.",
+    stab: "The Court settled this. Your marriage isn't threatened.",
+    sources: [
+      cite(
+        "pew_marriage_equality",
+        "Pew Research Center",
+        "Pew Research Center",
+        "https://www.pewresearch.org/",
+        "Pew tracks public opinion on same-sex marriage and LGBTQ rights.",
+        "2025-01-01"
+      ),
+      cite(
+        "aclu_marriage",
+        "LGBTQ Rights",
+        "American Civil Liberties Union",
+        "https://www.aclu.org/issues/lgbtq-rights",
+        "ACLU litigated marriage equality cases and documents ongoing threats.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["trans-bathrooms", "christians-persecuted"],
+  },
+  {
+    id: "democrats-raise-taxes",
+    category: ["Economy", "Whataboutism"],
+    theySay: "Democrats always raise your taxes! Republicans cut them!",
+    youSay:
+      "CBO and Treasury data show the 2017 Tax Cuts and Jobs Act disproportionately benefited top earners while adding trillions to deficits. Biden pledged no tax hikes on households under $400K and signed legislation extending ACA subsidies. 'Tax cuts' that expire for workers but not corporations aren't middle-class wins — they're timed campaign gifts funded by debt. Check the distributional tables, not the rally signs.",
+    stab: "Show me your W-2. Did your taxes actually fall?",
+    sources: [
+      cite(
+        "cbo_tax_distribution",
+        "Congressional Budget Office",
+        "Congressional Budget Office",
+        "https://www.cbo.gov/topics/taxes",
+        "CBO analyzes distributional effects of federal tax policy.",
+        "2025-01-01"
+      ),
+      cite(
+        "treasury_tax_policy",
+        "Treasury Press Releases",
+        "U.S. Department of the Treasury",
+        "https://home.treasury.gov/news/press-releases",
+        "Treasury publishes tax policy announcements and revenue analysis.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["trump-tax-cuts-paid", "fiscal-conservatives"],
+  },
+  {
+    id: "puerto-rico-not-state",
+    category: ["Democracy", "Foreign Policy"],
+    theySay: "Puerto Rico shouldn't be a state! They're not even American!",
+    youSay:
+      "Puerto Ricans have been U.S. citizens since 1917 — they serve in the military and pay federal taxes without full congressional representation. Status referendums have repeatedly shown majority support for statehood. Denying representation to 3 million citizens because of language or culture is the same colonial logic Congress used against every territory that eventually became a state. Democracy means votes that count.",
+    stab: "They fight in our wars. They deserve a vote.",
+    sources: [
+      cite(
+        "crs_puerto_rico",
+        "Puerto Rico: Status and Policy",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/",
+        "CRS analyzes Puerto Rico's political status and federal relationship.",
+        "2025-01-01"
+      ),
+      cite(
+        "congress_territories",
+        "U.S. Congress",
+        "U.S. Congress",
+        "https://www.congress.gov/",
+        "Congress.gov hosts legislation on territorial status and representation.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["electoral-college-fair", "republic-is-not-democracy"],
+  },
+  {
+    id: "jan-6-just-protest",
+    category: ["Jan 6", "Democracy"],
+    theySay: "January 6 was just a protest! Tourists walking through the Capitol!",
+    youSay:
+      "DOJ has charged more than 1,500 defendants — including seditious conspiracy convictions for Proud Boys and Oath Keepers leaders. Video evidence shows rioters breaching barricades, assaulting officers, and chanting to hang the Vice President. Congress certified the election after hours of lockdown. Calling it tourism insults the 140 officers injured and the rule of law. Peaceful protest doesn't include pipe bombs and gallows.",
+    stab: "Tourists don't get seditious conspiracy convictions.",
+    sources: [
+      cite(
+        "doj_jan6_cases",
+        "January 6 Prosecutions",
+        "U.S. Department of Justice",
+        "https://www.justice.gov/",
+        "DOJ publishes January 6 investigation updates and prosecution statistics.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_capitol_security",
+        "Government Accountability Office",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/",
+        "GAO reviewed Capitol security failures and January 6 response.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["jan-6-tourist-visit", "fbi-jan6-setup"],
+  },
+  {
+    id: "deficit-only-dems",
+    category: ["Economy", "Whataboutism"],
+    theySay: "Only Democrats run up the deficit! Republicans are fiscally responsible!",
+    youSay:
+      "CBO data shows the 2017 Tax Cuts and Jobs Act added roughly $1.9 trillion to deficits over a decade — the largest peacetime debt increase came under Republican trifectas in 2001 and 2017. Trump and Biden both signed emergency spending; the structural gap is tax cuts for corporations and wealthy estates, not food stamps. Fiscal responsibility means looking at Treasury statements, not rally slogans.",
+    stab: "Show me the CBO score. Then we'll talk deficits.",
+    sources: [
+      cite(
+        "cbo_deficit",
+        "Congressional Budget Office",
+        "Congressional Budget Office",
+        "https://www.cbo.gov/topics/budget",
+        "CBO publishes deficit, debt, and distributional analyses of major tax and spending legislation.",
+        "2025-01-01"
+      ),
+      cite(
+        "treasury_monthly",
+        "Treasury Monthly Statement",
+        "U.S. Department of the Treasury",
+        "https://fiscaldata.treasury.gov/datasets/monthly-treasury-statement/",
+        "Treasury publishes monthly federal receipts, outlays, and deficit data.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["fiscal-conservatives", "trump-tax-cuts-paid"],
+  },
+  {
+    id: "states-rights-history",
+    category: ["Democracy", "Courts"],
+    theySay: "States' rights! The federal government is too powerful!",
+    youSay:
+      "'States' rights' was the legal argument for slavery, Jim Crow, and school segregation — states used local control to deny equal protection until federal civil rights law overrode them. The Supremacy Clause exists because leaving voting, marriage, and discrimination entirely to states produced apartheid. Today, the same phrase appears in arguments against Medicaid expansion, abortion access, and voting protections. Local control isn't neutral when local power targets minorities.",
+    stab: "States' rights lost at Appomattox. Remember why.",
+    sources: [
+      cite(
+        "congress_civil_rights_act",
+        "Civil Rights Act of 1964",
+        "Library of Congress",
+        "https://www.congress.gov/bill/88th-congress/house-bill/7152",
+        "Congress.gov hosts the Civil Rights Act and its federal preemption of discriminatory state laws.",
+        "1964-07-02"
+      ),
+      cite(
+        "crs_federalism",
+        "Federalism",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/",
+        "CRS analyzes federal-state power balances and Supremacy Clause precedents.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["republic-is-not-democracy", "fed-overreach-10th"],
+  },
+  {
+    id: "dnc-rigged-primaries",
+    category: ["Elections", "Media"],
+    theySay: "The DNC rigged the primaries against Bernie! It's all corrupt!",
+    youSay:
+      "Party primaries are private nominating contests — superdelegate rules and debate schedules are internal party governance, not federal elections. Sanders won millions of votes and shifted the 2020 platform; Biden won a majority of pledged delegates fair and square. Conflating party bylaws with ballot rigging is how bad actors discourage participation. If you want open primaries and ranked choice, advocate for state election law — don't sit out because a committee scheduled a debate.",
+    stab: "Bernie endorsed Biden. Twice. That's not a rigged outcome.",
+    sources: [
+      cite(
+        "fec_campaign_guide",
+        "FEC Campaign Guide",
+        "Federal Election Commission",
+        "https://www.fec.gov/help-candidates-and-committees/",
+        "FEC regulates federal campaigns; party nominating rules are separate from general-election administration.",
+        "2025-01-01"
+      ),
+      cite(
+        "pew_trust",
+        "Election Administration",
+        "Pew Research Center",
+        "https://www.pewresearch.org/",
+        "Pew tracks public trust in elections and party identification trends.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["election-stolen", "both-sides-equivalence"],
+  },
+  {
+    id: "canada-healthcare-waits",
+    category: ["Healthcare", "Whataboutism"],
+    theySay: "Canadian healthcare has year-long waits! Socialized medicine kills people!",
+    youSay:
+      "Canada spends roughly half per capita what the U.S. spends while covering everyone — wait times vary by procedure and province, but Canadians live longer and are less likely to go bankrupt from a hospital bill. America's uninsured and underinsured delay care too — they just die quietly without a queue statistic. Every OECD system rations somehow; the U.S. rations by price and zip code. The question is whether rationing happens at the billing desk or the scheduling desk.",
+    stab: "Bankruptcy from chemo isn't freedom.",
+    sources: [
+      cite(
+        "oecd_health",
+        "Health at a Glance",
+        "Organisation for Economic Co-operation and Development",
+        "https://www.oecd.org/health/",
+        "OECD compares health spending, outcomes, and wait times across developed nations.",
+        "2024-01-01"
+      ),
+      cite(
+        "kff_uninsured",
+        "Key Facts about the Uninsured Population",
+        "Kaiser Family Foundation",
+        "https://www.kff.org/uninsured/",
+        "KFF documents uninsured rates and barriers to care in the United States.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["healthcare-socialized", "death-panels-real"],
+  },
+  {
+    id: "coal-jobs-boom",
+    category: ["Climate", "Economy"],
+    theySay: "Coal is coming back! Trump brought back coal jobs!",
+    youSay:
+      "EIA data shows U.S. coal production and mining employment have declined for over a decade — cheap natural gas and renewables outcompete coal on cost, regardless of who sits in the Oval Office. 'War on coal' rhetoric didn't reverse market physics. Promising coal revival to struggling communities without transition plans is cruelty dressed as nostalgia. Real economic policy invests in reclamation, broadband, and clean-energy jobs where mines already closed.",
+    stab: "Markets killed coal. Not Obama. Not Biden.",
+    sources: [
+      cite(
+        "eia_coal",
+        "U.S. Energy Information Administration — Coal",
+        "U.S. Energy Information Administration",
+        "https://www.eia.gov/todayinenergy/",
+        "EIA publishes coal production, consumption, and mining employment statistics.",
+        "2025-01-01"
+      ),
+      cite(
+        "bls_mining",
+        "Bureau of Labor Statistics — Mining",
+        "Bureau of Labor Statistics",
+        "https://www.bls.gov/",
+        "BLS tracks mining and extraction employment by sector over time.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["coal-keeps-lights-on", "climate-hoax"],
+  },
+  {
+    id: "sanctuary-crime-wave",
+    category: ["Immigration", "Crime"],
+    theySay: "Sanctuary cities are crime-infested! They protect criminals!",
+    youSay:
+      "Sanctuary policies limit local police from holding people for ICE without a judicial warrant — they don't block deportation of convicted violent felons. Multiple studies find no correlation between sanctuary status and higher crime rates; immigrants commit crimes at lower rates than native-born citizens per BJS data. The label is a political weapon to justify federal raids in cities that won't act as unpaid immigration agents.",
+    stab: "Cops aren't ICE. That's the whole point.",
+    sources: [
+      cite(
+        "bjs_immigrant_crime",
+        "Bureau of Justice Statistics",
+        "Bureau of Justice Statistics",
+        "https://bjs.ojp.gov/",
+        "BJS compiles crime, victimization, and incarceration statistics including immigrant populations.",
+        "2025-01-01"
+      ),
+      cite(
+        "aclu_sanctuary",
+        "Sanctuary Policies",
+        "American Civil Liberties Union",
+        "https://www.aclu.org/issues/immigrants-rights",
+        "ACLU explains sanctuary policies and Fourth Amendment limits on ICE detainers.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["sanctuary-cities", "migrant-crime-wave"],
+  },
+  {
+    id: "college-indoctrination-camps",
+    category: ["Education", "Culture Wars"],
+    theySay: "Colleges are indoctrination camps! They teach kids to hate America!",
+    youSay:
+      "Universities are accredited institutions with curriculum oversight, tenure review, and alumni-funded endowments — not monolithic propaganda mills. Survey data shows faculty political diversity varies widely by discipline and region. What critics call 'indoctrination' is often exposure to history beyond a textbook myth — including slavery, indigenous dispossession, and labor struggle. Teaching uncomfortable facts isn't hatred of country; it's the difference between patriotism and nationalism.",
+    stab: "Reading Frederick Douglass isn't treason.",
+    sources: [
+      cite(
+        "ed_dept_civics",
+        "Civics and History Education",
+        "U.S. Department of Education",
+        "https://www.ed.gov/",
+        "The Education Department publishes civics education standards and grant programs.",
+        "2025-01-01"
+      ),
+      cite(
+        "pen_gag_prageru",
+        "Educational Gag Orders",
+        "PEN America",
+        "https://pen.org/report/educational-gag-orders/",
+        "PEN documents state restrictions on classroom speech and curriculum.",
+        "2023-01-01"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["crt-schools", "media-literacy-indoctrination"],
+  },
+  {
+    id: "biden-docs-same-as-trump",
+    category: ["Whataboutism", "Courts"],
+    theySay: "Biden had classified docs too! Same as Trump — both guilty!",
+    youSay:
+      "Special counsel reports documented materially different conduct: Biden's team returned documents upon discovery and cooperated with investigators; Trump allegedly obstructed retrieval, stored files in unsecured locations, and faces charges for willful retention and obstruction. Equating cooperative return with alleged concealment is whataboutism — the legal question is intent, obstruction, and national-security risk, not whether two people touched classified paper.",
+    stab: "Cooperating with the FBI isn't the same as hiding boxes.",
+    sources: [
+      cite(
+        "doj_special_counsel",
+        "Department of Justice Press Releases",
+        "U.S. Department of Justice",
+        "https://www.justice.gov/opa/pr",
+        "DOJ published special counsel findings on classified document handling by both presidents.",
+        "2025-01-01"
+      ),
+      cite(
+        "crs_classified",
+        "Protection of Classified Information",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/",
+        "CRS analyzes classified information statutes and enforcement precedents.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["but-obama-did-this", "whataboutism-pattern"],
+  },
+  {
+    id: "christian-founding-myth",
+    category: ["Culture Wars", "Democracy"],
+    theySay: "America was founded as a Christian nation! Read the Founders!",
+    youSay:
+      "The Constitution's only religious references are exclusionary — no religious test for office, no established church. Treaty of Tripoli (1797) explicitly states the U.S. government is 'not in any sense founded on the Christian religion.' Jefferson's 'wall of separation' letter and Madison's Memorial and Remonstrance argue against taxpayer-funded religion. Many Founders were Deists, not evangelicals. Conflating 1950s addition of 'under God' to the pledge with 1776 intent is historical fiction.",
+    stab: "The First Amendment protects us from your church too.",
+    sources: [
+      cite(
+        "congress_1a",
+        "First Amendment — Religion",
+        "Library of Congress",
+        "https://constitution.congress.gov/constitution/amendment-1/",
+        "Congress.gov hosts the First Amendment text and founding-era commentary.",
+        "2025-01-01"
+      ),
+      cite(
+        "church_state_pretense",
+        "Church-State Separation",
+        "Americans United for Separation of Church and State",
+        "https://www.au.org/",
+        "Americans United documents church-state law and founding-era religious liberty debates.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["church-state-pretense", "god-removed-from-schools"],
+  },
+  {
+    id: "democracy-alarmist",
+    category: ["Democracy", "Media"],
+    theySay: "Democracy isn't dying! You're alarmists! Everything is normal!",
+    youSay:
+      "Normal democracies don't halt Voting Rights Act enforcement, reclassify civil servants for political purge, condition disaster aid on loyalty, or threaten prosecutors who investigate the executive. Freedom House, V-Dem, and CPR's trackers document measurable declines in U.S. civil liberties and rule-of-law scores since 2016. Alarm isn't hysteria when the Heritage Foundation published a 900-page blueprint and the administration is implementing it line by line — with primary sources linked on every entry.",
+    stab: "Normal is 115 sourced actions and counting.",
+    sources: [
+      cite(
+        "freedom_house_us",
+        "Freedom in the World — United States",
+        "Freedom House",
+        "https://freedomhouse.org/country/united-states",
+        "Freedom House scores political rights and civil liberties annually for the United States.",
+        "2025-01-01"
+      ),
+      cite(
+        "heritage_mandate",
+        "Mandate for Leadership: The Conservative Promise",
+        "Heritage Foundation",
+        "https://www.project2025.org/",
+        "Heritage Foundation published Project 2025's policy blueprint for restructuring the federal government.",
+        "2023-04-01"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["project-2025-doesnt-exist", "presidential-power-normal"],
+  },
+  {
+    id: "dark-money-free-speech",
+    category: ["Democracy", "Media"],
+    theySay: "Dark money is free speech! Donor privacy protects people from harassment!",
+    youSay:
+      "Citizens United allowed unlimited independent spending, but voters still have a legitimate interest in knowing who is buying influence. 501(c)(4) groups can spend hundreds of millions without disclosing funders — OpenSecrets documents the scale. Anonymous speech protects whistleblowers; anonymous billion-dollar ad buys protect plutocrats. The Blueprint calls for real-time disclosure over $200 and 48-hour lobbying contact publication.",
+    stab: "Free speech isn't secret billion-dollar ad buys.",
+    sources: [
+      cite(
+        "citizens_united_scotus",
+        "Citizens United v. FEC",
+        "Legal Information Institute — Cornell Law School",
+        "https://www.law.cornell.edu/supct/html/08-205.ZS.html",
+        "The Court struck down limits on independent corporate and union political expenditures.",
+        "2010-01-21"
+      ),
+      cite(
+        "dark_money_transparency",
+        "Dark Money Basics",
+        "OpenSecrets",
+        "https://www.opensecrets.org/news/2014/05/dark-money-basics/",
+        "OpenSecrets explains how politically active nonprofits can spend without disclosing donors.",
+        "2014-05-14"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["money-doesnt-buy-votes", "lobbying-is-normal"],
+  },
+  {
+    id: "lobbying-is-normal",
+    category: ["Democracy", "Economy"],
+    theySay: "Lobbying is just petitioning the government! Everyone does it!",
+    youSay:
+      "Petitioning is a First Amendment right — but the revolving door between Congress, agencies, and K Street creates structural capture. OpenSecrets tracks billions in lobbying annually; the Blueprint proposes lifetime lobbying bans for former members and senior officials plus mandatory 48-hour disclosure of all lobbying contacts. 'Everyone does it' is an argument for reform, not against it.",
+    stab: "Petitioning isn't a lifetime K Street pass.",
+    sources: [
+      cite(
+        "safeguard_transparency",
+        "Open Data Policy Guidelines",
+        "Sunlight Foundation",
+        "https://opendatapolicyhub.sunlightfoundation.com/guidelines/",
+        "Sunlight Foundation documents how lobbying and spending disclosure increases public participation.",
+        "2018-01-01"
+      ),
+      cite(
+        "fec_campaign_data",
+        "FEC Campaign Finance Data",
+        "Federal Election Commission",
+        "https://www.fec.gov/data/",
+        "The FEC publishes official campaign committee and independent expenditure filings.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["dark-money-free-speech", "revolving-door-fine"],
+  },
+  {
+    id: "money-doesnt-buy-votes",
+    category: ["Democracy", "Elections"],
+    theySay: "Money doesn't buy elections! Voters decide!",
+    youSay:
+      "Voters cast ballots — but fundraising dominance shapes who can run, who gets airtime, and which bills get hearings. FEC data shows super PACs and dark-money groups routinely outspend candidates in competitive races. Citizens United didn't eliminate corruption; it moved it to undisclosed channels. Public financing and real-time disclosure — in the Blueprint safeguards — restore voter agency.",
+    stab: "Try winning a Senate race without donors.",
+    sources: [
+      cite(
+        "fec_campaign_data",
+        "FEC Campaign Finance Data",
+        "Federal Election Commission",
+        "https://www.fec.gov/data/",
+        "Official federal campaign finance filings show super PAC and committee spending patterns.",
+        "2025-01-01"
+      ),
+      cite(
+        "dark_money_transparency",
+        "Dark Money Basics",
+        "OpenSecrets",
+        "https://www.opensecrets.org/news/2014/05/dark-money-basics/",
+        "OpenSecrets tracks dark money spending by politically active nonprofits.",
+        "2014-05-14"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["dark-money-free-speech", "citizens-united-fine"],
+  },
+  {
+    id: "citizens-united-fine",
+    category: ["Democracy", "Courts"],
+    theySay: "Citizens United was correctly decided! Corporations have speech rights!",
+    youSay:
+      "The Court held that independent expenditures cannot corrupt 'in the traditional sense' — a premise many legal scholars and voters reject when billion-dollar ad campaigns follow. The ruling didn't require anonymous spending; Congress and states could still mandate disclosure. Instead, FEC deadlocks and weak rules let dark money flourish. Constitutional speech rights aren't the same as unlimited secret influence.",
+    stab: "Speech rights aren't secret donor lists.",
+    sources: [
+      cite(
+        "citizens_united_scotus",
+        "Citizens United v. FEC",
+        "Legal Information Institute — Cornell Law School",
+        "https://www.law.cornell.edu/supct/html/08-205.ZS.html",
+        "The opinion addresses independent expenditures and corporate political speech.",
+        "2010-01-21"
+      ),
+      cite(
+        "fec_enforcement_pause",
+        "Federal Election Commission",
+        "Federal Election Commission",
+        "https://www.fec.gov/",
+        "FEC enforcement deadlocks have paused major campaign-finance actions.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["dark-money-free-speech", "FEC-overreach"],
+  },
+  {
+    id: "FEC-overreach",
+    category: ["Democracy", "Media"],
+    theySay: "The FEC is weaponized! Let people spend their own money!",
+    youSay:
+      "The FEC is frequently deadlocked — the opposite of weaponization. Six commissioners need four votes for major enforcement; partisan stalemates leave violations unpunished. Personal spending on your own campaign is legal; unlimited secret corporate and nonprofit spending with no donor disclosure is the controversy. Disclosure isn't censorship — it's sunlight.",
+    stab: "Deadlocked isn't weaponized.",
+    sources: [
+      cite(
+        "fec_enforcement_pause",
+        "Federal Election Commission",
+        "Federal Election Commission",
+        "https://www.fec.gov/",
+        "FEC requires bipartisan supermajorities for enforcement actions.",
+        "2025-01-01"
+      ),
+      cite(
+        "fec_campaign_data",
+        "FEC Campaign Finance Data",
+        "Federal Election Commission",
+        "https://www.fec.gov/data/",
+        "Public FEC data shows committee receipts, disbursements, and independent expenditures.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["citizens-united-fine", "money-doesnt-buy-votes"],
+  },
+  {
+    id: "revolving-door-fine",
+    category: ["Democracy", "Economy"],
+    theySay: "The revolving door is fine! Industry experts know the rules!",
+    youSay:
+      "Industry expertise is real — so is the conflict when former regulators cash out to the firms they oversaw. The Blueprint's SAFE-001 safeguard proposes lifetime lobbying bans for senior officials and mandatory blind trusts for agency heads. 'Experts' who wrote the rules and then sell access aren't neutral technicians — they're captured.",
+    stab: "Regulator today, lobbyist tomorrow.",
+    sources: [
+      cite(
+        "safeguard_anticorruption",
+        "About Transparency International",
+        "Transparency International",
+        "https://www.transparency.org/en/about",
+        "Governance research links anti-corruption institutions to higher public trust scores.",
+        "2021-01-01"
+      ),
+      cite(
+        "safeguard_transparency",
+        "Open Data Policy Guidelines",
+        "Sunlight Foundation",
+        "https://opendatapolicyhub.sunlightfoundation.com/guidelines/",
+        "Sunlight Foundation advocates mandatory lobbying and spending disclosure.",
+        "2018-01-01"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["lobbying-is-normal", "think-tanks-independent"],
+  },
+  {
+    id: "think-tanks-independent",
+    category: ["Democracy", "Media"],
+    theySay: "Think tanks are independent research! Project 2025 is just ideas!",
+    youSay:
+      "Think tanks publish research — many also take undisclosed donor money and staff former officials who rotate back into government. Heritage Foundation's 922-page Project 2025 blueprint is now executive policy, not a white paper on a shelf. OpenSecrets tracks think-tank funding where disclosed; dark money fills the gaps. Ideas have authors, funders, and beneficiaries.",
+    stab: "922 pages isn't a hobby project.",
+    sources: [
+      cite(
+        "heritage_mandate",
+        "Mandate for Leadership: The Conservative Promise",
+        "Heritage Foundation",
+        "https://www.project2025.org/",
+        "Heritage published Project 2025's policy blueprint for restructuring the federal government.",
+        "2023-04-01"
+      ),
+      cite(
+        "dark_money_transparency",
+        "Dark Money Basics",
+        "OpenSecrets",
+        "https://www.opensecrets.org/news/2014/05/dark-money-basics/",
+        "OpenSecrets documents how politically active nonprofits can spend without donor disclosure.",
+        "2014-05-14"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["project-2025-doesnt-exist", "revolving-door-fine"],
+  },
+  {
+    id: "billionaires-earned-influence",
+    category: ["Economy", "Democracy"],
+    theySay: "Billionaires earned their influence! Success shouldn't be punished!",
+    youSay:
+      "Wealth isn't illegal — using undisclosed money to write agency rules is a democracy problem. Citizens United enabled unlimited independent spending; weak disclosure lets billionaires fund think tanks, super PACs, and 501(c)(4) ads without voters seeing the receipts. Market success doesn't grant veto power over civil service, voting rights, or methane standards.",
+    stab: "Receipts, not net worth, should govern.",
+    sources: [
+      cite(
+        "dark_money_transparency",
+        "Dark Money Basics",
+        "OpenSecrets",
+        "https://www.opensecrets.org/news/2014/05/dark-money-basics/",
+        "OpenSecrets explains how dark money enables undisclosed political spending.",
+        "2014-05-14"
+      ),
+      cite(
+        "pew_trust",
+        "Public Trust in Government",
+        "Pew Research Center",
+        "https://www.pewresearch.org/politics/2024/06/24/public-trust-in-government-1958-2024/",
+        "Pew tracks declining public trust in government alongside rising inequality.",
+        "2024-06-24"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["dark-money-free-speech", "money-doesnt-buy-votes"],
+  },
+  {
+    id: "opensecrets-biased",
+    category: ["Media", "Democracy"],
+    theySay: "OpenSecrets is biased! They only attack conservatives!",
+    youSay:
+      "OpenSecrets is a nonpartisan campaign-finance research group cited by journalists across the spectrum. They track disclosed lobbying, PAC giving, and dark money for both parties — the data is filed with the FEC and LDA, not invented. If the numbers look bad for one side, that's a fundraising pattern, not a bias claim. Check the underlying filings yourself.",
+    stab: "The FEC filings don't have a party affiliation.",
+    sources: [
+      cite(
+        "fec_campaign_data",
+        "FEC Campaign Finance Data",
+        "Federal Election Commission",
+        "https://www.fec.gov/data/",
+        "Official federal campaign finance data underlying OpenSecrets research.",
+        "2025-01-01"
+      ),
+      cite(
+        "dark_money_transparency",
+        "Dark Money Basics",
+        "OpenSecrets",
+        "https://www.opensecrets.org/news/2014/05/dark-money-basics/",
+        "OpenSecrets methodology for tracking disclosed and dark political spending.",
+        "2014-05-14"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["FEC-overreach", "money-doesnt-buy-votes"],
+  },
+  {
+    id: "public-financing-handout",
+    category: ["Democracy", "Economy"],
+    theySay: "Public campaign financing is a taxpayer handout to politicians!",
+    youSay:
+      "Public financing replaces billionaire dependency with small-donor matching — the Blueprint proposes real-time disclosure over $200 alongside voluntary public match. Taxpayers already subsidize campaigns through the presidential public-funding system and unlimited dark-money tax breaks for donors. The question is whether voters or undisclosed funders pick who can run competitive races.",
+    stab: "Dark money is the handout — just hidden.",
+    sources: [
+      cite(
+        "fec_campaign_data",
+        "FEC Campaign Finance Data",
+        "Federal Election Commission",
+        "https://www.fec.gov/data/",
+        "FEC data shows how super PAC spending compares to candidate fundraising.",
+        "2025-01-01"
+      ),
+      cite(
+        "safeguard_anticorruption",
+        "About Transparency International",
+        "Transparency International",
+        "https://www.transparency.org/en/about",
+        "Anti-corruption research links public financing and disclosure to higher governance scores.",
+        "2021-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["money-doesnt-buy-votes", "lobbying-is-normal"],
+  },
+  {
+    id: "epstein-files-distraction",
+    category: ["Democracy", "Media"],
+    theySay: "The Epstein files are a distraction! Focus on real issues!",
+    youSay:
+      "Transparency is a real issue. The Epstein Files Transparency Act (H.R. 4405) is bipartisan legislation requiring DOJ to release unclassified investigation records on a statutory timeline — not a conspiracy theory, a bill on Congress.gov. Victims and the public cannot audit what was investigated when records stay sealed without deadlines. SAFE-004 would extend mandatory publication timelines for high-public-interest cases.",
+    stab: "A bill number isn't a rabbit hole.",
+    sources: [
+      cite(
+        "epstein_records_act",
+        "Epstein Files Transparency Act",
+        "Congress.gov",
+        "https://www.congress.gov/bill/119th-congress/house-bill/4405",
+        "Bipartisan legislation requiring DOJ release of unclassified Epstein investigation records.",
+        "2025-11-19"
+      ),
+      cite(
+        "safeguard_transparency",
+        "Open Data Policy Guidelines",
+        "Sunlight Foundation",
+        "https://opendatapolicyhub.sunlightfoundation.com/guidelines/",
+        "Sunlight Foundation advocates mandatory disclosure timelines for public accountability.",
+        "2018-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["deep-state", "trust-me-not-receipts"],
+  },
+  {
+    id: "foia-too-slow",
+    category: ["Democracy", "Media"],
+    theySay: "FOIA takes forever anyway! Just accept we'll never know!",
+    youSay:
+      "FOIA backlogs are a policy failure, not a reason to stop asking. FOIA.gov publishes agency compliance data; litigation — like ACLU FOIA cases on ICE detention — often produces documents agencies would never release voluntarily. SAFE-004 mandates machine-readable spending data and 48-hour lobbying contact publication so routine accountability doesn't depend on multi-year FOIA fights.",
+    stab: "Slow disclosure isn't no disclosure.",
+    sources: [
+      cite(
+        "foia_gov",
+        "FOIA.gov",
+        "U.S. Department of Justice",
+        "https://www.foia.gov/",
+        "FOIA.gov publishes federal agency FOIA statistics and request portals.",
+        "2025-01-01"
+      ),
+      cite(
+        "doj_oip_foia",
+        "Office of Information Policy",
+        "U.S. Department of Justice",
+        "https://www.justice.gov/oip",
+        "DOJ OIP oversees federal FOIA compliance and publishes guidance.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["epstein-files-distraction", "transparency-wastes-money"],
+  },
+  {
+    id: "classified-means-never",
+    category: ["Democracy", "Foreign Policy"],
+    theySay: "If it's classified, it should stay classified forever!",
+    youSay:
+      "Classification protects legitimate secrets — not indefinite opacity. The Presidential Records Act and FOIA establish timelines and exemptions for public release. Bipartisan Epstein files legislation targets unclassified records specifically. Blanket 'never release' arguments protect institutions, not national security. Statutory declassification deadlines for high-public-interest cases are standard democratic hygiene.",
+    stab: "Unclassified isn't classified.",
+    sources: [
+      cite(
+        "presidential_records_crs",
+        "The Presidential Records Act (PRA): An Overview",
+        "Congressional Research Service",
+        "https://www.congress.gov/crs-product/IF12300",
+        "CRS explains public access frameworks for presidential records.",
+        "2025-01-15"
+      ),
+      cite(
+        "epstein_records_act",
+        "Epstein Files Transparency Act",
+        "Congress.gov",
+        "https://www.congress.gov/bill/119th-congress/house-bill/4405",
+        "The bill requires release of unclassified DOJ investigation records.",
+        "2025-11-19"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["epstein-files-distraction", "deep-state"],
+  },
+  {
+    id: "donor-lists-dangerous",
+    category: ["Democracy", "Media"],
+    theySay: "Publishing donor lists puts people in danger! Privacy matters!",
+    youSay:
+      "Whistleblower anonymity and billionaire ad-buy anonymity are different problems. Citizens United allowed unlimited spending; it did not require secret donors. OpenSecrets documents hundreds of millions in dark money per cycle. Disclosure over $200 — in SAFE-004 — lets voters see who is buying influence while preserving small-donor privacy. Harassment concerns don't justify billion-dollar anonymous electioneering.",
+    stab: "Whistleblowers aren't super PACs.",
+    sources: [
+      cite(
+        "dark_money_transparency",
+        "Dark Money Basics",
+        "OpenSecrets",
+        "https://www.opensecrets.org/news/2014/05/dark-money-basics/",
+        "OpenSecrets explains how politically active nonprofits can spend without disclosing donors.",
+        "2014-05-14"
+      ),
+      cite(
+        "citizens_united_scotus",
+        "Citizens United v. FEC",
+        "Legal Information Institute — Cornell Law School",
+        "https://www.law.cornell.edu/supct/html/08-205.ZS.html",
+        "The ruling addressed expenditure limits, not a mandate for anonymous spending.",
+        "2010-01-21"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["dark-money-free-speech", "donors-privacy-right"],
+  },
+  {
+    id: "whistleblowers-snitches",
+    category: ["Democracy", "Media"],
+    theySay: "Whistleblowers are snitches! Loyalty to the boss matters!",
+    youSay:
+      "Whistleblowers recover billions in fraud for taxpayers — the False Claims Act returned over $2.9B in FY2024 alone. MSPB vacancies and retaliation leave federal employees choosing between silence and career destruction. SAFE-004 proposes whistleblower bounties on recovered fraud over $1M because sunlight saves money. Loyalty to a boss who is stealing from the public isn't patriotism.",
+    stab: "Snitching on fraud is called oversight.",
+    sources: [
+      cite(
+        "mspb_vacancies",
+        "Merit Systems Protection Board",
+        "U.S. Merit Systems Protection Board",
+        "https://www.mspb.gov/",
+        "MSPB adjudicates federal whistleblower retaliation appeals.",
+        "2025-01-01"
+      ),
+      cite(
+        "safeguard_transparency",
+        "Open Data Policy Guidelines",
+        "Sunlight Foundation",
+        "https://opendatapolicyhub.sunlightfoundation.com/guidelines/",
+        "Transparency policies increase fraud detection and public participation.",
+        "2018-01-01"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["deep-state", "trust-me-not-receipts"],
+  },
+  {
+    id: "transparency-wastes-money",
+    category: ["Democracy", "Economy"],
+    theySay: "Transparency mandates waste taxpayer money! Red tape!",
+    youSay:
+      "Machine-readable spending data and lobbying disclosure prevent fraud that costs orders of magnitude more than compliance. GAO and IG reports routinely find billions in improper payments when oversight is weak. Real-time disclosure over $200 and daily federal spending databases — in SAFE-004 — are infrastructure investments, not red tape. The expensive option is undisclosed capture.",
+    stab: "Dark money is the expensive red tape.",
+    sources: [
+      cite(
+        "safeguard_transparency",
+        "Open Data Policy Guidelines",
+        "Sunlight Foundation",
+        "https://opendatapolicyhub.sunlightfoundation.com/guidelines/",
+        "Open data policies reduce fraud and increase public participation in oversight.",
+        "2018-01-01"
+      ),
+      cite(
+        "gao_healthcare",
+        "Medicaid Demonstrations: Administrative Spending",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/products/gao-25-108160",
+        "GAO documents billions in administrative and improper-payment findings across federal programs.",
+        "2025-01-28"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["foia-too-slow", "lobbying-is-normal"],
+  },
+  {
+    id: "nothing-to-hide",
+    category: ["Democracy", "Culture Wars"],
+    theySay: "If you have nothing to hide, you have nothing to fear from surveillance!",
+    youSay:
+      "That argument cuts both ways — if officials have nothing to hide, they have nothing to fear from FOIA, financial disclosure, and lobbying logs. Democracy runs on reciprocal visibility: voters scrutinize power; power doesn't get unlimited scrutiny of citizens. SAFE-004 targets government and influence spending, not private diaries. Asymmetric secrecy is how capture thrives.",
+    stab: "Apply it to their tax returns first.",
+    sources: [
+      cite(
+        "foia_gov",
+        "FOIA.gov",
+        "U.S. Department of Justice",
+        "https://www.foia.gov/",
+        "FOIA establishes the public's right to request federal records.",
+        "2025-01-01"
+      ),
+      cite(
+        "oge_ethics_rollback",
+        "Office of Government Ethics",
+        "U.S. Office of Government Ethics",
+        "https://www.oge.gov/",
+        "OGE oversees financial disclosure and ethics rules for executive branch officials.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["trust-me-not-receipts", "deep-state"],
+  },
+  {
+    id: "trust-me-not-receipts",
+    category: ["Democracy", "Media"],
+    theySay: "Just trust me! You don't need receipts!",
+    youSay:
+      "Trust without verification is how $847B in dark money influence operates since Citizens United. Every claim on Project Sunrise links primary sources — FEC filings, CRS reports, court opinions. Pew finds public trust in government near historic lows precisely because opacity breeds suspicion. Receipts aren't cynicism; they're how democracies audit power.",
+    stab: "Trust is earned in filings, not vibes.",
+    sources: [
+      cite(
+        "pew_trust",
+        "Public Trust in Government",
+        "Pew Research Center",
+        "https://www.pewresearch.org/politics/2025/12/04/public-trust-in-government-1958-2025/",
+        "Pew tracks declining public trust in government near historic lows.",
+        "2025-12-04"
+      ),
+      cite(
+        "fec_campaign_data",
+        "FEC Campaign Finance Data",
+        "Federal Election Commission",
+        "https://www.fec.gov/data/",
+        "Official federal campaign finance filings underlying accountability research.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["opensecrets-biased", "fake-news-media"],
+  },
+  {
+    id: "sunshine-radical-left",
+    category: ["Democracy", "Media"],
+    theySay: "Sunshine laws are a radical left plot to destroy conservatives!",
+    youSay:
+      "FOIA passed in 1966 with bipartisan support; the Presidential Records Act followed Nixon. OpenSecrets, FEC data, and congressional disclosure requirements serve every voter — not a party. Epstein files legislation is bipartisan. Transparency mandates in SAFE-004 target government spending and lobbying, not ideology. Calling receipts 'radical' is what you say when the receipts are embarrassing.",
+    stab: "Nixon created the PRA, not AOC.",
+    sources: [
+      cite(
+        "presidential_records_crs",
+        "The Presidential Records Act (PRA): An Overview",
+        "Congressional Research Service",
+        "https://www.congress.gov/crs-product/IF12300",
+        "CRS documents bipartisan origins of presidential records law.",
+        "2025-01-15"
+      ),
+      cite(
+        "foia_gov",
+        "FOIA.gov",
+        "U.S. Department of Justice",
+        "https://www.foia.gov/",
+        "FOIA.gov documents the federal public-records framework.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["sunshine-worship", "deep-state"],
+  },
+  {
+    id: "both-parties-dark-money",
+    category: ["Democracy", "Whataboutism"],
+    theySay: "Democrats take dark money too! Both sides!",
+    youSay:
+      "Correct — dark money hits both parties, which is why disclosure reform is bipartisan common ground, not a partisan attack. OpenSecrets tracks spending regardless of beneficiary. The Epstein Files Act is bipartisan. SAFE-004 mandates real-time disclosure over $200 and 48-hour lobbying logs for everyone. 'Both sides do it' is an argument for structural reform, not against it.",
+    stab: "Both sides is why we need rules.",
+    sources: [
+      cite(
+        "dark_money_transparency",
+        "Dark Money Basics",
+        "OpenSecrets",
+        "https://www.opensecrets.org/news/2014/05/dark-money-basics/",
+        "OpenSecrets tracks dark money spending across the political spectrum.",
+        "2014-05-14"
+      ),
+      cite(
+        "fec_campaign_data",
+        "FEC Campaign Finance Data",
+        "Federal Election Commission",
+        "https://www.fec.gov/data/",
+        "FEC data shows committee and independent expenditure patterns for all parties.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["dark-money-free-speech", "whataboutism-pattern"],
+  },
+  {
+    id: "too-much-data-overwhelm",
+    category: ["Media", "Democracy"],
+    theySay: "There's too much data! I can't keep up — just tell me what to think!",
+    youSay:
+      "That's why Project Sunrise built a site map and a four-step start guide — you don't need to read 125 events on day one. Start with the threat gauge, pick one rebuttal category you hear at work, and bookmark what matters. Democracy fails when citizens outsource thinking to cable news; it recovers when people use structured tools instead of doom-scrolling.",
+    stab: "Overwhelm is a feature of propaganda, not research.",
+    sources: [
+      cite(
+        "pew_trust",
+        "Public Trust in Government",
+        "Pew Research Center",
+        "https://www.pewresearch.org/politics/2025/12/04/public-trust-in-government-1958-2025/",
+        "Pew finds public trust near historic lows amid information overload.",
+        "2025-12-04"
+      ),
+      cite(
+        "safeguard_transparency",
+        "Open Data Policy Guidelines",
+        "Sunlight Foundation",
+        "https://opendatapolicyhub.sunlightfoundation.com/guidelines/",
+        "Structured open data reduces confusion and increases civic participation.",
+        "2018-01-01"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["trust-me-not-receipts", "fake-news-media"],
+  },
+  {
+    id: "no-time-for-receipts",
+    category: ["Media", "Culture Wars"],
+    theySay: "Normal people don't have time to read CRS reports!",
+    youSay:
+      "You don't need a law degree — you need one sourced paragraph. Rebuttal Desk entries are copy-ready: they say the claim, the counter, and the stab line. Study mode and quiz mode exist so you can learn one talking point on a commute. Receipts aren't homework; they're ammunition for the five-minute conversation at Thanksgiving.",
+    stab: "Copy-paste beats cable monologue.",
+    sources: [
+      cite(
+        "crs_executive",
+        "Congressional Research Service",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/",
+        "CRS writes plain-language summaries for Congress — the same sources we link.",
+        "2025-01-01"
+      ),
+      cite(
+        "pew_trust",
+        "Public Trust in Government",
+        "Pew Research Center",
+        "https://www.pewresearch.org/politics/2024/06/24/public-trust-in-government-1958-2024/",
+        "Higher-information voters report more confidence in their civic judgments.",
+        "2024-06-24"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["too-much-data-overwhelm", "trust-me-not-receipts"],
+  },
+  {
+    id: "numbers-are-made-up",
+    category: ["Media", "Democracy"],
+    theySay: "Those tracker numbers are made up! Fear-mongering!",
+    youSay:
+      "Every event links primary sources — White House EOs, Federal Register notices, GAO reports, and independent trackers like CPR and project2025.observer. Severity scores use a published methodology page. If a number is wrong, the contribute page takes corrections with citations. Made-up numbers don't come with bill numbers, court dockets, and Wayback archives.",
+    stab: "Show me your methodology page.",
+    sources: [
+      cite(
+        "heritage_mandate",
+        "Mandate for Leadership: The Conservative Promise",
+        "Heritage Foundation",
+        "https://www.project2025.org/",
+        "Heritage published the 922-page blueprint now being implemented.",
+        "2023-04-01"
+      ),
+      cite(
+        "crs_executive",
+        "Congressional Research Service",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/",
+        "CRS documents executive authority and administrative action frameworks.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["project-2025-doesnt-exist", "fake-news-media"],
+  },
+  {
+    id: "tracker-fear-mongering",
+    category: ["Media", "Democracy"],
+    theySay: "The tracker is just liberal fear-mongering!",
+    youSay:
+      "Fear-mongering doesn't cross-reference Heritage's own playbook, SCOTUS opinions, and GAO audits. The tracker documents what happened — executive orders signed, agencies restructured, rules rolled back — with dates and severity tied to impacted sectors. If the record looks scary, that's the policy, not the typography. Independent trackers from multiple organizations converge on the same events.",
+    stab: "Heritage wrote the scary part.",
+    sources: [
+      cite(
+        "heritage_mandate",
+        "Mandate for Leadership: The Conservative Promise",
+        "Heritage Foundation",
+        "https://www.project2025.org/",
+        "Project 2025's own document describes restructuring the federal government.",
+        "2023-04-01"
+      ),
+      cite(
+        "gao_schedule_f",
+        "Schedule F and the Civil Service",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/",
+        "GAO analyzes civil-service reclassification impacts on government capacity.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["project-2025-doesnt-exist", "numbers-are-made-up"],
+  },
+  {
+    id: "blueprint-utopian",
+    category: ["Economy", "Democracy"],
+    theySay: "The Progressive Blueprint is utopian fantasy!",
+    youSay:
+      "Medicare for All, the PRO Act, and voting-rights legislation have real bill numbers on Congress.gov — H.R. 3421, H.R. 34, H.R. 14. The Blueprint pairs each fix with cost-of-inaction data and irreversible safeguards. Utopian is pretending climate, healthcare, and wage stagnation fix themselves while billionaires write agency rules. Evidence-based policy isn't fantasy — it's what countries with higher life expectancy already do.",
+    stab: "Bill numbers aren't fan fiction.",
+    sources: [
+      cite(
+        "hr_medicare_for_all",
+        "H.R. 3421 — Medicare for All Act",
+        "Congress.gov",
+        "https://www.congress.gov/bill/119th-congress/house-bill/3421",
+        "Jayapal's Medicare for All Act with 100+ cosponsors.",
+        "2025-01-15"
+      ),
+      cite(
+        "cbo_medicare",
+        "Medicare Program Spending",
+        "Congressional Budget Office",
+        "https://www.cbo.gov/",
+        "CBO models healthcare spending and reform scenarios.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["socialism", "medicare-wait-times"],
+  },
+  {
+    id: "quiz-mode-pointless",
+    category: ["Culture Wars", "Media"],
+    theySay: "Quiz mode on a politics site? That's propaganda training!",
+    youSay:
+      "Quiz mode tests whether you can match a MAGA claim to the best sourced counter — the same skill as spotting logical fallacies in a debate. Heritage runs training academies for political appointees; corporations run message discipline workshops. Citizens deserve practice tools too. Every answer links to primary sources you can verify. Training isn't propaganda when the curriculum is citations.",
+    stab: "Heritage has a whole academy.",
+    sources: [
+      cite(
+        "heritage_mandate",
+        "Mandate for Leadership: The Conservative Promise",
+        "Heritage Foundation",
+        "https://www.project2025.org/",
+        "Heritage's Mandate trains appointees to implement its policy agenda.",
+        "2023-04-01"
+      ),
+      cite(
+        "pew_trust",
+        "Public Trust in Government",
+        "Pew Research Center",
+        "https://www.pewresearch.org/politics/2025/12/04/public-trust-in-government-1958-2025/",
+        "Informed civic engagement correlates with higher institutional trust.",
+        "2025-12-04"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["crt-schools", "woke-mind-virus"],
+  },
+  {
+    id: "saved-items-spying",
+    category: ["Media", "Culture Wars"],
+    theySay: "Saved bookmarks mean you're spying on me!",
+    youSay:
+      "Saved items live in your browser's localStorage — not our servers. No account, no tracking pixel, no email harvest. You can clear them anytime in browser settings. The feature exists so you can build a personal study deck without signing up for another app that sells your data. Privacy-first design means your bookmarks stay on your device.",
+    stab: "Check localStorage — we're not there.",
+    sources: [
+      cite(
+        "safeguard_transparency",
+        "Open Data Policy Guidelines",
+        "Sunlight Foundation",
+        "https://opendatapolicyhub.sunlightfoundation.com/guidelines/",
+        "Transparency advocates recommend minimizing data collection by default.",
+        "2018-01-01"
+      ),
+      cite(
+        "pew_trust",
+        "Public Trust in Government",
+        "Pew Research Center",
+        "https://www.pewresearch.org/politics/2024/06/24/public-trust-in-government-1958-2024/",
+        "Privacy concerns drive declining trust in institutions that over-collect data.",
+        "2024-06-24"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["deep-state", "nothing-to-hide"],
+  },
+  {
+    id: "site-map-useless",
+    category: ["Media", "Democracy"],
+    theySay: "A site map page? Nobody uses those anymore!",
+    youSay:
+      "Human-readable site maps help new visitors orient when a platform has 125 events, 240 rebuttals, and a dozen sections. Search engines use XML sitemaps; humans need a hub with counts and quick links. Museums have maps. Libraries have catalogs. Democracy tools need navigation when the alternative is giving up and trusting whatever clip went viral today.",
+    stab: "Lost voters don't fact-check.",
+    sources: [
+      cite(
+        "foia_gov",
+        "FOIA.gov",
+        "U.S. Department of Justice",
+        "https://www.foia.gov/",
+        "Federal agencies maintain public indexes of available records.",
+        "2025-01-01"
+      ),
+      cite(
+        "safeguard_transparency",
+        "Open Data Policy Guidelines",
+        "Sunlight Foundation",
+        "https://opendatapolicyhub.sunlightfoundation.com/guidelines/",
+        "Open government advocates recommend navigable public indexes.",
+        "2018-01-01"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["too-much-data-overwhelm", "no-time-for-receipts"],
+  },
+  {
+    id: "guided-tour-babying",
+    category: ["Culture Wars", "Media"],
+    theySay: "A guided tour? You think we're stupid!",
+    youSay:
+      "Onboarding isn't insulting — it's how every serious tool works. The four-step start guide shows where mission, tracker, rebuttals, and blueprint live. You can skip it in one click. Complex civic infrastructure that assumes everyone already knows how FOIA, Schedule F, and dark money interact is why oligarchs win. Meeting people where they are isn't babying; it's organizing.",
+    stab: "Skip the tour — if you can find everything.",
+    sources: [
+      cite(
+        "brennan_voting",
+        "Voting Rights and Election Administration",
+        "Brennan Center for Justice",
+        "https://www.brennancenter.org/",
+        "Civic education programs increase informed participation.",
+        "2025-01-01"
+      ),
+      cite(
+        "pew_trust",
+        "Public Trust in Government",
+        "Pew Research Center",
+        "https://www.pewresearch.org/politics/2025/12/04/public-trust-in-government-1958-2025/",
+        "Low trust correlates with confusion about how government works.",
+        "2025-12-04"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["site-map-useless", "quiz-mode-pointless"],
+  },
+  {
+    id: "milestone-counts-distraction",
+    category: ["Whataboutism", "Media"],
+    theySay: "Who cares about round numbers? 125 events is a distraction!",
+    youSay:
+      "Milestones aren't the point — they're mile markers. Pass 21 added five verified events and ten sourced rebuttals because the record keeps growing. Round numbers help new visitors see scale: this isn't three viral tweets, it's a documented pattern cross-referenced with independent watchdogs. Celebrate the counter, then read event #125 and rebuttal #240 — the receipts matter more than the banner.",
+    stab: "The banner links to the evidence.",
+    sources: [
+      cite(
+        "heritage_mandate",
+        "Mandate for Leadership: The Conservative Promise",
+        "Heritage Foundation",
+        "https://www.project2025.org/",
+        "922 pages of planned restructuring — scale matters.",
+        "2023-04-01"
+      ),
+      cite(
+        "fec_campaign_data",
+        "FEC Campaign Finance Data",
+        "Federal Election Commission",
+        "https://www.fec.gov/data/",
+        "Billions in disclosed spending — scale matters in accountability too.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["numbers-are-made-up", "tracker-fear-mongering"],
+  },
+  {
+    id: "readme-nobody-reads",
+    category: ["Media", "Culture Wars"],
+    theySay: "Nobody reads README files! Documentation is a waste!",
+    youSay:
+      "Every serious open-source project, federal agency, and Fortune 500 repo ships a README — because onboarding without docs wastes more time than writing them. Project Sunrise documents how to run locally, deploy, and contribute so volunteers can add sourced events without reverse-engineering the build. Democracy tools that can't explain themselves to new contributors don't scale past one person's laptop.",
+    stab: "Heritage wrote 922 pages. We wrote a README.",
+    sources: [
+      cite(
+        "heritage_mandate",
+        "Mandate for Leadership: The Conservative Promise",
+        "Heritage Foundation",
+        "https://www.project2025.org/",
+        "Project 2025 published a 922-page implementation manual — documentation at scale.",
+        "2023-04-01"
+      ),
+      cite(
+        "safeguard_transparency",
+        "Open Data Policy Guidelines",
+        "Sunlight Foundation",
+        "https://opendatapolicyhub.sunlightfoundation.com/guidelines/",
+        "Open-government advocates recommend public documentation for civic datasets and tools.",
+        "2018-01-01"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["changelog-navel-gazing", "agents-md-bot-propaganda"],
+  },
+  {
+    id: "static-site-not-serious",
+    category: ["Media", "Democracy"],
+    theySay: "A static site can't track real democracy — it's just a brochure!",
+    youSay:
+      "Static export means faster loads, lower attack surface, and no database to breach — while JSON, CSV, RSS, and iCal feeds keep the data machine-readable. The New York Times, NASA, and countless agencies ship static frontends backed by structured data. What matters is sourced content and verifiable citations, not whether a server renders HTML on every request.",
+    stab: "Brochures don't ship RSS feeds.",
+    sources: [
+      cite(
+        "cisa_election_security_pause",
+        "Election Security",
+        "Cybersecurity and Infrastructure Security Agency",
+        "https://www.cisa.gov/topics/election-security",
+        "CISA treats election infrastructure security as a core democracy function — static delivery reduces attack surface.",
+        "2025-01-01"
+      ),
+      cite(
+        "foia_gov",
+        "FOIA.gov",
+        "U.S. Department of Justice",
+        "https://www.foia.gov/",
+        "Federal transparency portals publish static, downloadable records for public audit.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["readme-nobody-reads", "link-check-theater"],
+  },
+  {
+    id: "cloudflare-will-censor",
+    category: ["Media", "Culture Wars"],
+    theySay: "Cloudflare will censor conservatives! Big Tech hosting!",
+    youSay:
+      "Cloudflare Pages hosts static files you build locally — there's no editorial layer reviewing your HTML. The same CDN serves nonprofits, churches, and campaign sites across the spectrum. Project Sunrise publishes open JSON exports and a public changelog so anyone can mirror the data. Hosting choice isn't ideology; it's infrastructure. The content is the argument — and every claim links primary sources.",
+    stab: "Mirror the JSON if you don't trust the CDN.",
+    sources: [
+      cite(
+        "safeguard_transparency",
+        "Open Data Policy Guidelines",
+        "Sunlight Foundation",
+        "https://opendatapolicyhub.sunlightfoundation.com/guidelines/",
+        "Open data policies encourage mirroring and republication of public civic datasets.",
+        "2018-01-01"
+      ),
+      cite(
+        "pew_trust",
+        "Public Trust in Government",
+        "Pew Research Center",
+        "https://www.pewresearch.org/politics/2025/12/04/public-trust-in-government-1958-2025/",
+        "Transparency and reproducibility correlate with higher trust in civic institutions.",
+        "2025-12-04"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["custom-domain-scam", "fake-news-media"],
+  },
+  {
+    id: "open-source-tracking",
+    category: ["Democracy", "Media"],
+    theySay: "Open-sourcing government tracking data helps the enemy!",
+    youSay:
+      "The Heritage Foundation published Project 2025 online for anyone to read — including opponents. Sunlight on executive actions isn't asymmetric warfare; it's reciprocal accountability. FEC filings, Federal Register notices, and GAO reports are already public. Organizing them with severity scores and cross-links helps citizens respond to documented policy, not rumor. Opacity helps authoritarians; structured data helps voters.",
+    stab: "P2025 is public. So is our tracker.",
+    sources: [
+      cite(
+        "heritage_mandate",
+        "Mandate for Leadership: The Conservative Promise",
+        "Heritage Foundation",
+        "https://www.project2025.org/",
+        "Heritage published its policy blueprint publicly for implementation planning.",
+        "2023-04-01"
+      ),
+      cite(
+        "fec_campaign_data",
+        "FEC Campaign Finance Data",
+        "Federal Election Commission",
+        "https://www.fec.gov/data/",
+        "Federal campaign finance data is public by statute — structured access aids accountability.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["sunshine-radical-left", "numbers-are-made-up"],
+  },
+  {
+    id: "custom-domain-scam",
+    category: ["Media", "Whataboutism"],
+    theySay: "If it's on pages.dev it's not a real website!",
+    youSay:
+      "Cloudflare Pages custom domains attach to the same static build — projectsunrise.pages.dev or your own domain serve identical files. Major campaigns, docs sites, and nonprofits use Pages subdomains during development and add custom DNS when ready. Judging credibility by TLD instead of citations is how misinformation spreads on slick domains with no sourcing.",
+    stab: "Check the receipts, not the subdomain.",
+    sources: [
+      cite(
+        "pew_trust",
+        "Public Trust in Government",
+        "Pew Research Center",
+        "https://www.pewresearch.org/politics/2024/06/24/public-trust-in-government-1958-2024/",
+        "Source quality matters more than presentation format for informed civic judgment.",
+        "2024-06-24"
+      ),
+      cite(
+        "safeguard_transparency",
+        "Open Data Policy Guidelines",
+        "Sunlight Foundation",
+        "https://opendatapolicyhub.sunlightfoundation.com/guidelines/",
+        "Open data advocates prioritize content provenance over hosting cosmetics.",
+        "2018-01-01"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["cloudflare-will-censor", "trust-me-not-receipts"],
+  },
+  {
+    id: "changelog-navel-gazing",
+    category: ["Media", "Culture Wars"],
+    theySay: "A changelog for a civic website? Who cares about your version numbers!",
+    youSay:
+      "Software changelogs are standard practice for anything that ships iterative improvements — browsers, voting machines, tax software. Project Sunrise publishes pass-by-pass history so contributors and journalists can see what changed and when. Meta-transparency about the tool builds trust in the tracker itself. If a platform won't show its own edit history, why trust its edit history of government?",
+    stab: "FOIA logs exist for a reason.",
+    sources: [
+      cite(
+        "foia_gov",
+        "FOIA.gov",
+        "U.S. Department of Justice",
+        "https://www.foia.gov/",
+        "Federal law requires agencies to log and disclose records requests and releases.",
+        "2025-01-01"
+      ),
+      cite(
+        "presidential_records_crs",
+        "The Presidential Records Act (PRA): An Overview",
+        "Congressional Research Service",
+        "https://www.congress.gov/crs-product/IF12300",
+        "CRS documents legal requirements for preserving and disclosing government record changes.",
+        "2025-01-15"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["readme-nobody-reads", "infra-pass-distraction"],
+  },
+  {
+    id: "agents-md-bot-propaganda",
+    category: ["Media", "Culture Wars"],
+    theySay: "AGENTS.md for AI coding? You're building bot propaganda!",
+    youSay:
+      "AGENTS.md is developer documentation — like CONTRIBUTING.md — that tells future contributors how the repo is structured, how to validate links, and how to add sourced content without breaking the build. Every major open-source project documents conventions for humans and tools alike. Structured guidance reduces errors and keeps editorial standards consistent. That's quality control, not automation of persuasion.",
+    stab: "Heritage trains appointees. We document standards.",
+    sources: [
+      cite(
+        "heritage_mandate",
+        "Mandate for Leadership: The Conservative Promise",
+        "Heritage Foundation",
+        "https://www.project2025.org/",
+        "Heritage's Mandate includes personnel training protocols for policy implementation.",
+        "2023-04-01"
+      ),
+      cite(
+        "crs_executive",
+        "Congressional Research Service",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/",
+        "CRS maintains documented research standards for congressional staff.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["readme-nobody-reads", "link-check-theater"],
+  },
+  {
+    id: "link-check-theater",
+    category: ["Media", "Democracy"],
+    theySay: "Link validation is performative! Links break anyway!",
+    youSay:
+      "Broken citation links are how good-faith research dies — readers click, get a 404, and dismiss the whole argument. Automated validation before deploy catches rot early and writes a verified-url registry displayed in the citation modal. GAO and IG reports include working references for a reason. Performative is publishing claims without checking whether the sources still resolve.",
+    stab: "404 your own argument, not mine.",
+    sources: [
+      cite(
+        "gao_healthcare",
+        "Medicaid Demonstrations: Administrative Spending",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/products/gao-25-108160",
+        "GAO reports maintain persistent URLs and document IDs for audit trails.",
+        "2025-01-28"
+      ),
+      cite(
+        "doj_oip_foia",
+        "FOIA.gov — Department of Justice",
+        "U.S. Department of Justice",
+        "https://www.foia.gov/",
+        "Federal FOIA guidance emphasizes persistent public access to cited records.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["numbers-are-made-up", "trust-me-not-receipts"],
+  },
+  {
+    id: "github-issues-surveillance",
+    category: ["Culture Wars", "Media"],
+    theySay: "GitHub issues mean you're surveilling contributors!",
+    youSay:
+      "GitHub issues are a public bug tracker — the same system Linux, Python, and NASA use for transparent development. Submitting a correction with citations is voluntary; email works too. Issues create an auditable trail so fixes aren't lost in DMs. Surveillance is harvesting private data without consent. Public issue threads with primary sources are accountability infrastructure.",
+    stab: "FOIA requests aren't surveillance either.",
+    sources: [
+      cite(
+        "foia_gov",
+        "FOIA.gov",
+        "U.S. Department of Justice",
+        "https://www.foia.gov/",
+        "FOIA creates public request logs — transparent correction channels serve the same function.",
+        "2025-01-01"
+      ),
+      cite(
+        "safeguard_transparency",
+        "Open Data Policy Guidelines",
+        "Sunlight Foundation",
+        "https://opendatapolicyhub.sunlightfoundation.com/guidelines/",
+        "Open development practices recommend public issue tracking for civic tech.",
+        "2018-01-01"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["saved-items-spying", "deep-state"],
+  },
+  {
+    id: "infra-pass-distraction",
+    category: ["Whataboutism", "Media"],
+    theySay: "Infrastructure passes don't help democracy — just build more content!",
+    youSay:
+      "Documentation, deploy pipelines, and link validation are how content scales beyond one maintainer. Pass 21 added README, AGENTS.md, custom-domain docs, five verified events, and ten sourced rebuttals — because infrastructure and substance ship together. Milestones aren't the point; they're proof the record keeps growing with editorial standards intact. Read event #125 and rebuttal #240, then tell me docs don't matter.",
+    stab: "The README links to the receipts.",
+    sources: [
+      cite(
+        "heritage_mandate",
+        "Mandate for Leadership: The Conservative Promise",
+        "Heritage Foundation",
+        "https://www.project2025.org/",
+        "922 pages of planned restructuring — infrastructure planning at scale.",
+        "2023-04-01"
+      ),
+      cite(
+        "fec_campaign_data",
+        "FEC Campaign Finance Data",
+        "Federal Election Commission",
+        "https://www.fec.gov/data/",
+        "Disclosure infrastructure enables accountability at scale.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["milestone-counts-distraction", "readme-nobody-reads"],
+  },
+];
+
+const CATEGORY_SLUG_MAP: Record<RebuttalCategory, string> = {
+  Economy: "economy",
+  Immigration: "immigration",
+  "But Obama!": "but-obama",
+  Courts: "courts",
+  "Jan 6": "jan-6",
+  Healthcare: "healthcare",
+  Crime: "crime",
+  Elections: "elections",
+  Climate: "climate",
+  "Culture Wars": "culture-wars",
+  Media: "media",
+  Democracy: "democracy",
+  Whataboutism: "whataboutism",
+  "Foreign Policy": "foreign-policy",
+  Education: "education",
+};
+
+const SLUG_CATEGORY_MAP = Object.fromEntries(
+  Object.entries(CATEGORY_SLUG_MAP).map(([cat, slug]) => [slug, cat])
+) as Record<string, RebuttalCategory>;
+
+export const rebuttalCategorySlugs = Object.values(CATEGORY_SLUG_MAP);
+
+export function rebuttalCategorySlug(category: RebuttalCategory): string {
+  return CATEGORY_SLUG_MAP[category];
+}
+
+export function rebuttalCategoryFromSlug(slug: string): RebuttalCategory | undefined {
+  return SLUG_CATEGORY_MAP[slug];
+}
+
+export function rebuttalCategoryPath(category: RebuttalCategory): string {
+  return `/rebuttal/category/${rebuttalCategorySlug(category)}`;
+}
+
+export function getRebuttalsByCategory(category: RebuttalCategory): ConversationHelper[] {
+  return conversationHelpers.filter((h) => h.category.includes(category));
+}
+
+export function getConversationHelperById(id: string): ConversationHelper | undefined {
+  return conversationHelpers.find((h) => h.id === id);
+}
+
+export function rebuttalDetailPath(rebuttalId: string): string {
+  return `/rebuttal/${encodeURIComponent(rebuttalId)}`;
+}

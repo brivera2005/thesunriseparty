@@ -1,0 +1,51 @@
+{
+  "name": "Project Sunrise",
+  "short_name": "Sunrise",
+  "description": "Track Project 2025 with receipts. Sourced rebuttals and a progressive blueprint.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#faf6f0",
+  "theme_color": "#e8a840",
+  "orientation": "portrait-primary",
+  "categories": ["news", "education", "politics"],
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Rebuttal Desk",
+      "short_name": "Rebuttals",
+      "url": "/rebuttal",
+      "description": "Sourced talking points for debates"
+    },
+    {
+      "name": "Quiz Mode",
+      "short_name": "Quiz",
+      "url": "/rebuttal?quiz=1",
+      "description": "Multiple choice rebuttal practice"
+    },
+    {
+      "name": "Study Mode",
+      "short_name": "Study",
+      "url": "/rebuttal?study=1",
+      "description": "Flashcard practice for debates"
+    },
+    {
+      "name": "P2025 Tracker",
+      "short_name": "Tracker",
+      "url": "/tracker",
+      "description": "Timeline of authoritarian policy actions"
+    }
+  ]
+}

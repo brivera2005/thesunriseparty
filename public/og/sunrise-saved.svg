@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Project Sunrise My Saved">
+  <defs>
+    <linearGradient id="s" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2a1818"/>
+      <stop offset="100%" style="stop-color:#1a1210"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#s)"/>
+  <path d="M120 140 C120 110 150 95 170 115 L200 145 L230 115 C250 95 280 110 280 140 L280 200 L200 270 L120 200 Z" fill="#c45c3e" opacity="0.9"/>
+  <text x="80" y="340" fill="#f5e6d8" font-family="system-ui,sans-serif" font-size="52" font-weight="700">My Saved</text>
+  <text x="80" y="410" fill="#c9a88a" font-family="system-ui,sans-serif" font-size="26">Bookmarked events and rebuttals</text>
+  <text x="80" y="560" fill="#806050" font-family="system-ui,sans-serif" font-size="18">thesunriseparty.pages.dev/saved</text>
+</svg>

@@ -1,0 +1,1664 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Project Sunrise//Project 2025 Tracker//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Project Sunrise Tracker
+X-WR-CALDESC:Verified Project 2025 administrative actions
+BEGIN:VEVENT
+UID:EVT-2026-0203-025@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20260203
+SUMMARY:Public Opinion Data: Pew Research finds only 18% of Americans trust
+  the federal government 'just about always' or 'most of the time' — near …
+DESCRIPTION:Pew Research finds only 18% of Americans trust the federal gove
+ rnment 'just about always' or 'most of the time' — near historic lows amid
+  institutional legitimacy crisis.\\n\\nSeverity: 6/10\\nCategory: Democrac
+ y\\nSectors: Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0203-025
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2026-0201-024@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20260201
+SUMMARY:Tracker Assessment: Center for Progressive Reform reports over 53% 
+ of Project 2025's domestic administrative policy agenda initiated or com…
+DESCRIPTION:Center for Progressive Reform reports over 53% of Project 2025'
+ s domestic administrative policy agenda initiated or completed within the 
+ administration's first year.\\n\\nSeverity: 9/10\\nCategory: Democracy\\nS
+ ectors: Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0201-024
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2026-0115-023@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20260115
+SUMMARY:Legislative Proposal: 32 states introduced 127 bills restricting vo
+ ting access\, including limits on mail ballot drop boxes\, shortened early
+  v…
+DESCRIPTION:32 states introduced 127 bills restricting voting access\, incl
+ uding limits on mail ballot drop boxes\, shortened early voting\, and expa
+ nded voter roll purges.\\n\\nSeverity: 9/10\\nCategory: Democracy\\nSector
+ s: Democracy\, Civil Rights
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0115-023
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-1225-125@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20251225
+SUMMARY:Documentation Milestone: Independent watchdog cross-references reac
+ hed a 125-event milestone on coordinated erosion of proactive disclosure —
+  sp…
+DESCRIPTION:Independent watchdog cross-references reached a 125-event miles
+ tone on coordinated erosion of proactive disclosure — spanning FOIA delays
+ \, lobbying log gaps\, press access limits\, and ethics filing extensions 
+ that SAFE-004 targets.\\n\\nSeverity: 9/10\\nCategory: Democracy\\nSectors
+ : Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-1225-125
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-1222-124@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20251222
+SUMMARY:Press Access: Multiple federal agencies curtailed routine press bri
+ efing transcripts and on-camera Q&A — limiting real-time public sc…
+DESCRIPTION:Multiple federal agencies curtailed routine press briefing tran
+ scripts and on-camera Q&A — limiting real-time public scrutiny of policy r
+ ollouts documented in prior CPR tracker entries.\\n\\nSeverity: 6/10\\nCat
+ egory: Democracy\\nSectors: Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-1222-124
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-1220-123@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20251220
+SUMMARY:Spending Transparency: Federal spending portals narrowed machine-re
+ adable lobbying and contract metadata fields — reducing public ability to 
+ c…
+DESCRIPTION:Federal spending portals narrowed machine-readable lobbying and
+  contract metadata fields — reducing public ability to cross-reference ven
+ dor payments with rulemaking commenters.\\n\\nSeverity: 7/10\\nCategory: D
+ emocracy\\nSectors: Democracy\, Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-1220-123
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-1218-022@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20251218
+SUMMARY:Congressional Action: Congress invoked the Congressional Review Act
+  to overturn 7 federal agency rules in a single year — the highest CRA usa
+ …
+DESCRIPTION:Congress invoked the Congressional Review Act to overturn 7 fed
+ eral agency rules in a single year — the highest CRA usage since its 1996 
+ enactment.\\n\\nSeverity: 7/10\\nCategory: Democracy\\nSectors: Democracy\
+ , Environment\, Healthcare
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-1218-022
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-1218-122@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20251218
+SUMMARY:Oversight Report: GAO flagged rising improper-payment rates tied to
+  reduced inspector general staffing — documenting how oversight vacanc…
+DESCRIPTION:GAO flagged rising improper-payment rates tied to reduced inspe
+ ctor general staffing — documenting how oversight vacancies weaken fraud r
+ ecovery ahead of major procurement pushes.\\n\\nSeverity: 8/10\\nCategory:
+  Democracy\\nSectors: Democracy\, Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-1218-122
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-1215-121@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20251215
+SUMMARY:FOIA Backlog: DOJ Office of Information Policy reported median FOIA
+  response times exceeding statutory limits at multiple agencies — …
+DESCRIPTION:DOJ Office of Information Policy reported median FOIA response 
+ times exceeding statutory limits at multiple agencies — with proactive dis
+ closure pages going stale as staffing reviews continued across the executi
+ ve branch.\\n\\nSeverity: 7/10\\nCategory: Democracy\\nSectors: Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-1215-121
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-1212-120@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20251212
+SUMMARY:Transparency Halt: A coordinated executive-branch slowdown on proac
+ tive open-government publishing reached a 120-event milestone — spannin…
+DESCRIPTION:A coordinated executive-branch slowdown on proactive open-gover
+ nment publishing reached a 120-event milestone — spanning FOIA backlogs\, 
+ lobbying log gaps\, and ethics disclosure delays that SAFE-004 is designed
+  to reverse.\\n\\nSeverity: 10/10\\nCategory: Democracy\\nSectors: Democra
+ cy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-1212-120
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-1208-119@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20251208
+SUMMARY:Inspector General Review: Multiple agency IG offices faced staffing
+  reviews and report publication delays — narrowing independent oversight o
+ f pr…
+DESCRIPTION:Multiple agency IG offices faced staffing reviews and report pu
+ blication delays — narrowing independent oversight of procurement fraud an
+ d ethics violations documented in prior GAO findings.\\n\\nSeverity: 8/10\
+ \nCategory: Democracy\\nSectors: Democracy\, Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-1208-119
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-1204-118@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20251204
+SUMMARY:Campaign Finance: FEC enforcement docket backlog grew as commission
+  vacancies limited penalties for late disclosure filings — delaying pu…
+DESCRIPTION:FEC enforcement docket backlog grew as commission vacancies lim
+ ited penalties for late disclosure filings — delaying public visibility in
+ to midterm dark-money spending.\\n\\nSeverity: 7/10\\nCategory: Democracy\
+ \nSectors: Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-1204-118
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-1201-117@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20251201
+SUMMARY:Ethics Rollback: OGE extended financial disclosure filing deadlines
+  for senior appointees — reducing real-time visibility into executive…
+DESCRIPTION:OGE extended financial disclosure filing deadlines for senior a
+ ppointees — reducing real-time visibility into executive branch conflicts 
+ of interest during agency rulemaking pushes.\\n\\nSeverity: 7/10\\nCategor
+ y: Democracy\\nSectors: Democracy\, Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-1201-117
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-1128-116@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20251128
+SUMMARY:Election Security: CISA scaled back election-security partnership s
+ taffing and state coordination grants — weakening federal support for v…
+DESCRIPTION:CISA scaled back election-security partnership staffing and sta
+ te coordination grants — weakening federal support for voting-system cyber
+ security ahead of the 2026 midterm cycle.\\n\\nSeverity: 9/10\\nCategory: 
+ Democracy\\nSectors: Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-1128-116
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-1125-115@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20251125
+SUMMARY:Records Policy: National Archives issued restrictive guidance on pr
+ esidential records access requests — narrowing public review windows…
+DESCRIPTION:National Archives issued restrictive guidance on presidential r
+ ecords access requests — narrowing public review windows under the Preside
+ ntial Records Act amid ongoing FOIA litigation over executive-branch docum
+ ent retention.\\n\\nSeverity: 7/10\\nCategory: Democracy\\nSectors: Democr
+ acy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-1125-115
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-1121-114@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20251121
+SUMMARY:Whistleblower Backlog: Federal whistleblower appeals surged as MSPB
+  vacancies left retaliation cases unresolved — weakening the fraud-recover
+ y…
+DESCRIPTION:Federal whistleblower appeals surged as MSPB vacancies left ret
+ aliation cases unresolved — weakening the fraud-recovery and oversight mec
+ hanisms SAFE-004 whistleblower bounties are designed to strengthen.\\n\\nS
+ everity: 8/10\\nCategory: Democracy\\nSectors: Democracy\, Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-1121-114
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-1119-040@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20251119
+SUMMARY:Legislative Proposal: Epstein Files Transparency Act introduced in 
+ the 119th Congress\, requiring DOJ to release unclassified investigation r
+ e…
+DESCRIPTION:Epstein Files Transparency Act introduced in the 119th Congress
+ \, requiring DOJ to release unclassified investigation records — amid broa
+ der elite accountability demands.\\n\\nSeverity: 5/10\\nCategory: Democrac
+ y\\nSectors: Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-1119-040
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-1118-113@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20251118
+SUMMARY:Legislative Action: House Judiciary subcommittee advanced markup on
+  the Epstein Files Transparency Act — bipartisan legislation requiring D…
+DESCRIPTION:House Judiciary subcommittee advanced markup on the Epstein Fil
+ es Transparency Act — bipartisan legislation requiring DOJ to release uncl
+ assified investigation records on a statutory timeline.\\n\\nSeverity: 5/1
+ 0\\nCategory: Democracy\\nSectors: Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-1118-113
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-1115-112@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20251115
+SUMMARY:Disclosure Rollback: Federal agencies scaled back proactive disclos
+ ure of lobbying visitor logs and rulemaking comment datasets — reducing m…
+DESCRIPTION:Federal agencies scaled back proactive disclosure of lobbying v
+ isitor logs and rulemaking comment datasets — reducing machine-readable tr
+ ansparency required under prior open-government policies.\\n\\nSeverity: 7
+ /10\\nCategory: Democracy\\nSectors: Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-1115-112
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-1112-111@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20251112
+SUMMARY:Records Withholding: DOJ expanded FOIA exemption claims for executi
+ ve-branch records tied to political appointees — lengthening backlogs doc…
+DESCRIPTION:DOJ expanded FOIA exemption claims for executive-branch records
+  tied to political appointees — lengthening backlogs documented on FOIA.go
+ v and delaying public release of investigation materials.\\n\\nSeverity: 7
+ /10\\nCategory: Democracy\\nSectors: Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-1112-111
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-1108-021@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20251108
+SUMMARY:Subsidy Expiration: Enhanced ACA premium tax credits expired\, rais
+ ing average benchmark silver plan premiums 18% nationally and affecting 2…
+DESCRIPTION:Enhanced ACA premium tax credits expired\, raising average benc
+ hmark silver plan premiums 18% nationally and affecting 21 million enrolle
+ es.\\n\\nSeverity: 8/10\\nCategory: Healthcare\\nSectors: Healthcare\, Eco
+ nomy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-1108-021
+CATEGORIES:Healthcare
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-1107-110@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20251107
+SUMMARY:Workforce Reclassification: OPM expanded Schedule F reclassificatio
+ n guidance to additional agency subcomponents — accelerating politically m
+ otivat…
+DESCRIPTION:OPM expanded Schedule F reclassification guidance to additional
+  agency subcomponents — accelerating politically motivated civil-service p
+ urges across the executive branch ahead of the 2026 midterms.\\n\\nSeverit
+ y: 10/10\\nCategory: Democracy\\nSectors: Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-1107-110
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-1102-109@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20251102
+SUMMARY:Disclosure Rollback: Treasury and IRS moved to weaken nonprofit don
+ or-disclosure requirements for politically active 501(c)(4) organizations…
+DESCRIPTION:Treasury and IRS moved to weaken nonprofit donor-disclosure req
+ uirements for politically active 501(c)(4) organizations — expanding dark-
+ money channels documented by OpenSecrets.\\n\\nSeverity: 9/10\\nCategory: 
+ Democracy\\nSectors: Democracy\, Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-1102-109
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-1028-108@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20251028
+SUMMARY:Regulatory Delay: EPA delayed implementation of methane leak detect
+ ion and repair standards for oil and gas facilities — extending a regu…
+DESCRIPTION:EPA delayed implementation of methane leak detection and repair
+  standards for oil and gas facilities — extending a regulatory freeze that
+  benefits fossil-fuel operators.\\n\\nSeverity: 7/10\\nCategory: Environme
+ nt\\nSectors: Environment\, Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-1028-108
+CATEGORIES:Environment
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-1023-107@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20251023
+SUMMARY:Institutional Vacancy: Merit Systems Protection Board vacancies lef
+ t thousands of federal whistleblower and Schedule F appeal cases in limbo 
+ —…
+DESCRIPTION:Merit Systems Protection Board vacancies left thousands of fede
+ ral whistleblower and Schedule F appeal cases in limbo — removing a key ch
+ eck on retaliatory firings.\\n\\nSeverity: 8/10\\nCategory: Democracy\\nSe
+ ctors: Democracy\, Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-1023-107
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-1018-106@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20251018
+SUMMARY:Enforcement Deadlock: FEC commissioners deadlocked on major campaig
+ n-finance enforcement actions and advisory opinions — pausing investigatio
+ …
+DESCRIPTION:FEC commissioners deadlocked on major campaign-finance enforcem
+ ent actions and advisory opinions — pausing investigations into undisclose
+ d independent expenditures ahead of the 2026 cycle.\\n\\nSeverity: 8/10\\n
+ Category: Democracy\\nSectors: Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-1018-106
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-1013-105@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20251013
+SUMMARY:Healthcare Policy: CMS approved additional state Medicaid waivers i
+ mposing work requirements and premiums — conditioning health coverage o…
+DESCRIPTION:CMS approved additional state Medicaid waivers imposing work re
+ quirements and premiums — conditioning health coverage on employment in lo
+ w-wage labor markets.\\n\\nSeverity: 8/10\\nCategory: Healthcare\\nSectors
+ : Healthcare\, Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-1013-105
+CATEGORIES:Healthcare
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-1008-104@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20251008
+SUMMARY:Regulatory Rollback: Education Department finalized Title IX sports
+  regulations excluding transgender student-athletes — reversing inclusive…
+DESCRIPTION:Education Department finalized Title IX sports regulations excl
+ uding transgender student-athletes — reversing inclusive participation rul
+ es and inviting litigation in dozens of states.\\n\\nSeverity: 7/10\\nCate
+ gory: Education\\nSectors: Education\, Civil Rights
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-1008-104
+CATEGORIES:Education
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-1003-103@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20251003
+SUMMARY:Security Downgrade: CISA election-security grants and state coordin
+ ation staffing cut ahead of the 2026 midterms — weakening federal suppor…
+DESCRIPTION:CISA election-security grants and state coordination staffing c
+ ut ahead of the 2026 midterms — weakening federal support for voting-syste
+ m cybersecurity and incident response.\\n\\nSeverity: 9/10\\nCategory: Dem
+ ocracy\\nSectors: Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-1003-103
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0928-102@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250928
+SUMMARY:Workforce Reduction: Social Security Administration accelerated fie
+ ld-office closures and staffing cuts — lengthening disability and retirem…
+DESCRIPTION:Social Security Administration accelerated field-office closure
+ s and staffing cuts — lengthening disability and retirement claim backlogs
+  for millions of beneficiaries.\\n\\nSeverity: 8/10\\nCategory: Healthcare
+ \\nSectors: Healthcare\, Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0928-102
+CATEGORIES:Healthcare
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0923-101@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250923
+SUMMARY:Enforcement Pause: CFPB paused major consumer-finance enforcement a
+ ctions and supervisory exams — gutting mortgage\, student-loan\, and cred…
+DESCRIPTION:CFPB paused major consumer-finance enforcement actions and supe
+ rvisory exams — gutting mortgage\, student-loan\, and credit-card protecti
+ ons while the agency faces structural dismantling.\\n\\nSeverity: 8/10\\nC
+ ategory: Economy\\nSectors: Economy\, Civil Rights
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0923-101
+CATEGORIES:Economy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0918-100@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250918
+SUMMARY:Enforcement Halt: Justice Department halted remaining Voting Rights
+  Act Section 2 pattern-or-practice investigations in Georgia\, Texas\, a…
+DESCRIPTION:Justice Department halted remaining Voting Rights Act Section 2
+  pattern-or-practice investigations in Georgia\, Texas\, and Arizona — dis
+ mantling the federal government's last active voting-rights enforcement to
+ ol ahead of the 2026 redistricting cycle.\\n\\nSeverity: 10/10\\nCategory:
+  Democracy\\nSectors: Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0918-100
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0913-099@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250913
+SUMMARY:Research Termination: NIH terminated additional climate\, health-eq
+ uity\, and infectious-disease research grants mid-cycle — disrupting longi
+ tu…
+DESCRIPTION:NIH terminated additional climate\, health-equity\, and infecti
+ ous-disease research grants mid-cycle — disrupting longitudinal studies an
+ d university partnerships nationwide.\\n\\nSeverity: 8/10\\nCategory: Heal
+ thcare\\nSectors: Healthcare\, Environment
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0913-099
+CATEGORIES:Healthcare
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0908-098@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250908
+SUMMARY:Enforcement Expansion: DHS expanded National Guard coordination for
+  interior deportation operations — militarizing immigration enforcement in
+  …
+DESCRIPTION:DHS expanded National Guard coordination for interior deportati
+ on operations — militarizing immigration enforcement in major metro areas 
+ without new congressional authorization.\\n\\nSeverity: 8/10\\nCategory: I
+ mmigration\\nSectors: Immigration\, Civil Rights\, Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0908-098
+CATEGORIES:Immigration
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0903-097@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250903
+SUMMARY:Trade Policy: Reciprocal tariffs escalated against additional tradi
+ ng partners under national-security authority — raising consumer c…
+DESCRIPTION:Reciprocal tariffs escalated against additional trading partner
+ s under national-security authority — raising consumer costs and retaliato
+ ry barriers while bypassing congressional trade powers.\\n\\nSeverity: 7/1
+ 0\\nCategory: Economy\\nSectors: Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0903-097
+CATEGORIES:Economy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0829-096@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250829
+SUMMARY:Executive Order: Federal speech restrictions expanded to contractor
+ s and grant recipients beyond universities — conditioning billions in…
+DESCRIPTION:Federal speech restrictions expanded to contractors and grant r
+ ecipients beyond universities — conditioning billions in federal funds on 
+ ideological compliance with administration speech directives.\\n\\nSeverit
+ y: 8/10\\nCategory: Democracy\\nSectors: Democracy\, Civil Rights\, Educat
+ ion
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0829-096
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0824-095@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250824
+SUMMARY:International Withdrawal: WHO withdrawal process advanced with halt
+ ed pandemic-preparedness funding and paused CDC global health partnerships
+  — i…
+DESCRIPTION:WHO withdrawal process advanced with halted pandemic-preparedne
+ ss funding and paused CDC global health partnerships — isolating U.S. publ
+ ic health from international coordination.\\n\\nSeverity: 7/10\\nCategory:
+  Healthcare\\nSectors: Healthcare\, Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0824-095
+CATEGORIES:Healthcare
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0819-094@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250819
+SUMMARY:Funding Pause: IRA clean-energy grant disbursements paused pending 
+ political review — stalling home electrification rebates and commun…
+DESCRIPTION:IRA clean-energy grant disbursements paused pending political r
+ eview — stalling home electrification rebates and community solar projects
+  mid-implementation.\\n\\nSeverity: 8/10\\nCategory: Environment\\nSectors
+ : Environment\, Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0819-094
+CATEGORIES:Environment
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0814-093@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250814
+SUMMARY:Workforce Policy: OPM intensified deferred-resignation buyout press
+ ure on career civil servants — offering exit packages while threatenin…
+DESCRIPTION:OPM intensified deferred-resignation buyout pressure on career 
+ civil servants — offering exit packages while threatening RIFs for employe
+ es who declined\, mirroring Project 2025 workforce purge tactics.\\n\\nSev
+ erity: 8/10\\nCategory: Democracy\\nSectors: Democracy\, Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0814-093
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0809-092@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250809
+SUMMARY:Personnel Action: Second wave of probationary federal employee term
+ inations targeted climate\, civil-rights\, and inspector-general support…
+DESCRIPTION:Second wave of probationary federal employee terminations targe
+ ted climate\, civil-rights\, and inspector-general support staff — acceler
+ ating Schedule F implementation through attrition.\\n\\nSeverity: 9/10\\nC
+ ategory: Democracy\\nSectors: Democracy\, Environment\, Civil Rights
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0809-092
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0804-091@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250804
+SUMMARY:Agency Restructuring: USAID functions absorbed into State Departmen
+ t with foreign-aid portfolio reviews — consolidating humanitarian and deve
+ …
+DESCRIPTION:USAID functions absorbed into State Department with foreign-aid
+  portfolio reviews — consolidating humanitarian and development programs u
+ nder political appointees per Project 2025's State chapter.\\n\\nSeverity:
+  8/10\\nCategory: Democracy\\nSectors: Democracy\, Healthcare
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0804-091
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0730-090@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250730
+SUMMARY:Enforcement Shift: EEOC and OFCCP redirected civil-rights investiga
+ tors toward DEI program audits while deprioritizing systemic workplace …
+DESCRIPTION:EEOC and OFCCP redirected civil-rights investigators toward DEI
+  program audits while deprioritizing systemic workplace discrimination cas
+ es — weaponizing enforcement against inclusion programs.\\n\\nSeverity: 8/
+ 10\\nCategory: Civil Rights\\nSectors: Civil Rights\, Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0730-090
+CATEGORIES:Civil Rights
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0725-089@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250725
+SUMMARY:Personnel Action: Merit Systems Protection Board backlog left thous
+ ands of federal employee appeals unresolved — including Schedule F rec…
+DESCRIPTION:Merit Systems Protection Board backlog left thousands of federa
+ l employee appeals unresolved — including Schedule F reclassification chal
+ lenges — without independent adjudication.\\n\\nSeverity: 9/10\\nCategory:
+  Democracy\\nSectors: Democracy\, Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0725-089
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0720-088@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250720
+SUMMARY:Agency Action: CMS approved new state Medicaid waivers imposing wor
+ k requirements and premiums — conditioning health coverage on emplo…
+DESCRIPTION:CMS approved new state Medicaid waivers imposing work requireme
+ nts and premiums — conditioning health coverage on employment as Project 2
+ 025's HHS chapter recommended.\\n\\nSeverity: 8/10\\nCategory: Healthcare\
+ \nSectors: Healthcare\, Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0720-088
+CATEGORIES:Healthcare
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0715-087@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250715
+SUMMARY:Regulatory Delay: Fish and Wildlife Service delayed Endangered Spec
+ ies Act consultations for energy and infrastructure projects — acceler…
+DESCRIPTION:Fish and Wildlife Service delayed Endangered Species Act consul
+ tations for energy and infrastructure projects — accelerating fossil and m
+ ining approvals while sidestepping species protections.\\n\\nSeverity: 8/1
+ 0\\nCategory: Environment\\nSectors: Environment
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0715-087
+CATEGORIES:Environment
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0710-086@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250710
+SUMMARY:Regulatory Action: USDA finalized expanded SNAP work requirements a
+ nd time limits in additional states — restricting nutrition assistance …
+DESCRIPTION:USDA finalized expanded SNAP work requirements and time limits 
+ in additional states — restricting nutrition assistance for able-bodied ad
+ ults without dependents\, mirroring Project 2025 Agriculture chapter propo
+ sals.\\n\\nSeverity: 7/10\\nCategory: Economy\\nSectors: Economy\, Healthc
+ are
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0710-086
+CATEGORIES:Economy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0705-085@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250705
+SUMMARY:Agency Action: CISA election-security coordination grants and state
+  partnership staffing faced cuts — weakening federal voting-system …
+DESCRIPTION:CISA election-security coordination grants and state partnershi
+ p staffing faced cuts — weakening federal voting-system cybersecurity as m
+ idterm infrastructure funding stalled.\\n\\nSeverity: 9/10\\nCategory: Dem
+ ocracy\\nSectors: Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0705-085
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0630-084@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250630
+SUMMARY:Policy Rollback: Education Department advanced Title IX sports rule
+ s excluding transgender student-athletes — reversing inclusive partic…
+DESCRIPTION:Education Department advanced Title IX sports rules excluding t
+ ransgender student-athletes — reversing inclusive participation policies a
+ dopted under the prior administration.\\n\\nSeverity: 8/10\\nCategory: Edu
+ cation\\nSectors: Civil Rights\, Education
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0630-084
+CATEGORIES:Education
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0625-083@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250625
+SUMMARY:Executive Order: Interior fast-tracked hardrock mining leases and d
+ rilling permits on federal lands — sidestepping tribal consultation a…
+DESCRIPTION:Interior fast-tracked hardrock mining leases and drilling permi
+ ts on federal lands — sidestepping tribal consultation and NEPA review tim
+ elines.\\n\\nSeverity: 9/10\\nCategory: Environment\\nSectors: Environment
+ \, Civil Rights
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0625-083
+CATEGORIES:Environment
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0620-082@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250620
+SUMMARY:Policy Restriction: Congress advanced census and voter-registration
+  changes targeting citizenship documentation — fueling noncitizen voting…
+DESCRIPTION:Congress advanced census and voter-registration changes targeti
+ ng citizenship documentation — fueling noncitizen voting myths Brennan Cen
+ ter research has repeatedly debunked.\\n\\nSeverity: 8/10\\nCategory: Demo
+ cracy\\nSectors: Democracy\, Immigration
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0620-082
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0615-081@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250615
+SUMMARY:Agency Action: VA accelerated community-care privatization despite 
+ GAO-documented overpayment and fraud risks — outsourcing veterans' …
+DESCRIPTION:VA accelerated community-care privatization despite GAO-documen
+ ted overpayment and fraud risks — outsourcing veterans' health services wi
+ th weakened oversight.\\n\\nSeverity: 8/10\\nCategory: Healthcare\\nSector
+ s: Healthcare\, Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0615-081
+CATEGORIES:Healthcare
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0614-020@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250614
+SUMMARY:Enforcement Expansion: ICE detention capacity expanded by 40\,000 b
+ eds through new facility contracts\; expedited removal extended to individ
+ ual…
+DESCRIPTION:ICE detention capacity expanded by 40\,000 beds through new fac
+ ility contracts\; expedited removal extended to individuals present less t
+ han two years.\\n\\nSeverity: 8/10\\nCategory: Immigration\\nSectors: Immi
+ gration\, Civil Rights
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0614-020
+CATEGORIES:Immigration
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0610-080@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250610
+SUMMARY:Regulatory Freeze: OSHA delayed silica exposure and heat-illness ru
+ lemakings pending political review — extending the administration-wide …
+DESCRIPTION:OSHA delayed silica exposure and heat-illness rulemakings pendi
+ ng political review — extending the administration-wide freeze on worker-s
+ afety protections.\\n\\nSeverity: 7/10\\nCategory: Economy\\nSectors: Econ
+ omy\, Healthcare
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0610-080
+CATEGORIES:Economy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0605-079@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250605
+SUMMARY:Policy Restriction: Election Assistance Commission security grants 
+ delayed as Congress advanced proof-of-citizenship registration mandates …
+DESCRIPTION:Election Assistance Commission security grants delayed as Congr
+ ess advanced proof-of-citizenship registration mandates — weakening electi
+ on infrastructure funding.\\n\\nSeverity: 8/10\\nCategory: Democracy\\nSec
+ tors: Democracy\, Civil Rights
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0605-079
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0602-078@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250602
+SUMMARY:Executive Order: Interior accelerated offshore oil and gas lease sa
+ les in the Gulf of Mexico and Alaska — prioritizing fossil extraction…
+DESCRIPTION:Interior accelerated offshore oil and gas lease sales in the Gu
+ lf of Mexico and Alaska — prioritizing fossil extraction over renewable si
+ ting on federal waters.\\n\\nSeverity: 9/10\\nCategory: Environment\\nSect
+ ors: Environment\, Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0602-078
+CATEGORIES:Environment
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0528-077@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250528
+SUMMARY:Regulatory Rollback: CMS approved additional state Medicaid waivers
+  imposing work requirements and premiums — conditioning health coverage o…
+DESCRIPTION:CMS approved additional state Medicaid waivers imposing work re
+ quirements and premiums — conditioning health coverage on employment in hi
+ gh-unemployment counties.\\n\\nSeverity: 8/10\\nCategory: Healthcare\\nSec
+ tors: Healthcare\, Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0528-077
+CATEGORIES:Healthcare
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0525-076@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250525
+SUMMARY:Policy Rollback: Pentagon reinstated restrictions on gender-affirmi
+ ng care for active-duty service members and paused TRICARE coverage u…
+DESCRIPTION:Pentagon reinstated restrictions on gender-affirming care for a
+ ctive-duty service members and paused TRICARE coverage updates — reversing
+  inclusive military health policies.\\n\\nSeverity: 8/10\\nCategory: Healt
+ hcare\\nSectors: Civil Rights\, Healthcare
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0525-076
+CATEGORIES:Healthcare
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0520-075@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250520
+SUMMARY:Policy Restriction: ODNI restricted congressional access to climate
+ -security threat assessments and paused interagency intelligence briefin…
+DESCRIPTION:ODNI restricted congressional access to climate-security threat
+  assessments and paused interagency intelligence briefings on election int
+ erference.\\n\\nSeverity: 9/10\\nCategory: Democracy\\nSectors: Democracy\
+ , Environment
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0520-075
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0515-074@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250515
+SUMMARY:Regulatory Rollback: USDA expanded SNAP work requirements and short
+ ened time-limit waivers — cutting nutrition assistance for able-bodied ad…
+DESCRIPTION:USDA expanded SNAP work requirements and shortened time-limit w
+ aivers — cutting nutrition assistance for able-bodied adults without depen
+ dents in high-unemployment areas.\\n\\nSeverity: 8/10\\nCategory: Economy\
+ \nSectors: Economy\, Healthcare
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0515-074
+CATEGORIES:Economy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0512-073@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250512
+SUMMARY:Workforce Reduction: FTC consumer-protection bureau staff placed on
+  leave and new merger challenges halted — curtailing antitrust enforcemen…
+DESCRIPTION:FTC consumer-protection bureau staff placed on leave and new me
+ rger challenges halted — curtailing antitrust enforcement aligned with Pro
+ ject 2025's FTC chapter.\\n\\nSeverity: 7/10\\nCategory: Economy\\nSectors
+ : Economy\, Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0512-073
+CATEGORIES:Economy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0508-072@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250508
+SUMMARY:Regulatory Rollback: FEC commissioners deadlocked on enforcement ma
+ tters and paused advisory opinions — stalling campaign-finance investigat…
+DESCRIPTION:FEC commissioners deadlocked on enforcement matters and paused 
+ advisory opinions — stalling campaign-finance investigations as dark-money
+  spending surged.\\n\\nSeverity: 8/10\\nCategory: Democracy\\nSectors: Dem
+ ocracy\, Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0508-072
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0502-071@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250502
+SUMMARY:Enforcement Shift: DOJ Civil Rights Division redirected staff from 
+ police pattern-or-practice investigations toward DEI compliance reviews…
+DESCRIPTION:DOJ Civil Rights Division redirected staff from police pattern-
+ or-practice investigations toward DEI compliance reviews — weakening feder
+ al oversight of law enforcement misconduct.\\n\\nSeverity: 9/10\\nCategory
+ : Civil Rights\\nSectors: Civil Rights\, Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0502-071
+CATEGORIES:Civil Rights
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0428-070@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250428
+SUMMARY:Workforce Reduction: Veterans Affairs eliminated DEI offices and pl
+ aced probationary employees on termination notice — cutting support staff…
+DESCRIPTION:Veterans Affairs eliminated DEI offices and placed probationary
+  employees on termination notice — cutting support staff while 700\,000 di
+ sability claims remain backlogged.\\n\\nSeverity: 8/10\\nCategory: Healthc
+ are\\nSectors: Civil Rights\, Healthcare
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0428-070
+CATEGORIES:Healthcare
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0422-069@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250422
+SUMMARY:Program Termination: USAID headquarters staff placed on leave and f
+ oreign assistance programs halted — dismantling decades of global health\,
+ …
+DESCRIPTION:USAID headquarters staff placed on leave and foreign assistance
+  programs halted — dismantling decades of global health\, famine relief\, 
+ and democracy-promotion infrastructure.\\n\\nSeverity: 9/10\\nCategory: De
+ mocracy\\nSectors: Democracy\, Healthcare
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0422-069
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0418-068@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250418
+SUMMARY:Program Freeze: NIH placed new grant applications on hold pending i
+ deological review of research topics — delaying biomedical studies o…
+DESCRIPTION:NIH placed new grant applications on hold pending ideological r
+ eview of research topics — delaying biomedical studies on climate health\,
+  reproductive care\, and LGBTQ populations.\\n\\nSeverity: 9/10\\nCategory
+ : Healthcare\\nSectors: Healthcare\, Education
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0418-068
+CATEGORIES:Healthcare
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0415-067@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250415
+SUMMARY:Enforcement Shift: HUD paused fair-housing discrimination investiga
+ tions and redirected staff toward reviewing DEI-related grant language …
+DESCRIPTION:HUD paused fair-housing discrimination investigations and redir
+ ected staff toward reviewing DEI-related grant language — weakening enforc
+ ement of the Fair Housing Act.\\n\\nSeverity: 7/10\\nCategory: Civil Right
+ s\\nSectors: Civil Rights\, Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0415-067
+CATEGORIES:Civil Rights
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0410-066@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250410
+SUMMARY:Regulatory Rollback: EPA dismissed members of its Science Advisory 
+ Board and Clean Air Scientific Advisory Committee — removing independent …
+DESCRIPTION:EPA dismissed members of its Science Advisory Board and Clean A
+ ir Scientific Advisory Committee — removing independent scientists who rev
+ iew pollution standards.\\n\\nSeverity: 8/10\\nCategory: Environment\\nSec
+ tors: Environment\, Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0410-066
+CATEGORIES:Environment
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0405-065@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250405
+SUMMARY:Workforce Reduction: Federal Student Aid office probations terminat
+ ed and hiring frozen — delaying loan servicing\, income-driven repayment p
+ …
+DESCRIPTION:Federal Student Aid office probations terminated and hiring fro
+ zen — delaying loan servicing\, income-driven repayment processing\, and b
+ orrower assistance for 43 million Americans.\\n\\nSeverity: 7/10\\nCategor
+ y: Education\\nSectors: Education\, Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0405-065
+CATEGORIES:Education
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0402-019@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250402
+SUMMARY:Regulatory Change: Department of Education Title IX rules narrowed 
+ harassment definitions and mandated live cross-examination hearings\, af…
+DESCRIPTION:Department of Education Title IX rules narrowed harassment defi
+ nitions and mandated live cross-examination hearings\, affecting 19 millio
+ n college students.\\n\\nSeverity: 5/10\\nCategory: Education\\nSectors: E
+ ducation\, Civil Rights
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0402-019
+CATEGORIES:Education
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0402-049@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250402
+SUMMARY:Executive Order: Reciprocal tariffs imposed on imports from trading
+  partners to address trade deficits — escalating global trade war and…
+DESCRIPTION:Reciprocal tariffs imposed on imports from trading partners to 
+ address trade deficits — escalating global trade war and raising consumer 
+ prices across sectors.\\n\\nSeverity: 9/10\\nCategory: Economy\\nSectors: 
+ Economy\, Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0402-049
+CATEGORIES:Economy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0401-064@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250401
+SUMMARY:Program Freeze: CDC discretionary grant disbursements halted and st
+ aff placed on leave — disrupting disease surveillance\, reproductive …
+DESCRIPTION:CDC discretionary grant disbursements halted and staff placed o
+ n leave — disrupting disease surveillance\, reproductive health data\, and
+  state public health partnerships.\\n\\nSeverity: 9/10\\nCategory: Healthc
+ are\\nSectors: Healthcare\, Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0401-064
+CATEGORIES:Healthcare
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0328-063@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250328
+SUMMARY:Program Freeze: NOAA climate research and monitoring programs pause
+ d pending ideological spending review — stalling hurricane forecasti…
+DESCRIPTION:NOAA climate research and monitoring programs paused pending id
+ eological spending review — stalling hurricane forecasting and temperature
+  data collection.\\n\\nSeverity: 8/10\\nCategory: Environment\\nSectors: E
+ nvironment\, Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0328-063
+CATEGORIES:Environment
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0325-062@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250325
+SUMMARY:Workforce Reduction: FEMA disaster preparedness staffing cut ahead 
+ of hurricane season — weakening federal response capacity as climate disa…
+DESCRIPTION:FEMA disaster preparedness staffing cut ahead of hurricane seas
+ on — weakening federal response capacity as climate disasters intensify na
+ tionwide.\\n\\nSeverity: 8/10\\nCategory: Environment\\nSectors: Environme
+ nt\, Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0325-062
+CATEGORIES:Environment
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0322-061@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250322
+SUMMARY:Workforce Reduction: Social Security Administration placed staff on
+  administrative leave and halted hiring — threatening benefit processing …
+DESCRIPTION:Social Security Administration placed staff on administrative l
+ eave and halted hiring — threatening benefit processing timelines for 70 m
+ illion Americans as DOGE reviews federal payment systems.\\n\\nSeverity: 9
+ /10\\nCategory: Economy\\nSectors: Economy\, Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0322-061
+CATEGORIES:Economy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0320-018@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250320
+SUMMARY:Executive Order: Education Secretary directed to take all lawful st
+ eps to wind down the Department of Education and return authority to …
+DESCRIPTION:Education Secretary directed to take all lawful steps to wind d
+ own the Department of Education and return authority to states — a signatu
+ re Project 2025 objective.\\n\\nSeverity: 9/10\\nCategory: Education\\nSec
+ tors: Education\, Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0320-018
+CATEGORIES:Education
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0318-060@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250318
+SUMMARY:Regulatory Rollback: Interior delayed endangered-species listings a
+ nd weakened migratory bird protections to expedite drilling and mining on…
+DESCRIPTION:Interior delayed endangered-species listings and weakened migra
+ tory bird protections to expedite drilling and mining on federal lands.\\n
+ \\nSeverity: 8/10\\nCategory: Environment\\nSectors: Environment\, Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0318-060
+CATEGORIES:Environment
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0315-031@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250315
+SUMMARY:Agency Restructuring: USAID functions consolidated under State Depa
+ rtment control\, eliminating independent foreign aid oversight and humanit
+ a…
+DESCRIPTION:USAID functions consolidated under State Department control\, e
+ liminating independent foreign aid oversight and humanitarian program auto
+ nomy.\\n\\nSeverity: 9/10\\nCategory: Democracy\\nSectors: Democracy\, Eco
+ nomy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0315-031
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0315-032@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250315
+SUMMARY:Media Policy: FCC leadership signaled renewed broadcast licensing s
+ crutiny and rolled back diversity policies — aligning with Project…
+DESCRIPTION:FCC leadership signaled renewed broadcast licensing scrutiny an
+ d rolled back diversity policies — aligning with Project 2025's media and 
+ communications chapter.\\n\\nSeverity: 7/10\\nCategory: Democracy\\nSector
+ s: Democracy\, Civil Rights
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0315-032
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0312-054@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250312
+SUMMARY:Enforcement Pause: FTC deprioritized merger challenges and consumer
+  fraud cases under new leadership — weakening antitrust and consumer pr…
+DESCRIPTION:FTC deprioritized merger challenges and consumer fraud cases un
+ der new leadership — weakening antitrust and consumer protection oversight
+ .\\n\\nSeverity: 8/10\\nCategory: Economy\\nSectors: Economy\, Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0312-054
+CATEGORIES:Economy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0310-052@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250310
+SUMMARY:Regulatory Rollback: HUD paused affirmatively furthering fair housi
+ ng implementation and redirected resources away from housing discriminati…
+DESCRIPTION:HUD paused affirmatively furthering fair housing implementation
+  and redirected resources away from housing discrimination enforcement.\\n
+ \\nSeverity: 7/10\\nCategory: Civil Rights\\nSectors: Civil Rights\, Econo
+ my
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0310-052
+CATEGORIES:Civil Rights
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0305-053@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250305
+SUMMARY:Regulatory Rollback: Labor Department halted Biden-era overtime pay
+  expansion for salaried workers — reversing wage protections for an estim…
+DESCRIPTION:Labor Department halted Biden-era overtime pay expansion for sa
+ laried workers — reversing wage protections for an estimated 4 million emp
+ loyees.\\n\\nSeverity: 7/10\\nCategory: Economy\\nSectors: Economy\, Civil
+  Rights
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0305-053
+CATEGORIES:Economy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0301-030@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250301
+SUMMARY:Enforcement Expansion: DHS expanded interior enforcement and expedi
+ ted removal operations\, deploying additional ICE agents and military coor
+ di…
+DESCRIPTION:DHS expanded interior enforcement and expedited removal operati
+ ons\, deploying additional ICE agents and military coordination for mass d
+ eportation infrastructure.\\n\\nSeverity: 9/10\\nCategory: Immigration\\nS
+ ectors: Immigration\, Civil Rights\, Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0301-030
+CATEGORIES:Immigration
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0301-051@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250301
+SUMMARY:Enforcement Shift: EEOC redirected civil rights enforcement toward 
+ DEI program investigations while deprioritizing systemic workplace disc…
+DESCRIPTION:EEOC redirected civil rights enforcement toward DEI program inv
+ estigations while deprioritizing systemic workplace discrimination cases.\
+ \n\\nSeverity: 7/10\\nCategory: Civil Rights\\nSectors: Civil Rights\, Eco
+ nomy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0301-051
+CATEGORIES:Civil Rights
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0228-058@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250228
+SUMMARY:Workforce Reduction: CISA placed staff on administrative leave and 
+ halted hiring — weakening election-security and critical-infrastructure c…
+DESCRIPTION:CISA placed staff on administrative leave and halted hiring — w
+ eakening election-security and critical-infrastructure cyber defense amid 
+ federal workforce cuts.\\n\\nSeverity: 9/10\\nCategory: Democracy\\nSector
+ s: Democracy\, Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0228-058
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0225-017@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250225
+SUMMARY:Regulatory Rollback: EPA initiated review and stay of methane leak 
+ detection standards for 280\,000 oil and gas well sites\, rolling back Bid
+ e…
+DESCRIPTION:EPA initiated review and stay of methane leak detection standar
+ ds for 280\,000 oil and gas well sites\, rolling back Biden-era climate ru
+ les.\\n\\nSeverity: 8/10\\nCategory: Environment\\nSectors: Environment
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0225-017
+CATEGORIES:Environment
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0220-034@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250220
+SUMMARY:Ethics Rollback: Office of Government Ethics enforcement weakened f
+ or political appointees\, with expanded ethics waivers reducing execut…
+DESCRIPTION:Office of Government Ethics enforcement weakened for political 
+ appointees\, with expanded ethics waivers reducing executive branch financ
+ ial transparency.\\n\\nSeverity: 6/10\\nCategory: Democracy\\nSectors: Dem
+ ocracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0220-034
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0218-056@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250218
+SUMMARY:Regulatory Rollback: EPA reopened review of light-duty vehicle gree
+ nhouse gas standards — stalling clean-car rules and aligning with Project…
+DESCRIPTION:EPA reopened review of light-duty vehicle greenhouse gas standa
+ rds — stalling clean-car rules and aligning with Project 2025's deregulato
+ ry energy agenda.\\n\\nSeverity: 8/10\\nCategory: Environment\\nSectors: E
+ nvironment\, Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0218-056
+CATEGORIES:Environment
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0214-016@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250214
+SUMMARY:Workforce Reduction: Mass termination of probationary federal emplo
+ yees across HHS\, VA\, and EPA — thousands removed with minimal notice\, g
+ ut…
+DESCRIPTION:Mass termination of probationary federal employees across HHS\,
+  VA\, and EPA — thousands removed with minimal notice\, gutting regulatory
+  and service capacity.\\n\\nSeverity: 8/10\\nCategory: Democracy\\nSectors
+ : Healthcare\, Environment\, Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0214-016
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0214-048@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250214
+SUMMARY:Program Termination: IRS Direct File free tax-filing pilot terminat
+ ed\, eliminating a public alternative to commercial tax preparation and re
+ …
+DESCRIPTION:IRS Direct File free tax-filing pilot terminated\, eliminating 
+ a public alternative to commercial tax preparation and reducing access for
+  low-income filers.\\n\\nSeverity: 6/10\\nCategory: Economy\\nSectors: Eco
+ nomy\, Civil Rights
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0214-048
+CATEGORIES:Economy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0210-028@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250210
+SUMMARY:Regulatory Rollback: SEC halted climate risk disclosure requirement
+ s for public companies\, removing investor transparency on corporate emiss
+ …
+DESCRIPTION:SEC halted climate risk disclosure requirements for public comp
+ anies\, removing investor transparency on corporate emissions and climate 
+ exposure.\\n\\nSeverity: 7/10\\nCategory: Environment\\nSectors: Environme
+ nt\, Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0210-028
+CATEGORIES:Environment
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0210-050@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250210
+SUMMARY:Enforcement Shift: DOJ Civil Rights Division deprioritized voting r
+ ights and police accountability cases\, redirecting enforcement toward D…
+DESCRIPTION:DOJ Civil Rights Division deprioritized voting rights and polic
+ e accountability cases\, redirecting enforcement toward DEI program invest
+ igations.\\n\\nSeverity: 9/10\\nCategory: Civil Rights\\nSectors: Civil Ri
+ ghts\, Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0210-050
+CATEGORIES:Civil Rights
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0207-015@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250207
+SUMMARY:Enforcement Pause: CFPB halted new enforcement actions and rulemaki
+ ngs under acting leadership — effectively pausing consumer financial pr…
+DESCRIPTION:CFPB halted new enforcement actions and rulemakings under actin
+ g leadership — effectively pausing consumer financial protection oversight
+ .\\n\\nSeverity: 8/10\\nCategory: Economy\\nSectors: Economy\, Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0207-015
+CATEGORIES:Economy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0207-046@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250207
+SUMMARY:Funding Cut: NIH capped indirect research cost reimbursement at 15%
+ \, cutting billions from university and hospital research infrastr…
+DESCRIPTION:NIH capped indirect research cost reimbursement at 15%\, cuttin
+ g billions from university and hospital research infrastructure nationwide
+ .\\n\\nSeverity: 8/10\\nCategory: Healthcare\\nSectors: Healthcare\, Educa
+ tion\, Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0207-046
+CATEGORIES:Healthcare
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0205-014@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250205
+SUMMARY:Regulatory Rollback: NLRB leadership rescinded pro-worker organizin
+ g guidance\, reversing Biden-era protections for union elections and colle
+ …
+DESCRIPTION:NLRB leadership rescinded pro-worker organizing guidance\, reve
+ rsing Biden-era protections for union elections and collective bargaining 
+ rights.\\n\\nSeverity: 7/10\\nCategory: Economy\\nSectors: Economy\, Civil
+  Rights
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0205-014
+CATEGORIES:Economy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0205-057@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250205
+SUMMARY:Enforcement Shift: Labor Department suspended federal contractor af
+ firmative action compliance reviews and redirected OFCCP enforcement to…
+DESCRIPTION:Labor Department suspended federal contractor affirmative actio
+ n compliance reviews and redirected OFCCP enforcement toward DEI program i
+ nvestigations.\\n\\nSeverity: 7/10\\nCategory: Civil Rights\\nSectors: Civ
+ il Rights\, Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0205-057
+CATEGORIES:Civil Rights
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0203-013@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250203
+SUMMARY:Agency Action: USAID workforce placed on leave and foreign aid disb
+ ursements halted — effectively dismantling the agency without congr…
+DESCRIPTION:USAID workforce placed on leave and foreign aid disbursements h
+ alted — effectively dismantling the agency without congressional authoriza
+ tion.\\n\\nSeverity: 10/10\\nCategory: Democracy\\nSectors: Democracy\, Ec
+ onomy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0203-013
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0201-029@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250201
+SUMMARY:Institutional Weakening: Merit Systems Protection Board lacks quoru
+ m to hear federal employee appeals\, leaving Schedule F reclassification a
+ nd m…
+DESCRIPTION:Merit Systems Protection Board lacks quorum to hear federal emp
+ loyee appeals\, leaving Schedule F reclassification and mass termination c
+ hallenges without independent adjudication.\\n\\nSeverity: 8/10\\nCategory
+ : Democracy\\nSectors: Democracy\, Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0201-029
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0201-055@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250201
+SUMMARY:Institutional Access: Treasury granted DOGE-aligned reviewers acces
+ s to federal payment systems — bypassing standard inspector general oversi
+ …
+DESCRIPTION:Treasury granted DOGE-aligned reviewers access to federal payme
+ nt systems — bypassing standard inspector general oversight for spending d
+ ecisions.\\n\\nSeverity: 9/10\\nCategory: Democracy\\nSectors: Democracy\,
+  Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0201-055
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0129-012@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250129
+SUMMARY:Regulatory Guidance: OPM issues Schedule F implementing guidance di
+ recting agencies to identify policy-influencing positions for at-will rec…
+DESCRIPTION:OPM issues Schedule F implementing guidance directing agencies 
+ to identify policy-influencing positions for at-will reclassification — po
+ tentially affecting 50\,000+ roles.\\n\\nSeverity: 9/10\\nCategory: Democr
+ acy\\nSectors: Democracy\, Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0129-012
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0128-011@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250128
+SUMMARY:Workforce Action: Deferred resignation program offered federal buyo
+ uts with agencies instructed to treat non-acceptance as willingness to…
+DESCRIPTION:Deferred resignation program offered federal buyouts with agenc
+ ies instructed to treat non-acceptance as willingness to be terminated — p
+ ressuring mass voluntary departures.\\n\\nSeverity: 8/10\\nCategory: Democ
+ racy\\nSectors: Economy\, Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0128-011
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0128-039@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250128
+SUMMARY:Oversight Report: GAO finds Medicaid work-requirement demonstration
+ s impose substantial administrative costs\, with federal funds covering…
+DESCRIPTION:GAO finds Medicaid work-requirement demonstrations impose subst
+ antial administrative costs\, with federal funds covering the majority of 
+ compliance verification spending.\\n\\nSeverity: 6/10\\nCategory: Healthca
+ re\\nSectors: Healthcare\, Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0128-039
+CATEGORIES:Healthcare
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0128-059@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250128
+SUMMARY:Program Termination: Pentagon eliminated DEI offices and training a
+ cross the armed services — disbanding advisory groups and canceling diver…
+DESCRIPTION:Pentagon eliminated DEI offices and training across the armed s
+ ervices — disbanding advisory groups and canceling diversity initiatives.\
+ \n\\nSeverity: 7/10\\nCategory: Civil Rights\\nSectors: Civil Rights\, Dem
+ ocracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0128-059
+CATEGORIES:Civil Rights
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0120-001@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250120
+SUMMARY:Executive Order: Day One rescission of 78 Biden executive orders on
+  climate\, equity\, and regulation — erasing prior administration polic…
+DESCRIPTION:Day One rescission of 78 Biden executive orders on climate\, eq
+ uity\, and regulation — erasing prior administration policy in a single st
+ roke\, a core Project 2025 implementation tactic.\\n\\nSeverity: 8/10\\nCa
+ tegory: Democracy\\nSectors: Environment\, Civil Rights\, Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0120-001
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0120-002@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250120
+SUMMARY:Executive Order: Schedule F reinstated — civil servants in 'policy-
+ influencing' roles reclassified as at-will employees\, enabling politi…
+DESCRIPTION:Schedule F reinstated — civil servants in 'policy-influencing' 
+ roles reclassified as at-will employees\, enabling politically motivated f
+ irings without merit protections.\\n\\nSeverity: 10/10\\nCategory: Democra
+ cy\\nSectors: Democracy\, Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0120-002
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0120-003@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250120
+SUMMARY:Executive Order: Federal hiring freeze imposed on civilian agencies
+ \, beginning workforce contraction aligned with Project 2025's plan to…
+DESCRIPTION:Federal hiring freeze imposed on civilian agencies\, beginning 
+ workforce contraction aligned with Project 2025's plan to shrink the admin
+ istrative state by attrition.\\n\\nSeverity: 7/10\\nCategory: Economy\\nSe
+ ctors: Economy\, Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0120-003
+CATEGORIES:Economy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0120-004@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250120
+SUMMARY:Executive Order: Birthright citizenship order directs agencies to d
+ eny citizenship documents to U.S.-born children of undocumented paren…
+DESCRIPTION:Birthright citizenship order directs agencies to deny citizensh
+ ip documents to U.S.-born children of undocumented parents — a direct chal
+ lenge to the 14th Amendment now blocked in federal court.\\n\\nSeverity: 1
+ 0/10\\nCategory: Immigration\\nSectors: Immigration\, Civil Rights\, Democ
+ racy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0120-004
+CATEGORIES:Immigration
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0120-005@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250120
+SUMMARY:Executive Order: National energy emergency declared to expedite fos
+ sil fuel permitting and restrict renewable approvals — implementing P…
+DESCRIPTION:National energy emergency declared to expedite fossil fuel perm
+ itting and restrict renewable approvals — implementing Project 2025's dere
+ gulatory energy agenda.\\n\\nSeverity: 9/10\\nCategory: Environment\\nSect
+ ors: Environment\, Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0120-005
+CATEGORIES:Environment
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0120-006@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250120
+SUMMARY:Executive Order: Department of Government Efficiency (DOGE) establi
+ shed with access to federal payment systems and agency data — an unpr…
+DESCRIPTION:Department of Government Efficiency (DOGE) established with acc
+ ess to federal payment systems and agency data — an unprecedented extra-co
+ nstitutional advisory body driving cuts.\\n\\nSeverity: 9/10\\nCategory: D
+ emocracy\\nSectors: Democracy\, Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0120-006
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0120-007@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250120
+SUMMARY:Executive Order: All federal DEI offices terminated and employees p
+ laced on leave\; equity-related contracting and training requirements …
+DESCRIPTION:All federal DEI offices terminated and employees placed on leav
+ e\; equity-related contracting and training requirements rescinded across 
+ every agency.\\n\\nSeverity: 7/10\\nCategory: Civil Rights\\nSectors: Civi
+ l Rights\, Education
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0120-007
+CATEGORIES:Civil Rights
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0120-008@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250120
+SUMMARY:Executive Order: ICE directed to expand detention\, resume border w
+ all construction\, and end catch-and-release — implementing Project 202…
+DESCRIPTION:ICE directed to expand detention\, resume border wall construct
+ ion\, and end catch-and-release — implementing Project 2025's mass deporta
+ tion infrastructure goals.\\n\\nSeverity: 9/10\\nCategory: Immigration\\nS
+ ectors: Immigration\, Civil Rights
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0120-008
+CATEGORIES:Immigration
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0120-009@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250120
+SUMMARY:Executive Order: U.S. withdrawal from the Paris Climate Agreement i
+ nitiated for a second time\, halting international climate finance and…
+DESCRIPTION:U.S. withdrawal from the Paris Climate Agreement initiated for 
+ a second time\, halting international climate finance and undermining glob
+ al emissions targets.\\n\\nSeverity: 9/10\\nCategory: Environment\\nSector
+ s: Environment
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0120-009
+CATEGORIES:Environment
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0120-010@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250120
+SUMMARY:Executive Order: U.S. withdrawal from the World Health Organization
+  initiated\, ending funding and participation in global pandemic prepa…
+DESCRIPTION:U.S. withdrawal from the World Health Organization initiated\, 
+ ending funding and participation in global pandemic preparedness and healt
+ h coordination.\\n\\nSeverity: 8/10\\nCategory: Healthcare\\nSectors: Heal
+ thcare
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0120-010
+CATEGORIES:Healthcare
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0120-026@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250120
+SUMMARY:Executive Order: Regulatory freeze halts publication of new federal
+  rules and withdraws unpublished regulations pending political review…
+DESCRIPTION:Regulatory freeze halts publication of new federal rules and wi
+ thdraws unpublished regulations pending political review — stalling agency
+  rulemaking across government.\\n\\nSeverity: 8/10\\nCategory: Democracy\\
+ nSectors: Democracy\, Environment\, Healthcare
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0120-026
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0120-027@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250120
+SUMMARY:Executive Order: Federal lands drilling order expands oil and gas l
+ easing on public lands and waters\, reversing Biden-era restrictions —…
+DESCRIPTION:Federal lands drilling order expands oil and gas leasing on pub
+ lic lands and waters\, reversing Biden-era restrictions — implementing Pro
+ ject 2025 energy extraction priorities.\\n\\nSeverity: 9/10\\nCategory: En
+ vironment\\nSectors: Environment\, Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0120-027
+CATEGORIES:Environment
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0120-035@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250120
+SUMMARY:Executive Order: Federal policy redefined to recognize only two bio
+ logical sexes\, directing agencies to remove gender-identity protectio…
+DESCRIPTION:Federal policy redefined to recognize only two biological sexes
+ \, directing agencies to remove gender-identity protections from programs 
+ — a Project 2025 civil-service and culture-war priority.\\n\\nSeverity: 8/
+ 10\\nCategory: Civil Rights\\nSectors: Civil Rights\, Healthcare\, Educati
+ on
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0120-035
+CATEGORIES:Civil Rights
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0120-036@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250120
+SUMMARY:Executive Order: Federal employees ordered back to in-person work\,
+  terminating remote arrangements — accelerating attrition alongside hi…
+DESCRIPTION:Federal employees ordered back to in-person work\, terminating 
+ remote arrangements — accelerating attrition alongside hiring freezes and 
+ deferred-resignation pressure.\\n\\nSeverity: 6/10\\nCategory: Economy\\nS
+ ectors: Economy\, Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0120-036
+CATEGORIES:Economy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0120-037@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250120
+SUMMARY:Executive Clemency: Broad pardons granted to individuals convicted 
+ of offenses related to the January 6 Capitol attack — undermining accoun…
+DESCRIPTION:Broad pardons granted to individuals convicted of offenses rela
+ ted to the January 6 Capitol attack — undermining accountability for elect
+ ion subversion.\\n\\nSeverity: 10/10\\nCategory: Democracy\\nSectors: Demo
+ cracy\, Civil Rights
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0120-037
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0120-038@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250120
+SUMMARY:Executive Order: Foreign aid disbursements paused pending ideologic
+ al review — halting humanitarian and development programs worldwide w…
+DESCRIPTION:Foreign aid disbursements paused pending ideological review — h
+ alting humanitarian and development programs worldwide without congression
+ al authorization.\\n\\nSeverity: 9/10\\nCategory: Democracy\\nSectors: Dem
+ ocracy\, Healthcare
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0120-038
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0120-041@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250120
+SUMMARY:Executive Order: America First Trade Policy directs agencies to rev
+ iew all trade agreements and recommend reciprocal tariffs — initiatin…
+DESCRIPTION:America First Trade Policy directs agencies to review all trade
+  agreements and recommend reciprocal tariffs — initiating Project 2025's p
+ rotectionist trade agenda.\\n\\nSeverity: 8/10\\nCategory: Economy\\nSecto
+ rs: Economy\, Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0120-041
+CATEGORIES:Economy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0120-042@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250120
+SUMMARY:Executive Order: Federal censorship coordination with social media 
+ platforms prohibited\; prior government content-moderation efforts ord…
+DESCRIPTION:Federal censorship coordination with social media platforms pro
+ hibited\; prior government content-moderation efforts ordered reviewed — r
+ eshaping platform accountability policy.\\n\\nSeverity: 7/10\\nCategory: D
+ emocracy\\nSectors: Democracy\, Civil Rights
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0120-042
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0120-043@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250120
+SUMMARY:Executive Order: U.S. Refugee Admissions Program suspended pending 
+ realignment with administration immigration priorities — halting huma…
+DESCRIPTION:U.S. Refugee Admissions Program suspended pending realignment w
+ ith administration immigration priorities — halting humanitarian resettlem
+ ent for vulnerable populations.\\n\\nSeverity: 9/10\\nCategory: Immigratio
+ n\\nSectors: Immigration\, Civil Rights
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0120-043
+CATEGORIES:Immigration
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0120-044@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250120
+SUMMARY:Executive Order: Drug cartels directed for designation as foreign t
+ errorist organizations — expanding military and surveillance authorit…
+DESCRIPTION:Drug cartels directed for designation as foreign terrorist orga
+ nizations — expanding military and surveillance authorities for domestic i
+ mmigration enforcement operations.\\n\\nSeverity: 9/10\\nCategory: Immigra
+ tion\\nSectors: Immigration\, Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0120-044
+CATEGORIES:Immigration
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0120-045@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250120
+SUMMARY:Executive Order: Federal death penalty restored and Biden-era execu
+ tion moratorium ended — DOJ directed to resume capital prosecutions a…
+DESCRIPTION:Federal death penalty restored and Biden-era execution moratori
+ um ended — DOJ directed to resume capital prosecutions and pursue death se
+ ntences.\\n\\nSeverity: 8/10\\nCategory: Civil Rights\\nSectors: Civil Rig
+ hts\, Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0120-045
+CATEGORIES:Civil Rights
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0120-047@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250120
+SUMMARY:Executive Order: Inflation Reduction Act clean energy grant disburs
+ ements paused pending ideological review — stalling climate investmen…
+DESCRIPTION:Inflation Reduction Act clean energy grant disbursements paused
+  pending ideological review — stalling climate investment programs authori
+ zed by Congress.\\n\\nSeverity: 9/10\\nCategory: Environment\\nSectors: En
+ vironment\, Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0120-047
+CATEGORIES:Environment
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2025-0103-033@thesunriseparty.pages.dev
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20250103
+SUMMARY:Legislative Proposal: SAVE Act reintroduced in the 119th Congress\,
+  requiring documentary proof of citizenship for federal voter registration
+  …
+DESCRIPTION:SAVE Act reintroduced in the 119th Congress\, requiring documen
+ tary proof of citizenship for federal voter registration — a Project 2025 
+ elections priority.\\n\\nSeverity: 8/10\\nCategory: Democracy\\nSectors: D
+ emocracy\, Civil Rights
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2025-0103-033
+CATEGORIES:Democracy
+END:VEVENT
+END:VCALENDAR

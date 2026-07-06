@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Project Sunrise">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1210"/>
+      <stop offset="100%" style="stop-color:#2d1f1a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="180" cy="120" r="48" fill="#c45c3e" opacity="0.9"/>
+  <text x="180" y="132" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="28" font-weight="700">PS</text>
+  <text x="80" y="280" fill="#f5e6d8" font-family="system-ui,sans-serif" font-size="56" font-weight="700">Project Sunrise</text>
+  <text x="80" y="350" fill="#c9a88a" font-family="system-ui,sans-serif" font-size="28">Democracy Needs Receipts</text>
+  <text x="80" y="420" fill="#a08070" font-family="system-ui,sans-serif" font-size="22">Track Project 2025 · Build the Blueprint</text>
+  <text x="80" y="560" fill="#806050" font-family="system-ui,sans-serif" font-size="18">thesunriseparty.pages.dev</text>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Project Sunrise Mission">
+  <defs>
+    <linearGradient id="m" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5e8d0"/>
+      <stop offset="100%" style="stop-color:#faf6f0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#m)"/>
+  <text x="80" y="120" fill="#b8862e" font-family="system-ui,sans-serif" font-size="20" font-weight="600" letter-spacing="4">OUR MISSION</text>
+  <text x="80" y="200" fill="#2a2218" font-family="system-ui,sans-serif" font-size="52" font-weight="700">Transparency First</text>
+  <text x="80" y="280" fill="#5a4a38" font-family="system-ui,sans-serif" font-size="26">For the people  not billionaires or propagandists</text>
+  <text x="80" y="330" fill="#7a6a58" font-family="system-ui,sans-serif" font-size="22">Every claim sourced · Every link archived</text>
+  <rect x="80" y="400" width="200" height="4" fill="#d4a054" opacity="0.6"/>
+  <text x="80" y="560" fill="#9a8a78" font-family="system-ui,sans-serif" font-size="18">thesunriseparty.pages.dev/mission</text>
+</svg>

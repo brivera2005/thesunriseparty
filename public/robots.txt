@@ -1,0 +1,5 @@
+# Project Sunrise — https://thesunriseparty.pages.dev
+User-agent: *
+Allow: /
+
+Sitemap: https://thesunriseparty.pages.dev/sitemap.xml

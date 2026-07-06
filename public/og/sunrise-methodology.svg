@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Project Sunrise Methodology">
+  <defs>
+    <linearGradient id="m" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1210"/>
+      <stop offset="100%" style="stop-color:#2d2418"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#m)"/>
+  <text x="80" y="120" fill="#d4a054" font-family="system-ui,sans-serif" font-size="20" font-weight="600" letter-spacing="4">METHODOLOGY</text>
+  <text x="80" y="200" fill="#f5e6d8" font-family="system-ui,sans-serif" font-size="52" font-weight="700">How We Source</text>
+  <text x="80" y="280" fill="#c9a88a" font-family="system-ui,sans-serif" font-size="26">Primary sources, severity scoring, archives</text>
+  <text x="80" y="330" fill="#a08070" font-family="system-ui,sans-serif" font-size="22">Transparency standards and verification</text>
+  <text x="80" y="560" fill="#806050" font-family="system-ui,sans-serif" font-size="18">thesunriseparty.pages.dev/methodology</text>
+</svg>

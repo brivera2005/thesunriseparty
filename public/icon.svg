@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Project Sunrise">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2d1f1a"/>
+      <stop offset="55%" stop-color="#5c3d2e"/>
+      <stop offset="100%" stop-color="#8b5a3c"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5d080"/>
+      <stop offset="50%" stop-color="#e8a840"/>
+      <stop offset="100%" stop-color="#d47830"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="url(#sky)"/>
+  <circle cx="256" cy="300" r="120" fill="url(#sun)" opacity="0.95"/>
+  <circle cx="256" cy="300" r="90" fill="#f0c050" opacity="0.6"/>
+  <path d="M0 380 Q128 340 256 360 T512 380 L512 512 L0 512 Z" fill="#1a1210" opacity="0.5"/>
+</svg>

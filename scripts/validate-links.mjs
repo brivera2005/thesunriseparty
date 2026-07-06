@@ -1,0 +1,202 @@
+#!/usr/bin/env node
+/**
+ * Extracts URLs from lib/data/*.ts files and checks HTTP status.
+ * Usage: node scripts/validate-links.mjs [--fix-report]
+ */
+
+import { readFileSync, readdirSync, writeFileSync } from "fs";
+import { join, dirname } from "path";
+import { fileURLToPath } from "url";
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const ROOT = join(__dirname, "..");
+const DATA_DIR = join(ROOT, "lib", "data");
+
+const URL_REGEX = /https?:\/\/[^\s"'`,\)]+/g;
+
+/** Skip template literals and wayback wildcards */
+function isValidUrl(url) {
+  if (url.includes("${") || url.includes("web.archive.org/web/*")) return false;
+  if (url.includes("#/") && url.length > 120) return true; // keep but note
+  return true;
+}
+
+/** Domains that block automated HEAD requests — treat as pass if reachable via GET once */
+const LENIENT_DOMAINS = [
+  "whitehouse.gov",
+  "federalregister.gov",
+  "congress.gov",
+  "gao.gov",
+  "bls.gov",
+  "epa.gov",
+  "justice.gov",
+  "cbo.gov",
+];
+
+function extractUrlsFromFile(filePath) {
+  const content = readFileSync(filePath, "utf8");
+  const urls = new Set();
+  let match;
+  while ((match = URL_REGEX.exec(content)) !== null) {
+    let url = match[0].replace(/[)\].,;]+$/, "");
+    if (isValidUrl(url)) {
+      urls.add(url);
+    }
+  }
+  return [...urls];
+}
+
+function getAllUrls() {
+  const files = readdirSync(DATA_DIR).filter(
+    (f) => f.endsWith(".ts") && f !== "validated-urls.ts"
+  );
+  const urlMap = new Map();
+
+  for (const file of files) {
+    const filePath = join(DATA_DIR, file);
+    for (const url of extractUrlsFromFile(filePath)) {
+      if (!urlMap.has(url)) urlMap.set(url, []);
+      urlMap.get(url).push(file);
+    }
+  }
+  return urlMap;
+}
+
+async function checkUrl(url, timeout = 30000) {
+  const isLenient = LENIENT_DOMAINS.some((d) => url.includes(d));
+
+  const fetchOpts = {
+    redirect: "follow",
+    headers: { "User-Agent": "Mozilla/5.0 (compatible; ProjectSunrise-LinkValidator/1.0)" },
+  };
+
+  try {
+    let res = await fetch(url, { ...fetchOpts, method: "HEAD", signal: AbortSignal.timeout(timeout) });
+
+    if ([405, 403, 401, 400].includes(res.status)) {
+      res = await fetch(url, { ...fetchOpts, method: "GET", signal: AbortSignal.timeout(timeout) });
+    }
+
+    const ok =
+      res.ok ||
+      res.status === 403 ||
+      (isLenient && res.status < 500);
+
+    return { url, status: res.status, ok, error: null };
+  } catch (err) {
+    if (isLenient) {
+      try {
+        const res2 = await fetch(url, {
+          ...fetchOpts,
+          method: "GET",
+          signal: AbortSignal.timeout(timeout),
+        });
+        if (res2.status < 500) {
+          return { url, status: res2.status, ok: true, error: "HEAD failed, GET ok" };
+        }
+        return { url, status: res2.status, ok: false, error: `HTTP ${res2.status}` };
+      } catch (getErr) {
+        return {
+          url,
+          status: 0,
+          ok: false,
+          error: getErr instanceof Error ? getErr.message : String(getErr),
+        };
+      }
+    }
+
+    return {
+      url,
+      status: 0,
+      ok: false,
+      error: err instanceof Error ? err.message : String(err),
+    };
+  }
+}
+
+async function main() {
+  const urlMap = getAllUrls();
+  const urls = [...urlMap.keys()].sort();
+
+  console.log(`\n🔍 Project Sunrise Link Validator`);
+  console.log(`   Checking ${urls.length} unique URLs from lib/data/\n`);
+
+  const results = [];
+  const CONCURRENCY = 3;
+  const DELAY_MS = 50;
+
+  for (let i = 0; i < urls.length; i += CONCURRENCY) {
+    const batch = urls.slice(i, i + CONCURRENCY);
+    const batchResults = await Promise.all(batch.map((url) => checkUrl(url)));
+    results.push(...batchResults);
+
+    if (i + CONCURRENCY < urls.length) {
+      await new Promise((r) => setTimeout(r, DELAY_MS));
+    }
+
+    for (const r of batchResults) {
+      const icon = r.ok ? "✅" : "❌";
+      const status = r.status || "ERR";
+      const short = r.url.length > 80 ? r.url.slice(0, 77) + "..." : r.url;
+      console.log(`${icon} [${status}] ${short}`);
+      if (!r.ok && r.error) console.log(`       ↳ ${r.error}`);
+    }
+  }
+
+  const working = results.filter((r) => r.ok);
+  const broken = results.filter((r) => !r.ok);
+
+  console.log(`\n${"─".repeat(60)}`);
+  console.log(`✅ Working:  ${working.length}`);
+  console.log(`❌ Broken:   ${broken.length}`);
+  console.log(`📊 Total:    ${results.length}`);
+
+  if (broken.length > 0) {
+    console.log(`\n❌ BROKEN LINKS:\n`);
+    for (const r of broken) {
+      const files = urlMap.get(r.url)?.join(", ") ?? "?";
+      console.log(`  ${r.url}`);
+      console.log(`    Files: ${files}`);
+      console.log(`    Error: ${r.error ?? `HTTP ${r.status}`}`);
+      console.log(`    Wayback: https://web.archive.org/web/*/${r.url}\n`);
+    }
+    process.exit(1);
+  }
+
+  // Write validated URLs for citation modal "Verified" badges
+  const validatedPath = join(ROOT, "lib", "data", "validated-urls.ts");
+  const urlList = working.map((r) => r.url).sort();
+  const tsContent = `/** Auto-generated by scripts/validate-links.mjs — do not edit manually */
+export const validatedUrls = new Set<string>([
+${urlList.map((u) => `  ${JSON.stringify(u)},`).join("\n")}
+]);
+
+export function isUrlValidated(url: string): boolean {
+  return validatedUrls.has(url);
+}
+
+/** Extract archive date from Wayback URL (YYYYMMDD) */
+export function extractArchiveDate(waybackUrl: string): string | null {
+  const match = waybackUrl.match(/web\\.archive\\.org\\/web\\/(\\d{8})/);
+  if (!match) return null;
+  const raw = match[1];
+  const y = raw.slice(0, 4);
+  const m = raw.slice(4, 6);
+  const d = raw.slice(6, 8);
+  const date = new Date(\`\${y}-\${m}-\${d}T00:00:00\`);
+  if (Number.isNaN(date.getTime())) return null;
+  return date.toLocaleDateString("en-US", {
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+  });
+}
+`;
+  writeFileSync(validatedPath, tsContent, "utf8");
+  console.log(`\n📝 Wrote ${urlList.length} validated URLs to lib/data/validated-urls.ts`);
+
+  console.log(`\n✅ All links passed validation.\n`);
+  process.exit(0);
+}
+
+main();
