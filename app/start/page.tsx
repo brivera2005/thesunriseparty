@@ -5,9 +5,9 @@ import { defaultOg, SITE_URL } from "@/lib/metadata";
 export const metadata: Metadata = {
   title: "Start Here | Project Sunrise",
   description:
-    "Four-step guided tour for new visitors — mission, tracker, rebuttal desk, and progressive blueprint.",
+    "Four-step guided tour for new visitors - mission, tracker, rebuttal desk, and progressive blueprint.",
   openGraph: {
-    title: "Start Here — Guided Tour | Project Sunrise",
+    title: "Start Here - Guided Tour | Project Sunrise",
     description:
       "New to Project Sunrise? Learn where to track Project 2025, find sourced rebuttals, and explore the progressive blueprint.",
     url: `${SITE_URL}/start`,

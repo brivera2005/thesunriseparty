@@ -22,7 +22,7 @@ function normalize(text: string) {
   return text.toLowerCase().replace(/\s+/g, " ").trim();
 }
 
-/** Subsequence fuzzy match — returns 0–1 score */
+/** Subsequence fuzzy match - returns 0-1 score */
 export function fuzzyScore(query: string, target: string): number {
   const q = normalize(query);
   const t = normalize(target);

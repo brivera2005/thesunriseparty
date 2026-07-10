@@ -5,7 +5,7 @@ import { sectionOg, SITE_URL } from "@/lib/metadata";
 export const metadata: Metadata = {
   title: "Methodology | Project Sunrise",
   description:
-    "How Project Sunrise sources, verifies, archives, and scores severity — plus transparency standards and source tier definitions.",
+    "How Project Sunrise sources, verifies, archives, and scores severity - plus transparency standards and source tier definitions.",
   openGraph: {
     title: sectionOg.methodology.title,
     description: sectionOg.methodology.description,

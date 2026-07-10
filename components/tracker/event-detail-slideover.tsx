@@ -79,7 +79,7 @@ export function EventDetailSlideover({
           {chapter && (
             <div className="mt-6 rounded-lg border border-primary/20 bg-primary/5 p-4">
               <p className="mb-1 text-xs font-semibold uppercase tracking-wider text-primary">
-                Heritage Mandate — Chapter {chapter.number}
+                Heritage Mandate - Chapter {chapter.number}
               </p>
               <p className="text-sm font-medium">{chapter.title}</p>
               <p className="mt-1 text-xs text-muted-foreground">{chapter.section}</p>

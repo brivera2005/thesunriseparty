@@ -195,7 +195,7 @@ export function QuizMode({ entries }: QuizModeProps) {
               )}
             >
               <p className="mb-2 text-xs font-semibold tracking-wider uppercase text-muted-foreground">
-                {isCorrect ? "Correct — full response" : "Best response"}
+                {isCorrect ? "Correct - full response" : "Best response"}
               </p>
               <p className="text-sm leading-relaxed">{entry.youSay}</p>
               {entry.stab && (
@@ -218,7 +218,7 @@ export function QuizMode({ entries }: QuizModeProps) {
       </div>
 
       <p className="mt-4 text-center text-[11px] text-muted-foreground">
-        Multiple choice — pick the sourced counter, then review the full response
+        Multiple choice - pick the sourced counter, then review the full response
       </p>
     </div>
   );

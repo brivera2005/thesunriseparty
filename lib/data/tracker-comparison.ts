@@ -26,15 +26,15 @@ export const trackerComparisonRows: TrackerComparisonRow[] = [
   {
     feature: "Executive orders",
     observer: "Tracks EO implementation against Mandate chapters",
-    cpr: "Deep coverage — EO text, Federal Register links, litigation notes",
+    cpr: "Deep coverage - EO text, Federal Register links, litigation notes",
     watch2025: "High-level EO status with crowd-sourced updates",
     sunrise: "EOs logged with whitehouse.gov + Federal Register citations",
   },
   {
     feature: "Regulatory actions",
     observer: "Rulemaking and agency guidance mapped to objectives",
-    cpr: "Strong — CPR specializes in regulatory rollback monitoring",
-    watch2025: "Moderate — highlights major rule changes",
+    cpr: "Strong - CPR specializes in regulatory rollback monitoring",
+    watch2025: "Moderate - highlights major rule changes",
     sunrise: "Cross-referenced to CPR and observer on each event",
   },
   {
@@ -46,7 +46,7 @@ export const trackerComparisonRows: TrackerComparisonRow[] = [
   },
   {
     feature: "Civil liberties / litigation",
-    observer: "Limited — implementation focus, not legal analysis",
+    observer: "Limited - implementation focus, not legal analysis",
     cpr: "Court challenges noted on select regulatory actions",
     watch2025: "Democracy-risk framing; some litigation references",
     sunrise: "Links to ACLU, Brennan Center, and court filings where relevant",
@@ -56,20 +56,20 @@ export const trackerComparisonRows: TrackerComparisonRow[] = [
     observer: "GitHub-sourced contributions; RusticGorilla community",
     cpr: "Professional researchers; less open contribution",
     watch2025: "Open contribution model with public data",
-    sunrise: "Aggregates all three — we don't compete, we cross-reference",
+    sunrise: "Aggregates all three - we don't compete, we cross-reference",
   },
   {
     feature: "Severity / urgency",
-    observer: "Progress % only — no harm scoring",
+    observer: "Progress % only - no harm scoring",
     cpr: "Agency impact labels; no unified severity scale",
     watch2025: "Status flags without numeric severity",
-    sunrise: "1–10 severity score with aggregate charts and filters",
+    sunrise: "1-10 severity score with aggregate charts and filters",
   },
   {
     feature: "Policy alternatives",
-    observer: "None — monitoring only",
+    observer: "None - monitoring only",
     cpr: "Occasional reform recommendations in reports",
-    watch2025: "None — watchdog only",
+    watch2025: "None - watchdog only",
     sunrise: "Every high-severity event links to a progressive blueprint fix",
   },
   {

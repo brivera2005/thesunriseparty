@@ -50,7 +50,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
           url: `${SITE_URL}/og/sunrise-tracker.svg`,
           width: 1200,
           height: 630,
-          alt: `Project 2025 Tracker — ${event.Action_Type}`,
+          alt: `Project 2025 Tracker - ${event.Action_Type}`,
         },
       ],
     },

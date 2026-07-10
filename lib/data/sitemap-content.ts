@@ -49,7 +49,7 @@ const rebuttalCats = rebuttalCategories.filter((c) => c !== "All");
 export const sitemapIntro = {
   title: "Site Map",
   subtitle:
-    "Every section of Project Sunrise — with live counts, quick links, and tools for tracking, learning, and building.",
+    "Every section of Project Sunrise - with live counts, quick links, and tools for tracking, learning, and building.",
 };
 
 export const sitemapSections: SitemapSection[] = [
@@ -62,7 +62,7 @@ export const sitemapSections: SitemapSection[] = [
     links: [
       {
         href: "/start",
-        label: "Start Here — Guided Tour",
+        label: "Start Here - Guided Tour",
         description: "Four-step walkthrough of mission, tracker, rebuttals, and blueprint.",
         badge: "New",
       },
@@ -98,7 +98,7 @@ export const sitemapSections: SitemapSection[] = [
       },
       {
         href: "/tracker/EVT-2025-1225-125",
-        label: "Latest milestone — Event #125",
+        label: "Latest milestone - Event #125",
         badge: "Milestone",
       },
       {
@@ -121,7 +121,7 @@ export const sitemapSections: SitemapSection[] = [
   {
     id: "rebuttal",
     title: "Rebuttal Desk",
-    description: "Sourced counters for real conversations — copy, study, and quiz modes.",
+    description: "Sourced counters for real conversations - copy, study, and quiz modes.",
     icon: MessageSquareQuote,
     accent: "text-sunrise border-sunrise/30 bg-sunrise/5",
     links: [
@@ -139,11 +139,11 @@ export const sitemapSections: SitemapSection[] = [
       {
         href: "/rebuttal?quiz=1",
         label: "Quiz Mode",
-        description: "Multiple choice — pick the best counter.",
+        description: "Multiple choice - pick the best counter.",
       },
       {
         href: "/rebuttal/infra-pass-distraction",
-        label: "Latest milestone — Rebuttal #240",
+        label: "Latest milestone - Rebuttal #240",
         badge: "Milestone",
       },
       ...rebuttalCats.map((cat) => ({
@@ -156,7 +156,7 @@ export const sitemapSections: SitemapSection[] = [
   {
     id: "history",
     title: "Hidden History",
-    description: "Dual timeline — textbook narratives vs. sourced American history.",
+    description: "Dual timeline - textbook narratives vs. sourced American history.",
     icon: History,
     accent: "text-amber-700 border-amber-300/50 bg-amber-50 dark:text-amber-400 dark:bg-amber-950/30",
     links: [
@@ -171,7 +171,7 @@ export const sitemapSections: SitemapSection[] = [
         href: "/history/rebuttals",
         label: "Historical Rebuttals",
         count: historyStats.rebuttals,
-        description: "What they said then — plain-language counters.",
+        description: "What they said then - plain-language counters.",
       },
       {
         href: "/history?event=HH-1861-CIVIL-WAR",
@@ -239,7 +239,7 @@ export const sitemapSections: SitemapSection[] = [
       {
         href: "/changelog",
         label: "Changelog",
-        description: "Pass-by-pass build history — v0.21.0 milestone.",
+        description: "Pass-by-pass build history - v0.21.0 milestone.",
         badge: "v0.21.0",
       },
       {

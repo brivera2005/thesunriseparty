@@ -196,7 +196,7 @@ export function BlueprintSection({
                               className="inline-flex items-center gap-1.5 font-medium text-primary underline-offset-2 hover:underline"
                             >
                               <ExternalLink className="size-3.5 shrink-0" />
-                              {bill.number} — {bill.title}
+                              {bill.number} - {bill.title}
                             </a>
                             {bill.status && (
                               <p className="mt-0.5 text-xs text-muted-foreground">

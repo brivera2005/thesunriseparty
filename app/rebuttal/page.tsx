@@ -6,7 +6,7 @@ import { sectionOg, SITE_URL } from "@/lib/metadata";
 export const metadata: Metadata = {
   title: "Rebuttal Desk | Project Sunrise",
   description:
-    "95+ sourced talking points for countering MAGA claims — economy, immigration, democracy, and culture wars debunked with primary sources.",
+    "95+ sourced talking points for countering MAGA claims - economy, immigration, democracy, and culture wars debunked with primary sources.",
   openGraph: {
     title: sectionOg.rebuttal.title,
     description: sectionOg.rebuttal.description,

@@ -30,7 +30,7 @@ function writeSaved(items: SavedItem[]) {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(items));
     window.dispatchEvent(new CustomEvent(SAVED_ITEMS_CHANGED));
   } catch {
-    // quota or private mode — ignore
+    // quota or private mode - ignore
   }
 }
 

@@ -69,7 +69,7 @@ const items = sorted
 const feed = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Project Sunrise — Project 2025 Tracker</title>
+    <title>Project Sunrise - Project 2025 Tracker</title>
     <link>${SITE}/tracker</link>
     <description>Verified administrative actions tracking Project 2025 implementation. Primary sources on every event.</description>
     <language>en-us</language>

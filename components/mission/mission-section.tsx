@@ -33,14 +33,14 @@ export function MissionSection({ compact = false }: { compact?: boolean }) {
               transparency-first research platform
             </strong>{" "}
             for Americans who refuse to be propagandized. We track the
-            authoritarian playbook — starting with Project 2025 — and we build
+            authoritarian playbook - starting with Project 2025 - and we build
             the progressive counter-vision for when democracy prevails.
           </p>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground">
             This isn&apos;t both-sides theater. The Heritage Foundation wrote a
             922-page plan to dismantle civil rights, gut agencies, and
             consolidate executive power. We document every step with federal
-            sources — and we cross-reference independent trackers so nothing slips
+            sources - and we cross-reference independent trackers so nothing slips
             through.
           </p>
         </div>
@@ -100,7 +100,7 @@ export function MissionSection({ compact = false }: { compact?: boolean }) {
             what to build when we win.&rdquo;
           </p>
           <footer className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm font-medium text-foreground">
-            <span>— The Sunrise Transparency Pledge</span>
+            <span>- The Sunrise Transparency Pledge</span>
             <Link
               href="/methodology"
               className="text-primary underline-offset-4 hover:underline"

@@ -67,7 +67,7 @@ function formatSourcesForCopy(entry: ConversationHelper) {
   const header = `Rebuttal: "${entry.theySay}"\n\nResponse:\n${fullResponse(entry.youSay, entry.stab)}\n\nSources:\n`;
   const lines = entry.sources.map(
     (s, i) =>
-      `${i + 1}. ${s.title} — ${s.publisher}\n   ${s.url}${s.waybackUrl ? `\n   Archive: ${s.waybackUrl}` : ""}`
+      `${i + 1}. ${s.title} - ${s.publisher}\n   ${s.url}${s.waybackUrl ? `\n   Archive: ${s.waybackUrl}` : ""}`
   );
   return header + lines.join("\n");
 }
@@ -150,7 +150,7 @@ export function RebuttalCard({ entry }: { entry: ConversationHelper }) {
       <AccordionContent className="pb-6 rebuttal-card-content">
         <div className="rebuttal-print-header hidden print:block">
           <p className="text-xs font-semibold tracking-wider text-muted-foreground uppercase">
-            Project Sunrise — Rebuttal Desk
+            Project Sunrise - Rebuttal Desk
           </p>
           <h3 className="mt-2 text-lg font-bold">&ldquo;{entry.theySay}&rdquo;</h3>
         </div>
@@ -218,7 +218,7 @@ export function RebuttalCard({ entry }: { entry: ConversationHelper }) {
             <ul className="hidden space-y-2 print:block">
               {entry.sources.map((source, i) => (
                 <li key={source.id} className="text-xs leading-relaxed">
-                  [{i + 1}] {source.title} — {source.publisher} ({source.date})
+                  [{i + 1}] {source.title} - {source.publisher} ({source.date})
                   <br />
                   <span className="break-all text-muted-foreground">{source.url}</span>
                 </li>

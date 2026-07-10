@@ -5,7 +5,7 @@ import { sectionOg, SITE_URL } from "@/lib/metadata";
 export const metadata: Metadata = {
   title: "Agenda Events Calendar | Project Sunrise",
   description:
-    "Calendar view of verified Project 2025 administrative actions — browse by date, severity, and category with primary sources.",
+    "Calendar view of verified Project 2025 administrative actions - browse by date, severity, and category with primary sources.",
   openGraph: {
     title: "Agenda Events Calendar | Project Sunrise",
     description:

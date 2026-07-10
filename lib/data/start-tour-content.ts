@@ -31,12 +31,12 @@ export const tourSteps: TourStep[] = [
     title: "Know the Mission",
     subtitle: "Why receipts matter",
     description:
-      "Project Sunrise exists because democracy dies in darkness. We track Project 2025 and related executive actions with primary sources — not cable news narratives. Every claim links to filings, court opinions, and archived citations.",
+      "Project Sunrise exists because democracy dies in darkness. We track Project 2025 and related executive actions with primary sources - not cable news narratives. Every claim links to filings, court opinions, and archived citations.",
     icon: Compass,
     href: "/mission",
     cta: "Read our mission",
     highlights: [
-      "Transparency pledge — no plutocrat funding",
+      "Transparency pledge - no plutocrat funding",
       "Anti-propaganda stance with Wayback archives",
       "Cross-referenced with independent watchdogs",
     ],
@@ -47,7 +47,7 @@ export const tourSteps: TourStep[] = [
     title: "Track the Agenda",
     subtitle: "120 verified events",
     description:
-      "The Project 2025 Tracker logs executive actions with severity scores (1–10), impacted sectors, and links to the Heritage playbook chapters they implement. Filter by category, export CSV, or subscribe via RSS.",
+      "The Project 2025 Tracker logs executive actions with severity scores (1-10), impacted sectors, and links to the Heritage playbook chapters they implement. Filter by category, export CSV, or subscribe via RSS.",
     icon: Activity,
     href: "/tracker",
     cta: "Open the tracker",
@@ -63,7 +63,7 @@ export const tourSteps: TourStep[] = [
     title: "Arm the Conversation",
     subtitle: "230 sourced rebuttals",
     description:
-      "The Rebuttal Desk gives you copy-ready counters for MAGA talking points — economy, immigration, democracy, culture wars. Use study mode to memorize, quiz mode to test yourself, and heart icons to bookmark favorites.",
+      "The Rebuttal Desk gives you copy-ready counters for MAGA talking points - economy, immigration, democracy, culture wars. Use study mode to memorize, quiz mode to test yourself, and heart icons to bookmark favorites.",
     icon: MessageSquareQuote,
     href: "/rebuttal",
     cta: "Browse rebuttals",
@@ -79,7 +79,7 @@ export const tourSteps: TourStep[] = [
     title: "Build the Future",
     subtitle: "Progressive Blueprint",
     description:
-      "When democracy wins, we need a plan — not vibes. The Blueprint pairs Medicare for All, voting rights, climate mobilization, and labor protections with bill numbers, economic modeling, and irreversible safeguards against rollback.",
+      "When democracy wins, we need a plan - not vibes. The Blueprint pairs Medicare for All, voting rights, climate mobilization, and labor protections with bill numbers, economic modeling, and irreversible safeguards against rollback.",
     icon: BookOpen,
     href: "/blueprint",
     cta: "Explore the blueprint",

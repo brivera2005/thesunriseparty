@@ -49,7 +49,7 @@ export function ChangelogPage() {
               Changelog
             </h1>
             <p className="mt-3 text-muted-foreground">
-              Every pass of Project Sunrise — what shipped, when, and why we
+              Every pass of Project Sunrise - what shipped, when, and why we
               bother documenting our own iterations. Democracy needs receipts;
               so does this site.
             </p>

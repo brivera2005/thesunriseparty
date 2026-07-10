@@ -26,8 +26,8 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["But Obama!", "Whataboutism"],
     theySay: "But Obama did the same thing! Why didn't you complain then?",
     youSay:
-      "Whataboutism isn't a defense — it's a dodge. Even if you could find a superficial parallel, two things can be true: past presidents made mistakes AND this action is harmful now. The question isn't what Obama did in 2012; it's whether THIS policy is legal, effective, and moral today. Courts, inspectors general, and congressional oversight exist to judge current conduct on its merits — not to run interference with decade-old grievances.",
-    stab: "You're not arguing the policy is good. You're arguing someone else was bad too. That's not a standard — that's a tantrum.",
+      "Whataboutism isn't a defense - it's a dodge. Even if you could find a superficial parallel, two things can be true: past presidents made mistakes AND this action is harmful now. The question isn't what Obama did in 2012; it's whether THIS policy is legal, effective, and moral today. Courts, inspectors general, and congressional oversight exist to judge current conduct on its merits - not to run interference with decade-old grievances.",
+    stab: "You're not arguing the policy is good. You're arguing someone else was bad too. That's not a standard - that's a tantrum.",
     sources: [
       cite(
         "crs_exec_orders",
@@ -54,7 +54,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Whataboutism", "Media"],
     theySay: "What about Hunter Biden's laptop? The media buried it!",
     youSay:
-      "The laptop was real; the conspiracy theories about it were not. Federal investigators examined the device, and Hunter Biden was prosecuted for tax and gun charges — not for a Biden family bribery scheme. The FBI, IRS, and DOJ under both administrations investigated. Politico, the NY Post, and congressional Republicans had access to the story for years. What was 'buried' was the unverified claim that Joe Biden took bribes — because investigators found no evidence of that.",
+      "The laptop was real; the conspiracy theories about it were not. Federal investigators examined the device, and Hunter Biden was prosecuted for tax and gun charges - not for a Biden family bribery scheme. The FBI, IRS, and DOJ under both administrations investigated. Politico, the NY Post, and congressional Republicans had access to the story for years. What was 'buried' was the unverified claim that Joe Biden took bribes - because investigators found no evidence of that.",
     stab: "A laptop isn't a get-out-of-jail-free card for every scandal you want to invent.",
     sources: [
       cite(
@@ -119,7 +119,7 @@ export const conversationHelpers: ConversationHelper[] = [
     theySay: "They're eating the dogs, eating the cats in Springfield!",
     youSay:
       "This claim originated from a Facebook post with zero evidence. Springfield police, the city manager, and Ohio's Republican governor all said there is no credible report of pets being harmed or eaten by immigrants. Haitian migrants in Springfield are legally present under humanitarian parole. Politifact rated Trump's debate claim Pants on Fire. The harm is real: bomb threats closed schools and hospitals.",
-    stab: "You turned a Facebook rumor into a reason to terrorize an entire town. That's not border security — that's a blood libel.",
+    stab: "You turned a Facebook rumor into a reason to terrorize an entire town. That's not border security - that's a blood libel.",
     sources: [
       cite(
         "politifact_springfield",
@@ -146,7 +146,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Culture Wars", "Whataboutism"],
     theySay: "Democrats are the real racists! They founded the KKK!",
     youSay:
-      "The Democratic Party of the 1860s is not the Democratic Party of today — just as the Republican Party of Lincoln is not the party of Trump. The parties realigned over civil rights: Southern Democrats fled to the GOP after the Civil Rights Act. Today, voting rights restrictions target Black precincts, GOP leaders promote the 'great replacement' theory, and the party that flies Confederate flags isn't the one winning 90% of Black voters. History isn't a gotcha — it's context.",
+      "The Democratic Party of the 1860s is not the Democratic Party of today - just as the Republican Party of Lincoln is not the party of Trump. The parties realigned over civil rights: Southern Democrats fled to the GOP after the Civil Rights Act. Today, voting rights restrictions target Black precincts, GOP leaders promote the 'great replacement' theory, and the party that flies Confederate flags isn't the one winning 90% of Black voters. History isn't a gotcha - it's context.",
     stab: "If Democrats are the real racists, why do actual racists keep endorsing your guy?",
     sources: [
       cite(
@@ -174,7 +174,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Immigration"],
     theySay: "Biden opened the border! It's wide open!",
     youSay:
-      "The border is not open. CBP recorded millions of encounters — meaning apprehensions, not free passage. Title 42 and subsequent executive actions restricted asylum access. Deportations and returns continued throughout the Biden administration. What changed was processing capacity and legal pathways expanded under parole programs. 'Open border' is a slogan, not a statistic — and the data shows record enforcement activity, not an open door.",
+      "The border is not open. CBP recorded millions of encounters - meaning apprehensions, not free passage. Title 42 and subsequent executive actions restricted asylum access. Deportations and returns continued throughout the Biden administration. What changed was processing capacity and legal pathways expanded under parole programs. 'Open border' is a slogan, not a statistic - and the data shows record enforcement activity, not an open door.",
     stab: "A record number of arrests is a weird way to run an open border.",
     sources: [
       cite(
@@ -202,8 +202,8 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Economy"],
     theySay: "Inflation is Biden's fault. He spent too much!",
     youSay:
-      "Inflation was global — not Biden-specific. The EU, UK, and Canada saw similar spikes driven by pandemic supply chains, energy shocks from Russia's invasion of Ukraine, and corporate pricing power. The American Rescue Plan contributed marginally, but the CBO and Fed attributed most inflation to supply constraints and energy. Inflation fell from a 9.1% peak to under 3% without a recession. Blaming one president for a worldwide phenomenon is politics, not economics.",
-    stab: "If Biden caused global inflation, he must be more powerful than you think — and you should probably thank him for cutting it in half.",
+      "Inflation was global - not Biden-specific. The EU, UK, and Canada saw similar spikes driven by pandemic supply chains, energy shocks from Russia's invasion of Ukraine, and corporate pricing power. The American Rescue Plan contributed marginally, but the CBO and Fed attributed most inflation to supply constraints and energy. Inflation fell from a 9.1% peak to under 3% without a recession. Blaming one president for a worldwide phenomenon is politics, not economics.",
+    stab: "If Biden caused global inflation, he must be more powerful than you think - and you should probably thank him for cutting it in half.",
     sources: [
       cite(
         "bls_cpi",
@@ -238,8 +238,8 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Economy", "But Obama!"],
     theySay: "Trump fixed the economy. Best economy ever!",
     youSay:
-      "Trump inherited a 4.7% unemployment rate from Obama and left office at 6.4% during a pandemic he mismanaged. GDP growth under Trump averaged 2.5% — solid, not historic. The 2017 tax cut ballooned deficits without delivering promised wage growth. Manufacturing jobs peaked pre-pandemic and never reached his promised levels. 'Best economy ever' ignores that Obama created more jobs in his second term than Trump did pre-COVID.",
-    stab: "Best economy ever — if you ignore the part where he lost 3 million jobs on the way out.",
+      "Trump inherited a 4.7% unemployment rate from Obama and left office at 6.4% during a pandemic he mismanaged. GDP growth under Trump averaged 2.5% - solid, not historic. The 2017 tax cut ballooned deficits without delivering promised wage growth. Manufacturing jobs peaked pre-pandemic and never reached his promised levels. 'Best economy ever' ignores that Obama created more jobs in his second term than Trump did pre-COVID.",
+    stab: "Best economy ever - if you ignore the part where he lost 3 million jobs on the way out.",
     sources: [
       cite(
         "bls_unemployment",
@@ -266,7 +266,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Culture Wars"],
     theySay: "DEI caused the plane crash! They hired unqualified pilots!",
     youSay:
-      "FAA pilots must meet identical certification standards regardless of race or gender. There is zero evidence linking diversity programs to any aviation accident. NTSB investigations determine crash causes through engineering analysis — not culture-war talking points. Using a tragedy to attack DEI before investigators finish their work isn't safety advocacy; it's exploitation.",
+      "FAA pilots must meet identical certification standards regardless of race or gender. There is zero evidence linking diversity programs to any aviation accident. NTSB investigations determine crash causes through engineering analysis - not culture-war talking points. Using a tragedy to attack DEI before investigators finish their work isn't safety advocacy; it's exploitation.",
     stab: "The NTSB investigates black boxes, not HR brochures.",
     sources: [
       cite(
@@ -282,7 +282,7 @@ export const conversationHelpers: ConversationHelper[] = [
         "NTSB Investigation Process",
         "National Transportation Safety Board",
         "https://www.ntsb.gov/investigations/process/Pages/default.aspx",
-        "NTSB investigates accidents using evidence-based methodology and publishes probable cause findings — none have cited DEI programs.",
+        "NTSB investigates accidents using evidence-based methodology and publishes probable cause findings - none have cited DEI programs.",
         "2024-01-10"
       ),
       cite(
@@ -302,8 +302,8 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Climate"],
     theySay: "Climate change is a hoax. It's always changing!",
     youSay:
-      "Yes, climate has always changed — but not this fast. NASA, NOAA, and every major scientific academy confirm human-caused warming from greenhouse gases. The last decade was the warmest on record. Ice cores, ocean temperatures, and satellite data all converge. 'It's a hoax' isn't skepticism — it's denial of measurements taken by instruments, not politicians.",
-    stab: "Gravity's always been here too — that doesn't mean you should jump off a roof.",
+      "Yes, climate has always changed - but not this fast. NASA, NOAA, and every major scientific academy confirm human-caused warming from greenhouse gases. The last decade was the warmest on record. Ice cores, ocean temperatures, and satellite data all converge. 'It's a hoax' isn't skepticism - it's denial of measurements taken by instruments, not politicians.",
+    stab: "Gravity's always been here too - that doesn't mean you should jump off a roof.",
     sources: [
       cite(
         "nasa_climate",
@@ -338,8 +338,8 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Culture Wars"],
     theySay: "Trans athletes are destroying women's sports!",
     youSay:
-      "Trans athletes are a tiny fraction of competitors. The NCAA, IOC, and state athletic associations have eligibility rules requiring hormone thresholds and transition periods. Research on performance advantages is nuanced and sport-specific. Meanwhile, Republican legislators have introduced hundreds of bills targeting trans youth who aren't elite athletes at all — suggesting the concern isn't fairness on the field but erasing trans people from public life.",
-    stab: "You suddenly care about women's sports — right after trying to defund Title IX.",
+      "Trans athletes are a tiny fraction of competitors. The NCAA, IOC, and state athletic associations have eligibility rules requiring hormone thresholds and transition periods. Research on performance advantages is nuanced and sport-specific. Meanwhile, Republican legislators have introduced hundreds of bills targeting trans youth who aren't elite athletes at all - suggesting the concern isn't fairness on the field but erasing trans people from public life.",
+    stab: "You suddenly care about women's sports - right after trying to defund Title IX.",
     sources: [
       cite(
         "ncaa_policy",
@@ -366,8 +366,8 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Culture Wars"],
     theySay: "They want men in women's bathrooms! Our daughters aren't safe!",
     youSay:
-      "Trans people have used bathrooms matching their gender for decades without epidemic crime. Studies in states with nondiscrimination protections show no increase in bathroom assaults. Sexual assault is already illegal — adding bathroom bans doesn't prevent it. What bans do accomplish: putting trans people at risk of harassment and violence when forced into the wrong restroom.",
-    stab: "The predator you're worried about isn't trans — he's already in the room, and you voted against background checks.",
+      "Trans people have used bathrooms matching their gender for decades without epidemic crime. Studies in states with nondiscrimination protections show no increase in bathroom assaults. Sexual assault is already illegal - adding bathroom bans doesn't prevent it. What bans do accomplish: putting trans people at risk of harassment and violence when forced into the wrong restroom.",
+    stab: "The predator you're worried about isn't trans - he's already in the room, and you voted against background checks.",
     sources: [
       cite(
         "ucla_bathrooms",
@@ -394,8 +394,8 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Crime"],
     theySay: "Democrats want to defund the police! That's why crime is up!",
     youSay:
-      "Joe Biden proposed increasing police funding. The American Rescue Plan included billions for local law enforcement. 'Defund the police' was a slogan from 2020 protests — not Democratic Party policy. Most cities maintained or increased police budgets. Crime rates fluctuate for complex reasons: guns, poverty, pandemic disruptions, and under-resourced communities. Blaming a chant for national crime trends is simpler than reading the data.",
-    stab: "The guy who tear-gassed protesters for a photo op isn't the law-and-order president — he's the cosplay one.",
+      "Joe Biden proposed increasing police funding. The American Rescue Plan included billions for local law enforcement. 'Defund the police' was a slogan from 2020 protests - not Democratic Party policy. Most cities maintained or increased police budgets. Crime rates fluctuate for complex reasons: guns, poverty, pandemic disruptions, and under-resourced communities. Blaming a chant for national crime trends is simpler than reading the data.",
+    stab: "The guy who tear-gassed protesters for a photo op isn't the law-and-order president - he's the cosplay one.",
     sources: [
       cite(
         "snopes_defund",
@@ -422,7 +422,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Culture Wars"],
     theySay: "They're teaching Critical Race Theory in elementary schools!",
     youSay:
-      "CRT is a graduate-level legal framework about systemic racism — it is not in K-12 curricula. What conservatives call 'CRT' usually means any honest discussion of slavery, segregation, or racism. State 'anti-CRT' laws have led to teachers removing books about Ruby Bridges and the civil rights movement. This isn't about protecting kids — it's about sanitizing history.",
+      "CRT is a graduate-level legal framework about systemic racism - it is not in K-12 curricula. What conservatives call 'CRT' usually means any honest discussion of slavery, segregation, or racism. State 'anti-CRT' laws have led to teachers removing books about Ruby Bridges and the civil rights movement. This isn't about protecting kids - it's about sanitizing history.",
     stab: "You don't know what CRT is. You just know you're scared of the letters.",
     sources: [
       cite(
@@ -450,7 +450,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Culture Wars", "Democracy"],
     theySay: "Democrats want to take your guns!",
     youSay:
-      "Democrats have proposed universal background checks, red-flag laws, and banning assault weapons — policies supported by majorities of gun owners. No mainstream Democrat has proposed confiscating legally owned firearms. The Second Amendment remains settled law. What gun reform advocates want is keeping weapons out of the hands of domestic abusers and mass shooters — not your hunting rifle.",
+      "Democrats have proposed universal background checks, red-flag laws, and banning assault weapons - policies supported by majorities of gun owners. No mainstream Democrat has proposed confiscating legally owned firearms. The Second Amendment remains settled law. What gun reform advocates want is keeping weapons out of the hands of domestic abusers and mass shooters - not your hunting rifle.",
     stab: "Nobody's coming for your shotgun. Maybe aim the outrage at the guys selling AR-15s to teenagers.",
     sources: [
       cite(
@@ -478,7 +478,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Economy", "Whataboutism"],
     theySay: "Democrats are socialists! They want government to control everything!",
     youSay:
-      "Socialism means government ownership of the means of production. Democrats support capitalism with a social safety net — Social Security, Medicare, public schools. Every developed nation has public healthcare and education; that doesn't make them Venezuela. When Republicans call popular programs 'socialist,' they're trying to scare you away from policies that benefit you.",
+      "Socialism means government ownership of the means of production. Democrats support capitalism with a social safety net - Social Security, Medicare, public schools. Every developed nation has public healthcare and education; that doesn't make them Venezuela. When Republicans call popular programs 'socialist,' they're trying to scare you away from policies that benefit you.",
     stab: "If Medicare is socialism, wait until you hear about the Post Office.",
     sources: [
       cite(
@@ -506,8 +506,8 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Culture Wars", "Media"],
     theySay: "The woke mind virus is destroying America!",
     youSay:
-      "'Woke' started as Black slang for staying aware of injustice. It's been repurposed as a catch-all insult for anything conservatives dislike: diversity, inclusion, accurate history, LGBTQ+ rights. It's not a policy agenda — it's a branding campaign to make empathy sound dangerous. Name the specific policy you oppose; 'woke' isn't an argument.",
-    stab: "You turned 'being aware of racism' into a slur. That's not a diagnosis — that's the disease.",
+      "'Woke' started as Black slang for staying aware of injustice. It's been repurposed as a catch-all insult for anything conservatives dislike: diversity, inclusion, accurate history, LGBTQ+ rights. It's not a policy agenda - it's a branding campaign to make empathy sound dangerous. Name the specific policy you oppose; 'woke' isn't an argument.",
+    stab: "You turned 'being aware of racism' into a slur. That's not a diagnosis - that's the disease.",
     sources: [
       cite(
         "merriam_woke",
@@ -534,7 +534,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Media"],
     theySay: "Fake news! The mainstream media lies about everything!",
     youSay:
-      "Mainstream outlets make mistakes and deserve scrutiny — but they also employ editors, corrections policies, and libel lawyers. What's called 'fake news' is often news someone doesn't like. The outlets that actually fabricate stories are the partisan blogs and foreign disinformation farms that the 'fake news' crowd shares without question. Skepticism is healthy; nihilism is a trap.",
+      "Mainstream outlets make mistakes and deserve scrutiny - but they also employ editors, corrections policies, and libel lawyers. What's called 'fake news' is often news someone doesn't like. The outlets that actually fabricate stories are the partisan blogs and foreign disinformation farms that the 'fake news' crowd shares without question. Skepticism is healthy; nihilism is a trap.",
     stab: "You don't hate the media. You hate that reality has a liberal bias.",
     sources: [
       cite(
@@ -562,7 +562,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Democracy", "Media"],
     theySay: "The deep state is out to get Trump!",
     youSay:
-      "The 'deep state' is a conspiracy theory that unelected bureaucrats run a shadow government. In reality, career civil servants follow laws passed by Congress. When Trump officials faced legal trouble, it was because prosecutors presented evidence to grand juries and courts — the same system that convicted Democrats and Republicans alike. Calling every investigation a conspiracy is how guilty people dodge accountability.",
+      "The 'deep state' is a conspiracy theory that unelected bureaucrats run a shadow government. In reality, career civil servants follow laws passed by Congress. When Trump officials faced legal trouble, it was because prosecutors presented evidence to grand juries and courts - the same system that convicted Democrats and Republicans alike. Calling every investigation a conspiracy is how guilty people dodge accountability.",
     stab: "The deep state is just the government doing its job when your guy breaks the law.",
     sources: [
       cite(
@@ -570,7 +570,7 @@ export const conversationHelpers: ConversationHelper[] = [
         "Special Counsel Investigations",
         "U.S. Department of Justice",
         "https://www.govinfo.gov/app/details/GPO-HUR-REPORT",
-        "DOJ special counsels operate under statutory authority with congressional oversight — not as rogue deep-state actors.",
+        "DOJ special counsels operate under statutory authority with congressional oversight - not as rogue deep-state actors.",
         "2024-02-08"
       ),
       cite(
@@ -590,7 +590,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Courts", "Democracy"],
     theySay: "Trump has presidential immunity! He can't be prosecuted!",
     youSay:
-      "The Supreme Court ruled presidents have immunity for official acts — but NOT for unofficial criminal conduct. Trump faces charges for allegedly falsifying business records, mishandling classified documents, and attempting to overturn an election. The Court explicitly rejected absolute immunity. Presidents are not kings.",
+      "The Supreme Court ruled presidents have immunity for official acts - but NOT for unofficial criminal conduct. Trump faces charges for allegedly falsifying business records, mishandling classified documents, and attempting to overturn an election. The Court explicitly rejected absolute immunity. Presidents are not kings.",
     stab: "Even the conservative Supreme Court said he can be prosecuted. Pick a new excuse.",
     sources: [
       cite(
@@ -618,7 +618,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Democracy", "Whataboutism"],
     theySay: "Biden's brain is mush! He's too old and senile to be president!",
     youSay:
-      "Biden's age and fitness were legitimate topics — he chose not to run for reelection partly because of them. But the bad-faith actors who screamed about Biden's gaffes are silent about Trump's 30,000+ documented false statements, inability to complete sentences, and confusion about basic facts. Cognitive fitness isn't a one-sided weapon — unless your goal is hypocrisy, not governance.",
+      "Biden's age and fitness were legitimate topics - he chose not to run for reelection partly because of them. But the bad-faith actors who screamed about Biden's gaffes are silent about Trump's 30,000+ documented false statements, inability to complete sentences, and confusion about basic facts. Cognitive fitness isn't a one-sided weapon - unless your goal is hypocrisy, not governance.",
     stab: "You wanted a cognitive test. He took one. Your guy failed the 'name a book you've read' test years ago.",
     sources: [
       cite(
@@ -646,8 +646,8 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Economy"],
     theySay: "Gas was $2 under Trump! Biden made gas expensive!",
     youSay:
-      "Gas prices are set by global oil markets, not presidential tweets. Prices crashed to $2 in 2020 because a pandemic destroyed demand — not because of Trump's energy policy. When the economy reopened and Russia invaded Ukraine, prices spiked worldwide. U.S. oil production hit record highs under Biden. Presidents get too much credit and blame for gas prices.",
-    stab: "Gas was cheap because nobody was driving to work during a plague. That's not an energy policy — that's a lockdown.",
+      "Gas prices are set by global oil markets, not presidential tweets. Prices crashed to $2 in 2020 because a pandemic destroyed demand - not because of Trump's energy policy. When the economy reopened and Russia invaded Ukraine, prices spiked worldwide. U.S. oil production hit record highs under Biden. Presidents get too much credit and blame for gas prices.",
+    stab: "Gas was cheap because nobody was driving to work during a plague. That's not an energy policy - that's a lockdown.",
     sources: [
       cite(
         "eia_gas_prices",
@@ -674,7 +674,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Crime"],
     theySay: "Crime is only up in Democrat-run cities!",
     youSay:
-      "Crime trends don't follow mayoral party affiliation — they follow poverty, gun availability, and policing resources. Many 'dangerous' cities have Republican governors and GOP-controlled state legislatures. Rural areas have seen rising crime rates too. FBI data shows violent crime dropped nationally in 2023. Cherry-picking cities is propaganda, not criminology.",
+      "Crime trends don't follow mayoral party affiliation - they follow poverty, gun availability, and policing resources. Many 'dangerous' cities have Republican governors and GOP-controlled state legislatures. Rural areas have seen rising crime rates too. FBI data shows violent crime dropped nationally in 2023. Cherry-picking cities is propaganda, not criminology.",
     stab: "Jacksonville has a Republican mayor. Somehow crime isn't a red-city problem when it's convenient.",
     sources: [
       cite(
@@ -702,7 +702,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Elections", "Immigration"],
     theySay: "Millions of illegals are voting! That's how Democrats win!",
     youSay:
-      "Noncitizen voting in federal elections is already a felony with severe penalties. Studies and investigations repeatedly find negligible noncitizen voting — often single digits per state. The Heritage Foundation's own database of voter fraud cases shows vanishingly few involving noncitizens. This myth exists to justify voter suppression, not to solve a real problem.",
+      "Noncitizen voting in federal elections is already a felony with severe penalties. Studies and investigations repeatedly find negligible noncitizen voting - often single digits per state. The Heritage Foundation's own database of voter fraud cases shows vanishingly few involving noncitizens. This myth exists to justify voter suppression, not to solve a real problem.",
     stab: "If millions of undocumented people voted, you'd have proof. You don't. You have vibes.",
     sources: [
       cite(
@@ -730,7 +730,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Democracy", "Whataboutism"],
     theySay: "FEMA only helps Democrats! They ignored Republican hurricane victims!",
     youSay:
-      "FEMA disaster declarations follow statutory criteria — damage assessments, governor requests, and presidential approval. Aid flows to all affected counties regardless of how they voted. After Hurricane Helene, FEMA deployed thousands of personnel to red and blue counties alike. Politicizing disaster relief kills people by discouraging them from seeking help.",
+      "FEMA disaster declarations follow statutory criteria - damage assessments, governor requests, and presidential approval. Aid flows to all affected counties regardless of how they voted. After Hurricane Helene, FEMA deployed thousands of personnel to red and blue counties alike. Politicizing disaster relief kills people by discouraging them from seeking help.",
     stab: "The only disaster FEMA won't fix is the one between your ears.",
     sources: [
       cite(
@@ -758,7 +758,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Democracy"],
     theySay: "Project 2025 doesn't exist! It's a Democrat hoax!",
     youSay:
-      "Project 2025 is a real 920-page policy blueprint published by the Heritage Foundation with contributions from hundreds of conservatives — including many who served in Trump's first administration. It calls for dismantling the Education Department, firing civil servants, banning abortion medication, and expanding executive power. They published it online. They held conferences. It's not a hoax — it's a plan.",
+      "Project 2025 is a real 920-page policy blueprint published by the Heritage Foundation with contributions from hundreds of conservatives - including many who served in Trump's first administration. It calls for dismantling the Education Department, firing civil servants, banning abortion medication, and expanding executive power. They published it online. They held conferences. It's not a hoax - it's a plan.",
     stab: "They wrote the whole thing down. You just weren't supposed to read it.",
     sources: [
       cite(
@@ -786,7 +786,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Media", "Democracy"],
     theySay: "Trump never said that! Fake news!",
     youSay:
-      "Trump's own words are on video, in court filings, and on his social media accounts. When he told supporters to 'fight like hell' before the Capitol riot, it's on tape. When he called global warming a 'hoax,' he tweeted it. When he said there were 'very fine people on both sides' in Charlottesville, it's recorded. You don't need the media to tell you what he said — you need only press play.",
+      "Trump's own words are on video, in court filings, and on his social media accounts. When he told supporters to 'fight like hell' before the Capitol riot, it's on tape. When he called global warming a 'hoax,' he tweeted it. When he said there were 'very fine people on both sides' in Charlottesville, it's recorded. You don't need the media to tell you what he said - you need only press play.",
     stab: "It's not out of context when he said it three times on camera.",
     sources: [
       cite(
@@ -814,7 +814,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Whataboutism"],
     theySay: "What about [anything else]? Why aren't you talking about that?",
     youSay:
-      "Whataboutism redirects conversation from a valid criticism to a different topic. It's the rhetorical equivalent of a kid caught with their hand in the cookie jar saying 'But Tommy did it too!' Two wrongs don't make a right, and deflection isn't a defense. Address the original claim on its merits — or concede you can't.",
+      "Whataboutism redirects conversation from a valid criticism to a different topic. It's the rhetorical equivalent of a kid caught with their hand in the cookie jar saying 'But Tommy did it too!' Two wrongs don't make a right, and deflection isn't a defense. Address the original claim on its merits - or concede you can't.",
     stab: "We're talking about your guy right now. Stay on topic or sit down.",
     sources: [
       cite(
@@ -842,7 +842,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Whataboutism", "Democracy"],
     theySay: "Both sides are equally bad! Politics is all corrupt!",
     youSay:
-      "False equivalence treats fundamentally different conduct as identical. One side attempted to overturn an election and incited a riot; the other passed infrastructure bills. One side rejects climate science; the other accepts it. Cynicism feels sophisticated but it's lazy — it lets the worst actors off the hook by pretending everyone is equally guilty.",
+      "False equivalence treats fundamentally different conduct as identical. One side attempted to overturn an election and incited a riot; the other passed infrastructure bills. One side rejects climate science; the other accepts it. Cynicism feels sophisticated but it's lazy - it lets the worst actors off the hook by pretending everyone is equally guilty.",
     stab: "Both sides aren't storming capitols. One side is, and you're calling it a tie.",
     sources: [
       cite(
@@ -870,8 +870,8 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Economy", "But Obama!"],
     theySay: "Trump had the best economy in history before COVID!",
     youSay:
-      "By standard metrics, the economy under Trump was solid but not historic. Unemployment was lower under Eisenhower, Johnson, and Clinton at various points. GDP growth was higher in the 1960s and 1990s. Wage growth was sluggish despite the tax cut. The stock market performed well — but 84% of stocks are owned by the wealthiest 10%. 'Best economy ever' is a superlative that doesn't survive fact-checking.",
-    stab: "Best economy ever — if your economy is measured in Mar-a-Lago membership fees.",
+      "By standard metrics, the economy under Trump was solid but not historic. Unemployment was lower under Eisenhower, Johnson, and Clinton at various points. GDP growth was higher in the 1960s and 1990s. Wage growth was sluggish despite the tax cut. The stock market performed well - but 84% of stocks are owned by the wealthiest 10%. 'Best economy ever' is a superlative that doesn't survive fact-checking.",
+    stab: "Best economy ever - if your economy is measured in Mar-a-Lago membership fees.",
     sources: [
       cite(
         "bls_historical",
@@ -898,7 +898,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Immigration", "Crime"],
     theySay: "Migrants are causing a crime wave!",
     youSay:
-      "Multiple studies show immigrants — including undocumented immigrants — commit crimes at lower rates than native-born Americans. Texas DPS data, Cato Institute analysis, and academic research consistently reach this conclusion. Crime narratives about migrants are politically useful but empirically false.",
+      "Multiple studies show immigrants - including undocumented immigrants - commit crimes at lower rates than native-born Americans. Texas DPS data, Cato Institute analysis, and academic research consistently reach this conclusion. Crime narratives about migrants are politically useful but empirically false.",
     stab: "The crime wave is in your Facebook feed, not the FBI database.",
     sources: [
       cite(
@@ -926,7 +926,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Immigration", "Economy"],
     theySay: "Illegals get free welfare and healthcare!",
     youSay:
-      "Undocumented immigrants are ineligible for most federal benefits — SNAP, Medicaid, SSI, and regular unemployment. The 1996 welfare reform law explicitly barred them. They pay billions in taxes including Social Security for benefits they'll never collect. Emergency medical care is the main federal cost — and denying it means letting people die in ER parking lots.",
+      "Undocumented immigrants are ineligible for most federal benefits - SNAP, Medicaid, SSI, and regular unemployment. The 1996 welfare reform law explicitly barred them. They pay billions in taxes including Social Security for benefits they'll never collect. Emergency medical care is the main federal cost - and denying it means letting people die in ER parking lots.",
     stab: "They pay into Social Security they'll never touch. You're welcome.",
     sources: [
       cite(
@@ -1038,14 +1038,14 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Healthcare", "Media"],
     theySay: "COVID vaccines have microchips / alter your DNA!",
     youSay:
-      "mRNA vaccines don't enter the cell nucleus and cannot change your DNA. They contain no microchips — the vials are inspected, the ingredients are public, and billions of doses have been administered worldwide. This conspiracy originated from debunked social media posts, not medical science.",
+      "mRNA vaccines don't enter the cell nucleus and cannot change your DNA. They contain no microchips - the vials are inspected, the ingredients are public, and billions of doses have been administered worldwide. This conspiracy originated from debunked social media posts, not medical science.",
     stab: "If Bill Gates wanted to track you, he'd use your phone. You paid for that yourself.",
     sources: [
       cite(
         "cdc_mrna",
         "Understanding mRNA COVID-19 Vaccines",
         "Centers for Disease Control and Prevention",
-        "https://www.cdc.gov/coronavirus/2019-ncov/index.html",
+        "https://www.cdc.gov/covid/",
         "CDC explains mRNA vaccines teach cells to make a protein that triggers an immune response without entering the nucleus.",
         "2024-05-01"
       ),
@@ -1053,7 +1053,7 @@ export const conversationHelpers: ConversationHelper[] = [
         "snopes_microchip",
         "COVID vaccine microchip",
         "Snopes",
-        "https://www.cdc.gov/coronavirus/2019-ncov/index.html",
+        "https://www.cdc.gov/covid/",
         "Snopes rated claims about vaccine microchips as false.",
         "2020-05-15"
       ),
@@ -1093,7 +1093,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Crime", "Whataboutism"],
     theySay: "Antifa organized the Capitol riot! It wasn't Trump supporters!",
     youSay:
-      "The FBI, DOJ, and federal courts have charged over 1,400 people in connection with January 6 — overwhelmingly self-identified Trump supporters, Proud Boys, Oath Keepers, and QAnon believers. Not a single defendant has been identified as an 'antifa' plant. This conspiracy theory exists to shift blame from the people who were actually there.",
+      "The FBI, DOJ, and federal courts have charged over 1,400 people in connection with January 6 - overwhelmingly self-identified Trump supporters, Proud Boys, Oath Keepers, and QAnon believers. Not a single defendant has been identified as an 'antifa' plant. This conspiracy theory exists to shift blame from the people who were actually there.",
     stab: "A thousand Trump fans on video, and you're still looking for the one guy in black?",
     sources: [
       cite(
@@ -1121,8 +1121,8 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Crime", "Whataboutism"],
     theySay: "BLM burned down cities! Why don't you condemn that?",
     youSay:
-      "Most BLM protests were peaceful. Where property damage occurred, local prosecutors charged those responsible. Equating millions of protesters with arsonists is guilt by association — the same standard conservatives reject when applied to January 6. Condemning violence doesn't require dismissing the underlying grievance about police killing Black Americans.",
-    stab: "You want us to answer for every protester. Fine — you answer for every guy with a Confederate flag on January 6.",
+      "Most BLM protests were peaceful. Where property damage occurred, local prosecutors charged those responsible. Equating millions of protesters with arsonists is guilt by association - the same standard conservatives reject when applied to January 6. Condemning violence doesn't require dismissing the underlying grievance about police killing Black Americans.",
+    stab: "You want us to answer for every protester. Fine - you answer for every guy with a Confederate flag on January 6.",
     sources: [
       cite(
         "harvard_blm",
@@ -1149,7 +1149,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Culture Wars"],
     theySay: "Teachers are grooming kids! They're sexualizing children!",
     youSay:
-      "Teaching that gay people exist is not grooming. Reading a book with two moms is not sexualization. Actual grooming is a serious crime — and conflating it with LGBTQ+ visibility trivializes real abuse while endangering teachers. The rhetoric has led to threats against educators and removal of basic anti-bullying programs.",
+      "Teaching that gay people exist is not grooming. Reading a book with two moms is not sexualization. Actual grooming is a serious crime - and conflating it with LGBTQ+ visibility trivializes real abuse while endangering teachers. The rhetoric has led to threats against educators and removal of basic anti-bullying programs.",
     stab: "You didn't care about grooming when the church was doing it. Funny how that works.",
     sources: [
       cite(
@@ -1177,7 +1177,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Culture Wars"],
     theySay: "Drag queens are grooming children at story hour!",
     youSay:
-      "Drag story hours are voluntary library events where performers read children's books — like any other story time. Parents bring their kids. No nudity, no sexual content. The panic is manufactured: similar events have occurred for years without incident until they became a culture-war target. Banning drag story hour won't protect kids — but it will teach them that difference is dangerous.",
+      "Drag story hours are voluntary library events where performers read children's books - like any other story time. Parents bring their kids. No nudity, no sexual content. The panic is manufactured: similar events have occurred for years without incident until they became a culture-war target. Banning drag story hour won't protect kids - but it will teach them that difference is dangerous.",
     stab: "A man in a dress reading 'Green Eggs and Ham' isn't a crime. Your imagination is.",
     sources: [
       cite(
@@ -1205,7 +1205,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Climate", "Economy"],
     theySay: "They're forcing us to buy electric cars! Gas cars will be illegal!",
     youSay:
-      "No federal law bans gas cars. EPA emissions standards encourage cleaner vehicles over time — the same approach used for decades. Consumers keep choice; manufacturers adapt. EV adoption is also driven by market economics: lower operating costs, improving technology, and global competition. Nobody's confiscating your pickup truck.",
+      "No federal law bans gas cars. EPA emissions standards encourage cleaner vehicles over time - the same approach used for decades. Consumers keep choice; manufacturers adapt. EV adoption is also driven by market economics: lower operating costs, improving technology, and global competition. Nobody's confiscating your pickup truck.",
     stab: "Nobody's prying your F-150 from your cold, dead hands. Calm down, Rambo.",
     sources: [
       cite(
@@ -1233,7 +1233,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Climate"],
     theySay: "Wind turbines kill all the birds! They're worse for the environment!",
     youSay:
-      "Cats and buildings kill far more birds than wind turbines. The National Audubon Society supports responsibly sited wind energy as part of climate action — because climate change threatens far more bird habitat than turbines. Fossil fuel pollution kills birds through habitat destruction and pollution. This argument isn't about birds.",
+      "Cats and buildings kill far more birds than wind turbines. The National Audubon Society supports responsibly sited wind energy as part of climate action - because climate change threatens far more bird habitat than turbines. Fossil fuel pollution kills birds through habitat destruction and pollution. This argument isn't about birds.",
     stab: "Your cat is a bigger threat to birds than a wind farm. Deal with Mr. Whiskers first.",
     sources: [
       cite(
@@ -1259,9 +1259,9 @@ export const conversationHelpers: ConversationHelper[] = [
   {
     id: "book-banning-parents-rights",
     category: ["Culture Wars"],
-    theySay: "We're not banning books — we're protecting parental rights!",
+    theySay: "We're not banning books - we're protecting parental rights!",
     youSay:
-      "Removing books from school and public libraries based on ideological objections is book banning, regardless of branding. Parents already have rights: they can limit what their own children read. What 'parental rights' bills do is give one parent's objection veto power over every family in the district. That's not rights — it's censorship with a focus group-tested name.",
+      "Removing books from school and public libraries based on ideological objections is book banning, regardless of branding. Parents already have rights: they can limit what their own children read. What 'parental rights' bills do is give one parent's objection veto power over every family in the district. That's not rights - it's censorship with a focus group-tested name.",
     stab: "Your parental rights end where my kid's library card begins.",
     sources: [
       cite(
@@ -1289,7 +1289,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Culture Wars", "Courts"],
     theySay: "Affirmative action is reverse racism against white people!",
     youSay:
-      "Affirmative action considered race as one factor among many in college admissions — the same way legacy status, athletics, and geography are considered. The Supreme Court ended race-conscious admissions in 2023. White women have been the primary beneficiaries of affirmative action programs in employment. Calling equity efforts 'reverse racism' misunderstands both racism and the policy.",
+      "Affirmative action considered race as one factor among many in college admissions - the same way legacy status, athletics, and geography are considered. The Supreme Court ended race-conscious admissions in 2023. White women have been the primary beneficiaries of affirmative action programs in employment. Calling equity efforts 'reverse racism' misunderstands both racism and the policy.",
     stab: "Legacy admissions still exist. Where's your outrage about the Kennedy slot at Harvard?",
     sources: [
       cite(
@@ -1317,7 +1317,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Elections"],
     theySay: "We need voter ID because there's massive voter fraud!",
     youSay:
-      "In-person voter impersonation is virtually nonexistent — you'd need to risk a felony to cast one fake ballot. Voter ID laws disproportionately affect elderly, low-income, and minority voters who lack driver's licenses. The Heritage Foundation's fraud database — the largest compilation — shows a handful of cases per year nationwide. The cure is far more disruptive than the disease.",
+      "In-person voter impersonation is virtually nonexistent - you'd need to risk a felony to cast one fake ballot. Voter ID laws disproportionately affect elderly, low-income, and minority voters who lack driver's licenses. The Heritage Foundation's fraud database - the largest compilation - shows a handful of cases per year nationwide. The cure is far more disruptive than the disease.",
     stab: "You're solving a problem that doesn't exist to create one that does.",
     sources: [
       cite(
@@ -1333,7 +1333,7 @@ export const conversationHelpers: ConversationHelper[] = [
         "Election Fraud Cases",
         "The Heritage Foundation",
         "https://www.heritage.org/voterfraud",
-        "Heritage documents individual voter fraud cases — a small number relative to hundreds of millions of ballots cast.",
+        "Heritage documents individual voter fraud cases - a small number relative to hundreds of millions of ballots cast.",
         "2024-01-01"
       ),
     ],
@@ -1373,7 +1373,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Jan 6", "Democracy"],
     theySay: "January 6 was just a tourist visit! A peaceful protest!",
     youSay:
-      "Tourists don't smash windows, assault 140 police officers, erect gallows, or chant 'hang Mike Pence.' The bipartisan January 6 Committee documented a coordinated effort to overturn the election. Over 1,400 people have been charged. Pipe bombs were placed near both party headquarters. This was an insurrection — and the people who were there know it, which is why they're asking for pardons.",
+      "Tourists don't smash windows, assault 140 police officers, erect gallows, or chant 'hang Mike Pence.' The bipartisan January 6 Committee documented a coordinated effort to overturn the election. Over 1,400 people have been charged. Pipe bombs were placed near both party headquarters. This was an insurrection - and the people who were there know it, which is why they're asking for pardons.",
     stab: "Name one tour where the guide brought zip ties and bear spray.",
     sources: [
       cite(
@@ -1409,7 +1409,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Democracy", "Courts"],
     theySay: "Both impeachments were witch hunts! Political persecution!",
     youSay:
-      "Impeachment is a constitutional process defined in Article I. Trump was impeached twice by the House — once for pressuring Ukraine to investigate a political rival, once for inciting January 6. The first had bipartisan House votes; the second had bipartisan Senate votes to convict. Calling constitutional accountability a 'witch hunt' is what guilty people say when the evidence is public.",
+      "Impeachment is a constitutional process defined in Article I. Trump was impeached twice by the House - once for pressuring Ukraine to investigate a political rival, once for inciting January 6. The first had bipartisan House votes; the second had bipartisan Senate votes to convict. Calling constitutional accountability a 'witch hunt' is what guilty people say when the evidence is public.",
     stab: "Witch hunts don't have witnesses, transcripts, and votes on the record.",
     sources: [
       cite(
@@ -1437,7 +1437,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Healthcare"],
     theySay: "Obamacare is socialized medicine! Death panels!",
     youSay:
-      "The ACA expanded private insurance through marketplaces and Medicaid — it's the opposite of socialized medicine. 'Death panels' was PolitiFact's Lie of the Year in 2009: it referred to optional end-of-life counseling, a benefit already covered by Medicare. Since passage, uninsured rates fell dramatically and pre-existing condition protections became law.",
+      "The ACA expanded private insurance through marketplaces and Medicaid - it's the opposite of socialized medicine. 'Death panels' was PolitiFact's Lie of the Year in 2009: it referred to optional end-of-life counseling, a benefit already covered by Medicare. Since passage, uninsured rates fell dramatically and pre-existing condition protections became law.",
     stab: "The only death panel is the insurance company that denies your claim.",
     sources: [
       cite(
@@ -1465,7 +1465,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Healthcare", "Culture Wars"],
     theySay: "Democrats support killing babies after birth!",
     youSay:
-      "Infanticide is murder and illegal in all 50 states. No Democrat advocates it. Late-term abortions — roughly 1% of procedures — typically involve fatal fetal anomalies or threats to the mother's life. The inflammatory claim conflates rare medical tragedies with 'killing babies' to ban abortion entirely. Trump himself previously described himself as 'very pro-choice.'",
+      "Infanticide is murder and illegal in all 50 states. No Democrat advocates it. Late-term abortions - roughly 1% of procedures - typically involve fatal fetal anomalies or threats to the mother's life. The inflammatory claim conflates rare medical tragedies with 'killing babies' to ban abortion entirely. Trump himself previously described himself as 'very pro-choice.'",
     stab: "Nobody's executing newborns. Stop using dead babies as a prop for your agenda.",
     sources: [
       cite(
@@ -1492,7 +1492,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Economy", "Foreign Policy"],
     theySay: "Tariffs are winning! China pays for them!",
     youSay:
-      "Tariffs are taxes paid by U.S. importers and passed to American consumers. The Tax Foundation and Peterson Institute found Trump's tariffs cost the average household over $1,000 annually. China didn't pay — you did, at the store. Retaliatory tariffs hurt American farmers who lost export markets. Trade wars aren't 'easy to win.'",
+      "Tariffs are taxes paid by U.S. importers and passed to American consumers. The Tax Foundation and Peterson Institute found Trump's tariffs cost the average household over $1,000 annually. China didn't pay - you did, at the store. Retaliatory tariffs hurt American farmers who lost export markets. Trade wars aren't 'easy to win.'",
     stab: "China didn't pay the tariffs. Check your receipt.",
     sources: [
       cite(
@@ -1548,7 +1548,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Foreign Policy", "Whataboutism"],
     theySay: "Trump started no new wars! He's the peace president!",
     youSay:
-      "Trump escalated drone strikes, ordered the assassination of Iranian General Soleimani — nearly triggering war — and vetoed the war powers resolution Congress passed in response. U.S. troops remained deployed in Iraq, Syria, and Afghanistan for most of his term. 'No new wars' is a marketing slogan, not a body count.",
+      "Trump escalated drone strikes, ordered the assassination of Iranian General Soleimani - nearly triggering war - and vetoed the war powers resolution Congress passed in response. U.S. troops remained deployed in Iraq, Syria, and Afghanistan for most of his term. 'No new wars' is a marketing slogan, not a body count.",
     stab: "Soleimani was a war act. You don't get credit for the wars you almost started.",
     sources: [
       cite(
@@ -1576,8 +1576,8 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Culture Wars", "Media"],
     theySay: "Democrats hate America! They want to destroy our country!",
     youSay:
-      "Disagreeing with policy isn't hating America — it's democracy. Democrats passed the Infrastructure Investment and Jobs Act, CHIPS Act, and expanded veterans benefits. The party that tried to overturn an election, flew Confederate flags in the Capitol, and calls NATO allies 'foes' doesn't get to define patriotism.",
-    stab: "Patriotism isn't a team jersey. It's defending the Constitution — even from your own side.",
+      "Disagreeing with policy isn't hating America - it's democracy. Democrats passed the Infrastructure Investment and Jobs Act, CHIPS Act, and expanded veterans benefits. The party that tried to overturn an election, flew Confederate flags in the Capitol, and calls NATO allies 'foes' doesn't get to define patriotism.",
+    stab: "Patriotism isn't a team jersey. It's defending the Constitution - even from your own side.",
     sources: [
       cite(
         "cbo_infrastructure",
@@ -1631,7 +1631,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Economy", "Whataboutism"],
     theySay: "Republicans are fiscal conservatives! Democrats spend too much!",
     youSay:
-      "The national debt increased by roughly $7.8 trillion under Trump — before pandemic spending. The 2017 tax cuts added an estimated $1.9 trillion to deficits per CBO. Every Republican president since Reagan has left office with a higher debt-to-GDP ratio than when they entered. 'Fiscal conservative' is a campaign label, not a track record.",
+      "The national debt increased by roughly $7.8 trillion under Trump - before pandemic spending. The 2017 tax cuts added an estimated $1.9 trillion to deficits per CBO. Every Republican president since Reagan has left office with a higher debt-to-GDP ratio than when they entered. 'Fiscal conservative' is a campaign label, not a track record.",
     stab: "They cut taxes for billionaires and sent you the bill.",
     sources: [
       cite(
@@ -1659,7 +1659,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Elections", "Immigration"],
     theySay: "Millions of illegal immigrants vote! That's why Democrats want open borders!",
     youSay:
-      "Noncitizen voting in federal elections is already a felony. Studies by the Brennan Center, Heritage Foundation's own researcher, and multiple state audits found infinitesimal rates — often zero convictions. The SAVE Act isn't about fraud; it's about making registration harder for citizens who lack ready access to birth certificates.",
+      "Noncitizen voting in federal elections is already a felony. Studies by the Brennan Center, Heritage Foundation's own researcher, and multiple state audits found infinitesimal rates - often zero convictions. The SAVE Act isn't about fraud; it's about making registration harder for citizens who lack ready access to birth certificates.",
     stab: "If millions were voting illegally, Trump's DOJ would have found one. They didn't.",
     sources: [
       cite(
@@ -1687,7 +1687,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Economy", "Immigration"],
     theySay: "Immigrants are draining Social Security! They're bankrupting us!",
     youSay:
-      "Undocumented immigrants pay billions in Social Security taxes through payroll deductions but cannot collect benefits — SSA actuaries estimate undocumented workers contributed roughly $13 billion net to the trust fund in a single year. Social Security's long-term shortfall is driven by demographics and cap exemptions, not immigration.",
+      "Undocumented immigrants pay billions in Social Security taxes through payroll deductions but cannot collect benefits - SSA actuaries estimate undocumented workers contributed roughly $13 billion net to the trust fund in a single year. Social Security's long-term shortfall is driven by demographics and cap exemptions, not immigration.",
     stab: "They're funding your retirement. You just won't let them collect.",
     sources: [
       cite(
@@ -1742,7 +1742,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Media", "Democracy"],
     theySay: "The mainstream media is all fake news! You can't trust any of them!",
     youSay:
-      "Skepticism is healthy; nihilism isn't. Reputable outlets publish corrections, name sources, and face libel law. 'Fake news' became a rallying cry to dismiss any reporting a politician dislikes — while propaganda outlets repeat claims without evidence. Project Sunrise links primary sources so you don't have to trust any outlet — just the documents.",
+      "Skepticism is healthy; nihilism isn't. Reputable outlets publish corrections, name sources, and face libel law. 'Fake news' became a rallying cry to dismiss any reporting a politician dislikes - while propaganda outlets repeat claims without evidence. Project Sunrise links primary sources so you don't have to trust any outlet - just the documents.",
     stab: "If everything is fake, the guy telling you not to believe anything wins by default.",
     sources: [
       cite(
@@ -1770,7 +1770,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Economy"],
     theySay: "Trump had the greatest economy in history before COVID!",
     youSay:
-      "GDP growth under Trump averaged 2.5% annually — below the post-WWII average and Obama's second term. The unemployment rate was 3.5% pre-pandemic — strong, but not unprecedented. Manufacturing entered a recession in 2019. The 2017 tax cuts disproportionately benefited the wealthy while deficits soared. 'Greatest economy ever' is a superlative, not a statistic.",
+      "GDP growth under Trump averaged 2.5% annually - below the post-WWII average and Obama's second term. The unemployment rate was 3.5% pre-pandemic - strong, but not unprecedented. Manufacturing entered a recession in 2019. The 2017 tax cuts disproportionately benefited the wealthy while deficits soared. 'Greatest economy ever' is a superlative, not a statistic.",
     stab: "Name the metric. I'll wait.",
     sources: [
       cite(
@@ -1827,7 +1827,7 @@ export const conversationHelpers: ConversationHelper[] = [
     theySay: "Trump was tougher on Russia than anyone! Nobody was harder!",
     youSay:
       "Trump publicly sided with Putin over U.S. intelligence on election interference, withheld military aid to Ukraine, tried to withdraw from NATO, and shared classified intelligence with Russian officials in the Oval Office. Congress overrode his veto on Russia sanctions. 'Tough on Russia' requires more than rhetoric at rallies.",
-    stab: "He believed Putin over the FBI. That's not tough — that's captured.",
+    stab: "He believed Putin over the FBI. That's not tough - that's captured.",
     sources: [
       cite(
         "crs_nato",
@@ -1854,7 +1854,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Culture Wars"],
     theySay: "They're teaching CRT in schools! Democrats want kids to hate America!",
     youSay:
-      "Critical Race Theory is a graduate-level legal framework — not a K-12 curriculum. Education Week surveyed districts and found no comprehensive CRT curriculum in public schools. The panic was manufactured to ban books, purge diversity programs, and win elections. Teaching accurate history isn't hate — it's education.",
+      "Critical Race Theory is a graduate-level legal framework - not a K-12 curriculum. Education Week surveyed districts and found no comprehensive CRT curriculum in public schools. The panic was manufactured to ban books, purge diversity programs, and win elections. Teaching accurate history isn't hate - it's education.",
     stab: "Name one school district with a CRT curriculum. I'll wait.",
     sources: [
       cite(
@@ -1882,7 +1882,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Immigration"],
     theySay: "Democrats want open borders! They're flooding the country!",
     youSay:
-      "No Democrat advocates open borders. Biden deployed troops to the border, expanded Title 42 expulsions, and supported the most restrictive bipartisan border bill in decades — which Republicans killed at Trump's direction. Asylum law requires a legal process; conflating refugees with 'open borders' is propaganda.",
+      "No Democrat advocates open borders. Biden deployed troops to the border, expanded Title 42 expulsions, and supported the most restrictive bipartisan border bill in decades - which Republicans killed at Trump's direction. Asylum law requires a legal process; conflating refugees with 'open borders' is propaganda.",
     stab: "They negotiated the toughest border bill in years. Your team killed it for campaign ads.",
     sources: [
       cite(
@@ -1910,7 +1910,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Crime", "Culture Wars"],
     theySay: "Gun-free zones cause mass shootings! Good guys with guns stop bad guys!",
     youSay:
-      "Most mass shootings occur in places where guns are already permitted — homes, workplaces, churches. FBI analysis found armed civilians rarely stop active shooters and often increase chaos. States with stricter gun laws consistently show lower firearm death rates. The 'good guy with a gun' theory doesn't survive contact with data.",
+      "Most mass shootings occur in places where guns are already permitted - homes, workplaces, churches. FBI analysis found armed civilians rarely stop active shooters and often increase chaos. States with stricter gun laws consistently show lower firearm death rates. The 'good guy with a gun' theory doesn't survive contact with data.",
     stab: "If more guns made us safer, America would be the safest country on Earth.",
     sources: [
       cite(
@@ -1937,7 +1937,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Culture Wars", "Democracy"],
     theySay: "Real patriots support Trump! If you oppose him, you hate America!",
     youSay:
-      "Patriotism is loyalty to constitutional principles — not loyalty to a person. Opposing a politician who tried to overturn an election, incited a mob against the Capitol, and faces 34 felony convictions isn't anti-American. It's the minimum standard of democratic citizenship. The Founders feared cults of personality for a reason.",
+      "Patriotism is loyalty to constitutional principles - not loyalty to a person. Opposing a politician who tried to overturn an election, incited a mob against the Capitol, and faces 34 felony convictions isn't anti-American. It's the minimum standard of democratic citizenship. The Founders feared cults of personality for a reason.",
     stab: "The Constitution doesn't have a Trump clause.",
     sources: [
       cite(
@@ -1965,8 +1965,8 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Foreign Policy"],
     theySay: "Trump brought peace to the Middle East with the Abraham Accords!",
     youSay:
-      "The Abraham Accords normalized relations between Israel and several Arab states — a genuine diplomatic achievement. But they did not address Palestinian statehood, and violence escalated dramatically afterward. Brokering deals between allies isn't the same as resolving the core conflict. Peace requires more than signing ceremonies.",
-    stab: "Peace accords that skip the Palestinians aren't peace — they're a photo op.",
+      "The Abraham Accords normalized relations between Israel and several Arab states - a genuine diplomatic achievement. But they did not address Palestinian statehood, and violence escalated dramatically afterward. Brokering deals between allies isn't the same as resolving the core conflict. Peace requires more than signing ceremonies.",
+    stab: "Peace accords that skip the Palestinians aren't peace - they're a photo op.",
     sources: [
       cite(
         "state_abraham",
@@ -1993,7 +1993,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Democracy", "Whataboutism"],
     theySay: "Trump was draining the swamp! He fought the establishment!",
     youSay:
-      "Trump appointed more former lobbyists to his cabinet than any modern president. His administration saw unprecedented turnover — 85% of senior positions turned over. He pardoned political allies convicted of corruption. Goldman Sachs alumni ran the Treasury. 'Drain the swamp' became 'flood it with donors.'",
+      "Trump appointed more former lobbyists to his cabinet than any modern president. His administration saw unprecedented turnover - 85% of senior positions turned over. He pardoned political allies convicted of corruption. Goldman Sachs alumni ran the Treasury. 'Drain the swamp' became 'flood it with donors.'",
     stab: "He didn't drain the swamp. He stocked it with his own alligators.",
     sources: [
       cite(
@@ -2021,8 +2021,8 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Foreign Policy", "Economy"],
     theySay: "America First means putting Americans first! Fair trade, not globalism!",
     youSay:
-      "America First tariffs raised costs on American consumers and farmers who lost export markets to retaliation. Withdrawing from the Paris Agreement and WHO weakened U.S. global leadership without replacing it. 'America First' in practice meant America isolated — allies distrusted us, adversaries tested us, and working families paid higher prices.",
-    stab: "America First shouldn't mean America alone — and alone is what we got.",
+      "America First tariffs raised costs on American consumers and farmers who lost export markets to retaliation. Withdrawing from the Paris Agreement and WHO weakened U.S. global leadership without replacing it. 'America First' in practice meant America isolated - allies distrusted us, adversaries tested us, and working families paid higher prices.",
+    stab: "America First shouldn't mean America alone - and alone is what we got.",
     sources: [
       cite(
         "crs_tariffs",
@@ -2049,7 +2049,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Economy", "Democracy"],
     theySay: "DOGE is saving taxpayers billions! Elon is cutting waste!",
     youSay:
-      "DOGE is an unelected advisory body with access to federal payment systems — not a congressional appropriations process. GAO and agency IGs are the lawful watchdogs; bypassing them destroys institutional oversight. Announced 'savings' rarely survive independent audit, while probationary firings and program halts degrade services Americans rely on.",
+      "DOGE is an unelected advisory body with access to federal payment systems - not a congressional appropriations process. GAO and agency IGs are the lawful watchdogs; bypassing them destroys institutional oversight. Announced 'savings' rarely survive independent audit, while probationary firings and program halts degrade services Americans rely on.",
     stab: "You don't get to fire the accountants and call it savings.",
     sources: [
       cite(
@@ -2077,7 +2077,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Immigration", "Crime"],
     theySay: "Sanctuary cities protect criminals! Democrats want lawless cities!",
     youSay:
-      "Sanctuary policies limit local police from holding people for ICE without a judicial warrant — they don't block deportation of convicted criminals. Courts have upheld this separation because federal immigration enforcement is a federal responsibility. Conflating community trust policies with 'protecting criminals' is a scare tactic; crime rates aren't higher in sanctuary jurisdictions per multiple studies.",
+      "Sanctuary policies limit local police from holding people for ICE without a judicial warrant - they don't block deportation of convicted criminals. Courts have upheld this separation because federal immigration enforcement is a federal responsibility. Conflating community trust policies with 'protecting criminals' is a scare tactic; crime rates aren't higher in sanctuary jurisdictions per multiple studies.",
     stab: "The Constitution still requires a warrant. Even in Texas.",
     sources: [
       cite(
@@ -2105,7 +2105,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Economy"],
     theySay: "Raising the minimum wage kills jobs! Small businesses can't afford it!",
     youSay:
-      "Meta-analyses of state-level minimum wage increases show negligible employment effects while reducing poverty. When workers earn more, they spend more locally — boosting demand. The federal minimum hasn't kept pace with productivity since 1968. Businesses that rely on poverty wages aren't viable without taxpayer subsidies like Medicaid and SNAP.",
+      "Meta-analyses of state-level minimum wage increases show negligible employment effects while reducing poverty. When workers earn more, they spend more locally - boosting demand. The federal minimum hasn't kept pace with productivity since 1968. Businesses that rely on poverty wages aren't viable without taxpayer subsidies like Medicaid and SNAP.",
     stab: "If your business model requires poverty wages, the problem isn't the minimum wage.",
     sources: [
       cite(
@@ -2132,7 +2132,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Elections", "Democracy"],
     theySay: "The Electoral College protects small states! It's genius!",
     youSay:
-      "The Electoral College means a voter in Wyoming has roughly 3.5× the power of a voter in California. Two of the last six presidents lost the popular vote. 'Protecting small states' is code for minority rule — candidates ignore safe states and campaign only in a handful of swing districts. Democracy means the most votes win.",
+      "The Electoral College means a voter in Wyoming has roughly 3.5× the power of a voter in California. Two of the last six presidents lost the popular vote. 'Protecting small states' is code for minority rule - candidates ignore safe states and campaign only in a handful of swing districts. Democracy means the most votes win.",
     stab: "Genius for winning while losing. Terrible for democracy.",
     sources: [
       cite(
@@ -2160,7 +2160,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Climate", "Economy"],
     theySay: "Solar and wind are unreliable! We need coal and gas forever!",
     youSay:
-      "Grid-scale battery storage and regional interconnection solve intermittency — Texas blackouts were caused by gas plant failures, not wind. Levelized cost of solar and wind is now below coal and gas in most markets. Every IPCC pathway to 1.5°C requires rapid renewable deployment; 'reliability' arguments are fossil-fuel delay tactics.",
+      "Grid-scale battery storage and regional interconnection solve intermittency - Texas blackouts were caused by gas plant failures, not wind. Levelized cost of solar and wind is now below coal and gas in most markets. Every IPCC pathway to 1.5°C requires rapid renewable deployment; 'reliability' arguments are fossil-fuel delay tactics.",
     stab: "The grid failed because gas froze. Not because the sun set.",
     sources: [
       cite(
@@ -2188,7 +2188,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Culture Wars", "Media"],
     theySay: "Conservatives are the real victims of cancel culture!",
     youSay:
-      "The First Amendment protects you from government censorship — not from private citizens criticizing your views. Conservatives hold major media platforms, control the Supreme Court, and dominate talk radio. 'Cancel culture' became a shield for consequences: when billionaires face criticism for policy positions, they call it persecution.",
+      "The First Amendment protects you from government censorship - not from private citizens criticizing your views. Conservatives hold major media platforms, control the Supreme Court, and dominate talk radio. 'Cancel culture' became a shield for consequences: when billionaires face criticism for policy positions, they call it persecution.",
     stab: "Free speech doesn't mean freedom from criticism.",
     sources: [
       cite(
@@ -2216,7 +2216,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Economy", "Culture Wars"],
     theySay: "Student loan forgiveness is unfair to people who paid their loans!",
     youSay:
-      "We forgive PPP loans, farm bailouts, and corporate tax breaks without this outrage. Student debt cancellation is economic stimulus — borrowers who aren't crushed by payments buy homes and start businesses. The alternative is a generation locked out of wealth-building because tuition tripled while wages stagnated.",
+      "We forgive PPP loans, farm bailouts, and corporate tax breaks without this outrage. Student debt cancellation is economic stimulus - borrowers who aren't crushed by payments buy homes and start businesses. The alternative is a generation locked out of wealth-building because tuition tripled while wages stagnated.",
     stab: "Nobody complained when we forgave billionaires' PPP loans.",
     sources: [
       cite(
@@ -2243,7 +2243,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Courts", "Democracy"],
     theySay: "The Supreme Court is legitimate! Democrats just hate losing!",
     youSay:
-      "Three justices were appointed by a president who lost the popular vote; one seat was denied hearings for 293 days, another rushed through in 38. Justices Thomas and Alito accepted undisclosed luxury travel from billionaires with cases before the Court. Legitimacy requires accountability — 18-year term limits and binding ethics codes are reforms, not revenge.",
+      "Three justices were appointed by a president who lost the popular vote; one seat was denied hearings for 293 days, another rushed through in 38. Justices Thomas and Alito accepted undisclosed luxury travel from billionaires with cases before the Court. Legitimacy requires accountability - 18-year term limits and binding ethics codes are reforms, not revenge.",
     stab: "Legitimacy isn't a lifetime appointment to do whatever you want.",
     sources: [
       cite(
@@ -2271,7 +2271,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Economy"],
     theySay: "Unions are corrupt! They protect lazy workers!",
     youSay:
-      "Union members earn 16% more than nonunion workers with the same education. Unions reduce wage inequality and improve workplace safety — that's why corporations spend billions on union-busting. The PRO Act would restore organizing rights gutted by decades of anti-labor policy. Calling unions corrupt is what bosses say when workers demand a seat at the table.",
+      "Union members earn 16% more than nonunion workers with the same education. Unions reduce wage inequality and improve workplace safety - that's why corporations spend billions on union-busting. The PRO Act would restore organizing rights gutted by decades of anti-labor policy. Calling unions corrupt is what bosses say when workers demand a seat at the table.",
     stab: "If unions were useless, CEOs wouldn't spend billions crushing them.",
     sources: [
       cite(
@@ -2299,7 +2299,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Foreign Policy", "Whataboutism"],
     theySay: "Trump deserves the Nobel Peace Prize! He ended wars!",
     youSay:
-      "The Abraham Accords were real diplomacy — but they didn't resolve core conflicts, and violence escalated afterward. Trump escalated drone strikes, ordered the Soleimani assassination, and blocked Congress's war powers resolution. Nobel Prizes aren't participation trophies for photo ops with dictators.",
+      "The Abraham Accords were real diplomacy - but they didn't resolve core conflicts, and violence escalated afterward. Trump escalated drone strikes, ordered the Soleimani assassination, and blocked Congress's war powers resolution. Nobel Prizes aren't participation trophies for photo ops with dictators.",
     stab: "You don't get a peace prize for almost starting a war with Iran.",
     sources: [
       cite(
@@ -2327,7 +2327,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Economy", "Whataboutism"],
     theySay: "The estate tax is double taxation! It's stealing family farms!",
     youSay:
-      "The estate tax applies to fortunes above $13.6 million per person — less than 0.1% of estates pay any tax. Family farms have had special exemptions for decades; the 'family farm' argument is a lobbying myth. Wealth passed down without labor is the closest thing to aristocracy American tax law allows.",
+      "The estate tax applies to fortunes above $13.6 million per person - less than 0.1% of estates pay any tax. Family farms have had special exemptions for decades; the 'family farm' argument is a lobbying myth. Wealth passed down without labor is the closest thing to aristocracy American tax law allows.",
     stab: "Less than 0.1% of estates pay it. Your uncle's truck isn't the target.",
     sources: [
       cite(
@@ -2354,7 +2354,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Immigration", "But Obama!"],
     theySay: "Biden let in 10 million illegals! Worst border crisis ever!",
     youSay:
-      "Border encounters rose globally post-pandemic — driven by violence, climate displacement, and economic collapse in origin countries. Biden deployed troops, expanded Title 42 expulsions, and negotiated the toughest bipartisan border bill in decades — which Republicans killed at Trump's direction. Asylum seekers aren't 'illegal' until a hearing determines their status.",
+      "Border encounters rose globally post-pandemic - driven by violence, climate displacement, and economic collapse in origin countries. Biden deployed troops, expanded Title 42 expulsions, and negotiated the toughest bipartisan border bill in decades - which Republicans killed at Trump's direction. Asylum seekers aren't 'illegal' until a hearing determines their status.",
     stab: "Republicans killed their own border bill. Then blamed Biden for the border.",
     sources: [
       cite(
@@ -2382,7 +2382,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Economy", "But Obama!"],
     theySay: "Biden's spending caused inflation! The Inflation Reduction Act made it worse!",
     youSay:
-      "Global inflation peaked in 2022 across 40+ countries — driven by pandemic supply chains, the Ukraine war, and corporate profit margins. The IRA invests in domestic manufacturing and caps insulin — it doesn't print money for consumption. Fed rate hikes did the heavy lifting on inflation; blaming one president ignores global economics.",
+      "Global inflation peaked in 2022 across 40+ countries - driven by pandemic supply chains, the Ukraine war, and corporate profit margins. The IRA invests in domestic manufacturing and caps insulin - it doesn't print money for consumption. Fed rate hikes did the heavy lifting on inflation; blaming one president ignores global economics.",
     stab: "Inflation hit Europe harder. Did Biden run France too?",
     sources: [
       cite(
@@ -2410,7 +2410,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Climate", "Economy"],
     theySay: "Nuclear is the only clean energy! Greens hate science!",
     youSay:
-      "Nuclear has a role — but new plants take 10–15 years and cost billions per reactor. Solar and wind deploy in months at lower levelized cost. Climate timelines require deploying every tool now: renewables for speed, nuclear where already operating, storage for reliability. Opposing reckless timelines isn't opposing science.",
+      "Nuclear has a role - but new plants take 10-15 years and cost billions per reactor. Solar and wind deploy in months at lower levelized cost. Climate timelines require deploying every tool now: renewables for speed, nuclear where already operating, storage for reliability. Opposing reckless timelines isn't opposing science.",
     stab: "We needed clean energy yesterday. Nuclear can't build fast enough alone.",
     sources: [
       cite(
@@ -2438,7 +2438,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Economy", "Whataboutism"],
     theySay: "Social Security is going bankrupt! Democrats stole the trust fund!",
     youSay:
-      "Social Security can pay full benefits through 2033 without changes, and roughly 79% after that — bankruptcy is a political choice, not math. The trust fund was designed as an accounting mechanism; Congress can restore solvency by raising the payroll tax cap so billionaires pay on all earnings, not just the first $176,100.",
+      "Social Security can pay full benefits through 2033 without changes, and roughly 79% after that - bankruptcy is a political choice, not math. The trust fund was designed as an accounting mechanism; Congress can restore solvency by raising the payroll tax cap so billionaires pay on all earnings, not just the first $176,100.",
     stab: "You want to cut grandma's check instead of taxing income above $176K. Say that.",
     sources: [
       cite(
@@ -2466,7 +2466,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Culture Wars", "Economy"],
     theySay: "School choice saves kids! Democrats trap poor kids in failing public schools!",
     youSay:
-      "Voucher programs divert public dollars to private schools with no accountability, weaker civil rights protections, and mixed academic results. Finland and Massachusetts improved outcomes by investing in teachers and equity — not defunding neighborhood schools. 'Choice' without transportation, disability services, or oversight is a subsidy for families who already had options.",
+      "Voucher programs divert public dollars to private schools with no accountability, weaker civil rights protections, and mixed academic results. Finland and Massachusetts improved outcomes by investing in teachers and equity - not defunding neighborhood schools. 'Choice' without transportation, disability services, or oversight is a subsidy for families who already had options.",
     stab: "You call it choice. Teachers call it defunding the school down the street.",
     sources: [
       cite(
@@ -2521,7 +2521,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Climate", "Foreign Policy"],
     theySay: "Why should we cut emissions when China pollutes more? Climate is a hoax anyway!",
     youSay:
-      "China builds more renewables than the rest of the world combined — because clean energy is an economic race, not a charity project. The U.S. remains the largest historical emitter per capita. IPCC science is unanimous: every ton matters. Hiding behind China is an excuse to protect fossil-fuel donors, not a climate strategy.",
+      "China builds more renewables than the rest of the world combined - because clean energy is an economic race, not a charity project. The U.S. remains the largest historical emitter per capita. IPCC science is unanimous: every ton matters. Hiding behind China is an excuse to protect fossil-fuel donors, not a climate strategy.",
     stab: "China is building solar farms. You're building excuses.",
     sources: [
       cite(
@@ -2549,7 +2549,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Immigration", "Democracy"],
     theySay: "Birthright citizenship is anchor baby fraud! End it by executive order!",
     youSay:
-      "The 14th Amendment grants citizenship to all persons born in the United States — full stop. Trump-era and 2025 executive orders attempting to end birthright citizenship were blocked by federal courts as unconstitutional. No serious legal scholar argues a president can amend the Constitution with a pen.",
+      "The 14th Amendment grants citizenship to all persons born in the United States - full stop. Trump-era and 2025 executive orders attempting to end birthright citizenship were blocked by federal courts as unconstitutional. No serious legal scholar argues a president can amend the Constitution with a pen.",
     stab: "You need an amendment, not an executive order. Read the 14th.",
     sources: [
       cite(
@@ -2577,8 +2577,8 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Jan 6", "Media"],
     theySay: "January 6 was an FBI setup! Ray Epps was a fed!",
     youSay:
-      "The bipartisan Senate Jan. 6 report, DOJ indictments, and hundreds of guilty pleas from rioters themselves establish what happened: Trump summoned a crowd, told them to fight, and they stormed the Capitol. Ray Epps was interviewed and cleared — conspiracy theories about 'fed provocateurs' distract from the president's own words on tape.",
-    stab: "Your guys pleaded guilty. That's not a setup — that's confessions.",
+      "The bipartisan Senate Jan. 6 report, DOJ indictments, and hundreds of guilty pleas from rioters themselves establish what happened: Trump summoned a crowd, told them to fight, and they stormed the Capitol. Ray Epps was interviewed and cleared - conspiracy theories about 'fed provocateurs' distract from the president's own words on tape.",
+    stab: "Your guys pleaded guilty. That's not a setup - that's confessions.",
     sources: [
       cite(
         "j6_report",
@@ -2605,7 +2605,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Economy", "Whataboutism"],
     theySay: "Cut corporate taxes and jobs explode! Democrats hate business!",
     youSay:
-      "The 2017 Trump tax cuts slashed the corporate rate from 35% to 21% — corporations bought back stock and executive pay surged while real wage growth lagged. CBO found the cuts added $1.9 trillion to deficits. Trickle-down isn't a theory — it's a 40-year experiment with a control group called the middle class.",
+      "The 2017 Trump tax cuts slashed the corporate rate from 35% to 21% - corporations bought back stock and executive pay surged while real wage growth lagged. CBO found the cuts added $1.9 trillion to deficits. Trickle-down isn't a theory - it's a 40-year experiment with a control group called the middle class.",
     stab: "They got a tax cut. You got the bill.",
     sources: [
       cite(
@@ -2633,7 +2633,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Climate", "Culture Wars"],
     theySay: "Liberals ban straws while China dumps plastic! Climate hypocrites!",
     youSay:
-      "No one thinks straw bans solve climate change — they're municipal waste policies, not federal climate strategy. Real climate policy means methane rules, grid decarbonization, and holding fossil companies accountable for decades of deception. Straw-manning environmentalism avoids debating the policies that actually cut emissions.",
+      "No one thinks straw bans solve climate change - they're municipal waste policies, not federal climate strategy. Real climate policy means methane rules, grid decarbonization, and holding fossil companies accountable for decades of deception. Straw-manning environmentalism avoids debating the policies that actually cut emissions.",
     stab: "You mocked straws to avoid debating methane rules. Cute.",
     sources: [
       cite(
@@ -2661,7 +2661,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Healthcare", "Whataboutism"],
     theySay: "Medicare for All means year-long waits and death panels!",
     youSay:
-      "Americans already wait — for insurance approval, for ambulances they can't afford, and for bankruptcy after a hospital bill. Countries with universal coverage have shorter wait times for primary care than uninsured Americans have for any care. 'Death panels' was PolitiFact's Lie of the Year — a fabricated scare tactic to block the ACA.",
+      "Americans already wait - for insurance approval, for ambulances they can't afford, and for bankruptcy after a hospital bill. Countries with universal coverage have shorter wait times for primary care than uninsured Americans have for any care. 'Death panels' was PolitiFact's Lie of the Year - a fabricated scare tactic to block the ACA.",
     stab: "Death panels were a lie in 2009. You're still running it in 2026.",
     sources: [
       cite(
@@ -2689,7 +2689,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Democracy", "Culture Wars"],
     theySay: "America is a Christian nation! Keep prayer in schools!",
     youSay:
-      "The First Amendment prohibits government establishment of religion — the Founders fled state churches. Pew data shows growing religious diversity; public schools cannot impose one faith on every child. Private prayer has always been protected; government-led prayer excludes non-Christian students by design.",
+      "The First Amendment prohibits government establishment of religion - the Founders fled state churches. Pew data shows growing religious diversity; public schools cannot impose one faith on every child. Private prayer has always been protected; government-led prayer excludes non-Christian students by design.",
     stab: "The First Amendment protects your church from the government too. Read it.",
     sources: [
       cite(
@@ -2717,7 +2717,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Economy", "Whataboutism"],
     theySay: "Billionaires earned every penny! Stop punishing success!",
     youSay:
-      "Many of America's richest inherited wealth or built monopolies with taxpayer subsidies, regulatory capture, and union-busting. BLS data shows union workers earn significantly more than nonunion workers — the game is rigged before the first dollar is made. Progressive tax policy isn't punishment; it's asking people who benefited most from public infrastructure to fund the society that made their wealth possible.",
+      "Many of America's richest inherited wealth or built monopolies with taxpayer subsidies, regulatory capture, and union-busting. BLS data shows union workers earn significantly more than nonunion workers - the game is rigged before the first dollar is made. Progressive tax policy isn't punishment; it's asking people who benefited most from public infrastructure to fund the society that made their wealth possible.",
     stab: "Nobody becomes a billionaire alone. They just want you to think they did.",
     sources: [
       cite(
@@ -2745,7 +2745,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Democracy"],
     theySay: "The filibuster protects minority rights! The Founders wanted it!",
     youSay:
-      "The filibuster is not in the Constitution — it's a Senate rule that has been weaponized to block voting rights, healthcare, and climate legislation supported by majorities. CRS documents how the modern filibuster evolved through procedural changes, not founding design. When one senator can kill bills passed by the House and supported by the public, that's minority rule — not minority rights.",
+      "The filibuster is not in the Constitution - it's a Senate rule that has been weaponized to block voting rights, healthcare, and climate legislation supported by majorities. CRS documents how the modern filibuster evolved through procedural changes, not founding design. When one senator can kill bills passed by the House and supported by the public, that's minority rule - not minority rights.",
     stab: "The Founders wrote the Constitution. They didn't write a 60-vote veto for cable news.",
     sources: [
       cite(
@@ -2773,7 +2773,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Economy", "Media"],
     theySay: "Look at the stock market! The president is doing great!",
     youSay:
-      "The stock market measures corporate profits, not family finances. Most Americans don't own enough equities for market highs to offset grocery inflation, rent, or medical debt. Wage growth and unemployment tell you more about kitchen-table economics than the S&P 500 — and those metrics often diverge sharply from Wall Street rallies driven by buybacks and tax cuts.",
+      "The stock market measures corporate profits, not family finances. Most Americans don't own enough equities for market highs to offset grocery inflation, rent, or medical debt. Wage growth and unemployment tell you more about kitchen-table economics than the S&P 500 - and those metrics often diverge sharply from Wall Street rallies driven by buybacks and tax cuts.",
     stab: "Your 401(k) isn't paying the electric bill. Neither is his.",
     sources: [
       cite(
@@ -2801,7 +2801,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Immigration", "Economy"],
     theySay: "Immigrants are stealing our jobs!",
     youSay:
-      "Immigrants fill labor shortages, start businesses at higher rates than native-born Americans, and pay billions in taxes including Social Security for benefits they may never collect. Economic consensus finds immigration grows the overall economy rather than reducing native employment — scapegoating immigrants distracts from policy choices like union-busting and offshoring that actually suppress wages.",
+      "Immigrants fill labor shortages, start businesses at higher rates than native-born Americans, and pay billions in taxes including Social Security for benefits they may never collect. Economic consensus finds immigration grows the overall economy rather than reducing native employment - scapegoating immigrants distracts from policy choices like union-busting and offshoring that actually suppress wages.",
     stab: "They didn't take your job. Your boss shipped it overseas and blamed the gardener.",
     sources: [
       cite(
@@ -2829,7 +2829,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Economy"],
     theySay: "Trickle-down economics works! Cut taxes and everyone wins!",
     youSay:
-      "Four decades of tax cuts for the wealthy coincided with stagnating middle-class wages and soaring inequality. CBO analysis shows top-bracket cuts disproportionately benefit the richest households while increasing deficits that Republicans then use to justify cutting Social Security and Medicare. Money trickles up — always has.",
+      "Four decades of tax cuts for the wealthy coincided with stagnating middle-class wages and soaring inequality. CBO analysis shows top-bracket cuts disproportionately benefit the richest households while increasing deficits that Republicans then use to justify cutting Social Security and Medicare. Money trickles up - always has.",
     stab: "We've been trickled on for forty years. It's not rain.",
     sources: [
       cite(
@@ -2857,7 +2857,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Courts", "Democracy"],
     theySay: "Only liberal judges are activists! Conservative justices just follow the law!",
     youSay:
-      "The current Supreme Court overturned Roe v. Wade, expanded presidential immunity, and blocked student debt relief — none of which appear in constitutional text. 'Originalism' has become a branding exercise for outcomes popular with donors. When the court consistently delivers wins for one party's agenda, that's activism — regardless of the footnotes.",
+      "The current Supreme Court overturned Roe v. Wade, expanded presidential immunity, and blocked student debt relief - none of which appear in constitutional text. 'Originalism' has become a branding exercise for outcomes popular with donors. When the court consistently delivers wins for one party's agenda, that's activism - regardless of the footnotes.",
     stab: "They call it originalism when they win. They call it activism when you do.",
     sources: [
       cite(
@@ -2885,14 +2885,14 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Economy"],
     theySay: "Raising overtime pay will destroy small businesses and kill jobs!",
     youSay:
-      "When workers earn more, they spend more — boosting local economies. DOL's overtime rule restored protections for millions of salaried workers earning less than $58,656 who were classified as 'managers' to avoid overtime. CBO and BLS data show wage floors don't cause mass layoffs; they reduce turnover and poverty. Every time labor rights expand, the same scare story runs — and the economy keeps growing.",
+      "When workers earn more, they spend more - boosting local economies. DOL's overtime rule restored protections for millions of salaried workers earning less than $58,656 who were classified as 'managers' to avoid overtime. CBO and BLS data show wage floors don't cause mass layoffs; they reduce turnover and poverty. Every time labor rights expand, the same scare story runs - and the economy keeps growing.",
     stab: "They said the same thing about the weekend. Your boss survived.",
     sources: [
       cite(
         "dol_overtime",
         "Overtime Final Rule",
         "U.S. Department of Labor",
-        "https://www.dol.gov/agencies/whd/overtime/rulemaking",
+        "https://www.dol.gov/agencies/whd/overtime",
         "DOL restored overtime eligibility for salaried workers below the updated salary threshold.",
         "2024-04-23"
       ),
@@ -2913,7 +2913,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Education", "Culture Wars"],
     theySay: "Media literacy classes are liberal indoctrination!",
     youSay:
-      "Media literacy teaches students to evaluate sources, spot manipulation, and distinguish fact from opinion — skills every parent should want. The same people calling it 'indoctrination' cheered when schools removed science and history books. Teaching kids to question viral claims isn't partisan; it's the minimum defense against propaganda in an election year.",
+      "Media literacy teaches students to evaluate sources, spot manipulation, and distinguish fact from opinion - skills every parent should want. The same people calling it 'indoctrination' cheered when schools removed science and history books. Teaching kids to question viral claims isn't partisan; it's the minimum defense against propaganda in an election year.",
     stab: "They don't fear indoctrination. They fear kids who can fact-check them.",
     sources: [
       cite(
@@ -2921,7 +2921,7 @@ export const conversationHelpers: ConversationHelper[] = [
         "First Amendment",
         "Congress.gov",
         "https://constitution.congress.gov/constitution/amendment-1/",
-        "The First Amendment protects free expression and inquiry — the foundation of media literacy education.",
+        "The First Amendment protects free expression and inquiry - the foundation of media literacy education.",
         "2024-01-01"
       ),
       cite(
@@ -2941,7 +2941,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Immigration", "Healthcare"],
     theySay: "Immigrants are flooding emergency rooms and bankrupting hospitals!",
     youSay:
-      "Undocumented immigrants are largely excluded from federal health programs and pay billions in taxes without receiving benefits. CBO finds immigration grows the economy and tax base over time. Emergency room use reflects lack of primary care access — the fix is coverage, not scapegoating. Hospital closures track Medicaid expansion fights and rural underfunding, not immigration.",
+      "Undocumented immigrants are largely excluded from federal health programs and pay billions in taxes without receiving benefits. CBO finds immigration grows the economy and tax base over time. Emergency room use reflects lack of primary care access - the fix is coverage, not scapegoating. Hospital closures track Medicaid expansion fights and rural underfunding, not immigration.",
     stab: "They pay into the system. You just don't want them in the waiting room.",
     sources: [
       cite(
@@ -2969,7 +2969,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Healthcare", "Culture Wars"],
     theySay: "Democrats want to force IUDs on teenage girls!",
     youSay:
-      "No bill mandates birth control for minors — that's fabricated outrage to distract from actual abortion bans with no exceptions. Contraception access reduces teen pregnancy rates, which hit record lows before Dobbs. When conservatives block sex education and contraception while banning abortion, the cruelty is the point.",
+      "No bill mandates birth control for minors - that's fabricated outrage to distract from actual abortion bans with no exceptions. Contraception access reduces teen pregnancy rates, which hit record lows before Dobbs. When conservatives block sex education and contraception while banning abortion, the cruelty is the point.",
     stab: "Nobody's forcing an IUD. They're forcing you to give birth.",
     sources: [
       cite(
@@ -2997,7 +2997,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Economy", "Foreign Policy"],
     theySay: "Tariffs will lower prices and bring manufacturing home!",
     youSay:
-      "Tariffs are taxes on imports — and importers pass costs to consumers. CRS and Tax Foundation analyses of Trump-era tariffs found billions in higher prices for American households and retaliatory hits on U.S. farmers. Manufacturing didn't flood back; supply chains shifted to Vietnam and Mexico while you paid more at the store.",
+      "Tariffs are taxes on imports - and importers pass costs to consumers. CRS and Tax Foundation analyses of Trump-era tariffs found billions in higher prices for American households and retaliatory hits on U.S. farmers. Manufacturing didn't flood back; supply chains shifted to Vietnam and Mexico while you paid more at the store.",
     stab: "Tariffs don't lower prices. They lower your bank balance.",
     sources: [
       cite(
@@ -3025,7 +3025,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Democracy", "Economy"],
     theySay: "Schedule F is just fixing a bloated bureaucracy!",
     youSay:
-      "Schedule F reclassifies tens of thousands of career civil servants as at-will political appointees — stripping merit protections so they can be fired for disloyalty, not performance. GAO warned this undermines institutional knowledge and invites corruption. It's not efficiency; it's purging experts who might say no to illegal orders.",
+      "Schedule F reclassifies tens of thousands of career civil servants as at-will political appointees - stripping merit protections so they can be fired for disloyalty, not performance. GAO warned this undermines institutional knowledge and invites corruption. It's not efficiency; it's purging experts who might say no to illegal orders.",
     stab: "They don't want a lean government. They want an obedient one.",
     sources: [
       cite(
@@ -3053,7 +3053,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Democracy", "Climate"],
     theySay: "FEMA only helps blue states! Red states get ignored!",
     youSay:
-      "FEMA disaster declarations follow statutory criteria — not Twitter polls. After Hurricane Helene, fact-checkers documented equal federal response regardless of state politics. What does vary: whether governors accept federal climate science, invest in resilience, and stop blocking aid votes in Congress. Disaster relief shouldn't be a loyalty test — but that's what happens when you elect arsonists to the fire department.",
+      "FEMA disaster declarations follow statutory criteria - not Twitter polls. After Hurricane Helene, fact-checkers documented equal federal response regardless of state politics. What does vary: whether governors accept federal climate science, invest in resilience, and stop blocking aid votes in Congress. Disaster relief shouldn't be a loyalty test - but that's what happens when you elect arsonists to the fire department.",
     stab: "The aid isn't political. The denial is.",
     sources: [
       cite(
@@ -3081,7 +3081,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Education", "Culture Wars"],
     theySay: "Public schools are failing! We need to abolish the Department of Education!",
     youSay:
-      "American students in well-funded districts compete globally; the failure is funding inequality, not public education itself. The Ed Department administers Title I for low-income schools, IDEA for students with disabilities, and Pell Grants for college — cutting it punishes the kids who need help most. 'School choice' vouchers drain public funds into unaccountable private schools with no performance requirements.",
+      "American students in well-funded districts compete globally; the failure is funding inequality, not public education itself. The Ed Department administers Title I for low-income schools, IDEA for students with disabilities, and Pell Grants for college - cutting it punishes the kids who need help most. 'School choice' vouchers drain public funds into unaccountable private schools with no performance requirements.",
     stab: "They don't want to fix public schools. They want to stop paying for yours.",
     sources: [
       cite(
@@ -3137,7 +3137,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Democracy", "Media"],
     theySay: "Project 2025 is just a wish list! It's not actually happening!",
     youSay:
-      "Heritage Foundation published the 920-page Mandate for Leadership and staffed the transition. CPR's tracker documents over half of the domestic administrative agenda initiated within the first year. Schedule F, USAID dismantling, DEI termination, and birthright citizenship orders aren't suggestions — they're executive actions with Federal Register citations.",
+      "Heritage Foundation published the 920-page Mandate for Leadership and staffed the transition. CPR's tracker documents over half of the domestic administrative agenda initiated within the first year. Schedule F, USAID dismantling, DEI termination, and birthright citizenship orders aren't suggestions - they're executive actions with Federal Register citations.",
     stab: "It's a wish list the same way a blueprint is a doodle.",
     sources: [
       cite(
@@ -3165,7 +3165,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Democracy", "Economy"],
     theySay: "Elon isn't running the government! DOGE is just finding waste!",
     youSay:
-      "DOGE is an unelected advisory body with access to Treasury payment systems — not a congressional appropriations process. GAO and agency inspectors general are the lawful watchdogs. Bypassing them to fire probationary workers and halt grants isn't auditing; it's dismantling oversight without a single vote in Congress.",
+      "DOGE is an unelected advisory body with access to Treasury payment systems - not a congressional appropriations process. GAO and agency inspectors general are the lawful watchdogs. Bypassing them to fire probationary workers and halt grants isn't auditing; it's dismantling oversight without a single vote in Congress.",
     stab: "You didn't elect Elon. You elected a president who outsourced the government.",
     sources: [
       cite(
@@ -3193,7 +3193,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Courts", "Democracy"],
     theySay: "The courts will stop all of this! Just wait for the lawsuits!",
     youSay:
-      "Courts have blocked some orders — birthright citizenship, parts of Schedule F — but litigation takes years while harm is immediate. Workers are fired today. Grants are frozen today. A Supreme Court that granted presidents criminal immunity isn't a reliable backstop. Democracy can't survive on lawsuit roulette.",
+      "Courts have blocked some orders - birthright citizenship, parts of Schedule F - but litigation takes years while harm is immediate. Workers are fired today. Grants are frozen today. A Supreme Court that granted presidents criminal immunity isn't a reliable backstop. Democracy can't survive on lawsuit roulette.",
     stab: "You don't put out a fire by filing paperwork.",
     sources: [
       cite(
@@ -3221,7 +3221,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Immigration", "Economy"],
     theySay: "Illegals get free housing, healthcare, and welfare!",
     youSay:
-      "Undocumented immigrants are ineligible for most federal benefits — including Medicaid, SNAP, and SSI — by law. The CBO confirms noncitizens use fewer benefits per capita than native-born citizens. The claim exists to justify cruelty, not to fix a budget line that doesn't exist.",
+      "Undocumented immigrants are ineligible for most federal benefits - including Medicaid, SNAP, and SSI - by law. The CBO confirms noncitizens use fewer benefits per capita than native-born citizens. The claim exists to justify cruelty, not to fix a budget line that doesn't exist.",
     stab: "They're not taking your benefits. They're doing jobs you won't.",
     sources: [
       cite(
@@ -3305,7 +3305,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Democracy", "Economy"],
     theySay: "Democrats caused the government shutdown!",
     youSay:
-      "Government shutdowns occur when Congress fails to pass appropriations — often because one party demands unrelated policy riders. CRS documents that shutdowns freeze federal pay, delay benefits, and cost billions in lost productivity. Blame games don't pay TSA workers or process veterans' claims.",
+      "Government shutdowns occur when Congress fails to pass appropriations - often because one party demands unrelated policy riders. CRS documents that shutdowns freeze federal pay, delay benefits, and cost billions in lost productivity. Blame games don't pay TSA workers or process veterans' claims.",
     stab: "Shutdown theater hurts workers, not politicians.",
     sources: [
       cite(
@@ -3333,7 +3333,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Culture Wars", "Healthcare"],
     theySay: "They're doing gender surgery on kids in schools!",
     youSay:
-      "Gender-affirming surgery for minors is rare, requires parental consent, and isn't performed in schools. Major medical associations support age-appropriate care protocols developed by pediatric specialists. The panic is manufactured — PEN America documents hundreds of educational gag orders targeting books and curricula, not operating rooms.",
+      "Gender-affirming surgery for minors is rare, requires parental consent, and isn't performed in schools. Major medical associations support age-appropriate care protocols developed by pediatric specialists. The panic is manufactured - PEN America documents hundreds of educational gag orders targeting books and curricula, not operating rooms.",
     stab: "No school has a surgery wing. Stop falling for rage bait.",
     sources: [
       cite(
@@ -3361,7 +3361,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Democracy", "Elections"],
     theySay: "We're a republic, not a democracy! The Founders hated democracy!",
     youSay:
-      "A republic is a form of government where officials are elected — not appointed by kings. The Founders feared mob rule but designed representative democracy with expanding suffrage. Calling America a 'republic not a democracy' is a talking point to justify minority rule, gerrymandering, and the Electoral College overriding popular will.",
+      "A republic is a form of government where officials are elected - not appointed by kings. The Founders feared mob rule but designed representative democracy with expanding suffrage. Calling America a 'republic not a democracy' is a talking point to justify minority rule, gerrymandering, and the Electoral College overriding popular will.",
     stab: "You vote for representatives. That's democracy.",
     sources: [
       cite(
@@ -3389,7 +3389,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Media", "Culture Wars"],
     theySay: "All media is liberal bias! That's why I only trust independent sources!",
     youSay:
-      "Reuters Institute data shows Americans increasingly rely on partisan outlets and social media — not a monolithic 'liberal media.' Sinclair, Fox, and talk radio reach tens of millions daily. 'Independent sources' often mean anonymous accounts with no editorial standards. Primary documents — court filings, agency records, CRS reports — beat any pundit.",
+      "Reuters Institute data shows Americans increasingly rely on partisan outlets and social media - not a monolithic 'liberal media.' Sinclair, Fox, and talk radio reach tens of millions daily. 'Independent sources' often mean anonymous accounts with no editorial standards. Primary documents - court filings, agency records, CRS reports - beat any pundit.",
     stab: "Your 'independent' source is a guy in a truck with a ring light.",
     sources: [
       cite(
@@ -3417,7 +3417,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Economy", "Foreign Policy"],
     theySay: "Tariffs protect American jobs! Other countries pay the tax!",
     youSay:
-      "Tariffs are paid by U.S. importers and passed to consumers — the Tax Foundation and CBO both model them as a tax on American buyers, not foreign governments. Retaliatory tariffs hit U.S. farmers and manufacturers in export markets. Protectionism didn't save the Rust Belt; it raised prices on cars, appliances, and construction materials.",
+      "Tariffs are paid by U.S. importers and passed to consumers - the Tax Foundation and CBO both model them as a tax on American buyers, not foreign governments. Retaliatory tariffs hit U.S. farmers and manufacturers in export markets. Protectionism didn't save the Rust Belt; it raised prices on cars, appliances, and construction materials.",
     stab: "You're not sticking it to China. You're sticking your wallet.",
     sources: [
       cite(
@@ -3445,7 +3445,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Economy", "Democracy"],
     theySay: "Social Security is going bankrupt! We need to cut benefits now!",
     youSay:
-      "Social Security can pay full benefits through the 2030s without any changes, and modest revenue fixes — raising the payroll cap — extend solvency for decades. CBO's long-term outlook shows the program is underfunded, not bankrupt: it holds $2.8 trillion in trust fund reserves. 'Bankrupt' is a scare word to justify cuts voters never asked for.",
+      "Social Security can pay full benefits through the 2030s without any changes, and modest revenue fixes - raising the payroll cap - extend solvency for decades. CBO's long-term outlook shows the program is underfunded, not bankrupt: it holds $2.8 trillion in trust fund reserves. 'Bankrupt' is a scare word to justify cuts voters never asked for.",
     stab: "Bankrupt is a campaign slogan, not an actuarial report.",
     sources: [
       cite(
@@ -3473,7 +3473,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Crime", "Culture Wars"],
     theySay: "Democrat-run cities are crime-infested hellholes!",
     youSay:
-      "BJS victimization surveys show violent crime near historic lows nationally — not a coast-to-coast explosion. Rural areas have seen rising overdose deaths and property crime too. Cherry-picking Chicago headlines while ignoring that red states lead in homicide rates per capita is propaganda, not criminology.",
+      "BJS victimization surveys show violent crime near historic lows nationally - not a coast-to-coast explosion. Rural areas have seen rising overdose deaths and property crime too. Cherry-picking Chicago headlines while ignoring that red states lead in homicide rates per capita is propaganda, not criminology.",
     stab: "You're scared of cities you've never visited.",
     sources: [
       cite(
@@ -3499,9 +3499,9 @@ export const conversationHelpers: ConversationHelper[] = [
   {
     id: "immigrants-dont-pay-taxes",
     category: ["Immigration", "Economy"],
-    theySay: "Illegal immigrants don't pay taxes — they drain the system!",
+    theySay: "Illegal immigrants don't pay taxes - they drain the system!",
     youSay:
-      "Undocumented immigrants pay billions in payroll, sales, and property taxes — often without receiving benefits. Cato Institute research finds immigrants commit fewer crimes and contribute net-positive to Social Security via taxes on invalid SSNs. The 'drain' narrative ignores IRS ITIN filers and state/local tax revenue.",
+      "Undocumented immigrants pay billions in payroll, sales, and property taxes - often without receiving benefits. Cato Institute research finds immigrants commit fewer crimes and contribute net-positive to Social Security via taxes on invalid SSNs. The 'drain' narrative ignores IRS ITIN filers and state/local tax revenue.",
     stab: "They pay into Social Security they'll never collect.",
     sources: [
       cite(
@@ -3529,7 +3529,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Climate"],
     theySay: "The climate has always changed! It's natural cycles!",
     youSay:
-      "Natural cycles don't explain the current rate of warming — NASA documents that atmospheric CO₂ is higher than at any point in 800,000 years of ice core data. The IPCC Sixth Assessment synthesizes thousands of studies attributing recent warming primarily to human greenhouse gas emissions. 'It's always changed' is true and irrelevant.",
+      "Natural cycles don't explain the current rate of warming - NASA documents that atmospheric CO₂ is higher than at any point in 800,000 years of ice core data. The IPCC Sixth Assessment synthesizes thousands of studies attributing recent warming primarily to human greenhouse gas emissions. 'It's always changed' is true and irrelevant.",
     stab: "Lightning is natural too. That doesn't mean you stand on the golf course.",
     sources: [
       cite(
@@ -3555,9 +3555,9 @@ export const conversationHelpers: ConversationHelper[] = [
   {
     id: "book-bans-parent-rights",
     category: ["Education", "Culture Wars"],
-    theySay: "We're not banning books — we're protecting parental rights!",
+    theySay: "We're not banning books - we're protecting parental rights!",
     youSay:
-      "PEN America tracked thousands of book bans in public schools — removing Toni Morrison, Maus, and health curricula from library shelves. ALA documented record censorship attempts. Removing books from public institutions isn't parental choice; it's state censorship. Parents can already guide their own kids' reading.",
+      "PEN America tracked thousands of book bans in public schools - removing Toni Morrison, Maus, and health curricula from library shelves. ALA documented record censorship attempts. Removing books from public institutions isn't parental choice; it's state censorship. Parents can already guide their own kids' reading.",
     stab: "Parental rights don't include vetoing everyone else's library card.",
     sources: [
       cite(
@@ -3583,7 +3583,7 @@ export const conversationHelpers: ConversationHelper[] = [
   {
     id: "supreme-court-not-political",
     category: ["Courts", "Democracy"],
-    theySay: "The Supreme Court isn't political — they just follow the Constitution!",
+    theySay: "The Supreme Court isn't political - they just follow the Constitution!",
     youSay:
       "Term-limit advocates and Fix the Court document decades of partisan appointments producing predictable 6-3 splits on voting rights, abortion, and executive power. Justices attend partisan fundraisers and accept undisclosed gifts. 'Not political' is how you describe a court whose rulings always align with one party's platform.",
     stab: "If it's not political, explain the party-line votes.",
@@ -3613,7 +3613,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Economy"],
     theySay: "Unions destroy jobs and hurt the economy!",
     youSay:
-      "BLS data shows union workers earn roughly 17% more in median weekly wages than nonunion workers. EPI research links stronger union density to lower inequality and higher middle-class wages. Right-to-work states didn't outperform — they just suppressed wages. Unions are a market correction to corporate power, not a jobs killer.",
+      "BLS data shows union workers earn roughly 17% more in median weekly wages than nonunion workers. EPI research links stronger union density to lower inequality and higher middle-class wages. Right-to-work states didn't outperform - they just suppressed wages. Unions are a market correction to corporate power, not a jobs killer.",
     stab: "If unions kill jobs, why do bosses spend billions fighting them?",
     sources: [
       cite(
@@ -3641,7 +3641,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Elections", "Democracy"],
     theySay: "Voter ID is common sense! You need ID to buy beer!",
     youSay:
-      "Brennan Center research finds in-person voter impersonation exceedingly rare — you're more likely to be struck by lightning. Strict ID laws disproportionately disenfranchise elderly, low-income, and rural voters who lack driver's licenses. Buying beer isn't a constitutional right; voting is. The 'common sense' framing hides the goal: fewer eligible voters.",
+      "Brennan Center research finds in-person voter impersonation exceedingly rare - you're more likely to be struck by lightning. Strict ID laws disproportionately disenfranchise elderly, low-income, and rural voters who lack driver's licenses. Buying beer isn't a constitutional right; voting is. The 'common sense' framing hides the goal: fewer eligible voters.",
     stab: "If fraud were rampant, they'd show convictions, not memes.",
     sources: [
       cite(
@@ -3669,7 +3669,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Immigration", "Economy"],
     theySay: "Undocumented immigrants get free welfare and housing!",
     youSay:
-      "Federal law bars undocumented immigrants from nearly all means-tested benefits — SNAP, Medicaid, SSI, and TANF require citizenship or qualified status. Noncitizen voting is already illegal, and Brennan Center research finds it virtually nonexistent. The 'free stuff' narrative is a decades-old scare tactic with no basis in eligibility rules.",
+      "Federal law bars undocumented immigrants from nearly all means-tested benefits - SNAP, Medicaid, SSI, and TANF require citizenship or qualified status. Noncitizen voting is already illegal, and Brennan Center research finds it virtually nonexistent. The 'free stuff' narrative is a decades-old scare tactic with no basis in eligibility rules.",
     stab: "Read the eligibility requirements before you rage-post.",
     sources: [
       cite(
@@ -3697,7 +3697,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Courts", "Democracy"],
     theySay: "Activist judges are blocking everything Trump does! Let the president govern!",
     youSay:
-      "Courts aren't activists for ruling on the law — that's their job. When judges block birthright citizenship orders or Schedule F expansions, they're citing the Constitution and the Administrative Procedure Act. CRS documents that every modern president faces judicial review; the difference is how many policies this administration pushes beyond statutory authority. Checks and balances aren't obstruction — they're the design.",
+      "Courts aren't activists for ruling on the law - that's their job. When judges block birthright citizenship orders or Schedule F expansions, they're citing the Constitution and the Administrative Procedure Act. CRS documents that every modern president faces judicial review; the difference is how many policies this administration pushes beyond statutory authority. Checks and balances aren't obstruction - they're the design.",
     stab: "You want a king, not a president. The courts said no.",
     sources: [
       cite(
@@ -3725,7 +3725,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Foreign Policy", "Economy"],
     theySay: "Foreign aid is a waste! We give billions to countries that hate us!",
     youSay:
-      "U.S. foreign assistance is roughly 1% of the federal budget — and most goes to American contractors, NGOs, and allies for security, health, and famine relief. State Department data shows aid buys influence, stabilizes regions that would otherwise produce refugees, and counters adversaries like China. USAID dismantling doesn't save taxpayers money — it cedes global leadership.",
+      "U.S. foreign assistance is roughly 1% of the federal budget - and most goes to American contractors, NGOs, and allies for security, health, and famine relief. State Department data shows aid buys influence, stabilizes regions that would otherwise produce refugees, and counters adversaries like China. USAID dismantling doesn't save taxpayers money - it cedes global leadership.",
     stab: "It's 1% of the budget and 100% of the soft power.",
     sources: [
       cite(
@@ -3753,7 +3753,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Culture Wars", "Economy"],
     theySay: "DEI is reverse racism! It's illegal discrimination against white men!",
     youSay:
-      "DEI programs in federal contracting promote inclusion within existing civil rights law — they don't create quotas. EEOC enforces Title VII for everyone, including white applicants who face actual discrimination. The attack on DEI is a political purge of offices and training, not a legal correction. If someone was illegally denied a job, they already have remedies — what changed is the political will to fire civil servants.",
+      "DEI programs in federal contracting promote inclusion within existing civil rights law - they don't create quotas. EEOC enforces Title VII for everyone, including white applicants who face actual discrimination. The attack on DEI is a political purge of offices and training, not a legal correction. If someone was illegally denied a job, they already have remedies - what changed is the political will to fire civil servants.",
     stab: "They didn't file lawsuits. They fired the investigators.",
     sources: [
       cite(
@@ -3781,12 +3781,12 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Climate", "Economy"],
     theySay: "Green energy causes blackouts! Texas proved renewables don't work!",
     youSay:
-      "Texas's 2021 grid failure was primarily a natural gas supply freeze — EIA data shows gas plants failed at scale while wind outperformed expectations. NOAA documents rising billion-dollar weather disasters that strain every grid regardless of fuel mix. The fix is modernized transmission and storage, not pretending coal plants are immune to ice storms.",
+      "Texas's 2021 grid failure was primarily a natural gas supply freeze - EIA data shows gas plants failed at scale while wind outperformed expectations. NOAA documents rising billion-dollar weather disasters that strain every grid regardless of fuel mix. The fix is modernized transmission and storage, not pretending coal plants are immune to ice storms.",
     stab: "The pipes froze. The turbines didn't cause it.",
     sources: [
       cite(
         "eia_grid_reliability",
-        "Today in Energy — Grid and Fuel Mix",
+        "Today in Energy - Grid and Fuel Mix",
         "U.S. Energy Information Administration",
         "https://www.eia.gov/todayinenergy/detail.php?id=61262",
         "EIA analyzes electricity generation sources and grid reliability factors.",
@@ -3809,7 +3809,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Democracy", "Economy"],
     theySay: "The IRS is a political weapon! They're coming for conservatives!",
     youSay:
-      "IRS enforcement funding from the Inflation Reduction Act targeted high-income tax evasion — Treasury data shows audit rates remain lowest for middle-class filers. Every administration faces accusations of bias; the remedy is adequate staffing and oversight, not defunding enforcement so billionaires skip taxes. Project 2025 explicitly calls for shrinking IRS capacity — that's not neutrality, it's amnesty for the wealthy.",
+      "IRS enforcement funding from the Inflation Reduction Act targeted high-income tax evasion - Treasury data shows audit rates remain lowest for middle-class filers. Every administration faces accusations of bias; the remedy is adequate staffing and oversight, not defunding enforcement so billionaires skip taxes. Project 2025 explicitly calls for shrinking IRS capacity - that's not neutrality, it's amnesty for the wealthy.",
     stab: "They defunded audits of the rich and called it freedom.",
     sources: [
       cite(
@@ -3837,7 +3837,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Economy", "Foreign Policy"],
     theySay: "China owns all our debt! They could crash our economy anytime!",
     youSay:
-      "China holds roughly $800 billion in U.S. Treasury securities — less than 3% of total federal debt and far below Japan's holdings. Treasury's Monthly Treasury Statement shows most U.S. debt is owned domestically by American investors, the Fed, and Social Security. China dumping Treasuries would hurt China's own reserves more than it would give Beijing leverage over Washington.",
+      "China holds roughly $800 billion in U.S. Treasury securities - less than 3% of total federal debt and far below Japan's holdings. Treasury's Monthly Treasury Statement shows most U.S. debt is owned domestically by American investors, the Fed, and Social Security. China dumping Treasuries would hurt China's own reserves more than it would give Beijing leverage over Washington.",
     stab: "They own 3% of the debt, not the country.",
     sources: [
       cite(
@@ -3865,7 +3865,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Crime"],
     theySay: "Red flag laws are a gun grab! They take guns without due process!",
     youSay:
-      "Extreme risk protection orders require court hearings — a judge reviews evidence before any temporary removal, and the respondent can contest it. Giffords Law Center documents that ERPOs are civil proceedings with appeal rights, distinct from criminal confiscation. States with red flag laws have used them to prevent mass shootings and suicides. Due process doesn't mean ignoring warning signs until after a massacre.",
+      "Extreme risk protection orders require court hearings - a judge reviews evidence before any temporary removal, and the respondent can contest it. Giffords Law Center documents that ERPOs are civil proceedings with appeal rights, distinct from criminal confiscation. States with red flag laws have used them to prevent mass shootings and suicides. Due process doesn't mean ignoring warning signs until after a massacre.",
     stab: "A judge signs the order. That's due process.",
     sources: [
       cite(
@@ -3893,7 +3893,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Climate", "Economy"],
     theySay: "EPA regulations kill jobs! We need to slash the green tape!",
     youSay:
-      "EPA cost-benefit analyses consistently show health benefits from clean air rules exceed compliance costs — fewer asthma attacks, premature deaths, and missed workdays. BLS data shows more Americans work in clean energy than in coal mining. Rolling back methane standards and dismissing science advisory boards doesn't create jobs — it transfers healthcare costs onto communities while polluters keep profits.",
+      "EPA cost-benefit analyses consistently show health benefits from clean air rules exceed compliance costs - fewer asthma attacks, premature deaths, and missed workdays. BLS data shows more Americans work in clean energy than in coal mining. Rolling back methane standards and dismissing science advisory boards doesn't create jobs - it transfers healthcare costs onto communities while polluters keep profits.",
     stab: "They counted coal jobs. They ignored hospital bills.",
     sources: [
       cite(
@@ -3921,7 +3921,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Elections", "Immigration"],
     theySay: "The census should only count citizens! Illegals are stealing House seats!",
     youSay:
-      "The Constitution requires counting 'the whole number of persons in each state' — text the Supreme Court has upheld for apportionment. Excluding noncitizens would shift House seats away from diverse states toward rural ones, punishing communities that contribute tax revenue regardless of status. The citizenship question fight wasn't about accuracy — it was about suppressing participation and rigging representation.",
+      "The Constitution requires counting 'the whole number of persons in each state' - text the Supreme Court has upheld for apportionment. Excluding noncitizens would shift House seats away from diverse states toward rural ones, punishing communities that contribute tax revenue regardless of status. The citizenship question fight wasn't about accuracy - it was about suppressing participation and rigging representation.",
     stab: "Read Article I, Section 2. It says persons, not citizens.",
     sources: [
       cite(
@@ -3949,14 +3949,14 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Economy"],
     theySay: "Overtime rules will destroy small businesses! They can't afford it!",
     youSay:
-      "DOL overtime updates extend time-and-a-half pay to salaried workers earning below a threshold — meaning more money in workers' pockets, not corporate bailouts. EPI research shows underpaid salaried employees routinely work 50+ hours without extra pay. Small businesses that rely on exploiting free overtime are complaining about having to pay for labor — that's not a policy failure, that's the point.",
+      "DOL overtime updates extend time-and-a-half pay to salaried workers earning below a threshold - meaning more money in workers' pockets, not corporate bailouts. EPI research shows underpaid salaried employees routinely work 50+ hours without extra pay. Small businesses that rely on exploiting free overtime are complaining about having to pay for labor - that's not a policy failure, that's the point.",
     stab: "If your business model requires unpaid labor, that's the problem.",
     sources: [
       cite(
         "dol_overtime",
         "Overtime Rulemaking",
         "U.S. Department of Labor",
-        "https://www.dol.gov/agencies/whd/overtime/rulemaking",
+        "https://www.dol.gov/agencies/whd/overtime",
         "DOL publishes overtime pay threshold updates and regulatory impact analyses.",
         "2024-01-01"
       ),
@@ -3977,7 +3977,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Foreign Policy"],
     theySay: "NATO is obsolete! Europe doesn't pay their fair share!",
     youSay:
-      "NATO's Article 5 has only been invoked once — for the United States after 9/11. European allies increased defense spending after Russia invaded Ukraine, and U.S. troop deployments in Europe are a fraction of Cold War levels. Calling allies deadbeats while taking their intelligence support and basing rights is negotiation theater, not strategy.",
+      "NATO's Article 5 has only been invoked once - for the United States after 9/11. European allies increased defense spending after Russia invaded Ukraine, and U.S. troop deployments in Europe are a fraction of Cold War levels. Calling allies deadbeats while taking their intelligence support and basing rights is negotiation theater, not strategy.",
     stab: "You want allies to pay more while threatening to abandon them. Pick one.",
     sources: [
       cite(
@@ -4005,7 +4005,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Elections"],
     theySay: "Absentee ballots are how they rig elections! Mail voting is fraud!",
     youSay:
-      "Five states vote entirely by mail with no systemic fraud findings. Heritage Foundation's own database lists vanishingly few prosecuted cases relative to hundreds of millions of ballots cast. Signature verification, barcodes, and bipartisan ballot boards make large-scale mail fraud practically impossible — which is why courts rejected every post-2020 challenge with evidence.",
+      "Five states vote entirely by mail with no systemic fraud findings. Heritage Foundation's own database lists vanishingly few prosecuted cases relative to hundreds of millions of ballots cast. Signature verification, barcodes, and bipartisan ballot boards make large-scale mail fraud practically impossible - which is why courts rejected every post-2020 challenge with evidence.",
     stab: "If mail ballots were rigged, Republicans wouldn't use them too.",
     sources: [
       cite(
@@ -4021,7 +4021,7 @@ export const conversationHelpers: ConversationHelper[] = [
         "Election Fraud Cases",
         "Heritage Foundation",
         "https://www.heritage.org/voterfraud",
-        "Heritage maintains a database of prosecuted election fraud cases — a tiny fraction of total ballots cast.",
+        "Heritage maintains a database of prosecuted election fraud cases - a tiny fraction of total ballots cast.",
         "2024-01-01"
       ),
     ],
@@ -4033,7 +4033,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Culture Wars", "Democracy"],
     theySay: "Pastors should preach politics! The Johnson Amendment is censorship!",
     youSay:
-      "The Johnson Amendment only threatens tax-exempt status when churches explicitly endorse candidates — not when they discuss issues. IRS data shows almost zero enforcement actions against churches. Lifting it would turn congregations into dark-money pipelines, letting billionaires launder political donations through pulpits while keeping donors anonymous.",
+      "The Johnson Amendment only threatens tax-exempt status when churches explicitly endorse candidates - not when they discuss issues. IRS data shows almost zero enforcement actions against churches. Lifting it would turn congregations into dark-money pipelines, letting billionaires launder political donations through pulpits while keeping donors anonymous.",
     stab: "You want free speech or tax-free campaigning? Churches already have the first.",
     sources: [
       cite(
@@ -4061,7 +4061,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Climate"],
     theySay: "NASA wastes money on climate propaganda! Stick to space!",
     youSay:
-      "Earth observation is core NASA mission since the agency's founding — weather satellites, hurricane tracking, and drought monitoring save lives and billions in disaster costs. NOAA and NASA climate data are used by farmers, insurers, and the Pentagon. Calling atmospheric science 'propaganda' doesn't change physics; it just blinds policy to measurable risks.",
+      "Earth observation is core NASA mission since the agency's founding - weather satellites, hurricane tracking, and drought monitoring save lives and billions in disaster costs. NOAA and NASA climate data are used by farmers, insurers, and the Pentagon. Calling atmospheric science 'propaganda' doesn't change physics; it just blinds policy to measurable risks.",
     stab: "You want hurricane warnings without the satellites that issue them?",
     sources: [
       cite(
@@ -4089,7 +4089,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Democracy", "Whataboutism"],
     theySay: "Democrats use executive orders like dictators! Trump is just undoing Biden!",
     youSay:
-      "Trump's Day One rescission of 78 prior orders exceeded any modern transition. CRS tracks executive order volume and scope — unitary executive theory, Schedule F, and birthright citizenship by fiat go far beyond reversing a predecessor. The question isn't who used more EOs; it's which orders violate statute, courts, and constitutional text.",
+      "Trump's Day One rescission of 78 prior orders exceeded any modern transition. CRS tracks executive order volume and scope - unitary executive theory, Schedule F, and birthright citizenship by fiat go far beyond reversing a predecessor. The question isn't who used more EOs; it's which orders violate statute, courts, and constitutional text.",
     stab: "Undoing policy is normal. Rewriting the Constitution by memo isn't.",
     sources: [
       cite(
@@ -4117,7 +4117,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Immigration", "Elections"],
     theySay: "Anchor babies aren't citizens! Deport the whole family!",
     youSay:
-      "The 14th Amendment grants citizenship to all persons born in the United States — text the Supreme Court has upheld for over a century. CRS confirms birthright citizenship cannot be revoked by executive order. Mass deportation of mixed-status families would require abandoning due process and costing billions — while doing nothing to fix a broken immigration system Congress refuses to legislate.",
+      "The 14th Amendment grants citizenship to all persons born in the United States - text the Supreme Court has upheld for over a century. CRS confirms birthright citizenship cannot be revoked by executive order. Mass deportation of mixed-status families would require abandoning due process and costing billions - while doing nothing to fix a broken immigration system Congress refuses to legislate.",
     stab: "You want to repeal the 14th Amendment with a tweet. Good luck with that.",
     sources: [
       cite(
@@ -4145,7 +4145,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Economy"],
     theySay: "The stock market is at record highs! The economy is booming!",
     youSay:
-      "The S&P 500 reflects corporate profits and Fed policy — not grocery bills or rent. BEA data shows GDP growth can coexist with rising inequality; median household wealth lags top-decile asset holders who own most equities. A record market while childcare, housing, and healthcare crush working families isn't a boom — it's a split screen.",
+      "The S&P 500 reflects corporate profits and Fed policy - not grocery bills or rent. BEA data shows GDP growth can coexist with rising inequality; median household wealth lags top-decile asset holders who own most equities. A record market while childcare, housing, and healthcare crush working families isn't a boom - it's a split screen.",
     stab: "Congrats on your portfolio. The checkout line didn't get the memo.",
     sources: [
       cite(
@@ -4173,7 +4173,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Crime"],
     theySay: "Every school shooting happens in a gun-free zone! Arm the teachers!",
     youSay:
-      "Most mass shootings occur where guns are already present — homes, workplaces, churches. Giffords research shows armed civilians rarely stop active shooters and police cite crossfire risks when untrained responders open fire. The gun-free zone myth ignores that federal law already allows states to arm school staff — and most districts reject it after insurance and training costs.",
+      "Most mass shootings occur where guns are already present - homes, workplaces, churches. Giffords research shows armed civilians rarely stop active shooters and police cite crossfire risks when untrained responders open fire. The gun-free zone myth ignores that federal law already allows states to arm school staff - and most districts reject it after insurance and training costs.",
     stab: "More guns in chaos isn't a plan. It's a liability waiver.",
     sources: [
       cite(
@@ -4201,7 +4201,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Economy", "Education"],
     theySay: "Public sector unions bloat budgets! Teachers unions protect bad apples!",
     youSay:
-      "BLS data shows public-sector union density at historic lows while class sizes rise and teacher pay stagnates. EPI research links union bargaining to smaller teacher-student ratios and lower turnover — not budget bloat. Attacking collective bargaining is a cost-cutting strategy that shifts pain to classrooms while tax cuts for the wealthy stay off the table.",
+      "BLS data shows public-sector union density at historic lows while class sizes rise and teacher pay stagnates. EPI research links union bargaining to smaller teacher-student ratios and lower turnover - not budget bloat. Attacking collective bargaining is a cost-cutting strategy that shifts pain to classrooms while tax cuts for the wealthy stay off the table.",
     stab: "You want cheaper schools. Teachers want functioning ones. Those aren't the same fight.",
     sources: [
       cite(
@@ -4229,7 +4229,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Healthcare", "Culture Wars"],
     theySay: "Democrats block over-the-counter birth control! They want abortion, not choice!",
     youSay:
-      "FDA approved the first OTC birth control pill in 2023 with bipartisan support. Democrats expanded ACA contraceptive coverage while red states sue to restrict it. Conflating OTC access with abortion policy is a culture-war bait-and-switch — the same politicians banning IVF and threatening contraceptive coverage can't claim they're the pro-choice side on birth control.",
+      "FDA approved the first OTC birth control pill in 2023 with bipartisan support. Democrats expanded ACA contraceptive coverage while red states sue to restrict it. Conflating OTC access with abortion policy is a culture-war bait-and-switch - the same politicians banning IVF and threatening contraceptive coverage can't claim they're the pro-choice side on birth control.",
     stab: "You can't be pro-OTC birth control and anti-ACA contraceptive mandates at once.",
     sources: [
       cite(
@@ -4257,8 +4257,8 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Economy", "Whataboutism"],
     theySay: "Social Security is going bankrupt! Democrats stole the trust fund!",
     youSay:
-      "Social Security's trust fund is a legal accounting mechanism — not a piggy bank Congress raided. SSA actuaries publish annual projections; solvency gaps are closed through modest revenue adjustments Congress refuses to pass because billionaires oppose payroll tax hikes on high earners. Calling it 'bankrupt' is a pretext to cut benefits voters already paid for.",
-    stab: "You want to 'save' Social Security by cutting it. That's not math — it's theft.",
+      "Social Security's trust fund is a legal accounting mechanism - not a piggy bank Congress raided. SSA actuaries publish annual projections; solvency gaps are closed through modest revenue adjustments Congress refuses to pass because billionaires oppose payroll tax hikes on high earners. Calling it 'bankrupt' is a pretext to cut benefits voters already paid for.",
+    stab: "You want to 'save' Social Security by cutting it. That's not math - it's theft.",
     sources: [
       cite(
         "ssa_trustees",
@@ -4285,8 +4285,8 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Democracy", "Jan 6"],
     theySay: "The FBI is a political weapon! They only go after conservatives!",
     youSay:
-      "DOJ prosecuted more than 1,500 January 6 defendants using public court records — not secret tribunals. FBI crime statistics and Capitol breach case listings are published online. When Trump's DOJ dropped cases or pardoned rioters, that was political — the original prosecutions followed evidence and plea agreements documented in federal dockets.",
-    stab: "You want law enforcement — until it enforces law against your side.",
+      "DOJ prosecuted more than 1,500 January 6 defendants using public court records - not secret tribunals. FBI crime statistics and Capitol breach case listings are published online. When Trump's DOJ dropped cases or pardoned rioters, that was political - the original prosecutions followed evidence and plea agreements documented in federal dockets.",
+    stab: "You want law enforcement - until it enforces law against your side.",
     sources: [
       cite(
         "doj_j6_cases",
@@ -4313,7 +4313,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Economy", "Whataboutism"],
     theySay: "Biden caused all inflation! Trump fixed it instantly!",
     youSay:
-      "Global inflation spiked after pandemic supply shocks and Russia's Ukraine invasion — not a single U.S. executive order. BLS CPI data shows disinflation through 2024–2025 as supply chains normalized. Tariffs Trump imposed are themselves inflationary taxes on imports, per Tax Foundation analysis. Blaming one president ignores Federal Reserve policy and worldwide commodity markets.",
+      "Global inflation spiked after pandemic supply shocks and Russia's Ukraine invasion - not a single U.S. executive order. BLS CPI data shows disinflation through 2024-2025 as supply chains normalized. Tariffs Trump imposed are themselves inflationary taxes on imports, per Tax Foundation analysis. Blaming one president ignores Federal Reserve policy and worldwide commodity markets.",
     stab: "World events move prices. Your meme doesn't.",
     sources: [
       cite(
@@ -4341,7 +4341,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Education", "Culture Wars"],
     theySay: "CRT teaches kids to hate white people! It's Marxist indoctrination!",
     youSay:
-      "Critical race theory is a graduate-level legal framework — not a K-12 curriculum. Brookings research on state gag orders shows the moral panic targets any honest history instruction. No federal mandate requires CRT in classrooms; red-state laws instead ban books and discussion of racism, which PEN America documents as educational censorship.",
+      "Critical race theory is a graduate-level legal framework - not a K-12 curriculum. Brookings research on state gag orders shows the moral panic targets any honest history instruction. No federal mandate requires CRT in classrooms; red-state laws instead ban books and discussion of racism, which PEN America documents as educational censorship.",
     stab: "You can't name a single fourth-grade CRT textbook. Because it doesn't exist.",
     sources: [
       cite(
@@ -4369,7 +4369,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Climate", "Economy"],
     theySay: "Wind and solar caused the Texas blackout! Renewables are unreliable!",
     youSay:
-      "EIA post-mortems of the 2021 Texas freeze show gas plants failed at scale when equipment froze — wind outperformed grid operator expectations. Every grid needs winterization and storage; blaming renewables is fossil-fuel propaganda to delay transmission upgrades. NOAA documents rising extreme weather that strains all generation types.",
+      "EIA post-mortems of the 2021 Texas freeze show gas plants failed at scale when equipment froze - wind outperformed grid operator expectations. Every grid needs winterization and storage; blaming renewables is fossil-fuel propaganda to delay transmission upgrades. NOAA documents rising extreme weather that strains all generation types.",
     stab: "Gas plants froze. You blamed the turbines. Follow the EIA data.",
     sources: [
       cite(
@@ -4397,7 +4397,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Courts", "Democracy"],
     theySay: "Democrats are court-packing radicals! The Supreme Court is just correcting activism!",
     youSay:
-      "The current Court overturned 50 years of abortion precedent, expanded presidential immunity, and ended race-conscious college admissions — without public congressional mandate. CRS tracks the shrinking docket of meritorious petitions while high-profile ideological cases advance. Calling it 'correction' after billionaire-funded judicial selection is politics, not neutral jurisprudence.",
+      "The current Court overturned 50 years of abortion precedent, expanded presidential immunity, and ended race-conscious college admissions - without public congressional mandate. CRS tracks the shrinking docket of meritorious petitions while high-profile ideological cases advance. Calling it 'correction' after billionaire-funded judicial selection is politics, not neutral jurisprudence.",
     stab: "You liked judicial activism when it delivered your policy wins.",
     sources: [
       cite(
@@ -4425,7 +4425,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Immigration", "Economy"],
     theySay: "Immigrants drain welfare! They get free everything while we pay!",
     youSay:
-      "Undocumented immigrants are largely ineligible for federal means-tested benefits — and pay billions in taxes via ITIN filings without receiving Social Security payouts. Cato Institute immigration research documents lower crime rates and net fiscal contributions from immigrant households. The 'free ride' narrative collapses when you read eligibility rules in statute.",
+      "Undocumented immigrants are largely ineligible for federal means-tested benefits - and pay billions in taxes via ITIN filings without receiving Social Security payouts. Cato Institute immigration research documents lower crime rates and net fiscal contributions from immigrant households. The 'free ride' narrative collapses when you read eligibility rules in statute.",
     stab: "They pay taxes for benefits they can't claim. You're mad at a ghost.",
     sources: [
       cite(
@@ -4453,7 +4453,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Healthcare"],
     theySay: "Obamacare has death panels! Government will ration your care!",
     youSay:
-      "PolitiFact named 'death panels' the 2009 Lie of the Year — the claim misrepresented end-of-life counseling as government euthanasia boards. ACA premium tax credits expanded coverage to millions; KFF documents what happens when those credits expire. The real rationing is unaffordable deductibles in a for-profit system — not Medicare advisory boards that were never enacted.",
+      "PolitiFact named 'death panels' the 2009 Lie of the Year - the claim misrepresented end-of-life counseling as government euthanasia boards. ACA premium tax credits expanded coverage to millions; KFF documents what happens when those credits expire. The real rationing is unaffordable deductibles in a for-profit system - not Medicare advisory boards that were never enacted.",
     stab: "Lie of the Year. Still recycling it fifteen years later.",
     sources: [
       cite(
@@ -4481,7 +4481,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Economy", "Whataboutism"],
     theySay: "Trump's tax cuts paid for themselves! Revenue went up!",
     youSay:
-      "CBO scored the 2017 Tax Cuts and Jobs Act as adding $1.9 trillion to deficits over a decade — revenue bumps from economic growth did not offset rate cuts for corporations and wealthy estates. Treasury monthly statements show deficits rising with interest costs. 'Paying for themselves' is supply-side marketing, not fiscal accounting.",
+      "CBO scored the 2017 Tax Cuts and Jobs Act as adding $1.9 trillion to deficits over a decade - revenue bumps from economic growth did not offset rate cuts for corporations and wealthy estates. Treasury monthly statements show deficits rising with interest costs. 'Paying for themselves' is supply-side marketing, not fiscal accounting.",
     stab: "CBO ran the numbers. Your bumper sticker didn't.",
     sources: [
       cite(
@@ -4509,7 +4509,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Elections", "Media"],
     theySay: "Dominion machines flipped votes! The algorithms are rigged!",
     youSay:
-      "Dominion won defamation settlements from networks that aired conspiracy theories — with no evidence of vote flipping in any certified audit. AP's 2020 Georgia review found no fraudulent ballots. Voting machines produce paper records recountable by hand; the 'algorithm' claim ignores that bipartisan county boards certify results independently.",
+      "Dominion won defamation settlements from networks that aired conspiracy theories - with no evidence of vote flipping in any certified audit. AP's 2020 Georgia review found no fraudulent ballots. Voting machines produce paper records recountable by hand; the 'algorithm' claim ignores that bipartisan county boards certify results independently.",
     stab: "Fox paid for this lie. You got it for free.",
     sources: [
       cite(
@@ -4537,7 +4537,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Climate"],
     theySay: "If global warming is real, why is it snowing? Climate change is a hoax!",
     youSay:
-      "Weather is what happens today; climate is the long-term pattern. NOAA documents rising global temperatures and increasing billion-dollar disaster frequency — winter storms still occur, but heat records outpace cold records by widening margins. IPCC explains that a warmer atmosphere holds more moisture, which can intensify both droughts and blizzards. Confusing a snow day with planetary physics is the hoax.",
+      "Weather is what happens today; climate is the long-term pattern. NOAA documents rising global temperatures and increasing billion-dollar disaster frequency - winter storms still occur, but heat records outpace cold records by widening margins. IPCC explains that a warmer atmosphere holds more moisture, which can intensify both droughts and blizzards. Confusing a snow day with planetary physics is the hoax.",
     stab: "Your thermometer reads the whole planet, not your driveway.",
     sources: [
       cite(
@@ -4565,7 +4565,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Economy", "Whataboutism"],
     theySay: "Reagan fixed the economy! Inflation was terrible until he cut taxes!",
     youSay:
-      "Inflation peaked in 1980 under Carter and fell under Volcker's Federal Reserve rate hikes — years before Reagan's 1981 tax cuts took full effect. CBO and BEA data show the recovery was driven by monetary policy and oil price collapse, not supply-side magic. Reagan also tripled the national debt and raised taxes eleven times. Credit the Fed chair, not the Hollywood narrative.",
+      "Inflation peaked in 1980 under Carter and fell under Volcker's Federal Reserve rate hikes - years before Reagan's 1981 tax cuts took full effect. CBO and BEA data show the recovery was driven by monetary policy and oil price collapse, not supply-side magic. Reagan also tripled the national debt and raised taxes eleven times. Credit the Fed chair, not the Hollywood narrative.",
     stab: "Volcker broke inflation. Reagan took the credit.",
     sources: [
       cite(
@@ -4593,7 +4593,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Economy", "Culture Wars"],
     theySay: "California is communist! They're a failed socialist state!",
     youSay:
-      "California has the fifth-largest economy on Earth — larger than most nations — driven by tech, agriculture, and entertainment. It runs budget surpluses in strong years and ranks among the top states for venture capital and patent filings. Calling a capitalist powerhouse with more billionaires than most countries 'communist' is propaganda, not economics. Policy disagreements aren't gulags.",
+      "California has the fifth-largest economy on Earth - larger than most nations - driven by tech, agriculture, and entertainment. It runs budget surpluses in strong years and ranks among the top states for venture capital and patent filings. Calling a capitalist powerhouse with more billionaires than most countries 'communist' is propaganda, not economics. Policy disagreements aren't gulags.",
     stab: "Communist states don't host more billionaires than France.",
     sources: [
       cite(
@@ -4621,7 +4621,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Crime"],
     theySay: "Guns don't kill people, people kill people! It's not the gun!",
     youSay:
-      "People with guns kill far more efficiently than people without them. States with higher gun ownership rates correlate with higher firearm mortality — FBI UCR and CDC data confirm guns are the leading method in homicides and suicides. The slogan treats a designed killing tool as morally neutral hardware. We regulate cars, medicine, and airplanes because design matters.",
+      "People with guns kill far more efficiently than people without them. States with higher gun ownership rates correlate with higher firearm mortality - FBI UCR and CDC data confirm guns are the leading method in homicides and suicides. The slogan treats a designed killing tool as morally neutral hardware. We regulate cars, medicine, and airplanes because design matters.",
     stab: "Nobody says 'cars don't crash, drivers crash' to ban seatbelts.",
     sources: [
       cite(
@@ -4649,7 +4649,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Democracy"],
     theySay: "The federal government is unconstitutional overreach! Read the Tenth Amendment!",
     youSay:
-      "The Tenth Amendment reserves powers not delegated to the federal government — but the Commerce Clause, Supremacy Clause, and two centuries of Supreme Court precedent define broad federal authority over civil rights, interstate commerce, and elections. States' rights were the legal argument for segregation; modern 'overreach' claims usually target protections voters want nationally. CRS explains the actual constitutional framework.",
+      "The Tenth Amendment reserves powers not delegated to the federal government - but the Commerce Clause, Supremacy Clause, and two centuries of Supreme Court precedent define broad federal authority over civil rights, interstate commerce, and elections. States' rights were the legal argument for segregation; modern 'overreach' claims usually target protections voters want nationally. CRS explains the actual constitutional framework.",
     stab: "States' rights was the slogan for segregation too.",
     sources: [
       cite(
@@ -4677,7 +4677,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Foreign Policy", "Culture Wars"],
     theySay: "Woke generals lost Afghanistan! DEI weakened our military!",
     youSay:
-      "The Afghanistan withdrawal was negotiated by the Trump administration with the Taliban — the Doha agreement set the 2021 exit date. DoD readiness metrics and GAO audits measure equipment, training, and personnel — not diversity training slides. Blaming inclusion programs for a twenty-year war strategy failure is culture-war deflection from bipartisan policy mistakes.",
+      "The Afghanistan withdrawal was negotiated by the Trump administration with the Taliban - the Doha agreement set the 2021 exit date. DoD readiness metrics and GAO audits measure equipment, training, and personnel - not diversity training slides. Blaming inclusion programs for a twenty-year war strategy failure is culture-war deflection from bipartisan policy mistakes.",
     stab: "Trump signed the withdrawal deal. Biden executed it.",
     sources: [
       cite(
@@ -4705,7 +4705,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Economy"],
     theySay: "Amazon paid zero taxes! Corporations don't pay their fair share!",
     youSay:
-      "Amazon's effective tax rate has been low some years due to R&D credits, accelerated depreciation, and stock-based compensation deductions — legal provisions Congress wrote. The fix isn't outrage at one company; it's closing loopholes and restoring corporate minimum taxes. CBO and Treasury data show the corporate share of federal revenue has fallen for decades while payroll taxes rose. Target the law, not the headline.",
+      "Amazon's effective tax rate has been low some years due to R&D credits, accelerated depreciation, and stock-based compensation deductions - legal provisions Congress wrote. The fix isn't outrage at one company; it's closing loopholes and restoring corporate minimum taxes. CBO and Treasury data show the corporate share of federal revenue has fallen for decades while payroll taxes rose. Target the law, not the headline.",
     stab: "Congress wrote the loopholes. Be mad at them.",
     sources: [
       cite(
@@ -4733,7 +4733,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Culture Wars", "Democracy"],
     theySay: "America is a meritocracy! Racism ended, anyone can make it!",
     youSay:
-      "Wealth inequality by race persists across every income percentile — Federal Reserve Survey of Consumer Finances shows median white household wealth multiples above Black and Hispanic households. KFF documents racial disparities in maternal mortality and insurance access. 'Meritocracy' without acknowledging starting-line gaps is ideology, not sociology.",
+      "Wealth inequality by race persists across every income percentile - Federal Reserve Survey of Consumer Finances shows median white household wealth multiples above Black and Hispanic households. KFF documents racial disparities in maternal mortality and insurance access. 'Meritocracy' without acknowledging starting-line gaps is ideology, not sociology.",
     stab: "Meritocracy with unequal starting lines isn't merit.",
     sources: [
       cite(
@@ -4761,7 +4761,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Climate", "Media"],
     theySay: "A senator brought a snowball to Congress! That proves global warming is fake!",
     youSay:
-      "One winter storm doesn't refute decades of NASA, NOAA, and IPCC temperature records showing accelerating warming. The senator's stunt ignored that the hottest years on record cluster in the last decade. Climate science measures planetary trends — not whether it snowed in Washington in February. Stunts aren't peer review.",
+      "One winter storm doesn't refute decades of NASA, NOAA, and IPCC temperature records showing accelerating warming. The senator's stunt ignored that the hottest years on record cluster in the last decade. Climate science measures planetary trends - not whether it snowed in Washington in February. Stunts aren't peer review.",
     stab: "A snowball isn't a temperature dataset.",
     sources: [
       cite(
@@ -4789,7 +4789,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Culture Wars", "Education"],
     theySay: "They're putting pedophile books in school libraries! Groomers everywhere!",
     youSay:
-      "ALA documents that the vast majority of challenged books are LGBTQ-themed literature and historical works — not pornography. PEN America's research shows gag-order laws target discussion of race, identity, and history. Calling librarians groomers is a moral panic designed to purge shelves, not protect children. Actual child abuse is prosecuted under existing criminal law.",
+      "ALA documents that the vast majority of challenged books are LGBTQ-themed literature and historical works - not pornography. PEN America's research shows gag-order laws target discussion of race, identity, and history. Calling librarians groomers is a moral panic designed to purge shelves, not protect children. Actual child abuse is prosecuted under existing criminal law.",
     stab: "You can't name a single 'pedophile book' that survived a court challenge.",
     sources: [
       cite(
@@ -4817,8 +4817,8 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Economy", "Whataboutism"],
     theySay: "Welfare queens drive Cadillacs! Democrats want free stuff for lazy people!",
     youSay:
-      "The 'welfare queen' stereotype came from a single fraud case Reagan exaggerated in 1976 — not representative data. CBO SNAP reports show most beneficiaries are children, elderly, or working poor; fraud rates are under 2%. Temporary Assistance for Families is time-limited and tiny relative to corporate subsidies. The moral panic targets poor people while ignoring billion-dollar defense contractor waste documented by GAO.",
-    stab: "You hate welfare — but love corporate welfare.",
+      "The 'welfare queen' stereotype came from a single fraud case Reagan exaggerated in 1976 - not representative data. CBO SNAP reports show most beneficiaries are children, elderly, or working poor; fraud rates are under 2%. Temporary Assistance for Families is time-limited and tiny relative to corporate subsidies. The moral panic targets poor people while ignoring billion-dollar defense contractor waste documented by GAO.",
+    stab: "You hate welfare - but love corporate welfare.",
     sources: [
       cite(
         "cbo_snap",
@@ -4845,7 +4845,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Culture Wars", "Media"],
     theySay: "You can't joke about anything anymore! Comedy is dead because of PC culture!",
     youSay:
-      "Comedians still sell out arenas and stream specials — the 'you can't joke' claim is nostalgia, not economics. What changed is audience backlash to punching down at marginalized groups, which is market feedback, not government censorship. PEN America documents actual speech restrictions in state gag-order laws — those are Republican-led book bans and classroom speech limits, not liberal college kids on Twitter.",
+      "Comedians still sell out arenas and stream specials - the 'you can't joke' claim is nostalgia, not economics. What changed is audience backlash to punching down at marginalized groups, which is market feedback, not government censorship. PEN America documents actual speech restrictions in state gag-order laws - those are Republican-led book bans and classroom speech limits, not liberal college kids on Twitter.",
     stab: "You're not banned. Your bit just isn't funny.",
     sources: [
       cite(
@@ -4873,7 +4873,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Elections", "Immigration"],
     theySay: "Millions of illegals voted! That's why Democrats want open borders!",
     youSay:
-      "Brennan Center research finds noncitizen voting is extraordinarily rare — prosecuted cases number in the dozens nationwide, not millions. The SAVE Act and similar proposals would purge eligible citizens from rolls using error-prone databases. Noncitizens already face deportation and felony charges for voting. The claim exists to justify voter suppression, not to fix a documented problem.",
+      "Brennan Center research finds noncitizen voting is extraordinarily rare - prosecuted cases number in the dozens nationwide, not millions. The SAVE Act and similar proposals would purge eligible citizens from rolls using error-prone databases. Noncitizens already face deportation and felony charges for voting. The claim exists to justify voter suppression, not to fix a documented problem.",
     stab: "Name one verified million-vote fraud case. You can't.",
     sources: [
       cite(
@@ -4901,7 +4901,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Climate", "Economy"],
     theySay: "Coal keeps the lights on! Green energy can't replace fossil fuels!",
     youSay:
-      "U.S. coal generation has declined for fifteen years while renewables and gas filled the gap — EIA data shows wind and solar are the fastest-growing sources. Grid reliability issues in Texas were tied to gas and coal plant failures during freezes, not renewables alone. Climate mobilization invests in storage and transmission so clean power scales — clinging to coal is nostalgia subsidized by lobbyists.",
+      "U.S. coal generation has declined for fifteen years while renewables and gas filled the gap - EIA data shows wind and solar are the fastest-growing sources. Grid reliability issues in Texas were tied to gas and coal plant failures during freezes, not renewables alone. Climate mobilization invests in storage and transmission so clean power scales - clinging to coal is nostalgia subsidized by lobbyists.",
     stab: "Coal jobs declined. Renewables didn't.",
     sources: [
       cite(
@@ -4929,7 +4929,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Economy"],
     theySay: "Right-to-work states are freer! Unions force people to pay dues!",
     youSay:
-      "Right-to-work laws let workers free-ride on union-negotiated contracts without paying representation costs — BLS data shows union states have higher median wages and better benefits. The 17% union wage premium isn't coercion; it's collective bargaining power. Calling it 'freedom' is Orwellian when the goal is defunding the only institution that negotiates against CEOs.",
+      "Right-to-work laws let workers free-ride on union-negotiated contracts without paying representation costs - BLS data shows union states have higher median wages and better benefits. The 17% union wage premium isn't coercion; it's collective bargaining power. Calling it 'freedom' is Orwellian when the goal is defunding the only institution that negotiates against CEOs.",
     stab: "Freedom to earn less isn't freedom.",
     sources: [
       cite(
@@ -4957,7 +4957,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Immigration", "Media"],
     theySay: "Biden had open borders! Trump secured the border in one day!",
     youSay:
-      "Border apprehensions fluctuated under both administrations — CBP publishes monthly data showing enforcement continued throughout Biden's term. Asylum law requires due process, not instant deportation. The 'open borders' narrative ignores record deportations, Title 42 expulsions, and bipartisan funding fights. One executive order doesn't erase geography, cartel economics, or congressional appropriations.",
+      "Border apprehensions fluctuated under both administrations - CBP publishes monthly data showing enforcement continued throughout Biden's term. Asylum law requires due process, not instant deportation. The 'open borders' narrative ignores record deportations, Title 42 expulsions, and bipartisan funding fights. One executive order doesn't erase geography, cartel economics, or congressional appropriations.",
     stab: "Open borders with a million deportations? Pick a lane.",
     sources: [
       cite(
@@ -4985,12 +4985,12 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Culture Wars", "Education"],
     theySay: "They removed God from schools! That's why society is falling apart!",
     youSay:
-      "The First Amendment prohibits public schools from endorsing religion — Engel v. Vitale settled that in 1962. Students can still pray privately; schools can't lead sectarian worship with tax dollars. Correlation isn't causation: countries with secular education often outperform the U.S. on violence and literacy metrics. The claim is culture-war nostalgia, not constitutional restoration.",
+      "The First Amendment prohibits public schools from endorsing religion - Engel v. Vitale settled that in 1962. Students can still pray privately; schools can't lead sectarian worship with tax dollars. Correlation isn't causation: countries with secular education often outperform the U.S. on violence and literacy metrics. The claim is culture-war nostalgia, not constitutional restoration.",
     stab: "Public schools aren't churches. That's the point.",
     sources: [
       cite(
         "congress_first_amendment",
-        "U.S. Constitution — First Amendment",
+        "U.S. Constitution - First Amendment",
         "Library of Congress",
         "https://constitution.congress.gov/constitution/amendment-1/",
         "Congress.gov hosts the authenticated Constitution and establishment clause text.",
@@ -5013,7 +5013,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Crime"],
     theySay: "Bail reform caused the crime wave! Letting criminals out is insane!",
     youSay:
-      "BJS victimization surveys show property and violent crime trends are complex — blaming bail reform requires isolating one policy in multivariate data. Cash bail jails poor people pretrial regardless of risk; reform targets wealth-based detention. Cities that reformed bail didn't uniformly see spikes; many factors include pandemic disruptions and gun availability. Fearmongering substitutes anecdotes for BJS statistics.",
+      "BJS victimization surveys show property and violent crime trends are complex - blaming bail reform requires isolating one policy in multivariate data. Cash bail jails poor people pretrial regardless of risk; reform targets wealth-based detention. Cities that reformed bail didn't uniformly see spikes; many factors include pandemic disruptions and gun availability. Fearmongering substitutes anecdotes for BJS statistics.",
     stab: "Rich defendants buy freedom today. You OK with that?",
     sources: [
       cite(
@@ -5041,7 +5041,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Foreign Policy", "Culture Wars"],
     theySay: "Woke recruiting ads made the military weak! Nobody wants to join anymore!",
     youSay:
-      "DoD recruiting shortfalls correlate with low unemployment, obesity rates, and education requirements — not diversity ads. GAO readiness reports measure equipment and training, not culture-war memes. The all-volunteer force missed goals under Trump too. Blaming inclusion for recruitment math ignores compensation, deployment tempo, and civilian job competition documented in defense workforce studies.",
+      "DoD recruiting shortfalls correlate with low unemployment, obesity rates, and education requirements - not diversity ads. GAO readiness reports measure equipment and training, not culture-war memes. The all-volunteer force missed goals under Trump too. Blaming inclusion for recruitment math ignores compensation, deployment tempo, and civilian job competition documented in defense workforce studies.",
     stab: "Recruiting failed before the ads. Check the data.",
     sources: [
       cite(
@@ -5069,7 +5069,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Media", "Democracy"],
     theySay: "Elon saved free speech! Billionaires are the last defense against censorship!",
     youSay:
-      "A billionaire owning a platform isn't free speech — it's private censorship with a blue checkmark. When owners throttle journalists, boost partisan accounts, and fire moderation teams, that's corporate control, not the First Amendment. Sunlight Foundation and Pew document how concentrated media ownership shapes discourse. Democracy needs pluralistic platforms and antitrust — not oligarchs cosplaying as Founding Fathers.",
+      "A billionaire owning a platform isn't free speech - it's private censorship with a blue checkmark. When owners throttle journalists, boost partisan accounts, and fire moderation teams, that's corporate control, not the First Amendment. Sunlight Foundation and Pew document how concentrated media ownership shapes discourse. Democracy needs pluralistic platforms and antitrust - not oligarchs cosplaying as Founding Fathers.",
     stab: "Free speech isn't one guy owning the town square.",
     sources: [
       cite(
@@ -5097,7 +5097,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Culture Wars", "Courts"],
     theySay: "The baker shouldn't be forced to bake a gay cake! Religious freedom!",
     youSay:
-      "Public accommodations laws have required businesses to serve all customers since the Civil Rights Act — religion doesn't exempt you from anti-discrimination statutes. Masterpiece Cakeshop was narrowly decided on commission bias, not a blanket license to refuse LGBTQ customers. When florists, photographers, and bakers pick and choose, they're re-litigating lunch-counter segregation with a cross on the wall.",
+      "Public accommodations laws have required businesses to serve all customers since the Civil Rights Act - religion doesn't exempt you from anti-discrimination statutes. Masterpiece Cakeshop was narrowly decided on commission bias, not a blanket license to refuse LGBTQ customers. When florists, photographers, and bakers pick and choose, they're re-litigating lunch-counter segregation with a cross on the wall.",
     stab: "Your religion doesn't get to veto civil rights law.",
     sources: [
       cite(
@@ -5125,7 +5125,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Education", "Media"],
     theySay: "PragerU teaches real history! Schools are lying to kids!",
     youSay:
-      "PragerU is a conservative advocacy nonprofit, not an accredited curriculum publisher — historians and education researchers have documented factual errors in its videos. Florida's approval of PragerU materials in schools is a political choice, not academic consensus. Real history education cites primary sources, peer review, and multiple perspectives — not five-minute opinion clips funded by donors with a partisan agenda.",
+      "PragerU is a conservative advocacy nonprofit, not an accredited curriculum publisher - historians and education researchers have documented factual errors in its videos. Florida's approval of PragerU materials in schools is a political choice, not academic consensus. Real history education cites primary sources, peer review, and multiple perspectives - not five-minute opinion clips funded by donors with a partisan agenda.",
     stab: "A YouTube channel isn't a history department.",
     sources: [
       cite(
@@ -5153,7 +5153,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Healthcare", "Whataboutism"],
     theySay: "Fauci created COVID in a lab! He funded the Wuhan lab!",
     youSay:
-      "NIH funded broad coronavirus research through EcoHealth Alliance — standard pandemic-preparedness work predating COVID-19. Multiple intelligence reviews found no consensus that the virus was engineered. Conflating grant oversight with 'creating' a pandemic is conspiracy, not epidemiology. GAO and HHS OIG audit grant compliance; they don't support lab-leak certainty claims repeated in campaign ads.",
+      "NIH funded broad coronavirus research through EcoHealth Alliance - standard pandemic-preparedness work predating COVID-19. Multiple intelligence reviews found no consensus that the virus was engineered. Conflating grant oversight with 'creating' a pandemic is conspiracy, not epidemiology. GAO and HHS OIG audit grant compliance; they don't support lab-leak certainty claims repeated in campaign ads.",
     stab: "Grants aren't bioweapons. Show the proof.",
     sources: [
       cite(
@@ -5181,7 +5181,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Crime", "Jan 6"],
     theySay: "Portland had an anarchist zone for months! Democrats said nothing!",
     youSay:
-      "The CHOP/CHAZ occupation in Seattle lasted weeks, not months — local police cleared it after shootings. Portland protests involved property damage but were not 'lawless zones' exempt from prosecution; hundreds faced charges. Comparing a city block occupation to a coordinated attack on the Capitol certification is whataboutism. DOJ prosecuted both — the scale and target of January 6 were categorically different.",
+      "The CHOP/CHAZ occupation in Seattle lasted weeks, not months - local police cleared it after shootings. Portland protests involved property damage but were not 'lawless zones' exempt from prosecution; hundreds faced charges. Comparing a city block occupation to a coordinated attack on the Capitol certification is whataboutism. DOJ prosecuted both - the scale and target of January 6 were categorically different.",
     stab: "A city block isn't the U.S. Capitol.",
     sources: [
       cite(
@@ -5209,7 +5209,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Climate", "Economy"],
     theySay: "Green energy will collapse the grid! Wind and solar can't keep the lights on!",
     youSay:
-      "EIA data shows renewables are the fastest-growing generation source while grid operators invest in storage and transmission to manage intermittency. Texas 2021 blackouts were driven primarily by gas plant failures in freezing weather — not wind alone. Every serious decarbonization pathway pairs renewables with storage, demand response, and grid modernization. 'The grid will fail' is a delay tactic from incumbents, not a planning document.",
+      "EIA data shows renewables are the fastest-growing generation source while grid operators invest in storage and transmission to manage intermittency. Texas 2021 blackouts were driven primarily by gas plant failures in freezing weather - not wind alone. Every serious decarbonization pathway pairs renewables with storage, demand response, and grid modernization. 'The grid will fail' is a delay tactic from incumbents, not a planning document.",
     stab: "Texas froze because gas failed. Not wind.",
     sources: [
       cite(
@@ -5237,12 +5237,12 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Crime", "Courts"],
     theySay: "Shall not be infringed! The Second Amendment is absolute!",
     youSay:
-      "Heller recognized an individual right to bear arms but explicitly allowed prohibitions on concealed carry, felon possession, and sensitive places like schools. 'Well regulated Militia' appears in the text Congress ratified. Every developed democracy with lower gun death rates regulates firearms — background checks, safe storage, and assault-weapon limits are constitutional under current precedent. Absolutism isn't originalism; it's marketing.",
+      "Heller recognized an individual right to bear arms but explicitly allowed prohibitions on concealed carry, felon possession, and sensitive places like schools. 'Well regulated Militia' appears in the text Congress ratified. Every developed democracy with lower gun death rates regulates firearms - background checks, safe storage, and assault-weapon limits are constitutional under current precedent. Absolutism isn't originalism; it's marketing.",
     stab: "Even Scalia said felons can't have guns.",
     sources: [
       cite(
         "congress_2a",
-        "U.S. Constitution — Second Amendment",
+        "U.S. Constitution - Second Amendment",
         "Library of Congress",
         "https://constitution.congress.gov/constitution/amendment-2/",
         "Congress.gov hosts the authenticated Second Amendment text.",
@@ -5265,7 +5265,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Culture Wars", "Courts"],
     theySay: "Marriage is one man and one woman! Obergefell was judicial activism!",
     youSay:
-      "Obergefell held that marriage is a fundamental right — denying it to same-sex couples violated equal protection. Public support for marriage equality crossed 70% years ago. Re-litigating settled precedent threatens adoption rights, hospital visitation, and spousal benefits for millions of families. 'Traditional marriage' rhetoric was identical to the arguments against Loving v. Virginia — courts rejected both.",
+      "Obergefell held that marriage is a fundamental right - denying it to same-sex couples violated equal protection. Public support for marriage equality crossed 70% years ago. Re-litigating settled precedent threatens adoption rights, hospital visitation, and spousal benefits for millions of families. 'Traditional marriage' rhetoric was identical to the arguments against Loving v. Virginia - courts rejected both.",
     stab: "The Court settled this. Your marriage isn't threatened.",
     sources: [
       cite(
@@ -5293,7 +5293,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Economy", "Whataboutism"],
     theySay: "Democrats always raise your taxes! Republicans cut them!",
     youSay:
-      "CBO and Treasury data show the 2017 Tax Cuts and Jobs Act disproportionately benefited top earners while adding trillions to deficits. Biden pledged no tax hikes on households under $400K and signed legislation extending ACA subsidies. 'Tax cuts' that expire for workers but not corporations aren't middle-class wins — they're timed campaign gifts funded by debt. Check the distributional tables, not the rally signs.",
+      "CBO and Treasury data show the 2017 Tax Cuts and Jobs Act disproportionately benefited top earners while adding trillions to deficits. Biden pledged no tax hikes on households under $400K and signed legislation extending ACA subsidies. 'Tax cuts' that expire for workers but not corporations aren't middle-class wins - they're timed campaign gifts funded by debt. Check the distributional tables, not the rally signs.",
     stab: "Show me your W-2. Did your taxes actually fall?",
     sources: [
       cite(
@@ -5321,7 +5321,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Democracy", "Foreign Policy"],
     theySay: "Puerto Rico shouldn't be a state! They're not even American!",
     youSay:
-      "Puerto Ricans have been U.S. citizens since 1917 — they serve in the military and pay federal taxes without full congressional representation. Status referendums have repeatedly shown majority support for statehood. Denying representation to 3 million citizens because of language or culture is the same colonial logic Congress used against every territory that eventually became a state. Democracy means votes that count.",
+      "Puerto Ricans have been U.S. citizens since 1917 - they serve in the military and pay federal taxes without full congressional representation. Status referendums have repeatedly shown majority support for statehood. Denying representation to 3 million citizens because of language or culture is the same colonial logic Congress used against every territory that eventually became a state. Democracy means votes that count.",
     stab: "They fight in our wars. They deserve a vote.",
     sources: [
       cite(
@@ -5349,7 +5349,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Jan 6", "Democracy"],
     theySay: "January 6 was just a protest! Tourists walking through the Capitol!",
     youSay:
-      "DOJ has charged more than 1,500 defendants — including seditious conspiracy convictions for Proud Boys and Oath Keepers leaders. Video evidence shows rioters breaching barricades, assaulting officers, and chanting to hang the Vice President. Congress certified the election after hours of lockdown. Calling it tourism insults the 140 officers injured and the rule of law. Peaceful protest doesn't include pipe bombs and gallows.",
+      "DOJ has charged more than 1,500 defendants - including seditious conspiracy convictions for Proud Boys and Oath Keepers leaders. Video evidence shows rioters breaching barricades, assaulting officers, and chanting to hang the Vice President. Congress certified the election after hours of lockdown. Calling it tourism insults the 140 officers injured and the rule of law. Peaceful protest doesn't include pipe bombs and gallows.",
     stab: "Tourists don't get seditious conspiracy convictions.",
     sources: [
       cite(
@@ -5377,7 +5377,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Economy", "Whataboutism"],
     theySay: "Only Democrats run up the deficit! Republicans are fiscally responsible!",
     youSay:
-      "CBO data shows the 2017 Tax Cuts and Jobs Act added roughly $1.9 trillion to deficits over a decade — the largest peacetime debt increase came under Republican trifectas in 2001 and 2017. Trump and Biden both signed emergency spending; the structural gap is tax cuts for corporations and wealthy estates, not food stamps. Fiscal responsibility means looking at Treasury statements, not rally slogans.",
+      "CBO data shows the 2017 Tax Cuts and Jobs Act added roughly $1.9 trillion to deficits over a decade - the largest peacetime debt increase came under Republican trifectas in 2001 and 2017. Trump and Biden both signed emergency spending; the structural gap is tax cuts for corporations and wealthy estates, not food stamps. Fiscal responsibility means looking at Treasury statements, not rally slogans.",
     stab: "Show me the CBO score. Then we'll talk deficits.",
     sources: [
       cite(
@@ -5405,7 +5405,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Democracy", "Courts"],
     theySay: "States' rights! The federal government is too powerful!",
     youSay:
-      "'States' rights' was the legal argument for slavery, Jim Crow, and school segregation — states used local control to deny equal protection until federal civil rights law overrode them. The Supremacy Clause exists because leaving voting, marriage, and discrimination entirely to states produced apartheid. Today, the same phrase appears in arguments against Medicaid expansion, abortion access, and voting protections. Local control isn't neutral when local power targets minorities.",
+      "'States' rights' was the legal argument for slavery, Jim Crow, and school segregation - states used local control to deny equal protection until federal civil rights law overrode them. The Supremacy Clause exists because leaving voting, marriage, and discrimination entirely to states produced apartheid. Today, the same phrase appears in arguments against Medicaid expansion, abortion access, and voting protections. Local control isn't neutral when local power targets minorities.",
     stab: "States' rights lost at Appomattox. Remember why.",
     sources: [
       cite(
@@ -5433,7 +5433,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Elections", "Media"],
     theySay: "The DNC rigged the primaries against Bernie! It's all corrupt!",
     youSay:
-      "Party primaries are private nominating contests — superdelegate rules and debate schedules are internal party governance, not federal elections. Sanders won millions of votes and shifted the 2020 platform; Biden won a majority of pledged delegates fair and square. Conflating party bylaws with ballot rigging is how bad actors discourage participation. If you want open primaries and ranked choice, advocate for state election law — don't sit out because a committee scheduled a debate.",
+      "Party primaries are private nominating contests - superdelegate rules and debate schedules are internal party governance, not federal elections. Sanders won millions of votes and shifted the 2020 platform; Biden won a majority of pledged delegates fair and square. Conflating party bylaws with ballot rigging is how bad actors discourage participation. If you want open primaries and ranked choice, advocate for state election law - don't sit out because a committee scheduled a debate.",
     stab: "Bernie endorsed Biden. Twice. That's not a rigged outcome.",
     sources: [
       cite(
@@ -5461,7 +5461,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Healthcare", "Whataboutism"],
     theySay: "Canadian healthcare has year-long waits! Socialized medicine kills people!",
     youSay:
-      "Canada spends roughly half per capita what the U.S. spends while covering everyone — wait times vary by procedure and province, but Canadians live longer and are less likely to go bankrupt from a hospital bill. America's uninsured and underinsured delay care too — they just die quietly without a queue statistic. Every OECD system rations somehow; the U.S. rations by price and zip code. The question is whether rationing happens at the billing desk or the scheduling desk.",
+      "Canada spends roughly half per capita what the U.S. spends while covering everyone - wait times vary by procedure and province, but Canadians live longer and are less likely to go bankrupt from a hospital bill. America's uninsured and underinsured delay care too - they just die quietly without a queue statistic. Every OECD system rations somehow; the U.S. rations by price and zip code. The question is whether rationing happens at the billing desk or the scheduling desk.",
     stab: "Bankruptcy from chemo isn't freedom.",
     sources: [
       cite(
@@ -5489,12 +5489,12 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Climate", "Economy"],
     theySay: "Coal is coming back! Trump brought back coal jobs!",
     youSay:
-      "EIA data shows U.S. coal production and mining employment have declined for over a decade — cheap natural gas and renewables outcompete coal on cost, regardless of who sits in the Oval Office. 'War on coal' rhetoric didn't reverse market physics. Promising coal revival to struggling communities without transition plans is cruelty dressed as nostalgia. Real economic policy invests in reclamation, broadband, and clean-energy jobs where mines already closed.",
+      "EIA data shows U.S. coal production and mining employment have declined for over a decade - cheap natural gas and renewables outcompete coal on cost, regardless of who sits in the Oval Office. 'War on coal' rhetoric didn't reverse market physics. Promising coal revival to struggling communities without transition plans is cruelty dressed as nostalgia. Real economic policy invests in reclamation, broadband, and clean-energy jobs where mines already closed.",
     stab: "Markets killed coal. Not Obama. Not Biden.",
     sources: [
       cite(
         "eia_coal",
-        "U.S. Energy Information Administration — Coal",
+        "U.S. Energy Information Administration - Coal",
         "U.S. Energy Information Administration",
         "https://www.eia.gov/todayinenergy/",
         "EIA publishes coal production, consumption, and mining employment statistics.",
@@ -5502,7 +5502,7 @@ export const conversationHelpers: ConversationHelper[] = [
       ),
       cite(
         "bls_mining",
-        "Bureau of Labor Statistics — Mining",
+        "Bureau of Labor Statistics - Mining",
         "Bureau of Labor Statistics",
         "https://www.bls.gov/",
         "BLS tracks mining and extraction employment by sector over time.",
@@ -5517,7 +5517,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Immigration", "Crime"],
     theySay: "Sanctuary cities are crime-infested! They protect criminals!",
     youSay:
-      "Sanctuary policies limit local police from holding people for ICE without a judicial warrant — they don't block deportation of convicted violent felons. Multiple studies find no correlation between sanctuary status and higher crime rates; immigrants commit crimes at lower rates than native-born citizens per BJS data. The label is a political weapon to justify federal raids in cities that won't act as unpaid immigration agents.",
+      "Sanctuary policies limit local police from holding people for ICE without a judicial warrant - they don't block deportation of convicted violent felons. Multiple studies find no correlation between sanctuary status and higher crime rates; immigrants commit crimes at lower rates than native-born citizens per BJS data. The label is a political weapon to justify federal raids in cities that won't act as unpaid immigration agents.",
     stab: "Cops aren't ICE. That's the whole point.",
     sources: [
       cite(
@@ -5545,7 +5545,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Education", "Culture Wars"],
     theySay: "Colleges are indoctrination camps! They teach kids to hate America!",
     youSay:
-      "Universities are accredited institutions with curriculum oversight, tenure review, and alumni-funded endowments — not monolithic propaganda mills. Survey data shows faculty political diversity varies widely by discipline and region. What critics call 'indoctrination' is often exposure to history beyond a textbook myth — including slavery, indigenous dispossession, and labor struggle. Teaching uncomfortable facts isn't hatred of country; it's the difference between patriotism and nationalism.",
+      "Universities are accredited institutions with curriculum oversight, tenure review, and alumni-funded endowments - not monolithic propaganda mills. Survey data shows faculty political diversity varies widely by discipline and region. What critics call 'indoctrination' is often exposure to history beyond a textbook myth - including slavery, indigenous dispossession, and labor struggle. Teaching uncomfortable facts isn't hatred of country; it's the difference between patriotism and nationalism.",
     stab: "Reading Frederick Douglass isn't treason.",
     sources: [
       cite(
@@ -5571,9 +5571,9 @@ export const conversationHelpers: ConversationHelper[] = [
   {
     id: "biden-docs-same-as-trump",
     category: ["Whataboutism", "Courts"],
-    theySay: "Biden had classified docs too! Same as Trump — both guilty!",
+    theySay: "Biden had classified docs too! Same as Trump - both guilty!",
     youSay:
-      "Special counsel reports documented materially different conduct: Biden's team returned documents upon discovery and cooperated with investigators; Trump allegedly obstructed retrieval, stored files in unsecured locations, and faces charges for willful retention and obstruction. Equating cooperative return with alleged concealment is whataboutism — the legal question is intent, obstruction, and national-security risk, not whether two people touched classified paper.",
+      "Special counsel reports documented materially different conduct: Biden's team returned documents upon discovery and cooperated with investigators; Trump allegedly obstructed retrieval, stored files in unsecured locations, and faces charges for willful retention and obstruction. Equating cooperative return with alleged concealment is whataboutism - the legal question is intent, obstruction, and national-security risk, not whether two people touched classified paper.",
     stab: "Cooperating with the FBI isn't the same as hiding boxes.",
     sources: [
       cite(
@@ -5601,12 +5601,12 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Culture Wars", "Democracy"],
     theySay: "America was founded as a Christian nation! Read the Founders!",
     youSay:
-      "The Constitution's only religious references are exclusionary — no religious test for office, no established church. Treaty of Tripoli (1797) explicitly states the U.S. government is 'not in any sense founded on the Christian religion.' Jefferson's 'wall of separation' letter and Madison's Memorial and Remonstrance argue against taxpayer-funded religion. Many Founders were Deists, not evangelicals. Conflating 1950s addition of 'under God' to the pledge with 1776 intent is historical fiction.",
+      "The Constitution's only religious references are exclusionary - no religious test for office, no established church. Treaty of Tripoli (1797) explicitly states the U.S. government is 'not in any sense founded on the Christian religion.' Jefferson's 'wall of separation' letter and Madison's Memorial and Remonstrance argue against taxpayer-funded religion. Many Founders were Deists, not evangelicals. Conflating 1950s addition of 'under God' to the pledge with 1776 intent is historical fiction.",
     stab: "The First Amendment protects us from your church too.",
     sources: [
       cite(
         "congress_1a",
-        "First Amendment — Religion",
+        "First Amendment - Religion",
         "Library of Congress",
         "https://constitution.congress.gov/constitution/amendment-1/",
         "Congress.gov hosts the First Amendment text and founding-era commentary.",
@@ -5629,12 +5629,12 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Democracy", "Media"],
     theySay: "Democracy isn't dying! You're alarmists! Everything is normal!",
     youSay:
-      "Normal democracies don't halt Voting Rights Act enforcement, reclassify civil servants for political purge, condition disaster aid on loyalty, or threaten prosecutors who investigate the executive. Freedom House, V-Dem, and CPR's trackers document measurable declines in U.S. civil liberties and rule-of-law scores since 2016. Alarm isn't hysteria when the Heritage Foundation published a 900-page blueprint and the administration is implementing it line by line — with primary sources linked on every entry.",
+      "Normal democracies don't halt Voting Rights Act enforcement, reclassify civil servants for political purge, condition disaster aid on loyalty, or threaten prosecutors who investigate the executive. Freedom House, V-Dem, and CPR's trackers document measurable declines in U.S. civil liberties and rule-of-law scores since 2016. Alarm isn't hysteria when the Heritage Foundation published a 900-page blueprint and the administration is implementing it line by line - with primary sources linked on every entry.",
     stab: "Normal is 115 sourced actions and counting.",
     sources: [
       cite(
         "freedom_house_us",
-        "Freedom in the World — United States",
+        "Freedom in the World - United States",
         "Freedom House",
         "https://freedomhouse.org/country/united-states",
         "Freedom House scores political rights and civil liberties annually for the United States.",
@@ -5657,13 +5657,13 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Democracy", "Media"],
     theySay: "Dark money is free speech! Donor privacy protects people from harassment!",
     youSay:
-      "Citizens United allowed unlimited independent spending, but voters still have a legitimate interest in knowing who is buying influence. 501(c)(4) groups can spend hundreds of millions without disclosing funders — OpenSecrets documents the scale. Anonymous speech protects whistleblowers; anonymous billion-dollar ad buys protect plutocrats. The Blueprint calls for real-time disclosure over $200 and 48-hour lobbying contact publication.",
+      "Citizens United allowed unlimited independent spending, but voters still have a legitimate interest in knowing who is buying influence. 501(c)(4) groups can spend hundreds of millions without disclosing funders - OpenSecrets documents the scale. Anonymous speech protects whistleblowers; anonymous billion-dollar ad buys protect plutocrats. The Blueprint calls for real-time disclosure over $200 and 48-hour lobbying contact publication.",
     stab: "Free speech isn't secret billion-dollar ad buys.",
     sources: [
       cite(
         "citizens_united_scotus",
         "Citizens United v. FEC",
-        "Legal Information Institute — Cornell Law School",
+        "Legal Information Institute - Cornell Law School",
         "https://www.law.cornell.edu/supct/html/08-205.ZS.html",
         "The Court struck down limits on independent corporate and union political expenditures.",
         "2010-01-21"
@@ -5685,7 +5685,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Democracy", "Economy"],
     theySay: "Lobbying is just petitioning the government! Everyone does it!",
     youSay:
-      "Petitioning is a First Amendment right — but the revolving door between Congress, agencies, and K Street creates structural capture. OpenSecrets tracks billions in lobbying annually; the Blueprint proposes lifetime lobbying bans for former members and senior officials plus mandatory 48-hour disclosure of all lobbying contacts. 'Everyone does it' is an argument for reform, not against it.",
+      "Petitioning is a First Amendment right - but the revolving door between Congress, agencies, and K Street creates structural capture. OpenSecrets tracks billions in lobbying annually; the Blueprint proposes lifetime lobbying bans for former members and senior officials plus mandatory 48-hour disclosure of all lobbying contacts. 'Everyone does it' is an argument for reform, not against it.",
     stab: "Petitioning isn't a lifetime K Street pass.",
     sources: [
       cite(
@@ -5713,7 +5713,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Democracy", "Elections"],
     theySay: "Money doesn't buy elections! Voters decide!",
     youSay:
-      "Voters cast ballots — but fundraising dominance shapes who can run, who gets airtime, and which bills get hearings. FEC data shows super PACs and dark-money groups routinely outspend candidates in competitive races. Citizens United didn't eliminate corruption; it moved it to undisclosed channels. Public financing and real-time disclosure — in the Blueprint safeguards — restore voter agency.",
+      "Voters cast ballots - but fundraising dominance shapes who can run, who gets airtime, and which bills get hearings. FEC data shows super PACs and dark-money groups routinely outspend candidates in competitive races. Citizens United didn't eliminate corruption; it moved it to undisclosed channels. Public financing and real-time disclosure - in the Blueprint safeguards - restore voter agency.",
     stab: "Try winning a Senate race without donors.",
     sources: [
       cite(
@@ -5741,13 +5741,13 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Democracy", "Courts"],
     theySay: "Citizens United was correctly decided! Corporations have speech rights!",
     youSay:
-      "The Court held that independent expenditures cannot corrupt 'in the traditional sense' — a premise many legal scholars and voters reject when billion-dollar ad campaigns follow. The ruling didn't require anonymous spending; Congress and states could still mandate disclosure. Instead, FEC deadlocks and weak rules let dark money flourish. Constitutional speech rights aren't the same as unlimited secret influence.",
+      "The Court held that independent expenditures cannot corrupt 'in the traditional sense' - a premise many legal scholars and voters reject when billion-dollar ad campaigns follow. The ruling didn't require anonymous spending; Congress and states could still mandate disclosure. Instead, FEC deadlocks and weak rules let dark money flourish. Constitutional speech rights aren't the same as unlimited secret influence.",
     stab: "Speech rights aren't secret donor lists.",
     sources: [
       cite(
         "citizens_united_scotus",
         "Citizens United v. FEC",
-        "Legal Information Institute — Cornell Law School",
+        "Legal Information Institute - Cornell Law School",
         "https://www.law.cornell.edu/supct/html/08-205.ZS.html",
         "The opinion addresses independent expenditures and corporate political speech.",
         "2010-01-21"
@@ -5769,7 +5769,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Democracy", "Media"],
     theySay: "The FEC is weaponized! Let people spend their own money!",
     youSay:
-      "The FEC is frequently deadlocked — the opposite of weaponization. Six commissioners need four votes for major enforcement; partisan stalemates leave violations unpunished. Personal spending on your own campaign is legal; unlimited secret corporate and nonprofit spending with no donor disclosure is the controversy. Disclosure isn't censorship — it's sunlight.",
+      "The FEC is frequently deadlocked - the opposite of weaponization. Six commissioners need four votes for major enforcement; partisan stalemates leave violations unpunished. Personal spending on your own campaign is legal; unlimited secret corporate and nonprofit spending with no donor disclosure is the controversy. Disclosure isn't censorship - it's sunlight.",
     stab: "Deadlocked isn't weaponized.",
     sources: [
       cite(
@@ -5797,7 +5797,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Democracy", "Economy"],
     theySay: "The revolving door is fine! Industry experts know the rules!",
     youSay:
-      "Industry expertise is real — so is the conflict when former regulators cash out to the firms they oversaw. The Blueprint's SAFE-001 safeguard proposes lifetime lobbying bans for senior officials and mandatory blind trusts for agency heads. 'Experts' who wrote the rules and then sell access aren't neutral technicians — they're captured.",
+      "Industry expertise is real - so is the conflict when former regulators cash out to the firms they oversaw. The Blueprint's SAFE-001 safeguard proposes lifetime lobbying bans for senior officials and mandatory blind trusts for agency heads. 'Experts' who wrote the rules and then sell access aren't neutral technicians - they're captured.",
     stab: "Regulator today, lobbyist tomorrow.",
     sources: [
       cite(
@@ -5825,7 +5825,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Democracy", "Media"],
     theySay: "Think tanks are independent research! Project 2025 is just ideas!",
     youSay:
-      "Think tanks publish research — many also take undisclosed donor money and staff former officials who rotate back into government. Heritage Foundation's 922-page Project 2025 blueprint is now executive policy, not a white paper on a shelf. OpenSecrets tracks think-tank funding where disclosed; dark money fills the gaps. Ideas have authors, funders, and beneficiaries.",
+      "Think tanks publish research - many also take undisclosed donor money and staff former officials who rotate back into government. Heritage Foundation's 922-page Project 2025 blueprint is now executive policy, not a white paper on a shelf. OpenSecrets tracks think-tank funding where disclosed; dark money fills the gaps. Ideas have authors, funders, and beneficiaries.",
     stab: "922 pages isn't a hobby project.",
     sources: [
       cite(
@@ -5853,7 +5853,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Economy", "Democracy"],
     theySay: "Billionaires earned their influence! Success shouldn't be punished!",
     youSay:
-      "Wealth isn't illegal — using undisclosed money to write agency rules is a democracy problem. Citizens United enabled unlimited independent spending; weak disclosure lets billionaires fund think tanks, super PACs, and 501(c)(4) ads without voters seeing the receipts. Market success doesn't grant veto power over civil service, voting rights, or methane standards.",
+      "Wealth isn't illegal - using undisclosed money to write agency rules is a democracy problem. Citizens United enabled unlimited independent spending; weak disclosure lets billionaires fund think tanks, super PACs, and 501(c)(4) ads without voters seeing the receipts. Market success doesn't grant veto power over civil service, voting rights, or methane standards.",
     stab: "Receipts, not net worth, should govern.",
     sources: [
       cite(
@@ -5881,7 +5881,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Media", "Democracy"],
     theySay: "OpenSecrets is biased! They only attack conservatives!",
     youSay:
-      "OpenSecrets is a nonpartisan campaign-finance research group cited by journalists across the spectrum. They track disclosed lobbying, PAC giving, and dark money for both parties — the data is filed with the FEC and LDA, not invented. If the numbers look bad for one side, that's a fundraising pattern, not a bias claim. Check the underlying filings yourself.",
+      "OpenSecrets is a nonpartisan campaign-finance research group cited by journalists across the spectrum. They track disclosed lobbying, PAC giving, and dark money for both parties - the data is filed with the FEC and LDA, not invented. If the numbers look bad for one side, that's a fundraising pattern, not a bias claim. Check the underlying filings yourself.",
     stab: "The FEC filings don't have a party affiliation.",
     sources: [
       cite(
@@ -5909,8 +5909,8 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Democracy", "Economy"],
     theySay: "Public campaign financing is a taxpayer handout to politicians!",
     youSay:
-      "Public financing replaces billionaire dependency with small-donor matching — the Blueprint proposes real-time disclosure over $200 alongside voluntary public match. Taxpayers already subsidize campaigns through the presidential public-funding system and unlimited dark-money tax breaks for donors. The question is whether voters or undisclosed funders pick who can run competitive races.",
-    stab: "Dark money is the handout — just hidden.",
+      "Public financing replaces billionaire dependency with small-donor matching - the Blueprint proposes real-time disclosure over $200 alongside voluntary public match. Taxpayers already subsidize campaigns through the presidential public-funding system and unlimited dark-money tax breaks for donors. The question is whether voters or undisclosed funders pick who can run competitive races.",
+    stab: "Dark money is the handout - just hidden.",
     sources: [
       cite(
         "fec_campaign_data",
@@ -5937,7 +5937,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Democracy", "Media"],
     theySay: "The Epstein files are a distraction! Focus on real issues!",
     youSay:
-      "Transparency is a real issue. The Epstein Files Transparency Act (H.R. 4405) is bipartisan legislation requiring DOJ to release unclassified investigation records on a statutory timeline — not a conspiracy theory, a bill on Congress.gov. Victims and the public cannot audit what was investigated when records stay sealed without deadlines. SAFE-004 would extend mandatory publication timelines for high-public-interest cases.",
+      "Transparency is a real issue. The Epstein Files Transparency Act (H.R. 4405) is bipartisan legislation requiring DOJ to release unclassified investigation records on a statutory timeline - not a conspiracy theory, a bill on Congress.gov. Victims and the public cannot audit what was investigated when records stay sealed without deadlines. SAFE-004 would extend mandatory publication timelines for high-public-interest cases.",
     stab: "A bill number isn't a rabbit hole.",
     sources: [
       cite(
@@ -5965,7 +5965,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Democracy", "Media"],
     theySay: "FOIA takes forever anyway! Just accept we'll never know!",
     youSay:
-      "FOIA backlogs are a policy failure, not a reason to stop asking. FOIA.gov publishes agency compliance data; litigation — like ACLU FOIA cases on ICE detention — often produces documents agencies would never release voluntarily. SAFE-004 mandates machine-readable spending data and 48-hour lobbying contact publication so routine accountability doesn't depend on multi-year FOIA fights.",
+      "FOIA backlogs are a policy failure, not a reason to stop asking. FOIA.gov publishes agency compliance data; litigation - like ACLU FOIA cases on ICE detention - often produces documents agencies would never release voluntarily. SAFE-004 mandates machine-readable spending data and 48-hour lobbying contact publication so routine accountability doesn't depend on multi-year FOIA fights.",
     stab: "Slow disclosure isn't no disclosure.",
     sources: [
       cite(
@@ -5993,7 +5993,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Democracy", "Foreign Policy"],
     theySay: "If it's classified, it should stay classified forever!",
     youSay:
-      "Classification protects legitimate secrets — not indefinite opacity. The Presidential Records Act and FOIA establish timelines and exemptions for public release. Bipartisan Epstein files legislation targets unclassified records specifically. Blanket 'never release' arguments protect institutions, not national security. Statutory declassification deadlines for high-public-interest cases are standard democratic hygiene.",
+      "Classification protects legitimate secrets - not indefinite opacity. The Presidential Records Act and FOIA establish timelines and exemptions for public release. Bipartisan Epstein files legislation targets unclassified records specifically. Blanket 'never release' arguments protect institutions, not national security. Statutory declassification deadlines for high-public-interest cases are standard democratic hygiene.",
     stab: "Unclassified isn't classified.",
     sources: [
       cite(
@@ -6021,7 +6021,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Democracy", "Media"],
     theySay: "Publishing donor lists puts people in danger! Privacy matters!",
     youSay:
-      "Whistleblower anonymity and billionaire ad-buy anonymity are different problems. Citizens United allowed unlimited spending; it did not require secret donors. OpenSecrets documents hundreds of millions in dark money per cycle. Disclosure over $200 — in SAFE-004 — lets voters see who is buying influence while preserving small-donor privacy. Harassment concerns don't justify billion-dollar anonymous electioneering.",
+      "Whistleblower anonymity and billionaire ad-buy anonymity are different problems. Citizens United allowed unlimited spending; it did not require secret donors. OpenSecrets documents hundreds of millions in dark money per cycle. Disclosure over $200 - in SAFE-004 - lets voters see who is buying influence while preserving small-donor privacy. Harassment concerns don't justify billion-dollar anonymous electioneering.",
     stab: "Whistleblowers aren't super PACs.",
     sources: [
       cite(
@@ -6035,7 +6035,7 @@ export const conversationHelpers: ConversationHelper[] = [
       cite(
         "citizens_united_scotus",
         "Citizens United v. FEC",
-        "Legal Information Institute — Cornell Law School",
+        "Legal Information Institute - Cornell Law School",
         "https://www.law.cornell.edu/supct/html/08-205.ZS.html",
         "The ruling addressed expenditure limits, not a mandate for anonymous spending.",
         "2010-01-21"
@@ -6049,7 +6049,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Democracy", "Media"],
     theySay: "Whistleblowers are snitches! Loyalty to the boss matters!",
     youSay:
-      "Whistleblowers recover billions in fraud for taxpayers — the False Claims Act returned over $2.9B in FY2024 alone. MSPB vacancies and retaliation leave federal employees choosing between silence and career destruction. SAFE-004 proposes whistleblower bounties on recovered fraud over $1M because sunlight saves money. Loyalty to a boss who is stealing from the public isn't patriotism.",
+      "Whistleblowers recover billions in fraud for taxpayers - the False Claims Act returned over $2.9B in FY2024 alone. MSPB vacancies and retaliation leave federal employees choosing between silence and career destruction. SAFE-004 proposes whistleblower bounties on recovered fraud over $1M because sunlight saves money. Loyalty to a boss who is stealing from the public isn't patriotism.",
     stab: "Snitching on fraud is called oversight.",
     sources: [
       cite(
@@ -6077,7 +6077,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Democracy", "Economy"],
     theySay: "Transparency mandates waste taxpayer money! Red tape!",
     youSay:
-      "Machine-readable spending data and lobbying disclosure prevent fraud that costs orders of magnitude more than compliance. GAO and IG reports routinely find billions in improper payments when oversight is weak. Real-time disclosure over $200 and daily federal spending databases — in SAFE-004 — are infrastructure investments, not red tape. The expensive option is undisclosed capture.",
+      "Machine-readable spending data and lobbying disclosure prevent fraud that costs orders of magnitude more than compliance. GAO and IG reports routinely find billions in improper payments when oversight is weak. Real-time disclosure over $200 and daily federal spending databases - in SAFE-004 - are infrastructure investments, not red tape. The expensive option is undisclosed capture.",
     stab: "Dark money is the expensive red tape.",
     sources: [
       cite(
@@ -6105,7 +6105,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Democracy", "Culture Wars"],
     theySay: "If you have nothing to hide, you have nothing to fear from surveillance!",
     youSay:
-      "That argument cuts both ways — if officials have nothing to hide, they have nothing to fear from FOIA, financial disclosure, and lobbying logs. Democracy runs on reciprocal visibility: voters scrutinize power; power doesn't get unlimited scrutiny of citizens. SAFE-004 targets government and influence spending, not private diaries. Asymmetric secrecy is how capture thrives.",
+      "That argument cuts both ways - if officials have nothing to hide, they have nothing to fear from FOIA, financial disclosure, and lobbying logs. Democracy runs on reciprocal visibility: voters scrutinize power; power doesn't get unlimited scrutiny of citizens. SAFE-004 targets government and influence spending, not private diaries. Asymmetric secrecy is how capture thrives.",
     stab: "Apply it to their tax returns first.",
     sources: [
       cite(
@@ -6133,7 +6133,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Democracy", "Media"],
     theySay: "Just trust me! You don't need receipts!",
     youSay:
-      "Trust without verification is how $847B in dark money influence operates since Citizens United. Every claim on Project Sunrise links primary sources — FEC filings, CRS reports, court opinions. Pew finds public trust in government near historic lows precisely because opacity breeds suspicion. Receipts aren't cynicism; they're how democracies audit power.",
+      "Trust without verification is how $847B in dark money influence operates since Citizens United. Every claim on Project Sunrise links primary sources - FEC filings, CRS reports, court opinions. Pew finds public trust in government near historic lows precisely because opacity breeds suspicion. Receipts aren't cynicism; they're how democracies audit power.",
     stab: "Trust is earned in filings, not vibes.",
     sources: [
       cite(
@@ -6161,7 +6161,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Democracy", "Media"],
     theySay: "Sunshine laws are a radical left plot to destroy conservatives!",
     youSay:
-      "FOIA passed in 1966 with bipartisan support; the Presidential Records Act followed Nixon. OpenSecrets, FEC data, and congressional disclosure requirements serve every voter — not a party. Epstein files legislation is bipartisan. Transparency mandates in SAFE-004 target government spending and lobbying, not ideology. Calling receipts 'radical' is what you say when the receipts are embarrassing.",
+      "FOIA passed in 1966 with bipartisan support; the Presidential Records Act followed Nixon. OpenSecrets, FEC data, and congressional disclosure requirements serve every voter - not a party. Epstein files legislation is bipartisan. Transparency mandates in SAFE-004 target government spending and lobbying, not ideology. Calling receipts 'radical' is what you say when the receipts are embarrassing.",
     stab: "Nixon created the PRA, not AOC.",
     sources: [
       cite(
@@ -6189,7 +6189,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Democracy", "Whataboutism"],
     theySay: "Democrats take dark money too! Both sides!",
     youSay:
-      "Correct — dark money hits both parties, which is why disclosure reform is bipartisan common ground, not a partisan attack. OpenSecrets tracks spending regardless of beneficiary. The Epstein Files Act is bipartisan. SAFE-004 mandates real-time disclosure over $200 and 48-hour lobbying logs for everyone. 'Both sides do it' is an argument for structural reform, not against it.",
+      "Correct - dark money hits both parties, which is why disclosure reform is bipartisan common ground, not a partisan attack. OpenSecrets tracks spending regardless of beneficiary. The Epstein Files Act is bipartisan. SAFE-004 mandates real-time disclosure over $200 and 48-hour lobbying logs for everyone. 'Both sides do it' is an argument for structural reform, not against it.",
     stab: "Both sides is why we need rules.",
     sources: [
       cite(
@@ -6215,9 +6215,9 @@ export const conversationHelpers: ConversationHelper[] = [
   {
     id: "too-much-data-overwhelm",
     category: ["Media", "Democracy"],
-    theySay: "There's too much data! I can't keep up — just tell me what to think!",
+    theySay: "There's too much data! I can't keep up - just tell me what to think!",
     youSay:
-      "That's why Project Sunrise built a site map and a four-step start guide — you don't need to read 125 events on day one. Start with the threat gauge, pick one rebuttal category you hear at work, and bookmark what matters. Democracy fails when citizens outsource thinking to cable news; it recovers when people use structured tools instead of doom-scrolling.",
+      "That's why Project Sunrise built a site map and a four-step start guide - you don't need to read 125 events on day one. Start with the threat gauge, pick one rebuttal category you hear at work, and bookmark what matters. Democracy fails when citizens outsource thinking to cable news; it recovers when people use structured tools instead of doom-scrolling.",
     stab: "Overwhelm is a feature of propaganda, not research.",
     sources: [
       cite(
@@ -6245,7 +6245,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Media", "Culture Wars"],
     theySay: "Normal people don't have time to read CRS reports!",
     youSay:
-      "You don't need a law degree — you need one sourced paragraph. Rebuttal Desk entries are copy-ready: they say the claim, the counter, and the stab line. Study mode and quiz mode exist so you can learn one talking point on a commute. Receipts aren't homework; they're ammunition for the five-minute conversation at Thanksgiving.",
+      "You don't need a law degree - you need one sourced paragraph. Rebuttal Desk entries are copy-ready: they say the claim, the counter, and the stab line. Study mode and quiz mode exist so you can learn one talking point on a commute. Receipts aren't homework; they're ammunition for the five-minute conversation at Thanksgiving.",
     stab: "Copy-paste beats cable monologue.",
     sources: [
       cite(
@@ -6253,7 +6253,7 @@ export const conversationHelpers: ConversationHelper[] = [
         "Congressional Research Service",
         "Congressional Research Service",
         "https://crsreports.congress.gov/",
-        "CRS writes plain-language summaries for Congress — the same sources we link.",
+        "CRS writes plain-language summaries for Congress - the same sources we link.",
         "2025-01-01"
       ),
       cite(
@@ -6273,7 +6273,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Media", "Democracy"],
     theySay: "Those tracker numbers are made up! Fear-mongering!",
     youSay:
-      "Every event links primary sources — White House EOs, Federal Register notices, GAO reports, and independent trackers like CPR and project2025.observer. Severity scores use a published methodology page. If a number is wrong, the contribute page takes corrections with citations. Made-up numbers don't come with bill numbers, court dockets, and Wayback archives.",
+      "Every event links primary sources - White House EOs, Federal Register notices, GAO reports, and independent trackers like CPR and project2025.observer. Severity scores use a published methodology page. If a number is wrong, the contribute page takes corrections with citations. Made-up numbers don't come with bill numbers, court dockets, and Wayback archives.",
     stab: "Show me your methodology page.",
     sources: [
       cite(
@@ -6301,7 +6301,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Media", "Democracy"],
     theySay: "The tracker is just liberal fear-mongering!",
     youSay:
-      "Fear-mongering doesn't cross-reference Heritage's own playbook, SCOTUS opinions, and GAO audits. The tracker documents what happened — executive orders signed, agencies restructured, rules rolled back — with dates and severity tied to impacted sectors. If the record looks scary, that's the policy, not the typography. Independent trackers from multiple organizations converge on the same events.",
+      "Fear-mongering doesn't cross-reference Heritage's own playbook, SCOTUS opinions, and GAO audits. The tracker documents what happened - executive orders signed, agencies restructured, rules rolled back - with dates and severity tied to impacted sectors. If the record looks scary, that's the policy, not the typography. Independent trackers from multiple organizations converge on the same events.",
     stab: "Heritage wrote the scary part.",
     sources: [
       cite(
@@ -6329,12 +6329,12 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Economy", "Democracy"],
     theySay: "The Progressive Blueprint is utopian fantasy!",
     youSay:
-      "Medicare for All, the PRO Act, and voting-rights legislation have real bill numbers on Congress.gov — H.R. 3421, H.R. 34, H.R. 14. The Blueprint pairs each fix with cost-of-inaction data and irreversible safeguards. Utopian is pretending climate, healthcare, and wage stagnation fix themselves while billionaires write agency rules. Evidence-based policy isn't fantasy — it's what countries with higher life expectancy already do.",
+      "Medicare for All, the PRO Act, and voting-rights legislation have real bill numbers on Congress.gov - H.R. 3421, H.R. 34, H.R. 14. The Blueprint pairs each fix with cost-of-inaction data and irreversible safeguards. Utopian is pretending climate, healthcare, and wage stagnation fix themselves while billionaires write agency rules. Evidence-based policy isn't fantasy - it's what countries with higher life expectancy already do.",
     stab: "Bill numbers aren't fan fiction.",
     sources: [
       cite(
         "hr_medicare_for_all",
-        "H.R. 3421 — Medicare for All Act",
+        "H.R. 3421 - Medicare for All Act",
         "Congress.gov",
         "https://www.congress.gov/bill/119th-congress/house-bill/3421",
         "Jayapal's Medicare for All Act with 100+ cosponsors.",
@@ -6357,7 +6357,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Culture Wars", "Media"],
     theySay: "Quiz mode on a politics site? That's propaganda training!",
     youSay:
-      "Quiz mode tests whether you can match a MAGA claim to the best sourced counter — the same skill as spotting logical fallacies in a debate. Heritage runs training academies for political appointees; corporations run message discipline workshops. Citizens deserve practice tools too. Every answer links to primary sources you can verify. Training isn't propaganda when the curriculum is citations.",
+      "Quiz mode tests whether you can match a MAGA claim to the best sourced counter - the same skill as spotting logical fallacies in a debate. Heritage runs training academies for political appointees; corporations run message discipline workshops. Citizens deserve practice tools too. Every answer links to primary sources you can verify. Training isn't propaganda when the curriculum is citations.",
     stab: "Heritage has a whole academy.",
     sources: [
       cite(
@@ -6385,8 +6385,8 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Media", "Culture Wars"],
     theySay: "Saved bookmarks mean you're spying on me!",
     youSay:
-      "Saved items live in your browser's localStorage — not our servers. No account, no tracking pixel, no email harvest. You can clear them anytime in browser settings. The feature exists so you can build a personal study deck without signing up for another app that sells your data. Privacy-first design means your bookmarks stay on your device.",
-    stab: "Check localStorage — we're not there.",
+      "Saved items live in your browser's localStorage - not our servers. No account, no tracking pixel, no email harvest. You can clear them anytime in browser settings. The feature exists so you can build a personal study deck without signing up for another app that sells your data. Privacy-first design means your bookmarks stay on your device.",
+    stab: "Check localStorage - we're not there.",
     sources: [
       cite(
         "safeguard_transparency",
@@ -6441,8 +6441,8 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Culture Wars", "Media"],
     theySay: "A guided tour? You think we're stupid!",
     youSay:
-      "Onboarding isn't insulting — it's how every serious tool works. The four-step start guide shows where mission, tracker, rebuttals, and blueprint live. You can skip it in one click. Complex civic infrastructure that assumes everyone already knows how FOIA, Schedule F, and dark money interact is why oligarchs win. Meeting people where they are isn't babying; it's organizing.",
-    stab: "Skip the tour — if you can find everything.",
+      "Onboarding isn't insulting - it's how every serious tool works. The four-step start guide shows where mission, tracker, rebuttals, and blueprint live. You can skip it in one click. Complex civic infrastructure that assumes everyone already knows how FOIA, Schedule F, and dark money interact is why oligarchs win. Meeting people where they are isn't babying; it's organizing.",
+    stab: "Skip the tour - if you can find everything.",
     sources: [
       cite(
         "brennan_voting",
@@ -6469,7 +6469,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Whataboutism", "Media"],
     theySay: "Who cares about round numbers? 125 events is a distraction!",
     youSay:
-      "Milestones aren't the point — they're mile markers. Pass 21 added five verified events and ten sourced rebuttals because the record keeps growing. Round numbers help new visitors see scale: this isn't three viral tweets, it's a documented pattern cross-referenced with independent watchdogs. Celebrate the counter, then read event #125 and rebuttal #240 — the receipts matter more than the banner.",
+      "Milestones aren't the point - they're mile markers. Pass 21 added five verified events and ten sourced rebuttals because the record keeps growing. Round numbers help new visitors see scale: this isn't three viral tweets, it's a documented pattern cross-referenced with independent watchdogs. Celebrate the counter, then read event #125 and rebuttal #240 - the receipts matter more than the banner.",
     stab: "The banner links to the evidence.",
     sources: [
       cite(
@@ -6477,7 +6477,7 @@ export const conversationHelpers: ConversationHelper[] = [
         "Mandate for Leadership: The Conservative Promise",
         "Heritage Foundation",
         "https://www.project2025.org/",
-        "922 pages of planned restructuring — scale matters.",
+        "922 pages of planned restructuring - scale matters.",
         "2023-04-01"
       ),
       cite(
@@ -6485,7 +6485,7 @@ export const conversationHelpers: ConversationHelper[] = [
         "FEC Campaign Finance Data",
         "Federal Election Commission",
         "https://www.fec.gov/data/",
-        "Billions in disclosed spending — scale matters in accountability too.",
+        "Billions in disclosed spending - scale matters in accountability too.",
         "2025-01-01"
       ),
     ],
@@ -6497,7 +6497,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Media", "Culture Wars"],
     theySay: "Nobody reads README files! Documentation is a waste!",
     youSay:
-      "Every serious open-source project, federal agency, and Fortune 500 repo ships a README — because onboarding without docs wastes more time than writing them. Project Sunrise documents how to run locally, deploy, and contribute so volunteers can add sourced events without reverse-engineering the build. Democracy tools that can't explain themselves to new contributors don't scale past one person's laptop.",
+      "Every serious open-source project, federal agency, and Fortune 500 repo ships a README - because onboarding without docs wastes more time than writing them. Project Sunrise documents how to run locally, deploy, and contribute so volunteers can add sourced events without reverse-engineering the build. Democracy tools that can't explain themselves to new contributors don't scale past one person's laptop.",
     stab: "Heritage wrote 922 pages. We wrote a README.",
     sources: [
       cite(
@@ -6505,7 +6505,7 @@ export const conversationHelpers: ConversationHelper[] = [
         "Mandate for Leadership: The Conservative Promise",
         "Heritage Foundation",
         "https://www.project2025.org/",
-        "Project 2025 published a 922-page implementation manual — documentation at scale.",
+        "Project 2025 published a 922-page implementation manual - documentation at scale.",
         "2023-04-01"
       ),
       cite(
@@ -6523,9 +6523,9 @@ export const conversationHelpers: ConversationHelper[] = [
   {
     id: "static-site-not-serious",
     category: ["Media", "Democracy"],
-    theySay: "A static site can't track real democracy — it's just a brochure!",
+    theySay: "A static site can't track real democracy - it's just a brochure!",
     youSay:
-      "Static export means faster loads, lower attack surface, and no database to breach — while JSON, CSV, RSS, and iCal feeds keep the data machine-readable. The New York Times, NASA, and countless agencies ship static frontends backed by structured data. What matters is sourced content and verifiable citations, not whether a server renders HTML on every request.",
+      "Static export means faster loads, lower attack surface, and no database to breach - while JSON, CSV, RSS, and iCal feeds keep the data machine-readable. The New York Times, NASA, and countless agencies ship static frontends backed by structured data. What matters is sourced content and verifiable citations, not whether a server renders HTML on every request.",
     stab: "Brochures don't ship RSS feeds.",
     sources: [
       cite(
@@ -6533,7 +6533,7 @@ export const conversationHelpers: ConversationHelper[] = [
         "Election Security",
         "Cybersecurity and Infrastructure Security Agency",
         "https://www.cisa.gov/topics/election-security",
-        "CISA treats election infrastructure security as a core democracy function — static delivery reduces attack surface.",
+        "CISA treats election infrastructure security as a core democracy function - static delivery reduces attack surface.",
         "2025-01-01"
       ),
       cite(
@@ -6553,7 +6553,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Media", "Culture Wars"],
     theySay: "Cloudflare will censor conservatives! Big Tech hosting!",
     youSay:
-      "Cloudflare Pages hosts static files you build locally — there's no editorial layer reviewing your HTML. The same CDN serves nonprofits, churches, and campaign sites across the spectrum. Project Sunrise publishes open JSON exports and a public changelog so anyone can mirror the data. Hosting choice isn't ideology; it's infrastructure. The content is the argument — and every claim links primary sources.",
+      "Cloudflare Pages hosts static files you build locally - there's no editorial layer reviewing your HTML. The same CDN serves nonprofits, churches, and campaign sites across the spectrum. Project Sunrise publishes open JSON exports and a public changelog so anyone can mirror the data. Hosting choice isn't ideology; it's infrastructure. The content is the argument - and every claim links primary sources.",
     stab: "Mirror the JSON if you don't trust the CDN.",
     sources: [
       cite(
@@ -6581,7 +6581,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Democracy", "Media"],
     theySay: "Open-sourcing government tracking data helps the enemy!",
     youSay:
-      "The Heritage Foundation published Project 2025 online for anyone to read — including opponents. Sunlight on executive actions isn't asymmetric warfare; it's reciprocal accountability. FEC filings, Federal Register notices, and GAO reports are already public. Organizing them with severity scores and cross-links helps citizens respond to documented policy, not rumor. Opacity helps authoritarians; structured data helps voters.",
+      "The Heritage Foundation published Project 2025 online for anyone to read - including opponents. Sunlight on executive actions isn't asymmetric warfare; it's reciprocal accountability. FEC filings, Federal Register notices, and GAO reports are already public. Organizing them with severity scores and cross-links helps citizens respond to documented policy, not rumor. Opacity helps authoritarians; structured data helps voters.",
     stab: "P2025 is public. So is our tracker.",
     sources: [
       cite(
@@ -6597,7 +6597,7 @@ export const conversationHelpers: ConversationHelper[] = [
         "FEC Campaign Finance Data",
         "Federal Election Commission",
         "https://www.fec.gov/data/",
-        "Federal campaign finance data is public by statute — structured access aids accountability.",
+        "Federal campaign finance data is public by statute - structured access aids accountability.",
         "2025-01-01"
       ),
     ],
@@ -6609,7 +6609,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Media", "Whataboutism"],
     theySay: "If it's on pages.dev it's not a real website!",
     youSay:
-      "Cloudflare Pages custom domains attach to the same static build — projectsunrise.pages.dev or your own domain serve identical files. Major campaigns, docs sites, and nonprofits use Pages subdomains during development and add custom DNS when ready. Judging credibility by TLD instead of citations is how misinformation spreads on slick domains with no sourcing.",
+      "Cloudflare Pages custom domains attach to the same static build - projectsunrise.pages.dev or your own domain serve identical files. Major campaigns, docs sites, and nonprofits use Pages subdomains during development and add custom DNS when ready. Judging credibility by TLD instead of citations is how misinformation spreads on slick domains with no sourcing.",
     stab: "Check the receipts, not the subdomain.",
     sources: [
       cite(
@@ -6637,7 +6637,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Media", "Culture Wars"],
     theySay: "A changelog for a civic website? Who cares about your version numbers!",
     youSay:
-      "Software changelogs are standard practice for anything that ships iterative improvements — browsers, voting machines, tax software. Project Sunrise publishes pass-by-pass history so contributors and journalists can see what changed and when. Meta-transparency about the tool builds trust in the tracker itself. If a platform won't show its own edit history, why trust its edit history of government?",
+      "Software changelogs are standard practice for anything that ships iterative improvements - browsers, voting machines, tax software. Project Sunrise publishes pass-by-pass history so contributors and journalists can see what changed and when. Meta-transparency about the tool builds trust in the tracker itself. If a platform won't show its own edit history, why trust its edit history of government?",
     stab: "FOIA logs exist for a reason.",
     sources: [
       cite(
@@ -6665,7 +6665,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Media", "Culture Wars"],
     theySay: "AGENTS.md for AI coding? You're building bot propaganda!",
     youSay:
-      "AGENTS.md is developer documentation — like CONTRIBUTING.md — that tells future contributors how the repo is structured, how to validate links, and how to add sourced content without breaking the build. Every major open-source project documents conventions for humans and tools alike. Structured guidance reduces errors and keeps editorial standards consistent. That's quality control, not automation of persuasion.",
+      "AGENTS.md is developer documentation - like CONTRIBUTING.md - that tells future contributors how the repo is structured, how to validate links, and how to add sourced content without breaking the build. Every major open-source project documents conventions for humans and tools alike. Structured guidance reduces errors and keeps editorial standards consistent. That's quality control, not automation of persuasion.",
     stab: "Heritage trains appointees. We document standards.",
     sources: [
       cite(
@@ -6693,7 +6693,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Media", "Democracy"],
     theySay: "Link validation is performative! Links break anyway!",
     youSay:
-      "Broken citation links are how good-faith research dies — readers click, get a 404, and dismiss the whole argument. Automated validation before deploy catches rot early and writes a verified-url registry displayed in the citation modal. GAO and IG reports include working references for a reason. Performative is publishing claims without checking whether the sources still resolve.",
+      "Broken citation links are how good-faith research dies - readers click, get a 404, and dismiss the whole argument. Automated validation before deploy catches rot early and writes a verified-url registry displayed in the citation modal. GAO and IG reports include working references for a reason. Performative is publishing claims without checking whether the sources still resolve.",
     stab: "404 your own argument, not mine.",
     sources: [
       cite(
@@ -6706,7 +6706,7 @@ export const conversationHelpers: ConversationHelper[] = [
       ),
       cite(
         "doj_oip_foia",
-        "FOIA.gov — Department of Justice",
+        "FOIA.gov - Department of Justice",
         "U.S. Department of Justice",
         "https://www.foia.gov/",
         "Federal FOIA guidance emphasizes persistent public access to cited records.",
@@ -6721,7 +6721,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Culture Wars", "Media"],
     theySay: "GitHub issues mean you're surveilling contributors!",
     youSay:
-      "GitHub issues are a public bug tracker — the same system Linux, Python, and NASA use for transparent development. Submitting a correction with citations is voluntary; email works too. Issues create an auditable trail so fixes aren't lost in DMs. Surveillance is harvesting private data without consent. Public issue threads with primary sources are accountability infrastructure.",
+      "GitHub issues are a public bug tracker - the same system Linux, Python, and NASA use for transparent development. Submitting a correction with citations is voluntary; email works too. Issues create an auditable trail so fixes aren't lost in DMs. Surveillance is harvesting private data without consent. Public issue threads with primary sources are accountability infrastructure.",
     stab: "FOIA requests aren't surveillance either.",
     sources: [
       cite(
@@ -6729,7 +6729,7 @@ export const conversationHelpers: ConversationHelper[] = [
         "FOIA.gov",
         "U.S. Department of Justice",
         "https://www.foia.gov/",
-        "FOIA creates public request logs — transparent correction channels serve the same function.",
+        "FOIA creates public request logs - transparent correction channels serve the same function.",
         "2025-01-01"
       ),
       cite(
@@ -6747,9 +6747,9 @@ export const conversationHelpers: ConversationHelper[] = [
   {
     id: "infra-pass-distraction",
     category: ["Whataboutism", "Media"],
-    theySay: "Infrastructure passes don't help democracy — just build more content!",
+    theySay: "Infrastructure passes don't help democracy - just build more content!",
     youSay:
-      "Documentation, deploy pipelines, and link validation are how content scales beyond one maintainer. Pass 21 added README, AGENTS.md, custom-domain docs, five verified events, and ten sourced rebuttals — because infrastructure and substance ship together. Milestones aren't the point; they're proof the record keeps growing with editorial standards intact. Read event #125 and rebuttal #240, then tell me docs don't matter.",
+      "Documentation, deploy pipelines, and link validation are how content scales beyond one maintainer. Pass 21 added README, AGENTS.md, custom-domain docs, five verified events, and ten sourced rebuttals - because infrastructure and substance ship together. Milestones aren't the point; they're proof the record keeps growing with editorial standards intact. Read event #125 and rebuttal #240, then tell me docs don't matter.",
     stab: "The README links to the receipts.",
     sources: [
       cite(
@@ -6757,7 +6757,7 @@ export const conversationHelpers: ConversationHelper[] = [
         "Mandate for Leadership: The Conservative Promise",
         "Heritage Foundation",
         "https://www.project2025.org/",
-        "922 pages of planned restructuring — infrastructure planning at scale.",
+        "922 pages of planned restructuring - infrastructure planning at scale.",
         "2023-04-01"
       ),
       cite(
@@ -6777,8 +6777,8 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Media", "Culture Wars"],
     theySay: "A white website means you're corporate sellouts now!",
     youSay:
-      "White backgrounds maximize readability and let a real logo breathe — the same reason newspapers, court filings, and GAO reports use high-contrast layouts. Design isn't ideology; it's accessibility. Project Sunrise still publishes every tracker event, rebuttal source, and hidden-history citation on the same transparency standard.",
-    stab: "You want dark mode? Turn down your brightness — the receipts stay lit.",
+      "White backgrounds maximize readability and let a real logo breathe - the same reason newspapers, court filings, and GAO reports use high-contrast layouts. Design isn't ideology; it's accessibility. Project Sunrise still publishes every tracker event, rebuttal source, and hidden-history citation on the same transparency standard.",
+    stab: "You want dark mode? Turn down your brightness - the receipts stay lit.",
     sources: [
       cite(
         "gao_standards",
@@ -6805,7 +6805,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Education", "Culture Wars"],
     theySay: "People's History is Marxist brainwashing!",
     youSay:
-      "Howard Zinn compiled primary sources — letters, congressional records, survivor testimony — into a narrative textbooks ignored. Calling documented history 'brainwashing' is how you avoid answering why Operation Ajax, Tulsa, and COINTELPRO were left out of your curriculum. Read the footnotes; argue with the archives.",
+      "Howard Zinn compiled primary sources - letters, congressional records, survivor testimony - into a narrative textbooks ignored. Calling documented history 'brainwashing' is how you avoid answering why Operation Ajax, Tulsa, and COINTELPRO were left out of your curriculum. Read the footnotes; argue with the archives.",
     stab: "You can't debunk a congressional record by calling it woke.",
     sources: [
       cite(
@@ -6831,9 +6831,9 @@ export const conversationHelpers: ConversationHelper[] = [
   {
     id: "america-never-empire",
     category: ["Foreign Policy", "Whataboutism"],
-    theySay: "America never had an empire — we spread freedom!",
+    theySay: "America never had an empire - we spread freedom!",
     youSay:
-      "The Philippines, Hawaii, Guam, Puerto Rico, and decades of CIA coups say otherwise. The Philippine-American War alone killed hundreds of thousands after we refused their independence. Empire isn't a vibe — it's territory and gunboats. You can love American ideals while admitting we violated them repeatedly.",
+      "The Philippines, Hawaii, Guam, Puerto Rico, and decades of CIA coups say otherwise. The Philippine-American War alone killed hundreds of thousands after we refused their independence. Empire isn't a vibe - it's territory and gunboats. You can love American ideals while admitting we violated them repeatedly.",
     stab: "Manifest Destiny is empire with better marketing.",
     sources: [
       cite(
@@ -6859,9 +6859,9 @@ export const conversationHelpers: ConversationHelper[] = [
   {
     id: "both-parties-same",
     category: ["Whataboutism", "Democracy"],
-    theySay: "Both parties are the same — why bother voting?",
+    theySay: "Both parties are the same - why bother voting?",
     youSay:
-      "Both parties have flaws; they are not equivalent on voting rights, healthcare, labor, or climate. One party attempted to overturn an election and pardoned insurrectionists; the other passed the Inflation Reduction Act's climate investments. Cynicism is not analysis — it's a strategy to depress turnout among people who'd vote against authoritarians.",
+      "Both parties have flaws; they are not equivalent on voting rights, healthcare, labor, or climate. One party attempted to overturn an election and pardoned insurrectionists; the other passed the Inflation Reduction Act's climate investments. Cynicism is not analysis - it's a strategy to depress turnout among people who'd vote against authoritarians.",
     stab: "If they were the same, you wouldn't be working this hard to suppress one side's voters.",
     sources: [
       cite(
@@ -6889,7 +6889,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Economy", "Whataboutism"],
     theySay: "Democrats want welfare queens on your dime!",
     youSay:
-      "The 'welfare queen' myth was Ronald Reagan's racist campaign fiction. SNAP fraud rates are around 1%. Meanwhile, PPP loan fraud exceeded $64 billion, and billionaires pay lower effective rates than nurses. If you cared about fraud, you'd audit defense contractors — not grocery clerks.",
+      "The 'welfare queen' myth was Ronald Reagan's racist campaign fiction. SNAP fraud rates are around 1%. Meanwhile, PPP loan fraud exceeded $64 billion, and billionaires pay lower effective rates than nurses. If you cared about fraud, you'd audit defense contractors - not grocery clerks.",
     stab: "The biggest welfare queens wear suits and lobby Congress.",
     sources: [
       cite(
@@ -6915,10 +6915,10 @@ export const conversationHelpers: ConversationHelper[] = [
   {
     id: "great-replacement-fear",
     category: ["Immigration", "Culture Wars"],
-    theySay: "They're replacing us — it's demographic warfare!",
+    theySay: "They're replacing us - it's demographic warfare!",
     youSay:
-      "The 'Great Replacement' is a white-supremacist conspiracy theory cited by mass shooters from Christchurch to Pittsburgh. Immigration changes demographics slowly through legal processes Congress controls — not a secret plot. When someone says 'replacement,' ask which policy bill they're citing — because the answer is usually a chat forum, not a law.",
-    stab: "Demographics aren't a invasion — they're your neighbors getting citizenship.",
+      "The 'Great Replacement' is a white-supremacist conspiracy theory cited by mass shooters from Christchurch to Pittsburgh. Immigration changes demographics slowly through legal processes Congress controls - not a secret plot. When someone says 'replacement,' ask which policy bill they're citing - because the answer is usually a chat forum, not a law.",
+    stab: "Demographics aren't a invasion - they're your neighbors getting citizenship.",
     sources: [
       cite(
         "dhs_immigration",
@@ -6943,16 +6943,16 @@ export const conversationHelpers: ConversationHelper[] = [
   {
     id: "school-shootings-mental-health-only",
     category: ["Crime", "Healthcare"],
-    theySay: "School shootings are a mental health problem — not guns!",
+    theySay: "School shootings are a mental health problem - not guns!",
     youSay:
-      "Every country has mental illness; only America has this volume of mass shootings because of easy access to weapons of war. After Uvalde, Texas Republicans blocked raising the purchase age while expanding permitless carry. Mental health funding matters — but it's not a substitute for keeping AR-15s out of classrooms.",
+      "Every country has mental illness; only America has this volume of mass shootings because of easy access to weapons of war. After Uvalde, Texas Republicans blocked raising the purchase age while expanding permitless carry. Mental health funding matters - but it's not a substitute for keeping AR-15s out of classrooms.",
     stab: "Thoughts, prayers, and preemption laws aren't a mental health plan.",
     sources: [
       cite(
         "cdc_gun_violence",
         "Firearm Violence Prevention",
         "Centers for Disease Control and Prevention",
-        "https://www.cdc.gov/violenceprevention/firearms/index.html",
+        "https://www.cdc.gov/violence-prevention/about/index.html",
         "CDC tracks firearm injury and mortality data nationally.",
         "2024-01-01"
       ),
@@ -6971,9 +6971,9 @@ export const conversationHelpers: ConversationHelper[] = [
   {
     id: "union-thugs",
     category: ["Economy"],
-    theySay: "Unions are thugs — workers don't need them anymore!",
+    theySay: "Unions are thugs - workers don't need them anymore!",
     youSay:
-      "Unions built the weekend, overtime pay, and workplace safety rules non-union workers enjoy too. States with higher union density have higher median wages. When CEOs call organizers 'thugs,' remember Pullman, Ludlow, and Haymarket — where governments sent troops to kill strikers for asking for eight-hour days.",
+      "Unions built the weekend, overtime pay, and workplace safety rules non-union workers enjoy too. States with higher union density have higher median wages. When CEOs call organizers 'thugs,' remember Pullman, Ludlow, and Haymarket - where governments sent troops to kill strikers for asking for eight-hour days.",
     stab: "The thugs wore National Guard uniforms at Ludlow.",
     sources: [
       cite(
@@ -6999,9 +6999,9 @@ export const conversationHelpers: ConversationHelper[] = [
   {
     id: "minimum-wage-kills-jobs",
     category: ["Economy"],
-    theySay: "Raising minimum wage kills jobs — Econ 101!",
+    theySay: "Raising minimum wage kills jobs - Econ 101!",
     youSay:
-      "Meta-analyses of state-level increases show minimal employment effects while reducing poverty. Washington and California didn't become job deserts. If wages 'kill jobs,' explain why CEOs taking 300-to-1 pay ratios isn't the same lecture. Workers aren't widgets — they're customers with rent due.",
+      "Meta-analyses of state-level increases show minimal employment effects while reducing poverty. Washington and California didn't become job deserts. If wages 'kill jobs,' explain why CEOs taking 300-to-1 pay ratios isn't the same lecture. Workers aren't widgets - they're customers with rent due.",
     stab: "If low wages were job creators, we'd be swimming in prosperity.",
     sources: [
       cite(
@@ -7027,9 +7027,9 @@ export const conversationHelpers: ConversationHelper[] = [
   {
     id: "obamacare-death-panels",
     category: ["Healthcare", "Media"],
-    theySay: "Obamacare has death panels — they ration your care!",
+    theySay: "Obamacare has death panels - they ration your care!",
     youSay:
-      "PolitiFact named 'death panels' Lie of the Year in 2009. The ACA expanded coverage to 20+ million Americans and banned pre-existing condition exclusions. Real rationing happens when you can't afford insulin — not when an independent board studies Medicare payment efficiency.",
+      "PolitiFact named 'death panels' Lie of the Year in 2009. The ACA expanded coverage to 20+ million Americans and banned pre-existing condition exclusions. Real rationing happens when you can't afford insulin - not when an independent board studies Medicare payment efficiency.",
     stab: "The death panel is a GoFundMe for your chemo.",
     sources: [
       cite(
@@ -7055,9 +7055,9 @@ export const conversationHelpers: ConversationHelper[] = [
   {
     id: "voter-fraud-millions",
     category: ["Elections", "Democracy"],
-    theySay: "Millions of illegals voted — that's why Trump lost!",
+    theySay: "Millions of illegals voted - that's why Trump lost!",
     youSay:
-      "Trump's own Cybersecurity and Infrastructure Security Agency called 2020 the most secure election in American history. Barr's DOJ found no fraud that could change the outcome. Every recount, audit, and lawsuit failed. 'Millions' is a number pulled from Twitter — not a docket.",
+      "Trump's own Cybersecurity and Infrastructure Security Agency called 2020 the most secure election in American history. Barr's DOJ found no fraud that could change the outcome. Every recount, audit, and lawsuit failed. 'Millions' is a number pulled from Twitter - not a docket.",
     stab: "60 courts asked for fraud evidence. 60 got nothing.",
     sources: [
       cite(
@@ -7086,7 +7086,7 @@ export const conversationHelpers: ConversationHelper[] = [
     theySay: "America was founded as a Christian nation!",
     youSay:
       "The Treaty of Tripoli (1797), signed by John Adams and ratified by the Senate, states explicitly that 'the Government of the United States is not, in any sense, founded on the Christian religion.' The First Amendment forbids establishment of religion. Personal faith of some founders doesn't override constitutional secular government.",
-    stab: "Read Article VI — no religious test for office. That's the founders' answer.",
+    stab: "Read Article VI - no religious test for office. That's the founders' answer.",
     sources: [
       cite(
         "tripoli_archives",
@@ -7111,9 +7111,9 @@ export const conversationHelpers: ConversationHelper[] = [
   {
     id: "trickle-down-works",
     category: ["Economy"],
-    theySay: "Trickle-down economics works — cut taxes, boom!",
+    theySay: "Trickle-down economics works - cut taxes, boom!",
     youSay:
-      "The 2017 Trump tax cuts added trillions to deficits without delivering promised wage growth. Kansas's supply-side experiment collapsed so badly the Republican legislature reversed it. When you cut taxes on billionaires, they buy stock buybacks — not your paycheck.",
+      "The 2017 Trump tax cuts added trillions to deficits without delivering promised wage growth. Kansas's supply-side experiment collapsed so badly the Republican legislature reversed it. When you cut taxes on billionaires, they buy stock buybacks - not your paycheck.",
     stab: "The trickle is warm and yellow.",
     sources: [
       cite(
@@ -7139,10 +7139,10 @@ export const conversationHelpers: ConversationHelper[] = [
   {
     id: "renewables-unreliable",
     category: ["Climate", "Economy"],
-    theySay: "Solar and wind can't power America — too unreliable!",
+    theySay: "Solar and wind can't power America - too unreliable!",
     youSay:
-      "Texas — oil country — generates more wind power than any state. Battery storage and grid upgrades are scaling fast; IRA investments accelerated deployment. No one credible says 100% overnight — but 'unreliable' is what they said about every energy transition from whale oil to nuclear.",
-    stab: "Texas blackouts were gas plants freezing — check the ERCOT report.",
+      "Texas - oil country - generates more wind power than any state. Battery storage and grid upgrades are scaling fast; IRA investments accelerated deployment. No one credible says 100% overnight - but 'unreliable' is what they said about every energy transition from whale oil to nuclear.",
+    stab: "Texas blackouts were gas plants freezing - check the ERCOT report.",
     sources: [
       cite(
         "eia_renewables",
@@ -7167,10 +7167,10 @@ export const conversationHelpers: ConversationHelper[] = [
   {
     id: "social-security-bankrupt",
     category: ["Economy", "Healthcare"],
-    theySay: "Social Security is going bankrupt — you'll never get it!",
+    theySay: "Social Security is going bankrupt - you'll never get it!",
     youSay:
-      "Social Security has a $2.8 trillion trust fund and can pay full benefits through the 2030s without changes. 'Bankrupt' is a scare word to privatize accounts into Wall Street fees. Lift the payroll tax cap on high earners and solvency extends decades — Congress chooses not to.",
-    stab: "It's not bankrupt — it's underfunded by choice.",
+      "Social Security has a $2.8 trillion trust fund and can pay full benefits through the 2030s without changes. 'Bankrupt' is a scare word to privatize accounts into Wall Street fees. Lift the payroll tax cap on high earners and solvency extends decades - Congress chooses not to.",
+    stab: "It's not bankrupt - it's underfunded by choice.",
     sources: [
       cite(
         "ssa_trustees",
@@ -7195,9 +7195,9 @@ export const conversationHelpers: ConversationHelper[] = [
   {
     id: "defense-spending-sacred",
     category: ["Economy", "Foreign Policy"],
-    theySay: "We can't cut defense — we need every penny!",
+    theySay: "We can't cut defense - we need every penny!",
     youSay:
-      "The U.S. spends more on defense than the next nine countries combined. GAO puts DOD on its High Risk List for audit failures year after year. Pentagon couldn't pass an audit while Congress blocked veterans' healthcare funding. Security isn't unlimited waste — it's priorities.",
+      "The U.S. spends more on defense than the next nine countries combined. GAO puts DOD on its High Risk List for audit failures year after year. Pentagon couldn't pass an audit while Congress blocked veterans' healthcare funding. Security isn't unlimited waste - it's priorities.",
     stab: "We can't audit the Pentagon but we're sure we need more?",
     sources: [
       cite(
@@ -7212,7 +7212,7 @@ export const conversationHelpers: ConversationHelper[] = [
         "gao_dod_highrisk",
         "DOD High Risk Areas",
         "U.S. Government Accountability Office",
-        "https://www.gao.gov/assessments/department-defense",
+        "https://www.gao.gov/topics/national-defense",
         "GAO assesses DOD management and audit challenges.",
         "2025-01-01"
       ),
@@ -7225,7 +7225,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Education", "Culture Wars"],
     theySay: "Book bans are just parental rights!",
     youSay:
-      "Removing Toni Morrison from libraries isn't parental choice — it's state censorship. PEN America documented thousands of title removals, disproportionately books by LGBTQ and Black authors. Parents can guide their own kids; they don't get veto power over everyone else's curriculum.",
+      "Removing Toni Morrison from libraries isn't parental choice - it's state censorship. PEN America documented thousands of title removals, disproportionately books by LGBTQ and Black authors. Parents can guide their own kids; they don't get veto power over everyone else's curriculum.",
     stab: "Parental rights end at my kid's backpack, not your library card.",
     sources: [
       cite(
@@ -7253,14 +7253,14 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Healthcare", "Culture Wars"],
     theySay: "Democrats want abortion up until birth!",
     youSay:
-      "Late-term abortions are rare — typically tragic medical cases. CDC data shows over 90% occur in the first trimester. No serious politician advocates 'abortion until birth' as policy; it's a straw man to avoid discussing 14-state total bans with no rape exception. Argue the actual laws on the books.",
+      "Late-term abortions are rare - typically tragic medical cases. CDC data shows over 90% occur in the first trimester. No serious politician advocates 'abortion until birth' as policy; it's a straw man to avoid discussing 14-state total bans with no rape exception. Argue the actual laws on the books.",
     stab: "Show me the bill titled 'Abortion Until Birth Act.' I'll wait.",
     sources: [
       cite(
         "cdc_abortion",
         "Abortion Surveillance",
         "Centers for Disease Control and Prevention",
-        "https://www.cdc.gov/reproductivehealth/data_stats/abortion.htm",
+        "https://www.cdc.gov/reproductive-health/data-statistics/",
         "CDC reports gestational timing of legal abortions.",
         "2024-01-01"
       ),
@@ -7281,8 +7281,8 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Economy"],
     theySay: "Raising capital gains tax kills investment!",
     youSay:
-      "Billionaires often pay lower rates than teachers because wages are taxed higher than investment income. CBO found capital gains preferences overwhelmingly benefit the top 1%. Investment didn't collapse when rates were higher in the 1990s boom — but middle-class wages grew.",
-    stab: "Your paycheck isn't an investment — stop taxing it like one is optional.",
+      "Billionaires often pay lower rates than teachers because wages are taxed higher than investment income. CBO found capital gains preferences overwhelmingly benefit the top 1%. Investment didn't collapse when rates were higher in the 1990s boom - but middle-class wages grew.",
+    stab: "Your paycheck isn't an investment - stop taxing it like one is optional.",
     sources: [
       cite(
         "cbo_capital_gains",
@@ -7307,10 +7307,10 @@ export const conversationHelpers: ConversationHelper[] = [
   {
     id: "public-schools-failing",
     category: ["Education"],
-    theySay: "Public schools are failing — we need vouchers!",
+    theySay: "Public schools are failing - we need vouchers!",
     youSay:
-      "NAEP scores dipped after COVID disruptions — but public schools educate 90% of American kids including those vouchers wouldn't serve. Arizona and Ohio voucher expansions siphoned billions to private schools with minimal accountability. 'School choice' often means choosing to defund the school your neighbor's kid attends.",
-    stab: "Vouchers don't fix schools — they fix tuition for families already in private school.",
+      "NAEP scores dipped after COVID disruptions - but public schools educate 90% of American kids including those vouchers wouldn't serve. Arizona and Ohio voucher expansions siphoned billions to private schools with minimal accountability. 'School choice' often means choosing to defund the school your neighbor's kid attends.",
+    stab: "Vouchers don't fix schools - they fix tuition for families already in private school.",
     sources: [
       cite(
         "naep_scores",
@@ -7337,7 +7337,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Elections", "Jan 6"],
     theySay: "The FBI rigged the election against Trump!",
     youSay:
-      "The FBI reopened the Clinton email investigation 11 days before the 2016 election — hardly pro-Democrat bias. In 2020, Trump's FBI director Wray stayed in office and found no widespread fraud. 'Rigged' is what you say when 60 courts reject your evidence.",
+      "The FBI reopened the Clinton email investigation 11 days before the 2016 election - hardly pro-Democrat bias. In 2020, Trump's FBI director Wray stayed in office and found no widespread fraud. 'Rigged' is what you say when 60 courts reject your evidence.",
     stab: "Comey hurt Clinton more than any Trump investigation hurt Trump.",
     sources: [
       cite(
@@ -7363,10 +7363,10 @@ export const conversationHelpers: ConversationHelper[] = [
   {
     id: "billionaires-earned-it",
     category: ["Economy", "Whataboutism"],
-    theySay: "Billionaires earned every penny — stop the envy!",
+    theySay: "Billionaires earned every penny - stop the envy!",
     youSay:
-      "Many billionaires inherited wealth or built fortunes on public infrastructure, patents, and workers paid poverty wages. Amazon's success relied on highways, internet, and USPS — while warehouse injury rates led OSHA investigations. Meritocracy doesn't explain three people owning more than the bottom half of America.",
-    stab: "Nobody earns a billion dollars — they take it.",
+      "Many billionaires inherited wealth or built fortunes on public infrastructure, patents, and workers paid poverty wages. Amazon's success relied on highways, internet, and USPS - while warehouse injury rates led OSHA investigations. Meritocracy doesn't explain three people owning more than the bottom half of America.",
+    stab: "Nobody earns a billion dollars - they take it.",
     sources: [
       cite(
         "fed_wealth",
@@ -7393,7 +7393,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Crime", "Whataboutism"],
     theySay: "Democrat-run cities are hellholes!",
     youSay:
-      "Crime rates fell nationally from 2023 peaks; many 'dangerous' cities have Republican mayors or GOP governors. Poverty, gun availability, and funding cuts predict crime better than party registration. Jacksonville, Tulsa, and Miami aren't shorthand for Republican failure — don't use cities as racist proxies.",
+      "Crime rates fell nationally from 2023 peaks; many 'dangerous' cities have Republican mayors or GOP governors. Poverty, gun availability, and funding cuts predict crime better than party registration. Jacksonville, Tulsa, and Miami aren't shorthand for Republican failure - don't use cities as racist proxies.",
     stab: "If party control determined crime, state capitals would be crime-free.",
     sources: [
       cite(
@@ -7421,8 +7421,8 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Foreign Policy"],
     theySay: "NATO countries are freeloading on America!",
     youSay:
-      "NATO's 2% GDP target is a guideline, not rent. European allies spent billions supporting Ukraine while the U.S. benefits from alliance infrastructure worldwide. Article 5 was invoked once — for America after 9/11. Alliances aren't Uber rides; they're deterrence that prevents wars costing far more than dues.",
-    stab: "The freeloader is the dictator who thought NATO was weak — until it wasn't.",
+      "NATO's 2% GDP target is a guideline, not rent. European allies spent billions supporting Ukraine while the U.S. benefits from alliance infrastructure worldwide. Article 5 was invoked once - for America after 9/11. Alliances aren't Uber rides; they're deterrence that prevents wars costing far more than dues.",
+    stab: "The freeloader is the dictator who thought NATO was weak - until it wasn't.",
     sources: [
       cite(
         "nato_spending",
@@ -7449,8 +7449,8 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Courts"],
     theySay: "Only Democrat judges are activists!",
     youSay:
-      "The Supreme Court overturned Roe, expanded gun rights, and granted presidents sweeping immunity — all conservative judicial activism. 'Originalism' somehow always discovers outcomes the Federalist Society wanted. When judges legislate from the bench, call it what it is — regardless of robe color.",
-    stab: "Citizens United wasn't in the Constitution — it was in a brief.",
+      "The Supreme Court overturned Roe, expanded gun rights, and granted presidents sweeping immunity - all conservative judicial activism. 'Originalism' somehow always discovers outcomes the Federalist Society wanted. When judges legislate from the bench, call it what it is - regardless of robe color.",
+    stab: "Citizens United wasn't in the Constitution - it was in a brief.",
     sources: [
       cite(
         "scotus_dobbs",
@@ -7475,9 +7475,9 @@ export const conversationHelpers: ConversationHelper[] = [
   {
     id: "media-lies-only-fox-tells-truth",
     category: ["Media"],
-    theySay: "Only Fox tells the truth — mainstream media lies!",
+    theySay: "Only Fox tells the truth - mainstream media lies!",
     youSay:
-      "Dominion sued Fox for knowingly airing election fraud lies; Fox paid $787 million rather than testify under oath. Defamation settlements aren't 'truth.' Every outlet makes mistakes — the question is whether they correct them or double down when the CEO wants ratings.",
+      "Dominion sued Fox for knowingly airing election fraud lies; Fox paid $787 million rather than testify under oath. Defamation settlements aren't 'truth.' Every outlet makes mistakes - the question is whether they correct them or double down when the CEO wants ratings.",
     stab: "Truth doesn't settle for three-quarters of a billion dollars.",
     sources: [
       cite(
@@ -7503,10 +7503,10 @@ export const conversationHelpers: ConversationHelper[] = [
   {
     id: "covid-lab-leak-proven",
     category: ["Healthcare", "Media"],
-    theySay: "COVID lab leak is proven — Fauci lied!",
+    theySay: "COVID lab leak is proven - Fauci lied!",
     youSay:
-      "Intelligence agencies remain split; neither natural origin nor lab leak is 'proven.' Science updated as evidence emerged — that's how inquiry works. Conflating uncertainty with conspiracy makes you vulnerable to actual cover-ups. Demand data, not dunk tweets.",
-    stab: "Proven means published — not viral.",
+      "Intelligence agencies remain split; neither natural origin nor lab leak is 'proven.' Science updated as evidence emerged - that's how inquiry works. Conflating uncertainty with conspiracy makes you vulnerable to actual cover-ups. Demand data, not dunk tweets.",
+    stab: "Proven means published - not viral.",
     sources: [
       cite(
         "odni_covid",
@@ -7533,8 +7533,8 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Education", "Economy"],
     theySay: "Student loan forgiveness is unfair to people who paid!",
     youSay:
-      "PPP loans forgave hundreds of billions to businesses — including churches and lawmakers' donors — with minimal verification. Public service loan forgiveness existed for decades because society benefits from teachers and nurses. Selective outrage about student debt but not corporate bailouts tells you who the audience is.",
-    stab: "You didn't complain when Boeing got forgiven — just when teachers did.",
+      "PPP loans forgave hundreds of billions to businesses - including churches and lawmakers' donors - with minimal verification. Public service loan forgiveness existed for decades because society benefits from teachers and nurses. Selective outrage about student debt but not corporate bailouts tells you who the audience is.",
+    stab: "You didn't complain when Boeing got forgiven - just when teachers did.",
     sources: [
       cite(
         "ed_pslf",
@@ -7559,7 +7559,7 @@ export const conversationHelpers: ConversationHelper[] = [
   {
     id: "heritage-not-project2025",
     category: ["Democracy", "Media"],
-    theySay: "Project 2025 isn't Heritage — you're making connections up!",
+    theySay: "Project 2025 isn't Heritage - you're making connections up!",
     youSay:
       "Heritage Foundation published the 922-page Mandate for Leadership, runs project2025.org, and staffed the transition. Trump officials implementing Schedule F, DOGE cuts, and agency purges match chapter recommendations verbatim. Denying authorship while executing the playbook is the tell.",
     stab: "They wrote the menu. You're eating the meal.",
@@ -7587,10 +7587,10 @@ export const conversationHelpers: ConversationHelper[] = [
   {
     id: "tariffs-free-money",
     category: ["Economy", "Foreign Policy"],
-    theySay: "Tariffs are free money — foreigners pay!",
+    theySay: "Tariffs are free money - foreigners pay!",
     youSay:
-      "Tariffs are taxes on American importers, passed through to consumers. Peterson Institute and Tax Foundation estimated Trump tariff proposals cost typical households thousands annually. Trade wars aren't magic — they're inflation with extra steps and retaliatory hits on U.S. farmers.",
-    stab: "The tariff fairy doesn't exist — check your receipt.",
+      "Tariffs are taxes on American importers, passed through to consumers. Peterson Institute and Tax Foundation estimated Trump tariff proposals cost typical households thousands annually. Trade wars aren't magic - they're inflation with extra steps and retaliatory hits on U.S. farmers.",
+    stab: "The tariff fairy doesn't exist - check your receipt.",
     sources: [
       cite(
         "cbo_tariffs",
@@ -7604,7 +7604,7 @@ export const conversationHelpers: ConversationHelper[] = [
         "usitc_tariffs",
         "Harmonized Tariff Schedule",
         "U.S. International Trade Commission",
-        "https://www.usitc.gov/tariff_affairs/hts_index.htm",
+        "https://hts.usitc.gov/",
         "USITC maintains official U.S. tariff schedules.",
         "2024-01-01"
       ),
@@ -7617,7 +7617,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Media", "Democracy"],
     theySay: "More rebuttals doesn't mean more truth!",
     youSay:
-      "Quantity without sourcing would be propaganda — that's why each rebuttal links primary records, archived URLs, and validated citations. Adding 30+ entries expands coverage of talking points voters actually hear: Great Replacement, trickle-down, NATO freeloading, book bans. More rebuttals means fewer unresearched dinner-table surrender moments.",
+      "Quantity without sourcing would be propaganda - that's why each rebuttal links primary records, archived URLs, and validated citations. Adding 30+ entries expands coverage of talking points voters actually hear: Great Replacement, trickle-down, NATO freeloading, book bans. More rebuttals means fewer unresearched dinner-table surrender moments.",
     stab: "You want less research? That's telling.",
     sources: [
       cite(
@@ -7625,14 +7625,14 @@ export const conversationHelpers: ConversationHelper[] = [
         "Campaign Finance Disclosure",
         "Federal Election Commission",
         "https://www.fec.gov/help-candidates-and-committees/",
-        "FEC requires disclosure — transparency enables accountability.",
+        "FEC requires disclosure - transparency enables accountability.",
         "2024-01-01"
       ),
       cite(
         "gao_evidence",
         "Evidence-Based Policymaking",
         "U.S. Government Accountability Office",
-        "https://www.gao.gov/evidence-based-policymaking",
+        "https://www.gao.gov/about/what-gao-does",
         "GAO promotes evidence standards in public policy.",
         "2024-01-01"
       ),

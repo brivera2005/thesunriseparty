@@ -13,11 +13,11 @@
 | Section | Description |
 | -------- | ------------ |
 | **Project 2025 Tracker** | Verified executive actions with severity scores, primary sources, and cross-links to independent watchdogs |
-| **Rebuttal Desk** | Copy-ready, sourced counters for common MAGA talking points — study mode, quiz mode, and category filters |
+| **Rebuttal Desk** | Copy-ready, sourced counters for common MAGA talking points - study mode, quiz mode, and category filters |
 | **Progressive Blueprint** | Policy fixes with bill numbers, economic modeling, and irreversible safeguards |
 | **Accountability** | Dark money, FOIA, declassification, and elite-capture transparency |
 
-Data exports: JSON, CSV, RSS, and iCal feeds. All content is statically generated — no database, no user accounts on the server.
+Data exports: JSON, CSV, RSS, and iCal feeds. All content is statically generated - no database, no user accounts on the server.
 
 ---
 
@@ -28,7 +28,7 @@ Data exports: JSON, CSV, RSS, and iCal feeds. All content is statically generate
 - Tailwind CSS 4
 - [shadcn/ui](https://ui.shadcn.com) + Radix primitives
 - [Recharts](https://recharts.org) (tracker stats)
-- [Zustand](https://zustand.docs.pmnd.rs) (client state — bookmarks, command palette)
+- [Zustand](https://zustand.docs.pmnd.rs) (client state - bookmarks, command palette)
 - Hosted on [Cloudflare Pages](https://pages.cloudflare.com)
 
 ---
@@ -37,12 +37,12 @@ Data exports: JSON, CSV, RSS, and iCal feeds. All content is statically generate
 
 | Route | Purpose |
 | ----- | ------- |
-| [`/`](https://thesunriseparty.pages.dev/) | Home hub — threat gauge, portal cards, recent events |
+| [`/`](https://thesunriseparty.pages.dev/) | Home hub - threat gauge, portal cards, recent events |
 | [`/start`](https://thesunriseparty.pages.dev/start) | Four-step guided tour for new visitors |
 | [`/sitemap`](https://thesunriseparty.pages.dev/sitemap) | Human-readable navigation hub with live counts |
 | [`/tracker`](https://thesunriseparty.pages.dev/tracker) | Full Project 2025 event tracker |
 | [`/tracker/[id]`](https://thesunriseparty.pages.dev/tracker/EVT-2025-0120-001) | Event detail pages |
-| [`/events`](https://thesunriseparty.pages.dev/events) | Events hub — P2025 chapter map |
+| [`/events`](https://thesunriseparty.pages.dev/events) | Events hub - P2025 chapter map |
 | [`/rebuttal`](https://thesunriseparty.pages.dev/rebuttal) | All rebuttals |
 | [`/rebuttal?study=1`](https://thesunriseparty.pages.dev/rebuttal?study=1) | Study mode (flashcards) |
 | [`/rebuttal?quiz=1`](https://thesunriseparty.pages.dev/rebuttal?quiz=1) | Quiz mode (multiple choice) |
@@ -126,7 +126,7 @@ npx wrangler pages deploy out --project-name=thesunriseparty
 ### Release checklist
 
 ```bash
-npm run validate-links   # must pass — updates lib/data/validated-urls.ts
+npm run validate-links   # must pass - updates lib/data/validated-urls.ts
 npm run build
 npx wrangler pages deploy out --project-name=thesunriseparty
 ```
@@ -170,9 +170,9 @@ See [`AGENTS.md`](./AGENTS.md) for developer and Cursor agent conventions.
 
 **Content submissions:** [https://thesunriseparty.pages.dev/contribute](https://thesunriseparty.pages.dev/contribute) · [GitHub Issues](https://github.com/brivera2005/thesunriseparty/issues)
 
-- **Tracker events** — primary source required (EO, Federal Register, GAO, court docket, etc.)
-- **Rebuttals** — claim, counter, stab line, and at least two citations
-- **Corrections** — link to the page and the corrected source
+- **Tracker events** - primary source required (EO, Federal Register, GAO, court docket, etc.)
+- **Rebuttals** - claim, counter, stab line, and at least two citations
+- **Corrections** - link to the page and the corrected source
 
 Editorial standards: [https://thesunriseparty.pages.dev/methodology](https://thesunriseparty.pages.dev/methodology)
 
@@ -193,4 +193,4 @@ out/                  Static export output (deploy this)
 
 ## License
 
-Open source. Data exports are CC-BY-4.0 — cite [Project Sunrise](https://thesunriseparty.pages.dev).
+Open source. Data exports are CC-BY-4.0 - cite [Project Sunrise](https://thesunriseparty.pages.dev).

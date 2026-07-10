@@ -36,31 +36,31 @@ export const policyFixes: PolicyFix[] = [
         number: "H.R. 3421",
         title: "Medicare for All Act of 2025 (Jayapal)",
         url: "https://www.congress.gov/bill/119th-congress/house-bill/3421",
-        status: "Introduced — referred to Energy & Commerce",
+        status: "Introduced - referred to Energy & Commerce",
       },
       {
         number: "S. 1129",
         title: "Medicare for All Act of 2025 (Sanders)",
         url: "https://www.congress.gov/bill/119th-congress/senate-bill/1129",
-        status: "Introduced — referred to Finance",
+        status: "Introduced - referred to Finance",
       },
     ],
     implementationTimeline: [
       {
-        phase: "Year 1 — Coverage expansion",
-        timeframe: "Months 1–12",
+        phase: "Year 1 - Coverage expansion",
+        timeframe: "Months 1-12",
         description:
           "Lower Medicare eligibility to 55, cap out-of-pocket costs, and launch public option buy-in while building claims infrastructure.",
       },
       {
-        phase: "Year 2–3 — Transition",
-        timeframe: "Months 13–36",
+        phase: "Year 2-3 - Transition",
+        timeframe: "Months 13-36",
         description:
           "Phase out employer-sponsored private plans with 5-year job guarantees for displaced insurance workers; centralize drug price negotiation.",
       },
       {
-        phase: "Year 4–5 — Full single payer",
-        timeframe: "Months 37–60",
+        phase: "Year 4-5 - Full single payer",
+        timeframe: "Months 37-60",
         description:
           "Universal enrollment with integrated long-term care; independent Payment Advisory Board operational with public audits.",
       },
@@ -100,13 +100,13 @@ export const policyFixes: PolicyFix[] = [
         number: "H.R. 1274",
         title: "Protecting the Right to Organize Act (PRO Act)",
         url: "https://www.congress.gov/bill/119th-congress/house-bill/1274",
-        status: "Introduced — referred to Education & Workforce",
+        status: "Introduced - referred to Education & Workforce",
       },
       {
         number: "H.R. 100",
         title: "Federal Jobs Guarantee Development Act",
         url: "https://www.congress.gov/bill/119th-congress/house-bill/100",
-        status: "Introduced — pilot program authorization",
+        status: "Introduced - pilot program authorization",
       },
     ],
     implementationTimeline: [
@@ -118,13 +118,13 @@ export const policyFixes: PolicyFix[] = [
       },
       {
         phase: "PRO Act labor rights",
-        timeframe: "Year 1–2",
+        timeframe: "Year 1-2",
         description:
           "Pass PRO Act provisions: card-check recognition, gig worker reclassification, and triple-damage penalties for union-busting.",
       },
       {
         phase: "National scale-up",
-        timeframe: "Year 3–5",
+        timeframe: "Year 3-5",
         description:
           "Expand guarantee to all willing workers; Jobs Guarantee Board assumes oversight with union majority.",
       },
@@ -164,13 +164,13 @@ export const policyFixes: PolicyFix[] = [
         number: "H.R. 7941",
         title: "Green New Deal Resolution",
         url: "https://www.congress.gov/bill/119th-congress/house-bill/7941",
-        status: "Introduced — framework resolution",
+        status: "Introduced - framework resolution",
       },
       {
         number: "S. 685",
         title: "Clean Energy for America Act",
         url: "https://www.congress.gov/bill/119th-congress/senate-bill/685",
-        status: "Introduced — tax credit modernization",
+        status: "Introduced - tax credit modernization",
       },
     ],
     implementationTimeline: [
@@ -182,13 +182,13 @@ export const policyFixes: PolicyFix[] = [
       },
       {
         phase: "Methane & grid",
-        timeframe: "Year 1–3",
+        timeframe: "Year 1-3",
         description:
           "Reinstate EPA methane rules with criminal penalties; deploy $3T for renewable grid and transit.",
       },
       {
         phase: "Emissions budget",
-        timeframe: "Year 4–10",
+        timeframe: "Year 4-10",
         description:
           "Annual emissions targets with automatic supplemental measures if benchmarks missed; 30% community-owned capacity.",
       },
@@ -205,7 +205,7 @@ export const policyFixes: PolicyFix[] = [
     economicImpact:
       "AVR states saw 94% registration increase among young voters. Reduced election administration costs of $1.2B annually through standardized systems. Increased civic participation correlates with 0.3% GDP growth from policy stability.",
     costOfInaction:
-      "Without federal voting protections, restrictive state laws proliferate — 32 passed in 2025 alone — while 5.2 million citizens remain disenfranchised and gerrymandering locks minority rule into 28 congressional districts.",
+      "Without federal voting protections, restrictive state laws proliferate - 32 passed in 2025 alone - while 5.2 million citizens remain disenfranchised and gerrymandering locks minority rule into 28 congressional districts.",
     costOfInactionCitations: [
       citations.cost_inaction_voting,
       citations.brennan_voting,
@@ -228,13 +228,13 @@ export const policyFixes: PolicyFix[] = [
         number: "H.R. 14",
         title: "John R. Lewis Voting Rights Advancement Act",
         url: "https://www.congress.gov/bill/119th-congress/house-bill/14",
-        status: "Introduced — referred to Judiciary",
+        status: "Introduced - referred to Judiciary",
       },
       {
         number: "H.R. 11",
         title: "Freedom to Vote Act",
         url: "https://www.congress.gov/bill/119th-congress/house-bill/11",
-        status: "Introduced — AVR & redistricting reforms",
+        status: "Introduced - AVR & redistricting reforms",
       },
     ],
     implementationTimeline: [
@@ -246,13 +246,13 @@ export const policyFixes: PolicyFix[] = [
       },
       {
         phase: "Rights restoration",
-        timeframe: "Year 1–2",
+        timeframe: "Year 1-2",
         description:
           "Automatic rights restoration for all citizens; independent redistricting commissions mandated.",
       },
       {
         phase: "Structural reform",
-        timeframe: "Year 3–5",
+        timeframe: "Year 3-5",
         description:
           "Public campaign financing live; proportional representation pilots in 5 states; suffrage amendment ratification push.",
       },
@@ -291,21 +291,21 @@ export const policyFixes: PolicyFix[] = [
         number: "H.R. 4647",
         title: "College for All Act",
         url: "https://www.congress.gov/bill/119th-congress/house-bill/4647",
-        status: "Introduced — tuition-free public higher ed",
+        status: "Introduced - tuition-free public higher ed",
       },
       {
         number: "H.R. 2813",
         title: "Universal Child Care and Early Learning Act",
         url: "https://www.congress.gov/bill/119th-congress/house-bill/2813",
-        status: "Introduced — pre-K expansion",
+        status: "Introduced - pre-K expansion",
       },
     ],
     implementationTimeline: [
       {
         phase: "Pre-K rollout",
-        timeframe: "Year 1–2",
+        timeframe: "Year 1-2",
         description:
-          "Federal-state partnership funds universal pre-K for ages 3–4 in highest-need districts first.",
+          "Federal-state partnership funds universal pre-K for ages 3-4 in highest-need districts first.",
       },
       {
         phase: "Debt cancellation",
@@ -315,7 +315,7 @@ export const policyFixes: PolicyFix[] = [
       },
       {
         phase: "Title I & Title IX",
-        timeframe: "Year 3–5",
+        timeframe: "Year 3-5",
         description:
           "40% Title I funding increase; trauma-informed Title IX proceedings with student-faculty governance boards.",
       },
@@ -328,7 +328,7 @@ export const safeguardItems: SafeguardItem[] = [
     id: "SAFE-001",
     title: "Anti-Corruption Architecture",
     description:
-      "Structural reforms to sever the revolving door between government, lobbying, and corporate interests—making corruption not just illegal but structurally difficult.",
+      "Structural reforms to sever the revolving door between government, lobbying, and corporate interests-making corruption not just illegal but structurally difficult.",
     mechanisms: [
       "Lifetime lobbying ban for former members of Congress and senior executive branch officials",
       "Public financing of all federal elections with real-time disclosure of contributions over $200",

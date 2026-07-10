@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const count = getRebuttalsByCategory(category).length;
   const title = `${category} Rebuttals | Project Sunrise`;
-  const description = `${count} sourced talking points for countering ${category.toLowerCase()} claims — ready for real conversations.`;
+  const description = `${count} sourced talking points for countering ${category.toLowerCase()} claims - ready for real conversations.`;
   const url = `${SITE_URL}${rebuttalCategoryPath(category)}`;
 
   return {

@@ -29,7 +29,7 @@ const eventsExport = {
     site: SITE,
     generated: new Date().toISOString(),
     count: timelineEvents.length,
-    license: "CC-BY-4.0 — cite Project Sunrise (thesunriseparty.pages.dev)",
+    license: "CC-BY-4.0 - cite Project Sunrise (thesunriseparty.pages.dev)",
   },
   events: timelineEvents.map((event) => ({
     id: event.Event_ID,
@@ -61,7 +61,7 @@ const rebuttalsExport = {
     site: SITE,
     generated: new Date().toISOString(),
     count: conversationHelpers.length,
-    license: "CC-BY-4.0 — cite Project Sunrise (thesunriseparty.pages.dev)",
+    license: "CC-BY-4.0 - cite Project Sunrise (thesunriseparty.pages.dev)",
   },
   rebuttals: conversationHelpers.map((entry) => ({
     id: entry.id,

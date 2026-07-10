@@ -1,4 +1,4 @@
-# AGENTS.md — Project Sunrise
+# AGENTS.md - Project Sunrise
 
 Guidance for Cursor agents and human contributors working on this repository.
 
@@ -14,7 +14,7 @@ This is Next.js 16 with breaking changes from earlier versions. Read relevant do
 
 - **Live:** [https://thesunriseparty.pages.dev](https://thesunriseparty.pages.dev)
 - **Stack:** Next.js 16 static export, TypeScript, Tailwind 4, shadcn/ui
-- **Deploy:** Cloudflare Pages — project name `thesunriseparty`, output dir `out/`
+- **Deploy:** Cloudflare Pages - project name `thesunriseparty`, output dir `out/`
 - **Canonical URL constant:** `lib/metadata.ts` → `SITE_URL`
 
 ---
@@ -29,7 +29,7 @@ This is Next.js 16 with breaking changes from earlier versions. Read relevant do
 | `lib/data/policies.ts` | Blueprint policy fixes & safeguards |
 | `lib/data/changelog.ts` | Version history for `/changelog` |
 | `lib/data/sitemap-content.ts` | Human-readable sitemap sections |
-| `lib/data/validated-urls.ts` | **Auto-generated** by `validate-links` — do not hand-edit |
+| `lib/data/validated-urls.ts` | **Auto-generated** by `validate-links` - do not hand-edit |
 | `scripts/validate-links.mjs` | HTTP-checks all URLs in `lib/data/*.ts` |
 | `scripts/generate-feed.ts` | RSS + iCal |
 | `scripts/generate-data-export.ts` | JSON + CSV exports |
@@ -41,19 +41,19 @@ This is Next.js 16 with breaking changes from earlier versions. Read relevant do
 
 Each "pass" increments content and ships a version bump:
 
-1. **Content** — Add events to `timeline-events.ts` and/or rebuttals to `conversation-helpers.ts`
-2. **Milestones** — Update banners in `components/home-hub.tsx`, `components/rebuttal/rebuttal-page.tsx`, `lib/data/sitemap-content.ts`
-3. **Changelog** — Add entry at top of `lib/data/changelog.ts` (semver, e.g. `0.21.0`)
-4. **Validate** — `npm run validate-links` (must exit 0; rewrites `validated-urls.ts`)
-5. **Build** — `npm run build` (runs prebuild generators)
-6. **Deploy** — `npx wrangler pages deploy out --project-name=thesunriseparty`
+1. **Content** - Add events to `timeline-events.ts` and/or rebuttals to `conversation-helpers.ts`
+2. **Milestones** - Update banners in `components/home-hub.tsx`, `components/rebuttal/rebuttal-page.tsx`, `lib/data/sitemap-content.ts`
+3. **Changelog** - Add entry at top of `lib/data/changelog.ts` (semver, e.g. `0.21.0`)
+4. **Validate** - `npm run validate-links` (must exit 0; rewrites `validated-urls.ts`)
+5. **Build** - `npm run build` (runs prebuild generators)
+6. **Deploy** - `npx wrangler pages deploy out --project-name=thesunriseparty`
 
 ### Content conventions
 
 **Events**
 
 - ID format: `EVT-YYYY-MMDD-NNN` (sequential number at end)
-- Include: Date, Action_Type, Description, Severity_Score (1–10), Sources (from `citations.ts`), Linked_Fix_ID, category, p2025Pillar, externalTrackers
+- Include: Date, Action_Type, Description, Severity_Score (1-10), Sources (from `citations.ts`), Linked_Fix_ID, category, p2025Pillar, externalTrackers
 - Typical pass increment: +5 events
 
 **Rebuttals**
@@ -74,18 +74,18 @@ Each "pass" increments content and ships a version bump:
 ## Code style
 
 - Match existing patterns in surrounding files
-- Minimize scope — one pass, one focused diff
+- Minimize scope - one pass, one focused diff
 - No hand-editing generated files: `validated-urls.ts`, `public/data/*`, `public/sitemap.xml`, `public/feed.*`
-- Static export only — no server actions, no API routes that require a Node server
+- Static export only - no server actions, no API routes that require a Node server
 - Client components use `"use client"`; data files are plain TS exports
 
 ---
 
 ## UI patterns
 
-- **Milestone banners** — Show highest tier only (e.g. 125 events hides 120 banner). Index rebuttals at `length - 1` for milestone links.
-- **Command palette** — `components/layout/command-palette.tsx` indexes events + rebuttals automatically from data files
-- **OG images** — SVG previews in `public/og/`; section metadata in `lib/metadata.ts`
+- **Milestone banners** - Show highest tier only (e.g. 125 events hides 120 banner). Index rebuttals at `length - 1` for milestone links.
+- **Command palette** - `components/layout/command-palette.tsx` indexes events + rebuttals automatically from data files
+- **OG images** - SVG previews in `public/og/`; section metadata in `lib/metadata.ts`
 
 ---
 
@@ -144,7 +144,7 @@ Verify counts after build:
 
 ## External references
 
-- [Contribute page](https://thesunriseparty.pages.dev/contribute) — public submission guide
-- [Methodology](https://thesunriseparty.pages.dev/methodology) — editorial standards
-- [Changelog](https://thesunriseparty.pages.dev/changelog) — shipped pass history
+- [Contribute page](https://thesunriseparty.pages.dev/contribute) - public submission guide
+- [Methodology](https://thesunriseparty.pages.dev/methodology) - editorial standards
+- [Changelog](https://thesunriseparty.pages.dev/changelog) - shipped pass history
 - [Cloudflare Pages docs](https://developers.cloudflare.com/pages/)

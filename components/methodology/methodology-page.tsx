@@ -137,7 +137,7 @@ export function MethodologyPage() {
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                 Found a broken source, factual error, or missing context? We
                 publish corrections in our changelog. Send the page URL, the claim
-                in question, and your source — we verify before updating.
+                in question, and your source - we verify before updating.
               </p>
               <a
                 href={correctionsMailto}

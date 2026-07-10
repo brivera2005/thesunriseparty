@@ -111,7 +111,7 @@ const allEntries = [
 ];
 const sitemap = buildSitemap(allEntries);
 
-const robots = `# Project Sunrise — https://thesunriseparty.pages.dev
+const robots = `# Project Sunrise - https://thesunriseparty.pages.dev
 User-agent: *
 Allow: /
 

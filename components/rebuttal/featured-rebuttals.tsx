@@ -37,7 +37,7 @@ export function FeaturedRebuttals() {
               When they say X, you say Y
             </h2>
             <p className="mt-2 max-w-2xl text-muted-foreground">
-              {conversationHelpers.length}+ sourced counter-arguments — copy, study, or deploy in real conversations.
+              {conversationHelpers.length}+ sourced counter-arguments - copy, study, or deploy in real conversations.
             </p>
           </div>
           <Link
@@ -108,7 +108,7 @@ export function RebuttalHero() {
           <div className="max-w-2xl flex-1">
             <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-sunrise/30 bg-sunrise/10 px-3 py-1 text-xs font-semibold text-sunrise">
               <MessageSquareQuote className="size-3.5" />
-              Rebuttal Desk — Front &amp; Center
+              Rebuttal Desk - Front &amp; Center
             </div>
             <h1 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
               When they say X,{" "}

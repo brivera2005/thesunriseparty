@@ -18,7 +18,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-01-20",
     Action_Type: "Executive Order",
     Description:
-      "Day One rescission of 78 Biden executive orders on climate, equity, and regulation — erasing prior administration policy in a single stroke, a core Project 2025 implementation tactic.",
+      "Day One rescission of 78 Biden executive orders on climate, equity, and regulation - erasing prior administration policy in a single stroke, a core Project 2025 implementation tactic.",
     Severity_Score: 8,
     Impacted_Sectors: ["Environment", "Civil Rights", "Democracy"],
     Sources: [citations.initial_rescissions_eo, citations.heritage_mandate],
@@ -32,7 +32,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-01-20",
     Action_Type: "Executive Order",
     Description:
-      "Schedule F reinstated — civil servants in 'policy-influencing' roles reclassified as at-will employees, enabling politically motivated firings without merit protections.",
+      "Schedule F reinstated - civil servants in 'policy-influencing' roles reclassified as at-will employees, enabling politically motivated firings without merit protections.",
     Severity_Score: 10,
     Impacted_Sectors: ["Democracy", "Economy"],
     Sources: [citations.schedule_f_eo, citations.gao_schedule_f],
@@ -60,7 +60,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-01-20",
     Action_Type: "Executive Order",
     Description:
-      "Birthright citizenship order directs agencies to deny citizenship documents to U.S.-born children of undocumented parents — a direct challenge to the 14th Amendment now blocked in federal court.",
+      "Birthright citizenship order directs agencies to deny citizenship documents to U.S.-born children of undocumented parents - a direct challenge to the 14th Amendment now blocked in federal court.",
     Severity_Score: 10,
     Impacted_Sectors: ["Immigration", "Civil Rights", "Democracy"],
     Sources: [citations.birthright_eo, citations.birthright_litigation],
@@ -74,7 +74,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-01-20",
     Action_Type: "Executive Order",
     Description:
-      "National energy emergency declared to expedite fossil fuel permitting and restrict renewable approvals — implementing Project 2025's deregulatory energy agenda.",
+      "National energy emergency declared to expedite fossil fuel permitting and restrict renewable approvals - implementing Project 2025's deregulatory energy agenda.",
     Severity_Score: 9,
     Impacted_Sectors: ["Environment", "Economy"],
     Sources: [citations.energy_emergency_eo, citations.paris_withdrawal],
@@ -88,7 +88,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-01-20",
     Action_Type: "Executive Order",
     Description:
-      "Department of Government Efficiency (DOGE) established with access to federal payment systems and agency data — an unprecedented extra-constitutional advisory body driving cuts.",
+      "Department of Government Efficiency (DOGE) established with access to federal payment systems and agency data - an unprecedented extra-constitutional advisory body driving cuts.",
     Severity_Score: 9,
     Impacted_Sectors: ["Democracy", "Economy"],
     Sources: [citations.doge_eo, citations.cpr_p2025_progress],
@@ -116,7 +116,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-01-20",
     Action_Type: "Executive Order",
     Description:
-      "ICE directed to expand detention, resume border wall construction, and end catch-and-release — implementing Project 2025's mass deportation infrastructure goals.",
+      "ICE directed to expand detention, resume border wall construction, and end catch-and-release - implementing Project 2025's mass deportation infrastructure goals.",
     Severity_Score: 9,
     Impacted_Sectors: ["Immigration", "Civil Rights"],
     Sources: [citations.ice_expansion_eo, citations.aclu_immigration],
@@ -158,7 +158,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-01-28",
     Action_Type: "Workforce Action",
     Description:
-      "Deferred resignation program offered federal buyouts with agencies instructed to treat non-acceptance as willingness to be terminated — pressuring mass voluntary departures.",
+      "Deferred resignation program offered federal buyouts with agencies instructed to treat non-acceptance as willingness to be terminated - pressuring mass voluntary departures.",
     Severity_Score: 8,
     Impacted_Sectors: ["Economy", "Democracy"],
     Sources: [citations.deferred_resignation, citations.schedule_f_eo],
@@ -172,7 +172,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-01-29",
     Action_Type: "Regulatory Guidance",
     Description:
-      "OPM issues Schedule F implementing guidance directing agencies to identify policy-influencing positions for at-will reclassification — potentially affecting 50,000+ roles.",
+      "OPM issues Schedule F implementing guidance directing agencies to identify policy-influencing positions for at-will reclassification - potentially affecting 50,000+ roles.",
     Severity_Score: 9,
     Impacted_Sectors: ["Democracy", "Economy"],
     Sources: [citations.opm_schedule_f, citations.gao_schedule_f],
@@ -186,7 +186,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-02-03",
     Action_Type: "Agency Action",
     Description:
-      "USAID workforce placed on leave and foreign aid disbursements halted — effectively dismantling the agency without congressional authorization.",
+      "USAID workforce placed on leave and foreign aid disbursements halted - effectively dismantling the agency without congressional authorization.",
     Severity_Score: 10,
     Impacted_Sectors: ["Democracy", "Economy"],
     Sources: [citations.usaid_rif, citations.heritage_mandate],
@@ -214,7 +214,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-02-07",
     Action_Type: "Enforcement Pause",
     Description:
-      "CFPB halted new enforcement actions and rulemakings under acting leadership — effectively pausing consumer financial protection oversight.",
+      "CFPB halted new enforcement actions and rulemakings under acting leadership - effectively pausing consumer financial protection oversight.",
     Severity_Score: 8,
     Impacted_Sectors: ["Economy", "Democracy"],
     Sources: [citations.cfpb_enforcement_pause],
@@ -228,7 +228,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-02-14",
     Action_Type: "Workforce Reduction",
     Description:
-      "Mass termination of probationary federal employees across HHS, VA, and EPA — thousands removed with minimal notice, gutting regulatory and service capacity.",
+      "Mass termination of probationary federal employees across HHS, VA, and EPA - thousands removed with minimal notice, gutting regulatory and service capacity.",
     Severity_Score: 8,
     Impacted_Sectors: ["Healthcare", "Environment", "Economy"],
     Sources: [citations.probationary_terminations, citations.gao_schedule_f],
@@ -256,7 +256,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-03-20",
     Action_Type: "Executive Order",
     Description:
-      "Education Secretary directed to take all lawful steps to wind down the Department of Education and return authority to states — a signature Project 2025 objective.",
+      "Education Secretary directed to take all lawful steps to wind down the Department of Education and return authority to states - a signature Project 2025 objective.",
     Severity_Score: 9,
     Impacted_Sectors: ["Education", "Democracy"],
     Sources: [citations.ed_restructuring, citations.heritage_mandate],
@@ -312,7 +312,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-12-18",
     Action_Type: "Congressional Action",
     Description:
-      "Congress invoked the Congressional Review Act to overturn 7 federal agency rules in a single year — the highest CRA usage since its 1996 enactment.",
+      "Congress invoked the Congressional Review Act to overturn 7 federal agency rules in a single year - the highest CRA usage since its 1996 enactment.",
     Severity_Score: 7,
     Impacted_Sectors: ["Democracy", "Environment", "Healthcare"],
     Sources: [citations.crs_executive],
@@ -354,7 +354,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2026-02-03",
     Action_Type: "Public Opinion Data",
     Description:
-      "Pew Research finds only 18% of Americans trust the federal government 'just about always' or 'most of the time' — near historic lows amid institutional legitimacy crisis.",
+      "Pew Research finds only 18% of Americans trust the federal government 'just about always' or 'most of the time' - near historic lows amid institutional legitimacy crisis.",
     Severity_Score: 6,
     Impacted_Sectors: ["Democracy"],
     Sources: [citations.pew_trust, citations.dark_money_transparency],
@@ -368,7 +368,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-01-20",
     Action_Type: "Executive Order",
     Description:
-      "Regulatory freeze halts publication of new federal rules and withdraws unpublished regulations pending political review — stalling agency rulemaking across government.",
+      "Regulatory freeze halts publication of new federal rules and withdraws unpublished regulations pending political review - stalling agency rulemaking across government.",
     Severity_Score: 8,
     Impacted_Sectors: ["Democracy", "Environment", "Healthcare"],
     Sources: [citations.regulatory_freeze, citations.heritage_mandate],
@@ -382,7 +382,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-01-20",
     Action_Type: "Executive Order",
     Description:
-      "Federal lands drilling order expands oil and gas leasing on public lands and waters, reversing Biden-era restrictions — implementing Project 2025 energy extraction priorities.",
+      "Federal lands drilling order expands oil and gas leasing on public lands and waters, reversing Biden-era restrictions - implementing Project 2025 energy extraction priorities.",
     Severity_Score: 9,
     Impacted_Sectors: ["Environment", "Economy"],
     Sources: [citations.federal_lands_drilling, citations.energy_emergency_eo],
@@ -452,7 +452,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-03-15",
     Action_Type: "Media Policy",
     Description:
-      "FCC leadership signaled renewed broadcast licensing scrutiny and rolled back diversity policies — aligning with Project 2025's media and communications chapter.",
+      "FCC leadership signaled renewed broadcast licensing scrutiny and rolled back diversity policies - aligning with Project 2025's media and communications chapter.",
     Severity_Score: 7,
     Impacted_Sectors: ["Democracy", "Civil Rights"],
     Sources: [citations.fcc_media_policy, citations.fcc_broadcast_rules],
@@ -466,7 +466,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-01-03",
     Action_Type: "Legislative Proposal",
     Description:
-      "SAVE Act reintroduced in the 119th Congress, requiring documentary proof of citizenship for federal voter registration — a Project 2025 elections priority.",
+      "SAVE Act reintroduced in the 119th Congress, requiring documentary proof of citizenship for federal voter registration - a Project 2025 elections priority.",
     Severity_Score: 8,
     Impacted_Sectors: ["Democracy", "Civil Rights"],
     Sources: [citations.save_act_2025, citations.brennan_voting],
@@ -494,7 +494,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-01-20",
     Action_Type: "Executive Order",
     Description:
-      "Federal policy redefined to recognize only two biological sexes, directing agencies to remove gender-identity protections from programs — a Project 2025 civil-service and culture-war priority.",
+      "Federal policy redefined to recognize only two biological sexes, directing agencies to remove gender-identity protections from programs - a Project 2025 civil-service and culture-war priority.",
     Severity_Score: 8,
     Impacted_Sectors: ["Civil Rights", "Healthcare", "Education"],
     Sources: [citations.gender_ideology_eo, citations.dei_termination_eo],
@@ -508,7 +508,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-01-20",
     Action_Type: "Executive Order",
     Description:
-      "Federal employees ordered back to in-person work, terminating remote arrangements — accelerating attrition alongside hiring freezes and deferred-resignation pressure.",
+      "Federal employees ordered back to in-person work, terminating remote arrangements - accelerating attrition alongside hiring freezes and deferred-resignation pressure.",
     Severity_Score: 6,
     Impacted_Sectors: ["Economy", "Democracy"],
     Sources: [citations.return_to_office_eo, citations.federal_hiring_freeze],
@@ -522,7 +522,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-01-20",
     Action_Type: "Executive Clemency",
     Description:
-      "Broad pardons granted to individuals convicted of offenses related to the January 6 Capitol attack — undermining accountability for election subversion.",
+      "Broad pardons granted to individuals convicted of offenses related to the January 6 Capitol attack - undermining accountability for election subversion.",
     Severity_Score: 10,
     Impacted_Sectors: ["Democracy", "Civil Rights"],
     Sources: [citations.jan6_pardons_eo, citations.heritage_mandate],
@@ -536,7 +536,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-01-20",
     Action_Type: "Executive Order",
     Description:
-      "Foreign aid disbursements paused pending ideological review — halting humanitarian and development programs worldwide without congressional authorization.",
+      "Foreign aid disbursements paused pending ideological review - halting humanitarian and development programs worldwide without congressional authorization.",
     Severity_Score: 9,
     Impacted_Sectors: ["Democracy", "Healthcare"],
     Sources: [citations.foreign_aid_freeze, citations.usaid_rif],
@@ -564,7 +564,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-11-19",
     Action_Type: "Legislative Proposal",
     Description:
-      "Epstein Files Transparency Act introduced in the 119th Congress, requiring DOJ to release unclassified investigation records — amid broader elite accountability demands.",
+      "Epstein Files Transparency Act introduced in the 119th Congress, requiring DOJ to release unclassified investigation records - amid broader elite accountability demands.",
     Severity_Score: 5,
     Impacted_Sectors: ["Democracy"],
     Sources: [citations.epstein_records_act, citations.dark_money_transparency],
@@ -578,7 +578,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-01-20",
     Action_Type: "Executive Order",
     Description:
-      "America First Trade Policy directs agencies to review all trade agreements and recommend reciprocal tariffs — initiating Project 2025's protectionist trade agenda.",
+      "America First Trade Policy directs agencies to review all trade agreements and recommend reciprocal tariffs - initiating Project 2025's protectionist trade agenda.",
     Severity_Score: 8,
     Impacted_Sectors: ["Economy", "Democracy"],
     Sources: [citations.trade_policy_eo, citations.heritage_mandate],
@@ -592,7 +592,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-01-20",
     Action_Type: "Executive Order",
     Description:
-      "Federal censorship coordination with social media platforms prohibited; prior government content-moderation efforts ordered reviewed — reshaping platform accountability policy.",
+      "Federal censorship coordination with social media platforms prohibited; prior government content-moderation efforts ordered reviewed - reshaping platform accountability policy.",
     Severity_Score: 7,
     Impacted_Sectors: ["Democracy", "Civil Rights"],
     Sources: [citations.speech_censorship_eo],
@@ -606,7 +606,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-01-20",
     Action_Type: "Executive Order",
     Description:
-      "U.S. Refugee Admissions Program suspended pending realignment with administration immigration priorities — halting humanitarian resettlement for vulnerable populations.",
+      "U.S. Refugee Admissions Program suspended pending realignment with administration immigration priorities - halting humanitarian resettlement for vulnerable populations.",
     Severity_Score: 9,
     Impacted_Sectors: ["Immigration", "Civil Rights"],
     Sources: [citations.refugee_suspension_eo, citations.aclu_immigration],
@@ -620,7 +620,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-01-20",
     Action_Type: "Executive Order",
     Description:
-      "Drug cartels directed for designation as foreign terrorist organizations — expanding military and surveillance authorities for domestic immigration enforcement operations.",
+      "Drug cartels directed for designation as foreign terrorist organizations - expanding military and surveillance authorities for domestic immigration enforcement operations.",
     Severity_Score: 9,
     Impacted_Sectors: ["Immigration", "Democracy"],
     Sources: [citations.cartel_fto_eo, citations.ice_expansion_eo],
@@ -634,7 +634,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-01-20",
     Action_Type: "Executive Order",
     Description:
-      "Federal death penalty restored and Biden-era execution moratorium ended — DOJ directed to resume capital prosecutions and pursue death sentences.",
+      "Federal death penalty restored and Biden-era execution moratorium ended - DOJ directed to resume capital prosecutions and pursue death sentences.",
     Severity_Score: 8,
     Impacted_Sectors: ["Civil Rights", "Democracy"],
     Sources: [citations.death_penalty_eo],
@@ -662,7 +662,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-01-20",
     Action_Type: "Executive Order",
     Description:
-      "Inflation Reduction Act clean energy grant disbursements paused pending ideological review — stalling climate investment programs authorized by Congress.",
+      "Inflation Reduction Act clean energy grant disbursements paused pending ideological review - stalling climate investment programs authorized by Congress.",
     Severity_Score: 9,
     Impacted_Sectors: ["Environment", "Economy"],
     Sources: [citations.ira_funding_pause, citations.ipcc_climate],
@@ -690,7 +690,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-04-02",
     Action_Type: "Executive Order",
     Description:
-      "Reciprocal tariffs imposed on imports from trading partners to address trade deficits — escalating global trade war and raising consumer prices across sectors.",
+      "Reciprocal tariffs imposed on imports from trading partners to address trade deficits - escalating global trade war and raising consumer prices across sectors.",
     Severity_Score: 9,
     Impacted_Sectors: ["Economy", "Democracy"],
     Sources: [citations.reciprocal_tariffs_eo, citations.trade_policy_eo],
@@ -746,7 +746,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-03-05",
     Action_Type: "Regulatory Rollback",
     Description:
-      "Labor Department halted Biden-era overtime pay expansion for salaried workers — reversing wage protections for an estimated 4 million employees.",
+      "Labor Department halted Biden-era overtime pay expansion for salaried workers - reversing wage protections for an estimated 4 million employees.",
     Severity_Score: 7,
     Impacted_Sectors: ["Economy", "Civil Rights"],
     Sources: [citations.dol_overtime_rollback, citations.bls_wages],
@@ -760,7 +760,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-03-12",
     Action_Type: "Enforcement Pause",
     Description:
-      "FTC deprioritized merger challenges and consumer fraud cases under new leadership — weakening antitrust and consumer protection oversight.",
+      "FTC deprioritized merger challenges and consumer fraud cases under new leadership - weakening antitrust and consumer protection oversight.",
     Severity_Score: 8,
     Impacted_Sectors: ["Economy", "Democracy"],
     Sources: [citations.ftc_enforcement_pause, citations.cfpb_enforcement_pause],
@@ -774,7 +774,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-02-01",
     Action_Type: "Institutional Access",
     Description:
-      "Treasury granted DOGE-aligned reviewers access to federal payment systems — bypassing standard inspector general oversight for spending decisions.",
+      "Treasury granted DOGE-aligned reviewers access to federal payment systems - bypassing standard inspector general oversight for spending decisions.",
     Severity_Score: 9,
     Impacted_Sectors: ["Democracy", "Economy"],
     Sources: [citations.treasury_payment_access, citations.doge_eo],
@@ -788,7 +788,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-02-18",
     Action_Type: "Regulatory Rollback",
     Description:
-      "EPA reopened review of light-duty vehicle greenhouse gas standards — stalling clean-car rules and aligning with Project 2025's deregulatory energy agenda.",
+      "EPA reopened review of light-duty vehicle greenhouse gas standards - stalling clean-car rules and aligning with Project 2025's deregulatory energy agenda.",
     Severity_Score: 8,
     Impacted_Sectors: ["Environment", "Economy"],
     Sources: [citations.epa_vehicle_emissions_rollback, citations.energy_emergency_eo],
@@ -816,7 +816,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-02-28",
     Action_Type: "Workforce Reduction",
     Description:
-      "CISA placed staff on administrative leave and halted hiring — weakening election-security and critical-infrastructure cyber defense amid federal workforce cuts.",
+      "CISA placed staff on administrative leave and halted hiring - weakening election-security and critical-infrastructure cyber defense amid federal workforce cuts.",
     Severity_Score: 9,
     Impacted_Sectors: ["Democracy", "Economy"],
     Sources: [citations.cisa_workforce_cuts, citations.doge_eo],
@@ -830,7 +830,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-01-28",
     Action_Type: "Program Termination",
     Description:
-      "Pentagon eliminated DEI offices and training across the armed services — disbanding advisory groups and canceling diversity initiatives.",
+      "Pentagon eliminated DEI offices and training across the armed services - disbanding advisory groups and canceling diversity initiatives.",
     Severity_Score: 7,
     Impacted_Sectors: ["Civil Rights", "Democracy"],
     Sources: [citations.defense_dei_rollback, citations.dei_termination_eo],
@@ -858,7 +858,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-03-22",
     Action_Type: "Workforce Reduction",
     Description:
-      "Social Security Administration placed staff on administrative leave and halted hiring — threatening benefit processing timelines for 70 million Americans as DOGE reviews federal payment systems.",
+      "Social Security Administration placed staff on administrative leave and halted hiring - threatening benefit processing timelines for 70 million Americans as DOGE reviews federal payment systems.",
     Severity_Score: 9,
     Impacted_Sectors: ["Economy", "Democracy"],
     Sources: [citations.ssa_workforce_cuts, citations.treasury_payment_access],
@@ -872,7 +872,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-03-25",
     Action_Type: "Workforce Reduction",
     Description:
-      "FEMA disaster preparedness staffing cut ahead of hurricane season — weakening federal response capacity as climate disasters intensify nationwide.",
+      "FEMA disaster preparedness staffing cut ahead of hurricane season - weakening federal response capacity as climate disasters intensify nationwide.",
     Severity_Score: 8,
     Impacted_Sectors: ["Environment", "Democracy"],
     Sources: [citations.fema_staffing_cuts, citations.probationary_terminations],
@@ -886,7 +886,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-03-28",
     Action_Type: "Program Freeze",
     Description:
-      "NOAA climate research and monitoring programs paused pending ideological spending review — stalling hurricane forecasting and temperature data collection.",
+      "NOAA climate research and monitoring programs paused pending ideological spending review - stalling hurricane forecasting and temperature data collection.",
     Severity_Score: 8,
     Impacted_Sectors: ["Environment", "Economy"],
     Sources: [citations.noaa_research_freeze, citations.ira_funding_pause],
@@ -900,7 +900,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-04-01",
     Action_Type: "Program Freeze",
     Description:
-      "CDC discretionary grant disbursements halted and staff placed on leave — disrupting disease surveillance, reproductive health data, and state public health partnerships.",
+      "CDC discretionary grant disbursements halted and staff placed on leave - disrupting disease surveillance, reproductive health data, and state public health partnerships.",
     Severity_Score: 9,
     Impacted_Sectors: ["Healthcare", "Democracy"],
     Sources: [citations.cdc_grant_pause, citations.doge_eo],
@@ -914,7 +914,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-04-05",
     Action_Type: "Workforce Reduction",
     Description:
-      "Federal Student Aid office probations terminated and hiring frozen — delaying loan servicing, income-driven repayment processing, and borrower assistance for 43 million Americans.",
+      "Federal Student Aid office probations terminated and hiring frozen - delaying loan servicing, income-driven repayment processing, and borrower assistance for 43 million Americans.",
     Severity_Score: 7,
     Impacted_Sectors: ["Education", "Economy"],
     Sources: [citations.student_aid_workforce_cuts, citations.ed_restructuring],
@@ -928,7 +928,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-04-10",
     Action_Type: "Regulatory Rollback",
     Description:
-      "EPA dismissed members of its Science Advisory Board and Clean Air Scientific Advisory Committee — removing independent scientists who review pollution standards.",
+      "EPA dismissed members of its Science Advisory Board and Clean Air Scientific Advisory Committee - removing independent scientists who review pollution standards.",
     Severity_Score: 8,
     Impacted_Sectors: ["Environment", "Democracy"],
     Sources: [citations.epa_rule, citations.energy_emergency_eo],
@@ -942,7 +942,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-04-15",
     Action_Type: "Enforcement Shift",
     Description:
-      "HUD paused fair-housing discrimination investigations and redirected staff toward reviewing DEI-related grant language — weakening enforcement of the Fair Housing Act.",
+      "HUD paused fair-housing discrimination investigations and redirected staff toward reviewing DEI-related grant language - weakening enforcement of the Fair Housing Act.",
     Severity_Score: 7,
     Impacted_Sectors: ["Civil Rights", "Economy"],
     Sources: [citations.dei_termination_eo, citations.brennan_voting],
@@ -956,7 +956,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-04-18",
     Action_Type: "Program Freeze",
     Description:
-      "NIH placed new grant applications on hold pending ideological review of research topics — delaying biomedical studies on climate health, reproductive care, and LGBTQ populations.",
+      "NIH placed new grant applications on hold pending ideological review of research topics - delaying biomedical studies on climate health, reproductive care, and LGBTQ populations.",
     Severity_Score: 9,
     Impacted_Sectors: ["Healthcare", "Education"],
     Sources: [citations.nih_grant_review_hold, citations.cdc_grant_pause],
@@ -970,7 +970,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-04-22",
     Action_Type: "Program Termination",
     Description:
-      "USAID headquarters staff placed on leave and foreign assistance programs halted — dismantling decades of global health, famine relief, and democracy-promotion infrastructure.",
+      "USAID headquarters staff placed on leave and foreign assistance programs halted - dismantling decades of global health, famine relief, and democracy-promotion infrastructure.",
     Severity_Score: 9,
     Impacted_Sectors: ["Democracy", "Healthcare"],
     Sources: [citations.aclu_immigration, citations.doge_eo],
@@ -984,7 +984,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-04-28",
     Action_Type: "Workforce Reduction",
     Description:
-      "Veterans Affairs eliminated DEI offices and placed probationary employees on termination notice — cutting support staff while 700,000 disability claims remain backlogged.",
+      "Veterans Affairs eliminated DEI offices and placed probationary employees on termination notice - cutting support staff while 700,000 disability claims remain backlogged.",
     Severity_Score: 8,
     Impacted_Sectors: ["Civil Rights", "Healthcare"],
     Sources: [citations.defense_dei_rollback, citations.probationary_terminations],
@@ -998,7 +998,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-05-02",
     Action_Type: "Enforcement Shift",
     Description:
-      "DOJ Civil Rights Division redirected staff from police pattern-or-practice investigations toward DEI compliance reviews — weakening federal oversight of law enforcement misconduct.",
+      "DOJ Civil Rights Division redirected staff from police pattern-or-practice investigations toward DEI compliance reviews - weakening federal oversight of law enforcement misconduct.",
     Severity_Score: 9,
     Impacted_Sectors: ["Civil Rights", "Democracy"],
     Sources: [citations.doj_civil_rights_shift, citations.heritage_mandate],
@@ -1012,7 +1012,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-05-08",
     Action_Type: "Regulatory Rollback",
     Description:
-      "FEC commissioners deadlocked on enforcement matters and paused advisory opinions — stalling campaign-finance investigations as dark-money spending surged.",
+      "FEC commissioners deadlocked on enforcement matters and paused advisory opinions - stalling campaign-finance investigations as dark-money spending surged.",
     Severity_Score: 8,
     Impacted_Sectors: ["Democracy", "Economy"],
     Sources: [citations.fec_enforcement_pause, citations.heritage_mandate],
@@ -1026,7 +1026,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-05-12",
     Action_Type: "Workforce Reduction",
     Description:
-      "FTC consumer-protection bureau staff placed on leave and new merger challenges halted — curtailing antitrust enforcement aligned with Project 2025's FTC chapter.",
+      "FTC consumer-protection bureau staff placed on leave and new merger challenges halted - curtailing antitrust enforcement aligned with Project 2025's FTC chapter.",
     Severity_Score: 7,
     Impacted_Sectors: ["Economy", "Democracy"],
     Sources: [citations.ftc_consumer_protection_cuts, citations.heritage_mandate],
@@ -1040,7 +1040,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-05-15",
     Action_Type: "Regulatory Rollback",
     Description:
-      "USDA expanded SNAP work requirements and shortened time-limit waivers — cutting nutrition assistance for able-bodied adults without dependents in high-unemployment areas.",
+      "USDA expanded SNAP work requirements and shortened time-limit waivers - cutting nutrition assistance for able-bodied adults without dependents in high-unemployment areas.",
     Severity_Score: 8,
     Impacted_Sectors: ["Economy", "Healthcare"],
     Sources: [citations.snap_work_requirements, citations.heritage_mandate],
@@ -1068,7 +1068,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-05-25",
     Action_Type: "Policy Rollback",
     Description:
-      "Pentagon reinstated restrictions on gender-affirming care for active-duty service members and paused TRICARE coverage updates — reversing inclusive military health policies.",
+      "Pentagon reinstated restrictions on gender-affirming care for active-duty service members and paused TRICARE coverage updates - reversing inclusive military health policies.",
     Severity_Score: 8,
     Impacted_Sectors: ["Civil Rights", "Healthcare"],
     Sources: [citations.pentagon_trans_care_rollback, citations.defense_dei_rollback],
@@ -1082,7 +1082,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-05-28",
     Action_Type: "Regulatory Rollback",
     Description:
-      "CMS approved additional state Medicaid waivers imposing work requirements and premiums — conditioning health coverage on employment in high-unemployment counties.",
+      "CMS approved additional state Medicaid waivers imposing work requirements and premiums - conditioning health coverage on employment in high-unemployment counties.",
     Severity_Score: 8,
     Impacted_Sectors: ["Healthcare", "Economy"],
     Sources: [citations.cms_medicaid_work_rules, citations.gao_healthcare],
@@ -1096,7 +1096,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-06-02",
     Action_Type: "Executive Order",
     Description:
-      "Interior accelerated offshore oil and gas lease sales in the Gulf of Mexico and Alaska — prioritizing fossil extraction over renewable siting on federal waters.",
+      "Interior accelerated offshore oil and gas lease sales in the Gulf of Mexico and Alaska - prioritizing fossil extraction over renewable siting on federal waters.",
     Severity_Score: 9,
     Impacted_Sectors: ["Environment", "Economy"],
     Sources: [citations.boem_offshore_lease, citations.federal_lands_drilling],
@@ -1110,7 +1110,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-06-05",
     Action_Type: "Policy Restriction",
     Description:
-      "Election Assistance Commission security grants delayed as Congress advanced proof-of-citizenship registration mandates — weakening election infrastructure funding.",
+      "Election Assistance Commission security grants delayed as Congress advanced proof-of-citizenship registration mandates - weakening election infrastructure funding.",
     Severity_Score: 8,
     Impacted_Sectors: ["Democracy", "Civil Rights"],
     Sources: [citations.eac_funding_cuts, citations.save_act_crs],
@@ -1124,7 +1124,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-06-10",
     Action_Type: "Regulatory Freeze",
     Description:
-      "OSHA delayed silica exposure and heat-illness rulemakings pending political review — extending the administration-wide freeze on worker-safety protections.",
+      "OSHA delayed silica exposure and heat-illness rulemakings pending political review - extending the administration-wide freeze on worker-safety protections.",
     Severity_Score: 7,
     Impacted_Sectors: ["Economy", "Healthcare"],
     Sources: [citations.osha_silica_delay, citations.regulatory_freeze],
@@ -1138,7 +1138,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-06-15",
     Action_Type: "Agency Action",
     Description:
-      "VA accelerated community-care privatization despite GAO-documented overpayment and fraud risks — outsourcing veterans' health services with weakened oversight.",
+      "VA accelerated community-care privatization despite GAO-documented overpayment and fraud risks - outsourcing veterans' health services with weakened oversight.",
     Severity_Score: 8,
     Impacted_Sectors: ["Healthcare", "Economy"],
     Sources: [citations.va_community_care_audit, citations.gao_healthcare],
@@ -1152,7 +1152,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-06-20",
     Action_Type: "Policy Restriction",
     Description:
-      "Congress advanced census and voter-registration changes targeting citizenship documentation — fueling noncitizen voting myths Brennan Center research has repeatedly debunked.",
+      "Congress advanced census and voter-registration changes targeting citizenship documentation - fueling noncitizen voting myths Brennan Center research has repeatedly debunked.",
     Severity_Score: 8,
     Impacted_Sectors: ["Democracy", "Immigration"],
     Sources: [citations.census_citizenship_data, citations.save_act_crs],
@@ -1166,7 +1166,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-06-25",
     Action_Type: "Executive Order",
     Description:
-      "Interior fast-tracked hardrock mining leases and drilling permits on federal lands — sidestepping tribal consultation and NEPA review timelines.",
+      "Interior fast-tracked hardrock mining leases and drilling permits on federal lands - sidestepping tribal consultation and NEPA review timelines.",
     Severity_Score: 9,
     Impacted_Sectors: ["Environment", "Civil Rights"],
     Sources: [citations.blm_hardrock_mining, citations.federal_lands_drilling],
@@ -1180,7 +1180,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-06-30",
     Action_Type: "Policy Rollback",
     Description:
-      "Education Department advanced Title IX sports rules excluding transgender student-athletes — reversing inclusive participation policies adopted under the prior administration.",
+      "Education Department advanced Title IX sports rules excluding transgender student-athletes - reversing inclusive participation policies adopted under the prior administration.",
     Severity_Score: 8,
     Impacted_Sectors: ["Civil Rights", "Education"],
     Sources: [citations.ed_title_ix_sports_rule, citations.gender_ideology_eo],
@@ -1194,7 +1194,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-07-05",
     Action_Type: "Agency Action",
     Description:
-      "CISA election-security coordination grants and state partnership staffing faced cuts — weakening federal voting-system cybersecurity as midterm infrastructure funding stalled.",
+      "CISA election-security coordination grants and state partnership staffing faced cuts - weakening federal voting-system cybersecurity as midterm infrastructure funding stalled.",
     Severity_Score: 9,
     Impacted_Sectors: ["Democracy"],
     Sources: [citations.cisa_election_security_pause, citations.cisa_workforce_cuts],
@@ -1208,7 +1208,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-07-10",
     Action_Type: "Regulatory Action",
     Description:
-      "USDA finalized expanded SNAP work requirements and time limits in additional states — restricting nutrition assistance for able-bodied adults without dependents, mirroring Project 2025 Agriculture chapter proposals.",
+      "USDA finalized expanded SNAP work requirements and time limits in additional states - restricting nutrition assistance for able-bodied adults without dependents, mirroring Project 2025 Agriculture chapter proposals.",
     Severity_Score: 7,
     Impacted_Sectors: ["Economy", "Healthcare"],
     Sources: [citations.snap_work_requirements, citations.cbo_medicare],
@@ -1222,7 +1222,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-07-15",
     Action_Type: "Regulatory Delay",
     Description:
-      "Fish and Wildlife Service delayed Endangered Species Act consultations for energy and infrastructure projects — accelerating fossil and mining approvals while sidestepping species protections.",
+      "Fish and Wildlife Service delayed Endangered Species Act consultations for energy and infrastructure projects - accelerating fossil and mining approvals while sidestepping species protections.",
     Severity_Score: 8,
     Impacted_Sectors: ["Environment"],
     Sources: [citations.fws_species_delays, citations.federal_lands_drilling],
@@ -1236,7 +1236,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-07-20",
     Action_Type: "Agency Action",
     Description:
-      "CMS approved new state Medicaid waivers imposing work requirements and premiums — conditioning health coverage on employment as Project 2025's HHS chapter recommended.",
+      "CMS approved new state Medicaid waivers imposing work requirements and premiums - conditioning health coverage on employment as Project 2025's HHS chapter recommended.",
     Severity_Score: 8,
     Impacted_Sectors: ["Healthcare", "Economy"],
     Sources: [citations.cms_medicaid_work_rules, citations.gao_healthcare],
@@ -1250,7 +1250,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-07-25",
     Action_Type: "Personnel Action",
     Description:
-      "Merit Systems Protection Board backlog left thousands of federal employee appeals unresolved — including Schedule F reclassification challenges — without independent adjudication.",
+      "Merit Systems Protection Board backlog left thousands of federal employee appeals unresolved - including Schedule F reclassification challenges - without independent adjudication.",
     Severity_Score: 9,
     Impacted_Sectors: ["Democracy", "Economy"],
     Sources: [citations.merit_systems_board, citations.schedule_f_eo],
@@ -1264,7 +1264,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-07-30",
     Action_Type: "Enforcement Shift",
     Description:
-      "EEOC and OFCCP redirected civil-rights investigators toward DEI program audits while deprioritizing systemic workplace discrimination cases — weaponizing enforcement against inclusion programs.",
+      "EEOC and OFCCP redirected civil-rights investigators toward DEI program audits while deprioritizing systemic workplace discrimination cases - weaponizing enforcement against inclusion programs.",
     Severity_Score: 8,
     Impacted_Sectors: ["Civil Rights", "Economy"],
     Sources: [citations.eeoc_enforcement_shift, citations.dol_ofccp_rollback],
@@ -1278,7 +1278,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-08-04",
     Action_Type: "Agency Restructuring",
     Description:
-      "USAID functions absorbed into State Department with foreign-aid portfolio reviews — consolidating humanitarian and development programs under political appointees per Project 2025's State chapter.",
+      "USAID functions absorbed into State Department with foreign-aid portfolio reviews - consolidating humanitarian and development programs under political appointees per Project 2025's State chapter.",
     Severity_Score: 8,
     Impacted_Sectors: ["Democracy", "Healthcare"],
     Sources: [citations.usaid_state_merger, citations.foreign_aid_freeze],
@@ -1292,7 +1292,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-08-09",
     Action_Type: "Personnel Action",
     Description:
-      "Second wave of probationary federal employee terminations targeted climate, civil-rights, and inspector-general support staff — accelerating Schedule F implementation through attrition.",
+      "Second wave of probationary federal employee terminations targeted climate, civil-rights, and inspector-general support staff - accelerating Schedule F implementation through attrition.",
     Severity_Score: 9,
     Impacted_Sectors: ["Democracy", "Environment", "Civil Rights"],
     Sources: [citations.probationary_terminations, citations.schedule_f_eo],
@@ -1306,7 +1306,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-08-14",
     Action_Type: "Workforce Policy",
     Description:
-      "OPM intensified deferred-resignation buyout pressure on career civil servants — offering exit packages while threatening RIFs for employees who declined, mirroring Project 2025 workforce purge tactics.",
+      "OPM intensified deferred-resignation buyout pressure on career civil servants - offering exit packages while threatening RIFs for employees who declined, mirroring Project 2025 workforce purge tactics.",
     Severity_Score: 8,
     Impacted_Sectors: ["Democracy", "Economy"],
     Sources: [citations.deferred_resignation, citations.opm_schedule_f],
@@ -1320,7 +1320,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-08-19",
     Action_Type: "Funding Pause",
     Description:
-      "IRA clean-energy grant disbursements paused pending political review — stalling home electrification rebates and community solar projects mid-implementation.",
+      "IRA clean-energy grant disbursements paused pending political review - stalling home electrification rebates and community solar projects mid-implementation.",
     Severity_Score: 8,
     Impacted_Sectors: ["Environment", "Economy"],
     Sources: [citations.ira_funding_pause, citations.epa_rule],
@@ -1334,7 +1334,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-08-24",
     Action_Type: "International Withdrawal",
     Description:
-      "WHO withdrawal process advanced with halted pandemic-preparedness funding and paused CDC global health partnerships — isolating U.S. public health from international coordination.",
+      "WHO withdrawal process advanced with halted pandemic-preparedness funding and paused CDC global health partnerships - isolating U.S. public health from international coordination.",
     Severity_Score: 7,
     Impacted_Sectors: ["Healthcare", "Democracy"],
     Sources: [citations.who_withdrawal, citations.cdc_grant_pause],
@@ -1348,7 +1348,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-08-29",
     Action_Type: "Executive Order",
     Description:
-      "Federal speech restrictions expanded to contractors and grant recipients beyond universities — conditioning billions in federal funds on ideological compliance with administration speech directives.",
+      "Federal speech restrictions expanded to contractors and grant recipients beyond universities - conditioning billions in federal funds on ideological compliance with administration speech directives.",
     Severity_Score: 8,
     Impacted_Sectors: ["Democracy", "Civil Rights", "Education"],
     Sources: [citations.speech_censorship_eo, citations.regulatory_freeze],
@@ -1362,7 +1362,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-09-03",
     Action_Type: "Trade Policy",
     Description:
-      "Reciprocal tariffs escalated against additional trading partners under national-security authority — raising consumer costs and retaliatory barriers while bypassing congressional trade powers.",
+      "Reciprocal tariffs escalated against additional trading partners under national-security authority - raising consumer costs and retaliatory barriers while bypassing congressional trade powers.",
     Severity_Score: 7,
     Impacted_Sectors: ["Economy"],
     Sources: [citations.reciprocal_tariffs_eo, citations.trade_policy_eo],
@@ -1376,7 +1376,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-09-08",
     Action_Type: "Enforcement Expansion",
     Description:
-      "DHS expanded National Guard coordination for interior deportation operations — militarizing immigration enforcement in major metro areas without new congressional authorization.",
+      "DHS expanded National Guard coordination for interior deportation operations - militarizing immigration enforcement in major metro areas without new congressional authorization.",
     Severity_Score: 8,
     Impacted_Sectors: ["Immigration", "Civil Rights", "Democracy"],
     Sources: [citations.ice_expansion_eo, citations.dhs_deportation_ops],
@@ -1390,7 +1390,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-09-13",
     Action_Type: "Research Termination",
     Description:
-      "NIH terminated additional climate, health-equity, and infectious-disease research grants mid-cycle — disrupting longitudinal studies and university partnerships nationwide.",
+      "NIH terminated additional climate, health-equity, and infectious-disease research grants mid-cycle - disrupting longitudinal studies and university partnerships nationwide.",
     Severity_Score: 8,
     Impacted_Sectors: ["Healthcare", "Environment"],
     Sources: [citations.nih_funding_cuts, citations.nih_grant_review_hold],
@@ -1404,7 +1404,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-09-18",
     Action_Type: "Enforcement Halt",
     Description:
-      "Justice Department halted remaining Voting Rights Act Section 2 pattern-or-practice investigations in Georgia, Texas, and Arizona — dismantling the federal government's last active voting-rights enforcement tool ahead of the 2026 redistricting cycle.",
+      "Justice Department halted remaining Voting Rights Act Section 2 pattern-or-practice investigations in Georgia, Texas, and Arizona - dismantling the federal government's last active voting-rights enforcement tool ahead of the 2026 redistricting cycle.",
     Severity_Score: 10,
     Impacted_Sectors: ["Democracy"],
     Sources: [
@@ -1426,7 +1426,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-09-23",
     Action_Type: "Enforcement Pause",
     Description:
-      "CFPB paused major consumer-finance enforcement actions and supervisory exams — gutting mortgage, student-loan, and credit-card protections while the agency faces structural dismantling.",
+      "CFPB paused major consumer-finance enforcement actions and supervisory exams - gutting mortgage, student-loan, and credit-card protections while the agency faces structural dismantling.",
     Severity_Score: 8,
     Impacted_Sectors: ["Economy", "Civil Rights"],
     Sources: [citations.cfpb_enforcement_pause, citations.regulatory_freeze],
@@ -1440,7 +1440,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-09-28",
     Action_Type: "Workforce Reduction",
     Description:
-      "Social Security Administration accelerated field-office closures and staffing cuts — lengthening disability and retirement claim backlogs for millions of beneficiaries.",
+      "Social Security Administration accelerated field-office closures and staffing cuts - lengthening disability and retirement claim backlogs for millions of beneficiaries.",
     Severity_Score: 8,
     Impacted_Sectors: ["Healthcare", "Economy"],
     Sources: [citations.ssa_workforce_cuts, citations.probationary_terminations],
@@ -1454,7 +1454,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-10-03",
     Action_Type: "Security Downgrade",
     Description:
-      "CISA election-security grants and state coordination staffing cut ahead of the 2026 midterms — weakening federal support for voting-system cybersecurity and incident response.",
+      "CISA election-security grants and state coordination staffing cut ahead of the 2026 midterms - weakening federal support for voting-system cybersecurity and incident response.",
     Severity_Score: 9,
     Impacted_Sectors: ["Democracy"],
     Sources: [citations.cisa_election_security_pause, citations.eac_funding_cuts],
@@ -1471,7 +1471,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-10-08",
     Action_Type: "Regulatory Rollback",
     Description:
-      "Education Department finalized Title IX sports regulations excluding transgender student-athletes — reversing inclusive participation rules and inviting litigation in dozens of states.",
+      "Education Department finalized Title IX sports regulations excluding transgender student-athletes - reversing inclusive participation rules and inviting litigation in dozens of states.",
     Severity_Score: 7,
     Impacted_Sectors: ["Education", "Civil Rights"],
     Sources: [citations.ed_title_ix_sports_rule, citations.ed_dept_titleix],
@@ -1485,7 +1485,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-10-13",
     Action_Type: "Healthcare Policy",
     Description:
-      "CMS approved additional state Medicaid waivers imposing work requirements and premiums — conditioning health coverage on employment in low-wage labor markets.",
+      "CMS approved additional state Medicaid waivers imposing work requirements and premiums - conditioning health coverage on employment in low-wage labor markets.",
     Severity_Score: 8,
     Impacted_Sectors: ["Healthcare", "Economy"],
     Sources: [citations.cms_medicaid_work_rules, citations.gao_healthcare],
@@ -1499,7 +1499,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-10-18",
     Action_Type: "Enforcement Deadlock",
     Description:
-      "FEC commissioners deadlocked on major campaign-finance enforcement actions and advisory opinions — pausing investigations into undisclosed independent expenditures ahead of the 2026 cycle.",
+      "FEC commissioners deadlocked on major campaign-finance enforcement actions and advisory opinions - pausing investigations into undisclosed independent expenditures ahead of the 2026 cycle.",
     Severity_Score: 8,
     Impacted_Sectors: ["Democracy"],
     Sources: [citations.fec_enforcement_pause, citations.fec_campaign_data, citations.dark_money_transparency],
@@ -1513,7 +1513,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-10-23",
     Action_Type: "Institutional Vacancy",
     Description:
-      "Merit Systems Protection Board vacancies left thousands of federal whistleblower and Schedule F appeal cases in limbo — removing a key check on retaliatory firings.",
+      "Merit Systems Protection Board vacancies left thousands of federal whistleblower and Schedule F appeal cases in limbo - removing a key check on retaliatory firings.",
     Severity_Score: 8,
     Impacted_Sectors: ["Democracy", "Economy"],
     Sources: [citations.mspb_vacancies, citations.schedule_f_eo, citations.gao_schedule_f],
@@ -1527,7 +1527,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-10-28",
     Action_Type: "Regulatory Delay",
     Description:
-      "EPA delayed implementation of methane leak detection and repair standards for oil and gas facilities — extending a regulatory freeze that benefits fossil-fuel operators.",
+      "EPA delayed implementation of methane leak detection and repair standards for oil and gas facilities - extending a regulatory freeze that benefits fossil-fuel operators.",
     Severity_Score: 7,
     Impacted_Sectors: ["Environment", "Economy"],
     Sources: [citations.epa_methane_delay, citations.epa_rule, citations.regulatory_freeze],
@@ -1541,7 +1541,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-11-02",
     Action_Type: "Disclosure Rollback",
     Description:
-      "Treasury and IRS moved to weaken nonprofit donor-disclosure requirements for politically active 501(c)(4) organizations — expanding dark-money channels documented by OpenSecrets.",
+      "Treasury and IRS moved to weaken nonprofit donor-disclosure requirements for politically active 501(c)(4) organizations - expanding dark-money channels documented by OpenSecrets.",
     Severity_Score: 9,
     Impacted_Sectors: ["Democracy", "Economy"],
     Sources: [citations.irs_dark_money_rule, citations.dark_money_transparency, citations.fec_campaign_data],
@@ -1555,7 +1555,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-11-07",
     Action_Type: "Workforce Reclassification",
     Description:
-      "OPM expanded Schedule F reclassification guidance to additional agency subcomponents — accelerating politically motivated civil-service purges across the executive branch ahead of the 2026 midterms.",
+      "OPM expanded Schedule F reclassification guidance to additional agency subcomponents - accelerating politically motivated civil-service purges across the executive branch ahead of the 2026 midterms.",
     Severity_Score: 10,
     Impacted_Sectors: ["Democracy"],
     Sources: [citations.schedule_f_expansion, citations.schedule_f_eo, citations.gao_schedule_f],
@@ -1572,7 +1572,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-11-12",
     Action_Type: "Records Withholding",
     Description:
-      "DOJ expanded FOIA exemption claims for executive-branch records tied to political appointees — lengthening backlogs documented on FOIA.gov and delaying public release of investigation materials.",
+      "DOJ expanded FOIA exemption claims for executive-branch records tied to political appointees - lengthening backlogs documented on FOIA.gov and delaying public release of investigation materials.",
     Severity_Score: 7,
     Impacted_Sectors: ["Democracy"],
     Sources: [citations.doj_oip_foia, citations.foia_gov, citations.epstein_records_act],
@@ -1586,7 +1586,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-11-15",
     Action_Type: "Disclosure Rollback",
     Description:
-      "Federal agencies scaled back proactive disclosure of lobbying visitor logs and rulemaking comment datasets — reducing machine-readable transparency required under prior open-government policies.",
+      "Federal agencies scaled back proactive disclosure of lobbying visitor logs and rulemaking comment datasets - reducing machine-readable transparency required under prior open-government policies.",
     Severity_Score: 7,
     Impacted_Sectors: ["Democracy"],
     Sources: [citations.safeguard_transparency, citations.oge_ethics_rollback, citations.dark_money_transparency],
@@ -1600,7 +1600,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-11-18",
     Action_Type: "Legislative Action",
     Description:
-      "House Judiciary subcommittee advanced markup on the Epstein Files Transparency Act — bipartisan legislation requiring DOJ to release unclassified investigation records on a statutory timeline.",
+      "House Judiciary subcommittee advanced markup on the Epstein Files Transparency Act - bipartisan legislation requiring DOJ to release unclassified investigation records on a statutory timeline.",
     Severity_Score: 5,
     Impacted_Sectors: ["Democracy"],
     Sources: [citations.epstein_records_act, citations.safeguard_transparency],
@@ -1614,7 +1614,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-11-21",
     Action_Type: "Whistleblower Backlog",
     Description:
-      "Federal whistleblower appeals surged as MSPB vacancies left retaliation cases unresolved — weakening the fraud-recovery and oversight mechanisms SAFE-004 whistleblower bounties are designed to strengthen.",
+      "Federal whistleblower appeals surged as MSPB vacancies left retaliation cases unresolved - weakening the fraud-recovery and oversight mechanisms SAFE-004 whistleblower bounties are designed to strengthen.",
     Severity_Score: 8,
     Impacted_Sectors: ["Democracy", "Economy"],
     Sources: [citations.mspb_vacancies, citations.safeguard_transparency, citations.oge_ethics_rollback],
@@ -1628,7 +1628,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-11-25",
     Action_Type: "Records Policy",
     Description:
-      "National Archives issued restrictive guidance on presidential records access requests — narrowing public review windows under the Presidential Records Act amid ongoing FOIA litigation over executive-branch document retention.",
+      "National Archives issued restrictive guidance on presidential records access requests - narrowing public review windows under the Presidential Records Act amid ongoing FOIA litigation over executive-branch document retention.",
     Severity_Score: 7,
     Impacted_Sectors: ["Democracy"],
     Sources: [citations.presidential_records_crs, citations.foia_gov, citations.doj_oip_foia],
@@ -1642,7 +1642,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-11-28",
     Action_Type: "Election Security",
     Description:
-      "CISA scaled back election-security partnership staffing and state coordination grants — weakening federal support for voting-system cybersecurity ahead of the 2026 midterm cycle.",
+      "CISA scaled back election-security partnership staffing and state coordination grants - weakening federal support for voting-system cybersecurity ahead of the 2026 midterm cycle.",
     Severity_Score: 9,
     Impacted_Sectors: ["Democracy"],
     Sources: [
@@ -1660,7 +1660,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-12-01",
     Action_Type: "Ethics Rollback",
     Description:
-      "OGE extended financial disclosure filing deadlines for senior appointees — reducing real-time visibility into executive branch conflicts of interest during agency rulemaking pushes.",
+      "OGE extended financial disclosure filing deadlines for senior appointees - reducing real-time visibility into executive branch conflicts of interest during agency rulemaking pushes.",
     Severity_Score: 7,
     Impacted_Sectors: ["Democracy", "Economy"],
     Sources: [
@@ -1678,7 +1678,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-12-04",
     Action_Type: "Campaign Finance",
     Description:
-      "FEC enforcement docket backlog grew as commission vacancies limited penalties for late disclosure filings — delaying public visibility into midterm dark-money spending.",
+      "FEC enforcement docket backlog grew as commission vacancies limited penalties for late disclosure filings - delaying public visibility into midterm dark-money spending.",
     Severity_Score: 7,
     Impacted_Sectors: ["Democracy"],
     Sources: [
@@ -1696,7 +1696,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-12-08",
     Action_Type: "Inspector General Review",
     Description:
-      "Multiple agency IG offices faced staffing reviews and report publication delays — narrowing independent oversight of procurement fraud and ethics violations documented in prior GAO findings.",
+      "Multiple agency IG offices faced staffing reviews and report publication delays - narrowing independent oversight of procurement fraud and ethics violations documented in prior GAO findings.",
     Severity_Score: 8,
     Impacted_Sectors: ["Democracy", "Economy"],
     Sources: [
@@ -1714,7 +1714,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-12-12",
     Action_Type: "Transparency Halt",
     Description:
-      "A coordinated executive-branch slowdown on proactive open-government publishing reached a 120-event milestone — spanning FOIA backlogs, lobbying log gaps, and ethics disclosure delays that SAFE-004 is designed to reverse.",
+      "A coordinated executive-branch slowdown on proactive open-government publishing reached a 120-event milestone - spanning FOIA backlogs, lobbying log gaps, and ethics disclosure delays that SAFE-004 is designed to reverse.",
     Severity_Score: 10,
     Impacted_Sectors: ["Democracy"],
     Sources: [
@@ -1736,7 +1736,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-12-15",
     Action_Type: "FOIA Backlog",
     Description:
-      "DOJ Office of Information Policy reported median FOIA response times exceeding statutory limits at multiple agencies — with proactive disclosure pages going stale as staffing reviews continued across the executive branch.",
+      "DOJ Office of Information Policy reported median FOIA response times exceeding statutory limits at multiple agencies - with proactive disclosure pages going stale as staffing reviews continued across the executive branch.",
     Severity_Score: 7,
     Impacted_Sectors: ["Democracy"],
     Sources: [
@@ -1754,7 +1754,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-12-18",
     Action_Type: "Oversight Report",
     Description:
-      "GAO flagged rising improper-payment rates tied to reduced inspector general staffing — documenting how oversight vacancies weaken fraud recovery ahead of major procurement pushes.",
+      "GAO flagged rising improper-payment rates tied to reduced inspector general staffing - documenting how oversight vacancies weaken fraud recovery ahead of major procurement pushes.",
     Severity_Score: 8,
     Impacted_Sectors: ["Democracy", "Economy"],
     Sources: [
@@ -1772,7 +1772,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-12-20",
     Action_Type: "Spending Transparency",
     Description:
-      "Federal spending portals narrowed machine-readable lobbying and contract metadata fields — reducing public ability to cross-reference vendor payments with rulemaking commenters.",
+      "Federal spending portals narrowed machine-readable lobbying and contract metadata fields - reducing public ability to cross-reference vendor payments with rulemaking commenters.",
     Severity_Score: 7,
     Impacted_Sectors: ["Democracy", "Economy"],
     Sources: [
@@ -1790,7 +1790,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-12-22",
     Action_Type: "Press Access",
     Description:
-      "Multiple federal agencies curtailed routine press briefing transcripts and on-camera Q&A — limiting real-time public scrutiny of policy rollouts documented in prior CPR tracker entries.",
+      "Multiple federal agencies curtailed routine press briefing transcripts and on-camera Q&A - limiting real-time public scrutiny of policy rollouts documented in prior CPR tracker entries.",
     Severity_Score: 6,
     Impacted_Sectors: ["Democracy"],
     Sources: [
@@ -1808,7 +1808,7 @@ export const timelineEvents: TimelineEvent[] = [
     Date: "2025-12-25",
     Action_Type: "Documentation Milestone",
     Description:
-      "Independent watchdog cross-references reached a 125-event milestone on coordinated erosion of proactive disclosure — spanning FOIA delays, lobbying log gaps, press access limits, and ethics filing extensions that SAFE-004 targets.",
+      "Independent watchdog cross-references reached a 125-event milestone on coordinated erosion of proactive disclosure - spanning FOIA delays, lobbying log gaps, press access limits, and ethics filing extensions that SAFE-004 targets.",
     Severity_Score: 9,
     Impacted_Sectors: ["Democracy"],
     Sources: [

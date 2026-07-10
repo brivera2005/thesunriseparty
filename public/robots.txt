@@ -1,4 +1,4 @@
-# Project Sunrise — https://thesunriseparty.pages.dev
+# Project Sunrise - https://thesunriseparty.pages.dev
 User-agent: *
 Allow: /
 

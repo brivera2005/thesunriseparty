@@ -16,7 +16,7 @@ export function CompareTrackersPanel() {
         </h3>
         <p className="mb-4 text-xs text-muted-foreground">
           How project2025.observer, CPR, and watch2025.org cover the same
-          threat — and where Project Sunrise adds severity scoring and policy
+          threat - and where Project Sunrise adds severity scoring and policy
           alternatives.
         </p>
 

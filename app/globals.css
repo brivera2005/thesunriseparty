@@ -301,6 +301,12 @@
   }
 }
 
+/* Logo PNGs are processed to pure #fff so they sit seamless on white pages */
+.logo-seamless {
+  background-color: #ffffff;
+  mix-blend-mode: multiply;
+}
+
 @media print {
   body * {
     visibility: hidden;

@@ -5,7 +5,7 @@ import { countHistoricalRebuttals } from "@/lib/data/hidden-history";
 
 export const metadata: Metadata = {
   title: "Historical Rebuttals | Project Sunrise",
-  description: `${countHistoricalRebuttals()} plain-language rebuttals to propaganda from every era of American history — sourced and cross-linked.`,
+  description: `${countHistoricalRebuttals()} plain-language rebuttals to propaganda from every era of American history - sourced and cross-linked.`,
   openGraph: {
     title: "Historical Rebuttals | Project Sunrise",
     description: sectionOg.history.description,

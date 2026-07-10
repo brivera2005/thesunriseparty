@@ -57,7 +57,7 @@ export function TrackerTimelineScrubber({
                       : "border-muted-foreground/40 bg-muted hover:scale-125"
               )}
               style={{ left: `${Math.min(98, Math.max(2, pos))}%` }}
-              aria-label={`${event.Date} — severity ${event.Severity_Score}`}
+              aria-label={`${event.Date} - severity ${event.Severity_Score}`}
             />
           );
         })}

@@ -5,7 +5,7 @@ import { sectionOg, SITE_URL } from "@/lib/metadata";
 export const metadata: Metadata = {
   title: "The Progressive Blueprint | Project Sunrise",
   description:
-    "Medicare for All, PRO Act, climate mobilization, voting rights — evidence-based policy with bill numbers, implementation timelines, and constitutional safeguards.",
+    "Medicare for All, PRO Act, climate mobilization, voting rights - evidence-based policy with bill numbers, implementation timelines, and constitutional safeguards.",
   openGraph: {
     title: sectionOg.blueprint.title,
     description: sectionOg.blueprint.description,

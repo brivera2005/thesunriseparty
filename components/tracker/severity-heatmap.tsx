@@ -55,7 +55,7 @@ export function SeverityHeatmap({ events }: { events: TimelineEvent[] }) {
           Sector Severity Heatmap
         </h3>
         <p className="mb-4 text-xs text-muted-foreground">
-          Average severity by impacted sector — color intensity reflects aggregate
+          Average severity by impacted sector - color intensity reflects aggregate
           harm across tracked actions.
         </p>
         <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
@@ -89,7 +89,7 @@ export function SeverityHeatmap({ events }: { events: TimelineEvent[] }) {
                     className="mt-1 text-2xl font-bold tabular-nums"
                     style={{ color: eventCount > 0 ? color : undefined }}
                   >
-                    {eventCount > 0 ? avgSeverity : "—"}
+                    {eventCount > 0 ? avgSeverity : "-"}
                   </p>
                   <p className="text-[10px] text-muted-foreground">
                     {eventCount} event{eventCount !== 1 ? "s" : ""}

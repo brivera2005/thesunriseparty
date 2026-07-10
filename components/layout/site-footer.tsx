@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ExternalLink, FileText, Heart, Rss } from "lucide-react";
+import { BrandLogo } from "@/components/brand-logo";
 import { trackerSources } from "@/lib/data/tracker-sources";
 import { getTrackerStats } from "@/lib/data/timeline-events";
 import { conversationHelpers } from "@/lib/data/conversation-helpers";
@@ -34,11 +35,14 @@ export function SiteFooter() {
       <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-5">
           <div className="lg:col-span-2">
+            <Link href="/" className="mb-4 inline-block">
+              <BrandLogo variant="footer" />
+            </Link>
             <h3 className="mb-3 text-lg font-bold">Project Sunrise</h3>
             <p className="text-sm leading-relaxed text-muted-foreground">
               Evidence-based tracking of authoritarian policy. Progressive
               legislative vision for when democracy wins. Every claim sourced.
-              Every link archived. For the people — not the plutocrats.
+              Every link archived. For the people, not the plutocrats.
             </p>
             <dl className="mt-6 grid grid-cols-2 gap-3 text-sm sm:grid-cols-4 lg:grid-cols-2">
               <div>
@@ -155,7 +159,7 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 text-center text-sm text-muted-foreground sm:flex-row sm:text-left">
-          <p>&copy; {new Date().getFullYear()} Project Sunrise. Democracy dies in darkness — we bring the receipts.</p>
+          <p>&copy; {new Date().getFullYear()} Project Sunrise. Democracy dies in darkness. We bring the receipts.</p>
           <p className="text-xs">thesunriseparty.pages.dev</p>
         </div>
       </div>

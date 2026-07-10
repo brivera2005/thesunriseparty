@@ -82,7 +82,7 @@ export function BlueprintPage() {
                 </h1>
                 <p className="mt-3 text-muted-foreground">
                   Medicare for All, climate mobilization, voting rights, and
-                  irreversible safeguards — with bill numbers and timelines.
+                  irreversible safeguards - with bill numbers and timelines.
                 </p>
               </div>
               <ShareButton />

@@ -80,7 +80,7 @@ export function getSourceTier(url: string, publisher: string): SourceTierInfo {
   ) {
     return {
       tier: 1,
-      label: "Tier 1 — Primary",
+      label: "Tier 1 - Primary",
       description: "Government primary source (.gov, Federal Register, courts)",
       className:
         "border-emerald-500/40 bg-emerald-500/10 text-emerald-700 dark:text-emerald-400",
@@ -93,7 +93,7 @@ export function getSourceTier(url: string, publisher: string): SourceTierInfo {
   ) {
     return {
       tier: 3,
-      label: "Tier 3 — Fact-check",
+      label: "Tier 3 - Fact-check",
       description: "Independent fact-checker (AP, Reuters, PolitiFact, FactCheck)",
       className: "border-amber-500/40 bg-amber-500/10 text-amber-700 dark:text-amber-400",
     };
@@ -102,7 +102,7 @@ export function getSourceTier(url: string, publisher: string): SourceTierInfo {
   if (TIER_2_PUBLISHERS.some((p) => pub.includes(p) || host.includes(p.replace(/\s/g, "")))) {
     return {
       tier: 2,
-      label: "Tier 2 — Institutional",
+      label: "Tier 2 - Institutional",
       description: "Institutional research (GAO, CRS, Brennan, ACLU)",
       className: "border-sky-500/40 bg-sky-500/10 text-sky-700 dark:text-sky-400",
     };
@@ -111,7 +111,7 @@ export function getSourceTier(url: string, publisher: string): SourceTierInfo {
   // Default non-government research to tier 2
   return {
     tier: 2,
-    label: "Tier 2 — Institutional",
+    label: "Tier 2 - Institutional",
     description: "Institutional research or watchdog reporting",
     className: "border-sky-500/40 bg-sky-500/10 text-sky-700 dark:text-sky-400",
   };

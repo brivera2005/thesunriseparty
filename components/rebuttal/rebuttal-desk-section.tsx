@@ -23,7 +23,7 @@ const LAZY_AFTER_INDEX = 8;
 interface RebuttalDeskSectionProps {
   /** Hide section header when embedded on dedicated /rebuttal page */
   standalone?: boolean;
-  /** Shortened home embed — hides search/filters */
+  /** Shortened home embed - hides search/filters */
   compact?: boolean;
   /** Max entries when compact */
   limit?: number;

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Quick 404 scanner — sequential GET with status reporting.
+ * Quick 404 scanner - sequential GET with status reporting.
  * Usage: node scripts/scan-404s.mjs
  */
 

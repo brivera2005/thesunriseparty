@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Project Sunrise | Track Project 2025, Build the Progressive Blueprint",
   description:
-    "Transparency-first platform tracking the authoritarian agenda — Project 2025 and beyond — with primary sources, archived citations, and a progressive legislative vision for when democracy wins.",
+    "Transparency-first platform tracking the authoritarian agenda - Project 2025 and beyond - with primary sources, archived citations, and a progressive legislative vision for when democracy wins.",
   metadataBase: new URL(SITE_URL),
   alternates: {
     types: {
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Project Sunrise — Democracy Needs Receipts",
+    title: "Project Sunrise - Democracy Needs Receipts",
     description:
-      "Evidence-based Project 2025 tracking, progressive policy blueprint, and sourced rebuttals. For the people — not billionaires or propagandists.",
+      "Evidence-based Project 2025 tracking, progressive policy blueprint, and sourced rebuttals. For the people - not billionaires or propagandists.",
     url: SITE_URL,
     siteName: defaultOg.siteName,
     type: defaultOg.type,
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Project Sunrise — Democracy Needs Receipts",
+    title: "Project Sunrise - Democracy Needs Receipts",
     description:
       "Track Project 2025 with receipts. Build the progressive blueprint for when democracy wins.",
     images: [defaultOg.images[0].url],

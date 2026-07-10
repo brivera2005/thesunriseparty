@@ -571,9 +571,9 @@ export const hiddenHistoryEntries: HiddenHistoryEntry[] = [
     era: "Today",
     title: "Book Bans",
     textbookVersion: "Parents want age-appropriate content.",
-    actualHistory: "Thousands of history books removed—organized censorship.",
+    actualHistory: "Thousands of history books removed-organized censorship.",
     historicalRebuttals: [
-      { theySaid: "That's the official story.", youSay: "Thousands of history books removed—organized censorship.", sources: [h.book_bans_pen] },
+      { theySaid: "That's the official story.", youSay: "Thousands of history books removed-organized censorship.", sources: [h.book_bans_pen] },
     ],
     sources: [h.book_bans_pen],
     categories: ["Education","Race"],

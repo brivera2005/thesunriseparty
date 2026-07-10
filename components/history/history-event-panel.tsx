@@ -114,7 +114,7 @@ export function HistoryEventPanel({
               {entry.sources.map((src) => (
                 <li key={src.id} className="text-sm">
                   <Citation source={src}>{src.title}</Citation>
-                  <span className="text-muted-foreground"> — {src.publisher}</span>
+                  <span className="text-muted-foreground"> - {src.publisher}</span>
                 </li>
               ))}
             </ul>

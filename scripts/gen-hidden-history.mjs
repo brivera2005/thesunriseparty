@@ -44,7 +44,7 @@ const entries = [
   ["HH-2008-CRISIS", "2008", 2008, "2008", "Financial Crisis", "Nobody could predict the crash.", "Wall Street fraud caused collapse; few prosecuted.", [], [h.financial_crisis_crs], ["Economy", "Democracy"]],
   ["HH-2017-LOST-CAUSE", "2017-2021", 2017, "Trump era", "Lost Cause Revival", "Confederate statues preserve heritage.", "Most monuments went up during Jim Crow.", [], [h.lost_cause_zinn, h.secession_documents], ["Race", "Education"]],
   ["HH-2021-JAN6", "2021", 2021, "Trump era", "January 6", "It was a peaceful protest.", "Mob attacked the Capitol to overturn an election.", [], [h.jan6_archives], ["Democracy"]],
-  ["HH-TODAY-BANS", "2021-present", 2024, "Today", "Book Bans", "Parents want age-appropriate content.", "Thousands of history books removed—organized censorship.", [], [h.book_bans_pen], ["Education", "Race"]],
+  ["HH-TODAY-BANS", "2021-present", 2024, "Today", "Book Bans", "Parents want age-appropriate content.", "Thousands of history books removed-organized censorship.", [], [h.book_bans_pen], ["Education", "Race"]],
 ];
 
 const eras = ["Colonial", "Revolution", "Early Republic", "Antebellum", "Civil War", "Reconstruction", "Gilded Age", "Progressive", "WWI", "Roaring 20s", "Depression", "WWII", "Cold War", "Civil Rights", "Vietnam", "Reagan era", "911 era", "2008", "Trump era", "Today"];

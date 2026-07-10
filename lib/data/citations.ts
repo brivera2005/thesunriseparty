@@ -1,6 +1,6 @@
 import type { CitationSource } from "@/lib/types";
 
-/** Archive.org calendar link — always resolves even when no snapshot exists yet. */
+/** Archive.org calendar link - always resolves even when no snapshot exists yet. */
 function wayback(url: string): string {
   return `https://web.archive.org/web/*/${url}`;
 }
@@ -59,7 +59,7 @@ export const citations: Record<string, CitationSource> = {
       "https://www.kff.org/affordable-care-act/aca-marketplace-premium-payments-would-more-than-double-on-average-next-year-if-enhanced-premium-tax-credits-expire/"
     ),
     excerpt:
-      "Expiration of enhanced premium tax credits is estimated to more than double what subsidized enrollees pay annually for premiums—a 114% increase on average.",
+      "Expiration of enhanced premium tax credits is estimated to more than double what subsidized enrollees pay annually for premiums-a 114% increase on average.",
     date: "2025-11-08",
   },
   ed_dept_titleix: {
@@ -108,7 +108,7 @@ export const citations: Record<string, CitationSource> = {
   },
   pew_trust: {
     id: "pew_trust",
-    title: "Public Trust in Government: 1958–2025",
+    title: "Public Trust in Government: 1958-2025",
     publisher: "Pew Research Center",
     url: "https://www.pewresearch.org/politics/2025/12/04/public-trust-in-government-1958-2025/",
     waybackUrl: wayback(
@@ -232,7 +232,7 @@ export const citations: Record<string, CitationSource> = {
       "Mandatory machine-readable disclosure of lobbying contacts, rulemaking comments, and federal spending data increases public participation in regulatory processes by 300%.",
     date: "2018-01-01",
   },
-  // —— Project 2025 / 2025–2026 executive actions ——
+  // -- Project 2025 / 2025-2026 executive actions --
   heritage_mandate: {
     id: "heritage_mandate",
     title: "Mandate for Leadership: The Conservative Promise",
@@ -252,7 +252,7 @@ export const citations: Record<string, CitationSource> = {
       "https://www.whitehouse.gov/presidential-actions/2025/01/initial-rescissions-of-harmful-executive-orders-and-actions/"
     ),
     excerpt:
-      "Executive Order 14148 rescinded dozens of Biden-era orders on climate, equity, and regulatory policy on Day One — a core Project 2025 objective to erase prior administration rules.",
+      "Executive Order 14148 rescinded dozens of Biden-era orders on climate, equity, and regulatory policy on Day One - a core Project 2025 objective to erase prior administration rules.",
     date: "2025-01-20",
   },
   schedule_f_eo: {
@@ -264,7 +264,7 @@ export const citations: Record<string, CitationSource> = {
       "https://www.whitehouse.gov/presidential-actions/2025/01/restoring-accountability-to-policy-influencing-positions-within-the-federal-workforce/"
     ),
     excerpt:
-      "Reinstates Schedule F, reclassifying potentially tens of thousands of civil servants as at-will employees removable without standard merit protections — a top Project 2025 personnel priority.",
+      "Reinstates Schedule F, reclassifying potentially tens of thousands of civil servants as at-will employees removable without standard merit protections - a top Project 2025 personnel priority.",
     date: "2025-01-20",
   },
   federal_hiring_freeze: {
@@ -288,7 +288,7 @@ export const citations: Record<string, CitationSource> = {
       "https://www.whitehouse.gov/presidential-actions/2025/01/protecting-the-meaning-and-value-of-american-citizenship/"
     ),
     excerpt:
-      "Executive order directs agencies to deny citizenship documents to children born in the U.S. whose parents lack lawful status — challenging long-standing 14th Amendment interpretation.",
+      "Executive order directs agencies to deny citizenship documents to children born in the U.S. whose parents lack lawful status - challenging long-standing 14th Amendment interpretation.",
     date: "2025-01-20",
   },
   birthright_litigation: {
@@ -312,7 +312,7 @@ export const citations: Record<string, CitationSource> = {
       "https://www.whitehouse.gov/presidential-actions/2025/01/declaring-a-national-energy-emergency/"
     ),
     excerpt:
-      "Declares a national energy emergency to expedite fossil fuel permitting and pause renewable project approvals — mirroring Project 2025's energy chapter priorities.",
+      "Declares a national energy emergency to expedite fossil fuel permitting and pause renewable project approvals - mirroring Project 2025's energy chapter priorities.",
     date: "2025-01-20",
   },
   doge_eo: {
@@ -324,7 +324,7 @@ export const citations: Record<string, CitationSource> = {
       "https://www.whitehouse.gov/presidential-actions/2025/01/establishing-and-implementing-the-presidents-department-of-government-efficiency/"
     ),
     excerpt:
-      "Creates DOGE to recommend cuts to federal programs, workforce, and regulations — an extra-constitutional advisory body with unprecedented access to agency systems.",
+      "Creates DOGE to recommend cuts to federal programs, workforce, and regulations - an extra-constitutional advisory body with unprecedented access to agency systems.",
     date: "2025-01-20",
   },
   dei_termination_eo: {
@@ -370,7 +370,7 @@ export const citations: Record<string, CitationSource> = {
       "https://www.whitehouse.gov/presidential-actions/2025/03/improving-education-outcomes-by-empowering-parents-states-and-communities/"
     ),
     excerpt:
-      "Directs the Secretary of Education to take all lawful steps to wind down the Department and return authority to states — a signature Project 2025 education objective.",
+      "Directs the Secretary of Education to take all lawful steps to wind down the Department and return authority to states - a signature Project 2025 education objective.",
     date: "2025-03-20",
   },
   epa_methane_rollback: {
@@ -392,7 +392,7 @@ export const citations: Record<string, CitationSource> = {
     url: "https://www.consumerfinance.gov/about-us/newsroom/",
     waybackUrl: wayback("https://www.consumerfinance.gov/about-us/newsroom/"),
     excerpt:
-      "Acting leadership halted new enforcement actions and rulemakings, effectively pausing consumer protection oversight — consistent with Project 2025's call to defang the CFPB.",
+      "Acting leadership halted new enforcement actions and rulemakings, effectively pausing consumer protection oversight - consistent with Project 2025's call to defang the CFPB.",
     date: "2025-02-07",
   },
   probationary_terminations: {
@@ -424,12 +424,12 @@ export const citations: Record<string, CitationSource> = {
     url: "https://www.congress.gov/bill/118th-congress/house-bill/8281",
     waybackUrl: wayback("https://www.congress.gov/bill/118th-congress/house-bill/8281"),
     excerpt:
-      "Would require documentary proof of citizenship to register to vote in federal elections — a Project 2025 voting priority that could disenfranchise millions of eligible citizens.",
+      "Would require documentary proof of citizenship to register to vote in federal elections - a Project 2025 voting priority that could disenfranchise millions of eligible citizens.",
     date: "2024-05-08",
   },
   cpr_p2025_progress: {
     id: "cpr_p2025_progress",
-    title: "Project 2025 Executive Action Tracker — February 2026 Update",
+    title: "Project 2025 Executive Action Tracker - February 2026 Update",
     publisher: "Center for Progressive Reform",
     url: "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/",
     waybackUrl: wayback(
@@ -456,7 +456,7 @@ export const citations: Record<string, CitationSource> = {
     url: "https://www.opensecrets.org/news/2014/05/dark-money-basics/",
     waybackUrl: wayback("https://www.opensecrets.org/news/2014/05/dark-money-basics/"),
     excerpt:
-      "Political nonprofits can spend unlimited sums without disclosing donors — enabling billionaire and corporate capture of policy agendas like Project 2025 without public accountability.",
+      "Political nonprofits can spend unlimited sums without disclosing donors - enabling billionaire and corporate capture of policy agendas like Project 2025 without public accountability.",
     date: "2014-05-14",
   },
   epstein_records_act: {
@@ -466,7 +466,7 @@ export const citations: Record<string, CitationSource> = {
     url: "https://www.congress.gov/bill/119th-congress/house-bill/4405",
     waybackUrl: wayback("https://www.congress.gov/bill/119th-congress/house-bill/4405"),
     excerpt:
-      "Bipartisan legislation requiring DOJ to release unclassified Epstein investigation records — part of broader elite accountability and declassification demands.",
+      "Bipartisan legislation requiring DOJ to release unclassified Epstein investigation records - part of broader elite accountability and declassification demands.",
     date: "2025-11-19",
   },
   nlrb_rollback: {
@@ -498,7 +498,7 @@ export const citations: Record<string, CitationSource> = {
       "https://www.whitehouse.gov/presidential-actions/2025/01/protecting-the-american-people-against-invasion/"
     ),
     excerpt:
-      "Directs DHS to expand detention capacity, resume border wall construction, and end catch-and-release — core Project 2025 immigration enforcement priorities.",
+      "Directs DHS to expand detention capacity, resume border wall construction, and end catch-and-release - core Project 2025 immigration enforcement priorities.",
     date: "2025-01-20",
   },
   who_withdrawal: {
@@ -510,7 +510,7 @@ export const citations: Record<string, CitationSource> = {
       "https://www.federalregister.gov/documents/2025/01/29/2025-01957/withdrawing-the-united-states-from-the-world-health-organization"
     ),
     excerpt:
-      "Initiates U.S. withdrawal from WHO, halting funding and participation in global health coordination — a Project 2025 State Department objective.",
+      "Initiates U.S. withdrawal from WHO, halting funding and participation in global health coordination - a Project 2025 State Department objective.",
     date: "2025-01-20",
   },
   paris_withdrawal: {
@@ -534,7 +534,7 @@ export const citations: Record<string, CitationSource> = {
       "https://www.whitehouse.gov/presidential-actions/2025/01/regulatory-freeze-pending-review/"
     ),
     excerpt:
-      "Freezes publication of new federal regulations and withdraws unpublished rules pending political review — halting agency rulemaking across government.",
+      "Freezes publication of new federal regulations and withdraws unpublished rules pending political review - halting agency rulemaking across government.",
     date: "2025-01-20",
   },
   federal_lands_drilling: {
@@ -586,7 +586,7 @@ export const citations: Record<string, CitationSource> = {
     url: "https://www.congress.gov/bill/119th-congress/house-bill/22",
     waybackUrl: wayback("https://www.congress.gov/bill/119th-congress/house-bill/22"),
     excerpt:
-      "Would require documentary proof of citizenship to register to vote in federal elections — a Project 2025 voting priority that could disenfranchise millions.",
+      "Would require documentary proof of citizenship to register to vote in federal elections - a Project 2025 voting priority that could disenfranchise millions.",
     date: "2025-01-03",
   },
   fcc_media_policy: {
@@ -640,7 +640,7 @@ export const citations: Record<string, CitationSource> = {
       "https://www.whitehouse.gov/presidential-actions/2025/01/return-to-in-person-work/"
     ),
     excerpt:
-      "Directs federal agencies to terminate remote-work arrangements and require employees to return to in-person duty — accelerating workforce displacement alongside hiring freezes.",
+      "Directs federal agencies to terminate remote-work arrangements and require employees to return to in-person duty - accelerating workforce displacement alongside hiring freezes.",
     date: "2025-01-20",
   },
   jan6_pardons_eo: {
@@ -664,7 +664,7 @@ export const citations: Record<string, CitationSource> = {
       "https://www.whitehouse.gov/presidential-actions/2025/01/reevaluating-and-realigning-united-states-foreign-aid/"
     ),
     excerpt:
-      "Pauses foreign assistance disbursements pending ideological review — halting humanitarian and development programs worldwide without congressional authorization.",
+      "Pauses foreign assistance disbursements pending ideological review - halting humanitarian and development programs worldwide without congressional authorization.",
     date: "2025-01-20",
   },
   hr_medicare_for_all: {
@@ -706,7 +706,7 @@ export const citations: Record<string, CitationSource> = {
       "https://www.whitehouse.gov/presidential-actions/2025/01/america-first-trade-policy/"
     ),
     excerpt:
-      "Directs agencies to review trade agreements, identify unfair practices, and recommend reciprocal tariffs — a Project 2025 Commerce Department priority.",
+      "Directs agencies to review trade agreements, identify unfair practices, and recommend reciprocal tariffs - a Project 2025 Commerce Department priority.",
     date: "2025-01-20",
   },
   speech_censorship_eo: {
@@ -730,7 +730,7 @@ export const citations: Record<string, CitationSource> = {
       "https://www.whitehouse.gov/presidential-actions/2025/01/realigning-the-united-states-refugee-admissions-program/"
     ),
     excerpt:
-      "Suspends U.S. Refugee Admissions Program pending review and directs alignment with administration immigration priorities — halting refugee resettlement.",
+      "Suspends U.S. Refugee Admissions Program pending review and directs alignment with administration immigration priorities - halting refugee resettlement.",
     date: "2025-01-20",
   },
   cartel_fto_eo: {
@@ -754,7 +754,7 @@ export const citations: Record<string, CitationSource> = {
       "https://www.whitehouse.gov/presidential-actions/2025/01/restoring-the-death-penalty/"
     ),
     excerpt:
-      "Directs DOJ to resume federal executions and pursue death sentences — reversing Biden-era moratorium on federal capital punishment.",
+      "Directs DOJ to resume federal executions and pursue death sentences - reversing Biden-era moratorium on federal capital punishment.",
     date: "2025-01-20",
   },
   nih_funding_cuts: {
@@ -764,12 +764,12 @@ export const citations: Record<string, CitationSource> = {
     url: "https://grants.nih.gov/grants/guide/notice-files/NOT-OD-25-068.html",
     waybackUrl: wayback("https://grants.nih.gov/grants/guide/notice-files/NOT-OD-25-068.html"),
     excerpt:
-      "NIH capped indirect research cost reimbursement at 15%, cutting billions from university and hospital research infrastructure — a DOGE-aligned spending reduction.",
+      "NIH capped indirect research cost reimbursement at 15%, cutting billions from university and hospital research infrastructure - a DOGE-aligned spending reduction.",
     date: "2025-02-07",
   },
   ira_funding_pause: {
     id: "ira_funding_pause",
-    title: "Unleashing American Energy — IRA Funding Pause",
+    title: "Unleashing American Energy - IRA Funding Pause",
     publisher: "The White House",
     url: "https://www.whitehouse.gov/presidential-actions/2025/01/unleashing-american-energy/",
     waybackUrl: wayback(
@@ -798,7 +798,7 @@ export const citations: Record<string, CitationSource> = {
       "https://www.whitehouse.gov/presidential-actions/2025/04/regulating-imports-with-a-reciprocal-tariff-to-rectify-trade-practices-that-contribute-to-large-and-persistent-annual-united-states-goods-trade-deficits/"
     ),
     excerpt:
-      "Imposes broad reciprocal tariffs on imports from trading partners, escalating trade war and raising consumer prices — a unilateral trade policy shift.",
+      "Imposes broad reciprocal tariffs on imports from trading partners, escalating trade war and raising consumer prices - a unilateral trade policy shift.",
     date: "2025-04-02",
   },
   doj_civil_rights_shift: {
@@ -818,7 +818,7 @@ export const citations: Record<string, CitationSource> = {
     url: "https://www.eeoc.gov/newsroom/",
     waybackUrl: wayback("https://www.eeoc.gov/newsroom/"),
     excerpt:
-      "EEOC leadership redirected civil rights enforcement toward DEI program investigations while deprioritizing systemic discrimination cases — aligning with Project 2025 personnel objectives.",
+      "EEOC leadership redirected civil rights enforcement toward DEI program investigations while deprioritizing systemic discrimination cases - aligning with Project 2025 personnel objectives.",
     date: "2025-03-01",
   },
   hud_fair_housing_pause: {
@@ -858,7 +858,7 @@ export const citations: Record<string, CitationSource> = {
     url: "https://home.treasury.gov/news/press-releases",
     waybackUrl: wayback("https://home.treasury.gov/news/press-releases"),
     excerpt:
-      "Treasury granted DOGE-aligned reviewers access to federal payment systems — bypassing standard IG oversight for spending decisions affecting trillions in disbursements.",
+      "Treasury granted DOGE-aligned reviewers access to federal payment systems - bypassing standard IG oversight for spending decisions affecting trillions in disbursements.",
     date: "2025-02-01",
   },
   epa_vehicle_emissions_rollback: {
@@ -903,7 +903,7 @@ export const citations: Record<string, CitationSource> = {
   },
   fws_species_delays: {
     id: "fws_species_delays",
-    title: "U.S. Fish and Wildlife Service — Birds",
+    title: "U.S. Fish and Wildlife Service - Birds",
     publisher: "U.S. Fish and Wildlife Service",
     url: "https://www.fws.gov/birds",
     waybackUrl: wayback("https://www.fws.gov/birds"),
@@ -960,7 +960,7 @@ export const citations: Record<string, CitationSource> = {
     url: "https://www.bls.gov/news.release/union2.nr0.htm",
     waybackUrl: wayback("https://www.bls.gov/news.release/union2.nr0.htm"),
     excerpt:
-      "Union membership fell to 9.9% of wage and salary workers while the union wage premium remained roughly 17% — lost bargaining power costs working families thousands per year.",
+      "Union membership fell to 9.9% of wage and salary workers while the union wage premium remained roughly 17% - lost bargaining power costs working families thousands per year.",
     date: "2025-01-23",
   },
   ssa_workforce_cuts: {
@@ -985,7 +985,7 @@ export const citations: Record<string, CitationSource> = {
   },
   noaa_research_freeze: {
     id: "noaa_research_freeze",
-    title: "Global Climate Report — Annual 2024",
+    title: "Global Climate Report - Annual 2024",
     publisher: "National Oceanic and Atmospheric Administration",
     url: "https://www.ncei.noaa.gov/access/monitoring/monthly-report/global/202413",
     waybackUrl: wayback(
@@ -1034,7 +1034,7 @@ export const citations: Record<string, CitationSource> = {
     url: "https://www.fec.gov/",
     waybackUrl: wayback("https://www.fec.gov/"),
     excerpt:
-      "FEC commissioners deadlocked on enforcement actions and paused advisory opinions — weakening campaign-finance oversight as Project 2025's FEC chapter urged reduced regulation.",
+      "FEC commissioners deadlocked on enforcement actions and paused advisory opinions - weakening campaign-finance oversight as Project 2025's FEC chapter urged reduced regulation.",
     date: "2025-05-08",
   },
   ftc_consumer_protection_cuts: {
@@ -1044,7 +1044,7 @@ export const citations: Record<string, CitationSource> = {
     url: "https://www.ftc.gov/legal-library/browse/cases-proceedings",
     waybackUrl: wayback("https://www.ftc.gov/legal-library/browse/cases-proceedings"),
     excerpt:
-      "FTC placed consumer-protection staff on leave and halted new merger challenges — implementing Project 2025's call to curtail aggressive antitrust and consumer enforcement.",
+      "FTC placed consumer-protection staff on leave and halted new merger challenges - implementing Project 2025's call to curtail aggressive antitrust and consumer enforcement.",
     date: "2025-05-12",
   },
   snap_work_requirements: {
@@ -1054,7 +1054,7 @@ export const citations: Record<string, CitationSource> = {
     url: "https://www.cbo.gov/publication/57057",
     waybackUrl: wayback("https://www.cbo.gov/publication/57057"),
     excerpt:
-      "USDA expanded SNAP work requirements and time limits for able-bodied adults — mirroring Project 2025 Agriculture chapter proposals to restrict nutrition assistance.",
+      "USDA expanded SNAP work requirements and time limits for able-bodied adults - mirroring Project 2025 Agriculture chapter proposals to restrict nutrition assistance.",
     date: "2025-05-15",
   },
   intelligence_briefing_restrictions: {
@@ -1064,7 +1064,7 @@ export const citations: Record<string, CitationSource> = {
     url: "https://www.intelligence.senate.gov/",
     waybackUrl: wayback("https://www.intelligence.senate.gov/"),
     excerpt:
-      "ODNI restricted congressional access to certain threat assessments and paused interagency climate-security briefings — consistent with Project 2025 intelligence chapter directives.",
+      "ODNI restricted congressional access to certain threat assessments and paused interagency climate-security briefings - consistent with Project 2025 intelligence chapter directives.",
     date: "2025-05-20",
   },
   pentagon_trans_care_rollback: {
@@ -1074,7 +1074,7 @@ export const citations: Record<string, CitationSource> = {
     url: "https://www.defense.gov/",
     waybackUrl: wayback("https://www.defense.gov/"),
     excerpt:
-      "Pentagon reinstated restrictions on gender-affirming care for service members and paused related TRICARE coverage — reversing Biden-era military health policies.",
+      "Pentagon reinstated restrictions on gender-affirming care for service members and paused related TRICARE coverage - reversing Biden-era military health policies.",
     date: "2025-05-25",
   },
   cms_medicaid_work_rules: {
@@ -1084,7 +1084,7 @@ export const citations: Record<string, CitationSource> = {
     url: "https://www.gao.gov/products/gao-25-108160",
     waybackUrl: wayback("https://www.gao.gov/products/gao-25-108160"),
     excerpt:
-      "CMS approved additional state Medicaid waivers imposing work requirements and premiums — expanding Project 2025's push to condition health coverage on employment.",
+      "CMS approved additional state Medicaid waivers imposing work requirements and premiums - expanding Project 2025's push to condition health coverage on employment.",
     date: "2025-05-28",
   },
   boem_offshore_lease: {
@@ -1118,7 +1118,7 @@ export const citations: Record<string, CitationSource> = {
       "https://www.whitehouse.gov/presidential-actions/2025/01/regulatory-freeze-pending-review/"
     ),
     excerpt:
-      "OSHA delayed silica and heat-illness rulemakings pending political review — part of the administration-wide regulatory freeze halting worker-safety updates.",
+      "OSHA delayed silica and heat-illness rulemakings pending political review - part of the administration-wide regulatory freeze halting worker-safety updates.",
     date: "2025-06-10",
   },
   va_community_care_audit: {
@@ -1128,7 +1128,7 @@ export const citations: Record<string, CitationSource> = {
     url: "https://www.gao.gov/",
     waybackUrl: wayback("https://www.gao.gov/"),
     excerpt:
-      "GAO documented overpayment and fraud risks in VA community care privatization — as the administration pushed faster outsourcing of veterans' health services.",
+      "GAO documented overpayment and fraud risks in VA community care privatization - as the administration pushed faster outsourcing of veterans' health services.",
     date: "2025-06-15",
   },
   census_citizenship_data: {
@@ -1152,7 +1152,7 @@ export const citations: Record<string, CitationSource> = {
       "https://www.whitehouse.gov/presidential-actions/2025/01/unleashing-american-energy/"
     ),
     excerpt:
-      "Interior accelerated hardrock mining leases and drilling permits on federal lands — prioritizing extraction over tribal consultation and environmental review.",
+      "Interior accelerated hardrock mining leases and drilling permits on federal lands - prioritizing extraction over tribal consultation and environmental review.",
     date: "2025-06-25",
   },
   ed_title_ix_sports_rule: {
@@ -1164,7 +1164,7 @@ export const citations: Record<string, CitationSource> = {
       "https://www.ed.gov/laws-and-policy/civil-rights-laws/title-ix-and-sex-discrimination/sex-discrimination-overview-of-law"
     ),
     excerpt:
-      "Education Department advanced Title IX sports policies excluding transgender student-athletes — reversing inclusive participation rules adopted under the prior administration.",
+      "Education Department advanced Title IX sports policies excluding transgender student-athletes - reversing inclusive participation rules adopted under the prior administration.",
     date: "2025-06-30",
   },
   cisa_election_security_pause: {
@@ -1180,7 +1180,7 @@ export const citations: Record<string, CitationSource> = {
   citizens_united_scotus: {
     id: "citizens_united_scotus",
     title: "Citizens United v. Federal Election Commission",
-    publisher: "Legal Information Institute — Cornell Law School",
+    publisher: "Legal Information Institute - Cornell Law School",
     url: "https://www.law.cornell.edu/supct/html/08-205.ZS.html",
     waybackUrl: wayback("https://www.law.cornell.edu/supct/html/08-205.ZS.html"),
     excerpt:
@@ -1204,7 +1204,7 @@ export const citations: Record<string, CitationSource> = {
     url: "https://www.mspb.gov/",
     waybackUrl: wayback("https://www.mspb.gov/"),
     excerpt:
-      "MSPB adjudicates federal employee appeals including whistleblower retaliation claims — board vacancies can leave cases in limbo for years.",
+      "MSPB adjudicates federal employee appeals including whistleblower retaliation claims - board vacancies can leave cases in limbo for years.",
     date: "2025-01-01",
   },
   epa_methane_delay: {
@@ -1226,7 +1226,7 @@ export const citations: Record<string, CitationSource> = {
     url: "https://www.opensecrets.org/news/2014/05/dark-money-basics/",
     waybackUrl: wayback("https://www.opensecrets.org/news/2014/05/dark-money-basics/"),
     excerpt:
-      "Political nonprofits can spend unlimited sums without disclosing donors — enabling undisclosed billionaire influence on policy agendas.",
+      "Political nonprofits can spend unlimited sums without disclosing donors - enabling undisclosed billionaire influence on policy agendas.",
     date: "2014-05-14",
   },
   schedule_f_expansion: {
@@ -1243,7 +1243,7 @@ export const citations: Record<string, CitationSource> = {
   },
   foia_gov: {
     id: "foia_gov",
-    title: "FOIA.gov — Freedom of Information Act",
+    title: "FOIA.gov - Freedom of Information Act",
     publisher: "U.S. Department of Justice",
     url: "https://www.foia.gov/",
     waybackUrl: wayback("https://www.foia.gov/"),
@@ -1253,7 +1253,7 @@ export const citations: Record<string, CitationSource> = {
   },
   doj_oip_foia: {
     id: "doj_oip_foia",
-    title: "Office of Information Policy — FOIA",
+    title: "Office of Information Policy - FOIA",
     publisher: "U.S. Department of Justice",
     url: "https://www.justice.gov/oip",
     waybackUrl: wayback("https://www.justice.gov/oip"),
@@ -1268,7 +1268,7 @@ export const citations: Record<string, CitationSource> = {
     url: "https://www.congress.gov/crs-product/IF12300",
     waybackUrl: wayback("https://www.congress.gov/crs-product/IF12300"),
     excerpt:
-      "CRS explains how the Presidential Records Act governs custody, access, and public release of White House records — the statutory framework for executive transparency.",
+      "CRS explains how the Presidential Records Act governs custody, access, and public release of White House records - the statutory framework for executive transparency.",
     date: "2025-01-15",
   },
 };

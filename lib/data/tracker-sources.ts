@@ -1,6 +1,6 @@
 import type { TrackerSource } from "@/lib/types";
 
-/** Verified external Project 2025 trackers — cross-reference fallbacks. */
+/** Verified external Project 2025 trackers - cross-reference fallbacks. */
 export const trackerSources: TrackerSource[] = [
   {
     id: "observer",
@@ -16,7 +16,7 @@ export const trackerSources: TrackerSource[] = [
     name: "Project 2025 (Heritage Foundation)",
     url: "https://www.project2025.org/",
     description:
-      "The source document — the 922-page Mandate for Leadership and policy playbook authored by the Heritage Foundation and allied groups.",
+      "The source document - the 922-page Mandate for Leadership and policy playbook authored by the Heritage Foundation and allied groups.",
     publisher: "Heritage Foundation",
     type: "source-document",
   },
@@ -40,7 +40,7 @@ export const trackerSources: TrackerSource[] = [
   },
   {
     id: "aclu",
-    name: "ACLU — Project 2025 Explained",
+    name: "ACLU - Project 2025 Explained",
     url: "https://www.aclu.org/project-2025-explained",
     description:
       "Legal analysis of civil liberties threats posed by Project 2025 proposals, with litigation updates and rights guidance.",
@@ -49,10 +49,10 @@ export const trackerSources: TrackerSource[] = [
   },
   {
     id: "brennan",
-    name: "Brennan Center — Voting Laws",
+    name: "Brennan Center - Voting Laws",
     url: "https://www.brennancenter.org/our-work/research-reports/state-voting-laws-roundup-2025-review",
     description:
-      "Research on democratic backsliding, voting restrictions, and institutional capture — tracking state-level threats to free and fair elections.",
+      "Research on democratic backsliding, voting restrictions, and institutional capture - tracking state-level threats to free and fair elections.",
     publisher: "Brennan Center for Justice",
     type: "watchdog",
   },

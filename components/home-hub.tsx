@@ -44,7 +44,7 @@ const portalCards = [
     href: "/rebuttal",
     title: "Rebuttal Desk",
     description:
-      "Sourced counter-arguments for MAGA talking points — copy, print, and deploy.",
+      "Sourced counter-arguments for MAGA talking points - copy, print, and deploy.",
     icon: MessageSquareQuote,
     accent: "border-sunrise/30 bg-sunrise/5 hover:border-sunrise/50",
     iconColor: "text-sunrise",
@@ -135,7 +135,7 @@ function PlatformAtAGlance() {
         </div>
 
         <div className="relative mx-auto max-w-4xl">
-          {/* Connector lines — decorative */}
+          {/* Connector lines - decorative */}
           <div
             className="pointer-events-none absolute inset-0 hidden sm:block"
             aria-hidden
@@ -229,7 +229,7 @@ export function HomeHub({ compact = false }: { compact?: boolean }) {
               sourced. Every link archived.
             </p>
             <p className="mt-3 text-sm text-muted-foreground/80">
-              For the people — not the billionaires. Not the propagandists.
+              For the people - not the billionaires. Not the propagandists.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Link
@@ -237,7 +237,7 @@ export function HomeHub({ compact = false }: { compact?: boolean }) {
                 className="inline-flex items-center gap-2 rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow-sm transition-colors hover:bg-primary/90"
               >
                 <Compass className="size-4" />
-                Start here — guided tour
+                Start here - guided tour
               </Link>
               <Link
                 href="/sitemap"
@@ -262,7 +262,7 @@ export function HomeHub({ compact = false }: { compact?: boolean }) {
                 125 actions tracked
               </p>
               <p className="mt-1 text-sm text-muted-foreground">
-                Pass 21 infrastructure milestone — FOIA backlogs, spending transparency,
+                Pass 21 infrastructure milestone - FOIA backlogs, spending transparency,
                 and press access limits now documented.{" "}
                 <Link
                   href="/tracker/EVT-2025-1225-125"
@@ -288,7 +288,7 @@ export function HomeHub({ compact = false }: { compact?: boolean }) {
                 120 actions tracked
               </p>
               <p className="mt-1 text-sm text-muted-foreground">
-                Pass 20 round-number milestone — election security, ethics rollbacks,
+                Pass 20 round-number milestone - election security, ethics rollbacks,
                 and transparency events now documented.{" "}
                 <Link
                   href="/tracker/EVT-2025-1212-120"
@@ -314,7 +314,7 @@ export function HomeHub({ compact = false }: { compact?: boolean }) {
                 115 actions tracked
               </p>
               <p className="mt-1 text-sm text-muted-foreground">
-                A verified milestone — transparency, FOIA, and accountability events
+                A verified milestone - transparency, FOIA, and accountability events
                 now documented.{" "}
                 <Link
                   href="/tracker/EVT-2025-1125-115"
@@ -340,7 +340,7 @@ export function HomeHub({ compact = false }: { compact?: boolean }) {
                 110 actions tracked
               </p>
               <p className="mt-1 text-sm text-muted-foreground">
-                A verified milestone — every executive action sourced, scored, and
+                A verified milestone - every executive action sourced, scored, and
                 archived.{" "}
                 <Link
                   href="/tracker/EVT-2025-1107-110"
@@ -366,7 +366,7 @@ export function HomeHub({ compact = false }: { compact?: boolean }) {
                 100 actions tracked
               </p>
               <p className="mt-1 text-sm text-muted-foreground">
-                A verified milestone — every executive action sourced, scored, and
+                A verified milestone - every executive action sourced, scored, and
                 archived.{" "}
                 <Link
                   href="/tracker/EVT-2025-0918-100"
@@ -410,7 +410,7 @@ export function HomeHub({ compact = false }: { compact?: boolean }) {
               Explore the Platform
             </h2>
             <p className="mt-2 text-muted-foreground">
-              Four pillars — one transparency mission.
+              Four pillars - one transparency mission.
             </p>
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
@@ -460,7 +460,7 @@ export function HomeHub({ compact = false }: { compact?: boolean }) {
               </h2>
               {showingRecentFallback && (
                 <p className="mt-1 text-sm text-muted-foreground">
-                  No events dated within the last 7 days — showing the 5 most recent verified actions.
+                  No events dated within the last 7 days - showing the 5 most recent verified actions.
                 </p>
               )}
             </div>

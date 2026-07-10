@@ -1,7 +1,7 @@
 import { timelineEvents } from "./timeline-events";
 import type { TimelineEvent } from "@/lib/types";
 
-/** Heritage Mandate for Leadership (2025) — 30 chapters in 5 sections */
+/** Heritage Mandate for Leadership (2025) - 30 chapters in 5 sections */
 export interface P2025Chapter {
   id: string;
   number: number;
@@ -257,7 +257,7 @@ export const p2025Chapters: P2025Chapter[] = [
   {
     id: "ch23-exim",
     number: 23,
-    title: "Export–Import Bank",
+    title: "Export-Import Bank",
     section: "The Economy",
     sectionNumber: 4,
     author: "Veronique de Rugy, Jennifer Hazelton",

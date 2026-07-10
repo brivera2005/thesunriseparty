@@ -29,7 +29,7 @@ function writeJson(key: string, value: unknown) {
   try {
     localStorage.setItem(key, JSON.stringify(value));
   } catch {
-    // quota or private mode — ignore
+    // quota or private mode - ignore
   }
 }
 

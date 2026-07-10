@@ -83,7 +83,7 @@ export function TrackerPage() {
                 </h1>
                 <p className="mt-3 text-muted-foreground">
                   Full timeline with category and severity filters, cross-referenced
-                  against independent watchdogs — every action sourced.
+                  against independent watchdogs - every action sourced.
                 </p>
                 <div className="mt-4 flex flex-wrap gap-2">
                   <a

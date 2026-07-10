@@ -44,7 +44,7 @@ function ShareBlueprintButton({ id, title }: { id: string; title: string }) {
       if (navigator.share) {
         await navigator.share({
           title: `${title} | Project Sunrise`,
-          text: "Evidence-based progressive policy with safeguards — Project Sunrise Blueprint",
+          text: "Evidence-based progressive policy with safeguards - Project Sunrise Blueprint",
           url: shareUrl,
         });
       } else {
@@ -141,7 +141,7 @@ function PolicyFixDetail({ policy }: { policy: PolicyFix }) {
                     className="inline-flex items-center gap-1.5 font-medium text-primary underline-offset-2 hover:underline"
                   >
                     <ExternalLink className="size-3.5 shrink-0" />
-                    {bill.number} — {bill.title}
+                    {bill.number} - {bill.title}
                   </a>
                   {bill.status && (
                     <p className="mt-0.5 text-xs text-muted-foreground">{bill.status}</p>

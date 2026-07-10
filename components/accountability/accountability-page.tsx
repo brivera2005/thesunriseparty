@@ -130,7 +130,7 @@ export function AccountabilityPage() {
                   href={blueprintDetailPath(transparencyDeclassification.blueprintLinkId)}
                   className={cn(buttonVariants({ variant: "outline", size: "sm" }))}
                 >
-                  Blueprint SAFE-004 — Transparency Mandates
+                  Blueprint SAFE-004 - Transparency Mandates
                 </Link>
                 <div className="mt-4">
                   <CitationList

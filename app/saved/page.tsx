@@ -5,7 +5,7 @@ import { sectionOg, SITE_URL } from "@/lib/metadata";
 export const metadata: Metadata = {
   title: "My Saved | Project Sunrise",
   description:
-    "Your bookmarked tracker events and rebuttals — saved locally in your browser.",
+    "Your bookmarked tracker events and rebuttals - saved locally in your browser.",
   openGraph: {
     title: sectionOg.saved.title,
     description: sectionOg.saved.description,

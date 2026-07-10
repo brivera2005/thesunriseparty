@@ -244,7 +244,7 @@ interface ThreatGaugeMiniProps {
   className?: string;
 }
 
-/** Compact threat gauge for homepage — links to full tracker */
+/** Compact threat gauge for homepage - links to full tracker */
 export function ThreatGaugeMini({ threat, className }: ThreatGaugeMiniProps) {
   const color = threatColor(threat.label);
   const data = [

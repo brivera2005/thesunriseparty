@@ -12,13 +12,13 @@ type EmbedMode = "link" | "iframe";
 
 function buildLinkSnippet(event: TimelineEvent) {
   const url = `${SITE_URL}${eventDetailPath(event.Event_ID)}`;
-  const label = `${event.Action_Type} — Project Sunrise`;
+  const label = `${event.Action_Type} - Project Sunrise`;
   return `<a href="${url}" target="_blank" rel="noopener noreferrer">${label}</a>`;
 }
 
 function buildIframeSnippet(event: TimelineEvent) {
   const url = `${SITE_URL}${eventDetailPath(event.Event_ID)}`;
-  return `<iframe src="${url}" title="Project Sunrise — ${event.Event_ID}" width="100%" height="420" style="border:1px solid #e5e7eb;border-radius:8px;" loading="lazy"></iframe>`;
+  return `<iframe src="${url}" title="Project Sunrise - ${event.Event_ID}" width="100%" height="420" style="border:1px solid #e5e7eb;border-radius:8px;" loading="lazy"></iframe>`;
 }
 
 export function EventEmbedSnippet({ event }: { event: TimelineEvent }) {

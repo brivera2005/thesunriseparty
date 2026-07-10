@@ -11,13 +11,13 @@ export interface ScheduleFAgency {
   sources: CitationSource[];
 }
 
-/** Agency-level Schedule F impact — based on OPM Jan 2025 guidance and CRS analysis. */
+/** Agency-level Schedule F impact - based on OPM Jan 2025 guidance and CRS analysis. */
 export const scheduleFAgencies: ScheduleFAgency[] = [
   {
     id: "hhs",
     name: "Health and Human Services",
     abbreviation: "HHS",
-    estimatedRoles: "8,000–12,000 policy roles",
+    estimatedRoles: "8,000-12,000 policy roles",
     impact:
       "FDA drug approval policy, CDC guidance, Medicare/Medicaid rulemaking, and public health emergency response staffed by removable at-will employees.",
     status: "implementing",
@@ -27,7 +27,7 @@ export const scheduleFAgencies: ScheduleFAgency[] = [
     id: "va",
     name: "Veterans Affairs",
     abbreviation: "VA",
-    estimatedRoles: "5,000–8,000 policy roles",
+    estimatedRoles: "5,000-8,000 policy roles",
     impact:
       "Veterans benefits adjudication, hospital policy, and disability claims processing leadership subject to political loyalty tests over merit.",
     status: "implementing",
@@ -37,9 +37,9 @@ export const scheduleFAgencies: ScheduleFAgency[] = [
     id: "epa",
     name: "Environmental Protection Agency",
     abbreviation: "EPA",
-    estimatedRoles: "2,000–4,000 policy roles",
+    estimatedRoles: "2,000-4,000 policy roles",
     impact:
-      "Clean air and water rulemaking, enforcement attorneys, and climate policy staff reclassified — enabling rapid rollback of environmental protections.",
+      "Clean air and water rulemaking, enforcement attorneys, and climate policy staff reclassified - enabling rapid rollback of environmental protections.",
     status: "implementing",
     sources: [citations.opm_schedule_f, citations.epa_methane_rollback, citations.gao_schedule_f],
   },
@@ -47,7 +47,7 @@ export const scheduleFAgencies: ScheduleFAgency[] = [
     id: "ed",
     name: "Department of Education",
     abbreviation: "ED",
-    estimatedRoles: "1,500–3,000 policy roles",
+    estimatedRoles: "1,500-3,000 policy roles",
     impact:
       "Title IX enforcement, student loan policy, and civil rights oversight staffed by at-will appointees aligned with Project 2025 education chapter.",
     status: "implementing",
@@ -57,9 +57,9 @@ export const scheduleFAgencies: ScheduleFAgency[] = [
     id: "dhs",
     name: "Homeland Security",
     abbreviation: "DHS",
-    estimatedRoles: "6,000–10,000 policy roles",
+    estimatedRoles: "6,000-10,000 policy roles",
     impact:
-      "ICE enforcement policy, asylum adjudication, and border security rulemaking converted to Schedule F — accelerating mass deportation infrastructure.",
+      "ICE enforcement policy, asylum adjudication, and border security rulemaking converted to Schedule F - accelerating mass deportation infrastructure.",
     status: "implementing",
     sources: [citations.schedule_f_eo, citations.ice_expansion_eo, citations.opm_schedule_f],
   },
@@ -67,7 +67,7 @@ export const scheduleFAgencies: ScheduleFAgency[] = [
     id: "doj",
     name: "Justice Department",
     abbreviation: "DOJ",
-    estimatedRoles: "3,000–5,000 policy roles",
+    estimatedRoles: "3,000-5,000 policy roles",
     impact:
       "Civil rights division, antitrust enforcement, and voting rights litigation leadership vulnerable to politically motivated removal.",
     status: "identified",
@@ -77,7 +77,7 @@ export const scheduleFAgencies: ScheduleFAgency[] = [
     id: "treasury",
     name: "Treasury Department",
     abbreviation: "Treasury",
-    estimatedRoles: "2,000–4,000 policy roles",
+    estimatedRoles: "2,000-4,000 policy roles",
     impact:
       "IRS enforcement policy, sanctions implementation, and financial regulation oversight subject to at-will reclassification.",
     status: "identified",
@@ -87,7 +87,7 @@ export const scheduleFAgencies: ScheduleFAgency[] = [
     id: "state",
     name: "State Department",
     abbreviation: "State",
-    estimatedRoles: "4,000–6,000 policy roles",
+    estimatedRoles: "4,000-6,000 policy roles",
     impact:
       "Foreign aid policy, diplomatic corps leadership, and USAID merger planning staffed by removable political appointees.",
     status: "implementing",
@@ -108,7 +108,7 @@ export const scheduleFAgencies: ScheduleFAgency[] = [
 export const scheduleFOverview = {
   title: "Schedule F Deep Dive",
   summary:
-    "Schedule F reclassifies federal employees in 'policy-influencing' roles as at-will political appointees — removable without merit protections. CRS estimates potentially 50,000+ positions across agencies. OPM guidance (Jan 29, 2025) directed agencies to complete position inventories within 120 days.",
+    "Schedule F reclassifies federal employees in 'policy-influencing' roles as at-will political appointees - removable without merit protections. CRS estimates potentially 50,000+ positions across agencies. OPM guidance (Jan 29, 2025) directed agencies to complete position inventories within 120 days.",
   opmGuidanceUrl:
     "https://www.federalregister.gov/documents/2025/01/29/2025-01953/schedule-policy-and-career-senior-executive-service-accountability",
   eoUrl:

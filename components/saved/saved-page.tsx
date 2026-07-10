@@ -107,7 +107,7 @@ export function SavedPage() {
               <div>
                 <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">My Saved</h1>
                 <p className="mt-2 text-muted-foreground">
-                  Events and rebuttals you bookmarked — stored locally in your browser.
+                  Events and rebuttals you bookmarked - stored locally in your browser.
                 </p>
               </div>
             </div>

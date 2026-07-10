@@ -1,20 +1,18 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import {
   AlertTriangle,
   Compass,
-  History,
   Menu,
-  MessageSquareQuote,
   Search,
   X,
 } from "lucide-react";
 import { useAppStore } from "@/lib/store";
 import { Button, buttonVariants } from "@/components/ui/button";
+import { BrandLogo } from "@/components/brand-logo";
 import {
   Dialog,
   DialogContent,
@@ -40,19 +38,12 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-white/95 backdrop-blur-lg supports-[backdrop-filter]:bg-white/90">
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
+      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6 md:h-[4.5rem]">
         <Link href="/" className="flex items-center gap-3 text-left">
-          <Image
-            src="/logo.png"
-            alt="The Sunrise Party — A New Beginning. Restoring Democracy."
-            width={44}
-            height={44}
-            className="size-10 shrink-0 rounded-lg object-contain sm:size-11"
-            priority
-          />
-          <div className="hidden sm:block">
+          <BrandLogo variant="header" priority />
+          <div className="hidden lg:block">
             <p className="text-sm leading-none font-semibold">Project Sunrise</p>
-            <p className="text-[10px] text-muted-foreground">
+            <p className="mt-0.5 text-[10px] text-muted-foreground">
               A New Beginning. Restoring Democracy.
             </p>
           </div>

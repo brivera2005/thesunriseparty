@@ -79,7 +79,7 @@ export function RebuttalPage() {
                   The Rebuttal Desk
                 </h1>
                 <p className="mt-3 text-muted-foreground">
-                  A standalone study guide for real conversations — every claim
+                  A standalone study guide for real conversations - every claim
                   sourced, every response ready to copy.
                 </p>
               </div>
@@ -100,7 +100,7 @@ export function RebuttalPage() {
                   240 rebuttals ready
                 </p>
                 <p className="mt-1 text-sm text-muted-foreground">
-                  Pass 21 infrastructure milestone — README, deploy docs, and platform
+                  Pass 21 infrastructure milestone - README, deploy docs, and platform
                   counters.{" "}
                   <Link
                     href={rebuttalDetailPath(milestoneRebuttal240.id)}
@@ -126,7 +126,7 @@ export function RebuttalPage() {
                   230 rebuttals ready
                 </p>
                 <p className="mt-1 text-sm text-muted-foreground">
-                  Pass 20 round-number milestone — including onboarding and platform
+                  Pass 20 round-number milestone - including onboarding and platform
                   counters.{" "}
                   <Link
                     href={rebuttalDetailPath(milestoneRebuttal230.id)}
@@ -152,7 +152,7 @@ export function RebuttalPage() {
                   220 rebuttals ready
                 </p>
                 <p className="mt-1 text-sm text-muted-foreground">
-                  A sourced milestone — including transparency and accountability
+                  A sourced milestone - including transparency and accountability
                   counters tied to SAFE-004.{" "}
                   <Link
                     href={rebuttalDetailPath(milestoneRebuttal220.id)}
@@ -178,7 +178,7 @@ export function RebuttalPage() {
                   210 rebuttals ready
                 </p>
                 <p className="mt-1 text-sm text-muted-foreground">
-                  A sourced milestone — every talking point backed by primary
+                  A sourced milestone - every talking point backed by primary
                   sources and copy-ready responses.{" "}
                   <Link
                     href={rebuttalDetailPath(conversationHelpers[209].id)}
@@ -204,7 +204,7 @@ export function RebuttalPage() {
                   200 rebuttals ready
                 </p>
                 <p className="mt-1 text-sm text-muted-foreground">
-                  A sourced milestone — every talking point backed by primary
+                  A sourced milestone - every talking point backed by primary
                   sources and copy-ready responses.{" "}
                   <Link
                     href={rebuttalDetailPath(conversationHelpers[199].id)}

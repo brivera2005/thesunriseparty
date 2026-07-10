@@ -4,11 +4,11 @@ import { JsonLd } from "@/components/seo/json-ld";
 import { defaultOg, SITE_URL } from "@/lib/metadata";
 
 export const metadata: Metadata = {
-  title: "Project Sunrise | Track Project 2025, Build the Progressive Blueprint",
+  title: "Project Sunrise | A New Beginning. Restoring Democracy.",
   description:
-    "Transparency-first platform tracking Project 2025 with 75 verified events, progressive policy blueprint, and 140+ sourced rebuttals.",
+    "Showcase landing for Project Sunrise: Rebuttal Desk, Hidden History, Project 2025 Tracker, Progressive Blueprint, and sourced accountability tools.",
   openGraph: {
-    title: "Project Sunrise — Democracy Needs Receipts",
+    title: "Project Sunrise. Democracy Needs Receipts.",
     description:
       "Evidence-based Project 2025 tracking, progressive policy blueprint, and sourced rebuttals.",
     url: SITE_URL,

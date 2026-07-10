@@ -72,7 +72,7 @@ export function HistoryPage() {
                 Hidden History
               </h1>
               <p className="mt-3 text-lg text-muted-foreground">
-                What textbooks teach vs. what historians document — inspired by
+                What textbooks teach vs. what historians document - inspired by
                 Howard Zinn&apos;s <em>A People&apos;s History of the United States</em>.
                 Every entry sourced. Every link archived.
               </p>

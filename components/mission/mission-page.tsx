@@ -34,7 +34,7 @@ function ShareButton() {
     try {
       if (navigator.share) {
         await navigator.share({
-          title: "Project Sunrise — Our Mission",
+          title: "Project Sunrise - Our Mission",
           text: "Transparency-first tracking of Project 2025 and the progressive blueprint for when democracy wins.",
           url,
         });
@@ -165,7 +165,7 @@ export function MissionPage() {
                 exactly what to build when we win.&rdquo;
               </p>
               <footer className="mt-3 text-sm font-medium text-foreground">
-                — The Sunrise Transparency Pledge
+                - The Sunrise Transparency Pledge
               </footer>
             </blockquote>
           </div>

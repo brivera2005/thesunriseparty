@@ -9,7 +9,7 @@ export const defaultOg = {
       url: `${SITE_URL}/og/sunrise-default.svg`,
       width: 1200,
       height: 630,
-      alt: "Project Sunrise — Democracy Needs Receipts",
+      alt: "Project Sunrise - Democracy Needs Receipts",
     },
   ],
 };
@@ -24,33 +24,33 @@ export const sectionOg = {
         url: `${SITE_URL}/og/sunrise-tracker.svg`,
         width: 1200,
         height: 630,
-        alt: "Project Sunrise — Project 2025 Tracker",
+        alt: "Project Sunrise - Project 2025 Tracker",
       },
     ],
   },
   blueprint: {
     title: "The Progressive Blueprint | Project Sunrise",
     description:
-      "Medicare for All, PRO Act, climate mobilization, voting rights — evidence-based policy with bill numbers and implementation timelines.",
+      "Medicare for All, PRO Act, climate mobilization, voting rights - evidence-based policy with bill numbers and implementation timelines.",
     images: [
       {
         url: `${SITE_URL}/og/sunrise-blueprint.svg`,
         width: 1200,
         height: 630,
-        alt: "Project Sunrise — Progressive Blueprint",
+        alt: "Project Sunrise - Progressive Blueprint",
       },
     ],
   },
   rebuttal: {
     title: "Rebuttal Desk | Project Sunrise",
     description:
-      "210+ sourced talking points for real conversations — economy, immigration, democracy, and culture-war claims debunked with receipts.",
+      "210+ sourced talking points for real conversations - economy, immigration, democracy, and culture-war claims debunked with receipts.",
     images: [
       {
         url: `${SITE_URL}/og/sunrise-rebuttal.svg`,
         width: 1200,
         height: 630,
-        alt: "Project Sunrise — Rebuttal Desk",
+        alt: "Project Sunrise - Rebuttal Desk",
       },
     ],
   },
@@ -63,7 +63,7 @@ export const sectionOg = {
         url: `${SITE_URL}/og/sunrise-mission.svg`,
         width: 1200,
         height: 630,
-        alt: "Project Sunrise — Our Mission",
+        alt: "Project Sunrise - Our Mission",
       },
     ],
   },
@@ -76,33 +76,33 @@ export const sectionOg = {
         url: `${SITE_URL}/og/sunrise-contribute.svg`,
         width: 1200,
         height: 630,
-        alt: "Project Sunrise — Contribute",
+        alt: "Project Sunrise - Contribute",
       },
     ],
   },
   saved: {
     title: "My Saved | Project Sunrise",
     description:
-      "Bookmarked tracker events and rebuttals — saved locally in your browser.",
+      "Bookmarked tracker events and rebuttals - saved locally in your browser.",
     images: [
       {
         url: `${SITE_URL}/og/sunrise-saved.svg`,
         width: 1200,
         height: 630,
-        alt: "Project Sunrise — My Saved",
+        alt: "Project Sunrise - My Saved",
       },
     ],
   },
   accountability: {
     title: "Dark Money & Accountability | Project Sunrise",
     description:
-      "Citizens United, dark money, lobbying, and Blueprint safeguards against elite capture — sourced overview.",
+      "Citizens United, dark money, lobbying, and Blueprint safeguards against elite capture - sourced overview.",
     images: [
       {
         url: `${SITE_URL}/og/sunrise-accountability.svg`,
         width: 1200,
         height: 630,
-        alt: "Project Sunrise — Accountability",
+        alt: "Project Sunrise - Accountability",
       },
     ],
   },
@@ -115,20 +115,20 @@ export const sectionOg = {
         url: `${SITE_URL}/og/sunrise-methodology.svg`,
         width: 1200,
         height: 630,
-        alt: "Project Sunrise — Methodology",
+        alt: "Project Sunrise - Methodology",
       },
     ],
   },
   history: {
     title: "Hidden History | Project Sunrise",
     description:
-      "Interactive dual timeline — textbook narratives vs. sourced American history with historical rebuttals for every era.",
+      "Interactive dual timeline - textbook narratives vs. sourced American history with historical rebuttals for every era.",
     images: [
       {
         url: `${SITE_URL}/og/sunrise-default.svg`,
         width: 1200,
         height: 630,
-        alt: "Project Sunrise — Hidden History",
+        alt: "Project Sunrise - Hidden History",
       },
     ],
   },

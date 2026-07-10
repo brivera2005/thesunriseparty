@@ -27,7 +27,7 @@ const CATEGORY_DESCRIPTIONS: Record<RebuttalCategory, string> = {
   Immigration:
     "Border rhetoric, asylum law, and the gap between Fox chyrons and BLS data.",
   "But Obama!":
-    "Whataboutism with a presidential name attached — and why it's still a dodge.",
+    "Whataboutism with a presidential name attached - and why it's still a dodge.",
   Courts: "Judicial activism, activist judges, and whose rulings count as politics.",
   "Jan 6": "Tourist visits, FBI setups, and what the DOJ actually prosecuted.",
   Healthcare:
@@ -42,7 +42,7 @@ const CATEGORY_DESCRIPTIONS: Record<RebuttalCategory, string> = {
   Media: "Fake news, bias, and who actually owns the narrative.",
   Democracy:
     "Executive power, Schedule F, courts, and whether the republic still rhymes.",
-  Whataboutism: "The universal deflection — and how to name it without losing the room.",
+  Whataboutism: "The universal deflection - and how to name it without losing the room.",
   "Foreign Policy":
     "NATO, Ukraine, peace presidents, and who actually ended which wars.",
   Education:

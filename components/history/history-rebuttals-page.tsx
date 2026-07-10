@@ -55,10 +55,10 @@ export function HistoryRebuttalsPage() {
               Historical Rebuttals
             </p>
             <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
-              What They Said Then — What You Say Now
+              What They Said Then - What You Say Now
             </h1>
             <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
-              Plain-language counters to propaganda from every era — written for
+              Plain-language counters to propaganda from every era - written for
               the least aware reader. Every rebuttal sourced.
             </p>
             <p className="mt-2 text-sm text-muted-foreground">

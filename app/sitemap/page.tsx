@@ -5,7 +5,7 @@ import { defaultOg, SITE_URL } from "@/lib/metadata";
 export const metadata: Metadata = {
   title: "Site Map | Project Sunrise",
   description:
-    "Human-readable hub for every Project Sunrise section — tracker, rebuttals, blueprint, accountability, exports, and tools with live counts.",
+    "Human-readable hub for every Project Sunrise section - tracker, rebuttals, blueprint, accountability, exports, and tools with live counts.",
   openGraph: {
     title: "Site Map | Project Sunrise",
     description:

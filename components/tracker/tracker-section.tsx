@@ -256,7 +256,7 @@ export function TrackerSection({
             </h3>
             <p className="mb-4 text-xs text-muted-foreground">
               Cross-reference our data with these independent Project 2025
-              monitors. We don&apos;t own the truth — we aggregate it.
+              monitors. We don&apos;t own the truth - we aggregate it.
             </p>
             <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {trackerSources.map((source) => (

@@ -22,7 +22,7 @@ export const upcomingThreats: UpcomingThreat[] = [
     id: "agency-dismantling",
     title: "Statutory Agency Dismantling via Executive Action",
     description:
-      "Proposals to wind down USAID, ED, and CFPB functions through executive orders and RIFs — testing constitutional limits on congressional appropriations and agency mandates.",
+      "Proposals to wind down USAID, ED, and CFPB functions through executive orders and RIFs - testing constitutional limits on congressional appropriations and agency mandates.",
     severity: 10,
     status: "in-progress",
     expectedDate: "2025-09-30",
@@ -41,7 +41,7 @@ export const upcomingThreats: UpcomingThreat[] = [
     severity: 9,
     status: "proposed",
     expectedDate: "2025-03-01",
-    statusNote: "H.R. 22 (SAVE Act) reintroduced Jan 3, 2025 — committee referral pending",
+    statusNote: "H.R. 22 (SAVE Act) reintroduced Jan 3, 2025 - committee referral pending",
     sources: [citations.brennan_voting, citations.save_act_2025],
     externalTrackers: [
       { name: "Brennan Center", url: "https://www.brennancenter.org/our-work/research-reports/state-voting-laws-roundup-2025-review" },

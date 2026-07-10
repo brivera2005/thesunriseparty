@@ -1,16 +1,16 @@
 {
   "meta": {
     "site": "https://thesunriseparty.pages.dev",
-    "generated": "2026-07-10T15:24:07.430Z",
+    "generated": "2026-07-10T15:58:59.150Z",
     "count": 125,
-    "license": "CC-BY-4.0 — cite Project Sunrise (thesunriseparty.pages.dev)"
+    "license": "CC-BY-4.0 - cite Project Sunrise (thesunriseparty.pages.dev)"
   },
   "events": [
     {
       "id": "EVT-2025-0120-001",
       "date": "2025-01-20",
       "actionType": "Executive Order",
-      "description": "Day One rescission of 78 Biden executive orders on climate, equity, and regulation — erasing prior administration policy in a single stroke, a core Project 2025 implementation tactic.",
+      "description": "Day One rescission of 78 Biden executive orders on climate, equity, and regulation - erasing prior administration policy in a single stroke, a core Project 2025 implementation tactic.",
       "severity": 8,
       "category": "Democracy",
       "impactedSectors": [
@@ -56,7 +56,7 @@
       "id": "EVT-2025-0120-002",
       "date": "2025-01-20",
       "actionType": "Executive Order",
-      "description": "Schedule F reinstated — civil servants in 'policy-influencing' roles reclassified as at-will employees, enabling politically motivated firings without merit protections.",
+      "description": "Schedule F reinstated - civil servants in 'policy-influencing' roles reclassified as at-will employees, enabling politically motivated firings without merit protections.",
       "severity": 10,
       "category": "Democracy",
       "impactedSectors": [
@@ -144,7 +144,7 @@
       "id": "EVT-2025-0120-004",
       "date": "2025-01-20",
       "actionType": "Executive Order",
-      "description": "Birthright citizenship order directs agencies to deny citizenship documents to U.S.-born children of undocumented parents — a direct challenge to the 14th Amendment now blocked in federal court.",
+      "description": "Birthright citizenship order directs agencies to deny citizenship documents to U.S.-born children of undocumented parents - a direct challenge to the 14th Amendment now blocked in federal court.",
       "severity": 10,
       "category": "Immigration",
       "impactedSectors": [
@@ -189,7 +189,7 @@
       "id": "EVT-2025-0120-005",
       "date": "2025-01-20",
       "actionType": "Executive Order",
-      "description": "National energy emergency declared to expedite fossil fuel permitting and restrict renewable approvals — implementing Project 2025's deregulatory energy agenda.",
+      "description": "National energy emergency declared to expedite fossil fuel permitting and restrict renewable approvals - implementing Project 2025's deregulatory energy agenda.",
       "severity": 9,
       "category": "Environment",
       "impactedSectors": [
@@ -235,7 +235,7 @@
       "id": "EVT-2025-0120-006",
       "date": "2025-01-20",
       "actionType": "Executive Order",
-      "description": "Department of Government Efficiency (DOGE) established with access to federal payment systems and agency data — an unprecedented extra-constitutional advisory body driving cuts.",
+      "description": "Department of Government Efficiency (DOGE) established with access to federal payment systems and agency data - an unprecedented extra-constitutional advisory body driving cuts.",
       "severity": 9,
       "category": "Democracy",
       "impactedSectors": [
@@ -259,7 +259,7 @@
         },
         {
           "id": "cpr_p2025_progress",
-          "title": "Project 2025 Executive Action Tracker — February 2026 Update",
+          "title": "Project 2025 Executive Action Tracker - February 2026 Update",
           "publisher": "Center for Progressive Reform",
           "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/",
           "date": "2026-02-01"
@@ -313,7 +313,7 @@
       "id": "EVT-2025-0120-008",
       "date": "2025-01-20",
       "actionType": "Executive Order",
-      "description": "ICE directed to expand detention, resume border wall construction, and end catch-and-release — implementing Project 2025's mass deportation infrastructure goals.",
+      "description": "ICE directed to expand detention, resume border wall construction, and end catch-and-release - implementing Project 2025's mass deportation infrastructure goals.",
       "severity": 9,
       "category": "Immigration",
       "impactedSectors": [
@@ -435,7 +435,7 @@
       "id": "EVT-2025-0128-011",
       "date": "2025-01-28",
       "actionType": "Workforce Action",
-      "description": "Deferred resignation program offered federal buyouts with agencies instructed to treat non-acceptance as willingness to be terminated — pressuring mass voluntary departures.",
+      "description": "Deferred resignation program offered federal buyouts with agencies instructed to treat non-acceptance as willingness to be terminated - pressuring mass voluntary departures.",
       "severity": 8,
       "category": "Democracy",
       "impactedSectors": [
@@ -475,7 +475,7 @@
       "id": "EVT-2025-0129-012",
       "date": "2025-01-29",
       "actionType": "Regulatory Guidance",
-      "description": "OPM issues Schedule F implementing guidance directing agencies to identify policy-influencing positions for at-will reclassification — potentially affecting 50,000+ roles.",
+      "description": "OPM issues Schedule F implementing guidance directing agencies to identify policy-influencing positions for at-will reclassification - potentially affecting 50,000+ roles.",
       "severity": 9,
       "category": "Democracy",
       "impactedSectors": [
@@ -519,7 +519,7 @@
       "id": "EVT-2025-0203-013",
       "date": "2025-02-03",
       "actionType": "Agency Action",
-      "description": "USAID workforce placed on leave and foreign aid disbursements halted — effectively dismantling the agency without congressional authorization.",
+      "description": "USAID workforce placed on leave and foreign aid disbursements halted - effectively dismantling the agency without congressional authorization.",
       "severity": 10,
       "category": "Democracy",
       "impactedSectors": [
@@ -604,7 +604,7 @@
       "id": "EVT-2025-0207-015",
       "date": "2025-02-07",
       "actionType": "Enforcement Pause",
-      "description": "CFPB halted new enforcement actions and rulemakings under acting leadership — effectively pausing consumer financial protection oversight.",
+      "description": "CFPB halted new enforcement actions and rulemakings under acting leadership - effectively pausing consumer financial protection oversight.",
       "severity": 8,
       "category": "Economy",
       "impactedSectors": [
@@ -642,7 +642,7 @@
       "id": "EVT-2025-0214-016",
       "date": "2025-02-14",
       "actionType": "Workforce Reduction",
-      "description": "Mass termination of probationary federal employees across HHS, VA, and EPA — thousands removed with minimal notice, gutting regulatory and service capacity.",
+      "description": "Mass termination of probationary federal employees across HHS, VA, and EPA - thousands removed with minimal notice, gutting regulatory and service capacity.",
       "severity": 8,
       "category": "Democracy",
       "impactedSectors": [
@@ -732,7 +732,7 @@
       "id": "EVT-2025-0320-018",
       "date": "2025-03-20",
       "actionType": "Executive Order",
-      "description": "Education Secretary directed to take all lawful steps to wind down the Department of Education and return authority to states — a signature Project 2025 objective.",
+      "description": "Education Secretary directed to take all lawful steps to wind down the Department of Education and return authority to states - a signature Project 2025 objective.",
       "severity": 9,
       "category": "Education",
       "impactedSectors": [
@@ -889,7 +889,7 @@
       "id": "EVT-2025-1218-022",
       "date": "2025-12-18",
       "actionType": "Congressional Action",
-      "description": "Congress invoked the Congressional Review Act to overturn 7 federal agency rules in a single year — the highest CRA usage since its 1996 enactment.",
+      "description": "Congress invoked the Congressional Review Act to overturn 7 federal agency rules in a single year - the highest CRA usage since its 1996 enactment.",
       "severity": 7,
       "category": "Democracy",
       "impactedSectors": [
@@ -982,7 +982,7 @@
       "sources": [
         {
           "id": "cpr_p2025_progress",
-          "title": "Project 2025 Executive Action Tracker — February 2026 Update",
+          "title": "Project 2025 Executive Action Tracker - February 2026 Update",
           "publisher": "Center for Progressive Reform",
           "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/",
           "date": "2026-02-01"
@@ -1010,7 +1010,7 @@
       "id": "EVT-2026-0203-025",
       "date": "2026-02-03",
       "actionType": "Public Opinion Data",
-      "description": "Pew Research finds only 18% of Americans trust the federal government 'just about always' or 'most of the time' — near historic lows amid institutional legitimacy crisis.",
+      "description": "Pew Research finds only 18% of Americans trust the federal government 'just about always' or 'most of the time' - near historic lows amid institutional legitimacy crisis.",
       "severity": 6,
       "category": "Democracy",
       "impactedSectors": [
@@ -1026,7 +1026,7 @@
       "sources": [
         {
           "id": "pew_trust",
-          "title": "Public Trust in Government: 1958–2025",
+          "title": "Public Trust in Government: 1958-2025",
           "publisher": "Pew Research Center",
           "url": "https://www.pewresearch.org/politics/2025/12/04/public-trust-in-government-1958-2025/",
           "date": "2025-12-04"
@@ -1045,7 +1045,7 @@
       "id": "EVT-2025-0120-026",
       "date": "2025-01-20",
       "actionType": "Executive Order",
-      "description": "Regulatory freeze halts publication of new federal rules and withdraws unpublished regulations pending political review — stalling agency rulemaking across government.",
+      "description": "Regulatory freeze halts publication of new federal rules and withdraws unpublished regulations pending political review - stalling agency rulemaking across government.",
       "severity": 8,
       "category": "Democracy",
       "impactedSectors": [
@@ -1091,7 +1091,7 @@
       "id": "EVT-2025-0120-027",
       "date": "2025-01-20",
       "actionType": "Executive Order",
-      "description": "Federal lands drilling order expands oil and gas leasing on public lands and waters, reversing Biden-era restrictions — implementing Project 2025 energy extraction priorities.",
+      "description": "Federal lands drilling order expands oil and gas leasing on public lands and waters, reversing Biden-era restrictions - implementing Project 2025 energy extraction priorities.",
       "severity": 9,
       "category": "Environment",
       "impactedSectors": [
@@ -1315,7 +1315,7 @@
       "id": "EVT-2025-0315-032",
       "date": "2025-03-15",
       "actionType": "Media Policy",
-      "description": "FCC leadership signaled renewed broadcast licensing scrutiny and rolled back diversity policies — aligning with Project 2025's media and communications chapter.",
+      "description": "FCC leadership signaled renewed broadcast licensing scrutiny and rolled back diversity policies - aligning with Project 2025's media and communications chapter.",
       "severity": 7,
       "category": "Democracy",
       "impactedSectors": [
@@ -1356,7 +1356,7 @@
       "id": "EVT-2025-0103-033",
       "date": "2025-01-03",
       "actionType": "Legislative Proposal",
-      "description": "SAVE Act reintroduced in the 119th Congress, requiring documentary proof of citizenship for federal voter registration — a Project 2025 elections priority.",
+      "description": "SAVE Act reintroduced in the 119th Congress, requiring documentary proof of citizenship for federal voter registration - a Project 2025 elections priority.",
       "severity": 8,
       "category": "Democracy",
       "impactedSectors": [
@@ -1439,7 +1439,7 @@
       "id": "EVT-2025-0120-035",
       "date": "2025-01-20",
       "actionType": "Executive Order",
-      "description": "Federal policy redefined to recognize only two biological sexes, directing agencies to remove gender-identity protections from programs — a Project 2025 civil-service and culture-war priority.",
+      "description": "Federal policy redefined to recognize only two biological sexes, directing agencies to remove gender-identity protections from programs - a Project 2025 civil-service and culture-war priority.",
       "severity": 8,
       "category": "Civil Rights",
       "impactedSectors": [
@@ -1484,7 +1484,7 @@
       "id": "EVT-2025-0120-036",
       "date": "2025-01-20",
       "actionType": "Executive Order",
-      "description": "Federal employees ordered back to in-person work, terminating remote arrangements — accelerating attrition alongside hiring freezes and deferred-resignation pressure.",
+      "description": "Federal employees ordered back to in-person work, terminating remote arrangements - accelerating attrition alongside hiring freezes and deferred-resignation pressure.",
       "severity": 6,
       "category": "Economy",
       "impactedSectors": [
@@ -1524,7 +1524,7 @@
       "id": "EVT-2025-0120-037",
       "date": "2025-01-20",
       "actionType": "Executive Clemency",
-      "description": "Broad pardons granted to individuals convicted of offenses related to the January 6 Capitol attack — undermining accountability for election subversion.",
+      "description": "Broad pardons granted to individuals convicted of offenses related to the January 6 Capitol attack - undermining accountability for election subversion.",
       "severity": 10,
       "category": "Democracy",
       "impactedSectors": [
@@ -1568,7 +1568,7 @@
       "id": "EVT-2025-0120-038",
       "date": "2025-01-20",
       "actionType": "Executive Order",
-      "description": "Foreign aid disbursements paused pending ideological review — halting humanitarian and development programs worldwide without congressional authorization.",
+      "description": "Foreign aid disbursements paused pending ideological review - halting humanitarian and development programs worldwide without congressional authorization.",
       "severity": 9,
       "category": "Democracy",
       "impactedSectors": [
@@ -1653,7 +1653,7 @@
       "id": "EVT-2025-1119-040",
       "date": "2025-11-19",
       "actionType": "Legislative Proposal",
-      "description": "Epstein Files Transparency Act introduced in the 119th Congress, requiring DOJ to release unclassified investigation records — amid broader elite accountability demands.",
+      "description": "Epstein Files Transparency Act introduced in the 119th Congress, requiring DOJ to release unclassified investigation records - amid broader elite accountability demands.",
       "severity": 5,
       "category": "Democracy",
       "impactedSectors": [
@@ -1692,7 +1692,7 @@
       "id": "EVT-2025-0120-041",
       "date": "2025-01-20",
       "actionType": "Executive Order",
-      "description": "America First Trade Policy directs agencies to review all trade agreements and recommend reciprocal tariffs — initiating Project 2025's protectionist trade agenda.",
+      "description": "America First Trade Policy directs agencies to review all trade agreements and recommend reciprocal tariffs - initiating Project 2025's protectionist trade agenda.",
       "severity": 8,
       "category": "Economy",
       "impactedSectors": [
@@ -1737,7 +1737,7 @@
       "id": "EVT-2025-0120-042",
       "date": "2025-01-20",
       "actionType": "Executive Order",
-      "description": "Federal censorship coordination with social media platforms prohibited; prior government content-moderation efforts ordered reviewed — reshaping platform accountability policy.",
+      "description": "Federal censorship coordination with social media platforms prohibited; prior government content-moderation efforts ordered reviewed - reshaping platform accountability policy.",
       "severity": 7,
       "category": "Democracy",
       "impactedSectors": [
@@ -1771,7 +1771,7 @@
       "id": "EVT-2025-0120-043",
       "date": "2025-01-20",
       "actionType": "Executive Order",
-      "description": "U.S. Refugee Admissions Program suspended pending realignment with administration immigration priorities — halting humanitarian resettlement for vulnerable populations.",
+      "description": "U.S. Refugee Admissions Program suspended pending realignment with administration immigration priorities - halting humanitarian resettlement for vulnerable populations.",
       "severity": 9,
       "category": "Immigration",
       "impactedSectors": [
@@ -1815,7 +1815,7 @@
       "id": "EVT-2025-0120-044",
       "date": "2025-01-20",
       "actionType": "Executive Order",
-      "description": "Drug cartels directed for designation as foreign terrorist organizations — expanding military and surveillance authorities for domestic immigration enforcement operations.",
+      "description": "Drug cartels directed for designation as foreign terrorist organizations - expanding military and surveillance authorities for domestic immigration enforcement operations.",
       "severity": 9,
       "category": "Immigration",
       "impactedSectors": [
@@ -1859,7 +1859,7 @@
       "id": "EVT-2025-0120-045",
       "date": "2025-01-20",
       "actionType": "Executive Order",
-      "description": "Federal death penalty restored and Biden-era execution moratorium ended — DOJ directed to resume capital prosecutions and pursue death sentences.",
+      "description": "Federal death penalty restored and Biden-era execution moratorium ended - DOJ directed to resume capital prosecutions and pursue death sentences.",
       "severity": 8,
       "category": "Civil Rights",
       "impactedSectors": [
@@ -1938,7 +1938,7 @@
       "id": "EVT-2025-0120-047",
       "date": "2025-01-20",
       "actionType": "Executive Order",
-      "description": "Inflation Reduction Act clean energy grant disbursements paused pending ideological review — stalling climate investment programs authorized by Congress.",
+      "description": "Inflation Reduction Act clean energy grant disbursements paused pending ideological review - stalling climate investment programs authorized by Congress.",
       "severity": 9,
       "category": "Environment",
       "impactedSectors": [
@@ -1956,7 +1956,7 @@
       "sources": [
         {
           "id": "ira_funding_pause",
-          "title": "Unleashing American Energy — IRA Funding Pause",
+          "title": "Unleashing American Energy - IRA Funding Pause",
           "publisher": "The White House",
           "url": "https://www.whitehouse.gov/presidential-actions/2025/01/unleashing-american-energy/",
           "date": "2025-01-20"
@@ -2025,7 +2025,7 @@
       "id": "EVT-2025-0402-049",
       "date": "2025-04-02",
       "actionType": "Executive Order",
-      "description": "Reciprocal tariffs imposed on imports from trading partners to address trade deficits — escalating global trade war and raising consumer prices across sectors.",
+      "description": "Reciprocal tariffs imposed on imports from trading partners to address trade deficits - escalating global trade war and raising consumer prices across sectors.",
       "severity": 9,
       "category": "Economy",
       "impactedSectors": [
@@ -2198,7 +2198,7 @@
       "id": "EVT-2025-0305-053",
       "date": "2025-03-05",
       "actionType": "Regulatory Rollback",
-      "description": "Labor Department halted Biden-era overtime pay expansion for salaried workers — reversing wage protections for an estimated 4 million employees.",
+      "description": "Labor Department halted Biden-era overtime pay expansion for salaried workers - reversing wage protections for an estimated 4 million employees.",
       "severity": 7,
       "category": "Economy",
       "impactedSectors": [
@@ -2242,7 +2242,7 @@
       "id": "EVT-2025-0312-054",
       "date": "2025-03-12",
       "actionType": "Enforcement Pause",
-      "description": "FTC deprioritized merger challenges and consumer fraud cases under new leadership — weakening antitrust and consumer protection oversight.",
+      "description": "FTC deprioritized merger challenges and consumer fraud cases under new leadership - weakening antitrust and consumer protection oversight.",
       "severity": 8,
       "category": "Economy",
       "impactedSectors": [
@@ -2287,7 +2287,7 @@
       "id": "EVT-2025-0201-055",
       "date": "2025-02-01",
       "actionType": "Institutional Access",
-      "description": "Treasury granted DOGE-aligned reviewers access to federal payment systems — bypassing standard inspector general oversight for spending decisions.",
+      "description": "Treasury granted DOGE-aligned reviewers access to federal payment systems - bypassing standard inspector general oversight for spending decisions.",
       "severity": 9,
       "category": "Democracy",
       "impactedSectors": [
@@ -2332,7 +2332,7 @@
       "id": "EVT-2025-0218-056",
       "date": "2025-02-18",
       "actionType": "Regulatory Rollback",
-      "description": "EPA reopened review of light-duty vehicle greenhouse gas standards — stalling clean-car rules and aligning with Project 2025's deregulatory energy agenda.",
+      "description": "EPA reopened review of light-duty vehicle greenhouse gas standards - stalling clean-car rules and aligning with Project 2025's deregulatory energy agenda.",
       "severity": 8,
       "category": "Environment",
       "impactedSectors": [
@@ -2422,7 +2422,7 @@
       "id": "EVT-2025-0228-058",
       "date": "2025-02-28",
       "actionType": "Workforce Reduction",
-      "description": "CISA placed staff on administrative leave and halted hiring — weakening election-security and critical-infrastructure cyber defense amid federal workforce cuts.",
+      "description": "CISA placed staff on administrative leave and halted hiring - weakening election-security and critical-infrastructure cyber defense amid federal workforce cuts.",
       "severity": 9,
       "category": "Democracy",
       "impactedSectors": [
@@ -2467,7 +2467,7 @@
       "id": "EVT-2025-0128-059",
       "date": "2025-01-28",
       "actionType": "Program Termination",
-      "description": "Pentagon eliminated DEI offices and training across the armed services — disbanding advisory groups and canceling diversity initiatives.",
+      "description": "Pentagon eliminated DEI offices and training across the armed services - disbanding advisory groups and canceling diversity initiatives.",
       "severity": 7,
       "category": "Civil Rights",
       "impactedSectors": [
@@ -2529,7 +2529,7 @@
       "sources": [
         {
           "id": "fws_species_delays",
-          "title": "U.S. Fish and Wildlife Service — Birds",
+          "title": "U.S. Fish and Wildlife Service - Birds",
           "publisher": "U.S. Fish and Wildlife Service",
           "url": "https://www.fws.gov/birds",
           "date": "2025-03-18"
@@ -2557,7 +2557,7 @@
       "id": "EVT-2025-0322-061",
       "date": "2025-03-22",
       "actionType": "Workforce Reduction",
-      "description": "Social Security Administration placed staff on administrative leave and halted hiring — threatening benefit processing timelines for 70 million Americans as DOGE reviews federal payment systems.",
+      "description": "Social Security Administration placed staff on administrative leave and halted hiring - threatening benefit processing timelines for 70 million Americans as DOGE reviews federal payment systems.",
       "severity": 9,
       "category": "Economy",
       "impactedSectors": [
@@ -2602,7 +2602,7 @@
       "id": "EVT-2025-0325-062",
       "date": "2025-03-25",
       "actionType": "Workforce Reduction",
-      "description": "FEMA disaster preparedness staffing cut ahead of hurricane season — weakening federal response capacity as climate disasters intensify nationwide.",
+      "description": "FEMA disaster preparedness staffing cut ahead of hurricane season - weakening federal response capacity as climate disasters intensify nationwide.",
       "severity": 8,
       "category": "Environment",
       "impactedSectors": [
@@ -2647,7 +2647,7 @@
       "id": "EVT-2025-0328-063",
       "date": "2025-03-28",
       "actionType": "Program Freeze",
-      "description": "NOAA climate research and monitoring programs paused pending ideological spending review — stalling hurricane forecasting and temperature data collection.",
+      "description": "NOAA climate research and monitoring programs paused pending ideological spending review - stalling hurricane forecasting and temperature data collection.",
       "severity": 8,
       "category": "Environment",
       "impactedSectors": [
@@ -2665,14 +2665,14 @@
       "sources": [
         {
           "id": "noaa_research_freeze",
-          "title": "Global Climate Report — Annual 2024",
+          "title": "Global Climate Report - Annual 2024",
           "publisher": "National Oceanic and Atmospheric Administration",
           "url": "https://www.ncei.noaa.gov/access/monitoring/monthly-report/global/202413",
           "date": "2025-03-28"
         },
         {
           "id": "ira_funding_pause",
-          "title": "Unleashing American Energy — IRA Funding Pause",
+          "title": "Unleashing American Energy - IRA Funding Pause",
           "publisher": "The White House",
           "url": "https://www.whitehouse.gov/presidential-actions/2025/01/unleashing-american-energy/",
           "date": "2025-01-20"
@@ -2693,7 +2693,7 @@
       "id": "EVT-2025-0401-064",
       "date": "2025-04-01",
       "actionType": "Program Freeze",
-      "description": "CDC discretionary grant disbursements halted and staff placed on leave — disrupting disease surveillance, reproductive health data, and state public health partnerships.",
+      "description": "CDC discretionary grant disbursements halted and staff placed on leave - disrupting disease surveillance, reproductive health data, and state public health partnerships.",
       "severity": 9,
       "category": "Healthcare",
       "impactedSectors": [
@@ -2738,7 +2738,7 @@
       "id": "EVT-2025-0405-065",
       "date": "2025-04-05",
       "actionType": "Workforce Reduction",
-      "description": "Federal Student Aid office probations terminated and hiring frozen — delaying loan servicing, income-driven repayment processing, and borrower assistance for 43 million Americans.",
+      "description": "Federal Student Aid office probations terminated and hiring frozen - delaying loan servicing, income-driven repayment processing, and borrower assistance for 43 million Americans.",
       "severity": 7,
       "category": "Education",
       "impactedSectors": [
@@ -2782,7 +2782,7 @@
       "id": "EVT-2025-0410-066",
       "date": "2025-04-10",
       "actionType": "Regulatory Rollback",
-      "description": "EPA dismissed members of its Science Advisory Board and Clean Air Scientific Advisory Committee — removing independent scientists who review pollution standards.",
+      "description": "EPA dismissed members of its Science Advisory Board and Clean Air Scientific Advisory Committee - removing independent scientists who review pollution standards.",
       "severity": 8,
       "category": "Environment",
       "impactedSectors": [
@@ -2828,7 +2828,7 @@
       "id": "EVT-2025-0415-067",
       "date": "2025-04-15",
       "actionType": "Enforcement Shift",
-      "description": "HUD paused fair-housing discrimination investigations and redirected staff toward reviewing DEI-related grant language — weakening enforcement of the Fair Housing Act.",
+      "description": "HUD paused fair-housing discrimination investigations and redirected staff toward reviewing DEI-related grant language - weakening enforcement of the Fair Housing Act.",
       "severity": 7,
       "category": "Civil Rights",
       "impactedSectors": [
@@ -2872,7 +2872,7 @@
       "id": "EVT-2025-0418-068",
       "date": "2025-04-18",
       "actionType": "Program Freeze",
-      "description": "NIH placed new grant applications on hold pending ideological review of research topics — delaying biomedical studies on climate health, reproductive care, and LGBTQ populations.",
+      "description": "NIH placed new grant applications on hold pending ideological review of research topics - delaying biomedical studies on climate health, reproductive care, and LGBTQ populations.",
       "severity": 9,
       "category": "Healthcare",
       "impactedSectors": [
@@ -2917,7 +2917,7 @@
       "id": "EVT-2025-0422-069",
       "date": "2025-04-22",
       "actionType": "Program Termination",
-      "description": "USAID headquarters staff placed on leave and foreign assistance programs halted — dismantling decades of global health, famine relief, and democracy-promotion infrastructure.",
+      "description": "USAID headquarters staff placed on leave and foreign assistance programs halted - dismantling decades of global health, famine relief, and democracy-promotion infrastructure.",
       "severity": 9,
       "category": "Democracy",
       "impactedSectors": [
@@ -2962,7 +2962,7 @@
       "id": "EVT-2025-0428-070",
       "date": "2025-04-28",
       "actionType": "Workforce Reduction",
-      "description": "Veterans Affairs eliminated DEI offices and placed probationary employees on termination notice — cutting support staff while 700,000 disability claims remain backlogged.",
+      "description": "Veterans Affairs eliminated DEI offices and placed probationary employees on termination notice - cutting support staff while 700,000 disability claims remain backlogged.",
       "severity": 8,
       "category": "Healthcare",
       "impactedSectors": [
@@ -3006,7 +3006,7 @@
       "id": "EVT-2025-0502-071",
       "date": "2025-05-02",
       "actionType": "Enforcement Shift",
-      "description": "DOJ Civil Rights Division redirected staff from police pattern-or-practice investigations toward DEI compliance reviews — weakening federal oversight of law enforcement misconduct.",
+      "description": "DOJ Civil Rights Division redirected staff from police pattern-or-practice investigations toward DEI compliance reviews - weakening federal oversight of law enforcement misconduct.",
       "severity": 9,
       "category": "Civil Rights",
       "impactedSectors": [
@@ -3050,7 +3050,7 @@
       "id": "EVT-2025-0508-072",
       "date": "2025-05-08",
       "actionType": "Regulatory Rollback",
-      "description": "FEC commissioners deadlocked on enforcement matters and paused advisory opinions — stalling campaign-finance investigations as dark-money spending surged.",
+      "description": "FEC commissioners deadlocked on enforcement matters and paused advisory opinions - stalling campaign-finance investigations as dark-money spending surged.",
       "severity": 8,
       "category": "Democracy",
       "impactedSectors": [
@@ -3094,7 +3094,7 @@
       "id": "EVT-2025-0512-073",
       "date": "2025-05-12",
       "actionType": "Workforce Reduction",
-      "description": "FTC consumer-protection bureau staff placed on leave and new merger challenges halted — curtailing antitrust enforcement aligned with Project 2025's FTC chapter.",
+      "description": "FTC consumer-protection bureau staff placed on leave and new merger challenges halted - curtailing antitrust enforcement aligned with Project 2025's FTC chapter.",
       "severity": 7,
       "category": "Economy",
       "impactedSectors": [
@@ -3138,7 +3138,7 @@
       "id": "EVT-2025-0515-074",
       "date": "2025-05-15",
       "actionType": "Regulatory Rollback",
-      "description": "USDA expanded SNAP work requirements and shortened time-limit waivers — cutting nutrition assistance for able-bodied adults without dependents in high-unemployment areas.",
+      "description": "USDA expanded SNAP work requirements and shortened time-limit waivers - cutting nutrition assistance for able-bodied adults without dependents in high-unemployment areas.",
       "severity": 8,
       "category": "Economy",
       "impactedSectors": [
@@ -3226,7 +3226,7 @@
       "id": "EVT-2025-0525-076",
       "date": "2025-05-25",
       "actionType": "Policy Rollback",
-      "description": "Pentagon reinstated restrictions on gender-affirming care for active-duty service members and paused TRICARE coverage updates — reversing inclusive military health policies.",
+      "description": "Pentagon reinstated restrictions on gender-affirming care for active-duty service members and paused TRICARE coverage updates - reversing inclusive military health policies.",
       "severity": 8,
       "category": "Healthcare",
       "impactedSectors": [
@@ -3268,7 +3268,7 @@
       "id": "EVT-2025-0528-077",
       "date": "2025-05-28",
       "actionType": "Regulatory Rollback",
-      "description": "CMS approved additional state Medicaid waivers imposing work requirements and premiums — conditioning health coverage on employment in high-unemployment counties.",
+      "description": "CMS approved additional state Medicaid waivers imposing work requirements and premiums - conditioning health coverage on employment in high-unemployment counties.",
       "severity": 8,
       "category": "Healthcare",
       "impactedSectors": [
@@ -3310,7 +3310,7 @@
       "id": "EVT-2025-0602-078",
       "date": "2025-06-02",
       "actionType": "Executive Order",
-      "description": "Interior accelerated offshore oil and gas lease sales in the Gulf of Mexico and Alaska — prioritizing fossil extraction over renewable siting on federal waters.",
+      "description": "Interior accelerated offshore oil and gas lease sales in the Gulf of Mexico and Alaska - prioritizing fossil extraction over renewable siting on federal waters.",
       "severity": 9,
       "category": "Environment",
       "impactedSectors": [
@@ -3356,7 +3356,7 @@
       "id": "EVT-2025-0605-079",
       "date": "2025-06-05",
       "actionType": "Policy Restriction",
-      "description": "Election Assistance Commission security grants delayed as Congress advanced proof-of-citizenship registration mandates — weakening election infrastructure funding.",
+      "description": "Election Assistance Commission security grants delayed as Congress advanced proof-of-citizenship registration mandates - weakening election infrastructure funding.",
       "severity": 8,
       "category": "Democracy",
       "impactedSectors": [
@@ -3398,7 +3398,7 @@
       "id": "EVT-2025-0610-080",
       "date": "2025-06-10",
       "actionType": "Regulatory Freeze",
-      "description": "OSHA delayed silica exposure and heat-illness rulemakings pending political review — extending the administration-wide freeze on worker-safety protections.",
+      "description": "OSHA delayed silica exposure and heat-illness rulemakings pending political review - extending the administration-wide freeze on worker-safety protections.",
       "severity": 7,
       "category": "Economy",
       "impactedSectors": [
@@ -3440,7 +3440,7 @@
       "id": "EVT-2025-0615-081",
       "date": "2025-06-15",
       "actionType": "Agency Action",
-      "description": "VA accelerated community-care privatization despite GAO-documented overpayment and fraud risks — outsourcing veterans' health services with weakened oversight.",
+      "description": "VA accelerated community-care privatization despite GAO-documented overpayment and fraud risks - outsourcing veterans' health services with weakened oversight.",
       "severity": 8,
       "category": "Healthcare",
       "impactedSectors": [
@@ -3482,7 +3482,7 @@
       "id": "EVT-2025-0620-082",
       "date": "2025-06-20",
       "actionType": "Policy Restriction",
-      "description": "Congress advanced census and voter-registration changes targeting citizenship documentation — fueling noncitizen voting myths Brennan Center research has repeatedly debunked.",
+      "description": "Congress advanced census and voter-registration changes targeting citizenship documentation - fueling noncitizen voting myths Brennan Center research has repeatedly debunked.",
       "severity": 8,
       "category": "Democracy",
       "impactedSectors": [
@@ -3524,7 +3524,7 @@
       "id": "EVT-2025-0625-083",
       "date": "2025-06-25",
       "actionType": "Executive Order",
-      "description": "Interior fast-tracked hardrock mining leases and drilling permits on federal lands — sidestepping tribal consultation and NEPA review timelines.",
+      "description": "Interior fast-tracked hardrock mining leases and drilling permits on federal lands - sidestepping tribal consultation and NEPA review timelines.",
       "severity": 9,
       "category": "Environment",
       "impactedSectors": [
@@ -3570,7 +3570,7 @@
       "id": "EVT-2025-0630-084",
       "date": "2025-06-30",
       "actionType": "Policy Rollback",
-      "description": "Education Department advanced Title IX sports rules excluding transgender student-athletes — reversing inclusive participation policies adopted under the prior administration.",
+      "description": "Education Department advanced Title IX sports rules excluding transgender student-athletes - reversing inclusive participation policies adopted under the prior administration.",
       "severity": 8,
       "category": "Education",
       "impactedSectors": [
@@ -3614,7 +3614,7 @@
       "id": "EVT-2025-0705-085",
       "date": "2025-07-05",
       "actionType": "Agency Action",
-      "description": "CISA election-security coordination grants and state partnership staffing faced cuts — weakening federal voting-system cybersecurity as midterm infrastructure funding stalled.",
+      "description": "CISA election-security coordination grants and state partnership staffing faced cuts - weakening federal voting-system cybersecurity as midterm infrastructure funding stalled.",
       "severity": 9,
       "category": "Democracy",
       "impactedSectors": [
@@ -3655,7 +3655,7 @@
       "id": "EVT-2025-0710-086",
       "date": "2025-07-10",
       "actionType": "Regulatory Action",
-      "description": "USDA finalized expanded SNAP work requirements and time limits in additional states — restricting nutrition assistance for able-bodied adults without dependents, mirroring Project 2025 Agriculture chapter proposals.",
+      "description": "USDA finalized expanded SNAP work requirements and time limits in additional states - restricting nutrition assistance for able-bodied adults without dependents, mirroring Project 2025 Agriculture chapter proposals.",
       "severity": 7,
       "category": "Economy",
       "impactedSectors": [
@@ -3699,7 +3699,7 @@
       "id": "EVT-2025-0715-087",
       "date": "2025-07-15",
       "actionType": "Regulatory Delay",
-      "description": "Fish and Wildlife Service delayed Endangered Species Act consultations for energy and infrastructure projects — accelerating fossil and mining approvals while sidestepping species protections.",
+      "description": "Fish and Wildlife Service delayed Endangered Species Act consultations for energy and infrastructure projects - accelerating fossil and mining approvals while sidestepping species protections.",
       "severity": 8,
       "category": "Environment",
       "impactedSectors": [
@@ -3716,7 +3716,7 @@
       "sources": [
         {
           "id": "fws_species_delays",
-          "title": "U.S. Fish and Wildlife Service — Birds",
+          "title": "U.S. Fish and Wildlife Service - Birds",
           "publisher": "U.S. Fish and Wildlife Service",
           "url": "https://www.fws.gov/birds",
           "date": "2025-03-18"
@@ -3744,7 +3744,7 @@
       "id": "EVT-2025-0720-088",
       "date": "2025-07-20",
       "actionType": "Agency Action",
-      "description": "CMS approved new state Medicaid waivers imposing work requirements and premiums — conditioning health coverage on employment as Project 2025's HHS chapter recommended.",
+      "description": "CMS approved new state Medicaid waivers imposing work requirements and premiums - conditioning health coverage on employment as Project 2025's HHS chapter recommended.",
       "severity": 8,
       "category": "Healthcare",
       "impactedSectors": [
@@ -3788,7 +3788,7 @@
       "id": "EVT-2025-0725-089",
       "date": "2025-07-25",
       "actionType": "Personnel Action",
-      "description": "Merit Systems Protection Board backlog left thousands of federal employee appeals unresolved — including Schedule F reclassification challenges — without independent adjudication.",
+      "description": "Merit Systems Protection Board backlog left thousands of federal employee appeals unresolved - including Schedule F reclassification challenges - without independent adjudication.",
       "severity": 9,
       "category": "Democracy",
       "impactedSectors": [
@@ -3832,7 +3832,7 @@
       "id": "EVT-2025-0730-090",
       "date": "2025-07-30",
       "actionType": "Enforcement Shift",
-      "description": "EEOC and OFCCP redirected civil-rights investigators toward DEI program audits while deprioritizing systemic workplace discrimination cases — weaponizing enforcement against inclusion programs.",
+      "description": "EEOC and OFCCP redirected civil-rights investigators toward DEI program audits while deprioritizing systemic workplace discrimination cases - weaponizing enforcement against inclusion programs.",
       "severity": 8,
       "category": "Civil Rights",
       "impactedSectors": [
@@ -3876,7 +3876,7 @@
       "id": "EVT-2025-0804-091",
       "date": "2025-08-04",
       "actionType": "Agency Restructuring",
-      "description": "USAID functions absorbed into State Department with foreign-aid portfolio reviews — consolidating humanitarian and development programs under political appointees per Project 2025's State chapter.",
+      "description": "USAID functions absorbed into State Department with foreign-aid portfolio reviews - consolidating humanitarian and development programs under political appointees per Project 2025's State chapter.",
       "severity": 8,
       "category": "Democracy",
       "impactedSectors": [
@@ -3918,7 +3918,7 @@
       "id": "EVT-2025-0809-092",
       "date": "2025-08-09",
       "actionType": "Personnel Action",
-      "description": "Second wave of probationary federal employee terminations targeted climate, civil-rights, and inspector-general support staff — accelerating Schedule F implementation through attrition.",
+      "description": "Second wave of probationary federal employee terminations targeted climate, civil-rights, and inspector-general support staff - accelerating Schedule F implementation through attrition.",
       "severity": 9,
       "category": "Democracy",
       "impactedSectors": [
@@ -3963,7 +3963,7 @@
       "id": "EVT-2025-0814-093",
       "date": "2025-08-14",
       "actionType": "Workforce Policy",
-      "description": "OPM intensified deferred-resignation buyout pressure on career civil servants — offering exit packages while threatening RIFs for employees who declined, mirroring Project 2025 workforce purge tactics.",
+      "description": "OPM intensified deferred-resignation buyout pressure on career civil servants - offering exit packages while threatening RIFs for employees who declined, mirroring Project 2025 workforce purge tactics.",
       "severity": 8,
       "category": "Democracy",
       "impactedSectors": [
@@ -4007,7 +4007,7 @@
       "id": "EVT-2025-0819-094",
       "date": "2025-08-19",
       "actionType": "Funding Pause",
-      "description": "IRA clean-energy grant disbursements paused pending political review — stalling home electrification rebates and community solar projects mid-implementation.",
+      "description": "IRA clean-energy grant disbursements paused pending political review - stalling home electrification rebates and community solar projects mid-implementation.",
       "severity": 8,
       "category": "Environment",
       "impactedSectors": [
@@ -4025,7 +4025,7 @@
       "sources": [
         {
           "id": "ira_funding_pause",
-          "title": "Unleashing American Energy — IRA Funding Pause",
+          "title": "Unleashing American Energy - IRA Funding Pause",
           "publisher": "The White House",
           "url": "https://www.whitehouse.gov/presidential-actions/2025/01/unleashing-american-energy/",
           "date": "2025-01-20"
@@ -4053,7 +4053,7 @@
       "id": "EVT-2025-0824-095",
       "date": "2025-08-24",
       "actionType": "International Withdrawal",
-      "description": "WHO withdrawal process advanced with halted pandemic-preparedness funding and paused CDC global health partnerships — isolating U.S. public health from international coordination.",
+      "description": "WHO withdrawal process advanced with halted pandemic-preparedness funding and paused CDC global health partnerships - isolating U.S. public health from international coordination.",
       "severity": 7,
       "category": "Healthcare",
       "impactedSectors": [
@@ -4095,7 +4095,7 @@
       "id": "EVT-2025-0829-096",
       "date": "2025-08-29",
       "actionType": "Executive Order",
-      "description": "Federal speech restrictions expanded to contractors and grant recipients beyond universities — conditioning billions in federal funds on ideological compliance with administration speech directives.",
+      "description": "Federal speech restrictions expanded to contractors and grant recipients beyond universities - conditioning billions in federal funds on ideological compliance with administration speech directives.",
       "severity": 8,
       "category": "Democracy",
       "impactedSectors": [
@@ -4138,7 +4138,7 @@
       "id": "EVT-2025-0903-097",
       "date": "2025-09-03",
       "actionType": "Trade Policy",
-      "description": "Reciprocal tariffs escalated against additional trading partners under national-security authority — raising consumer costs and retaliatory barriers while bypassing congressional trade powers.",
+      "description": "Reciprocal tariffs escalated against additional trading partners under national-security authority - raising consumer costs and retaliatory barriers while bypassing congressional trade powers.",
       "severity": 7,
       "category": "Economy",
       "impactedSectors": [
@@ -4179,7 +4179,7 @@
       "id": "EVT-2025-0908-098",
       "date": "2025-09-08",
       "actionType": "Enforcement Expansion",
-      "description": "DHS expanded National Guard coordination for interior deportation operations — militarizing immigration enforcement in major metro areas without new congressional authorization.",
+      "description": "DHS expanded National Guard coordination for interior deportation operations - militarizing immigration enforcement in major metro areas without new congressional authorization.",
       "severity": 8,
       "category": "Immigration",
       "impactedSectors": [
@@ -4222,7 +4222,7 @@
       "id": "EVT-2025-0913-099",
       "date": "2025-09-13",
       "actionType": "Research Termination",
-      "description": "NIH terminated additional climate, health-equity, and infectious-disease research grants mid-cycle — disrupting longitudinal studies and university partnerships nationwide.",
+      "description": "NIH terminated additional climate, health-equity, and infectious-disease research grants mid-cycle - disrupting longitudinal studies and university partnerships nationwide.",
       "severity": 8,
       "category": "Healthcare",
       "impactedSectors": [
@@ -4264,7 +4264,7 @@
       "id": "EVT-2025-0918-100",
       "date": "2025-09-18",
       "actionType": "Enforcement Halt",
-      "description": "Justice Department halted remaining Voting Rights Act Section 2 pattern-or-practice investigations in Georgia, Texas, and Arizona — dismantling the federal government's last active voting-rights enforcement tool ahead of the 2026 redistricting cycle.",
+      "description": "Justice Department halted remaining Voting Rights Act Section 2 pattern-or-practice investigations in Georgia, Texas, and Arizona - dismantling the federal government's last active voting-rights enforcement tool ahead of the 2026 redistricting cycle.",
       "severity": 10,
       "category": "Democracy",
       "impactedSectors": [
@@ -4316,7 +4316,7 @@
       "id": "EVT-2025-0923-101",
       "date": "2025-09-23",
       "actionType": "Enforcement Pause",
-      "description": "CFPB paused major consumer-finance enforcement actions and supervisory exams — gutting mortgage, student-loan, and credit-card protections while the agency faces structural dismantling.",
+      "description": "CFPB paused major consumer-finance enforcement actions and supervisory exams - gutting mortgage, student-loan, and credit-card protections while the agency faces structural dismantling.",
       "severity": 8,
       "category": "Economy",
       "impactedSectors": [
@@ -4358,7 +4358,7 @@
       "id": "EVT-2025-0928-102",
       "date": "2025-09-28",
       "actionType": "Workforce Reduction",
-      "description": "Social Security Administration accelerated field-office closures and staffing cuts — lengthening disability and retirement claim backlogs for millions of beneficiaries.",
+      "description": "Social Security Administration accelerated field-office closures and staffing cuts - lengthening disability and retirement claim backlogs for millions of beneficiaries.",
       "severity": 8,
       "category": "Healthcare",
       "impactedSectors": [
@@ -4400,7 +4400,7 @@
       "id": "EVT-2025-1003-103",
       "date": "2025-10-03",
       "actionType": "Security Downgrade",
-      "description": "CISA election-security grants and state coordination staffing cut ahead of the 2026 midterms — weakening federal support for voting-system cybersecurity and incident response.",
+      "description": "CISA election-security grants and state coordination staffing cut ahead of the 2026 midterms - weakening federal support for voting-system cybersecurity and incident response.",
       "severity": 9,
       "category": "Democracy",
       "impactedSectors": [
@@ -4441,7 +4441,7 @@
       "id": "EVT-2025-1008-104",
       "date": "2025-10-08",
       "actionType": "Regulatory Rollback",
-      "description": "Education Department finalized Title IX sports regulations excluding transgender student-athletes — reversing inclusive participation rules and inviting litigation in dozens of states.",
+      "description": "Education Department finalized Title IX sports regulations excluding transgender student-athletes - reversing inclusive participation rules and inviting litigation in dozens of states.",
       "severity": 7,
       "category": "Education",
       "impactedSectors": [
@@ -4483,7 +4483,7 @@
       "id": "EVT-2025-1013-105",
       "date": "2025-10-13",
       "actionType": "Healthcare Policy",
-      "description": "CMS approved additional state Medicaid waivers imposing work requirements and premiums — conditioning health coverage on employment in low-wage labor markets.",
+      "description": "CMS approved additional state Medicaid waivers imposing work requirements and premiums - conditioning health coverage on employment in low-wage labor markets.",
       "severity": 8,
       "category": "Healthcare",
       "impactedSectors": [
@@ -4525,7 +4525,7 @@
       "id": "EVT-2025-1018-106",
       "date": "2025-10-18",
       "actionType": "Enforcement Deadlock",
-      "description": "FEC commissioners deadlocked on major campaign-finance enforcement actions and advisory opinions — pausing investigations into undisclosed independent expenditures ahead of the 2026 cycle.",
+      "description": "FEC commissioners deadlocked on major campaign-finance enforcement actions and advisory opinions - pausing investigations into undisclosed independent expenditures ahead of the 2026 cycle.",
       "severity": 8,
       "category": "Democracy",
       "impactedSectors": [
@@ -4573,7 +4573,7 @@
       "id": "EVT-2025-1023-107",
       "date": "2025-10-23",
       "actionType": "Institutional Vacancy",
-      "description": "Merit Systems Protection Board vacancies left thousands of federal whistleblower and Schedule F appeal cases in limbo — removing a key check on retaliatory firings.",
+      "description": "Merit Systems Protection Board vacancies left thousands of federal whistleblower and Schedule F appeal cases in limbo - removing a key check on retaliatory firings.",
       "severity": 8,
       "category": "Democracy",
       "impactedSectors": [
@@ -4624,7 +4624,7 @@
       "id": "EVT-2025-1028-108",
       "date": "2025-10-28",
       "actionType": "Regulatory Delay",
-      "description": "EPA delayed implementation of methane leak detection and repair standards for oil and gas facilities — extending a regulatory freeze that benefits fossil-fuel operators.",
+      "description": "EPA delayed implementation of methane leak detection and repair standards for oil and gas facilities - extending a regulatory freeze that benefits fossil-fuel operators.",
       "severity": 7,
       "category": "Environment",
       "impactedSectors": [
@@ -4673,7 +4673,7 @@
       "id": "EVT-2025-1102-109",
       "date": "2025-11-02",
       "actionType": "Disclosure Rollback",
-      "description": "Treasury and IRS moved to weaken nonprofit donor-disclosure requirements for politically active 501(c)(4) organizations — expanding dark-money channels documented by OpenSecrets.",
+      "description": "Treasury and IRS moved to weaken nonprofit donor-disclosure requirements for politically active 501(c)(4) organizations - expanding dark-money channels documented by OpenSecrets.",
       "severity": 9,
       "category": "Democracy",
       "impactedSectors": [
@@ -4722,7 +4722,7 @@
       "id": "EVT-2025-1107-110",
       "date": "2025-11-07",
       "actionType": "Workforce Reclassification",
-      "description": "OPM expanded Schedule F reclassification guidance to additional agency subcomponents — accelerating politically motivated civil-service purges across the executive branch ahead of the 2026 midterms.",
+      "description": "OPM expanded Schedule F reclassification guidance to additional agency subcomponents - accelerating politically motivated civil-service purges across the executive branch ahead of the 2026 midterms.",
       "severity": 10,
       "category": "Democracy",
       "impactedSectors": [
@@ -4772,7 +4772,7 @@
       "id": "EVT-2025-1112-111",
       "date": "2025-11-12",
       "actionType": "Records Withholding",
-      "description": "DOJ expanded FOIA exemption claims for executive-branch records tied to political appointees — lengthening backlogs documented on FOIA.gov and delaying public release of investigation materials.",
+      "description": "DOJ expanded FOIA exemption claims for executive-branch records tied to political appointees - lengthening backlogs documented on FOIA.gov and delaying public release of investigation materials.",
       "severity": 7,
       "category": "Democracy",
       "impactedSectors": [
@@ -4785,14 +4785,14 @@
       "sources": [
         {
           "id": "doj_oip_foia",
-          "title": "Office of Information Policy — FOIA",
+          "title": "Office of Information Policy - FOIA",
           "publisher": "U.S. Department of Justice",
           "url": "https://www.justice.gov/oip",
           "date": "2025-01-01"
         },
         {
           "id": "foia_gov",
-          "title": "FOIA.gov — Freedom of Information Act",
+          "title": "FOIA.gov - Freedom of Information Act",
           "publisher": "U.S. Department of Justice",
           "url": "https://www.foia.gov/",
           "date": "2025-01-01"
@@ -4820,7 +4820,7 @@
       "id": "EVT-2025-1115-112",
       "date": "2025-11-15",
       "actionType": "Disclosure Rollback",
-      "description": "Federal agencies scaled back proactive disclosure of lobbying visitor logs and rulemaking comment datasets — reducing machine-readable transparency required under prior open-government policies.",
+      "description": "Federal agencies scaled back proactive disclosure of lobbying visitor logs and rulemaking comment datasets - reducing machine-readable transparency required under prior open-government policies.",
       "severity": 7,
       "category": "Democracy",
       "impactedSectors": [
@@ -4870,7 +4870,7 @@
       "id": "EVT-2025-1118-113",
       "date": "2025-11-18",
       "actionType": "Legislative Action",
-      "description": "House Judiciary subcommittee advanced markup on the Epstein Files Transparency Act — bipartisan legislation requiring DOJ to release unclassified investigation records on a statutory timeline.",
+      "description": "House Judiciary subcommittee advanced markup on the Epstein Files Transparency Act - bipartisan legislation requiring DOJ to release unclassified investigation records on a statutory timeline.",
       "severity": 5,
       "category": "Democracy",
       "impactedSectors": [
@@ -4913,7 +4913,7 @@
       "id": "EVT-2025-1121-114",
       "date": "2025-11-21",
       "actionType": "Whistleblower Backlog",
-      "description": "Federal whistleblower appeals surged as MSPB vacancies left retaliation cases unresolved — weakening the fraud-recovery and oversight mechanisms SAFE-004 whistleblower bounties are designed to strengthen.",
+      "description": "Federal whistleblower appeals surged as MSPB vacancies left retaliation cases unresolved - weakening the fraud-recovery and oversight mechanisms SAFE-004 whistleblower bounties are designed to strengthen.",
       "severity": 8,
       "category": "Democracy",
       "impactedSectors": [
@@ -4962,7 +4962,7 @@
       "id": "EVT-2025-1125-115",
       "date": "2025-11-25",
       "actionType": "Records Policy",
-      "description": "National Archives issued restrictive guidance on presidential records access requests — narrowing public review windows under the Presidential Records Act amid ongoing FOIA litigation over executive-branch document retention.",
+      "description": "National Archives issued restrictive guidance on presidential records access requests - narrowing public review windows under the Presidential Records Act amid ongoing FOIA litigation over executive-branch document retention.",
       "severity": 7,
       "category": "Democracy",
       "impactedSectors": [
@@ -4982,14 +4982,14 @@
         },
         {
           "id": "foia_gov",
-          "title": "FOIA.gov — Freedom of Information Act",
+          "title": "FOIA.gov - Freedom of Information Act",
           "publisher": "U.S. Department of Justice",
           "url": "https://www.foia.gov/",
           "date": "2025-01-01"
         },
         {
           "id": "doj_oip_foia",
-          "title": "Office of Information Policy — FOIA",
+          "title": "Office of Information Policy - FOIA",
           "publisher": "U.S. Department of Justice",
           "url": "https://www.justice.gov/oip",
           "date": "2025-01-01"
@@ -5010,7 +5010,7 @@
       "id": "EVT-2025-1128-116",
       "date": "2025-11-28",
       "actionType": "Election Security",
-      "description": "CISA scaled back election-security partnership staffing and state coordination grants — weakening federal support for voting-system cybersecurity ahead of the 2026 midterm cycle.",
+      "description": "CISA scaled back election-security partnership staffing and state coordination grants - weakening federal support for voting-system cybersecurity ahead of the 2026 midterm cycle.",
       "severity": 9,
       "category": "Democracy",
       "impactedSectors": [
@@ -5058,7 +5058,7 @@
       "id": "EVT-2025-1201-117",
       "date": "2025-12-01",
       "actionType": "Ethics Rollback",
-      "description": "OGE extended financial disclosure filing deadlines for senior appointees — reducing real-time visibility into executive branch conflicts of interest during agency rulemaking pushes.",
+      "description": "OGE extended financial disclosure filing deadlines for senior appointees - reducing real-time visibility into executive branch conflicts of interest during agency rulemaking pushes.",
       "severity": 7,
       "category": "Democracy",
       "impactedSectors": [
@@ -5109,7 +5109,7 @@
       "id": "EVT-2025-1204-118",
       "date": "2025-12-04",
       "actionType": "Campaign Finance",
-      "description": "FEC enforcement docket backlog grew as commission vacancies limited penalties for late disclosure filings — delaying public visibility into midterm dark-money spending.",
+      "description": "FEC enforcement docket backlog grew as commission vacancies limited penalties for late disclosure filings - delaying public visibility into midterm dark-money spending.",
       "severity": 7,
       "category": "Democracy",
       "impactedSectors": [
@@ -5137,7 +5137,7 @@
         {
           "id": "citizens_united_scotus",
           "title": "Citizens United v. Federal Election Commission",
-          "publisher": "Legal Information Institute — Cornell Law School",
+          "publisher": "Legal Information Institute - Cornell Law School",
           "url": "https://www.law.cornell.edu/supct/html/08-205.ZS.html",
           "date": "2010-01-21"
         }
@@ -5157,7 +5157,7 @@
       "id": "EVT-2025-1208-119",
       "date": "2025-12-08",
       "actionType": "Inspector General Review",
-      "description": "Multiple agency IG offices faced staffing reviews and report publication delays — narrowing independent oversight of procurement fraud and ethics violations documented in prior GAO findings.",
+      "description": "Multiple agency IG offices faced staffing reviews and report publication delays - narrowing independent oversight of procurement fraud and ethics violations documented in prior GAO findings.",
       "severity": 8,
       "category": "Democracy",
       "impactedSectors": [
@@ -5206,7 +5206,7 @@
       "id": "EVT-2025-1212-120",
       "date": "2025-12-12",
       "actionType": "Transparency Halt",
-      "description": "A coordinated executive-branch slowdown on proactive open-government publishing reached a 120-event milestone — spanning FOIA backlogs, lobbying log gaps, and ethics disclosure delays that SAFE-004 is designed to reverse.",
+      "description": "A coordinated executive-branch slowdown on proactive open-government publishing reached a 120-event milestone - spanning FOIA backlogs, lobbying log gaps, and ethics disclosure delays that SAFE-004 is designed to reverse.",
       "severity": 10,
       "category": "Democracy",
       "impactedSectors": [
@@ -5221,14 +5221,14 @@
       "sources": [
         {
           "id": "foia_gov",
-          "title": "FOIA.gov — Freedom of Information Act",
+          "title": "FOIA.gov - Freedom of Information Act",
           "publisher": "U.S. Department of Justice",
           "url": "https://www.foia.gov/",
           "date": "2025-01-01"
         },
         {
           "id": "doj_oip_foia",
-          "title": "Office of Information Policy — FOIA",
+          "title": "Office of Information Policy - FOIA",
           "publisher": "U.S. Department of Justice",
           "url": "https://www.justice.gov/oip",
           "date": "2025-01-01"
@@ -5263,7 +5263,7 @@
       "id": "EVT-2025-1215-121",
       "date": "2025-12-15",
       "actionType": "FOIA Backlog",
-      "description": "DOJ Office of Information Policy reported median FOIA response times exceeding statutory limits at multiple agencies — with proactive disclosure pages going stale as staffing reviews continued across the executive branch.",
+      "description": "DOJ Office of Information Policy reported median FOIA response times exceeding statutory limits at multiple agencies - with proactive disclosure pages going stale as staffing reviews continued across the executive branch.",
       "severity": 7,
       "category": "Democracy",
       "impactedSectors": [
@@ -5278,14 +5278,14 @@
       "sources": [
         {
           "id": "doj_oip_foia",
-          "title": "Office of Information Policy — FOIA",
+          "title": "Office of Information Policy - FOIA",
           "publisher": "U.S. Department of Justice",
           "url": "https://www.justice.gov/oip",
           "date": "2025-01-01"
         },
         {
           "id": "foia_gov",
-          "title": "FOIA.gov — Freedom of Information Act",
+          "title": "FOIA.gov - Freedom of Information Act",
           "publisher": "U.S. Department of Justice",
           "url": "https://www.foia.gov/",
           "date": "2025-01-01"
@@ -5313,7 +5313,7 @@
       "id": "EVT-2025-1218-122",
       "date": "2025-12-18",
       "actionType": "Oversight Report",
-      "description": "GAO flagged rising improper-payment rates tied to reduced inspector general staffing — documenting how oversight vacancies weaken fraud recovery ahead of major procurement pushes.",
+      "description": "GAO flagged rising improper-payment rates tied to reduced inspector general staffing - documenting how oversight vacancies weaken fraud recovery ahead of major procurement pushes.",
       "severity": 8,
       "category": "Democracy",
       "impactedSectors": [
@@ -5362,7 +5362,7 @@
       "id": "EVT-2025-1220-123",
       "date": "2025-12-20",
       "actionType": "Spending Transparency",
-      "description": "Federal spending portals narrowed machine-readable lobbying and contract metadata fields — reducing public ability to cross-reference vendor payments with rulemaking commenters.",
+      "description": "Federal spending portals narrowed machine-readable lobbying and contract metadata fields - reducing public ability to cross-reference vendor payments with rulemaking commenters.",
       "severity": 7,
       "category": "Democracy",
       "impactedSectors": [
@@ -5413,7 +5413,7 @@
       "id": "EVT-2025-1222-124",
       "date": "2025-12-22",
       "actionType": "Press Access",
-      "description": "Multiple federal agencies curtailed routine press briefing transcripts and on-camera Q&A — limiting real-time public scrutiny of policy rollouts documented in prior CPR tracker entries.",
+      "description": "Multiple federal agencies curtailed routine press briefing transcripts and on-camera Q&A - limiting real-time public scrutiny of policy rollouts documented in prior CPR tracker entries.",
       "severity": 6,
       "category": "Democracy",
       "impactedSectors": [
@@ -5464,7 +5464,7 @@
       "id": "EVT-2025-1225-125",
       "date": "2025-12-25",
       "actionType": "Documentation Milestone",
-      "description": "Independent watchdog cross-references reached a 125-event milestone on coordinated erosion of proactive disclosure — spanning FOIA delays, lobbying log gaps, press access limits, and ethics filing extensions that SAFE-004 targets.",
+      "description": "Independent watchdog cross-references reached a 125-event milestone on coordinated erosion of proactive disclosure - spanning FOIA delays, lobbying log gaps, press access limits, and ethics filing extensions that SAFE-004 targets.",
       "severity": 9,
       "category": "Democracy",
       "impactedSectors": [
@@ -5479,14 +5479,14 @@
       "sources": [
         {
           "id": "foia_gov",
-          "title": "FOIA.gov — Freedom of Information Act",
+          "title": "FOIA.gov - Freedom of Information Act",
           "publisher": "U.S. Department of Justice",
           "url": "https://www.foia.gov/",
           "date": "2025-01-01"
         },
         {
           "id": "doj_oip_foia",
-          "title": "Office of Information Policy — FOIA",
+          "title": "Office of Information Policy - FOIA",
           "publisher": "U.S. Department of Justice",
           "url": "https://www.justice.gov/oip",
           "date": "2025-01-01"

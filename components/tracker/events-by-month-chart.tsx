@@ -30,7 +30,7 @@ export function EventsByMonthChart() {
               Month over Month
             </h3>
             <p className="mt-1 text-xs text-muted-foreground">
-              Events added per calendar month — {total} total tracked
+              Events added per calendar month - {total} total tracked
             </p>
           </div>
           {peak.count > 0 && (

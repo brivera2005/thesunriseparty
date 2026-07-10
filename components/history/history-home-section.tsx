@@ -32,7 +32,7 @@ export function HistoryHomeSection() {
               What Textbooks Teach vs. What Happened
             </h2>
             <p className="mt-3 max-w-2xl text-muted-foreground">
-              Interactive dual timeline — {stats.entries} sourced events,{" "}
+              Interactive dual timeline - {stats.entries} sourced events,{" "}
               {stats.rebuttals} historical rebuttals, scrub and compare every era.
             </p>
           </div>

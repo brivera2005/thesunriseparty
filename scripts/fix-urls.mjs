@@ -8,13 +8,13 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = join(__dirname, "..", "lib", "data");
 
 const REPLACEMENTS = {
-  // —— citations.ts whitehouse slug fixes ——
+  // -- citations.ts whitehouse slug fixes --
   "https://www.whitehouse.gov/presidential-actions/2025/01/restoring-accountability-to-policy-influence-positions-within-the-federal-workforce/":
     "https://www.whitehouse.gov/presidential-actions/2025/01/restoring-accountability-to-policy-influencing-positions-within-the-federal-workforce/",
   "https://www.whitehouse.gov/presidential-actions/2025/01/withdrawing-the-united-states-from-the-world-health-organization/":
     "https://www.federalregister.gov/documents/2025/01/29/2025-01957/withdrawing-the-united-states-from-the-world-health-organization",
 
-  // —— conversation-helpers 404 fixes ——
+  // -- conversation-helpers 404 fixes --
   "https://www.factcheck.org/2017/08/the-whataboutism-dodge/":
     "https://www.factcheck.org/2017/08/whataboutism/",
   "https://www.factcheck.org/2019/04/trumps-fine-people-quote/":
@@ -115,7 +115,7 @@ const REPLACEMENTS = {
   "https://sos.ga.gov/news/secretary-raffensperger-announces-results-2020-presidential-race-recount":
     "https://apnews.com/article/election-2020-joe-biden-donald-trump-georgia-elections-1a2ea5e8df69614f4e09b47fea581a09",
 
-  // —— second pass: verified 200-status replacements ——
+  // -- second pass: verified 200-status replacements --
   "https://williamsinstitute.law.ucla.edu/publications/sexual-assault-sex-offending/":
     "https://www.aclu.org/legislative-attacks-on-lgbtq-rights",
   "https://www.aclu.org/news/lgbtq-rights":

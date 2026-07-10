@@ -44,7 +44,7 @@ export function P2025ChapterMap() {
             </h3>
             <p className="max-w-2xl text-xs leading-relaxed text-muted-foreground">
               Our tracked events mapped to the 30 chapters of{" "}
-              <em>Mandate for Leadership: The Conservative Promise</em> — the
+              <em>Mandate for Leadership: The Conservative Promise</em> - the
               920-page Project 2025 policy guide published by the Heritage
               Foundation. {mappedTotal} events match {chaptersWithEvents} of 30
               chapters.
@@ -72,7 +72,7 @@ export function P2025ChapterMap() {
           </div>
         </div>
 
-        {/* Summary matrix — top chapters by event count */}
+        {/* Summary matrix - top chapters by event count */}
         <div className="mb-6 grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-5">
           {chapterCounts
             .filter((c) => c.count > 0)

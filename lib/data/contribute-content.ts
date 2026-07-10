@@ -11,7 +11,7 @@ import { correctionsMailto } from "./methodology-content";
 export const contributeIntro = {
   title: "Contribute to Project Sunrise",
   subtitle:
-    "This platform grows through reader submissions, corrections, and sourced rebuttals. Here's how to help — and what we need from you before we publish.",
+    "This platform grows through reader submissions, corrections, and sourced rebuttals. Here's how to help - and what we need from you before we publish.",
 };
 
 export const GITHUB_ISSUES_URL = "https://github.com/brivera2005/thesunriseparty/issues";
@@ -34,14 +34,14 @@ export const contributeSections: ContributeSection[] = [
     icon: FilePlus,
     title: "Submit a Tracker Event",
     paragraphs: [
-      "We track verifiable government actions — executive orders, agency rules, court decisions, and congressional moves tied to Project 2025 implementation. Every event needs a primary source, not a news summary alone.",
+      "We track verifiable government actions - executive orders, agency rules, court decisions, and congressional moves tied to Project 2025 implementation. Every event needs a primary source, not a news summary alone.",
       "Open a GitHub issue for structured tracker submissions, or email us if you prefer.",
     ],
     bullets: [
       "Link to the official action (whitehouse.gov, Federal Register, congress.gov, or court docket)",
       "Date the action took effect or was announced",
       "One-sentence description of democratic impact",
-      "Suggested severity (1–10) with reasoning",
+      "Suggested severity (1-10) with reasoning",
       "Cross-reference to an independent tracker if available",
     ],
     cta: {
@@ -79,7 +79,7 @@ export const contributeSections: ContributeSection[] = [
       "A concise, fact-based response (not a rant)",
       "Difficulty tag: easy, medium, or hard",
       "Category fit (economy, immigration, democracy, etc.)",
-      "Sources: CRS, GAO, CBO, agency data, court opinions — not partisan blogs",
+      "Sources: CRS, GAO, CBO, agency data, court opinions - not partisan blogs",
     ],
     cta: {
       label: "Email a rebuttal idea",
@@ -91,7 +91,7 @@ export const contributeSections: ContributeSection[] = [
     icon: GitPullRequest,
     title: "Editorial Standards",
     paragraphs: [
-      "We don't publish unsourced claims, anonymous tips, or content designed to harass individuals. Submissions are reviewed against our methodology — sourcing tiers, Wayback archiving, and severity scoring rubric — before going live.",
+      "We don't publish unsourced claims, anonymous tips, or content designed to harass individuals. Submissions are reviewed against our methodology - sourcing tiers, Wayback archiving, and severity scoring rubric - before going live.",
       "Read the full research standards before submitting. If your source wouldn't survive a citation modal click-through, we won't publish it.",
     ],
     cta: {
