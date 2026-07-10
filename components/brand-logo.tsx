@@ -15,19 +15,20 @@ type BrandLogoProps = {
 
 const sizeMap = {
   hero: {
-    width: 480,
-    height: 262,
-    className: "h-auto w-[min(100%,200px)] sm:w-[220px] md:w-[240px] lg:w-[280px]",
+    width: 640,
+    height: 349,
+    className:
+      "h-auto w-[min(100%,280px)] sm:w-[320px] md:w-[380px] lg:w-[440px]",
   },
   header: {
-    width: 240,
-    height: 131,
-    className: "h-12 w-auto sm:h-14 md:h-16",
+    width: 320,
+    height: 174,
+    className: "h-14 w-auto sm:h-16 md:h-20 lg:h-24",
   },
   footer: {
-    width: 200,
-    height: 109,
-    className: "h-auto w-[140px] sm:w-[160px]",
+    width: 220,
+    height: 120,
+    className: "h-auto w-[150px] sm:w-[170px]",
   },
 } as const;
 

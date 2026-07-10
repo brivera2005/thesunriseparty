@@ -5,7 +5,7 @@ import { defaultOg, SITE_URL } from "@/lib/metadata";
 export const metadata: Metadata = {
   title: "Hidden History | Project Sunrise",
   description:
-    "A People's History - suppressed stories American schools never taught. Sourced accounts of coups, massacres, labor struggles, and state violence.",
+    "Suppressed history: stories American schools often skip. Sourced accounts of coups, massacres, labor struggles, and state violence.",
   openGraph: {
     title: "Hidden History - What Schools Don't Teach",
     description:

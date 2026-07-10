@@ -72,6 +72,12 @@ export const sitemapSections: SitemapSection[] = [
         description: "Transparency pledge and why Project Sunrise exists.",
       },
       {
+        href: "/donate",
+        label: "Donate",
+        description: "Support hosting, research, and transparency tools.",
+        badge: "New",
+      },
+      {
         href: "/methodology",
         label: "Research Methodology",
         description: "How we source, score, and verify every claim.",

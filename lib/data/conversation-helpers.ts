@@ -6801,21 +6801,13 @@ export const conversationHelpers: ConversationHelper[] = [
     relatedClaims: ["link-check-theater", "infra-pass-distraction"],
   },
   {
-    id: "zinn-brainwashing",
+    id: "suppressed-history-brainwashing",
     category: ["Education", "Culture Wars"],
-    theySay: "People's History is Marxist brainwashing!",
+    theySay: "People's history is Marxist brainwashing!",
     youSay:
-      "Howard Zinn compiled primary sources - letters, congressional records, survivor testimony - into a narrative textbooks ignored. Calling documented history 'brainwashing' is how you avoid answering why Operation Ajax, Tulsa, and COINTELPRO were left out of your curriculum. Read the footnotes; argue with the archives.",
+      "Suppressed history is built from primary sources: letters, congressional records, survivor testimony, and declassified files textbooks often skip. Calling documented history 'brainwashing' is how you avoid answering why Operation Ajax, Tulsa, and COINTELPRO were left out of your curriculum. Read the footnotes; argue with the archives.",
     stab: "You can't debunk a congressional record by calling it woke.",
     sources: [
-      cite(
-        "zinn_archives",
-        "Howard Zinn",
-        "Howard Zinn Digital Collection",
-        "https://en.wikipedia.org/wiki/Howard_Zinn",
-        "Zinn was a historian whose work cited government and archival records.",
-        "2024-06-01"
-      ),
       cite(
         "archives_education",
         "National Archives Education",
@@ -6823,6 +6815,14 @@ export const conversationHelpers: ConversationHelper[] = [
         "https://www.archives.gov/education",
         "Federal archives publish primary sources for classroom use.",
         "2020-01-01"
+      ),
+      cite(
+        "loc_teachers",
+        "Teachers",
+        "Library of Congress",
+        "https://www.loc.gov/teachers/",
+        "The Library of Congress provides primary-source teaching materials on U.S. history.",
+        "2024-01-01"
       ),
     ],
     difficulty: "medium",
@@ -7639,6 +7639,342 @@ export const conversationHelpers: ConversationHelper[] = [
     ],
     difficulty: "easy",
     relatedClaims: ["link-check-theater", "numbers-are-made-up"],
+  },
+  {
+    id: "unions-obsolete",
+    category: ["Economy"],
+    theySay: "Unions are obsolete - workers don't need them!",
+    youSay:
+      "Union membership correlates with higher wages, safer workplaces, and lower inequality. BLS data still shows union workers earn more on average. Right-to-work laws and Taft-Hartley weakened organizing; that is policy, not obsolescence. If unions were useless, corporations would not spend millions fighting them.",
+    stab: "Bosses love calling unions obsolete right before the next wage cut.",
+    sources: [
+      cite(
+        "bls_union",
+        "Union Members Summary",
+        "Bureau of Labor Statistics",
+        "https://www.bls.gov/news.release/union2.nr0.htm",
+        "BLS reports union membership rates and wage differentials.",
+        "2024-01-23"
+      ),
+      cite(
+        "nlrb_about",
+        "National Labor Relations Board",
+        "Wikipedia",
+        "https://en.wikipedia.org/wiki/National_Labor_Relations_Board",
+        "The NLRB enforces private-sector collective bargaining rights.",
+        "2024-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["minimum-wage-kills-jobs", "trickle-down-works"],
+  },
+  {
+    id: "lgbtq-new-fad",
+    category: ["Culture Wars", "Education"],
+    theySay: "LGBTQ identity is a new fad pushed on kids!",
+    youSay:
+      "Same-sex attraction and gender diversity appear across cultures and centuries. What is new is visibility and legal protection after decades of criminalization, the Lavender Scare, and Don't Ask Don't Tell. Calling existence a fad is how you erase people who were always here.",
+    stab: "History didn't invent queer people in 2015. Textbooks just stopped erasing them.",
+    sources: [
+      cite(
+        "aclu_lgbtq",
+        "LGBTQ Rights",
+        "American Civil Liberties Union",
+        "https://www.aclu.org/issues/lgbtq-rights",
+        "ACLU documents LGBTQ legal history and ongoing rights fights.",
+        "2024-01-01"
+      ),
+      cite(
+        "stonewall_nps_r",
+        "Stonewall",
+        "National Park Service",
+        "https://www.nps.gov/places/stonewall.htm",
+        "NPS recognizes Stonewall as a landmark of LGBTQ civil rights history.",
+        "1969-06-28"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["suppressed-history-brainwashing", "teacher-grooming"],
+  },
+  {
+    id: "dark-money-free-speech",
+    category: ["Democracy", "Elections"],
+    theySay: "Dark money is free speech - stop attacking donors!",
+    youSay:
+      "Speech is not the same as secret billion-dollar influence. OpenSecrets documents 501(c)(4) spending that hides funders while shaping elections. Disclosure does not ban speech; it lets voters know who is buying the megaphone.",
+    stab: "If your argument needs anonymity and a super PAC, it is not a town-hall debate.",
+    sources: [
+      cite(
+        "opensecrets_dark",
+        "Dark Money Basics",
+        "OpenSecrets",
+        "https://www.opensecrets.org/news/2014/05/dark-money-basics/",
+        "OpenSecrets explains how dark money groups spend without naming donors.",
+        "2014-05-01"
+      ),
+      cite(
+        "fec_help",
+        "Campaign Finance Disclosure",
+        "Federal Election Commission",
+        "https://www.fec.gov/help-candidates-and-committees/",
+        "FEC rules require disclosure for many political committees.",
+        "2024-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["citizens-united-freedom", "money-is-speech"],
+  },
+  {
+    id: "climate-china-excuse",
+    category: ["Climate", "Foreign Policy"],
+    theySay: "Why act on climate when China pollutes more?",
+    youSay:
+      "The U.S. is still among the top historical emitters, and American policy shapes technology markets worldwide. EPA rules and IRA investments cut domestic emissions while competing on clean tech. 'China first' is a stall tactic that freezes U.S. jobs and air quality.",
+    stab: "Your lungs do not care which flag is on the smokestack.",
+    sources: [
+      cite(
+        "epa_ira",
+        "Inflation Reduction Act",
+        "Environmental Protection Agency",
+        "https://www.epa.gov/green-power-markets/inflation-reduction-act",
+        "EPA summarizes IRA clean energy and climate investments.",
+        "2023-01-01"
+      ),
+      cite(
+        "epa_methane",
+        "Methane and Oil and Gas Rules",
+        "Environmental Protection Agency",
+        "https://www.epa.gov/controlling-air-pollution-oil-and-natural-gas-operations",
+        "EPA regulates methane from oil and gas operations.",
+        "2024-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["climate-hoax", "green-new-deal-cost"],
+  },
+  {
+    id: "abortion-states-rights-only",
+    category: ["Healthcare", "Courts"],
+    theySay: "Abortion is just states' rights now - democracy won!",
+    youSay:
+      "Dobbs returned regulation to states, then many states banned care and criminalized providers. Guttmacher tracks cascading restrictions that travel across state lines. Calling that 'democracy' ignores patients who lose emergency care and equal protection.",
+    stab: "States' rights was also the slogan for Jim Crow. Outcomes matter.",
+    sources: [
+      cite(
+        "guttmacher_state",
+        "State Policy",
+        "Guttmacher Institute",
+        "https://www.guttmacher.org/state-policy",
+        "Guttmacher tracks state abortion and reproductive health policies.",
+        "2024-01-01"
+      ),
+      cite(
+        "cdc_repro",
+        "Reproductive Health Data",
+        "Centers for Disease Control and Prevention",
+        "https://www.cdc.gov/reproductive-health/data-statistics/",
+        "CDC publishes reproductive health surveillance data.",
+        "2024-01-01"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["roe-was-undemocratic", "pro-life-consistency"],
+  },
+  {
+    id: "immigrants-crime-wave",
+    category: ["Immigration", "Crime"],
+    theySay: "Immigrants are driving a crime wave!",
+    youSay:
+      "BJS and major city data repeatedly show immigrants have lower crime rates than native-born residents on average. Anecdotes are not a national crime wave. Policy should target actual offenders, not entire communities.",
+    stab: "Fear is not a crime statistic.",
+    sources: [
+      cite(
+        "bjs_home",
+        "Bureau of Justice Statistics",
+        "U.S. Department of Justice",
+        "https://bjs.ojp.gov/",
+        "BJS publishes national crime and victimization statistics.",
+        "2024-01-01"
+      ),
+      cite(
+        "bjs_victim",
+        "Criminal Victimization 2023",
+        "Bureau of Justice Statistics",
+        "https://bjs.ojp.gov/library/publications/criminal-victimization-2023",
+        "National Crime Victimization Survey reports recent victimization trends.",
+        "2024-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["border-invasion", "sanctuary-cities-chaos"],
+  },
+  {
+    id: "project-2025-just-ideas",
+    category: ["Democracy", "Media"],
+    theySay: "Project 2025 is just a think-tank wishlist!",
+    youSay:
+      "Heritage published a 900-page governing plan with agency-by-agency staffing and Schedule F civil service purges. Multiple trackers document executive actions that match those chapters. Ideas become policy when people with power implement them.",
+    stab: "A wishlist with org charts and personnel lists is a playbook.",
+    sources: [
+      cite(
+        "heritage_p2025",
+        "Mandate for Leadership",
+        "Heritage Foundation",
+        "https://www.project2025.org/",
+        "Heritage promotes Project 2025 Mandate for Leadership.",
+        "2023-01-01"
+      ),
+      cite(
+        "aclu_p2025",
+        "Project 2025 Explained",
+        "American Civil Liberties Union",
+        "https://www.aclu.org/project-2025-explained",
+        "ACLU summarizes Project 2025 proposals and civil liberties risks.",
+        "2024-01-01"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["project-2025-doesnt-exist", "schedule-f-harmless"],
+  },
+  {
+    id: "teachers-indoctrinate",
+    category: ["Education", "Culture Wars"],
+    theySay: "Teachers are indoctrinating kids with radical history!",
+    youSay:
+      "Teaching primary sources about slavery, labor, and civil rights is education, not indoctrination. PEN America documents book bans that remove those materials. If a lesson cites the National Archives, argue with the document, not the teacher.",
+    stab: "Your kid learning about Tulsa is not a conspiracy. Hiding Tulsa is.",
+    sources: [
+      cite(
+        "pen_bans",
+        "Banned in the USA",
+        "PEN America",
+        "https://pen.org/report/banned-in-the-usa/",
+        "PEN America tracks coordinated school book bans.",
+        "2021-01-01"
+      ),
+      cite(
+        "archives_edu_r",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Federal archives provide primary sources for classrooms.",
+        "2020-01-01"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["suppressed-history-brainwashing", "crt-schools"],
+  },
+  {
+    id: "billionaires-job-creators",
+    category: ["Economy"],
+    theySay: "Billionaires are the real job creators!",
+    youSay:
+      "Workers, customers, and public infrastructure create value. Billionaire wealth often comes from monopoly rents, stock buybacks, and inherited capital, not a personal hiring fairy. If tax cuts for the top automatically made jobs, Kansas and federal trickle-down experiments would have proven it.",
+    stab: "Your paycheck comes from work. Their yacht comes from capture.",
+    sources: [
+      cite(
+        "bls_cps",
+        "Current Population Survey",
+        "Bureau of Labor Statistics",
+        "https://www.bls.gov/cps/",
+        "BLS labor force data tracks employment and wages.",
+        "2024-01-01"
+      ),
+      cite(
+        "kansas_experiment",
+        "Kansas experiment",
+        "Wikipedia",
+        "https://en.wikipedia.org/wiki/Kansas_experiment",
+        "Kansas tax-cut experiment failed to deliver promised growth.",
+        "2012-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["trickle-down-works", "tax-the-rich-punishment"],
+  },
+  {
+    id: "foia-deep-state",
+    category: ["Democracy", "Media"],
+    theySay: "FOIA and watchdogs are the deep state!",
+    youSay:
+      "FOIA is a statute Congress passed so citizens can request records. Inspectors general and GAO exist to audit power, not to plot coups. Calling transparency tools a conspiracy is how authoritarians redefine oversight as disloyalty.",
+    stab: "Sunlight is not a cabal.",
+    sources: [
+      cite(
+        "doj_oip",
+        "Office of Information Policy",
+        "U.S. Department of Justice",
+        "https://www.justice.gov/oip",
+        "DOJ OIP guides federal FOIA compliance.",
+        "2024-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO audits federal programs for Congress and the public.",
+        "2024-01-01"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["deep-state", "media-enemy"],
+  },
+  {
+    id: "voting-id-only-common-sense",
+    category: ["Elections", "Democracy"],
+    theySay: "Voter ID is just common sense - you need ID to fly!",
+    youSay:
+      "Flying is optional; voting is a constitutional right. Strict ID laws disproportionately burden elderly, poor, and minority voters who already face registration hurdles. Secure elections need paper trails and audits, not turnout suppression dressed as airport rules.",
+    stab: "Boarding a plane is not the Fifteenth Amendment.",
+    sources: [
+      cite(
+        "crs_voting",
+        "Voting and Elections",
+        "Congressional Research Service",
+        "https://www.congress.gov/crs-product/R46727",
+        "CRS analyzes election administration and voting access issues.",
+        "2024-01-01"
+      ),
+      cite(
+        "aclu_imm",
+        "Immigrants' Rights",
+        "American Civil Liberties Union",
+        "https://www.aclu.org/issues/immigrants-rights",
+        "ACLU documents civil rights impacts of restrictive ID and voting rules.",
+        "2024-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["election-fraud-widespread", "mail-ballots-fraud"],
+  },
+  {
+    id: "hosting-is-bias",
+    category: ["Media", "Democracy"],
+    theySay: "Your site is biased because it has a point of view!",
+    youSay:
+      "Every civic project has values. Ours are transparency, primary sources, and anti-authoritarian democracy. Bias without receipts is propaganda; we publish citations, archives, and open JSON so you can check the work.",
+    stab: "Having standards is not the same as hiding evidence.",
+    sources: [
+      cite(
+        "gao_evidence2",
+        "Evidence-Based Policymaking",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO promotes evidence standards in public policy.",
+        "2024-01-01"
+      ),
+      cite(
+        "archives_edu2",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources let readers verify claims independently.",
+        "2020-01-01"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["pass22-rebuttal-count", "link-check-theater"],
   },
 ];
 

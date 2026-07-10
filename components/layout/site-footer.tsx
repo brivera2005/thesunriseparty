@@ -13,6 +13,7 @@ const sitePages = [
   { href: "/start", label: "Start Here" },
   { href: "/sitemap", label: "Site Map" },
   { href: "/mission", label: "Our Mission" },
+  { href: "/donate", label: "Donate" },
   { href: "/methodology", label: "Methodology" },
   { href: "/events", label: "Events Hub" },
   { href: "/tracker", label: "Project 2025 Tracker" },
@@ -32,13 +33,12 @@ export function SiteFooter() {
 
   return (
     <footer className="border-t border-border bg-muted/30">
-      <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-5">
+      <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-12">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-5 lg:gap-10">
           <div className="lg:col-span-2">
-            <Link href="/" className="mb-4 inline-block">
+            <Link href="/" className="mb-3 inline-block" aria-label="Project Sunrise home">
               <BrandLogo variant="footer" />
             </Link>
-            <h3 className="mb-3 text-lg font-bold">Project Sunrise</h3>
             <p className="text-sm leading-relaxed text-muted-foreground">
               Evidence-based tracking of authoritarian policy. Progressive
               legislative vision for when democracy wins. Every claim sourced.

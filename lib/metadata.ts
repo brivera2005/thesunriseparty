@@ -132,4 +132,17 @@ export const sectionOg = {
       },
     ],
   },
+  donate: {
+    title: "Donate | Project Sunrise",
+    description:
+      "Support hosting, research, and transparency tools that keep Project Sunrise free and sourced.",
+    images: [
+      {
+        url: `${SITE_URL}/og/sunrise-default.svg`,
+        width: 1200,
+        height: 630,
+        alt: "Project Sunrise - Donate",
+      },
+    ],
+  },
 };

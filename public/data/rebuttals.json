@@ -1,8 +1,8 @@
 {
   "meta": {
     "site": "https://thesunriseparty.pages.dev",
-    "generated": "2026-07-10T15:58:59.150Z",
-    "count": 271,
+    "generated": "2026-07-10T16:14:20.309Z",
+    "count": 283,
     "license": "CC-BY-4.0 - cite Project Sunrise (thesunriseparty.pages.dev)"
   },
   "rebuttals": [
@@ -7672,34 +7672,34 @@
       ]
     },
     {
-      "id": "zinn-brainwashing",
+      "id": "suppressed-history-brainwashing",
       "categories": [
         "Education",
         "Culture Wars"
       ],
-      "theySay": "People's History is Marxist brainwashing!",
-      "youSay": "Howard Zinn compiled primary sources - letters, congressional records, survivor testimony - into a narrative textbooks ignored. Calling documented history 'brainwashing' is how you avoid answering why Operation Ajax, Tulsa, and COINTELPRO were left out of your curriculum. Read the footnotes; argue with the archives.",
+      "theySay": "People's history is Marxist brainwashing!",
+      "youSay": "Suppressed history is built from primary sources: letters, congressional records, survivor testimony, and declassified files textbooks often skip. Calling documented history 'brainwashing' is how you avoid answering why Operation Ajax, Tulsa, and COINTELPRO were left out of your curriculum. Read the footnotes; argue with the archives.",
       "stab": "You can't debunk a congressional record by calling it woke.",
       "difficulty": "medium",
       "relatedClaims": [
         "crt-schools",
         "teacher-grooming"
       ],
-      "url": "https://thesunriseparty.pages.dev/rebuttal/zinn-brainwashing",
+      "url": "https://thesunriseparty.pages.dev/rebuttal/suppressed-history-brainwashing",
       "sources": [
-        {
-          "id": "zinn_archives",
-          "title": "Howard Zinn",
-          "publisher": "Howard Zinn Digital Collection",
-          "url": "https://en.wikipedia.org/wiki/Howard_Zinn",
-          "date": "2024-06-01"
-        },
         {
           "id": "archives_education",
           "title": "National Archives Education",
           "publisher": "National Archives",
           "url": "https://www.archives.gov/education",
           "date": "2020-01-01"
+        },
+        {
+          "id": "loc_teachers",
+          "title": "Teachers",
+          "publisher": "Library of Congress",
+          "url": "https://www.loc.gov/teachers/",
+          "date": "2024-01-01"
         }
       ]
     },
@@ -8620,6 +8620,388 @@
           "publisher": "U.S. Government Accountability Office",
           "url": "https://www.gao.gov/about/what-gao-does",
           "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "unions-obsolete",
+      "categories": [
+        "Economy"
+      ],
+      "theySay": "Unions are obsolete - workers don't need them!",
+      "youSay": "Union membership correlates with higher wages, safer workplaces, and lower inequality. BLS data still shows union workers earn more on average. Right-to-work laws and Taft-Hartley weakened organizing; that is policy, not obsolescence. If unions were useless, corporations would not spend millions fighting them.",
+      "stab": "Bosses love calling unions obsolete right before the next wage cut.",
+      "difficulty": "medium",
+      "relatedClaims": [
+        "minimum-wage-kills-jobs",
+        "trickle-down-works"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/unions-obsolete",
+      "sources": [
+        {
+          "id": "bls_union",
+          "title": "Union Members Summary",
+          "publisher": "Bureau of Labor Statistics",
+          "url": "https://www.bls.gov/news.release/union2.nr0.htm",
+          "date": "2024-01-23"
+        },
+        {
+          "id": "nlrb_about",
+          "title": "National Labor Relations Board",
+          "publisher": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/National_Labor_Relations_Board",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "lgbtq-new-fad",
+      "categories": [
+        "Culture Wars",
+        "Education"
+      ],
+      "theySay": "LGBTQ identity is a new fad pushed on kids!",
+      "youSay": "Same-sex attraction and gender diversity appear across cultures and centuries. What is new is visibility and legal protection after decades of criminalization, the Lavender Scare, and Don't Ask Don't Tell. Calling existence a fad is how you erase people who were always here.",
+      "stab": "History didn't invent queer people in 2015. Textbooks just stopped erasing them.",
+      "difficulty": "easy",
+      "relatedClaims": [
+        "suppressed-history-brainwashing",
+        "teacher-grooming"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/lgbtq-new-fad",
+      "sources": [
+        {
+          "id": "aclu_lgbtq",
+          "title": "LGBTQ Rights",
+          "publisher": "American Civil Liberties Union",
+          "url": "https://www.aclu.org/issues/lgbtq-rights",
+          "date": "2024-01-01"
+        },
+        {
+          "id": "stonewall_nps_r",
+          "title": "Stonewall",
+          "publisher": "National Park Service",
+          "url": "https://www.nps.gov/places/stonewall.htm",
+          "date": "1969-06-28"
+        }
+      ]
+    },
+    {
+      "id": "dark-money-free-speech",
+      "categories": [
+        "Democracy",
+        "Elections"
+      ],
+      "theySay": "Dark money is free speech - stop attacking donors!",
+      "youSay": "Speech is not the same as secret billion-dollar influence. OpenSecrets documents 501(c)(4) spending that hides funders while shaping elections. Disclosure does not ban speech; it lets voters know who is buying the megaphone.",
+      "stab": "If your argument needs anonymity and a super PAC, it is not a town-hall debate.",
+      "difficulty": "medium",
+      "relatedClaims": [
+        "citizens-united-freedom",
+        "money-is-speech"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/dark-money-free-speech",
+      "sources": [
+        {
+          "id": "opensecrets_dark",
+          "title": "Dark Money Basics",
+          "publisher": "OpenSecrets",
+          "url": "https://www.opensecrets.org/news/2014/05/dark-money-basics/",
+          "date": "2014-05-01"
+        },
+        {
+          "id": "fec_help",
+          "title": "Campaign Finance Disclosure",
+          "publisher": "Federal Election Commission",
+          "url": "https://www.fec.gov/help-candidates-and-committees/",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "climate-china-excuse",
+      "categories": [
+        "Climate",
+        "Foreign Policy"
+      ],
+      "theySay": "Why act on climate when China pollutes more?",
+      "youSay": "The U.S. is still among the top historical emitters, and American policy shapes technology markets worldwide. EPA rules and IRA investments cut domestic emissions while competing on clean tech. 'China first' is a stall tactic that freezes U.S. jobs and air quality.",
+      "stab": "Your lungs do not care which flag is on the smokestack.",
+      "difficulty": "medium",
+      "relatedClaims": [
+        "climate-hoax",
+        "green-new-deal-cost"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/climate-china-excuse",
+      "sources": [
+        {
+          "id": "epa_ira",
+          "title": "Inflation Reduction Act",
+          "publisher": "Environmental Protection Agency",
+          "url": "https://www.epa.gov/green-power-markets/inflation-reduction-act",
+          "date": "2023-01-01"
+        },
+        {
+          "id": "epa_methane",
+          "title": "Methane and Oil and Gas Rules",
+          "publisher": "Environmental Protection Agency",
+          "url": "https://www.epa.gov/controlling-air-pollution-oil-and-natural-gas-operations",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "abortion-states-rights-only",
+      "categories": [
+        "Healthcare",
+        "Courts"
+      ],
+      "theySay": "Abortion is just states' rights now - democracy won!",
+      "youSay": "Dobbs returned regulation to states, then many states banned care and criminalized providers. Guttmacher tracks cascading restrictions that travel across state lines. Calling that 'democracy' ignores patients who lose emergency care and equal protection.",
+      "stab": "States' rights was also the slogan for Jim Crow. Outcomes matter.",
+      "difficulty": "hard",
+      "relatedClaims": [
+        "roe-was-undemocratic",
+        "pro-life-consistency"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/abortion-states-rights-only",
+      "sources": [
+        {
+          "id": "guttmacher_state",
+          "title": "State Policy",
+          "publisher": "Guttmacher Institute",
+          "url": "https://www.guttmacher.org/state-policy",
+          "date": "2024-01-01"
+        },
+        {
+          "id": "cdc_repro",
+          "title": "Reproductive Health Data",
+          "publisher": "Centers for Disease Control and Prevention",
+          "url": "https://www.cdc.gov/reproductive-health/data-statistics/",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "immigrants-crime-wave",
+      "categories": [
+        "Immigration",
+        "Crime"
+      ],
+      "theySay": "Immigrants are driving a crime wave!",
+      "youSay": "BJS and major city data repeatedly show immigrants have lower crime rates than native-born residents on average. Anecdotes are not a national crime wave. Policy should target actual offenders, not entire communities.",
+      "stab": "Fear is not a crime statistic.",
+      "difficulty": "medium",
+      "relatedClaims": [
+        "border-invasion",
+        "sanctuary-cities-chaos"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/immigrants-crime-wave",
+      "sources": [
+        {
+          "id": "bjs_home",
+          "title": "Bureau of Justice Statistics",
+          "publisher": "U.S. Department of Justice",
+          "url": "https://bjs.ojp.gov/",
+          "date": "2024-01-01"
+        },
+        {
+          "id": "bjs_victim",
+          "title": "Criminal Victimization 2023",
+          "publisher": "Bureau of Justice Statistics",
+          "url": "https://bjs.ojp.gov/library/publications/criminal-victimization-2023",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "project-2025-just-ideas",
+      "categories": [
+        "Democracy",
+        "Media"
+      ],
+      "theySay": "Project 2025 is just a think-tank wishlist!",
+      "youSay": "Heritage published a 900-page governing plan with agency-by-agency staffing and Schedule F civil service purges. Multiple trackers document executive actions that match those chapters. Ideas become policy when people with power implement them.",
+      "stab": "A wishlist with org charts and personnel lists is a playbook.",
+      "difficulty": "easy",
+      "relatedClaims": [
+        "project-2025-doesnt-exist",
+        "schedule-f-harmless"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/project-2025-just-ideas",
+      "sources": [
+        {
+          "id": "heritage_p2025",
+          "title": "Mandate for Leadership",
+          "publisher": "Heritage Foundation",
+          "url": "https://www.project2025.org/",
+          "date": "2023-01-01"
+        },
+        {
+          "id": "aclu_p2025",
+          "title": "Project 2025 Explained",
+          "publisher": "American Civil Liberties Union",
+          "url": "https://www.aclu.org/project-2025-explained",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "teachers-indoctrinate",
+      "categories": [
+        "Education",
+        "Culture Wars"
+      ],
+      "theySay": "Teachers are indoctrinating kids with radical history!",
+      "youSay": "Teaching primary sources about slavery, labor, and civil rights is education, not indoctrination. PEN America documents book bans that remove those materials. If a lesson cites the National Archives, argue with the document, not the teacher.",
+      "stab": "Your kid learning about Tulsa is not a conspiracy. Hiding Tulsa is.",
+      "difficulty": "easy",
+      "relatedClaims": [
+        "suppressed-history-brainwashing",
+        "crt-schools"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/teachers-indoctrinate",
+      "sources": [
+        {
+          "id": "pen_bans",
+          "title": "Banned in the USA",
+          "publisher": "PEN America",
+          "url": "https://pen.org/report/banned-in-the-usa/",
+          "date": "2021-01-01"
+        },
+        {
+          "id": "archives_edu_r",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        }
+      ]
+    },
+    {
+      "id": "billionaires-job-creators",
+      "categories": [
+        "Economy"
+      ],
+      "theySay": "Billionaires are the real job creators!",
+      "youSay": "Workers, customers, and public infrastructure create value. Billionaire wealth often comes from monopoly rents, stock buybacks, and inherited capital, not a personal hiring fairy. If tax cuts for the top automatically made jobs, Kansas and federal trickle-down experiments would have proven it.",
+      "stab": "Your paycheck comes from work. Their yacht comes from capture.",
+      "difficulty": "medium",
+      "relatedClaims": [
+        "trickle-down-works",
+        "tax-the-rich-punishment"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/billionaires-job-creators",
+      "sources": [
+        {
+          "id": "bls_cps",
+          "title": "Current Population Survey",
+          "publisher": "Bureau of Labor Statistics",
+          "url": "https://www.bls.gov/cps/",
+          "date": "2024-01-01"
+        },
+        {
+          "id": "kansas_experiment",
+          "title": "Kansas experiment",
+          "publisher": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Kansas_experiment",
+          "date": "2012-01-01"
+        }
+      ]
+    },
+    {
+      "id": "foia-deep-state",
+      "categories": [
+        "Democracy",
+        "Media"
+      ],
+      "theySay": "FOIA and watchdogs are the deep state!",
+      "youSay": "FOIA is a statute Congress passed so citizens can request records. Inspectors general and GAO exist to audit power, not to plot coups. Calling transparency tools a conspiracy is how authoritarians redefine oversight as disloyalty.",
+      "stab": "Sunlight is not a cabal.",
+      "difficulty": "easy",
+      "relatedClaims": [
+        "deep-state",
+        "media-enemy"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/foia-deep-state",
+      "sources": [
+        {
+          "id": "doj_oip",
+          "title": "Office of Information Policy",
+          "publisher": "U.S. Department of Justice",
+          "url": "https://www.justice.gov/oip",
+          "date": "2024-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "voting-id-only-common-sense",
+      "categories": [
+        "Elections",
+        "Democracy"
+      ],
+      "theySay": "Voter ID is just common sense - you need ID to fly!",
+      "youSay": "Flying is optional; voting is a constitutional right. Strict ID laws disproportionately burden elderly, poor, and minority voters who already face registration hurdles. Secure elections need paper trails and audits, not turnout suppression dressed as airport rules.",
+      "stab": "Boarding a plane is not the Fifteenth Amendment.",
+      "difficulty": "medium",
+      "relatedClaims": [
+        "election-fraud-widespread",
+        "mail-ballots-fraud"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/voting-id-only-common-sense",
+      "sources": [
+        {
+          "id": "crs_voting",
+          "title": "Voting and Elections",
+          "publisher": "Congressional Research Service",
+          "url": "https://www.congress.gov/crs-product/R46727",
+          "date": "2024-01-01"
+        },
+        {
+          "id": "aclu_imm",
+          "title": "Immigrants' Rights",
+          "publisher": "American Civil Liberties Union",
+          "url": "https://www.aclu.org/issues/immigrants-rights",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "hosting-is-bias",
+      "categories": [
+        "Media",
+        "Democracy"
+      ],
+      "theySay": "Your site is biased because it has a point of view!",
+      "youSay": "Every civic project has values. Ours are transparency, primary sources, and anti-authoritarian democracy. Bias without receipts is propaganda; we publish citations, archives, and open JSON so you can check the work.",
+      "stab": "Having standards is not the same as hiding evidence.",
+      "difficulty": "easy",
+      "relatedClaims": [
+        "pass22-rebuttal-count",
+        "link-check-theater"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/hosting-is-bias",
+      "sources": [
+        {
+          "id": "gao_evidence2",
+          "title": "Evidence-Based Policymaking",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        },
+        {
+          "id": "archives_edu2",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
         }
       ]
     }

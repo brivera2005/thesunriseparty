@@ -8,6 +8,17 @@ export interface ChangelogEntry {
 /** Site iteration history - meta transparency for Project Sunrise builds */
 export const changelog: ChangelogEntry[] = [
   {
+    version: "0.25.0",
+    date: "2026-07-10",
+    title: "Pass 25 - Logo-first header, Donate, history expansion",
+    highlights: [
+      "Header is logo-only with a larger mark; removed Ctrl+K badge and Tracker/Blueprint mode toggle",
+      "New /donate page with support channels (Stripe/ActBlue/Open Collective coming soon)",
+      "Hidden History expanded to 60+ dual-timeline entries; Howard Zinn attributions removed",
+      "Mobile density pass: 44px touch targets, compact cards, phone-first history list",
+    ],
+  },
+  {
     version: "0.21.0",
     date: "2026-07-06",
     title: "Pass 21 - Infrastructure & polish",

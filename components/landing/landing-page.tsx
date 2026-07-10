@@ -142,35 +142,30 @@ export function LandingPage() {
         {/* 1. Hero */}
         <section className="relative overflow-hidden border-b border-border bg-white">
           <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,_oklch(0.97_0.04_75)_0%,_#ffffff_55%)]" />
-          <div className="relative mx-auto flex max-w-6xl flex-col items-center px-4 py-16 text-center sm:px-6 sm:py-24 lg:py-28">
+          <div className="relative mx-auto flex max-w-6xl flex-col items-center px-4 py-10 text-center sm:px-6 sm:py-16 lg:py-20">
             <FadeIn>
+              <h1 className="sr-only">Project Sunrise</h1>
               <BrandLogo variant="hero" priority />
             </FadeIn>
             <FadeIn delay={80}>
-              <h1 className="mt-8 text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-                Project Sunrise
-              </h1>
-              <p className="mt-4 text-lg font-medium tracking-wide text-primary sm:text-xl">
-                A New Beginning. Restoring Democracy.
-              </p>
-              <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
+              <p className="mx-auto mt-6 max-w-xl text-sm leading-relaxed text-muted-foreground sm:mt-8 sm:max-w-2xl sm:text-base">
                 Track the authoritarian agenda with primary sources. Arm
                 yourself with sourced rebuttals. Build the progressive
                 counter-vision. Every claim cited. Every link archived.
               </p>
             </FadeIn>
             <FadeIn delay={160}>
-              <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+              <div className="mt-6 flex flex-wrap items-center justify-center gap-2.5 sm:mt-8 sm:gap-3">
                 <Link
                   href="/start"
-                  className="inline-flex h-11 items-center gap-2 rounded-lg bg-primary px-6 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 hover:shadow-md"
+                  className="inline-flex h-11 min-w-[44px] items-center gap-2 rounded-lg bg-primary px-5 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 hover:shadow-md sm:px-6"
                 >
                   <Compass className="size-4" />
                   Start here
                 </Link>
                 <Link
                   href="/rebuttal"
-                  className="inline-flex h-11 items-center gap-2 rounded-lg border border-border bg-white px-6 text-sm font-semibold transition-all hover:border-sunrise/50 hover:bg-sunrise/5"
+                  className="inline-flex h-11 min-w-[44px] items-center gap-2 rounded-lg border border-border bg-white px-5 text-sm font-semibold transition-all hover:border-sunrise/50 hover:bg-sunrise/5 sm:px-6"
                 >
                   <MessageSquareQuote className="size-4 text-sunrise" />
                   Open Rebuttal Desk
@@ -182,39 +177,39 @@ export function LandingPage() {
 
         {/* 2. Platform overview */}
         <section
-          className="border-b border-border bg-white py-16 sm:py-20"
+          className="border-b border-border bg-white py-10 sm:py-16"
           aria-label="Platform overview"
         >
           <div className="mx-auto max-w-6xl px-4 sm:px-6">
             <FadeIn>
-              <div className="mb-10 text-center">
+              <div className="mb-6 text-center sm:mb-8">
                 <p className="text-xs font-semibold tracking-[0.25em] text-primary uppercase">
                   Explore the platform
                 </p>
-                <h2 className="mt-2 text-2xl font-bold tracking-tight sm:text-3xl">
+                <h2 className="mt-2 text-xl font-bold tracking-tight sm:text-3xl">
                   Everything you need in one place
                 </h2>
-                <p className="mx-auto mt-3 max-w-xl text-muted-foreground">
+                <p className="mx-auto mt-2 max-w-xl text-sm text-muted-foreground sm:text-base">
                   Five tools. One mission. Pick a door and go deeper.
                 </p>
               </div>
             </FadeIn>
 
-            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3">
               {platformCards.map((card, i) => (
                 <FadeIn key={card.href} delay={i * 60}>
                   <Link
                     href={card.href}
                     className={cn(
-                      "group flex h-full flex-col rounded-2xl border bg-white p-6 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg",
+                      "group flex h-full flex-col rounded-xl border bg-white p-4 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md sm:rounded-2xl sm:p-5",
                       card.accent,
                       card.featured && "sm:col-span-2 lg:col-span-1 lg:row-span-1"
                     )}
                   >
-                    <div className="mb-4 flex items-start justify-between gap-3">
+                    <div className="mb-3 flex items-start justify-between gap-3">
                       <span
                         className={cn(
-                          "inline-flex size-11 items-center justify-center rounded-xl",
+                          "inline-flex size-10 items-center justify-center rounded-xl sm:size-11",
                           card.iconBg
                         )}
                       >
@@ -226,19 +221,19 @@ export function LandingPage() {
                         </Badge>
                       )}
                     </div>
-                    <h3 className="text-lg font-semibold group-hover:text-primary">
+                    <h3 className="text-base font-semibold group-hover:text-primary sm:text-lg">
                       {card.title}
                     </h3>
-                    <p className="mt-1 text-2xl font-bold tabular-nums tracking-tight">
+                    <p className="mt-1 text-xl font-bold tabular-nums tracking-tight sm:text-2xl">
                       {card.stat}
-                      <span className="ml-2 text-xs font-medium tracking-wide text-muted-foreground uppercase">
+                      <span className="ml-2 text-[10px] font-medium tracking-wide text-muted-foreground uppercase sm:text-xs">
                         {card.statLabel}
                       </span>
                     </p>
-                    <p className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">
+                    <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
                       {card.description}
                     </p>
-                    <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-primary">
+                    <span className="mt-4 inline-flex min-h-11 items-center gap-1.5 text-sm font-semibold text-primary sm:min-h-0 sm:mt-5">
                       Explore
                       <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
                     </span>

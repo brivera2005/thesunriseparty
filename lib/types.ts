@@ -160,7 +160,8 @@ export type HistoryCategory =
   | "Economy"
   | "Military"
   | "Healthcare"
-  | "Education";
+  | "Education"
+  | "LGBTQ";
 
 export interface HistoricalRebuttal {
   theySaid: string;
