@@ -8,13 +8,8 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     const root = document.documentElement;
-    root.classList.remove("mode-tracker", "mode-blueprint");
+    root.classList.remove("mode-tracker", "mode-blueprint", "dark");
     root.classList.add(`mode-${mode}`);
-    if (mode === "tracker") {
-      root.classList.add("dark");
-    } else {
-      root.classList.remove("dark");
-    }
   }, [mode]);
 
   return <>{children}</>;

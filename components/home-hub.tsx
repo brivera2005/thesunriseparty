@@ -198,7 +198,11 @@ function PlatformAtAGlance() {
   );
 }
 
-export function HomeHub() {
+export function HomeHub({ compact = false }: { compact?: boolean }) {
+  if (compact) {
+    return <PlatformAtAGlance />;
+  }
+
   const threat = getThreatLevel();
   const stats = [
     { label: "Actions tracked", value: timelineEvents.length },

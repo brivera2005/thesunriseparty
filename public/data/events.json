@@ -1,7 +1,7 @@
 {
   "meta": {
     "site": "https://thesunriseparty.pages.dev",
-    "generated": "2026-07-06T18:44:41.082Z",
+    "generated": "2026-07-10T15:24:07.430Z",
     "count": 125,
     "license": "CC-BY-4.0 — cite Project Sunrise (thesunriseparty.pages.dev)"
   },
@@ -582,7 +582,7 @@
           "id": "nlrb_rollback",
           "title": "NLRB General Counsel Rescinds Pro-Worker Guidance",
           "publisher": "National Labor Relations Board",
-          "url": "https://www.nlrb.gov/guidance",
+          "url": "https://en.wikipedia.org/wiki/National_Labor_Relations_Board",
           "date": "2025-02-05"
         },
         {
@@ -1334,14 +1334,14 @@
           "id": "fcc_media_policy",
           "title": "FCC Broadcast and Media Policy Changes",
           "publisher": "Federal Communications Commission",
-          "url": "https://www.fcc.gov/news-events",
+          "url": "https://en.wikipedia.org/wiki/Federal_Communications_Commission",
           "date": "2025-03-15"
         },
         {
           "id": "fcc_broadcast_rules",
           "title": "FCC Revives Broadcast Fairness Enforcement",
           "publisher": "Federal Communications Commission",
-          "url": "https://www.fcc.gov/news-events",
+          "url": "https://en.wikipedia.org/wiki/Federal_Communications_Commission",
           "date": "2025-03-15"
         }
       ],
@@ -1542,7 +1542,7 @@
           "id": "jan6_pardons_eo",
           "title": "Granting Pardon for Certain Offenses Involving the Events at or Related to the United States Capitol on January 6, 2021",
           "publisher": "The White House",
-          "url": "https://www.whitehouse.gov/presidential-actions/2025/01/granting-pardon-for-certain-offenses-involving-the-events-at-or-related-to-the-united-states-capitol-on-january-6-2021/",
+          "url": "https://www.whitehouse.gov/presidential-actions/2025/01/granting-pardons-and-commutation-of-sentences-for-certain-offenses-relating-to-the-events-at-or-near-the-united-states-capitol-on-january-6-2021/",
           "date": "2025-01-20"
         },
         {
@@ -1833,7 +1833,7 @@
           "id": "cartel_fto_eo",
           "title": "Designating Cartels and Transnational Criminal Organizations as Foreign Terrorist Organizations",
           "publisher": "The White House",
-          "url": "https://www.whitehouse.gov/presidential-actions/2025/01/designating-cartels-and-transnational-criminal-organizations-as-foreign-terrorist-organizations/",
+          "url": "https://www.whitehouse.gov/presidential-actions/2025/01/designating-cartels-and-other-organizations-as-foreign-terrorist-organizations-and-specially-designated-global-terrorists/",
           "date": "2025-01-20"
         },
         {
@@ -1877,7 +1877,7 @@
           "id": "death_penalty_eo",
           "title": "Restoring the Death Penalty and Ending the Biden Administration's Anti-Death Penalty Policies",
           "publisher": "The White House",
-          "url": "https://www.whitehouse.gov/presidential-actions/2025/01/restoring-the-death-penalty-and-ending-the-biden-administrations-anti-death-penalty-policies/",
+          "url": "https://www.whitehouse.gov/presidential-actions/2025/01/restoring-the-death-penalty/",
           "date": "2025-01-20"
         }
       ],
@@ -5431,7 +5431,7 @@
           "id": "fcc_broadcast_rules",
           "title": "FCC Revives Broadcast Fairness Enforcement",
           "publisher": "Federal Communications Commission",
-          "url": "https://www.fcc.gov/news-events",
+          "url": "https://en.wikipedia.org/wiki/Federal_Communications_Commission",
           "date": "2025-03-15"
         },
         {

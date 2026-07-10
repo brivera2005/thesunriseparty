@@ -17,6 +17,7 @@ const sitePages = [
   { href: "/tracker", label: "Project 2025 Tracker" },
   { href: "/blueprint", label: "Progressive Blueprint" },
   { href: "/rebuttal", label: "Rebuttal Desk" },
+  { href: "/history", label: "Hidden History" },
   { href: "/rebuttal?study=1", label: "Study Mode" },
   { href: "/rebuttal?quiz=1", label: "Quiz Mode" },
   { href: "/contribute", label: "Contribute" },

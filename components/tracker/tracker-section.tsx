@@ -3,7 +3,9 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import {
+  ArrowDown,
   ArrowRight,
+  ArrowUp,
   BookOpen,
   Calendar,
   CalendarDays,
@@ -37,6 +39,8 @@ import { ScheduleFDeepDive } from "./schedule-f-deep-dive";
 import { CompareTrackersPanel } from "./compare-trackers-panel";
 import { P2025ChapterMap } from "./p2025-chapter-map";
 import { TrackerCalendar } from "./tracker-calendar";
+import { TrackerTimelineScrubber } from "./tracker-timeline-scrubber";
+import { EventDetailSlideover } from "./event-detail-slideover";
 import { cn } from "@/lib/utils";
 import { useAppStore } from "@/lib/store";
 import { policyFixPath } from "@/lib/data/policies";
@@ -47,6 +51,7 @@ import {
 } from "@/lib/data/p2025-chapters";
 
 type TrackerView = "list" | "calendar";
+type SortMode = "date-desc" | "date-asc" | "severity-desc" | "severity-asc";
 
 function formatDate(dateStr: string) {
   const d = new Date(dateStr + "T00:00:00");
@@ -112,7 +117,11 @@ export function TrackerSection({
   const [activeCategory, setActiveCategory] = useState<string>("All");
   const [activeChapter, setActiveChapter] = useState<string>("all");
   const [minSeverity, setMinSeverity] = useState(1);
+  const [dateFrom, setDateFrom] = useState("");
+  const [dateTo, setDateTo] = useState("");
+  const [sortMode, setSortMode] = useState<SortMode>("date-desc");
   const [selectedEvent, setSelectedEvent] = useState(timelineEvents[0]);
+  const [slideoverOpen, setSlideoverOpen] = useState(false);
   const [viewMode, setViewMode] = useState<TrackerView>(defaultView);
   const setMode = useAppStore((s) => s.setMode);
 
@@ -127,13 +136,30 @@ export function TrackerSection({
     if (minSeverity > 1) {
       events = events.filter((e) => e.Severity_Score >= minSeverity);
     }
+    if (dateFrom) {
+      events = events.filter((e) => e.Date >= dateFrom);
+    }
+    if (dateTo) {
+      events = events.filter((e) => e.Date <= dateTo);
+    }
+    events = [...events].sort((a, b) => {
+      if (sortMode === "date-desc")
+        return new Date(b.Date).getTime() - new Date(a.Date).getTime();
+      if (sortMode === "date-asc")
+        return new Date(a.Date).getTime() - new Date(b.Date).getTime();
+      if (sortMode === "severity-desc") return b.Severity_Score - a.Severity_Score;
+      return a.Severity_Score - b.Severity_Score;
+    });
     if (compact) {
-      return [...events]
-        .sort((a, b) => new Date(b.Date).getTime() - new Date(a.Date).getTime())
-        .slice(0, 3);
+      return events.slice(0, 3);
     }
     return events;
-  }, [activeCategory, activeChapter, minSeverity, compact]);
+  }, [activeCategory, activeChapter, minSeverity, dateFrom, dateTo, sortMode, compact]);
+
+  const selectEvent = (event: TimelineEvent, openPanel = false) => {
+    setSelectedEvent(event);
+    if (openPanel) setSlideoverOpen(true);
+  };
 
   const activeChapterMeta =
     activeChapter !== "all" ? getChapterById(activeChapter) : undefined;
@@ -307,7 +333,13 @@ export function TrackerSection({
           </div>
         ) : (
         <>
-        <div className="sticky top-14 z-30 -mx-4 mb-6 border-b border-border bg-background/95 px-4 py-3 backdrop-blur-lg supports-[backdrop-filter]:bg-background/80 sm:-mx-6 sm:px-6">
+        <TrackerTimelineScrubber
+          events={filtered}
+          selectedId={selectedEvent.Event_ID}
+          onSelect={(e) => selectEvent(e)}
+        />
+
+        <div className="sticky top-14 z-30 -mx-4 mb-6 border-b border-border bg-white/95 px-4 py-3 backdrop-blur-lg supports-[backdrop-filter]:bg-white/90 sm:-mx-6 sm:px-6">
           <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
             <div className="flex flex-wrap items-center gap-2">
             {timelineCategories.map((cat) => (
@@ -439,6 +471,52 @@ export function TrackerSection({
               {filtered.length} of {timelineEvents.length} events
             </span>
           </div>
+          <div className="mt-3 flex flex-wrap items-center gap-3">
+            <label className="flex items-center gap-2 text-xs text-muted-foreground">
+              <span className="font-medium">From:</span>
+              <input
+                type="date"
+                value={dateFrom}
+                onChange={(e) => setDateFrom(e.target.value)}
+                className="h-8 rounded-md border border-border bg-white px-2 text-xs"
+                aria-label="Filter from date"
+              />
+            </label>
+            <label className="flex items-center gap-2 text-xs text-muted-foreground">
+              <span className="font-medium">To:</span>
+              <input
+                type="date"
+                value={dateTo}
+                onChange={(e) => setDateTo(e.target.value)}
+                className="h-8 rounded-md border border-border bg-white px-2 text-xs"
+                aria-label="Filter to date"
+              />
+            </label>
+            <select
+              value={sortMode}
+              onChange={(e) => setSortMode(e.target.value as SortMode)}
+              className="h-8 rounded-md border border-border bg-white px-2.5 text-xs font-medium"
+              aria-label="Sort events"
+            >
+              <option value="date-desc">Newest first</option>
+              <option value="date-asc">Oldest first</option>
+              <option value="severity-desc">Highest severity</option>
+              <option value="severity-asc">Lowest severity</option>
+            </select>
+            {(dateFrom || dateTo) && (
+              <Button
+                variant="ghost"
+                size="sm"
+                className="h-8 text-xs"
+                onClick={() => {
+                  setDateFrom("");
+                  setDateTo("");
+                }}
+              >
+                Clear dates
+              </Button>
+            )}
+          </div>
         </div>
 
         <div className="grid gap-6 lg:grid-cols-5">
@@ -468,7 +546,7 @@ export function TrackerSection({
                       <button
                         key={event.Event_ID}
                         type="button"
-                        onClick={() => setSelectedEvent(event)}
+                        onClick={() => selectEvent(event, true)}
                         className={cn(
                           "w-full rounded-xl border p-4 text-left transition-all duration-200",
                           selectedEvent.Event_ID === event.Event_ID
@@ -724,6 +802,12 @@ export function TrackerSection({
         )}
         </>
         )}
+
+        <EventDetailSlideover
+          event={selectedEvent}
+          open={slideoverOpen}
+          onClose={() => setSlideoverOpen(false)}
+        />
       </div>
     </section>
   );

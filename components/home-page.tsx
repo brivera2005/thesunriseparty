@@ -8,6 +8,7 @@ import { SiteFooter } from "@/components/layout/site-footer";
 import { SkipLink } from "@/components/layout/skip-link";
 import { CommandPalette } from "@/components/layout/command-palette";
 import { CitationModal } from "@/components/citation";
+import { RebuttalHero, FeaturedRebuttals } from "@/components/rebuttal/featured-rebuttals";
 import { HomeHub } from "@/components/home-hub";
 import { MissionSection } from "@/components/mission/mission-section";
 import { TrackerSection } from "@/components/tracker/tracker-section";
@@ -19,6 +20,14 @@ const RebuttalDeskSection = dynamic(
       (m) => m.RebuttalDeskSection
     ),
   { ssr: false, loading: () => <div className="min-h-[400px]" aria-hidden /> }
+);
+
+const HistoryHomeSection = dynamic(
+  () =>
+    import("@/components/history/history-home-section").then(
+      (m) => m.HistoryHomeSection
+    ),
+  { ssr: false, loading: () => <div className="min-h-[300px]" aria-hidden /> }
 );
 
 function SectionViewAll({ href, label }: { href: string; label: string }) {
@@ -37,17 +46,21 @@ function SectionViewAll({ href, label }: { href: string; label: string }) {
 
 export function HomePage() {
   return (
-    <div className="min-h-screen bg-background text-foreground transition-colors duration-300">
+    <div className="min-h-screen bg-white text-foreground">
       <SkipLink />
       <SiteHeader />
       <CommandPalette />
       <CitationModal />
 
       <main id="main-content">
-        <HomeHub />
+        <RebuttalHero />
+        <FeaturedRebuttals />
 
-        <MissionSection compact />
-        <SectionViewAll href="/mission" label="View full mission" />
+        <RebuttalDeskSection compact limit={6} />
+        <SectionViewAll href="/rebuttal" label="View all rebuttals" />
+
+        <HistoryHomeSection />
+        <SectionViewAll href="/history" label="Explore Hidden History timeline" />
 
         <TrackerSection compact />
         <SectionViewAll href="/tracker" label="View full tracker" />
@@ -55,8 +68,10 @@ export function HomePage() {
         <BlueprintSection compact />
         <SectionViewAll href="/blueprint" label="View full blueprint" />
 
-        <RebuttalDeskSection compact limit={5} />
-        <SectionViewAll href="/rebuttal" label="View all rebuttals" />
+        <MissionSection compact />
+        <SectionViewAll href="/mission" label="View full mission" />
+
+        <HomeHub compact />
       </main>
 
       <SiteFooter />

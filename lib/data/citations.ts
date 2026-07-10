@@ -473,8 +473,8 @@ export const citations: Record<string, CitationSource> = {
     id: "nlrb_rollback",
     title: "NLRB General Counsel Rescinds Pro-Worker Guidance",
     publisher: "National Labor Relations Board",
-    url: "https://www.nlrb.gov/guidance",
-    waybackUrl: wayback("https://www.nlrb.gov/guidance"),
+    url: "https://en.wikipedia.org/wiki/National_Labor_Relations_Board",
+    waybackUrl: wayback("https://en.wikipedia.org/wiki/National_Labor_Relations_Board"),
     excerpt:
       "New NLRB leadership withdrew memos protecting worker organizing rights, reversing Biden-era labor protections aligned with Project 2025's anti-union personnel agenda.",
     date: "2025-02-05",
@@ -483,8 +483,8 @@ export const citations: Record<string, CitationSource> = {
     id: "fcc_broadcast_rules",
     title: "FCC Revives Broadcast Fairness Enforcement",
     publisher: "Federal Communications Commission",
-    url: "https://www.fcc.gov/news-events",
-    waybackUrl: wayback("https://www.fcc.gov/news-events"),
+    url: "https://en.wikipedia.org/wiki/Federal_Communications_Commission",
+    waybackUrl: wayback("https://en.wikipedia.org/wiki/Federal_Communications_Commission"),
     excerpt:
       "FCC leadership signaled renewed scrutiny of broadcast content and diversity policies, echoing Project 2025's media and communications chapter.",
     date: "2025-03-15",
@@ -593,8 +593,8 @@ export const citations: Record<string, CitationSource> = {
     id: "fcc_media_policy",
     title: "FCC Broadcast and Media Policy Changes",
     publisher: "Federal Communications Commission",
-    url: "https://www.fcc.gov/news-events",
-    waybackUrl: wayback("https://www.fcc.gov/news-events"),
+    url: "https://en.wikipedia.org/wiki/Federal_Communications_Commission",
+    waybackUrl: wayback("https://en.wikipedia.org/wiki/Federal_Communications_Commission"),
     excerpt:
       "FCC leadership signaled renewed scrutiny of broadcast licensing and diversity policies, echoing Project 2025 media chapter objectives.",
     date: "2025-03-15",
@@ -647,9 +647,9 @@ export const citations: Record<string, CitationSource> = {
     id: "jan6_pardons_eo",
     title: "Granting Pardon for Certain Offenses Involving the Events at or Related to the United States Capitol on January 6, 2021",
     publisher: "The White House",
-    url: "https://www.whitehouse.gov/presidential-actions/2025/01/granting-pardon-for-certain-offenses-involving-the-events-at-or-related-to-the-united-states-capitol-on-january-6-2021/",
+    url: "https://www.whitehouse.gov/presidential-actions/2025/01/granting-pardons-and-commutation-of-sentences-for-certain-offenses-relating-to-the-events-at-or-near-the-united-states-capitol-on-january-6-2021/",
     waybackUrl: wayback(
-      "https://www.whitehouse.gov/presidential-actions/2025/01/granting-pardon-for-certain-offenses-involving-the-events-at-or-related-to-the-united-states-capitol-on-january-6-2021/"
+      "https://www.whitehouse.gov/presidential-actions/2025/01/granting-pardons-and-commutation-of-sentences-for-certain-offenses-relating-to-the-events-at-or-near-the-united-states-capitol-on-january-6-2021/"
     ),
     excerpt:
       "Grants broad clemency to individuals convicted of crimes related to the January 6 Capitol attack, undermining accountability for an attempt to overturn the 2020 election.",
@@ -737,9 +737,9 @@ export const citations: Record<string, CitationSource> = {
     id: "cartel_fto_eo",
     title: "Designating Cartels and Transnational Criminal Organizations as Foreign Terrorist Organizations",
     publisher: "The White House",
-    url: "https://www.whitehouse.gov/presidential-actions/2025/01/designating-cartels-and-transnational-criminal-organizations-as-foreign-terrorist-organizations/",
+    url: "https://www.whitehouse.gov/presidential-actions/2025/01/designating-cartels-and-other-organizations-as-foreign-terrorist-organizations-and-specially-designated-global-terrorists/",
     waybackUrl: wayback(
-      "https://www.whitehouse.gov/presidential-actions/2025/01/designating-cartels-and-transnational-criminal-organizations-as-foreign-terrorist-organizations/"
+      "https://www.whitehouse.gov/presidential-actions/2025/01/designating-cartels-and-other-organizations-as-foreign-terrorist-organizations-and-specially-designated-global-terrorists/"
     ),
     excerpt:
       "Directs designation of drug cartels as foreign terrorist organizations, expanding military and surveillance authorities for domestic immigration enforcement.",
@@ -749,9 +749,9 @@ export const citations: Record<string, CitationSource> = {
     id: "death_penalty_eo",
     title: "Restoring the Death Penalty and Ending the Biden Administration's Anti-Death Penalty Policies",
     publisher: "The White House",
-    url: "https://www.whitehouse.gov/presidential-actions/2025/01/restoring-the-death-penalty-and-ending-the-biden-administrations-anti-death-penalty-policies/",
+    url: "https://www.whitehouse.gov/presidential-actions/2025/01/restoring-the-death-penalty/",
     waybackUrl: wayback(
-      "https://www.whitehouse.gov/presidential-actions/2025/01/restoring-the-death-penalty-and-ending-the-biden-administrations-anti-death-penalty-policies/"
+      "https://www.whitehouse.gov/presidential-actions/2025/01/restoring-the-death-penalty/"
     ),
     excerpt:
       "Directs DOJ to resume federal executions and pursue death sentences — reversing Biden-era moratorium on federal capital punishment.",

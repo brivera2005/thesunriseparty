@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
- * Extracts URLs from lib/data/*.ts files and checks HTTP status.
- * Usage: node scripts/validate-links.mjs [--fix-report]
+ * Extracts URLs from lib/data/*.ts files and checks HTTP status via GET.
+ * Usage: node scripts/validate-links.mjs
  */
 
 import { readFileSync, readdirSync, writeFileSync } from "fs";
@@ -12,36 +12,29 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
 const DATA_DIR = join(ROOT, "lib", "data");
 
-const URL_REGEX = /https?:\/\/[^\s"'`,\)]+/g;
+const URL_REGEX = /https?:\/\/(?:[^\s"'`,]|\([^)]*\))+/g;
 
-/** Skip template literals and wayback wildcards */
-function isValidUrl(url) {
-  if (url.includes("${") || url.includes("web.archive.org/web/*")) return false;
-  if (url.includes("#/") && url.length > 120) return true; // keep but note
-  return true;
+function cleanExtractedUrl(raw) {
+  let url = raw.replace(/[.,;]+$/, "");
+  // Preserve closing paren when it completes a Wikipedia path segment e.g. _(United_States)
+  if (url.includes("_(") && url.endsWith(")")) {
+    return url;
+  }
+  return url.replace(/[)\]]+$/, "");
 }
 
-/** Domains that block automated HEAD requests — treat as pass if reachable via GET once */
-const LENIENT_DOMAINS = [
-  "whitehouse.gov",
-  "federalregister.gov",
-  "congress.gov",
-  "gao.gov",
-  "bls.gov",
-  "epa.gov",
-  "justice.gov",
-  "cbo.gov",
-];
+function isValidUrl(url) {
+  if (url.includes("${") || url.includes("web.archive.org/web/*")) return false;
+  return true;
+}
 
 function extractUrlsFromFile(filePath) {
   const content = readFileSync(filePath, "utf8");
   const urls = new Set();
   let match;
   while ((match = URL_REGEX.exec(content)) !== null) {
-    let url = match[0].replace(/[)\].,;]+$/, "");
-    if (isValidUrl(url)) {
-      urls.add(url);
-    }
+    const url = cleanExtractedUrl(match[0]);
+    if (isValidUrl(url)) urls.add(url);
   }
   return [...urls];
 }
@@ -51,10 +44,8 @@ function getAllUrls() {
     (f) => f.endsWith(".ts") && f !== "validated-urls.ts"
   );
   const urlMap = new Map();
-
   for (const file of files) {
-    const filePath = join(DATA_DIR, file);
-    for (const url of extractUrlsFromFile(filePath)) {
+    for (const url of extractUrlsFromFile(join(DATA_DIR, file))) {
       if (!urlMap.has(url)) urlMap.set(url, []);
       urlMap.get(url).push(file);
     }
@@ -62,54 +53,71 @@ function getAllUrls() {
   return urlMap;
 }
 
-async function checkUrl(url, timeout = 30000) {
-  const isLenient = LENIENT_DOMAINS.some((d) => url.includes(d));
+/** Detect soft-404 pages that return 200 but are error pages */
+function looksLikeSoft404(html, url) {
+  if (!html || html.length < 200) return false;
+  const lower = html.slice(0, 8000).toLowerCase();
+  const patterns = [
+    "page not found",
+    "404 error",
+    "404 - page",
+    "this page could not be found",
+    "the page you are looking for",
+    "no longer available",
+    "document not found",
+    "we couldn't find that page",
+  ];
+  if (patterns.some((p) => lower.includes(p))) return true;
+  if (url.includes("whitehouse.gov") && lower.includes("<title>") && lower.includes("404")) {
+    return true;
+  }
+  return false;
+}
 
+async function checkUrl(url, timeout = 35000) {
   const fetchOpts = {
     redirect: "follow",
-    headers: { "User-Agent": "Mozilla/5.0 (compatible; ProjectSunrise-LinkValidator/1.0)" },
+    headers: {
+      "User-Agent":
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 ProjectSunrise-LinkValidator/2.0",
+      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    },
   };
 
   try {
-    let res = await fetch(url, { ...fetchOpts, method: "HEAD", signal: AbortSignal.timeout(timeout) });
+    const res = await fetch(url, {
+      ...fetchOpts,
+      method: "GET",
+      signal: AbortSignal.timeout(timeout),
+    });
 
-    if ([405, 403, 401, 400].includes(res.status)) {
-      res = await fetch(url, { ...fetchOpts, method: "GET", signal: AbortSignal.timeout(timeout) });
+    const finalUrl = res.url;
+    const status = res.status;
+
+    if (status === 404 || status === 410) {
+      return { url, status, ok: false, error: `HTTP ${status}`, finalUrl };
     }
 
-    const ok =
-      res.ok ||
-      res.status === 403 ||
-      (isLenient && res.status < 500);
+    if (!res.ok && status !== 403) {
+      return { url, status, ok: false, error: `HTTP ${status}`, finalUrl };
+    }
 
-    return { url, status: res.status, ok, error: null };
-  } catch (err) {
-    if (isLenient) {
-      try {
-        const res2 = await fetch(url, {
-          ...fetchOpts,
-          method: "GET",
-          signal: AbortSignal.timeout(timeout),
-        });
-        if (res2.status < 500) {
-          return { url, status: res2.status, ok: true, error: "HEAD failed, GET ok" };
-        }
-        return { url, status: res2.status, ok: false, error: `HTTP ${res2.status}` };
-      } catch (getErr) {
-        return {
-          url,
-          status: 0,
-          ok: false,
-          error: getErr instanceof Error ? getErr.message : String(getErr),
-        };
+    const contentType = res.headers.get("content-type") ?? "";
+    if (contentType.includes("text/html")) {
+      const html = await res.text();
+      if (looksLikeSoft404(html, finalUrl)) {
+        return { url, status, ok: false, error: "Soft 404 detected", finalUrl };
       }
     }
 
+    return { url, status, ok: true, error: null, finalUrl };
+  } catch (err) {
     return {
       url,
       status: 0,
       ok: false,
       error: err instanceof Error ? err.message : String(err),
+      finalUrl: url,
     };
   }
 }
@@ -118,12 +126,12 @@ async function main() {
   const urlMap = getAllUrls();
   const urls = [...urlMap.keys()].sort();
 
-  console.log(`\n🔍 Project Sunrise Link Validator`);
-  console.log(`   Checking ${urls.length} unique URLs from lib/data/\n`);
+  console.log(`\n🔍 Project Sunrise Link Validator v2`);
+  console.log(`   GET-checking ${urls.length} unique URLs from lib/data/\n`);
 
   const results = [];
-  const CONCURRENCY = 3;
-  const DELAY_MS = 50;
+  const CONCURRENCY = 4;
+  const DELAY_MS = 80;
 
   for (let i = 0; i < urls.length; i += CONCURRENCY) {
     const batch = urls.slice(i, i + CONCURRENCY);
@@ -163,7 +171,6 @@ async function main() {
     process.exit(1);
   }
 
-  // Write validated URLs for citation modal "Verified" badges
   const validatedPath = join(ROOT, "lib", "data", "validated-urls.ts");
   const urlList = working.map((r) => r.url).sort();
   const tsContent = `/** Auto-generated by scripts/validate-links.mjs — do not edit manually */
@@ -194,7 +201,6 @@ export function extractArchiveDate(waybackUrl: string): string | null {
 `;
   writeFileSync(validatedPath, tsContent, "utf8");
   console.log(`\n📝 Wrote ${urlList.length} validated URLs to lib/data/validated-urls.ts`);
-
   console.log(`\n✅ All links passed validation.\n`);
   process.exit(0);
 }

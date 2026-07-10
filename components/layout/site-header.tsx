@@ -1,11 +1,13 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import {
   AlertTriangle,
   Compass,
+  History,
   Menu,
   MessageSquareQuote,
   Search,
@@ -22,10 +24,11 @@ import {
 import { cn } from "@/lib/utils";
 
 const navItems = [
-  { label: "Mission", href: "/mission", isPage: true },
+  { label: "Rebuttal Desk", href: "/rebuttal", isPage: true, accent: "text-sunrise" },
   { label: "The Tracker", href: "/tracker", isPage: true, mode: "tracker" as const },
   { label: "The Blueprint", href: "/blueprint", isPage: true, mode: "blueprint" as const },
-  { label: "Rebuttal Desk", href: "/rebuttal", isPage: true, accent: "text-sunrise" },
+  { label: "Hidden History", href: "/history", isPage: true, accent: "text-amber-600 dark:text-amber-400" },
+  { label: "Mission", href: "/mission", isPage: true },
 ];
 
 export function SiteHeader() {
@@ -36,45 +39,43 @@ export function SiteHeader() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-border bg-background/80 backdrop-blur-lg supports-[backdrop-filter]:bg-background/70">
-      <div className="mx-auto flex h-14 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
-        <Link href="/" className="flex items-center gap-2.5 text-left">
-          <div
-            className={cn(
-              "flex size-8 items-center justify-center rounded-lg text-sm font-bold shadow-sm",
-              mode === "tracker"
-                ? "bg-destructive text-destructive-foreground"
-                : "bg-primary text-primary-foreground"
-            )}
-          >
-            PS
-          </div>
+    <header className="sticky top-0 z-40 border-b border-border bg-white/95 backdrop-blur-lg supports-[backdrop-filter]:bg-white/90">
+      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
+        <Link href="/" className="flex items-center gap-3 text-left">
+          <Image
+            src="/logo.png"
+            alt="The Sunrise Party — A New Beginning. Restoring Democracy."
+            width={44}
+            height={44}
+            className="size-10 shrink-0 rounded-lg object-contain sm:size-11"
+            priority
+          />
           <div className="hidden sm:block">
             <p className="text-sm leading-none font-semibold">Project Sunrise</p>
             <p className="text-[10px] text-muted-foreground">
-              Institutional Research Platform
+              A New Beginning. Restoring Democracy.
             </p>
           </div>
         </Link>
 
         <nav className="hidden items-center gap-1 md:flex">
           {navItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                onClick={() => item.mode && setMode(item.mode)}
-                className={cn(
-                  buttonVariants({ variant: "ghost", size: "sm" }),
-                  pathname === item.href &&
-                    (item.mode === "tracker"
-                      ? "text-destructive"
-                      : item.mode === "blueprint"
-                        ? "text-primary"
-                        : (item.accent ?? "text-primary"))
-                )}
-              >
-                {item.label}
-              </Link>
+            <Link
+              key={item.href}
+              href={item.href}
+              onClick={() => item.mode && setMode(item.mode)}
+              className={cn(
+                buttonVariants({ variant: "ghost", size: "sm" }),
+                pathname === item.href &&
+                  (item.mode === "tracker"
+                    ? "text-destructive"
+                    : item.mode === "blueprint"
+                      ? "text-primary"
+                      : (item.accent ?? "text-primary"))
+              )}
+            >
+              {item.label}
+            </Link>
           ))}
         </nav>
 
@@ -110,7 +111,7 @@ export function SiteHeader() {
             <Menu className="size-4" />
           </Button>
 
-          <div className="hidden rounded-lg border border-border bg-muted/50 p-0.5 sm:flex">
+          <div className="hidden rounded-lg border border-border bg-muted/30 p-0.5 sm:flex">
             <button
               type="button"
               onClick={() => setMode("tracker")}
@@ -161,25 +162,25 @@ export function SiteHeader() {
           </DialogHeader>
           <nav className="flex flex-col gap-1 pt-4">
             {navItems.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  onClick={() => {
-                    if (item.mode) setMode(item.mode);
-                    setMobileOpen(false);
-                  }}
-                  className={cn(
-                    "rounded-lg px-4 py-3 text-sm font-medium transition-colors hover:bg-accent",
-                    pathname === item.href &&
-                      (item.mode === "tracker"
-                        ? "text-destructive"
-                        : item.mode === "blueprint"
-                          ? "text-primary"
-                          : "bg-accent text-primary")
-                  )}
-                >
-                  {item.label}
-                </Link>
+              <Link
+                key={item.href}
+                href={item.href}
+                onClick={() => {
+                  if (item.mode) setMode(item.mode);
+                  setMobileOpen(false);
+                }}
+                className={cn(
+                  "rounded-lg px-4 py-3 text-sm font-medium transition-colors hover:bg-accent",
+                  pathname === item.href &&
+                    (item.mode === "tracker"
+                      ? "text-destructive"
+                      : item.mode === "blueprint"
+                        ? "text-primary"
+                        : "bg-accent text-primary")
+                )}
+              >
+                {item.label}
+              </Link>
             ))}
             <div className="mt-4 flex gap-2 border-t border-border pt-4">
               <Button

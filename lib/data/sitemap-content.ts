@@ -20,6 +20,7 @@ import {
   rebuttalCategories,
   rebuttalCategoryPath,
 } from "./conversation-helpers";
+import { hiddenHistoryEntries, getHistoryStats } from "./hidden-history";
 import { policyFixes, safeguardItems } from "./policies";
 import { validatedUrls } from "./validated-urls";
 import { trackerSources } from "./tracker-sources";
@@ -42,6 +43,7 @@ export interface SitemapSection {
 }
 
 const trackerStats = getTrackerStats();
+const historyStats = getHistoryStats();
 const rebuttalCats = rebuttalCategories.filter((c) => c !== "All");
 
 export const sitemapIntro = {
@@ -149,6 +151,33 @@ export const sitemapSections: SitemapSection[] = [
         label: cat,
         count: conversationHelpers.filter((r) => r.category.includes(cat)).length,
       })),
+    ],
+  },
+  {
+    id: "history",
+    title: "Hidden History",
+    description: "Dual timeline — textbook narratives vs. sourced American history.",
+    icon: History,
+    accent: "text-amber-700 border-amber-300/50 bg-amber-50 dark:text-amber-400 dark:bg-amber-950/30",
+    links: [
+      {
+        href: "/history",
+        label: "Dual Timeline",
+        count: hiddenHistoryEntries.length,
+        description: `${historyStats.rebuttals} historical rebuttals · ${historyStats.eras} eras`,
+        badge: "New",
+      },
+      {
+        href: "/history/rebuttals",
+        label: "Historical Rebuttals",
+        count: historyStats.rebuttals,
+        description: "What they said then — plain-language counters.",
+      },
+      {
+        href: "/history?event=HH-1861-CIVIL-WAR",
+        label: "Featured: Civil War causes",
+        description: "States' rights myth vs. secession documents.",
+      },
     ],
   },
   {

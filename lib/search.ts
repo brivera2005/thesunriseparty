@@ -1,10 +1,11 @@
 import { timelineEvents } from "@/lib/data/timeline-events";
 import { policyFixes, safeguardItems, blueprintDetailPath } from "@/lib/data/policies";
 import { conversationHelpers } from "@/lib/data/conversation-helpers";
+import { hiddenHistoryEntries, historyDetailPath } from "@/lib/data/hidden-history";
 
 export { highlightMatches } from "@/lib/search-highlight";
 
-export type SearchResultType = "Tracker" | "Blueprint" | "Rebuttal" | "Safeguard";
+export type SearchResultType = "Tracker" | "Blueprint" | "Rebuttal" | "Safeguard" | "History";
 
 export interface SearchResult {
   id: string;
@@ -132,6 +133,26 @@ export function buildSearchIndex(): SearchResult[] {
     });
   }
 
+  for (const entry of hiddenHistoryEntries) {
+    const body = [
+      entry.title,
+      entry.textbookVersion,
+      entry.actualHistory,
+      entry.era,
+      ...entry.categories,
+      entry.id,
+    ].join(" ");
+    results.push({
+      id: entry.id,
+      type: "History",
+      title: entry.title,
+      subtitle: `${entry.date} · ${entry.era}`,
+      body,
+      score: 0,
+      href: historyDetailPath(entry.id),
+    });
+  }
+
   return results;
 }
 
@@ -157,4 +178,5 @@ export const searchTypeBadgeStyles: Record<SearchResultType, string> = {
   Blueprint: "border-primary/40 bg-primary/10 text-primary",
   Rebuttal: "border-sunrise/40 bg-sunrise/10 text-sunrise",
   Safeguard: "border-severity-moderate/40 bg-severity-moderate/10 text-severity-moderate",
+  History: "border-amber-500/40 bg-amber-500/10 text-amber-700 dark:text-amber-400",
 };

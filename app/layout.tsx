@@ -57,15 +57,18 @@ export const metadata: Metadata = {
     title: "Sunrise",
   },
   icons: {
-    icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
-    apple: [{ url: "/icon.svg", type: "image/svg+xml" }],
+    icon: [
+      { url: "/logo.png", type: "image/png" },
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+    apple: [{ url: "/logo.png", type: "image/png" }],
   },
 };
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#e8a840" },
-    { media: "(prefers-color-scheme: dark)", color: "#c47830" },
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#ffffff" },
   ],
 };
 

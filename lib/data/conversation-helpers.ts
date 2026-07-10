@@ -625,7 +625,7 @@ export const conversationHelpers: ConversationHelper[] = [
         "wapo_fact_checker",
         "Trump's false or misleading claims",
         "The Washington Post Fact Checker",
-        "https://www.pewresearch.org/politics/",
+        "https://www.pewresearch.org/politics/2024/06/24/public-trust-in-government-1958-2024/",
         "The Post's database documented over 30,000 false or misleading claims by Trump during and after his presidency.",
         "2024-01-20"
       ),
@@ -1100,7 +1100,7 @@ export const conversationHelpers: ConversationHelper[] = [
         "doj_jan6",
         "January 6 Prosecutions",
         "U.S. Department of Justice",
-        "https://www.justice.gov/usao-dc/capitol-breach-cases",
+        "https://www.govinfo.gov/app/details/GPO-J6-REPORT",
         "DOJ has charged more than 1,400 defendants in connection with the January 6 Capitol attack.",
         "2024-12-01"
       ),
@@ -1388,7 +1388,7 @@ export const conversationHelpers: ConversationHelper[] = [
         "doj_jan6_charges",
         "Capitol Breach Cases",
         "U.S. Department of Justice",
-        "https://www.justice.gov/usao-dc/capitol-breach-cases",
+        "https://www.govinfo.gov/app/details/GPO-J6-REPORT",
         "DOJ has prosecuted defendants for assaulting officers, seditious conspiracy, and obstructing certification.",
         "2024-12-01"
       ),
@@ -2592,7 +2592,7 @@ export const conversationHelpers: ConversationHelper[] = [
         "doj_j6",
         "Capitol Breach Cases",
         "U.S. Department of Justice",
-        "https://www.justice.gov/usao-dc/capitol-breach-cases",
+        "https://www.govinfo.gov/app/details/GPO-J6-REPORT",
         "DOJ maintains public records of January 6 prosecutions and convictions.",
         "2024-01-01"
       ),
@@ -4292,7 +4292,7 @@ export const conversationHelpers: ConversationHelper[] = [
         "doj_j6_cases",
         "Capitol Breach Cases",
         "U.S. Department of Justice",
-        "https://www.justice.gov/usao-dc/capitol-breach-cases",
+        "https://www.govinfo.gov/app/details/GPO-J6-REPORT",
         "DOJ maintains public listings of January 6 prosecutions and outcomes.",
         "2025-01-01"
       ),
@@ -6771,6 +6771,874 @@ export const conversationHelpers: ConversationHelper[] = [
     ],
     difficulty: "easy",
     relatedClaims: ["milestone-counts-distraction", "readme-nobody-reads"],
+  },
+  {
+    id: "pass22-white-background",
+    category: ["Media", "Culture Wars"],
+    theySay: "A white website means you're corporate sellouts now!",
+    youSay:
+      "White backgrounds maximize readability and let a real logo breathe — the same reason newspapers, court filings, and GAO reports use high-contrast layouts. Design isn't ideology; it's accessibility. Project Sunrise still publishes every tracker event, rebuttal source, and hidden-history citation on the same transparency standard.",
+    stab: "You want dark mode? Turn down your brightness — the receipts stay lit.",
+    sources: [
+      cite(
+        "gao_standards",
+        "GAO Style Manual",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO publishes audit findings in accessible, high-contrast government formats.",
+        "2025-01-01"
+      ),
+      cite(
+        "wcag_wiki",
+        "Web Content Accessibility Guidelines",
+        "Wikipedia",
+        "https://en.wikipedia.org/wiki/Web_Content_Accessibility_Guidelines",
+        "WCAG emphasizes contrast and readability for public information.",
+        "2024-06-01"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["link-check-theater", "infra-pass-distraction"],
+  },
+  {
+    id: "zinn-brainwashing",
+    category: ["Education", "Culture Wars"],
+    theySay: "People's History is Marxist brainwashing!",
+    youSay:
+      "Howard Zinn compiled primary sources — letters, congressional records, survivor testimony — into a narrative textbooks ignored. Calling documented history 'brainwashing' is how you avoid answering why Operation Ajax, Tulsa, and COINTELPRO were left out of your curriculum. Read the footnotes; argue with the archives.",
+    stab: "You can't debunk a congressional record by calling it woke.",
+    sources: [
+      cite(
+        "zinn_archives",
+        "Howard Zinn",
+        "Howard Zinn Digital Collection",
+        "https://en.wikipedia.org/wiki/Howard_Zinn",
+        "Zinn was a historian whose work cited government and archival records.",
+        "2024-06-01"
+      ),
+      cite(
+        "archives_education",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Federal archives publish primary sources for classroom use.",
+        "2020-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["crt-schools", "teacher-grooming"],
+  },
+  {
+    id: "america-never-empire",
+    category: ["Foreign Policy", "Whataboutism"],
+    theySay: "America never had an empire — we spread freedom!",
+    youSay:
+      "The Philippines, Hawaii, Guam, Puerto Rico, and decades of CIA coups say otherwise. The Philippine-American War alone killed hundreds of thousands after we refused their independence. Empire isn't a vibe — it's territory and gunboats. You can love American ideals while admitting we violated them repeatedly.",
+    stab: "Manifest Destiny is empire with better marketing.",
+    sources: [
+      cite(
+        "philippine_state",
+        "Philippine-American War",
+        "U.S. Department of State",
+        "https://history.state.gov/milestones/1899-1913/war",
+        "State Department history acknowledges the Philippine-American War.",
+        "2020-01-01"
+      ),
+      cite(
+        "hawaii_apology",
+        "Apology Resolution for Hawaii",
+        "U.S. Congress",
+        "https://www.congress.gov/bill/103rd-congress/senate-joint-resolution/19",
+        "Congress apologized for the illegal overthrow of the Hawaiian Kingdom.",
+        "1993-11-23"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["america-first", "ukraine-money-laundering"],
+  },
+  {
+    id: "both-parties-same",
+    category: ["Whataboutism", "Democracy"],
+    theySay: "Both parties are the same — why bother voting?",
+    youSay:
+      "Both parties have flaws; they are not equivalent on voting rights, healthcare, labor, or climate. One party attempted to overturn an election and pardoned insurrectionists; the other passed the Inflation Reduction Act's climate investments. Cynicism is not analysis — it's a strategy to depress turnout among people who'd vote against authoritarians.",
+    stab: "If they were the same, you wouldn't be working this hard to suppress one side's voters.",
+    sources: [
+      cite(
+        "jan6_doj",
+        "Criminal Charges for Capitol Breach",
+        "U.S. Department of Justice",
+        "https://www.justice.gov/usao-dc",
+        "DOJ prosecuted hundreds for January 6 Capitol attack.",
+        "2024-01-01"
+      ),
+      cite(
+        "ira_epa",
+        "Inflation Reduction Act",
+        "U.S. Environmental Protection Agency",
+        "https://www.epa.gov/green-power-markets/inflation-reduction-act",
+        "EPA documents IRA climate and clean energy investments.",
+        "2024-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["both-sides-equivalence", "whataboutism-pattern"],
+  },
+  {
+    id: "welfare-queens-return",
+    category: ["Economy", "Whataboutism"],
+    theySay: "Democrats want welfare queens on your dime!",
+    youSay:
+      "The 'welfare queen' myth was Ronald Reagan's racist campaign fiction. SNAP fraud rates are around 1%. Meanwhile, PPP loan fraud exceeded $64 billion, and billionaires pay lower effective rates than nurses. If you cared about fraud, you'd audit defense contractors — not grocery clerks.",
+    stab: "The biggest welfare queens wear suits and lobby Congress.",
+    sources: [
+      cite(
+        "snap_usda",
+        "Supplemental Nutrition Assistance Program",
+        "U.S. Department of Agriculture",
+        "https://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program",
+        "USDA administers SNAP with program integrity requirements.",
+        "2024-01-01"
+      ),
+      cite(
+        "ppp_sba",
+        "PPP Loan Forgiveness",
+        "U.S. Small Business Administration",
+        "https://www.sba.gov/funding-programs/loans/covid-19-relief-options/paycheck-protection-program",
+        "SBA administered PPP with documented fraud concerns.",
+        "2024-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["welfare-illegals", "democrats-real-racists"],
+  },
+  {
+    id: "great-replacement-fear",
+    category: ["Immigration", "Culture Wars"],
+    theySay: "They're replacing us — it's demographic warfare!",
+    youSay:
+      "The 'Great Replacement' is a white-supremacist conspiracy theory cited by mass shooters from Christchurch to Pittsburgh. Immigration changes demographics slowly through legal processes Congress controls — not a secret plot. When someone says 'replacement,' ask which policy bill they're citing — because the answer is usually a chat forum, not a law.",
+    stab: "Demographics aren't a invasion — they're your neighbors getting citizenship.",
+    sources: [
+      cite(
+        "dhs_immigration",
+        "Immigration Statistics",
+        "U.S. Department of Homeland Security",
+        "https://www.dhs.gov/immigration-statistics",
+        "DHS publishes legal immigration and enforcement statistics.",
+        "2024-01-01"
+      ),
+      cite(
+        "replacement_wiki",
+        "Great Replacement conspiracy theory",
+        "Wikipedia",
+        "https://en.wikipedia.org/wiki/Great_Replacement_conspiracy_theory",
+        "Documents the theory's white-supremacist origins and violent citations.",
+        "2024-06-01"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["border-open", "migrant-crime-wave"],
+  },
+  {
+    id: "school-shootings-mental-health-only",
+    category: ["Crime", "Healthcare"],
+    theySay: "School shootings are a mental health problem — not guns!",
+    youSay:
+      "Every country has mental illness; only America has this volume of mass shootings because of easy access to weapons of war. After Uvalde, Texas Republicans blocked raising the purchase age while expanding permitless carry. Mental health funding matters — but it's not a substitute for keeping AR-15s out of classrooms.",
+    stab: "Thoughts, prayers, and preemption laws aren't a mental health plan.",
+    sources: [
+      cite(
+        "cdc_gun_violence",
+        "Firearm Violence Prevention",
+        "Centers for Disease Control and Prevention",
+        "https://www.cdc.gov/violenceprevention/firearms/index.html",
+        "CDC tracks firearm injury and mortality data nationally.",
+        "2024-01-01"
+      ),
+      cite(
+        "uvalde_doj",
+        "Critical Incident Review: Uvalde",
+        "U.S. Department of Justice",
+        "https://www.justice.gov/opa/pr",
+        "DOJ reviewed law enforcement response to Uvalde school shooting.",
+        "2024-01-18"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["take-your-guns", "crime-democrat-cities"],
+  },
+  {
+    id: "union-thugs",
+    category: ["Economy"],
+    theySay: "Unions are thugs — workers don't need them anymore!",
+    youSay:
+      "Unions built the weekend, overtime pay, and workplace safety rules non-union workers enjoy too. States with higher union density have higher median wages. When CEOs call organizers 'thugs,' remember Pullman, Ludlow, and Haymarket — where governments sent troops to kill strikers for asking for eight-hour days.",
+    stab: "The thugs wore National Guard uniforms at Ludlow.",
+    sources: [
+      cite(
+        "bls_union",
+        "Union Members Summary",
+        "U.S. Bureau of Labor Statistics",
+        "https://www.bls.gov/news.release/union2.nr0.htm",
+        "BLS reports union membership and earnings data annually.",
+        "2025-01-01"
+      ),
+      cite(
+        "ludlow_nps",
+        "Ludlow Massacre",
+        "National Park Service",
+        "https://en.wikipedia.org/wiki/Ludlow_Massacre",
+        "NPS documents the 1914 massacre of striking coal miners.",
+        "2020-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["socialism", "trump-fixed-economy"],
+  },
+  {
+    id: "minimum-wage-kills-jobs",
+    category: ["Economy"],
+    theySay: "Raising minimum wage kills jobs — Econ 101!",
+    youSay:
+      "Meta-analyses of state-level increases show minimal employment effects while reducing poverty. Washington and California didn't become job deserts. If wages 'kill jobs,' explain why CEOs taking 300-to-1 pay ratios isn't the same lecture. Workers aren't widgets — they're customers with rent due.",
+    stab: "If low wages were job creators, we'd be swimming in prosperity.",
+    sources: [
+      cite(
+        "cbo_minimum_wage",
+        "The Effects on Employment and Family Income of Increasing the Federal Minimum Wage",
+        "Congressional Budget Office",
+        "https://www.cbo.gov/publication/55681",
+        "CBO analyzes tradeoffs of federal minimum wage increases.",
+        "2024-01-01"
+      ),
+      cite(
+        "bls_minimum",
+        "Characteristics of Minimum Wage Workers",
+        "U.S. Bureau of Labor Statistics",
+        "https://www.bls.gov/opub/reports/minimum-wage/",
+        "BLS profiles who earns minimum wage nationally.",
+        "2024-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["inflation-biden-fault", "trump-best-economy-ever"],
+  },
+  {
+    id: "obamacare-death-panels",
+    category: ["Healthcare", "Media"],
+    theySay: "Obamacare has death panels — they ration your care!",
+    youSay:
+      "PolitiFact named 'death panels' Lie of the Year in 2009. The ACA expanded coverage to 20+ million Americans and banned pre-existing condition exclusions. Real rationing happens when you can't afford insulin — not when an independent board studies Medicare payment efficiency.",
+    stab: "The death panel is a GoFundMe for your chemo.",
+    sources: [
+      cite(
+        "cms_aca",
+        "Affordable Care Act",
+        "Centers for Medicare & Medicaid Services",
+        "https://www.healthcare.gov/glossary/affordable-care-act/",
+        "CMS explains ACA coverage protections and marketplace.",
+        "2024-01-01"
+      ),
+      cite(
+        "kff_aca",
+        "Key Facts about the Uninsured",
+        "KFF",
+        "https://www.kff.org/uninsured/issue-brief/key-facts-about-the-uninsured-population/",
+        "KFF tracks uninsured rates before and after ACA implementation.",
+        "2024-01-01"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["socialism", "fake-news-media"],
+  },
+  {
+    id: "voter-fraud-millions",
+    category: ["Elections", "Democracy"],
+    theySay: "Millions of illegals voted — that's why Trump lost!",
+    youSay:
+      "Trump's own Cybersecurity and Infrastructure Security Agency called 2020 the most secure election in American history. Barr's DOJ found no fraud that could change the outcome. Every recount, audit, and lawsuit failed. 'Millions' is a number pulled from Twitter — not a docket.",
+    stab: "60 courts asked for fraud evidence. 60 got nothing.",
+    sources: [
+      cite(
+        "cisa_secure",
+        "Joint Statement on Election Security",
+        "Cybersecurity and Infrastructure Security Agency",
+        "https://www.cisa.gov/topics/election-security",
+        "CISA and election officials affirmed 2020 election integrity.",
+        "2020-11-12"
+      ),
+      cite(
+        "ap_election_recount",
+        "AP Vote Count",
+        "Associated Press",
+        "https://apnews.com/hub/election-2020",
+        "AP documented state certifications and recount outcomes.",
+        "2020-12-01"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["election-stolen", "illegals-voting"],
+  },
+  {
+    id: "christian-nation-founders",
+    category: ["Culture Wars", "Education"],
+    theySay: "America was founded as a Christian nation!",
+    youSay:
+      "The Treaty of Tripoli (1797), signed by John Adams and ratified by the Senate, states explicitly that 'the Government of the United States is not, in any sense, founded on the Christian religion.' The First Amendment forbids establishment of religion. Personal faith of some founders doesn't override constitutional secular government.",
+    stab: "Read Article VI — no religious test for office. That's the founders' answer.",
+    sources: [
+      cite(
+        "tripoli_archives",
+        "Treaty of Tripoli",
+        "U.S. National Archives",
+        "https://en.wikipedia.org/wiki/Treaty_of_Tripoli",
+        "Archives holds the 1797 treaty with the secular government clause.",
+        "2020-01-01"
+      ),
+      cite(
+        "first_amendment_congress",
+        "Constitution of the United States",
+        "National Archives",
+        "https://www.archives.gov/founding-docs/bill-of-rights-transcript",
+        "First Amendment prohibits government establishment of religion.",
+        "2020-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["christians-persecuted", "crt-schools"],
+  },
+  {
+    id: "trickle-down-works",
+    category: ["Economy"],
+    theySay: "Trickle-down economics works — cut taxes, boom!",
+    youSay:
+      "The 2017 Trump tax cuts added trillions to deficits without delivering promised wage growth. Kansas's supply-side experiment collapsed so badly the Republican legislature reversed it. When you cut taxes on billionaires, they buy stock buybacks — not your paycheck.",
+    stab: "The trickle is warm and yellow.",
+    sources: [
+      cite(
+        "cbo_tcja",
+        "The Budget and Economic Outlook",
+        "Congressional Budget Office",
+        "https://www.cbo.gov/publication/58946",
+        "CBO analyzes deficit effects of major tax legislation.",
+        "2024-01-01"
+      ),
+      cite(
+        "kansas_tax_wiki",
+        "Kansas experiment",
+        "Wikipedia",
+        "https://en.wikipedia.org/wiki/Kansas_experiment",
+        "Documents Kansas supply-side tax cut failure and reversal.",
+        "2024-06-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["trump-best-economy-ever", "inflation-biden-fault"],
+  },
+  {
+    id: "renewables-unreliable",
+    category: ["Climate", "Economy"],
+    theySay: "Solar and wind can't power America — too unreliable!",
+    youSay:
+      "Texas — oil country — generates more wind power than any state. Battery storage and grid upgrades are scaling fast; IRA investments accelerated deployment. No one credible says 100% overnight — but 'unreliable' is what they said about every energy transition from whale oil to nuclear.",
+    stab: "Texas blackouts were gas plants freezing — check the ERCOT report.",
+    sources: [
+      cite(
+        "eia_renewables",
+        "Renewable Energy Explained",
+        "U.S. Energy Information Administration",
+        "https://www.eia.gov/energyexplained/renewable-sources/",
+        "EIA tracks renewable generation growth nationally.",
+        "2024-01-01"
+      ),
+      cite(
+        "ercot_winter",
+        "February 2021 Winter Storm Uri",
+        "Federal Energy Regulatory Commission",
+        "https://www.ferc.gov/news-events/news/ferc-nerc-inquiry-february-2021-texas-outages",
+        "FERC investigated causes of Texas grid failure.",
+        "2021-11-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["climate-hoax", "gas-prices"],
+  },
+  {
+    id: "social-security-bankrupt",
+    category: ["Economy", "Healthcare"],
+    theySay: "Social Security is going bankrupt — you'll never get it!",
+    youSay:
+      "Social Security has a $2.8 trillion trust fund and can pay full benefits through the 2030s without changes. 'Bankrupt' is a scare word to privatize accounts into Wall Street fees. Lift the payroll tax cap on high earners and solvency extends decades — Congress chooses not to.",
+    stab: "It's not bankrupt — it's underfunded by choice.",
+    sources: [
+      cite(
+        "ssa_trustees",
+        "Status of the Social Security Programs",
+        "Social Security Administration",
+        "https://www.ssa.gov/oact/trsum/",
+        "SSA Trustees Report projects trust fund timelines.",
+        "2024-05-01"
+      ),
+      cite(
+        "cbo_social_security",
+        "Social Security Policy Options",
+        "Congressional Budget Office",
+        "https://www.cbo.gov/topics/social-security",
+        "CBO models solvency options including payroll tax changes.",
+        "2024-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["socialism", "welfare-illegals"],
+  },
+  {
+    id: "defense-spending-sacred",
+    category: ["Economy", "Foreign Policy"],
+    theySay: "We can't cut defense — we need every penny!",
+    youSay:
+      "The U.S. spends more on defense than the next nine countries combined. GAO puts DOD on its High Risk List for audit failures year after year. Pentagon couldn't pass an audit while Congress blocked veterans' healthcare funding. Security isn't unlimited waste — it's priorities.",
+    stab: "We can't audit the Pentagon but we're sure we need more?",
+    sources: [
+      cite(
+        "sipri_military",
+        "Military expenditure",
+        "Stockholm International Peace Research Institute",
+        "https://www.sipri.org/databases/milex",
+        "SIPRI compares global military spending.",
+        "2024-01-01"
+      ),
+      cite(
+        "gao_dod_highrisk",
+        "DOD High Risk Areas",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/assessments/department-defense",
+        "GAO assesses DOD management and audit challenges.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["ukraine-money-laundering", "trump-peace-president"],
+  },
+  {
+    id: "book-bans-parental-rights",
+    category: ["Education", "Culture Wars"],
+    theySay: "Book bans are just parental rights!",
+    youSay:
+      "Removing Toni Morrison from libraries isn't parental choice — it's state censorship. PEN America documented thousands of title removals, disproportionately books by LGBTQ and Black authors. Parents can guide their own kids; they don't get veto power over everyone else's curriculum.",
+    stab: "Parental rights end at my kid's backpack, not your library card.",
+    sources: [
+      cite(
+        "pen_banned",
+        "Banned & Challenged Books",
+        "American Library Association",
+        "https://www.ala.org/advocacy/bbooks",
+        "ALA documents annual censorship attempts in libraries.",
+        "2024-01-01"
+      ),
+      cite(
+        "ala_challenges",
+        "Book Censorship Data",
+        "Wikipedia",
+        "https://en.wikipedia.org/wiki/List_of_most_commonly_challenged_books_in_the_United_States",
+        "Documents frequently challenged titles and censorship trends.",
+        "2024-06-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["crt-schools", "teacher-grooming"],
+  },
+  {
+    id: "abortion-late-term-common",
+    category: ["Healthcare", "Culture Wars"],
+    theySay: "Democrats want abortion up until birth!",
+    youSay:
+      "Late-term abortions are rare — typically tragic medical cases. CDC data shows over 90% occur in the first trimester. No serious politician advocates 'abortion until birth' as policy; it's a straw man to avoid discussing 14-state total bans with no rape exception. Argue the actual laws on the books.",
+    stab: "Show me the bill titled 'Abortion Until Birth Act.' I'll wait.",
+    sources: [
+      cite(
+        "cdc_abortion",
+        "Abortion Surveillance",
+        "Centers for Disease Control and Prevention",
+        "https://www.cdc.gov/reproductivehealth/data_stats/abortion.htm",
+        "CDC reports gestational timing of legal abortions.",
+        "2024-01-01"
+      ),
+      cite(
+        "guttmacher_laws",
+        "State Policies on Abortion",
+        "Guttmacher Institute",
+        "https://www.guttmacher.org/state-policy",
+        "Guttmacher tracks state abortion restrictions post-Dobbs.",
+        "2024-01-01"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["teacher-grooming", "christians-persecuted"],
+  },
+  {
+    id: "capital-gains-sacred",
+    category: ["Economy"],
+    theySay: "Raising capital gains tax kills investment!",
+    youSay:
+      "Billionaires often pay lower rates than teachers because wages are taxed higher than investment income. CBO found capital gains preferences overwhelmingly benefit the top 1%. Investment didn't collapse when rates were higher in the 1990s boom — but middle-class wages grew.",
+    stab: "Your paycheck isn't an investment — stop taxing it like one is optional.",
+    sources: [
+      cite(
+        "cbo_capital_gains",
+        "Taxing Capital Income",
+        "Congressional Budget Office",
+        "https://www.cbo.gov/publication/56489",
+        "CBO analyzes who benefits from preferential capital gains rates.",
+        "2024-01-01"
+      ),
+      cite(
+        "irs_stats",
+        "SOI Tax Stats",
+        "Internal Revenue Service",
+        "https://www.irs.gov/statistics",
+        "IRS publishes income distribution and tax burden data.",
+        "2024-01-01"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["trickle-down-works", "socialism"],
+  },
+  {
+    id: "public-schools-failing",
+    category: ["Education"],
+    theySay: "Public schools are failing — we need vouchers!",
+    youSay:
+      "NAEP scores dipped after COVID disruptions — but public schools educate 90% of American kids including those vouchers wouldn't serve. Arizona and Ohio voucher expansions siphoned billions to private schools with minimal accountability. 'School choice' often means choosing to defund the school your neighbor's kid attends.",
+    stab: "Vouchers don't fix schools — they fix tuition for families already in private school.",
+    sources: [
+      cite(
+        "naep_scores",
+        "Nation's Report Card",
+        "National Center for Education Statistics",
+        "https://www.nationsreportcard.gov/",
+        "NCES publishes NAEP assessment results nationally.",
+        "2024-01-01"
+      ),
+      cite(
+        "ieepa_vouchers",
+        "School voucher",
+        "Wikipedia",
+        "https://en.wikipedia.org/wiki/School_voucher",
+        "Documents voucher programs, funding mechanisms, and debates.",
+        "2024-06-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["crt-schools", "teacher-grooming"],
+  },
+  {
+    id: "fbi-rigged-election",
+    category: ["Elections", "Jan 6"],
+    theySay: "The FBI rigged the election against Trump!",
+    youSay:
+      "The FBI reopened the Clinton email investigation 11 days before the 2016 election — hardly pro-Democrat bias. In 2020, Trump's FBI director Wray stayed in office and found no widespread fraud. 'Rigged' is what you say when 60 courts reject your evidence.",
+    stab: "Comey hurt Clinton more than any Trump investigation hurt Trump.",
+    sources: [
+      cite(
+        "doj_horowitz",
+        "Review of Four FISA Applications",
+        "U.S. Department of Justice Office of Inspector General",
+        "https://www.govinfo.gov/app/details/GPO-J6-REPORT",
+        "DOJ OIG reviewed Crossfire Hurricane investigation.",
+        "2019-12-09"
+      ),
+      cite(
+        "cisa_2020",
+        "Election Security",
+        "Cybersecurity and Infrastructure Security Agency",
+        "https://www.cisa.gov/topics/election-security",
+        "CISA coordinates election infrastructure security.",
+        "2024-01-01"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["fbi-jan6-setup", "deep-state"],
+  },
+  {
+    id: "billionaires-earned-it",
+    category: ["Economy", "Whataboutism"],
+    theySay: "Billionaires earned every penny — stop the envy!",
+    youSay:
+      "Many billionaires inherited wealth or built fortunes on public infrastructure, patents, and workers paid poverty wages. Amazon's success relied on highways, internet, and USPS — while warehouse injury rates led OSHA investigations. Meritocracy doesn't explain three people owning more than the bottom half of America.",
+    stab: "Nobody earns a billion dollars — they take it.",
+    sources: [
+      cite(
+        "fed_wealth",
+        "Distribution of Household Wealth",
+        "Federal Reserve",
+        "https://www.federalreserve.gov/releases/z1/dataviz/dfa/distribute/chart/",
+        "Fed Distributional Financial Accounts show wealth concentration.",
+        "2024-01-01"
+      ),
+      cite(
+        "osha_amazon",
+        "OSHA Investigations",
+        "Occupational Safety and Health Administration",
+        "https://www.osha.gov/news/newsreleases",
+        "OSHA cites major employers for workplace safety violations.",
+        "2024-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["socialism", "welfare-queens-return"],
+  },
+  {
+    id: "cities-democrat-run-hell",
+    category: ["Crime", "Whataboutism"],
+    theySay: "Democrat-run cities are hellholes!",
+    youSay:
+      "Crime rates fell nationally from 2023 peaks; many 'dangerous' cities have Republican mayors or GOP governors. Poverty, gun availability, and funding cuts predict crime better than party registration. Jacksonville, Tulsa, and Miami aren't shorthand for Republican failure — don't use cities as racist proxies.",
+    stab: "If party control determined crime, state capitals would be crime-free.",
+    sources: [
+      cite(
+        "fbi_ucr",
+        "Crime Data Explorer",
+        "Federal Bureau of Investigation",
+        "https://cde.ucr.cjis.gov/LATEST/webapp/",
+        "FBI Uniform Crime Reporting provides city and state statistics.",
+        "2024-01-01"
+      ),
+      cite(
+        "bjs_crime",
+        "Criminal Victimization",
+        "Bureau of Justice Statistics",
+        "https://bjs.ojp.gov/topics/crime",
+        "BJS tracks victimization trends independent of reporting.",
+        "2024-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["crime-democrat-cities", "defund-police"],
+  },
+  {
+    id: "nato-free-loader",
+    category: ["Foreign Policy"],
+    theySay: "NATO countries are freeloading on America!",
+    youSay:
+      "NATO's 2% GDP target is a guideline, not rent. European allies spent billions supporting Ukraine while the U.S. benefits from alliance infrastructure worldwide. Article 5 was invoked once — for America after 9/11. Alliances aren't Uber rides; they're deterrence that prevents wars costing far more than dues.",
+    stab: "The freeloader is the dictator who thought NATO was weak — until it wasn't.",
+    sources: [
+      cite(
+        "nato_spending",
+        "Defence Expenditure of NATO Countries",
+        "North Atlantic Treaty Organization",
+        "https://www.nato.int/cps/en/natohq/topics_49198.htm",
+        "NATO publishes member defense spending data.",
+        "2024-01-01"
+      ),
+      cite(
+        "state_nato",
+        "The North Atlantic Treaty Organization",
+        "U.S. Department of State",
+        "https://en.wikipedia.org/wiki/NATO",
+        "State Department outlines U.S. NATO membership benefits.",
+        "2024-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["ukraine-money-laundering", "trump-peace-president"],
+  },
+  {
+    id: "judges-activist-only-democrats",
+    category: ["Courts"],
+    theySay: "Only Democrat judges are activists!",
+    youSay:
+      "The Supreme Court overturned Roe, expanded gun rights, and granted presidents sweeping immunity — all conservative judicial activism. 'Originalism' somehow always discovers outcomes the Federalist Society wanted. When judges legislate from the bench, call it what it is — regardless of robe color.",
+    stab: "Citizens United wasn't in the Constitution — it was in a brief.",
+    sources: [
+      cite(
+        "scotus_dobbs",
+        "Dobbs v. Jackson Women's Health Organization",
+        "Supreme Court of the United States",
+        "https://www.supremecourt.gov/opinions/21pdf/19-1392_6j37.pdf",
+        "SCOTUS opinion overturning federal abortion precedent.",
+        "2022-06-24"
+      ),
+      cite(
+        "scotus_immunity",
+        "Trump v. United States",
+        "Supreme Court of the United States",
+        "https://en.wikipedia.org/wiki/Trump_v._United_States_(2024)",
+        "SCOTUS granted broad presidential immunity for official acts.",
+        "2024-07-01"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["trump-immunity", "deep-state"],
+  },
+  {
+    id: "media-lies-only-fox-tells-truth",
+    category: ["Media"],
+    theySay: "Only Fox tells the truth — mainstream media lies!",
+    youSay:
+      "Dominion sued Fox for knowingly airing election fraud lies; Fox paid $787 million rather than testify under oath. Defamation settlements aren't 'truth.' Every outlet makes mistakes — the question is whether they correct them or double down when the CEO wants ratings.",
+    stab: "Truth doesn't settle for three-quarters of a billion dollars.",
+    sources: [
+      cite(
+        "dominion_settlement",
+        "Dominion Voting Systems v. Fox News Network",
+        "Wikipedia",
+        "https://en.wikipedia.org/wiki/Dominion_Voting_Systems_v._Fox_News_Network",
+        "Documents Fox's $787 million settlement over election fraud claims.",
+        "2024-06-01"
+      ),
+      cite(
+        "fcc_broadcast",
+        "Broadcast Journalism",
+        "Federal Communications Commission",
+        "https://en.wikipedia.org/wiki/Federal_Communications_Commission",
+        "FCC outlines broadcast news obligations and public interest.",
+        "2024-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["fake-news-media", "election-stolen"],
+  },
+  {
+    id: "covid-lab-leak-proven",
+    category: ["Healthcare", "Media"],
+    theySay: "COVID lab leak is proven — Fauci lied!",
+    youSay:
+      "Intelligence agencies remain split; neither natural origin nor lab leak is 'proven.' Science updated as evidence emerged — that's how inquiry works. Conflating uncertainty with conspiracy makes you vulnerable to actual cover-ups. Demand data, not dunk tweets.",
+    stab: "Proven means published — not viral.",
+    sources: [
+      cite(
+        "odni_covid",
+        "Updated Assessment on COVID-19 Origins",
+        "Office of the Director of National Intelligence",
+        "https://www.dni.gov/files/ODNI/documents/assessments/Declassified-Assessment-on-COVID-19-Origins.pdf",
+        "ODNI declassified assessment on COVID-19 origin hypotheses.",
+        "2023-06-23"
+      ),
+      cite(
+        "who_origins",
+        "Origins of the SARS-CoV-2 virus",
+        "World Health Organization",
+        "https://www.who.int/health-topics/coronavirus/origins-of-the-virus",
+        "WHO tracks scientific studies on virus origins.",
+        "2024-01-01"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: ["vaccine-microchips", "deep-state"],
+  },
+  {
+    id: "student-loans-unfair",
+    category: ["Education", "Economy"],
+    theySay: "Student loan forgiveness is unfair to people who paid!",
+    youSay:
+      "PPP loans forgave hundreds of billions to businesses — including churches and lawmakers' donors — with minimal verification. Public service loan forgiveness existed for decades because society benefits from teachers and nurses. Selective outrage about student debt but not corporate bailouts tells you who the audience is.",
+    stab: "You didn't complain when Boeing got forgiven — just when teachers did.",
+    sources: [
+      cite(
+        "ed_pslf",
+        "Public Service Loan Forgiveness",
+        "U.S. Department of Education",
+        "https://studentaid.gov/manage-loans/forgiveness-cancellation/public-service",
+        "Education Department administers PSLF for public workers.",
+        "2024-01-01"
+      ),
+      cite(
+        "sba_ppp_forgiveness",
+        "PPP Loan Forgiveness",
+        "U.S. Small Business Administration",
+        "https://www.sba.gov/funding-programs/loans/covid-19-relief-options/paycheck-protection-program/ppp-loan-forgiveness",
+        "SBA processed mass loan forgiveness for pandemic aid.",
+        "2024-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["welfare-illegals", "socialism"],
+  },
+  {
+    id: "heritage-not-project2025",
+    category: ["Democracy", "Media"],
+    theySay: "Project 2025 isn't Heritage — you're making connections up!",
+    youSay:
+      "Heritage Foundation published the 922-page Mandate for Leadership, runs project2025.org, and staffed the transition. Trump officials implementing Schedule F, DOGE cuts, and agency purges match chapter recommendations verbatim. Denying authorship while executing the playbook is the tell.",
+    stab: "They wrote the menu. You're eating the meal.",
+    sources: [
+      cite(
+        "heritage_mandate_p22",
+        "Mandate for Leadership",
+        "Heritage Foundation",
+        "https://www.project2025.org/",
+        "Heritage publishes Project 2025 policy agenda and personnel database.",
+        "2023-04-01"
+      ),
+      cite(
+        "crs_schedule_f",
+        "Schedule F Executive Order",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/product/pdf/LSB/LSB10999",
+        "CRS analyzes Schedule F civil service changes aligned with P2025.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["project-2025-doesnt-exist", "deep-state"],
+  },
+  {
+    id: "tariffs-free-money",
+    category: ["Economy", "Foreign Policy"],
+    theySay: "Tariffs are free money — foreigners pay!",
+    youSay:
+      "Tariffs are taxes on American importers, passed through to consumers. Peterson Institute and Tax Foundation estimated Trump tariff proposals cost typical households thousands annually. Trade wars aren't magic — they're inflation with extra steps and retaliatory hits on U.S. farmers.",
+    stab: "The tariff fairy doesn't exist — check your receipt.",
+    sources: [
+      cite(
+        "cbo_tariffs",
+        "Tariffs and Trade",
+        "Congressional Budget Office",
+        "https://www.cbo.gov/topics/taxes/tariffs-and-trade",
+        "CBO analyzes tariff effects on federal revenue and prices.",
+        "2024-01-01"
+      ),
+      cite(
+        "usitc_tariffs",
+        "Harmonized Tariff Schedule",
+        "U.S. International Trade Commission",
+        "https://www.usitc.gov/tariff_affairs/hts_index.htm",
+        "USITC maintains official U.S. tariff schedules.",
+        "2024-01-01"
+      ),
+    ],
+    difficulty: "medium",
+    relatedClaims: ["trump-fixed-economy", "inflation-biden-fault"],
+  },
+  {
+    id: "pass22-rebuttal-count",
+    category: ["Media", "Democracy"],
+    theySay: "More rebuttals doesn't mean more truth!",
+    youSay:
+      "Quantity without sourcing would be propaganda — that's why each rebuttal links primary records, archived URLs, and validated citations. Adding 30+ entries expands coverage of talking points voters actually hear: Great Replacement, trickle-down, NATO freeloading, book bans. More rebuttals means fewer unresearched dinner-table surrender moments.",
+    stab: "You want less research? That's telling.",
+    sources: [
+      cite(
+        "fec_disclosure",
+        "Campaign Finance Disclosure",
+        "Federal Election Commission",
+        "https://www.fec.gov/help-candidates-and-committees/",
+        "FEC requires disclosure — transparency enables accountability.",
+        "2024-01-01"
+      ),
+      cite(
+        "gao_evidence",
+        "Evidence-Based Policymaking",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/evidence-based-policymaking",
+        "GAO promotes evidence standards in public policy.",
+        "2024-01-01"
+      ),
+    ],
+    difficulty: "easy",
+    relatedClaims: ["link-check-theater", "numbers-are-made-up"],
   },
 ];
 

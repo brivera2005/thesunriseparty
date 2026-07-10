@@ -128,3 +128,58 @@ export interface ConversationHelper {
   difficulty?: RebuttalDifficulty;
   relatedClaims?: string[];
 }
+
+export type HistoryEra =
+  | "Colonial"
+  | "Revolution"
+  | "Early Republic"
+  | "Antebellum"
+  | "Civil War"
+  | "Reconstruction"
+  | "Gilded Age"
+  | "Progressive"
+  | "WWI"
+  | "Roaring 20s"
+  | "Depression"
+  | "WWII"
+  | "Cold War"
+  | "Civil Rights"
+  | "Vietnam"
+  | "Reagan era"
+  | "911 era"
+  | "2008"
+  | "Trump era"
+  | "Today";
+
+export type HistoryCategory =
+  | "Foreign Policy"
+  | "Race"
+  | "Labor"
+  | "Native"
+  | "Democracy"
+  | "Economy"
+  | "Military"
+  | "Healthcare"
+  | "Education";
+
+export interface HistoricalRebuttal {
+  theySaid: string;
+  youSay: string;
+  stab?: string;
+  sources: CitationSource[];
+}
+
+export interface HiddenHistoryEntry {
+  id: string;
+  date: string;
+  sortYear: number;
+  era: HistoryEra;
+  title: string;
+  textbookVersion: string;
+  actualHistory: string;
+  historicalRebuttals: HistoricalRebuttal[];
+  sources: CitationSource[];
+  categories: HistoryCategory[];
+  relatedEvents?: string[];
+  relatedRebuttalIds?: string[];
+}

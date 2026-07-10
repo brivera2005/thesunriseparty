@@ -6,6 +6,7 @@ import Link from "next/link";
 import {
   AlertTriangle,
   Compass,
+  History,
   MessageSquareQuote,
   Shield,
   Pin,
@@ -54,6 +55,7 @@ const typeIcons: Record<SearchResultType, React.ReactNode> = {
   Blueprint: <Compass className="size-4 text-primary" />,
   Rebuttal: <MessageSquareQuote className="size-4 text-sunrise" />,
   Safeguard: <Shield className="size-4 text-primary" />,
+  History: <History className="size-4 text-amber-600" />,
 };
 
 function toSearchResult(pin: PalettePin): SearchResult {
@@ -118,6 +120,7 @@ export function CommandPalette() {
       Blueprint: [],
       Rebuttal: [],
       Safeguard: [],
+      History: [],
     };
     for (const r of results) {
       groups[r.type].push(r);

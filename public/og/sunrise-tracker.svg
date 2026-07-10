@@ -3,8 +3,8 @@
   <rect x="0" y="0" width="1200" height="8" fill="#c45c3e"/>
   <text x="80" y="120" fill="#c45c3e" font-family="system-ui,sans-serif" font-size="20" font-weight="600" letter-spacing="4">LIVE MONITORING</text>
   <text x="80" y="200" fill="#f5e6d8" font-family="system-ui,sans-serif" font-size="52" font-weight="700">Project 2025 Tracker</text>
-  <text x="80" y="280" fill="#c9a88a" font-family="system-ui,sans-serif" font-size="26">Verified admin actions · Severity scoring</text>
-  <text x="80" y="330" fill="#a08070" font-family="system-ui,sans-serif" font-size="22">Primary sources · Independent cross-refs</text>
+  <text x="80" y="280" fill="#c9a88a" font-family="system-ui,sans-serif" font-size="26">Verified admin actions ï¿½ Severity scoring</text>
+  <text x="80" y="330" fill="#a08070" font-family="system-ui,sans-serif" font-size="22">Primary sources ï¿½ Independent cross-refs</text>
   <rect x="80" y="400" width="200" height="4" fill="#c45c3e" opacity="0.6"/>
   <text x="80" y="560" fill="#806050" font-family="system-ui,sans-serif" font-size="18">thesunriseparty.pages.dev</text>
 </svg>

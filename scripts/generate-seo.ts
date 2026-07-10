@@ -32,6 +32,8 @@ const STATIC_PAGES: SitemapEntry[] = [
   { loc: `${SITE}/events`, changefreq: "daily", priority: 0.85 },
   { loc: `${SITE}/blueprint`, changefreq: "monthly", priority: 0.85 },
   { loc: `${SITE}/rebuttal`, changefreq: "weekly", priority: 0.85 },
+  { loc: `${SITE}/history`, changefreq: "weekly", priority: 0.88 },
+  { loc: `${SITE}/history/rebuttals`, changefreq: "weekly", priority: 0.82 },
   { loc: `${SITE}/changelog`, changefreq: "monthly", priority: 0.5 },
   { loc: `${SITE}/feed.xml`, changefreq: "daily", priority: 0.6 },
   { loc: `${SITE}/feed.ics`, changefreq: "daily", priority: 0.6 },

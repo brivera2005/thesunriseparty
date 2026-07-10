@@ -119,4 +119,17 @@ export const sectionOg = {
       },
     ],
   },
+  history: {
+    title: "Hidden History | Project Sunrise",
+    description:
+      "Interactive dual timeline — textbook narratives vs. sourced American history with historical rebuttals for every era.",
+    images: [
+      {
+        url: `${SITE_URL}/og/sunrise-default.svg`,
+        width: 1200,
+        height: 630,
+        alt: "Project Sunrise — Hidden History",
+      },
+    ],
+  },
 };
