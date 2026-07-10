@@ -17,7 +17,7 @@ export function MissionSection({ compact = false }: { compact?: boolean }) {
   return (
     <section
       id="mission"
-      className="scroll-mt-16 border-b border-border bg-gradient-to-b from-background via-accent/30 to-background py-20 sm:py-28"
+      className="scroll-mt-16 border-b border-border bg-white py-20 sm:py-28"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="mx-auto max-w-3xl text-center">
@@ -49,7 +49,7 @@ export function MissionSection({ compact = false }: { compact?: boolean }) {
           {pillars.map((pillar) => (
             <Card
               key={pillar.title}
-              className="border-border/80 bg-card/60 backdrop-blur-sm transition-shadow hover:shadow-md"
+              className="border-border bg-white transition-shadow hover:shadow-md"
             >
               <CardContent className="p-6">
                 <pillar.icon

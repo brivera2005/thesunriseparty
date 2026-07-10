@@ -68,9 +68,8 @@ export function MissionPage() {
 
       <main id="main-content">
         {/* Hero */}
-        <section className="mission-hero relative overflow-hidden border-b border-border">
-          <div className="absolute inset-0 mission-gradient" />
-          <div className="relative mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:py-24">
+        <section className="border-b border-border bg-gradient-to-b from-primary/5 to-white">
+          <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:py-24">
             <Link
               href="/"
               className="mb-8 inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
@@ -120,7 +119,7 @@ export function MissionPage() {
               {missionPillars.map((pillar) => (
                 <Card
                   key={pillar.title}
-                  className="border-border/80 bg-card/60 backdrop-blur-sm transition-shadow hover:shadow-md"
+                  className="border-border bg-white transition-shadow hover:shadow-md"
                 >
                   <CardContent className="p-6">
                     <pillar.icon
@@ -140,7 +139,7 @@ export function MissionPage() {
 
         {/* Transparency Pledge */}
         <section
-          className="scroll-mt-16 border-y border-border bg-accent/20 py-16 sm:py-20"
+          className="scroll-mt-16 border-y border-border bg-muted/30 py-16 sm:py-20"
           id="pledge"
         >
           <div className="mx-auto max-w-3xl px-4 sm:px-6">

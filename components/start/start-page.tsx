@@ -26,7 +26,7 @@ export function StartPage() {
       <CitationModal />
 
       <main id="main-content">
-        <section className="border-b border-border bg-gradient-to-b from-sunrise/10 via-primary/5 to-background">
+        <section className="border-b border-border bg-gradient-to-b from-primary/5 to-white">
           <div className="mx-auto max-w-3xl px-4 py-10 text-center sm:px-6 sm:py-14">
             <Link
               href="/"

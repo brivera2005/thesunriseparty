@@ -141,7 +141,7 @@ export function LandingPage() {
       <main id="main-content">
         {/* 1. Hero */}
         <section className="relative overflow-hidden border-b border-border bg-white">
-          <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,_oklch(0.97_0.04_75)_0%,_#ffffff_55%)]" />
+          <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,_oklch(0.98_0.015_75)_0%,_#ffffff_60%)]" />
           <div className="relative mx-auto flex max-w-6xl flex-col items-center px-4 py-10 text-center sm:px-6 sm:py-16 lg:py-20">
             <FadeIn>
               <h1 className="sr-only">Project Sunrise</h1>

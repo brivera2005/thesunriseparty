@@ -30,9 +30,9 @@ export function SiteHeader() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-border bg-white/95 backdrop-blur-lg supports-[backdrop-filter]:bg-white/90">
-      <div className="mx-auto flex h-14 max-w-6xl items-center justify-between gap-2 px-3 sm:h-16 sm:gap-3 sm:px-6 md:h-[4.75rem]">
-        <Link href="/" className="flex min-w-0 items-center" aria-label="Project Sunrise home">
+    <header className="sticky top-0 z-40 overflow-visible border-b border-border bg-white/95 backdrop-blur-lg supports-[backdrop-filter]:bg-white/90">
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-2 px-3 py-2.5 sm:gap-3 sm:px-6 sm:py-3">
+        <Link href="/" className="flex min-w-0 items-center py-0.5" aria-label="Project Sunrise home">
           <BrandLogo variant="header" priority />
         </Link>
 

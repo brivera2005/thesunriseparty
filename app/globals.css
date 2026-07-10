@@ -221,25 +221,21 @@
   background: linear-gradient(
     135deg,
     #ffffff 0%,
-    oklch(0.98 0.04 75) 45%,
-    oklch(0.99 0.02 85) 100%
+    oklch(0.985 0.015 75) 50%,
+    #ffffff 100%
   );
 }
 
 .section-safeguards {
-  background: linear-gradient(
-    180deg,
-    oklch(0.97 0.04 88) 0%,
-    oklch(0.985 0.022 92) 100%
-  );
+  background: #ffffff;
 }
 
 .section-rebuttal {
   background: linear-gradient(
     180deg,
-    oklch(0.985 0.022 92) 0%,
-    oklch(0.97 0.05 82) 50%,
-    oklch(0.985 0.022 92) 100%
+    #ffffff 0%,
+    oklch(0.985 0.015 75) 50%,
+    #ffffff 100%
   );
 }
 
@@ -270,21 +266,9 @@
 
 .mission-gradient {
   background: linear-gradient(
-    145deg,
-    oklch(0.94 0.08 75) 0%,
-    oklch(0.98 0.04 90) 35%,
-    oklch(0.96 0.06 68) 70%,
-    oklch(0.99 0.025 92) 100%
-  );
-}
-
-.dark .mission-gradient,
-.mode-tracker .mission-gradient {
-  background: linear-gradient(
-    145deg,
-    oklch(0.22 0.07 28) 0%,
-    oklch(0.18 0.055 25) 40%,
-    oklch(0.20 0.065 22) 100%
+    180deg,
+    oklch(0.98 0.02 75 / 40%) 0%,
+    #ffffff 100%
   );
 }
 

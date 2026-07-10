@@ -23,7 +23,8 @@ const sizeMap = {
   header: {
     width: 320,
     height: 174,
-    className: "h-14 w-auto sm:h-16 md:h-20 lg:h-24",
+    // Keep below header padding so the mark never clips the sticky border
+    className: "h-10 w-auto sm:h-11 md:h-12",
   },
   footer: {
     width: 220,

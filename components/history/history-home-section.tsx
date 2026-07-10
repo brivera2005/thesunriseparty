@@ -17,14 +17,14 @@ export function HistoryHomeSection() {
   return (
     <section
       id="hidden-history"
-      className="scroll-mt-16 border-t border-border bg-gradient-to-b from-amber-50/50 to-background py-16 sm:py-20 dark:from-amber-950/10"
+      className="scroll-mt-16 border-t border-border bg-white py-16 sm:py-20"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="mb-10 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
           <div>
             <div className="mb-3 flex items-center gap-2">
               <div className="size-2 rounded-full bg-amber-500 shadow-[0_0_8px_oklch(0.75_0.15_75/40%)]" />
-              <span className="text-xs font-semibold tracking-[0.2em] text-amber-700 uppercase dark:text-amber-400">
+              <span className="text-xs font-semibold tracking-[0.2em] text-amber-700 uppercase">
                 Hidden History
               </span>
             </div>
@@ -45,18 +45,18 @@ export function HistoryHomeSection() {
           </Link>
         </div>
 
-        <Card className="overflow-hidden border-amber-200/60 bg-card dark:border-amber-900/40">
+        <Card className="overflow-hidden border-amber-200/60 bg-white">
           <CardContent className="p-0">
             <div className="grid md:grid-cols-2">
-              <div className="border-b border-border bg-sky-50/50 p-6 md:border-r md:border-b-0 dark:bg-sky-950/20">
-                <p className="mb-2 flex items-center gap-2 text-xs font-semibold tracking-wide text-sky-700 uppercase dark:text-sky-300">
+              <div className="border-b border-border bg-sky-50/50 p-6 md:border-r md:border-b-0">
+                <p className="mb-2 flex items-center gap-2 text-xs font-semibold tracking-wide text-sky-700 uppercase">
                   <Columns2 className="size-3.5" />
                   What Textbooks Teach
                 </p>
                 <p className="text-sm leading-relaxed">{featured.textbookVersion}</p>
               </div>
-              <div className="bg-amber-50/50 p-6 dark:bg-amber-950/20">
-                <p className="mb-2 text-xs font-semibold tracking-wide text-amber-800 uppercase dark:text-amber-300">
+              <div className="bg-amber-50/40 p-6">
+                <p className="mb-2 text-xs font-semibold tracking-wide text-amber-800 uppercase">
                   What Actually Happened
                 </p>
                 <p className="text-sm leading-relaxed">{featured.actualHistory}</p>
