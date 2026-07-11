@@ -8,6 +8,18 @@ export interface ChangelogEntry {
 /** Site iteration history - meta transparency for Project Sunrise builds */
 export const changelog: ChangelogEntry[] = [
   {
+    version: "0.29.0",
+    date: "2026-07-11",
+    title: "Pass 29 - Keep expanding verifiable room",
+    highlights: [
+      "Hidden History expanded to 210 dual-timeline entries (Salem through COVID, Fort Pillow, Bakke, Tet, Guadalupe Hidalgo, and more)",
+      "Rebuttal Desk hit 500 sourced counters spanning citizenship-verification, DEI contractor bans, housing EOs, de minimis trade, NSPMs, and FOIA",
+      "Project 2025 Tracker crossed 220 verified actions including citizenship-verification elections order, TrumpIRA.gov, FEMA Review continuance, and E.O. 14389 tariff toggles",
+      "New Federal Register and White House citations for housing, customs, arms-transfer, recovery, and Made in America advertising orders",
+      "Link validation and Cloudflare Pages deploy for v0.29",
+    ],
+  },
+  {
     version: "0.28.0",
     date: "2026-07-11",
     title: "Pass 28 - Keep expanding verifiable room",

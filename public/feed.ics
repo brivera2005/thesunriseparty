@@ -226,6 +226,20 @@ URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0711-202
 CATEGORIES:Democracy
 END:VEVENT
 BEGIN:VEVENT
+UID:EVT-2026-0711-220@thesunriseparty.pages.dev
+DTSTAMP:20260711T120000Z
+DTSTART;VALUE=DATE:20260711
+SUMMARY:Documentation Milestone: Project Sunrise Pass 29 crosses 220 verifi
+ ed actions spanning citizenship-verification elections orders\, DEI contra
+ ctor…
+DESCRIPTION:Project Sunrise Pass 29 crosses 220 verified actions spanning c
+ itizenship-verification elections orders\, DEI contractor bans\, housing e
+ xecutive stack\, de minimis trade continuance\, and FEMA Review Council ex
+ tensions.\\n\\nSeverity: 9/10\\nCategory: Democracy\\nSectors: Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0711-220
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
 UID:EVT-2026-0710-150@thesunriseparty.pages.dev
 DTSTAMP:20260711T120000Z
 DTSTART;VALUE=DATE:20260710
@@ -326,6 +340,19 @@ DESCRIPTION:As the DOGE temporary organization sunset approaches\, workforc
  ministrative-state strategy.\\n\\nSeverity: 9/10\\nCategory: Democracy\\nS
  ectors: Democracy\, Economy
 URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0703-180
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2026-0711-219@thesunriseparty.pages.dev
+DTSTAMP:20260711T120000Z
+DTSTART;VALUE=DATE:20260703
+SUMMARY:Civic Narrative: Declaration 250th anniversary proclamation saturat
+ es civic messaging while contemporaneous Schedule Policy/Career and v…
+DESCRIPTION:Declaration 250th anniversary proclamation saturates civic mess
+ aging while contemporaneous Schedule Policy/Career and voting orders remak
+ e governing capacity.\\n\\nSeverity: 4/10\\nCategory: Democracy\\nSectors:
+  Democracy\, Education
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0711-219
 CATEGORIES:Democracy
 END:VEVENT
 BEGIN:VEVENT
@@ -766,6 +793,18 @@ URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0515-155
 CATEGORIES:Immigration
 END:VEVENT
 BEGIN:VEVENT
+UID:EVT-2026-0711-208@thesunriseparty.pages.dev
+DTSTAMP:20260711T120000Z
+DTSTART;VALUE=DATE:20260507
+SUMMARY:Foreign Policy: Cuba sanctions expansion continues foreign-policy r
+ ule by executive instrument with repression and national-security ju…
+DESCRIPTION:Cuba sanctions expansion continues foreign-policy rule by execu
+ tive instrument with repression and national-security justifications.\\n\\
+ nSeverity: 6/10\\nCategory: Democracy\\nSectors: Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0711-208
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
 UID:EVT-2026-0505-173@thesunriseparty.pages.dev
 DTSTAMP:20260711T120000Z
 DTSTART;VALUE=DATE:20260505
@@ -777,6 +816,19 @@ DESCRIPTION:Federal lands access rollback (E.O. 14408) proceeds alongside d
  nvironment
 URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0505-173
 CATEGORIES:Environment
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2026-0711-205@thesunriseparty.pages.dev
+DTSTAMP:20260711T120000Z
+DTSTART;VALUE=DATE:20260505
+SUMMARY:Economy: TrumpIRA.gov retirement order brands federal retirement-sa
+ vings access under personalized presidential marketing while …
+DESCRIPTION:TrumpIRA.gov retirement order brands federal retirement-savings
+  access under personalized presidential marketing while rewriting savings 
+ policy by executive action.\\n\\nSeverity: 5/10\\nCategory: Economy\\nSect
+ ors: Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0711-205
+CATEGORIES:Economy
 END:VEVENT
 BEGIN:VEVENT
 UID:EVT-2026-0501-172@thesunriseparty.pages.dev
@@ -805,6 +857,19 @@ URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0430-131
 CATEGORIES:Economy
 END:VEVENT
 BEGIN:VEVENT
+UID:EVT-2026-0711-206@thesunriseparty.pages.dev
+DTSTAMP:20260711T120000Z
+DTSTART;VALUE=DATE:20260422
+SUMMARY:Healthcare: Serious-mental-illness treatment acceleration order exp
+ ands executive direction over medical pathways with limited ordi…
+DESCRIPTION:Serious-mental-illness treatment acceleration order expands exe
+ cutive direction over medical pathways with limited ordinary notice-and-co
+ mment guardrails.\\n\\nSeverity: 6/10\\nCategory: Healthcare\\nSectors: He
+ althcare
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0711-206
+CATEGORIES:Healthcare
+END:VEVENT
+BEGIN:VEVENT
 UID:EVT-2026-0415-154@thesunriseparty.pages.dev
 DTSTAMP:20260711T120000Z
 DTSTART;VALUE=DATE:20260415
@@ -815,6 +880,31 @@ DESCRIPTION:Education Department restructuring and Title IX sports rule shi
  nSeverity: 8/10\\nCategory: Education\\nSectors: Education\, Civil Rights
 URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0415-154
 CATEGORIES:Education
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2026-0711-207@thesunriseparty.pages.dev
+DTSTAMP:20260711T120000Z
+DTSTART;VALUE=DATE:20260409
+SUMMARY:Education: College-sports emergency order inserts federal politics 
+ into NCAA and campus athletics governance under an urgent natio…
+DESCRIPTION:College-sports emergency order inserts federal politics into NC
+ AA and campus athletics governance under an urgent national-action frame.\
+ \n\\nSeverity: 5/10\\nCategory: Education\\nSectors: Education
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0711-207
+CATEGORIES:Education
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2026-0711-203@thesunriseparty.pages.dev
+DTSTAMP:20260711T120000Z
+DTSTART;VALUE=DATE:20260403
+SUMMARY:Voting Rights: Citizenship-verification executive order adds federa
+ l pressure on election administration under an integrity frame that…
+DESCRIPTION:Citizenship-verification executive order adds federal pressure 
+ on election administration under an integrity frame that overlaps SAVE Act
+ -style documentary proof politics.\\n\\nSeverity: 8/10\\nCategory: Democra
+ cy\\nSectors: Democracy\, Civil Rights
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0711-203
+CATEGORIES:Democracy
 END:VEVENT
 BEGIN:VEVENT
 UID:EVT-2026-0401-171@thesunriseparty.pages.dev
@@ -830,6 +920,32 @@ URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0401-171
 CATEGORIES:Immigration
 END:VEVENT
 BEGIN:VEVENT
+UID:EVT-2026-0711-204@thesunriseparty.pages.dev
+DTSTAMP:20260711T120000Z
+DTSTART;VALUE=DATE:20260331
+SUMMARY:Civil Rights: DEI contractor executive order reframes equity progra
+ ms as discrimination and chills federal-contractor diversity\, equi…
+DESCRIPTION:DEI contractor executive order reframes equity programs as disc
+ rimination and chills federal-contractor diversity\, equity\, and inclusio
+ n practices.\\n\\nSeverity: 8/10\\nCategory: Civil Rights\\nSectors: Civil
+  Rights\, Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0711-204
+CATEGORIES:Civil Rights
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2026-0711-214@thesunriseparty.pages.dev
+DTSTAMP:20260711T120000Z
+DTSTART;VALUE=DATE:20260327
+SUMMARY:Disaster Agencies: Further continuance of the FEMA Review Council k
+ eeps disaster-agency restructuring under political review rather than s…
+DESCRIPTION:Further continuance of the FEMA Review Council keeps disaster-a
+ gency restructuring under political review rather than settled statutory r
+ eform.\\n\\nSeverity: 7/10\\nCategory: Democracy\\nSectors: Democracy\, He
+ althcare
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0711-214
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
 UID:EVT-2026-0326-139@thesunriseparty.pages.dev
 DTSTAMP:20260711T120000Z
 DTSTART;VALUE=DATE:20260326
@@ -841,6 +957,43 @@ DESCRIPTION:Order addressing DEI discrimination by federal contractors expa
  Sectors: Civil Rights\, Economy
 URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0326-139
 CATEGORIES:Civil Rights
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2026-0711-211@thesunriseparty.pages.dev
+DTSTAMP:20260711T120000Z
+DTSTART;VALUE=DATE:20260319
+SUMMARY:Oversight: Fraud-elimination task force concentrates investigatory 
+ framing in the executive branch while Schedule Policy/Career re…
+DESCRIPTION:Fraud-elimination task force concentrates investigatory framing
+  in the executive branch while Schedule Policy/Career remakes the workforc
+ e that traditionally flags waste.\\n\\nSeverity: 7/10\\nCategory: Democrac
+ y\\nSectors: Democracy\, Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0711-211
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2026-0711-212@thesunriseparty.pages.dev
+DTSTAMP:20260711T120000Z
+DTSTART;VALUE=DATE:20260318
+SUMMARY:Housing: Affordable-home-construction deregulatory order plus mortg
+ age-credit directives rewrite housing supply policy by execut…
+DESCRIPTION:Affordable-home-construction deregulatory order plus mortgage-c
+ redit directives rewrite housing supply policy by executive checklist.\\n\
+ \nSeverity: 6/10\\nCategory: Economy\\nSectors: Economy\, Civil Rights
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0711-212
+CATEGORIES:Economy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2026-0711-218@thesunriseparty.pages.dev
+DTSTAMP:20260711T120000Z
+DTSTART;VALUE=DATE:20260318
+SUMMARY:Consumer Protection: Made in America advertising order pairs consum
+ er-truth themes with a broader deregulatory stack that has paused CFPB an…
+DESCRIPTION:Made in America advertising order pairs consumer-truth themes w
+ ith a broader deregulatory stack that has paused CFPB and FTC enforcement 
+ bandwidth.\\n\\nSeverity: 5/10\\nCategory: Economy\\nSectors: Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0711-218
+CATEGORIES:Economy
 END:VEVENT
 BEGIN:VEVENT
 UID:EVT-2026-0315-153@thesunriseparty.pages.dev
@@ -868,6 +1021,32 @@ URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0301-170
 CATEGORIES:Democracy
 END:VEVENT
 BEGIN:VEVENT
+UID:EVT-2026-0711-209@thesunriseparty.pages.dev
+DTSTAMP:20260711T120000Z
+DTSTART;VALUE=DATE:20260225
+SUMMARY:Trade: De minimis suspension continuance keeps low-value imports un
+ der tariff collection nationwide\, reshaping e-commerce and …
+DESCRIPTION:De minimis suspension continuance keeps low-value imports under
+  tariff collection nationwide\, reshaping e-commerce and customs workloads
+  by proclamation-style trade policy.\\n\\nSeverity: 7/10\\nCategory: Econo
+ my\\nSectors: Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0711-209
+CATEGORIES:Economy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2026-0711-210@thesunriseparty.pages.dev
+DTSTAMP:20260711T120000Z
+DTSTART;VALUE=DATE:20260225
+SUMMARY:Trade: Ending Certain Tariff Actions (E.O. 14389) selectively termi
+ nates some IEEPA duties while preserving other surcharge an…
+DESCRIPTION:Ending Certain Tariff Actions (E.O. 14389) selectively terminat
+ es some IEEPA duties while preserving other surcharge and de minimis measu
+ res\, proving tariff policy remains an executive toggle.\\n\\nSeverity: 7/
+ 10\\nCategory: Economy\\nSectors: Economy\, Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0711-210
+CATEGORIES:Economy
+END:VEVENT
+BEGIN:VEVENT
 UID:EVT-2026-0215-152@thesunriseparty.pages.dev
 DTSTAMP:20260711T120000Z
 DTSTART;VALUE=DATE:20260215
@@ -878,6 +1057,31 @@ DESCRIPTION:Election officials face continued federal funding and CISA supp
   Congress\, raising access barriers.\\n\\nSeverity: 8/10\\nCategory: Democ
  racy\\nSectors: Democracy\, Civil Rights
 URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0215-152
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2026-0711-215@thesunriseparty.pages.dev
+DTSTAMP:20260711T120000Z
+DTSTART;VALUE=DATE:20260211
+SUMMARY:Immigration: Criminal-actors executive order expands DHS criminal-h
+ istory access and international felony-record exchange for immigr…
+DESCRIPTION:Criminal-actors executive order expands DHS criminal-history ac
+ cess and international felony-record exchange for immigration enforcement.
+ \\n\\nSeverity: 8/10\\nCategory: Immigration\\nSectors: Immigration\, Civi
+ l Rights
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0711-215
+CATEGORIES:Immigration
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2026-0711-216@thesunriseparty.pages.dev
+DTSTAMP:20260711T120000Z
+DTSTART;VALUE=DATE:20260211
+SUMMARY:Foreign Policy: America First arms-transfer strategy order centrali
+ zes weapons-export policy messaging under executive national-securit…
+DESCRIPTION:America First arms-transfer strategy order centralizes weapons-
+ export policy messaging under executive national-security branding.\\n\\nS
+ everity: 6/10\\nCategory: Democracy\\nSectors: Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0711-216
 CATEGORIES:Democracy
 END:VEVENT
 BEGIN:VEVENT
@@ -892,6 +1096,18 @@ DESCRIPTION:Pew Research finds only 18% of Americans trust the federal gove
  y\\nSectors: Democracy
 URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0203-025
 CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2026-0711-217@thesunriseparty.pages.dev
+DTSTAMP:20260711T120000Z
+DTSTART;VALUE=DATE:20260203
+SUMMARY:Healthcare: Great American Recovery Initiative order reframes feder
+ al addiction policy under branded presidential recovery politics.
+DESCRIPTION:Great American Recovery Initiative order reframes federal addic
+ tion policy under branded presidential recovery politics.\\n\\nSeverity: 6
+ /10\\nCategory: Healthcare\\nSectors: Healthcare
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0711-217
+CATEGORIES:Healthcare
 END:VEVENT
 BEGIN:VEVENT
 UID:EVT-2026-0201-024@thesunriseparty.pages.dev
@@ -918,6 +1134,18 @@ DESCRIPTION:OPM public-inspection final rule advances Schedule Policy/Caree
  everity: 10/10\\nCategory: Democracy\\nSectors: Democracy\, Economy
 URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0201-130
 CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2026-0711-213@thesunriseparty.pages.dev
+DTSTAMP:20260711T120000Z
+DTSTART;VALUE=DATE:20260123
+SUMMARY:Housing: Wall Street versus Main Street homebuyer order targets ins
+ titutional residential investors while leaving broader afford…
+DESCRIPTION:Wall Street versus Main Street homebuyer order targets institut
+ ional residential investors while leaving broader affordability drivers un
+ resolved.\\n\\nSeverity: 5/10\\nCategory: Economy\\nSectors: Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0711-213
+CATEGORIES:Economy
 END:VEVENT
 BEGIN:VEVENT
 UID:EVT-2026-0115-023@thesunriseparty.pages.dev

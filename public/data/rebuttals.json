@@ -1,8 +1,8 @@
 {
   "meta": {
     "site": "https://thesunriseparty.pages.dev",
-    "generated": "2026-07-11T22:10:00.849Z",
-    "count": 461,
+    "generated": "2026-07-11T22:20:35.121Z",
+    "count": 500,
     "license": "CC-BY-4.0 - cite Project Sunrise (thesunriseparty.pages.dev)"
   },
   "rebuttals": [
@@ -15461,6 +15461,1492 @@
           "publisher": "National Park Service",
           "url": "https://www.nps.gov/subjects/tellingallamericansstories/index.htm",
           "date": "2020-01-01"
+        }
+      ]
+    },
+    {
+      "id": "citizenship-proof-harms-nobody",
+      "categories": [
+        "Elections",
+        "Democracy"
+      ],
+      "theySay": "Proof of citizenship for voting only stops illegal votes!",
+      "youSay": "Documentary proof requirements block eligible citizens who lack ready paperwork, especially naturalized, elderly, and low-income voters. Noncitizen voting remains vanishingly rare in audited studies. Election security is real; disenfranchising paperwork traps are a different project.",
+      "stab": "If the problem is rare, the solution should not be a mass paperwork tax on citizens.",
+      "difficulty": "medium",
+      "relatedClaims": [
+        "voter-id-solves-fraud",
+        "save-act-common-sense"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/citizenship-proof-harms-nobody",
+      "sources": [
+        {
+          "id": "brennan_voting_laws",
+          "title": "State Voting Laws Roundup",
+          "publisher": "Brennan Center for Justice",
+          "url": "https://www.brennancenter.org/our-work/research-reports/state-voting-laws-roundup-2025-review",
+          "date": "2025-12-18"
+        },
+        {
+          "id": "fr_citizenship_eo",
+          "title": "Ensuring Citizenship Verification and Integrity in Federal Elections",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/04/03/2026-06601/ensuring-citizenship-verification-and-integrity-in-federal-elections",
+          "date": "2026-04-03"
+        },
+        {
+          "id": "crs_elections",
+          "title": "Election Administration",
+          "publisher": "Congressional Research Service",
+          "url": "https://crsreports.congress.gov/",
+          "date": "2025-01-01"
+        }
+      ]
+    },
+    {
+      "id": "dei-is-illegal-discrimination",
+      "categories": [
+        "Culture Wars",
+        "Democracy"
+      ],
+      "theySay": "DEI is illegal discrimination against white people!",
+      "youSay": "Equity programs that expand opportunity are not the same as racial quotas banned by courts. Contractor DEI bans use discrimination language to chill voluntary inclusion work that never guaranteed anyone a job over a more qualified applicant.",
+      "stab": "Calling inclusion discrimination does not make exclusion colorblind.",
+      "difficulty": "hard",
+      "relatedClaims": [
+        "affirmative-action-racist",
+        "colorblind-already"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/dei-is-illegal-discrimination",
+      "sources": [
+        {
+          "id": "fr_dei_contractors",
+          "title": "Addressing DEI Discrimination by Federal Contractors",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/03/31/2026-06286/addressing-dei-discrimination-by-federal-contractors",
+          "date": "2026-03-31"
+        },
+        {
+          "id": "eeoc_title_vii",
+          "title": "Title VII of the Civil Rights Act of 1964",
+          "publisher": "EEOC",
+          "url": "https://www.eeoc.gov/statutes/title-vii-civil-rights-act-1964",
+          "date": "1964-07-02"
+        },
+        {
+          "id": "oyez_sffa",
+          "title": "Students for Fair Admissions v. Harvard",
+          "publisher": "Oyez",
+          "url": "https://www.oyez.org/cases/2022/20-1199",
+          "date": "2023-06-29"
+        }
+      ]
+    },
+    {
+      "id": "trumpira-helps-workers",
+      "categories": [
+        "Economy"
+      ],
+      "theySay": "TrumpIRA.gov proves this administration helps workers save!",
+      "youSay": "Branding a federal retirement portal after a president is marketing. Worker retirement security depends on wages, fees, Social Security, and employer plans, not a vanity domain. Check the contribution rules and consumer protections, not the logo.",
+      "stab": "A .gov with a campaign name is not a raise.",
+      "difficulty": "easy",
+      "relatedClaims": [
+        "tax-cuts-help-workers"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/trumpira-helps-workers",
+      "sources": [
+        {
+          "id": "fr_trumpira",
+          "title": "Promoting Retirement-Savings Access for American Workers by Establishing TrumpIRA.gov",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/05/05/2026-08908/promoting-retirement-savings-access-for-american-workers-by-establishing-trumpiragov",
+          "date": "2026-05-05"
+        },
+        {
+          "id": "bls_wages_reb",
+          "title": "Union Members Summary",
+          "publisher": "Bureau of Labor Statistics",
+          "url": "https://www.bls.gov/news.release/union2.nr0.htm",
+          "date": "2025-01-23"
+        },
+        {
+          "id": "ssa_home",
+          "title": "Social Security",
+          "publisher": "Social Security Administration",
+          "url": "https://www.ssa.gov/",
+          "date": "2025-01-01"
+        }
+      ]
+    },
+    {
+      "id": "mental-health-eo-solves-guns",
+      "categories": [
+        "Healthcare",
+        "Crime"
+      ],
+      "theySay": "A mental-health executive order proves guns are not the issue!",
+      "youSay": "Serious mental illness treatment access matters. It does not erase firearm mortality data, background-check gaps, or the fact that most gun deaths are not mass shootings by people with diagnosed serious mental illness. Both public health tools can be true.",
+      "stab": "Treatment is good. Using it as a shield against gun policy is a dodge.",
+      "difficulty": "medium",
+      "relatedClaims": [
+        "mental-health-not-guns-again",
+        "guns-dont-kill"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/mental-health-eo-solves-guns",
+      "sources": [
+        {
+          "id": "fr_mental_eo",
+          "title": "Accelerating Medical Treatments for Serious Mental Illness",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/04/22/2026-07907/accelerating-medical-treatments-for-serious-mental-illness",
+          "date": "2026-04-22"
+        },
+        {
+          "id": "cdc_faststats_guns",
+          "title": "All Injuries",
+          "publisher": "CDC",
+          "url": "https://www.cdc.gov/nchs/fastats/injury.htm",
+          "date": "2024-01-01"
+        },
+        {
+          "id": "nimh_home",
+          "title": "National Institute of Mental Health",
+          "publisher": "NIH",
+          "url": "https://www.nimh.nih.gov/",
+          "date": "2025-01-01"
+        }
+      ]
+    },
+    {
+      "id": "college-sports-federal-emergency",
+      "categories": [
+        "Education",
+        "Culture Wars"
+      ],
+      "theySay": "The president must save college sports!",
+      "youSay": "Campus athletics finance and Title IX compliance are real policy fights. Declaring urgent national action by executive order is culture-war federalization of NCAA politics, not a substitute for legislation or conference governance.",
+      "stab": "If football needs a national emergency, so does student debt.",
+      "difficulty": "easy",
+      "relatedClaims": [
+        "title-ix-ruins-sports"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/college-sports-federal-emergency",
+      "sources": [
+        {
+          "id": "fr_college_sports",
+          "title": "Urgent National Action To Save College Sports",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/04/09/2026-06961/urgent-national-action-to-save-college-sports",
+          "date": "2026-04-09"
+        },
+        {
+          "id": "ed_titleix",
+          "title": "Title IX and Sex Discrimination",
+          "publisher": "U.S. Department of Education",
+          "url": "https://www.ed.gov/laws-and-policy/civil-rights-laws/title-ix-and-sex-discrimination/sex-discrimination-overview-of-law",
+          "date": "2025-04-02"
+        },
+        {
+          "id": "crs_home_reb",
+          "title": "Congressional Research Service",
+          "publisher": "CRS",
+          "url": "https://crsreports.congress.gov/",
+          "date": "2025-01-01"
+        }
+      ]
+    },
+    {
+      "id": "de-minimis-protects-america",
+      "categories": [
+        "Economy",
+        "Foreign Policy"
+      ],
+      "theySay": "Ending de minimis duty-free imports protects American workers!",
+      "youSay": "Closing the de minimis loophole can address underpriced imports and fentanyl packaging concerns. It also raises consumer prices and customs friction. Trade-offs exist; pretending it is costless patriotism is marketing.",
+      "stab": "Tariffs are taxes. Someone pays them at checkout.",
+      "difficulty": "medium",
+      "relatedClaims": [
+        "tariffs-are-paid-by-china",
+        "tariffs-lower-prices"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/de-minimis-protects-america",
+      "sources": [
+        {
+          "id": "fr_deminimis",
+          "title": "Continuing the Suspension of Duty-Free De Minimis Treatment for All Countries",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/02/25/2026-03829/continuing-the-suspension-of-duty-free-de-minimis-treatment-for-all-countries",
+          "date": "2026-02-25"
+        },
+        {
+          "id": "fr_end_tariffs",
+          "title": "Ending Certain Tariff Actions",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/02/25/2026-03832/ending-certain-tariff-actions",
+          "date": "2026-02-25"
+        },
+        {
+          "id": "itc_home",
+          "title": "United States International Trade Commission",
+          "publisher": "USITC",
+          "url": "https://www.usitc.gov/",
+          "date": "2025-01-01"
+        }
+      ]
+    },
+    {
+      "id": "tariff-toggle-is-strength",
+      "categories": [
+        "Economy",
+        "Democracy"
+      ],
+      "theySay": "Ending some tariffs shows flexible genius dealmaking!",
+      "youSay": "Selective termination of IEEPA duties while keeping other surcharges shows trade policy as an executive toggle, not a stable rules-based system businesses can plan around. Volatility is a cost.",
+      "stab": "A light switch is not a strategy.",
+      "difficulty": "medium",
+      "relatedClaims": [
+        "tariffs-win-trade",
+        "emergency-powers-fine"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/tariff-toggle-is-strength",
+      "sources": [
+        {
+          "id": "fr_end_tariffs2",
+          "title": "Ending Certain Tariff Actions",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/02/25/2026-03832/ending-certain-tariff-actions",
+          "date": "2026-02-25"
+        },
+        {
+          "id": "crs_ieepa",
+          "title": "The International Emergency Economic Powers Act (IEEPA)",
+          "publisher": "Congressional Research Service",
+          "url": "https://crsreports.congress.gov/",
+          "date": "2024-01-01"
+        },
+        {
+          "id": "wh_eo_index_reb",
+          "title": "Executive Orders",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/executive-orders/",
+          "date": "2026-07-11"
+        }
+      ]
+    },
+    {
+      "id": "fraud-task-force-drains-swamp",
+      "categories": [
+        "Democracy",
+        "Economy"
+      ],
+      "theySay": "A fraud task force will finally stop waste!",
+      "youSay": "GAO already tracks improper payments. A branded task force can help or become selective political enforcement, especially while Schedule Policy/Career remakes the career staff who catch waste. Process and independence matter more than press releases.",
+      "stab": "Firing the referees and then announcing a fraud squad is not oversight.",
+      "difficulty": "hard",
+      "relatedClaims": [
+        "doge-saves-billions",
+        "schedule-f-is-accountability"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/fraud-task-force-drains-swamp",
+      "sources": [
+        {
+          "id": "fr_fraud_tf",
+          "title": "Establishing the Task Force To Eliminate Fraud",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/03/19/2026-05497/establishing-the-task-force-to-eliminate-fraud",
+          "date": "2026-03-19"
+        },
+        {
+          "id": "gao_improper_reb",
+          "title": "Improper Payments",
+          "publisher": "GAO",
+          "url": "https://www.gao.gov/improper-payments",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "fr_schedule_pc",
+          "title": "Implementing Schedule Policy/Career in the Excepted Service",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/06/10/2026-11594/implementing-schedule-policycareer-in-the-excepted-service",
+          "date": "2026-06-10"
+        }
+      ]
+    },
+    {
+      "id": "housing-eos-fix-prices",
+      "categories": [
+        "Economy"
+      ],
+      "theySay": "Deregulating homebuilding will make housing cheap!",
+      "youSay": "Zoning and permitting reform can help supply. Executive checklists that ignore local land-use, interest rates, and investor demand oversell a silver bullet. Affordability needs construction and demand-side honesty.",
+      "stab": "A memo cannot print vacant apartments.",
+      "difficulty": "medium",
+      "relatedClaims": [
+        "supply-side-only-housing"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/housing-eos-fix-prices",
+      "sources": [
+        {
+          "id": "fr_housing_barriers",
+          "title": "Removing Regulatory Barriers to Affordable Home Construction",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/03/18/2026-05388/removing-regulatory-barriers-to-affordable-home-construction",
+          "date": "2026-03-18"
+        },
+        {
+          "id": "fr_mortgage_credit",
+          "title": "Promoting Access to Mortgage Credit",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/03/18/2026-05384/promoting-access-to-mortgage-credit",
+          "date": "2026-03-18"
+        },
+        {
+          "id": "fr_wall_street_homes",
+          "title": "Stopping Wall Street From Competing With Main Street Homebuyers",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/01/23/2026-01424/stopping-wall-street-from-competing-with-main-street-homebuyers",
+          "date": "2026-01-23"
+        }
+      ]
+    },
+    {
+      "id": "wall-street-homebuyers-solved",
+      "categories": [
+        "Economy"
+      ],
+      "theySay": "Banning Wall Street from buying houses fixes the market!",
+      "youSay": "Institutional single-family purchases matter in some metros. Nationwide affordability also tracks underbuilding, rates, wages, and zoning. One order against investors is not a housing plan.",
+      "stab": "Scapegoats are cheaper than permits.",
+      "difficulty": "easy",
+      "relatedClaims": [
+        "housing-eos-fix-prices"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/wall-street-homebuyers-solved",
+      "sources": [
+        {
+          "id": "fr_wall_street_homes2",
+          "title": "Stopping Wall Street From Competing With Main Street Homebuyers",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/01/23/2026-01424/stopping-wall-street-from-competing-with-main-street-homebuyers",
+          "date": "2026-01-23"
+        },
+        {
+          "id": "census_housing",
+          "title": "Housing",
+          "publisher": "U.S. Census Bureau",
+          "url": "https://www.census.gov/topics/housing.html",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "fhfa_home",
+          "title": "Federal Housing Finance Agency",
+          "publisher": "FHFA",
+          "url": "https://www.fhfa.gov/",
+          "date": "2025-01-01"
+        }
+      ]
+    },
+    {
+      "id": "fema-review-is-efficiency",
+      "categories": [
+        "Democracy",
+        "Healthcare"
+      ],
+      "theySay": "Extending the FEMA review council is just good management!",
+      "youSay": "Disaster response capacity is life-or-death infrastructure. Keeping FEMA under open-ended political review creates uncertainty for states and survivors. Reform through statute and professional standards beats perpetual council theater.",
+      "stab": "Hurricanes do not wait for another continuance notice.",
+      "difficulty": "medium",
+      "relatedClaims": [
+        "doge-efficient-genius"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/fema-review-is-efficiency",
+      "sources": [
+        {
+          "id": "fr_fema_review",
+          "title": "Further Continuance of the Federal Emergency Management Agency Review Council",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/03/27/2026-06075/further-continuance-of-the-federal-emergency-management-agency-review-council",
+          "date": "2026-03-27"
+        },
+        {
+          "id": "fema_home",
+          "title": "FEMA",
+          "publisher": "FEMA",
+          "url": "https://www.fema.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_home_reb",
+          "title": "U.S. Government Accountability Office",
+          "publisher": "GAO",
+          "url": "https://www.gao.gov/",
+          "date": "2025-01-01"
+        }
+      ]
+    },
+    {
+      "id": "chri-sharing-just-safety",
+      "categories": [
+        "Immigration",
+        "Crime"
+      ],
+      "theySay": "Sharing felony records with DHS is basic safety!",
+      "youSay": "Lawful information sharing for serious crimes is ordinary. An order expanding DHS criminal-history access for immigration dragnets can also sweep people with old, minor, or contested records into deportation pipelines. Scope and due process decide whether it is safety or sweep.",
+      "stab": "Safety is precise. Dragnets are not.",
+      "difficulty": "hard",
+      "relatedClaims": [
+        "ice-only-criminals"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/chri-sharing-just-safety",
+      "sources": [
+        {
+          "id": "fr_criminal_actors",
+          "title": "Protecting the National Security and Welfare of the United States and Its Citizens From Criminal Actors",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/02/11/2026-02819/protecting-the-national-security-and-welfare-of-the-united-states-and-its-citizens-from-criminal",
+          "date": "2026-02-11"
+        },
+        {
+          "id": "dhs_home",
+          "title": "Department of Homeland Security",
+          "publisher": "DHS",
+          "url": "https://www.dhs.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "bjs_home",
+          "title": "Bureau of Justice Statistics",
+          "publisher": "BJS",
+          "url": "https://bjs.ojp.gov/",
+          "date": "2025-01-01"
+        }
+      ]
+    },
+    {
+      "id": "arms-transfer-america-first",
+      "categories": [
+        "Foreign Policy"
+      ],
+      "theySay": "An America First arms strategy keeps us safe!",
+      "youSay": "Weapons-export strategy shapes wars others fight and blowback Americans inherit. America First branding does not answer end-use monitoring, human-rights conditions, or whether more transfers reduce or multiply conflict risk.",
+      "stab": "Selling more weapons is not the same as having a strategy.",
+      "difficulty": "medium",
+      "relatedClaims": [
+        "military-always-right"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/arms-transfer-america-first",
+      "sources": [
+        {
+          "id": "fr_arms_transfer",
+          "title": "Establishing an America First Arms Transfer Strategy",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/02/11/2026-02814/establishing-an-america-first-arms-transfer-strategy",
+          "date": "2026-02-11"
+        },
+        {
+          "id": "state_pmddtc",
+          "title": "Directorate of Defense Trade Controls",
+          "publisher": "U.S. Department of State",
+          "url": "https://www.pmddtc.state.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "crs_arms",
+          "title": "Arms Sales",
+          "publisher": "Congressional Research Service",
+          "url": "https://crsreports.congress.gov/",
+          "date": "2025-01-01"
+        }
+      ]
+    },
+    {
+      "id": "recovery-initiative-ends-addiction",
+      "categories": [
+        "Healthcare"
+      ],
+      "theySay": "The Great American Recovery Initiative will end addiction!",
+      "youSay": "Addiction policy needs treatment capacity, naloxone, housing, and evidence-based care. A branded initiative can fund those things or substitute slogans for beds. Outcomes beat naming ceremonies.",
+      "stab": "Epidemics do not end at a logo unveil.",
+      "difficulty": "easy",
+      "relatedClaims": [
+        "war-on-drugs-worked"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/recovery-initiative-ends-addiction",
+      "sources": [
+        {
+          "id": "fr_recovery",
+          "title": "Addressing Addiction Through the Great American Recovery Initiative",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/02/03/2026-02249/addressing-addiction-through-the-great-american-recovery-initiative",
+          "date": "2026-02-03"
+        },
+        {
+          "id": "cdc_overdose",
+          "title": "Overdose Prevention",
+          "publisher": "CDC",
+          "url": "https://www.cdc.gov/overdose-prevention/index.html",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "samhsa_home",
+          "title": "SAMHSA",
+          "publisher": "SAMHSA",
+          "url": "https://www.samhsa.gov/",
+          "date": "2025-01-01"
+        }
+      ]
+    },
+    {
+      "id": "made-in-america-labels-enough",
+      "categories": [
+        "Economy",
+        "Media"
+      ],
+      "theySay": "Truthful Made in America ads fix the trade deficit!",
+      "youSay": "Truth-in-labeling helps consumers. It does not rebuild industrial capacity, rewrite tax incentives, or replace trade and labor policy. Do not confuse advertising enforcement with an industrial strategy.",
+      "stab": "A honest label on an imported part is still an imported part.",
+      "difficulty": "easy",
+      "relatedClaims": [
+        "tariffs-bring-factories-home"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/made-in-america-labels-enough",
+      "sources": [
+        {
+          "id": "fr_made_america",
+          "title": "Ensuring Truthful Advertising of Products Claiming To Be Made in America",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/03/18/2026-05383/ensuring-truthful-advertising-of-products-claiming-to-be-made-in-america",
+          "date": "2026-03-18"
+        },
+        {
+          "id": "ftc_home_reb",
+          "title": "Federal Trade Commission",
+          "publisher": "FTC",
+          "url": "https://www.ftc.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "bea_trade",
+          "title": "U.S. International Trade Data",
+          "publisher": "Bureau of Economic Analysis",
+          "url": "https://www.bea.gov/data/intl-trade-investment/international-trade-goods-and-services",
+          "date": "2025-01-01"
+        }
+      ]
+    },
+    {
+      "id": "declaration-250-settles-history",
+      "categories": [
+        "Education",
+        "Culture Wars"
+      ],
+      "theySay": "The 250th anniversary proves the founding was perfect!",
+      "youSay": "Anniversaries are civic rituals. The Declaration's equality language coexisted with slavery and Indigenous dispossession. Celebrating ideals while refusing the contradictions is pageantry, not history.",
+      "stab": "If the founding were finished, we would not need amendments.",
+      "difficulty": "easy",
+      "relatedClaims": [
+        "america-greatest-no-critique",
+        "history-is-over"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/declaration-250-settles-history",
+      "sources": [
+        {
+          "id": "wh_declaration_250",
+          "title": "250th Anniversary of the Adoption of the Declaration of Independence",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2026/07/250th-anniversary-of-the-adoption-of-the-declaration-of-independence/",
+          "date": "2026-07-03"
+        },
+        {
+          "id": "archives_declaration",
+          "title": "Declaration of Independence",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/founding-docs/declaration-transcript",
+          "date": "1776-07-04"
+        },
+        {
+          "id": "archives_edu_reb",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        }
+      ]
+    },
+    {
+      "id": "schedule-pc-not-schedule-f",
+      "categories": [
+        "Democracy"
+      ],
+      "theySay": "Schedule Policy/Career is totally different from Schedule F!",
+      "youSay": "Renaming an excepted-service conversion does not erase the core move: expanding at-will political removal risk for policy-influencing career roles. Read the Federal Register text, not the rebrand.",
+      "stab": "If it walks like Schedule F and fires like Schedule F, the logo is not a shield.",
+      "difficulty": "hard",
+      "relatedClaims": [
+        "schedule-f-necessary",
+        "schedule-f-drains-swamp"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/schedule-pc-not-schedule-f",
+      "sources": [
+        {
+          "id": "fr_schedule_pc2",
+          "title": "Implementing Schedule Policy/Career in the Excepted Service",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/06/10/2026-11594/implementing-schedule-policycareer-in-the-excepted-service",
+          "date": "2026-06-10"
+        },
+        {
+          "id": "gao_schedule_f_reb",
+          "title": "Civil Service",
+          "publisher": "GAO",
+          "url": "https://www.gao.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "opm_home",
+          "title": "Office of Personnel Management",
+          "publisher": "OPM",
+          "url": "https://www.opm.gov/",
+          "date": "2025-01-01"
+        }
+      ]
+    },
+    {
+      "id": "nspm-stack-is-normal",
+      "categories": [
+        "Democracy",
+        "Foreign Policy"
+      ],
+      "theySay": "NSPMs are normal national-security paperwork!",
+      "youSay": "Presidents issue national-security memoranda. A cascade of NSPMs that remake policy outside notice-and-comment still concentrates power and reduces public visibility. Normal paperwork can still be abnormal governance.",
+      "stab": "Classified memo velocity is not democratic consent.",
+      "difficulty": "hard",
+      "relatedClaims": [
+        "nspm-not-a-law",
+        "emergency-powers-fine"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/nspm-stack-is-normal",
+      "sources": [
+        {
+          "id": "wh_nspm12",
+          "title": "National Security Presidential Memorandum/NSPM-12",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2026/06/national-security-presidential-memorandum-nspm-12/",
+          "date": "2026-06-12"
+        },
+        {
+          "id": "wh_nspm11",
+          "title": "National Security Presidential Memorandum/NSPM-11",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2026/06/national-security-presidential-memorandum-nspm-11/",
+          "date": "2026-06-05"
+        },
+        {
+          "id": "crs_exec_reb",
+          "title": "Executive Orders: Issuance and Revocation",
+          "publisher": "Congressional Research Service",
+          "url": "https://crsreports.congress.gov/product/pdf/R/R42699",
+          "date": "2024-03-15"
+        }
+      ]
+    },
+    {
+      "id": "freedom-to-fix-consumer-win",
+      "categories": [
+        "Economy",
+        "Climate"
+      ],
+      "theySay": "Freedom to Fix is just right-to-repair for cars!",
+      "youSay": "Right-to-repair can help consumers. An EPA-directed memo that deprioritizes emissions-tampering enforcement is also an air-quality and climate choice. Read the enforcement priorities, not only the slogan.",
+      "stab": "If the win requires dirtier exhaust, say that part out loud.",
+      "difficulty": "medium",
+      "relatedClaims": [
+        "freedom-to-fix-ends-epa"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/freedom-to-fix-consumer-win",
+      "sources": [
+        {
+          "id": "wh_freedom_fix",
+          "title": "Lowering the Cost of Living by Promoting the Freedom to Fix",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2026/06/lowering-the-cost-of-living-by-promoting-the-freedom-to-fix/",
+          "date": "2026-06-29"
+        },
+        {
+          "id": "epa_home_reb",
+          "title": "U.S. Environmental Protection Agency",
+          "publisher": "EPA",
+          "url": "https://www.epa.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "crs_clean_air",
+          "title": "Clean Air Act",
+          "publisher": "Congressional Research Service",
+          "url": "https://crsreports.congress.gov/",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "phosphate-emergency-normal",
+      "categories": [
+        "Economy",
+        "Foreign Policy"
+      ],
+      "theySay": "Duty-free Moroccan phosphate is a smart emergency!",
+      "youSay": "Fertilizer costs matter to farms. Declaring emergencies to rewrite tariff treatment for a favored supply line is still emergency-powered trade policy. Ask who benefits, for how long, and what precedent it sets.",
+      "stab": "If everything is an emergency, tariffs are a royal privilege.",
+      "difficulty": "medium",
+      "relatedClaims": [
+        "tariff-toggle-is-strength"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/phosphate-emergency-normal",
+      "sources": [
+        {
+          "id": "wh_phosphate",
+          "title": "Declaration of Emergency and Authorization for Temporary Duty Free Importation of Phosphate Fertilizer Morocco",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2026/06/declaration-of-emergency-and-authorization-for-temporary-duty-free-importation-of-phosphate-fertilizer-morocco/",
+          "date": "2026-06-29"
+        },
+        {
+          "id": "usda_home",
+          "title": "U.S. Department of Agriculture",
+          "publisher": "USDA",
+          "url": "https://www.usda.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "crs_ieepa2",
+          "title": "IEEPA and Emergency Economic Powers",
+          "publisher": "Congressional Research Service",
+          "url": "https://crsreports.congress.gov/",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "aircraft-imports-national-security",
+      "categories": [
+        "Economy",
+        "Foreign Policy"
+      ],
+      "theySay": "Adjusting aircraft imports is national security!",
+      "youSay": "Aerospace supply chains are strategic. Section 232-style and proclamation trade tools still let presidents pick winners with thin public process. Security labeling does not make every tariff a treaty.",
+      "stab": "National security is not a free pass to skip Congress forever.",
+      "difficulty": "hard",
+      "relatedClaims": [
+        "tariffs-on-planes-good"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/aircraft-imports-national-security",
+      "sources": [
+        {
+          "id": "wh_aircraft",
+          "title": "Adjusting Imports of Commercial Aircraft, Jet Engines, and Aircraft and Engine Parts into the United States",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2026/07/adjusting-imports-of-commercial-aircraft-jet-engines-and-aircraft-and-engine-parts-into-the-united-states/",
+          "date": "2026-07-09"
+        },
+        {
+          "id": "bis_232",
+          "title": "Section 232 Investigations",
+          "publisher": "Bureau of Industry and Security",
+          "url": "https://www.bis.doc.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "crs_trade_reb",
+          "title": "Trade Remedies and Tariffs",
+          "publisher": "Congressional Research Service",
+          "url": "https://crsreports.congress.gov/",
+          "date": "2025-01-01"
+        }
+      ]
+    },
+    {
+      "id": "pacific-fishing-restored",
+      "categories": [
+        "Climate",
+        "Economy"
+      ],
+      "theySay": "Restoring Pacific fishing just helps fishermen!",
+      "youSay": "Fishing communities need sustainable access. A proclamation that reframes conservation constraints can also reopen ecological risk. Fisheries science, not nostalgia, decides whether stocks survive.",
+      "stab": "Empty oceans are not a jobs program.",
+      "difficulty": "medium",
+      "relatedClaims": [
+        "climate-not-urgent"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/pacific-fishing-restored",
+      "sources": [
+        {
+          "id": "wh_pacific_fish",
+          "title": "Restoring American Commercial Fishing in the Pacific",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2026/06/restoring-american-commercial-fishing-in-the-pacific/",
+          "date": "2026-06-11"
+        },
+        {
+          "id": "noaa_fisheries",
+          "title": "NOAA Fisheries",
+          "publisher": "NOAA",
+          "url": "https://www.fisheries.noaa.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "msa_overview",
+          "title": "Magnuson-Stevens Act",
+          "publisher": "NOAA",
+          "url": "https://www.fisheries.noaa.gov/topic/laws-policies",
+          "date": "2025-01-01"
+        }
+      ]
+    },
+    {
+      "id": "buyer-pardon-forgiveness",
+      "categories": [
+        "Democracy",
+        "Crime"
+      ],
+      "theySay": "Pardons are absolute so stop complaining!",
+      "youSay": "The pardon power is broad. Using it for political allies still teaches that accountability is optional for the connected. Constitutional does not mean healthy for the rule of law.",
+      "stab": "A legal pardon can still be a corrupt signal.",
+      "difficulty": "medium",
+      "relatedClaims": [
+        "pardons-are-fine"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/buyer-pardon-forgiveness",
+      "sources": [
+        {
+          "id": "wh_buyer_pardon",
+          "title": "Granting Pardon to Stephen E. Buyer",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2026/06/granting-pardon-to-stephen-e-buyer/",
+          "date": "2026-06-04"
+        },
+        {
+          "id": "constitution_pardons",
+          "title": "Pardon Power",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/founding-docs/constitution-transcript",
+          "date": "1787-09-17"
+        },
+        {
+          "id": "doj_pardon",
+          "title": "Office of the Pardon Attorney",
+          "publisher": "Department of Justice",
+          "url": "https://www.justice.gov/pardon",
+          "date": "2025-01-01"
+        }
+      ]
+    },
+    {
+      "id": "regenerative-ag-greenwashes",
+      "categories": [
+        "Climate",
+        "Economy"
+      ],
+      "theySay": "A regenerative agriculture order means climate policy is done!",
+      "youSay": "Soil health practices can help. One agriculture order does not replace emissions rules, power-sector policy, or methane standards. Do not let a farm-branded EO retire the rest of the climate file.",
+      "stab": "Cover crops are good. Cover stories are not climate policy.",
+      "difficulty": "easy",
+      "relatedClaims": [
+        "climate-hoax",
+        "climate-not-urgent"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/regenerative-ag-greenwashes",
+      "sources": [
+        {
+          "id": "wh_regen_ag",
+          "title": "Advancing Regenerative Agriculture and Strengthening American Farm Resilience",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2026/06/advancing-regenerative-agriculture-and-strengthening-american-farm-resilience/",
+          "date": "2026-06-25"
+        },
+        {
+          "id": "epa_climate_reb",
+          "title": "Climate Change",
+          "publisher": "EPA",
+          "url": "https://www.epa.gov/climate-change",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "usda_climate",
+          "title": "Climate Change",
+          "publisher": "USDA",
+          "url": "https://www.usda.gov/topics/climate-solutions",
+          "date": "2025-01-01"
+        }
+      ]
+    },
+    {
+      "id": "quantum-crypto-stack-fine",
+      "categories": [
+        "Foreign Policy",
+        "Economy"
+      ],
+      "theySay": "Quantum and crypto orders are just tech competitiveness!",
+      "youSay": "Advanced-tech industrial policy can be legitimate. Stacking cryptographic and quantum directives by executive order still concentrates dual-use tech governance without ordinary legislative bargaining. Competitiveness and oversight are not enemies.",
+      "stab": "Moonshot memos still need sunlight.",
+      "difficulty": "hard",
+      "relatedClaims": [
+        "ai-deregulation-good"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/quantum-crypto-stack-fine",
+      "sources": [
+        {
+          "id": "wh_quantum",
+          "title": "Ushering in the Next Frontier of Quantum Innovation",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2026/06/ushering-in-the-next-frontier-of-quantum-innovation/",
+          "date": "2026-06-22"
+        },
+        {
+          "id": "wh_crypto_attacks",
+          "title": "Securing the Nation Against Advanced Cryptographic Attacks",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2026/06/securing-the-nation-against-advanced-cryptographic-attacks/",
+          "date": "2026-06-22"
+        },
+        {
+          "id": "nist_home",
+          "title": "National Institute of Standards and Technology",
+          "publisher": "NIST",
+          "url": "https://www.nist.gov/",
+          "date": "2025-01-01"
+        }
+      ]
+    },
+    {
+      "id": "fintech-integrity-pair",
+      "categories": [
+        "Economy"
+      ],
+      "theySay": "Fintech innovation plus financial integrity orders protect consumers!",
+      "youSay": "Innovation language paired with integrity branding can still mean lighter supervision. Watch CFPB and FTC enforcement capacity, not dual press releases. Consumer protection is staffing and cases, not adjectives.",
+      "stab": "Integrity without enforcers is a brochure.",
+      "difficulty": "medium",
+      "relatedClaims": [
+        "cfpb-unnecessary"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/fintech-integrity-pair",
+      "sources": [
+        {
+          "id": "wh_fintech",
+          "title": "Integrating Financial Technology Innovation into Regulatory Frameworks",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2026/05/integrating-financial-technology-innovation-into-regulatory-frameworks/",
+          "date": "2026-05-19"
+        },
+        {
+          "id": "wh_fin_integrity",
+          "title": "Restoring Integrity to America's Financial System",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2026/05/restoring-integrity-to-americas-financial-system/",
+          "date": "2026-05-19"
+        },
+        {
+          "id": "cfpb_home_reb",
+          "title": "Consumer Financial Protection Bureau",
+          "publisher": "CFPB",
+          "url": "https://www.consumerfinance.gov/",
+          "date": "2025-01-01"
+        }
+      ]
+    },
+    {
+      "id": "ai-innovation-no-guardrails",
+      "categories": [
+        "Economy",
+        "Democracy"
+      ],
+      "theySay": "AI innovation orders mean we must scrap safety rules!",
+      "youSay": "Competitiveness and safety are not a binary. An AI innovation-and-security order can fund research and still leave accountability, labor, and civil-rights risks unaddressed. Deregulation is a choice, not a physics law.",
+      "stab": "Move fast and break democracy is not a growth strategy.",
+      "difficulty": "medium",
+      "relatedClaims": [
+        "ai-deregulation-good"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/ai-innovation-no-guardrails",
+      "sources": [
+        {
+          "id": "fr_ai_innovation",
+          "title": "Promoting Advanced Artificial Intelligence Innovation and Security",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/06/05/2026-11415/promoting-advanced-artificial-intelligence-innovation-and-security",
+          "date": "2026-06-05"
+        },
+        {
+          "id": "nist_ai",
+          "title": "AI Risk Management Framework",
+          "publisher": "NIST",
+          "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+          "date": "2023-01-01"
+        },
+        {
+          "id": "ostp_home",
+          "title": "Office of Science and Technology Policy",
+          "publisher": "White House OSTP",
+          "url": "https://www.whitehouse.gov/ostp/",
+          "date": "2025-01-01"
+        }
+      ]
+    },
+    {
+      "id": "federal-lands-access-freedom",
+      "categories": [
+        "Climate",
+        "Economy"
+      ],
+      "theySay": "Removing federal lands restrictions frees Americans!",
+      "youSay": "Public lands are a shared inheritance. Removing access restrictions can mean more drilling, mining, and habitat loss under a freedom brand. Freedom for extractors is not automatically freedom for hikers, tribes, or future taxpayers.",
+      "stab": "Selling the commons is not liberation.",
+      "difficulty": "medium",
+      "relatedClaims": [
+        "drill-baby-drill"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/federal-lands-access-freedom",
+      "sources": [
+        {
+          "id": "fr_lands_access",
+          "title": "Removing Unnecessary and Counterproductive Restrictions on Access to Federal Lands",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/06/03/2026-11181/removing-unnecessary-and-counterproductive-restrictions-on-access-to-federal-lands",
+          "date": "2026-06-03"
+        },
+        {
+          "id": "blm_home",
+          "title": "Bureau of Land Management",
+          "publisher": "BLM",
+          "url": "https://www.blm.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "nps_home_reb",
+          "title": "National Park Service",
+          "publisher": "NPS",
+          "url": "https://www.nps.gov/",
+          "date": "2025-01-01"
+        }
+      ]
+    },
+    {
+      "id": "vaccine-realign-science",
+      "categories": [
+        "Healthcare"
+      ],
+      "theySay": "Realigning vaccines with peer countries is just science!",
+      "youSay": "Schedule changes should follow transparent evidence review by independent medical bodies. An executive realignment order risks politicizing childhood immunization recommendations. Peer-country shopping is not a substitute for ACIP-style process.",
+      "stab": "Science is a method, not a press release about Europe.",
+      "difficulty": "hard",
+      "relatedClaims": [
+        "vaccines-personal-choice-only"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/vaccine-realign-science",
+      "sources": [
+        {
+          "id": "fr_vaccine_realign",
+          "title": "Realigning United States Core Childhood Vaccine Recommendations With Best Practices From Peer, Developed Countries",
+          "publisher": "GovInfo",
+          "url": "https://www.govinfo.gov/content/pkg/FR-2026-06-03/pdf/2026-11180.pdf",
+          "date": "2026-06-03"
+        },
+        {
+          "id": "cdc_vaccines",
+          "title": "Vaccines & Immunizations",
+          "publisher": "CDC",
+          "url": "https://www.cdc.gov/vaccines/index.html",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "who_immunization",
+          "title": "Immunization",
+          "publisher": "World Health Organization",
+          "url": "https://www.who.int/health-topics/immunization",
+          "date": "2025-01-01"
+        }
+      ]
+    },
+    {
+      "id": "customs-enforcement-only-trade",
+      "categories": [
+        "Immigration",
+        "Economy"
+      ],
+      "theySay": "Strengthening customs enforcement is only about trade!",
+      "youSay": "Customs sits at the intersection of tariffs, drugs, and migration. An enforcement surge can be trade policy and interior hard-power at once. Read the operational directives, not the narrowest possible gloss.",
+      "stab": "Ports of entry enforce more than invoices.",
+      "difficulty": "medium",
+      "relatedClaims": [
+        "chri-sharing-just-safety"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/customs-enforcement-only-trade",
+      "sources": [
+        {
+          "id": "fr_customs_enf",
+          "title": "Strengthening Customs Enforcement",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2026/06/strengthening-customs-enforcement/",
+          "date": "2026-06-10"
+        },
+        {
+          "id": "cbp_home",
+          "title": "U.S. Customs and Border Protection",
+          "publisher": "CBP",
+          "url": "https://www.cbp.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "fr_criminal_actors2",
+          "title": "Criminal Actors Executive Order",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/02/11/2026-02819/protecting-the-national-security-and-welfare-of-the-united-states-and-its-citizens-from-criminal",
+          "date": "2026-02-11"
+        }
+      ]
+    },
+    {
+      "id": "contracting-efficiency-purge",
+      "categories": [
+        "Democracy",
+        "Economy"
+      ],
+      "theySay": "Federal contracting efficiency orders save taxpayer money!",
+      "youSay": "Procurement reform can cut waste. Efficiency orders can also preference political vendors, weaken labor and equity clauses, and reduce oversight capacity. Savings claims need IG audits, not vibes.",
+      "stab": "Efficiency is a spreadsheet word until the inspector general signs.",
+      "difficulty": "medium",
+      "relatedClaims": [
+        "doge-saves-billions"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/contracting-efficiency-purge",
+      "sources": [
+        {
+          "id": "fr_contracting",
+          "title": "Promoting Efficiency, Accountability, and Performance in Federal Contracting",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2026/04/promoting-efficiency-accountability-and-performance-in-federal-contracting/",
+          "date": "2026-05-05"
+        },
+        {
+          "id": "gao_contracting",
+          "title": "Contracting and Acquisition",
+          "publisher": "GAO",
+          "url": "https://www.gao.gov/improper-payments",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "ofpp_home",
+          "title": "Office of Federal Procurement Policy",
+          "publisher": "OMB",
+          "url": "https://www.whitehouse.gov/omb/",
+          "date": "2025-01-01"
+        }
+      ]
+    },
+    {
+      "id": "both-sides-eos-same",
+      "categories": [
+        "Whataboutism",
+        "Democracy"
+      ],
+      "theySay": "Every president signs lots of executive orders so stop counting!",
+      "youSay": "Volume is not content. Rescinding climate rules, converting civil servants, and rewriting election administration are not equivalent to commemorative proclamations. Compare substance, severity, and durability.",
+      "stab": "A holiday proclamation is not Schedule Policy/Career.",
+      "difficulty": "easy",
+      "relatedClaims": [
+        "but-obama-did-this",
+        "both-sides-equivalence"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/both-sides-eos-same",
+      "sources": [
+        {
+          "id": "crs_eo_compare",
+          "title": "Executive Orders: Issuance and Revocation",
+          "publisher": "Congressional Research Service",
+          "url": "https://crsreports.congress.gov/product/pdf/R/R42699",
+          "date": "2024-03-15"
+        },
+        {
+          "id": "fr_home_reb",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2026-07-11"
+        },
+        {
+          "id": "wh_eo_index2",
+          "title": "Executive Orders",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/executive-orders/",
+          "date": "2026-07-11"
+        }
+      ]
+    },
+    {
+      "id": "foia-backlog-not-news",
+      "categories": [
+        "Democracy",
+        "Media"
+      ],
+      "theySay": "FOIA backlogs are boring bureaucracy, not a scandal!",
+      "youSay": "Slow FOIA is how governments hide in plain sight. When personnel purges and records-pressure rise together, delayed disclosure is a democracy cost, not a paperwork shrug.",
+      "stab": "Sunshine delayed is sunlight denied.",
+      "difficulty": "easy",
+      "relatedClaims": [
+        "transparency-optional"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/foia-backlog-not-news",
+      "sources": [
+        {
+          "id": "foia_gov_reb",
+          "title": "FOIA.gov",
+          "publisher": "Department of Justice",
+          "url": "https://www.foia.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "doj_oip",
+          "title": "Office of Information Policy",
+          "publisher": "Department of Justice",
+          "url": "https://www.justice.gov/oip",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "crs_foia",
+          "title": "The Freedom of Information Act (FOIA)",
+          "publisher": "Congressional Research Service",
+          "url": "https://crsreports.congress.gov/",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "bls-jobs-prove-mandate",
+      "categories": [
+        "Economy",
+        "Media"
+      ],
+      "theySay": "Good jobs numbers prove every deregulatory move was right!",
+      "youSay": "Monthly employment prints are one indicator. They do not validate Schedule Policy/Career, tariff volatility, or enforcement pauses. Correlation with a press cycle is not causation for every EO.",
+      "stab": "A jobs print is not a moral blank check.",
+      "difficulty": "easy",
+      "relatedClaims": [
+        "economy-only-scoreboard"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/bls-jobs-prove-mandate",
+      "sources": [
+        {
+          "id": "bls_empsit",
+          "title": "Employment Situation",
+          "publisher": "Bureau of Labor Statistics",
+          "url": "https://www.bls.gov/news.release/empsit.toc.htm",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "bea_gdp",
+          "title": "Gross Domestic Product",
+          "publisher": "Bureau of Economic Analysis",
+          "url": "https://www.bea.gov/data/gdp/gross-domestic-product",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "fr_schedule_pc3",
+          "title": "Schedule Policy/Career",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/06/10/2026-11594/implementing-schedule-policycareer-in-the-excepted-service",
+          "date": "2026-06-10"
+        }
+      ]
+    },
+    {
+      "id": "project-2025-still-denied",
+      "categories": [
+        "Democracy",
+        "Media"
+      ],
+      "theySay": "Project 2025 is a conspiracy theory!",
+      "youSay": "Heritage published a public mandate. Personnel and policy overlaps are documentable in the Federal Register and White House actions. Denial after implementation is branding, not evidence.",
+      "stab": "You can dislike the tracker. You cannot unread the PDFs.",
+      "difficulty": "easy",
+      "relatedClaims": [
+        "project-2025-doesnt-exist"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/project-2025-still-denied",
+      "sources": [
+        {
+          "id": "heritage_mandate_reb",
+          "title": "Mandate for Leadership 2025",
+          "publisher": "Heritage Foundation",
+          "url": "https://www.project2025.org/policy/",
+          "date": "2023-01-01"
+        },
+        {
+          "id": "cpr_tracker_reb",
+          "title": "Project 2025 Executive Action Tracker",
+          "publisher": "Center for Progressive Reform",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "fr_home_reb2",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2026-07-11"
+        }
+      ]
+    },
+    {
+      "id": "severity-scores-are-biased",
+      "categories": [
+        "Media",
+        "Democracy"
+      ],
+      "theySay": "Your severity scores are just liberal feelings!",
+      "youSay": "Scores summarize impact scope using sourced actions, not vibes alone. You can dispute a number; you still have to answer the underlying Federal Register text and affected sectors.",
+      "stab": "Arguing with the thermometer does not cool the room.",
+      "difficulty": "easy",
+      "relatedClaims": [
+        "media-lies-always"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/severity-scores-are-biased",
+      "sources": [
+        {
+          "id": "fr_home_reb3",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2026-07-11"
+        },
+        {
+          "id": "gao_home_reb2",
+          "title": "GAO",
+          "publisher": "GAO",
+          "url": "https://www.gao.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "crs_home_reb2",
+          "title": "Congressional Research Service",
+          "publisher": "CRS",
+          "url": "https://crsreports.congress.gov/",
+          "date": "2025-01-01"
+        }
+      ]
+    },
+    {
+      "id": "history-classroom-indoctrination",
+      "categories": [
+        "Education",
+        "Culture Wars"
+      ],
+      "theySay": "Teaching hard history is classroom indoctrination!",
+      "youSay": "Primary sources from the National Archives, NPS, and Congress are not a party platform. Hiding massacres and labor wars is the indoctrination. Students can handle footnotes.",
+      "stab": "If the document scares you, the problem is not the teenager.",
+      "difficulty": "easy",
+      "relatedClaims": [
+        "history-is-over",
+        "america-never-racist"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/history-classroom-indoctrination",
+      "sources": [
+        {
+          "id": "archives_edu_reb2",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "nps_hist_reb",
+          "title": "Telling All Americans' Stories",
+          "publisher": "National Park Service",
+          "url": "https://www.nps.gov/subjects/tellingallamericansstories/index.htm",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "loc_home_reb",
+          "title": "Library of Congress",
+          "publisher": "Library of Congress",
+          "url": "https://www.loc.gov/",
+          "date": "2025-01-01"
+        }
+      ]
+    },
+    {
+      "id": "civil-service-deep-state",
+      "categories": [
+        "Democracy"
+      ],
+      "theySay": "Career officials are the deep state!",
+      "youSay": "Career civil servants are the continuity layer that keeps Social Security checks, food inspections, and aviation safe across elections. Politicizing them raises corruption and competence risk. Disagreement is not a conspiracy.",
+      "stab": "The deep state is often just someone who still has the manual.",
+      "difficulty": "medium",
+      "relatedClaims": [
+        "schedule-pc-not-schedule-f",
+        "schedule-f-drains-swamp"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/civil-service-deep-state",
+      "sources": [
+        {
+          "id": "opm_home2",
+          "title": "Office of Personnel Management",
+          "publisher": "OPM",
+          "url": "https://www.opm.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "mspb_home",
+          "title": "Merit Systems Protection Board",
+          "publisher": "MSPB",
+          "url": "https://www.mspb.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "fr_schedule_pc4",
+          "title": "Schedule Policy/Career",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/06/10/2026-11594/implementing-schedule-policycareer-in-the-excepted-service",
+          "date": "2026-06-10"
+        }
+      ]
+    },
+    {
+      "id": "emergency-powers-always-ok",
+      "categories": [
+        "Democracy"
+      ],
+      "theySay": "Emergency powers are how strong leaders govern!",
+      "youSay": "Time-limited emergencies can be necessary. Habitual emergency trade, immigration, and agency rewrites train the public to accept rule by proclamation. Strength without sunsets is just monarchy with better stationery.",
+      "stab": "If the emergency never ends, the republic is the temporary measure.",
+      "difficulty": "hard",
+      "relatedClaims": [
+        "tariff-toggle-is-strength",
+        "nspm-stack-is-normal"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/emergency-powers-always-ok",
+      "sources": [
+        {
+          "id": "crs_ieepa3",
+          "title": "IEEPA",
+          "publisher": "Congressional Research Service",
+          "url": "https://crsreports.congress.gov/",
+          "date": "2024-01-01"
+        },
+        {
+          "id": "wh_phosphate2",
+          "title": "Phosphate Fertilizer Emergency Proclamation",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2026/06/declaration-of-emergency-and-authorization-for-temporary-duty-free-importation-of-phosphate-fertilizer-morocco/",
+          "date": "2026-06-29"
+        },
+        {
+          "id": "brennan_emergencies",
+          "title": "Emergency Powers",
+          "publisher": "Brennan Center for Justice",
+          "url": "https://www.brennancenter.org/",
+          "date": "2025-01-01"
         }
       ]
     }
