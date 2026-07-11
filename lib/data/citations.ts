@@ -947,8 +947,8 @@ export const citations: Record<string, CitationSource> = {
     id: "cost_inaction_education",
     title: "Student Loan Debt Statistics",
     publisher: "Federal Student Aid",
-    url: "https://studentaid.gov/data-center/student/portfolio",
-    waybackUrl: wayback("https://studentaid.gov/data-center/student/portfolio"),
+    url: "https://studentaid.gov/",
+    waybackUrl: wayback("https://studentaid.gov/"),
     excerpt:
       "Federal student loan portfolio exceeds $1.6 trillion, delaying homeownership and small-business formation for millions of borrowers.",
     date: "2025-01-01",
@@ -1009,8 +1009,8 @@ export const citations: Record<string, CitationSource> = {
     id: "student_aid_workforce_cuts",
     title: "Federal Student Aid Portfolio",
     publisher: "Federal Student Aid",
-    url: "https://studentaid.gov/data-center/student/portfolio",
-    waybackUrl: wayback("https://studentaid.gov/data-center/student/portfolio"),
+    url: "https://studentaid.gov/",
+    waybackUrl: wayback("https://studentaid.gov/"),
     excerpt:
       "Federal Student Aid office workforce reduced through probationary terminations and hiring freezes, delaying loan servicing and borrower assistance.",
     date: "2025-04-05",

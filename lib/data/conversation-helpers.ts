@@ -18430,6 +18430,1756 @@ export const conversationHelpers: ConversationHelper[] = [
     relatedClaims: [],
   },
 
+  {
+    id: "stamp-act-just-taxes",
+    category: ["Education", "Democracy"],
+    theySay: "The Stamp Act was just normal taxes!",
+    youSay: "Colonial resistance centered on consent and representation, not thrift cosplay. The documents show a constitutional fight.",
+    stab: "No representation was the wound.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "bill-of-rights-optional",
+    category: ["Democracy", "Courts"],
+    theySay: "The Bill of Rights was optional window dressing!",
+    youSay: "Ratification required explicit guarantees. Optional is what people say when amendments constrain them.",
+    stab: "Written rights are not décor.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "embargo-was-genius",
+    category: ["Economy", "Foreign Policy"],
+    theySay: "Jefferson's embargo proved peacemaking genius!",
+    youSay: "Shipping collapsed and Britain shrugged. Results beat mythology.",
+    stab: "Empty harbors are data.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "black-hawk-self-defense",
+    category: ["Culture Wars", "Democracy"],
+    theySay: "Black Hawk was just self-defense against invaders!",
+    youSay: "Returning to planted fields after treaty pressure is not invasion. Massacres of fleeing people are not defense.",
+    stab: "Cornfields are not a casus belli.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "hard",
+    relatedClaims: [],
+  },
+  {
+    id: "kansas-nebraska-fair",
+    category: ["Elections", "Democracy"],
+    theySay: "Kansas-Nebraska was fair popular sovereignty!",
+    youSay: "Repealing the Missouri line invited armed settlement. Bleeding Kansas was the audit.",
+    stab: "Rifles are not ballots.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "13th-ended-everything",
+    category: ["Crime", "Democracy"],
+    theySay: "The 13th Amendment ended forced labor forever!",
+    youSay: "The punishment clause enabled convict leasing. Forever had a carve-out with a body count.",
+    stab: "Read the exception.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "hard",
+    relatedClaims: [],
+  },
+  {
+    id: "freedmens-bureau-waste",
+    category: ["Economy", "Education"],
+    theySay: "The Freedmen's Bureau was pure waste!",
+    youSay: "Schools, contracts, and relief after slavery are governance, not waste. Starving the Bureau was the political project.",
+    stab: "Literacy is not a boondoggle.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "15th-settled-voting",
+    category: ["Elections", "Democracy"],
+    theySay: "The 15th Amendment settled Black voting!",
+    youSay: "Poll taxes, literacy tests, and terror nullified paper rights for generations.",
+    stab: "Paper without polling places is theater.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "slaughterhouse-narrow",
+    category: ["Courts", "Democracy"],
+    theySay: "Slaughterhouse was a narrow butchers case!",
+    youSay: "The holding gutted Privileges or Immunities and weakened Reconstruction enforcement.",
+    stab: "Narrow facts, wide damage.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "hard",
+    relatedClaims: [],
+  },
+  {
+    id: "pure-food-nanny",
+    category: ["Economy", "Healthcare"],
+    theySay: "Pure Food rules were nanny-state overreach!",
+    youSay: "Adulterated meat and patent medicines were the market product. Labels followed corpses.",
+    stab: "Poison is not liberty.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "1929-unavoidable",
+    category: ["Economy", "Whataboutism"],
+    theySay: "1929 was an unavoidable act of God!",
+    youSay: "Leverage, weak banking rules, and inequality are policy choices. Acts of God do not issue margin calls.",
+    stab: "Panics have architects.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "new-deal-destroyed",
+    category: ["Economy", "Healthcare"],
+    theySay: "The New Deal destroyed recovery!",
+    youSay: "Banks reopened, jobs programs ran, and labor rights expanded. Slogan failure needs better math.",
+    stab: "Relief is not ruin.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "court-packing-always-tyranny",
+    category: ["Courts", "Democracy"],
+    theySay: "Any Court critique is tyranny!",
+    youSay: "1937 was a fight over doctrine after blocked New Deal laws. Institutions are political; history records that.",
+    stab: "Dockets are not sacred relics.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "hard",
+    relatedClaims: [],
+  },
+  {
+    id: "lend-lease-isolation",
+    category: ["Foreign Policy", "Whataboutism"],
+    theySay: "Lend-Lease kept America isolationist!",
+    youSay: "Arming Allies is choosing sides. Isolation does not ship destroyers.",
+    stab: "Materiel is a tell.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "double-v-disloyal",
+    category: ["Culture Wars", "Democracy"],
+    theySay: "Double V was disloyal wartime complaining!",
+    youSay: "Demanding democracy at home while fighting fascism abroad is consistency, not betrayal.",
+    stab: "Jim Crow was the contradiction.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "trinity-just-science",
+    category: ["Foreign Policy", "Education"],
+    theySay: "Trinity was just science, not politics!",
+    youSay: "A city-killing weapon test is policy with physics. Science does not erase strategy.",
+    stab: "Kilotons are governance.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "nuremberg-revenge",
+    category: ["Foreign Policy", "Courts"],
+    theySay: "Nuremberg was only victors revenge!",
+    youSay: "Open trials documenting genocide shaped international criminal law. Revenge alone does not build a record.",
+    stab: "Transcripts outlast slogans.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "mccarthy-was-right",
+    category: ["Media", "Democracy"],
+    theySay: "McCarthy was right and censored!",
+    youSay: "Army hearings exposed reckless accusations on live TV. Censure followed collapse, not cancellation vibes.",
+    stab: "Have you no sense of decency still echoes.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "greensboro-polite",
+    category: ["Culture Wars", "Democracy"],
+    theySay: "Greensboro change came from polite managers!",
+    youSay: "Sit-ins, arrests, and boycotts forced desegregation. Politeness did not unlock the counter.",
+    stab: "Empty stools made policy.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "1965-immigration-ruined",
+    category: ["Immigration", "Culture Wars"],
+    theySay: "The 1965 Immigration Act ruined America!",
+    youSay: "Ending racist national-origin quotas aligned law with civil-rights claims. Demography panic is not evidence.",
+    stab: "Quotas were the stain.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "medicare-never-works",
+    category: ["Healthcare", "Economy"],
+    theySay: "Government health coverage never works!",
+    youSay: "Medicare remains broadly popular and measurable. Pretending it failed requires ignoring enrollment.",
+    stab: "Seniors vote with their coverage.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "panthers-only-violence",
+    category: ["Crime", "Culture Wars"],
+    theySay: "Black Panthers were only a street gang!",
+    youSay: "Free breakfasts and clinics were real programs alongside self-defense, while COINTELPRO hunted the organization.",
+    stab: "Erase the breakfasts, keep the caricature.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "hard",
+    relatedClaims: [],
+  },
+  {
+    id: "rfk-changed-nothing",
+    category: ["Democracy", "Media"],
+    theySay: "RFK's assassination changed nothing!",
+    youSay: "Two assassinations in weeks reshaped 1968 politics. Denial is not analysis.",
+    stab: "Trauma is a historical force.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "epa-luxury-cult",
+    category: ["Climate", "Economy"],
+    theySay: "EPA is a luxury environmental cult!",
+    youSay: "Rivers on fire and leaded air were not lifestyle brands. Pollution dumping created the agency.",
+    stab: "Lungs are not externalities forever.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "title-ix-ruined-sports",
+    category: ["Education", "Culture Wars"],
+    theySay: "Title IX ruined men's sports!",
+    youSay: "Equal opportunity is a budget and compliance choice, not theft by biology slogans.",
+    stab: "Title IX bans sex discrimination in education.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "saturday-night-hr",
+    category: ["Democracy", "Courts"],
+    theySay: "Saturday Night Massacre was routine HR!",
+    youSay: "Firing the prosecutor investigating you is why the night became a scandal name.",
+    stab: "Investigators are not staff props.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "ford-pardon-healing",
+    category: ["Democracy", "Whataboutism"],
+    theySay: "Ford's pardon healed the nation!",
+    youSay: "Unconditional amnesty before trial traded accountability for closure branding.",
+    stab: "Healing that skips verdicts is spin.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "911-blank-check",
+    category: ["Foreign Policy", "Democracy"],
+    theySay: "9/11 justified every war and wiretap since!",
+    youSay: "Honoring the dead means auditing outcomes. Blank checks are not patriotism.",
+    stab: "Grief is not a statute.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "hard",
+    relatedClaims: [],
+  },
+  {
+    id: "aca-total-failure",
+    category: ["Healthcare", "Economy"],
+    theySay: "Obamacare failed completely!",
+    youSay: "Coverage expansions and preexisting-condition protections are measurable. Failure talk that skips enrollment is sloganeering.",
+    stab: "Repeal fights prove stakes.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "trayvon-one-off",
+    category: ["Crime", "Culture Wars"],
+    theySay: "Trayvon was one local case, not a system!",
+    youSay: "National movements do not form around footnotes. Stand Your Ground and race shaped the fight.",
+    stab: "Local killings can expose national rules.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "schedule-f-efficiency-only",
+    category: ["Democracy", "Economy"],
+    theySay: "Schedule F is just efficiency!",
+    youSay: "Converting career protections into loyalty screens is personnel politics with a Federal Register trail.",
+    stab: "Efficiency that needs loyalty oaths is a tell.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "hard",
+    relatedClaims: [],
+  },
+  {
+    id: "tariffs-by-tweet-fine",
+    category: ["Economy", "Democracy"],
+    theySay: "Tariffs by proclamation are fine forever!",
+    youSay: "Industrial policy without durable statute is volatility marketed as strength.",
+    stab: "Proclamations are not a customs code.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "dpa-waiver-trust",
+    category: ["Economy", "Democracy"],
+    theySay: "DPA waivers deserve blank trust!",
+    youSay: "Emergency industrial powers need oversight, not applause. Paperwork volume is the warning light.",
+    stab: "Waivers are not vibes.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "hard",
+    relatedClaims: [],
+  },
+  {
+    id: "housing-eo-solves-rent",
+    category: ["Economy", "Culture Wars"],
+    theySay: "Housing EOs will solve rent!",
+    youSay: "Affordability is zoning, supply, wages, and credit. Proclamation months are branding.",
+    stab: "Rent is not a press release.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "citizenship-check-harmless",
+    category: ["Elections", "Immigration"],
+    theySay: "Citizenship verification orders are harmless!",
+    youSay: "Federalizing eligibility fights risks suppressing lawful ballots. Harmless is what architects call the first draft.",
+    stab: "Eligibility theater has victims.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "hard",
+    relatedClaims: [],
+  },
+  {
+    id: "dei-ban-is-fairness",
+    category: ["Culture Wars", "Democracy"],
+    theySay: "Banning DEI is pure fairness!",
+    youSay: "Converting equity programs into enforcement targets is policy with receipts, not a fairness hymn.",
+    stab: "Fairness that needs contractor blacklists is politics.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "freedom-to-fix-green",
+    category: ["Climate", "Economy"],
+    theySay: "Freedom-to-Fix is pro-environment!",
+    youSay: "Deregulation under repair branding still rolls back rules. Greenwash needs metrics.",
+    stab: "Fix can mean strip.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "fr-receipts-optional",
+    category: ["Media", "Democracy"],
+    theySay: "Federal Register receipts are optional homework!",
+    youSay: "Daily journal density is how you measure executive action without cable chyron loyalty.",
+    stab: "Homework is the point.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "foia-backlog-normal",
+    category: ["Democracy", "Media"],
+    theySay: "FOIA backlogs are just normal bureaucracy!",
+    youSay: "Sunshine delayed is sunshine denied. Backlogs are a transparency failure metric SAFE-004 targets.",
+    stab: "Normal is not acceptable.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "kickapoo-permit-local",
+    category: ["Democracy", "Culture Wars"],
+    theySay: "Kickapoo permit denial is a local zoning spat!",
+    youSay: "Presidential memoranda blocking tribal infrastructure are federal power, not HOA drama.",
+    stab: "Tribes are not subdivisions.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "hard",
+    relatedClaims: [],
+  },
+  {
+    id: "ai-speed-over-safety",
+    category: ["Economy", "Education"],
+    theySay: "AI policy should maximize speed only!",
+    youSay: "Speed without enforceable baselines externalizes risk. Innovation rhetoric is not a safety standard.",
+    stab: "Move fast still breaks things.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "sports-eo-harmless",
+    category: ["Education", "Culture Wars"],
+    theySay: "Federal sports EOs are harmless culture!",
+    youSay: "Presidential sports mandates are culture-war instruments with agency implications.",
+    stab: "Harmless rarely needs an EO.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "fraud-task-force-pure",
+    category: ["Democracy", "Economy"],
+    theySay: "A presidential fraud task force is automatically pure!",
+    youSay: "Narrative power without strong IG independence risks selective enforcement.",
+    stab: "Purity claims need inspectors general.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "hard",
+    relatedClaims: [],
+  },
+  {
+    id: "fema-review-forever-fine",
+    category: ["Climate", "Democracy"],
+    theySay: "Endless FEMA review is fine governance!",
+    youSay: "Indefinite review during accelerating disasters is delay marketed as diligence.",
+    stab: "Storms do not wait for councils.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "trump-ira-branding-ok",
+    category: ["Economy", "Media"],
+    theySay: "Presidential retirement branding sites are normal!",
+    youSay: "Politicizing benefits infrastructure through EO marketing is not neutral administration.",
+    stab: "Dot-gov is not campaign swag.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "both-sides-same-dpa",
+    category: ["Whataboutism", "Economy"],
+    theySay: "Both sides use DPA the same!",
+    youSay: "Waiver scope and oversight still matter. Sameness claims need the documents, not a shrug.",
+    stab: "Both-sides needs a spreadsheet.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "history-deep-cuts-bias",
+    category: ["Education", "Media"],
+    theySay: "Hidden History deep cuts are biased by definition!",
+    youSay: "Primary sources from Archives, NPS, and courts are auditable. Bias is refusing the PDFs.",
+    stab: "Citations beat vibes.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "300-history-enough",
+    category: ["Education", "Democracy"],
+    theySay: "300 history entries should be enough forever!",
+    youSay: "Verifiable room is not a cap. New documents keep arriving; so do old ones people never learned.",
+    stab: "Enough is a political word.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "tracker-280-noise",
+    category: ["Media", "Democracy"],
+    theySay: "280 tracker events are noise!",
+    youSay: "Continuity documentation is how patterns become visible. Noise is what power calls a stack of receipts.",
+    stab: "Volume can be the signal.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "rebuttal-650-spam",
+    category: ["Media", "Education"],
+    theySay: "650 rebuttals are spam!",
+    youSay: "Sourced counters scale because talking points recycle. Spam is unsourced certainty.",
+    stab: "Repetition is the opponent's strategy.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
 ];
 
 const CATEGORY_SLUG_MAP: Record<RebuttalCategory, string> = {
