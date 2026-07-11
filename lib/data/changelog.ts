@@ -8,6 +8,18 @@ export interface ChangelogEntry {
 /** Site iteration history - meta transparency for Project Sunrise builds */
 export const changelog: ChangelogEntry[] = [
   {
+    version: "0.26.0",
+    date: "2026-07-11",
+    title: "Pass 26 - Massive verifiable content expansion",
+    highlights: [
+      "Hidden History expanded to 120+ dual-timeline entries across Indigenous history, labor wars, coups, Jim Crow, LGBTQ and disability rights, environmental justice, and voting rights",
+      "Rebuttal Desk expanded to 350+ sourced counters for high-value MAGA/conservative talking points",
+      "Project 2025 Tracker expanded to 160+ verified actions including Federal Register DOGE orders, Schedule Policy/Career (E.O. 14410), AI deregulation, lands access, and vaccine-schedule politicization",
+      "Blueprint adds Immigration, Housing, Media/Antitrust, Disability, and Indigenous Sovereignty policy fixes with cost-of-inaction citations",
+      "Accountability, Mission, and Methodology pages deepened with FOIA, OpenSecrets, FEC, and CRS transparency facts",
+    ],
+  },
+  {
     version: "0.25.0",
     date: "2026-07-10",
     title: "Pass 25 - Logo-first header, Donate, history expansion",

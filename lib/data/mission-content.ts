@@ -66,6 +66,9 @@ export const transparencyPledge = [
   "Cross-referenced with six independent Project 2025 trackers - we aggregate, we don't monopolize truth.",
   "Severity scoring and Blueprint fixes so you see harm levels and what to build instead.",
   "Rebuttal Desk entries sourced the same way - no unsourced talking points, ever.",
+  "Hidden History dual timeline with textbook vs documented reality, each entry carrying National Archives, LOC, NPS, or equivalent citations.",
+  "Automated link validation before deploy - broken receipts do not ship.",
+  "Open JSON/CSV exports and RSS so researchers can audit and remix the dataset without asking permission.",
 ];
 
 export const antiPlutocracyStance = {
@@ -105,7 +108,7 @@ export const whatWeBuild = [
   {
     title: "The Blueprint",
     description:
-      "Progressive policy fixes linked to every tracker event - healthcare expansion, climate action, voting rights, labor protections, and institutional safeguards.",
+      "Progressive policy fixes linked to tracker events - healthcare, climate, voting rights, labor, immigration, housing, media antitrust, disability rights, Indigenous sovereignty, and irreversible institutional safeguards.",
   },
   {
     title: "Rebuttal Desk",
@@ -116,5 +119,15 @@ export const whatWeBuild = [
     title: "Independent Cross-References",
     description:
       "Every tracker event links to external monitors (CPR, project2025.observer, ACLU, Brennan Center, watch2025.org) so you can verify our work against theirs.",
+  },
+  {
+    title: "Hidden History",
+    description:
+      "A dual timeline that puts textbook myths beside documented reality - labor wars, coups, Jim Crow, LGBTQ erasure, disability rights, environmental injustice, and voting rights rollbacks - with primary sources on every card.",
+  },
+  {
+    title: "Accountability Ledger",
+    description:
+      "Dark money, FOIA, FEC deadlocks, and revolving-door capture documented with OpenSecrets-style public data and Blueprint safeguards that would sever the pipes.",
   },
 ];

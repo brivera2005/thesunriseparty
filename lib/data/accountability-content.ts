@@ -13,6 +13,7 @@ export const accountabilityIntro = {
   paragraphs: [
     "Project 2025 was drafted by think tanks and advocacy groups whose donors are often undisclosed. Citizens United v. FEC (2010) opened the door for unlimited independent political spending by corporations and nonprofits, while FEC enforcement deadlocks and weak disclosure rules let billionaires shape policy without voters seeing the receipts.",
     "Project Sunrise tracks implementation actions; this page tracks the capture architecture - dark money, lobbying, revolving doors, and the safeguards in our Blueprint designed to sever them.",
+    "OpenSecrets, the FEC, FOIA.gov, and Congress.gov are the public ledgers we lean on. When disclosure is missing, that absence is itself evidence of a system designed to hide paymasters while amplifying their speech.",
   ],
 };
 
@@ -86,6 +87,31 @@ export const accountabilityFacts: AccountabilityFact[] = [
     body: "501(c)(4) organizations can spend unlimited sums on political messaging without disclosing donors. OpenSecrets documents how dark money groups amplify messages aligned with billionaire and corporate interests - including deregulatory and anti-democracy policy pushes.",
     sourceIds: ["dark_money_transparency"],
   },
+  {
+    title: "Citizens United unlocked unlimited independent spending",
+    body: "The Supreme Court's 2010 ruling treated corporate independent expenditures as protected speech. Super PACs and allied nonprofits can now spend without contribution limits. Disclosure gaps - not the First Amendment itself - are what keep voters from seeing who paid.",
+    sourceIds: ["citizens_united_scotus", "fec_campaign_data"],
+  },
+  {
+    title: "IRS and nonprofit disclosure rules still hide donors",
+    body: "Social-welfare nonprofits can engage in political messaging while shielding donor lists. OpenSecrets tracking shows hundreds of millions in dark money per cycle. SAFE-004's real-time disclosure over $200 would close the anonymity loophole without banning speech.",
+    sourceIds: ["dark_money_transparency", "irs_dark_money_rule", "safeguard_transparency"],
+  },
+  {
+    title: "FOIA backlogs delay accountability",
+    body: "FOIA.gov publishes agency request portals and annual compliance stats. Chronic backlogs mean journalists and watchdogs wait months or years for records that should be proactive. Machine-readable spending and lobbying-contact publication would shrink the FOIA bottleneck for routine oversight.",
+    sourceIds: ["foia_gov", "doj_oip_foia", "safeguard_transparency"],
+  },
+  {
+    title: "Presidential records need enforceable timelines",
+    body: "The Presidential Records Act governs custody and eventual public release of White House records. Without statutory deadlines for high-interest investigations and classified-to-unclassified review, transparency depends on political goodwill. CRS explains the PRA framework; SAFE-004 would add publication clocks.",
+    sourceIds: ["presidential_records_crs", "epstein_records_act", "safeguard_transparency"],
+  },
+  {
+    title: "Revolving door converts public service into private access",
+    body: "Former officials become lobbyists and 'strategic advisors' who sell access rather than register every contact. Lifetime lobbying bans for senior officials (SAFE-001) and 48-hour contact publication (SAFE-004) treat capture as a structural problem, not a resume perk.",
+    sourceIds: ["safeguard_anticorruption", "safeguard_transparency"],
+  },
 ];
 
 export const accountabilityExternalLinks = [
@@ -108,6 +134,21 @@ export const accountabilityExternalLinks = [
     name: "Congress.gov - Lobbying Disclosure",
     url: "https://www.congress.gov/",
     description: "Legislative records and lobbying-related bills",
+  },
+  {
+    name: "GAO - What GAO Does",
+    url: "https://www.gao.gov/about/what-gao-does",
+    description: "Nonpartisan audits and investigations that document waste, fraud, and program failure",
+  },
+  {
+    name: "CRS Reports",
+    url: "https://crsreports.congress.gov/",
+    description: "Nonpartisan Congressional Research Service analysis for legislators and the public",
+  },
+  {
+    name: "DOJ Office of Information Policy",
+    url: "https://www.justice.gov/oip",
+    description: "Federal FOIA guidance, compliance reporting, and exemption policy",
   },
 ] as const;
 

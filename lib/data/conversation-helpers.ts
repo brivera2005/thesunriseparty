@@ -7976,6 +7976,2632 @@ export const conversationHelpers: ConversationHelper[] = [
     difficulty: "easy",
     relatedClaims: ["pass22-rebuttal-count", "link-check-theater"],
   },
+  // PASS26_MARKER
+  {
+    id: "tariffs-are-paid-by-china",
+    category: ["Economy", "Foreign Policy"],
+    theySay: "China pays the tariffs - they're a tax on China!",
+    youSay: "Tariffs are taxes collected at the U.S. border from importers. Firms pass costs to U.S. consumers and businesses through higher prices. CRS and economic analyses treat tariffs as a domestic tax incidence question, not a foreign invoice China pays.",
+    stab: "If China paid your tariffs, your grocery receipt would say thank you Beijing.",
+    sources: [
+      cite(
+        "crs_home",
+        "Congressional Research Service Reports",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/",
+        "CRS provides nonpartisan analysis to Congress on legislation and policy.",
+        "2025-01-01"
+      ),
+      cite(
+        "bls_cpi",
+        "Consumer Price Index",
+        "Bureau of Labor Statistics",
+        "https://www.bls.gov/cpi/",
+        "BLS publishes official inflation measures.",
+        "2025-01-01"
+      ),
+      cite(
+        "reuters_home",
+        "Reuters",
+        "Reuters",
+        "https://apnews.com/",
+        "Reuters provides international wire reporting.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: ["reciprocal-tariffs"],
+  },
+  {
+    id: "immigrants-steal-jobs",
+    category: ["Immigration", "Economy"],
+    theySay: "Immigrants are stealing American jobs!",
+    youSay: "Labor markets are not a fixed pie. Immigrants fill shortages, start businesses, and raise demand. BLS and Census data show native-born unemployment and labor-force patterns driven more by automation, trade, and education than by immigration alone.",
+    stab: "Blaming the worker next to you is easier than blaming the boss who cut the pension.",
+    sources: [
+      cite(
+        "bls_union",
+        "Union Members Summary",
+        "Bureau of Labor Statistics",
+        "https://www.bls.gov/news.release/union2.nr0.htm",
+        "BLS publishes official union membership and earnings data.",
+        "2025-01-01"
+      ),
+      cite(
+        "census_pov",
+        "Poverty in the United States",
+        "U.S. Census Bureau",
+        "https://www.census.gov/topics/income-poverty/poverty.html",
+        "Census Bureau publishes official poverty and income statistics.",
+        "2025-01-01"
+      ),
+      cite(
+        "crs_home",
+        "Congressional Research Service Reports",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/",
+        "CRS provides nonpartisan analysis to Congress on legislation and policy.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: ["border-invasion"],
+  },
+  {
+    id: "climate-always-changes",
+    category: ["Climate"],
+    theySay: "The climate has always changed - stop the hysteria!",
+    youSay: "Climate has always varied. What is new is the rate and cause: measured greenhouse gas rise from fossil fuels, with IPCC and NOAA documenting human-driven warming. Always changed is not a rebuttal to physics; it is a slogan.",
+    stab: "Your thermostat also always changed. That does not mean setting it to 120 is fine.",
+    sources: [
+      cite(
+        "ipcc",
+        "Intergovernmental Panel on Climate Change",
+        "IPCC",
+        "https://www.ipcc.ch/",
+        "IPCC assesses the science of climate change for policymakers.",
+        "2023-01-01"
+      ),
+      cite(
+        "noaa",
+        "NOAA Climate",
+        "NOAA",
+        "https://www.noaa.gov/climate",
+        "NOAA publishes climate observations and assessments.",
+        "2025-01-01"
+      ),
+      cite(
+        "epa_home",
+        "U.S. Environmental Protection Agency",
+        "EPA",
+        "https://www.epa.gov/",
+        "EPA publishes environmental regulation and enforcement information.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "jan6-tourist-visit",
+    category: ["Jan 6", "Democracy"],
+    theySay: "January 6 was a mostly peaceful tourist visit!",
+    youSay: "Congress, DOJ charging documents, and video show a violent breach that injured officers and delayed certification of an election. Tourists do not smash windows, assault police, or chant hang Mike Pence.",
+    stab: "If it was tourism, the souvenir was a gallows.",
+    sources: [
+      cite(
+        "congress_home",
+        "Congress.gov",
+        "Library of Congress",
+        "https://www.congress.gov/",
+        "Official legislative information for the U.S. Congress.",
+        "2025-01-01"
+      ),
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "ap_home",
+        "Associated Press",
+        "Associated Press",
+        "https://apnews.com/",
+        "AP provides fact-based national and international reporting.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: ["election-stolen"],
+  },
+  {
+    id: "voter-fraud-everywhere",
+    category: ["Elections", "Democracy"],
+    theySay: "Voter fraud is rampant - millions of illegal votes!",
+    youSay: "State audits, DOJ, and AP reviews of the 2020 election found no evidence of fraud at a scale that would change outcomes. Widespread fraud is asserted loudly because it is not proven in court.",
+    stab: "If you had millions of illegal votes, you would have millions of convictions. You have vibes.",
+    sources: [
+      cite(
+        "ap_home",
+        "Associated Press",
+        "Associated Press",
+        "https://apnews.com/",
+        "AP provides fact-based national and international reporting.",
+        "2025-01-01"
+      ),
+      cite(
+        "brennan_home",
+        "Brennan Center for Justice",
+        "Brennan Center for Justice",
+        "https://www.brennancenter.org/",
+        "Brennan Center researches voting rights, democracy, and justice reform.",
+        "2025-01-01"
+      ),
+      cite(
+        "cisa",
+        "Cybersecurity and Infrastructure Security Agency",
+        "CISA",
+        "https://www.cisa.gov/topics/election-security",
+        "CISA provides election infrastructure security guidance.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: ["election-stolen"],
+  },
+  {
+    id: "deep-state-runs-everything",
+    category: ["Democracy", "Culture Wars"],
+    theySay: "The deep state runs everything - elections are fake!",
+    youSay: "Career civil servants are constrained by statutes, inspectors general, FOIA, and courts. Conspiracy replaces evidence. If everything is fake, no document can ever convince you - which is the point of the conspiracy.",
+    stab: "Deep state is Latin for I lost and need a villain.",
+    sources: [
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      ),
+      cite(
+        "foia_home",
+        "FOIA.gov",
+        "U.S. Department of Justice",
+        "https://www.foia.gov/",
+        "FOIA.gov publishes agency FOIA portals and compliance data.",
+        "2025-01-01"
+      ),
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "welfare-queens-drain",
+    category: ["Economy", "Culture Wars"],
+    theySay: "Welfare queens are draining the country dry!",
+    youSay: "Census poverty data and GAO program audits show most safety-net spending goes to children, elderly, disabled people, and workers. The welfare queen was a political caricature, not a budget line that explains deficits.",
+    stab: "Billionaire tax avoidance dwarfs the grocery budget you are mad about.",
+    sources: [
+      cite(
+        "census_pov",
+        "Poverty in the United States",
+        "U.S. Census Bureau",
+        "https://www.census.gov/topics/income-poverty/poverty.html",
+        "Census Bureau publishes official poverty and income statistics.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      ),
+      cite(
+        "opensecrets",
+        "OpenSecrets",
+        "OpenSecrets",
+        "https://www.opensecrets.org/",
+        "OpenSecrets tracks campaign finance, lobbying, and dark money.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "unions-corrupt-obsolete",
+    category: ["Economy"],
+    theySay: "Unions are corrupt and obsolete!",
+    youSay: "BLS data show union members earn more and have better benefits on average. Corruption exists in every institution; dissolving worker power is not an anti-corruption plan - it is a management plan.",
+    stab: "If unions were powerless, CEOs would not spend so much fighting them.",
+    sources: [
+      cite(
+        "bls_union",
+        "Union Members Summary",
+        "Bureau of Labor Statistics",
+        "https://www.bls.gov/news.release/union2.nr0.htm",
+        "BLS publishes official union membership and earnings data.",
+        "2025-01-01"
+      ),
+      cite(
+        "crs_home",
+        "Congressional Research Service Reports",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/",
+        "CRS provides nonpartisan analysis to Congress on legislation and policy.",
+        "2025-01-01"
+      ),
+      cite(
+        "congress_home",
+        "Congress.gov",
+        "Library of Congress",
+        "https://www.congress.gov/",
+        "Official legislative information for the U.S. Congress.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "minimum-wage-kills-jobs",
+    category: ["Economy"],
+    theySay: "Raising the minimum wage kills jobs!",
+    youSay: "Empirical reviews find modest minimum-wage increases have small or mixed employment effects while raising earnings for low-wage workers. Absolute claims of mass job death ignore decades of state-level evidence.",
+    stab: "Your theory needs a new update; the data already got one.",
+    sources: [
+      cite(
+        "bls_union",
+        "Union Members Summary",
+        "Bureau of Labor Statistics",
+        "https://www.bls.gov/news.release/union2.nr0.htm",
+        "BLS publishes official union membership and earnings data.",
+        "2025-01-01"
+      ),
+      cite(
+        "crs_home",
+        "Congressional Research Service Reports",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/",
+        "CRS provides nonpartisan analysis to Congress on legislation and policy.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "socialism-venezuela",
+    category: ["Economy", "Whataboutism"],
+    theySay: "Any social program is socialism and look at Venezuela!",
+    youSay: "Medicare, Social Security, and public schools are popular American institutions. Venezuela's crisis has specific causes - oil dependence, authoritarianism, sanctions - not the existence of libraries or Medicaid.",
+    stab: "Calling fire departments socialism does not make them Venezuelan.",
+    sources: [
+      cite(
+        "crs_home",
+        "Congressional Research Service Reports",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/",
+        "CRS provides nonpartisan analysis to Congress on legislation and policy.",
+        "2025-01-01"
+      ),
+      cite(
+        "census_pov",
+        "Poverty in the United States",
+        "U.S. Census Bureau",
+        "https://www.census.gov/topics/income-poverty/poverty.html",
+        "Census Bureau publishes official poverty and income statistics.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "crime-cities-democrat",
+    category: ["Crime", "Whataboutism"],
+    theySay: "Democrat cities are crime hellholes!",
+    youSay: "FBI and BJS data show crime varies by metro area and has fallen from 1990s peaks in many cities of both parties. Cherry-picking scary clips is not a crime rate. Policy debate needs victimization surveys and UCR trends, not vibes.",
+    stab: "If party labels caused crime, rural red counties would be crime-free. They are not.",
+    sources: [
+      cite(
+        "bjs_home",
+        "Bureau of Justice Statistics",
+        "BJS",
+        "https://bjs.ojp.gov/",
+        "BJS publishes criminal victimization and justice system statistics.",
+        "2024-01-01"
+      ),
+      cite(
+        "ap_home",
+        "Associated Press",
+        "Associated Press",
+        "https://apnews.com/",
+        "AP provides fact-based national and international reporting.",
+        "2025-01-01"
+      ),
+      cite(
+        "reuters_home",
+        "Reuters",
+        "Reuters",
+        "https://apnews.com/",
+        "Reuters provides international wire reporting.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "guns-dont-kill",
+    category: ["Crime", "Culture Wars"],
+    theySay: "Guns don't kill people - people kill people!",
+    youSay: "People with easier access to firearms kill more people with firearms. CDC injury data and cross-country comparisons show firearm availability shapes death rates. Tools matter; that is why we regulate cars, planes, and explosives.",
+    stab: "People also drive cars. We still require licenses and seatbelts.",
+    sources: [
+      cite(
+        "cdc_home",
+        "Centers for Disease Control and Prevention",
+        "CDC",
+        "https://www.cdc.gov/",
+        "CDC publishes public health data and guidance.",
+        "2025-01-01"
+      ),
+      cite(
+        "crs_home",
+        "Congressional Research Service Reports",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/",
+        "CRS provides nonpartisan analysis to Congress on legislation and policy.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "trans-kids-mutilation",
+    category: ["Culture Wars", "Healthcare"],
+    theySay: "They're mutilating kids with gender ideology!",
+    youSay: "Major medical bodies publish careful, evidence-based standards for gender-affirming care; care for minors is limited and regulated. Panic language is designed to ban care, not to cite pediatric endocrinology.",
+    stab: "If your argument needs the word mutilation in every sentence, you are doing politics, not medicine.",
+    sources: [
+      cite(
+        "cdc_home",
+        "Centers for Disease Control and Prevention",
+        "CDC",
+        "https://www.cdc.gov/",
+        "CDC publishes public health data and guidance.",
+        "2025-01-01"
+      ),
+      cite(
+        "nih_home",
+        "National Institutes of Health",
+        "NIH",
+        "https://www.nih.gov/",
+        "NIH funds and publishes biomedical research.",
+        "2025-01-01"
+      ),
+      cite(
+        "aclu_home",
+        "American Civil Liberties Union",
+        "ACLU",
+        "https://www.aclu.org/",
+        "ACLU litigates and documents civil liberties threats.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "hard",
+    relatedClaims: [],
+  },
+  {
+    id: "crt-in-kindergarten",
+    category: ["Education", "Culture Wars"],
+    theySay: "They're teaching critical race theory in kindergarten!",
+    youSay: "CRT is a graduate-level legal framework. School fights are usually about teaching accurate history of slavery and segregation. Banning books about Rosa Parks is not protecting kids from a law-review seminar.",
+    stab: "If a picture book is CRT, then literacy is a conspiracy.",
+    sources: [
+      cite(
+        "brennan_home",
+        "Brennan Center for Justice",
+        "Brennan Center for Justice",
+        "https://www.brennancenter.org/",
+        "Brennan Center researches voting rights, democracy, and justice reform.",
+        "2025-01-01"
+      ),
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "loc_home",
+        "Library of Congress",
+        "Library of Congress",
+        "https://www.loc.gov/",
+        "Library of Congress preserves and publishes historical documents.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: ["book-bans"],
+  },
+  {
+    id: "parents-rights-only",
+    category: ["Education", "Culture Wars"],
+    theySay: "Parents' rights means schools can't teach anything I dislike!",
+    youSay: "Parents have rights; so do other parents and students. Public schools teach a shared curriculum under elected boards and state standards. One parent's veto is not a curriculum.",
+    stab: "Your rights end where you demand everyone else's kids erase history.",
+    sources: [
+      cite(
+        "brennan_home",
+        "Brennan Center for Justice",
+        "Brennan Center for Justice",
+        "https://www.brennancenter.org/",
+        "Brennan Center researches voting rights, democracy, and justice reform.",
+        "2025-01-01"
+      ),
+      cite(
+        "congress_home",
+        "Congress.gov",
+        "Library of Congress",
+        "https://www.congress.gov/",
+        "Official legislative information for the U.S. Congress.",
+        "2025-01-01"
+      ),
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "media-all-fake-news",
+    category: ["Media"],
+    theySay: "The media is all fake news!",
+    youSay: "Outlets err and deserve scrutiny. Primary documents - Federal Register, court dockets, FEC filings - still exist. If every reporter is fake, check the PDF yourself. Sunrise cites those PDFs on purpose.",
+    stab: "Fake news is easier to yell than FOIA is to file.",
+    sources: [
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "foia_home",
+        "FOIA.gov",
+        "U.S. Department of Justice",
+        "https://www.foia.gov/",
+        "FOIA.gov publishes agency FOIA portals and compliance data.",
+        "2025-01-01"
+      ),
+      cite(
+        "ap_home",
+        "Associated Press",
+        "Associated Press",
+        "https://apnews.com/",
+        "AP provides fact-based national and international reporting.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "both-parties-same",
+    category: ["Whataboutism", "Democracy"],
+    theySay: "Both parties are the same!",
+    youSay: "Parties share donor pressures and failures. Platforms, judicial appointments, voting laws, and climate policy still diverge in measurable ways. Sameness is a refusal to vote or organize, not an analysis.",
+    stab: "If they were the same, Project 2025 would not need 900 pages.",
+    sources: [
+      cite(
+        "opensecrets",
+        "OpenSecrets",
+        "OpenSecrets",
+        "https://www.opensecrets.org/",
+        "OpenSecrets tracks campaign finance, lobbying, and dark money.",
+        "2025-01-01"
+      ),
+      cite(
+        "congress_home",
+        "Congress.gov",
+        "Library of Congress",
+        "https://www.congress.gov/",
+        "Official legislative information for the U.S. Congress.",
+        "2025-01-01"
+      ),
+      cite(
+        "wh_actions",
+        "Presidential Actions",
+        "The White House",
+        "https://www.whitehouse.gov/presidential-actions/",
+        "Official presidential actions including executive orders.",
+        "2025-01-20"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "billionaires-earned-it",
+    category: ["Economy"],
+    theySay: "Billionaires earned every penny - leave them alone!",
+    youSay: "Wealth at that scale depends on public infrastructure, limited liability, IP law, tax rules, and labor. OpenSecrets and FEC data show political spending protects those rules. Earned is not the same as untaxable.",
+    stab: "Nobody builds a billion-dollar fortune on a desert island with no roads or courts.",
+    sources: [
+      cite(
+        "opensecrets",
+        "OpenSecrets",
+        "OpenSecrets",
+        "https://www.opensecrets.org/",
+        "OpenSecrets tracks campaign finance, lobbying, and dark money.",
+        "2025-01-01"
+      ),
+      cite(
+        "fec_data",
+        "FEC Campaign Finance Data",
+        "Federal Election Commission",
+        "https://www.fec.gov/data/",
+        "FEC publishes federal campaign finance disclosures.",
+        "2025-01-01"
+      ),
+      cite(
+        "census_pov",
+        "Poverty in the United States",
+        "U.S. Census Bureau",
+        "https://www.census.gov/topics/income-poverty/poverty.html",
+        "Census Bureau publishes official poverty and income statistics.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "regulation-kills-freedom",
+    category: ["Economy", "Democracy"],
+    theySay: "Regulation kills freedom!",
+    youSay: "Food safety, clean water, banking rules, and workplace standards expand freedom to live without poison and fraud. GAO and EPA document what happens when oversight collapses. Freedom for dumpers is unfreedom for everyone downstream.",
+    stab: "Your freedom to dump waste is my kid's asthma attack.",
+    sources: [
+      cite(
+        "epa_home",
+        "U.S. Environmental Protection Agency",
+        "EPA",
+        "https://www.epa.gov/",
+        "EPA publishes environmental regulation and enforcement information.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "defund-meant-abolish",
+    category: ["Crime", "Whataboutism"],
+    theySay: "Democrats wanted to abolish the police!",
+    youSay: "Slogan chaos aside, most reform agendas funded mental-health response, accountability, and violence interruption - not literal zero police. Debating budgets requires budget docs, not cable chyron memory.",
+    stab: "If abolish was the platform, show me the enacted city ordinance that deleted 911.",
+    sources: [
+      cite(
+        "bjs_home",
+        "Bureau of Justice Statistics",
+        "BJS",
+        "https://bjs.ojp.gov/",
+        "BJS publishes criminal victimization and justice system statistics.",
+        "2024-01-01"
+      ),
+      cite(
+        "crs_home",
+        "Congressional Research Service Reports",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/",
+        "CRS provides nonpartisan analysis to Congress on legislation and policy.",
+        "2025-01-01"
+      ),
+      cite(
+        "ap_home",
+        "Associated Press",
+        "Associated Press",
+        "https://apnews.com/",
+        "AP provides fact-based national and international reporting.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "ukraine-our-money",
+    category: ["Foreign Policy", "Economy"],
+    theySay: "We're sending all our money to Ukraine!",
+    youSay: "Aid packages are a small share of the federal budget and often take the form of U.S.-made equipment. Debate the policy - do not invent a fiscal black hole that does not match CBO and CRS scoring.",
+    stab: "The deficit is not hiding in Kyiv. Check the tax cuts and interest line items.",
+    sources: [
+      cite(
+        "crs_home",
+        "Congressional Research Service Reports",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/",
+        "CRS provides nonpartisan analysis to Congress on legislation and policy.",
+        "2025-01-01"
+      ),
+      cite(
+        "congress_home",
+        "Congress.gov",
+        "Library of Congress",
+        "https://www.congress.gov/",
+        "Official legislative information for the U.S. Congress.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "israel-no-criticism",
+    category: ["Foreign Policy", "Culture Wars"],
+    theySay: "Any criticism of Israeli government policy is antisemitism!",
+    youSay: "Antisemitism is real and must be confronted. Criticizing a government's military policy is not hatred of Jews, just as criticizing the U.S. government is not hatred of Americans. Collapse the distinction and you shield policy from scrutiny.",
+    stab: "Governments are not religions. Accountability is not bigotry.",
+    sources: [
+      cite(
+        "ap_home",
+        "Associated Press",
+        "Associated Press",
+        "https://apnews.com/",
+        "AP provides fact-based national and international reporting.",
+        "2025-01-01"
+      ),
+      cite(
+        "reuters_home",
+        "Reuters",
+        "Reuters",
+        "https://apnews.com/",
+        "Reuters provides international wire reporting.",
+        "2025-01-01"
+      ),
+      cite(
+        "aclu_home",
+        "American Civil Liberties Union",
+        "ACLU",
+        "https://www.aclu.org/",
+        "ACLU litigates and documents civil liberties threats.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "hard",
+    relatedClaims: [],
+  },
+  {
+    id: "muslim-ban-was-travel",
+    category: ["Immigration", "Foreign Policy"],
+    theySay: "It was just a travel pause, not a Muslim ban!",
+    youSay: "Campaign promises targeted Muslim countries; the policy's design and messaging were religiously coded even when lawyers scrubbed the text. Courts and civil-rights groups documented discriminatory intent and impact.",
+    stab: "If it walks like a ban and campaigns like a ban, the euphemism is not subtle.",
+    sources: [
+      cite(
+        "aclu_home",
+        "American Civil Liberties Union",
+        "ACLU",
+        "https://www.aclu.org/",
+        "ACLU litigates and documents civil liberties threats.",
+        "2025-01-01"
+      ),
+      cite(
+        "ap_home",
+        "Associated Press",
+        "Associated Press",
+        "https://apnews.com/",
+        "AP provides fact-based national and international reporting.",
+        "2025-01-01"
+      ),
+      cite(
+        "oyez_home",
+        "Oyez",
+        "Oyez",
+        "https://www.oyez.org/",
+        "Oyez summarizes Supreme Court cases with opinions and audio.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "asylum-is-illegal",
+    category: ["Immigration"],
+    theySay: "Asylum seekers are illegal by definition!",
+    youSay: "U.S. and international law allow people to request asylum. The claim is processed; it may be granted or denied. Illegal is a political smear for a legal process you dislike.",
+    stab: "Calling a court process illegal is how you advertise that you do not like courts.",
+    sources: [
+      cite(
+        "aclu_home",
+        "American Civil Liberties Union",
+        "ACLU",
+        "https://www.aclu.org/",
+        "ACLU litigates and documents civil liberties threats.",
+        "2025-01-01"
+      ),
+      cite(
+        "crs_home",
+        "Congressional Research Service Reports",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/",
+        "CRS provides nonpartisan analysis to Congress on legislation and policy.",
+        "2025-01-01"
+      ),
+      cite(
+        "congress_home",
+        "Congress.gov",
+        "Library of Congress",
+        "https://www.congress.gov/",
+        "Official legislative information for the U.S. Congress.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "birthright-not-in-constitution",
+    category: ["Immigration", "Democracy"],
+    theySay: "Birthright citizenship isn't really in the Constitution!",
+    youSay: "The 14th Amendment's text and longstanding interpretation grant citizenship to those born in the U.S. subject to its jurisdiction. Ending it by executive order is a constitutional fight the text does not casually allow.",
+    stab: "If you want to amend the 14th, call it an amendment - not a press conference.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "oyez_home",
+        "Oyez",
+        "Oyez",
+        "https://www.oyez.org/",
+        "Oyez summarizes Supreme Court cases with opinions and audio.",
+        "2025-01-01"
+      ),
+      cite(
+        "aclu_home",
+        "American Civil Liberties Union",
+        "ACLU",
+        "https://www.aclu.org/",
+        "ACLU litigates and documents civil liberties threats.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "hard",
+    relatedClaims: ["birthright"],
+  },
+  {
+    id: "fbi-corrupt-always",
+    category: ["Democracy", "Jan 6"],
+    theySay: "The FBI is irreversibly corrupt!",
+    youSay: "The FBI has a documented abusive history - COINTELPRO - and still requires oversight. That is an argument for Church Committee-style accountability, not for declaring every investigation of political violence illegitimate.",
+    stab: "Past abuse does not grant you a lifelong FOIA exemption for your coup attempt.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "foia_home",
+        "FOIA.gov",
+        "U.S. Department of Justice",
+        "https://www.foia.gov/",
+        "FOIA.gov publishes agency FOIA portals and compliance data.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "trump-peace-president",
+    category: ["Foreign Policy"],
+    theySay: "Trump is the peace president!",
+    youSay: "Peace is measured in wars ended, alliances managed, and civilian deaths avoided - not vibes. Score the record with CRS and wire reporting on strikes, withdrawals, and escalations rather than campaign nicknames.",
+    stab: "Peace president is a brand. Body counts are a ledger.",
+    sources: [
+      cite(
+        "crs_home",
+        "Congressional Research Service Reports",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/",
+        "CRS provides nonpartisan analysis to Congress on legislation and policy.",
+        "2025-01-01"
+      ),
+      cite(
+        "reuters_home",
+        "Reuters",
+        "Reuters",
+        "https://apnews.com/",
+        "Reuters provides international wire reporting.",
+        "2025-01-01"
+      ),
+      cite(
+        "ap_home",
+        "Associated Press",
+        "Associated Press",
+        "https://apnews.com/",
+        "AP provides fact-based national and international reporting.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "nato-freeloaders",
+    category: ["Foreign Policy"],
+    theySay: "NATO allies are freeloaders!",
+    youSay: "Burden-sharing debates are real; alliance free-riding claims often ignore U.S. strategic benefits, basing access, and collective defense value documented in CRS analyses. Insult diplomacy is not a strategy memo.",
+    stab: "Calling Canada a freeloader is a heckle, not a national security strategy.",
+    sources: [
+      cite(
+        "crs_home",
+        "Congressional Research Service Reports",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/",
+        "CRS provides nonpartisan analysis to Congress on legislation and policy.",
+        "2025-01-01"
+      ),
+      cite(
+        "reuters_home",
+        "Reuters",
+        "Reuters",
+        "https://apnews.com/",
+        "Reuters provides international wire reporting.",
+        "2025-01-01"
+      ),
+      cite(
+        "congress_home",
+        "Congress.gov",
+        "Library of Congress",
+        "https://www.congress.gov/",
+        "Official legislative information for the U.S. Congress.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "covid-was-hoax",
+    category: ["Healthcare", "Culture Wars"],
+    theySay: "COVID was a hoax!",
+    youSay: "CDC death and hospitalization data, excess mortality studies, and global tallies document a real pandemic. Hoax rhetoric insults grieving families and erases ICU capacity crises hospitals recorded in real time.",
+    stab: "A hoax does not fill morgues. A virus does.",
+    sources: [
+      cite(
+        "cdc_home",
+        "Centers for Disease Control and Prevention",
+        "CDC",
+        "https://www.cdc.gov/",
+        "CDC publishes public health data and guidance.",
+        "2025-01-01"
+      ),
+      cite(
+        "nih_home",
+        "National Institutes of Health",
+        "NIH",
+        "https://www.nih.gov/",
+        "NIH funds and publishes biomedical research.",
+        "2025-01-01"
+      ),
+      cite(
+        "ap_home",
+        "Associated Press",
+        "Associated Press",
+        "https://apnews.com/",
+        "AP provides fact-based national and international reporting.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "masks-dont-work",
+    category: ["Healthcare"],
+    theySay: "Masks don't work!",
+    youSay: "High-quality masks reduce transmission in documented settings; public-health guidance evolved as evidence evolved. Absolute doesn't work erases nuance the same way always wear them outdoors alone did.",
+    stab: "Your N95 is not a fashion statement. It is a filter. Filters filter.",
+    sources: [
+      cite(
+        "cdc_home",
+        "Centers for Disease Control and Prevention",
+        "CDC",
+        "https://www.cdc.gov/",
+        "CDC publishes public health data and guidance.",
+        "2025-01-01"
+      ),
+      cite(
+        "nih_home",
+        "National Institutes of Health",
+        "NIH",
+        "https://www.nih.gov/",
+        "NIH funds and publishes biomedical research.",
+        "2025-01-01"
+      ),
+      cite(
+        "reuters_home",
+        "Reuters",
+        "Reuters",
+        "https://apnews.com/",
+        "Reuters provides international wire reporting.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "vaccine-microchips",
+    category: ["Healthcare", "Culture Wars"],
+    theySay: "Vaccines have microchips / change your DNA!",
+    youSay: "mRNA vaccines do not alter your DNA; CDC and NIH explain the mechanism. Microchip claims are conspiracy content with zero manufacturing evidence. Extraordinary claims need extraordinary receipts - none exist.",
+    stab: "If they could microchip you via a shot, they would not need your phone's location permissions.",
+    sources: [
+      cite(
+        "cdc_home",
+        "Centers for Disease Control and Prevention",
+        "CDC",
+        "https://www.cdc.gov/",
+        "CDC publishes public health data and guidance.",
+        "2025-01-01"
+      ),
+      cite(
+        "nih_home",
+        "National Institutes of Health",
+        "NIH",
+        "https://www.nih.gov/",
+        "NIH funds and publishes biomedical research.",
+        "2025-01-01"
+      ),
+      cite(
+        "reuters_home",
+        "Reuters",
+        "Reuters",
+        "https://apnews.com/",
+        "Reuters provides international wire reporting.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "school-choice-only-fix",
+    category: ["Education"],
+    theySay: "School choice is the only education reform that works!",
+    youSay: "Families deserve options; draining public schools without accountability can worsen segregation and outcomes. Evidence on vouchers is mixed. Reform that ignores Title I funding and teacher pay is ideology, not a toolkit.",
+    stab: "Choice without a funded public baseline is escape hatches for some and leftovers for others.",
+    sources: [
+      cite(
+        "crs_home",
+        "Congressional Research Service Reports",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/",
+        "CRS provides nonpartisan analysis to Congress on legislation and policy.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      ),
+      cite(
+        "census_pov",
+        "Poverty in the United States",
+        "U.S. Census Bureau",
+        "https://www.census.gov/topics/income-poverty/poverty.html",
+        "Census Bureau publishes official poverty and income statistics.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "college-is-scam",
+    category: ["Education", "Economy"],
+    theySay: "College is a scam - just learn a trade!",
+    youSay: "Trades are valuable and under-respected. Degree premiums still appear in Census and BLS earnings data on average. The scam is predatory lending and underfunded public colleges - not literacy itself.",
+    stab: "You can respect welders without pretending epidemiology is a trade school elective.",
+    sources: [
+      cite(
+        "bls_union",
+        "Union Members Summary",
+        "Bureau of Labor Statistics",
+        "https://www.bls.gov/news.release/union2.nr0.htm",
+        "BLS publishes official union membership and earnings data.",
+        "2025-01-01"
+      ),
+      cite(
+        "census_pov",
+        "Poverty in the United States",
+        "U.S. Census Bureau",
+        "https://www.census.gov/topics/income-poverty/poverty.html",
+        "Census Bureau publishes official poverty and income statistics.",
+        "2025-01-01"
+      ),
+      cite(
+        "crs_home",
+        "Congressional Research Service Reports",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/",
+        "CRS provides nonpartisan analysis to Congress on legislation and policy.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "dei-is-racism",
+    category: ["Culture Wars", "Democracy"],
+    theySay: "DEI is anti-white racism!",
+    youSay: "Diversity programs vary wildly; some are clumsy. Treating any effort to reduce discrimination as racism against the majority flips civil-rights history on its head. Equal opportunity is not reverse oppression.",
+    stab: "If inclusion is racism, then the 1964 Civil Rights Act was a hate crime.",
+    sources: [
+      cite(
+        "aclu_home",
+        "American Civil Liberties Union",
+        "ACLU",
+        "https://www.aclu.org/",
+        "ACLU litigates and documents civil liberties threats.",
+        "2025-01-01"
+      ),
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "congress_home",
+        "Congress.gov",
+        "Library of Congress",
+        "https://www.congress.gov/",
+        "Official legislative information for the U.S. Congress.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "great-replacement-real",
+    category: ["Immigration", "Culture Wars"],
+    theySay: "The Great Replacement is real!",
+    youSay: "Demographic change is real; a plot to replace white voters via immigration is a white-nationalist conspiracy theory. Fertility, aging, and migration explain population math without a puppet master.",
+    stab: "Conspiracy theories turn census tables into enemy battle maps.",
+    sources: [
+      cite(
+        "census_pov",
+        "Poverty in the United States",
+        "U.S. Census Bureau",
+        "https://www.census.gov/topics/income-poverty/poverty.html",
+        "Census Bureau publishes official poverty and income statistics.",
+        "2025-01-01"
+      ),
+      cite(
+        "brennan_home",
+        "Brennan Center for Justice",
+        "Brennan Center for Justice",
+        "https://www.brennancenter.org/",
+        "Brennan Center researches voting rights, democracy, and justice reform.",
+        "2025-01-01"
+      ),
+      cite(
+        "ap_home",
+        "Associated Press",
+        "Associated Press",
+        "https://apnews.com/",
+        "AP provides fact-based national and international reporting.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "hard",
+    relatedClaims: [],
+  },
+  {
+    id: "antifa-ran-jan6",
+    category: ["Jan 6", "Whataboutism"],
+    theySay: "Jan 6 was Antifa false flag!",
+    youSay: "Charging documents, geolocation, and guilty pleas identify Trump supporters and militia members. False-flag claims collapse under named defendants and their own livestreams.",
+    stab: "Your evidence cannot be a meme while the docket has names.",
+    sources: [
+      cite(
+        "ap_home",
+        "Associated Press",
+        "Associated Press",
+        "https://apnews.com/",
+        "AP provides fact-based national and international reporting.",
+        "2025-01-01"
+      ),
+      cite(
+        "congress_home",
+        "Congress.gov",
+        "Library of Congress",
+        "https://www.congress.gov/",
+        "Official legislative information for the U.S. Congress.",
+        "2025-01-01"
+      ),
+      cite(
+        "reuters_home",
+        "Reuters",
+        "Reuters",
+        "https://apnews.com/",
+        "Reuters provides international wire reporting.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "pelosi-turned-down-guard",
+    category: ["Jan 6", "Whataboutism"],
+    theySay: "Pelosi turned down the National Guard!",
+    youSay: "Capitol security failures were real and multi-agency. The claim that one Democratic leader uniquely refused available Guard protection has been repeatedly contradicted by timelines and testimony. Use the January 6 record, not a talking point.",
+    stab: "Security failures do not convert a mob into tourists.",
+    sources: [
+      cite(
+        "congress_home",
+        "Congress.gov",
+        "Library of Congress",
+        "https://www.congress.gov/",
+        "Official legislative information for the U.S. Congress.",
+        "2025-01-01"
+      ),
+      cite(
+        "ap_home",
+        "Associated Press",
+        "Associated Press",
+        "https://apnews.com/",
+        "AP provides fact-based national and international reporting.",
+        "2025-01-01"
+      ),
+      cite(
+        "reuters_home",
+        "Reuters",
+        "Reuters",
+        "https://apnews.com/",
+        "Reuters provides international wire reporting.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "trump-economy-best",
+    category: ["Economy"],
+    theySay: "Trump had the best economy ever!",
+    youSay: "Pre-pandemic growth continued trends from prior years; unemployment was low, then COVID crashed the economy. Best ever claims ignore who gained (asset owners) and what BLS wage and inequality data show for typical workers.",
+    stab: "Dow records are not a wage stub.",
+    sources: [
+      cite(
+        "bls_union",
+        "Union Members Summary",
+        "Bureau of Labor Statistics",
+        "https://www.bls.gov/news.release/union2.nr0.htm",
+        "BLS publishes official union membership and earnings data.",
+        "2025-01-01"
+      ),
+      cite(
+        "bls_cpi",
+        "Consumer Price Index",
+        "Bureau of Labor Statistics",
+        "https://www.bls.gov/cpi/",
+        "BLS publishes official inflation measures.",
+        "2025-01-01"
+      ),
+      cite(
+        "census_pov",
+        "Poverty in the United States",
+        "U.S. Census Bureau",
+        "https://www.census.gov/topics/income-poverty/poverty.html",
+        "Census Bureau publishes official poverty and income statistics.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "inflation-only-biden",
+    category: ["Economy", "Whataboutism"],
+    theySay: "Inflation is entirely Biden's fault!",
+    youSay: "Inflation spiked globally after COVID supply shocks and war-related energy prices. U.S. fiscal policy played a role; so did corporate pricing power and global factors. Single-villain economics is cable news, not BLS methodology.",
+    stab: "If one president owns global LNG prices, invent a new physics.",
+    sources: [
+      cite(
+        "bls_cpi",
+        "Consumer Price Index",
+        "Bureau of Labor Statistics",
+        "https://www.bls.gov/cpi/",
+        "BLS publishes official inflation measures.",
+        "2025-01-01"
+      ),
+      cite(
+        "crs_home",
+        "Congressional Research Service Reports",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/",
+        "CRS provides nonpartisan analysis to Congress on legislation and policy.",
+        "2025-01-01"
+      ),
+      cite(
+        "reuters_home",
+        "Reuters",
+        "Reuters",
+        "https://apnews.com/",
+        "Reuters provides international wire reporting.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "gas-stove-ban",
+    category: ["Culture Wars", "Climate"],
+    theySay: "They're banning gas stoves!",
+    youSay: "Federal agencies discussed efficiency standards and indoor air research - not a midnight SWAT team for your range. Culture-war ban talk converts technical rulemakings into persecution cosplay.",
+    stab: "Reading a proposed rule is harder than posting a frying pan meme.",
+    sources: [
+      cite(
+        "epa_home",
+        "U.S. Environmental Protection Agency",
+        "EPA",
+        "https://www.epa.gov/",
+        "EPA publishes environmental regulation and enforcement information.",
+        "2025-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "ap_home",
+        "Associated Press",
+        "Associated Press",
+        "https://apnews.com/",
+        "AP provides fact-based national and international reporting.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "esg-woke-capitalism",
+    category: ["Economy", "Culture Wars"],
+    theySay: "ESG is woke capitalism destroying markets!",
+    youSay: "Investors price climate and governance risk because disasters and fraud destroy value. Some ESG products are marketing fluff; risk analysis is not a gender studies seminar.",
+    stab: "Hurricanes do not check your culture-war scorecard before hitting a port.",
+    sources: [
+      cite(
+        "epa_home",
+        "U.S. Environmental Protection Agency",
+        "EPA",
+        "https://www.epa.gov/",
+        "EPA publishes environmental regulation and enforcement information.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      ),
+      cite(
+        "reuters_home",
+        "Reuters",
+        "Reuters",
+        "https://apnews.com/",
+        "Reuters provides international wire reporting.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "border-open-intentionally",
+    category: ["Immigration"],
+    theySay: "Democrats opened the border on purpose!",
+    youSay: "Asylum law, court backlogs, and congressional funding fights shape border management. Open border is a slogan that erases Title 42, expulsions, and detention capacity debates documented in CRS reports.",
+    stab: "If the border were open, you would not need a three-hour bridge wait to invent the phrase.",
+    sources: [
+      cite(
+        "crs_home",
+        "Congressional Research Service Reports",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/",
+        "CRS provides nonpartisan analysis to Congress on legislation and policy.",
+        "2025-01-01"
+      ),
+      cite(
+        "aclu_home",
+        "American Civil Liberties Union",
+        "ACLU",
+        "https://www.aclu.org/",
+        "ACLU litigates and documents civil liberties threats.",
+        "2025-01-01"
+      ),
+      cite(
+        "ap_home",
+        "Associated Press",
+        "Associated Press",
+        "https://apnews.com/",
+        "AP provides fact-based national and international reporting.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "caravans-invasion",
+    category: ["Immigration", "Culture Wars"],
+    theySay: "Migrant caravans are an invasion!",
+    youSay: "Invasion is a wartime word. Asylum seekers traveling together for safety are not an army. Military metaphors justify military tactics against civilians.",
+    stab: "People walking with kids are not Normandy.",
+    sources: [
+      cite(
+        "aclu_home",
+        "American Civil Liberties Union",
+        "ACLU",
+        "https://www.aclu.org/",
+        "ACLU litigates and documents civil liberties threats.",
+        "2025-01-01"
+      ),
+      cite(
+        "ap_home",
+        "Associated Press",
+        "Associated Press",
+        "https://apnews.com/",
+        "AP provides fact-based national and international reporting.",
+        "2025-01-01"
+      ),
+      cite(
+        "crs_home",
+        "Congressional Research Service Reports",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/",
+        "CRS provides nonpartisan analysis to Congress on legislation and policy.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "christianity-under-attack",
+    category: ["Culture Wars", "Media"],
+    theySay: "Christianity is under attack in America!",
+    youSay: "Christians remain a large share of the population and hold vast institutional power. Losing monopoly status in public schools or retail greetings is not persecution. Compare to actual religious persecution data worldwide.",
+    stab: "Starbucks cups are not the Colosseum.",
+    sources: [
+      cite(
+        "census_pov",
+        "Poverty in the United States",
+        "U.S. Census Bureau",
+        "https://www.census.gov/topics/income-poverty/poverty.html",
+        "Census Bureau publishes official poverty and income statistics.",
+        "2025-01-01"
+      ),
+      cite(
+        "aclu_home",
+        "American Civil Liberties Union",
+        "ACLU",
+        "https://www.aclu.org/",
+        "ACLU litigates and documents civil liberties threats.",
+        "2025-01-01"
+      ),
+      cite(
+        "ap_home",
+        "Associated Press",
+        "Associated Press",
+        "https://apnews.com/",
+        "AP provides fact-based national and international reporting.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "war-on-christmas",
+    category: ["Culture Wars", "Media"],
+    theySay: "There's a war on Christmas!",
+    youSay: "Christmas remains a federal holiday saturated in commerce and public celebration. Happy holidays is courtesy, not a tank division. Manufactured victimhood sells outrage ads.",
+    stab: "If Christmas is under siege, the mall loudspeakers did not get the memo.",
+    sources: [
+      cite(
+        "ap_home",
+        "Associated Press",
+        "Associated Press",
+        "https://apnews.com/",
+        "AP provides fact-based national and international reporting.",
+        "2025-01-01"
+      ),
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "loc_home",
+        "Library of Congress",
+        "Library of Congress",
+        "https://www.loc.gov/",
+        "Library of Congress preserves and publishes historical documents.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "cancel-culture-left-only",
+    category: ["Culture Wars", "Media"],
+    theySay: "Only the left cancels people!",
+    youSay: "Boycotts and firings happen across the spectrum - book bans, campus speakers, corporate advertisers. The free speech high ground requires defending speech you dislike, not only your team's.",
+    stab: "Banning library books is cancel culture with a school-board smile.",
+    sources: [
+      cite(
+        "brennan_home",
+        "Brennan Center for Justice",
+        "Brennan Center for Justice",
+        "https://www.brennancenter.org/",
+        "Brennan Center researches voting rights, democracy, and justice reform.",
+        "2025-01-01"
+      ),
+      cite(
+        "aclu_home",
+        "American Civil Liberties Union",
+        "ACLU",
+        "https://www.aclu.org/",
+        "ACLU litigates and documents civil liberties threats.",
+        "2025-01-01"
+      ),
+      cite(
+        "ap_home",
+        "Associated Press",
+        "Associated Press",
+        "https://apnews.com/",
+        "AP provides fact-based national and international reporting.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "originalism-neutral",
+    category: ["Courts", "Democracy"],
+    theySay: "Originalism is just neutral constitutional interpretation!",
+    youSay: "Originalism is one contested method. Historians dispute whose original meaning counts, and outcomes often track the justices' politics. Neutral is a brand; methods still require judgment.",
+    stab: "If it were a calculator, justices would not split 6-3 so predictably.",
+    sources: [
+      cite(
+        "oyez_home",
+        "Oyez",
+        "Oyez",
+        "https://www.oyez.org/",
+        "Oyez summarizes Supreme Court cases with opinions and audio.",
+        "2025-01-01"
+      ),
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "crs_home",
+        "Congressional Research Service Reports",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/",
+        "CRS provides nonpartisan analysis to Congress on legislation and policy.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "hard",
+    relatedClaims: [],
+  },
+  {
+    id: "packing-court-illegitimate",
+    category: ["Courts", "Democracy"],
+    theySay: "Court expansion is illegitimate court packing!",
+    youSay: "Congress has changed the Court's size multiple times. Lifetime seats plus ethics scandals and hardball appointments already politicized the Court. Reform debates are constitutional politics, not sacrilege.",
+    stab: "The sacred number nine is tradition, not scripture.",
+    sources: [
+      cite(
+        "congress_home",
+        "Congress.gov",
+        "Library of Congress",
+        "https://www.congress.gov/",
+        "Official legislative information for the U.S. Congress.",
+        "2025-01-01"
+      ),
+      cite(
+        "oyez_home",
+        "Oyez",
+        "Oyez",
+        "https://www.oyez.org/",
+        "Oyez summarizes Supreme Court cases with opinions and audio.",
+        "2025-01-01"
+      ),
+      cite(
+        "crs_home",
+        "Congressional Research Service Reports",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/",
+        "CRS provides nonpartisan analysis to Congress on legislation and policy.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "hard",
+    relatedClaims: [],
+  },
+  {
+    id: "impeachment-coup",
+    category: ["Democracy", "Whataboutism"],
+    theySay: "Impeachments of Trump were illegal coups!",
+    youSay: "Impeachment is in the Constitution. The Senate acquitted. A constitutional process you dislike is not a coup; a violent attempt to stop electoral counting is closer to one.",
+    stab: "Coups do not come with Senate roll calls and C-SPAN.",
+    sources: [
+      cite(
+        "congress_home",
+        "Congress.gov",
+        "Library of Congress",
+        "https://www.congress.gov/",
+        "Official legislative information for the U.S. Congress.",
+        "2025-01-01"
+      ),
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "ap_home",
+        "Associated Press",
+        "Associated Press",
+        "https://apnews.com/",
+        "AP provides fact-based national and international reporting.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "special-counsels-witch-hunt",
+    category: ["Democracy", "Courts"],
+    theySay: "Every investigation is a witch hunt!",
+    youSay: "Investigations can be biased and still find real evidence - ask the convictions and plea deals. Witch hunt is a slogan that treats any accountability as persecution.",
+    stab: "If every subpoena is a witch hunt, witchcraft is your word for oversight.",
+    sources: [
+      cite(
+        "ap_home",
+        "Associated Press",
+        "Associated Press",
+        "https://apnews.com/",
+        "AP provides fact-based national and international reporting.",
+        "2025-01-01"
+      ),
+      cite(
+        "reuters_home",
+        "Reuters",
+        "Reuters",
+        "https://apnews.com/",
+        "Reuters provides international wire reporting.",
+        "2025-01-01"
+      ),
+      cite(
+        "foia_home",
+        "FOIA.gov",
+        "U.S. Department of Justice",
+        "https://www.foia.gov/",
+        "FOIA.gov publishes agency FOIA portals and compliance data.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "classified-documents-both",
+    category: ["Whataboutism", "Democracy"],
+    theySay: "Everyone has classified documents issues!",
+    youSay: "Compare cooperation with retrieval, obstruction evidence, and charging decisions. Whataboutism collapses different fact patterns into a shrug. Process and intent matter in Espionage Act cases.",
+    stab: "Returning boxes is not the same as hiding boxes.",
+    sources: [
+      cite(
+        "ap_home",
+        "Associated Press",
+        "Associated Press",
+        "https://apnews.com/",
+        "AP provides fact-based national and international reporting.",
+        "2025-01-01"
+      ),
+      cite(
+        "reuters_home",
+        "Reuters",
+        "Reuters",
+        "https://apnews.com/",
+        "Reuters provides international wire reporting.",
+        "2025-01-01"
+      ),
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "hunter-biden-everything",
+    category: ["Whataboutism", "Media"],
+    theySay: "Hunter Biden explains every Trump scandal!",
+    youSay: "Hunter Biden's legal issues are real and adjudicated separately. They do not erase January 6, classified documents cases, or Project 2025 personnel plans. One family's taxes are not a universal solvent.",
+    stab: "Your distraction is not a defense exhibit.",
+    sources: [
+      cite(
+        "ap_home",
+        "Associated Press",
+        "Associated Press",
+        "https://apnews.com/",
+        "AP provides fact-based national and international reporting.",
+        "2025-01-01"
+      ),
+      cite(
+        "reuters_home",
+        "Reuters",
+        "Reuters",
+        "https://apnews.com/",
+        "Reuters provides international wire reporting.",
+        "2025-01-01"
+      ),
+      cite(
+        "congress_home",
+        "Congress.gov",
+        "Library of Congress",
+        "https://www.congress.gov/",
+        "Official legislative information for the U.S. Congress.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: ["hunter-biden-laptop"],
+  },
+  {
+    id: "project-2025-not-trump",
+    category: ["Democracy", "Culture Wars"],
+    theySay: "Project 2025 has nothing to do with Trump!",
+    youSay: "Heritage built the playbook with Trump-world authors and alumni; Day One orders tracked its personnel and agency agenda. Distance branding after the election does not erase the resume overlap or the implementation pattern.",
+    stab: "If it walks like your transition plan and hires like your transition plan...",
+    sources: [
+      cite(
+        "wh_actions",
+        "Presidential Actions",
+        "The White House",
+        "https://www.whitehouse.gov/presidential-actions/",
+        "Official presidential actions including executive orders.",
+        "2025-01-20"
+      ),
+      cite(
+        "opensecrets",
+        "OpenSecrets",
+        "OpenSecrets",
+        "https://www.opensecrets.org/",
+        "OpenSecrets tracks campaign finance, lobbying, and dark money.",
+        "2025-01-01"
+      ),
+      cite(
+        "ap_home",
+        "Associated Press",
+        "Associated Press",
+        "https://apnews.com/",
+        "AP provides fact-based national and international reporting.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "schedule-f-drains-swamp",
+    category: ["Democracy", "Economy"],
+    theySay: "Schedule F just drains the swamp!",
+    youSay: "Replacing merit protections with at-will loyalty tests politicizes expertise at EPA, SSA, and nuclear safety shops. GAO and MSPB frameworks exist because patronage produced corruption last time.",
+    stab: "Draining the swamp by firing the inspectors is how you get more swamp.",
+    sources: [
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "wh_actions",
+        "Presidential Actions",
+        "The White House",
+        "https://www.whitehouse.gov/presidential-actions/",
+        "Official presidential actions including executive orders.",
+        "2025-01-20"
+      )
+    ],
+    difficulty: "hard",
+    relatedClaims: [],
+  },
+  {
+    id: "doge-efficient-genius",
+    category: ["Economy", "Democracy"],
+    theySay: "DOGE is just efficiency - only waste gets cut!",
+    youSay: "Efficiency requires metrics, inspectors general, and legal authority. Extra-constitutional access to payment systems and mass RIFs risk cutting capacity citizens need - benefits, food safety, disaster response.",
+    stab: "Firing the air-traffic brain trust is not a spreadsheet flex.",
+    sources: [
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      ),
+      cite(
+        "wh_actions",
+        "Presidential Actions",
+        "The White House",
+        "https://www.whitehouse.gov/presidential-actions/",
+        "Official presidential actions including executive orders.",
+        "2025-01-20"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "foia-slows-government",
+    category: ["Democracy", "Media"],
+    theySay: "FOIA just slows government down!",
+    youSay: "Sunshine is a feature. FOIA.gov documents backlogs that agencies create by underfunding disclosure. If government cannot withstand records requests, it cannot withstand democracy.",
+    stab: "Speed without receipts is how scandals stay warm.",
+    sources: [
+      cite(
+        "foia_home",
+        "FOIA.gov",
+        "U.S. Department of Justice",
+        "https://www.foia.gov/",
+        "FOIA.gov publishes agency FOIA portals and compliance data.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      ),
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "dark-money-free-speech",
+    category: ["Democracy", "Economy"],
+    theySay: "Dark money is free speech!",
+    youSay: "Citizens United limited expenditure bans; it did not require secret donors. Voters can evaluate speech better when they know who paid for it. Disclosure is not a gag.",
+    stab: "Speech with a bag over its head is lobbying cosplay.",
+    sources: [
+      cite(
+        "fec_data",
+        "FEC Campaign Finance Data",
+        "Federal Election Commission",
+        "https://www.fec.gov/data/",
+        "FEC publishes federal campaign finance disclosures.",
+        "2025-01-01"
+      ),
+      cite(
+        "opensecrets",
+        "OpenSecrets",
+        "OpenSecrets",
+        "https://www.opensecrets.org/",
+        "OpenSecrets tracks campaign finance, lobbying, and dark money.",
+        "2025-01-01"
+      ),
+      cite(
+        "oyez_home",
+        "Oyez",
+        "Oyez",
+        "https://www.oyez.org/",
+        "Oyez summarizes Supreme Court cases with opinions and audio.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "lobbyists-experts",
+    category: ["Democracy"],
+    theySay: "Lobbyists are just subject-matter experts!",
+    youSay: "Expertise is real; paid access is also real. OpenSecrets data show industries buying influence. Public financing and revolving-door bans exist because expertise without sunlight becomes capture.",
+    stab: "If it requires a fundraiser to hear your expertise, it is not a seminar.",
+    sources: [
+      cite(
+        "opensecrets",
+        "OpenSecrets",
+        "OpenSecrets",
+        "https://www.opensecrets.org/",
+        "OpenSecrets tracks campaign finance, lobbying, and dark money.",
+        "2025-01-01"
+      ),
+      cite(
+        "fec_data",
+        "FEC Campaign Finance Data",
+        "Federal Election Commission",
+        "https://www.fec.gov/data/",
+        "FEC publishes federal campaign finance disclosures.",
+        "2025-01-01"
+      ),
+      cite(
+        "congress_home",
+        "Congress.gov",
+        "Library of Congress",
+        "https://www.congress.gov/",
+        "Official legislative information for the U.S. Congress.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "states-rights-always",
+    category: ["Democracy", "Whataboutism"],
+    theySay: "States' rights should decide everything!",
+    youSay: "States' rights historically defended slavery and Jim Crow. Federal civil rights exist because local majorities abused local minorities. Federalism is a structure, not a moral blank check.",
+    stab: "States' rights was the slogan; slavery was the product.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "brennan_home",
+        "Brennan Center for Justice",
+        "Brennan Center for Justice",
+        "https://www.brennancenter.org/",
+        "Brennan Center researches voting rights, democracy, and justice reform.",
+        "2025-01-01"
+      ),
+      cite(
+        "loc_home",
+        "Library of Congress",
+        "Library of Congress",
+        "https://www.loc.gov/",
+        "Library of Congress preserves and publishes historical documents.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: ["civil-war-states-rights"],
+  },
+  {
+    id: "civil-war-states-rights",
+    category: ["Culture Wars", "Education"],
+    theySay: "The Civil War was about states' rights, not slavery!",
+    youSay: "Secession documents cite slavery. The Confederacy's own leaders said so. States' rights for slavery is still about slavery.",
+    stab: "Read the declarations. They did not secede over tariff poetry.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "loc_home",
+        "Library of Congress",
+        "Library of Congress",
+        "https://www.loc.gov/",
+        "Library of Congress preserves and publishes historical documents.",
+        "2025-01-01"
+      ),
+      cite(
+        "texas_secession",
+        "Texas Ordinance of Secession",
+        "Library of Congress",
+        "https://www.loc.gov/resource/rbpe.0570100b/",
+        "Texas's secession document cites slavery as central.",
+        "1861-02-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "lost-cause-heritage",
+    category: ["Culture Wars", "Education"],
+    theySay: "Confederate statues are heritage not hate!",
+    youSay: "Many monuments were erected during Jim Crow and massive resistance to civil rights - political intimidation in bronze. Heritage that celebrates traitors to the Union in defense of slavery is a choice.",
+    stab: "Heritage is a museum. Domination is a pedestal outside a courthouse.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "loc_home",
+        "Library of Congress",
+        "Library of Congress",
+        "https://www.loc.gov/",
+        "Library of Congress preserves and publishes historical documents.",
+        "2025-01-01"
+      ),
+      cite(
+        "ap_home",
+        "Associated Press",
+        "Associated Press",
+        "https://apnews.com/",
+        "AP provides fact-based national and international reporting.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "slavery-was-everywhere",
+    category: ["Culture Wars", "Whataboutism"],
+    theySay: "Every society had slavery - stop picking on America!",
+    youSay: "Comparative history is real. America's distinctives include racialized chattel slavery, a Constitution protecting it, a war to end it, and a century of Jim Crow afterward. Everywhere is not an absolution.",
+    stab: "Your ancestors' crime does not cancel the ledger; it adds a line.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "loc_home",
+        "Library of Congress",
+        "Library of Congress",
+        "https://www.loc.gov/",
+        "Library of Congress preserves and publishes historical documents.",
+        "2025-01-01"
+      ),
+      cite(
+        "nmaahc_home",
+        "NMAAHC",
+        "Smithsonian",
+        "https://nmaahc.si.edu/",
+        "Smithsonian museum documenting African American history including slavery.",
+        "2020-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "police-funding-equals-safety",
+    category: ["Crime"],
+    theySay: "Only more police funding stops crime!",
+    youSay: "Policing is one tool. Evidence also supports violence interrupters, housing stability, and mental-health crisis teams. Budget maximalism without accountability ignores clearance rates and misconduct costs.",
+    stab: "A blank check is not a crime strategy.",
+    sources: [
+      cite(
+        "bjs_home",
+        "Bureau of Justice Statistics",
+        "BJS",
+        "https://bjs.ojp.gov/",
+        "BJS publishes criminal victimization and justice system statistics.",
+        "2024-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      ),
+      cite(
+        "crs_home",
+        "Congressional Research Service Reports",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/",
+        "CRS provides nonpartisan analysis to Congress on legislation and policy.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "mental-health-not-guns",
+    category: ["Crime", "Healthcare"],
+    theySay: "It's a mental health problem, not guns!",
+    youSay: "Mental health care needs investment. Most people with mental illness are not violent, and countries with similar mental-health burdens but fewer guns have fewer gun massacres. Both/and beats either/or.",
+    stab: "Japan has mental illness. It does not have America's firearm death rate.",
+    sources: [
+      cite(
+        "cdc_home",
+        "Centers for Disease Control and Prevention",
+        "CDC",
+        "https://www.cdc.gov/",
+        "CDC publishes public health data and guidance.",
+        "2025-01-01"
+      ),
+      cite(
+        "nih_home",
+        "National Institutes of Health",
+        "NIH",
+        "https://www.nih.gov/",
+        "NIH funds and publishes biomedical research.",
+        "2025-01-01"
+      ),
+      cite(
+        "crs_home",
+        "Congressional Research Service Reports",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/",
+        "CRS provides nonpartisan analysis to Congress on legislation and policy.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "homeless-choose-it",
+    category: ["Economy", "Culture Wars"],
+    theySay: "Homeless people choose that lifestyle!",
+    youSay: "HUD and Census-linked research tie homelessness to rents, wages, disability, and shelter capacity. Choice narratives erase eviction math.",
+    stab: "Nobody chooses frostbite as a lifestyle brand.",
+    sources: [
+      cite(
+        "census_pov",
+        "Poverty in the United States",
+        "U.S. Census Bureau",
+        "https://www.census.gov/topics/income-poverty/poverty.html",
+        "Census Bureau publishes official poverty and income statistics.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      ),
+      cite(
+        "hud_home",
+        "HUD",
+        "U.S. Department of Housing and Urban Development",
+        "https://www.hud.gov/",
+        "HUD publishes housing and homelessness policy data.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "rent-control-always-fails",
+    category: ["Economy"],
+    theySay: "Rent control always fails!",
+    youSay: "Poorly designed price caps can reduce supply; well-designed stabilization and social housing can protect tenants. Always is ideology. Housing shortages need construction, zoning reform, and tenant protection together.",
+    stab: "Your landlord's newsletter is not a peer-reviewed consensus.",
+    sources: [
+      cite(
+        "census_pov",
+        "Poverty in the United States",
+        "U.S. Census Bureau",
+        "https://www.census.gov/topics/income-poverty/poverty.html",
+        "Census Bureau publishes official poverty and income statistics.",
+        "2025-01-01"
+      ),
+      cite(
+        "crs_home",
+        "Congressional Research Service Reports",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/",
+        "CRS provides nonpartisan analysis to Congress on legislation and policy.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "hard",
+    relatedClaims: [],
+  },
+  {
+    id: "ai-replaces-need-for-workers",
+    category: ["Economy"],
+    theySay: "AI means we don't need worker protections anymore!",
+    youSay: "Automation shifts bargaining power; it does not erase the need for wages, safety, and benefits. BLS tracks displacement risks. Policy chooses whether gains go to capital only.",
+    stab: "Robots do not need weekends. Humans still do.",
+    sources: [
+      cite(
+        "bls_union",
+        "Union Members Summary",
+        "Bureau of Labor Statistics",
+        "https://www.bls.gov/news.release/union2.nr0.htm",
+        "BLS publishes official union membership and earnings data.",
+        "2025-01-01"
+      ),
+      cite(
+        "crs_home",
+        "Congressional Research Service Reports",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/",
+        "CRS provides nonpartisan analysis to Congress on legislation and policy.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "tiktok-only-threat",
+    category: ["Foreign Policy", "Culture Wars"],
+    theySay: "TikTok is the only speech platform that matters to ban!",
+    youSay: "Foreign data risks deserve scrutiny. Selective panic that ignores other surveillance advertising models is national-security theater. Apply consistent privacy rules, not culture-war bans.",
+    stab: "If privacy mattered, half of Silicon Valley would be in the dock too.",
+    sources: [
+      cite(
+        "crs_home",
+        "Congressional Research Service Reports",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/",
+        "CRS provides nonpartisan analysis to Congress on legislation and policy.",
+        "2025-01-01"
+      ),
+      cite(
+        "reuters_home",
+        "Reuters",
+        "Reuters",
+        "https://apnews.com/",
+        "Reuters provides international wire reporting.",
+        "2025-01-01"
+      ),
+      cite(
+        "congress_home",
+        "Congress.gov",
+        "Library of Congress",
+        "https://www.congress.gov/",
+        "Official legislative information for the U.S. Congress.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "election-deniers-patriots",
+    category: ["Elections", "Democracy"],
+    theySay: "Election deniers are patriots asking questions!",
+    youSay: "Questions end when evidence is presented. Endless denial after audits and courts is sabotage of consent of the governed. Patriotism counts votes; it does not invent truckloads of ballots.",
+    stab: "Asking questions expired when the answers arrived.",
+    sources: [
+      cite(
+        "ap_home",
+        "Associated Press",
+        "Associated Press",
+        "https://apnews.com/",
+        "AP provides fact-based national and international reporting.",
+        "2025-01-01"
+      ),
+      cite(
+        "brennan_home",
+        "Brennan Center for Justice",
+        "Brennan Center for Justice",
+        "https://www.brennancenter.org/",
+        "Brennan Center researches voting rights, democracy, and justice reform.",
+        "2025-01-01"
+      ),
+      cite(
+        "congress_home",
+        "Congress.gov",
+        "Library of Congress",
+        "https://www.congress.gov/",
+        "Official legislative information for the U.S. Congress.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "gerrymandering-both-sides",
+    category: ["Elections", "Whataboutism"],
+    theySay: "Both sides gerrymander - so it's fine!",
+    youSay: "Both parties have gerrymandered. That argues for independent commissions, not for shrugging while maps dilute voters. Harm is not canceled by reciprocity.",
+    stab: "Two getaway cars do not legalize bank robbery.",
+    sources: [
+      cite(
+        "brennan_home",
+        "Brennan Center for Justice",
+        "Brennan Center for Justice",
+        "https://www.brennancenter.org/",
+        "Brennan Center researches voting rights, democracy, and justice reform.",
+        "2025-01-01"
+      ),
+      cite(
+        "congress_home",
+        "Congress.gov",
+        "Library of Congress",
+        "https://www.congress.gov/",
+        "Official legislative information for the U.S. Congress.",
+        "2025-01-01"
+      ),
+      cite(
+        "oyez_home",
+        "Oyez",
+        "Oyez",
+        "https://www.oyez.org/",
+        "Oyez summarizes Supreme Court cases with opinions and audio.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "filibuster-sacred",
+    category: ["Democracy"],
+    theySay: "The filibuster is sacred!",
+    youSay: "The filibuster is a Senate rule, altered many times. It has blocked civil rights and voting rights. Sacred status is nostalgia for gridlock.",
+    stab: "A rule that buried anti-lynching bills is not holy water.",
+    sources: [
+      cite(
+        "congress_home",
+        "Congress.gov",
+        "Library of Congress",
+        "https://www.congress.gov/",
+        "Official legislative information for the U.S. Congress.",
+        "2025-01-01"
+      ),
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "crs_home",
+        "Congressional Research Service Reports",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/",
+        "CRS provides nonpartisan analysis to Congress on legislation and policy.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "popular-vote-bad",
+    category: ["Elections", "Democracy"],
+    theySay: "The Electoral College protects small states - popular vote would ruin us!",
+    youSay: "The Electoral College can override the national popular vote and overweights some states. National popular vote debates are legitimate democratic design questions, not heresy.",
+    stab: "Land does not vote. People do.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "brennan_home",
+        "Brennan Center for Justice",
+        "Brennan Center for Justice",
+        "https://www.brennancenter.org/",
+        "Brennan Center researches voting rights, democracy, and justice reform.",
+        "2025-01-01"
+      ),
+      cite(
+        "congress_home",
+        "Congress.gov",
+        "Library of Congress",
+        "https://www.congress.gov/",
+        "Official legislative information for the U.S. Congress.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "hard",
+    relatedClaims: [],
+  },
+  {
+    id: "aclu-only-defends-left",
+    category: ["Culture Wars", "Democracy"],
+    theySay: "The ACLU only defends the left!",
+    youSay: "The ACLU has a long record defending unpopular speech across ideologies, including cases that anger progressives. Disagreement with a case is not proof of cartel capture.",
+    stab: "Civil liberties that only cover your team are not civil liberties.",
+    sources: [
+      cite(
+        "aclu_home",
+        "American Civil Liberties Union",
+        "ACLU",
+        "https://www.aclu.org/",
+        "ACLU litigates and documents civil liberties threats.",
+        "2025-01-01"
+      ),
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "oyez_home",
+        "Oyez",
+        "Oyez",
+        "https://www.oyez.org/",
+        "Oyez summarizes Supreme Court cases with opinions and audio.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "factcheckers-biased",
+    category: ["Media"],
+    theySay: "Fact-checkers are all biased!",
+    youSay: "Fact-checkers can err and deserve critique. Primary sources still adjudicate claims. If every referee is biased, publish better evidence - not a boycott of reality.",
+    stab: "Refusing measurement does not make your claim taller.",
+    sources: [
+      cite(
+        "ap_home",
+        "Associated Press",
+        "Associated Press",
+        "https://apnews.com/",
+        "AP provides fact-based national and international reporting.",
+        "2025-01-01"
+      ),
+      cite(
+        "reuters_home",
+        "Reuters",
+        "Reuters",
+        "https://apnews.com/",
+        "Reuters provides international wire reporting.",
+        "2025-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "history-is-patriotism-only",
+    category: ["Education", "Culture Wars"],
+    theySay: "Teaching history should only make kids proud!",
+    youSay: "Honest history includes glory and atrocity. Pride that requires amnesia is propaganda. National Archives documents exist so adults can handle complexity.",
+    stab: "If your patriotism needs a redacted textbook, it is fragile.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "loc_home",
+        "Library of Congress",
+        "Library of Congress",
+        "https://www.loc.gov/",
+        "Library of Congress preserves and publishes historical documents.",
+        "2025-01-01"
+      ),
+      cite(
+        "nps_hist",
+        "National Park Service History",
+        "National Park Service",
+        "https://www.nps.gov/subjects/tellingallamericansstories/index.htm",
+        "NPS publishes historical context for U.S. historic sites.",
+        "2020-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
 ];
 
 const CATEGORY_SLUG_MAP: Record<RebuttalCategory, string> = {

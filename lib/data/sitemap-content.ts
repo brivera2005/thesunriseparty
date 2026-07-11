@@ -103,8 +103,8 @@ export const sitemapSections: SitemapSection[] = [
         description: "P2025 chapter map and upcoming threats panel.",
       },
       {
-        href: "/tracker/EVT-2025-1225-125",
-        label: "Latest milestone - Event #125",
+        href: "/tracker/EVT-2026-0711-162",
+        label: "Latest milestone - Event #162",
         badge: "Milestone",
       },
       {
@@ -148,8 +148,8 @@ export const sitemapSections: SitemapSection[] = [
         description: "Multiple choice - pick the best counter.",
       },
       {
-        href: "/rebuttal/infra-pass-distraction",
-        label: "Latest milestone - Rebuttal #240",
+        href: "/rebuttal/history-is-patriotism-only",
+        label: "Latest milestone - Pass 26 rebuttals",
         badge: "Milestone",
       },
       ...rebuttalCats.map((cat) => ({

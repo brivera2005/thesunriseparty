@@ -101,6 +101,31 @@ export const methodologySections: MethodologySection[] = [
       "Propaganda thrives in vagueness; sunlight thrives in specifics. If we cannot prove a claim with a tiered primary or institutional source, we do not publish it.",
     ],
   },
+  {
+    id: "history-method",
+    icon: Archive,
+    title: "How We Source Hidden History",
+    paragraphs: [
+      "Hidden History entries require a textbook narrative people actually encounter and a documented counter-history grounded in National Archives, Library of Congress, National Park Service, Congress.gov, CDC, or equivalent institutional pages.",
+      "Each card includes historical rebuttals - the conversational form of the same evidence - so readers can carry receipts into arguments about Lost Cause myths, labor history, coups, and civil-rights rollbacks.",
+      "We do not invent archive paths. If a URL fails validation, we replace it or drop the claim. Infinite room for content does not mean infinite room for fiction.",
+    ],
+    bullets: [
+      "Prefer .gov, Smithsonian, LOC, Archives, NPS, CRS, GAO, BLS, Census, CDC, NIH",
+      "Wikipedia allowed only as a documented overview with stable article URLs already in the validated set or freshly checked",
+      "No em dashes in new copy; plain punctuation only",
+      "No invented Federal Register or White House paths - live pages only",
+    ],
+  },
+  {
+    id: "corrections",
+    icon: ShieldCheck,
+    title: "Corrections & Reader Audit",
+    paragraphs: [
+      "Readers can submit corrections with a page URL, the contested claim, and a better source. We treat corrections as a transparency feature, not a reputation threat.",
+      "Changelog versions document content expansion passes so the public can see when counts and methodologies change. Pass numbers are not marketing - they are audit trail.",
+    ],
+  },
 ];
 
 export const sourceTierLegend = [
