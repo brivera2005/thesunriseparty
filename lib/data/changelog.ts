@@ -8,6 +8,18 @@ export interface ChangelogEntry {
 /** Site iteration history - meta transparency for Project Sunrise builds */
 export const changelog: ChangelogEntry[] = [
   {
+    version: "0.28.0",
+    date: "2026-07-11",
+    title: "Pass 28 - Keep expanding verifiable room",
+    highlights: [
+      "Hidden History expanded to 180+ dual-timeline entries (Pequot War through Scopes, 14th Amendment, Memphis/New Orleans massacres, and more)",
+      "Rebuttal Desk expanded to 450+ sourced counters spanning Freedom-to-Fix, NSPMs, Schedule Policy/Career, climate, courts, and labor",
+      "Project 2025 Tracker crossed 200+ verified actions including Freedom-to-Fix EPA memo, trade proclamations, NSPM-11/12, and Pacific fishing",
+      "Blueprint safeguards deepened (SAFE-002 emergency/NSPM sunsets; SAFE-004 FR archival and FOIA backlog metrics) plus FIX cost-of-inaction sourcing",
+      "Accountability page adds Freedom-to-Fix, NSPM cascade, trade-by-proclamation, and clemency-pattern facts",
+    ],
+  },
+  {
     version: "0.27.0",
     date: "2026-07-11",
     title: "Pass 27 - Aggressive verifiable expansion",

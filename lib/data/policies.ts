@@ -269,7 +269,7 @@ export const policyFixes: PolicyFix[] = [
     economicImpact:
       "NBER research links universal pre-K to 13% higher college enrollment and 8% lifetime earnings increase. Student debt cancellation would boost GDP $86B annually. Title I funding closes achievement gaps within two generations.",
     costOfInaction:
-      "Families keep paying $15,000+ annually for childcare while $1.6 trillion in student debt delays homeownership; Title IX rollbacks leave 19 million students with weaker campus safety protections and achievement gaps persist across generations.",
+      "Families keep paying $15,000+ annually for childcare while $1.6 trillion in student debt delays homeownership; Title IX rollbacks leave 19 million students with weaker campus safety protections and achievement gaps persist across generations. Department of Education restructuring and Title IX enforcement shifts reduce the civil-rights bandwidth students rely on when states roll back protections (Pass28-ED-deepen).",
     costOfInactionCitations: [
       citations.cost_inaction_education,
       citations.policy_education,
@@ -388,7 +388,7 @@ export const policyFixes: PolicyFix[] = [
     economicImpact:
       "Stable housing raises employment continuity and child educational outcomes. Construction jobs from social housing expand middle-skill employment while cutting shelter and ER costs tied to homelessness.",
     costOfInaction:
-      "Without supply and assistance, rent burdens and homelessness keep rising; eviction cascades destroy credit and employment; fair-housing pauses let discrimination harden into neighborhood exclusion.",
+      "Without supply and assistance, rent burdens and homelessness keep rising; eviction cascades destroy credit and employment; fair-housing pauses let discrimination harden into neighborhood exclusion. HUD fair-housing pauses and high rent burdens in Census data show housing scarcity is a policy outcome, not a personal failure epidemic (Pass28-HOUS-deepen).",
     costOfInactionCitations: [
       citations.cost_inaction_housing,
       citations.policy_housing,
@@ -442,7 +442,7 @@ export const policyFixes: PolicyFix[] = [
     economicImpact:
       "Local journalism employment rebounds; advertisers gain clearer markets; reduced misinformation externalities lower democratic instability costs that markets do not price.",
     costOfInaction:
-      "Without pluralism rules, news deserts expand, capture worsens, and voters face algorithmically amplified propaganda with fewer local reporters to check it.",
+      "Without pluralism rules, news deserts expand, capture worsens, and voters face algorithmically amplified propaganda with fewer local reporters to check it. FCC ownership and broadcast rule shifts plus reduced proactive disclosure concentrate information power while local news deserts widen (Pass28-MED-deepen).",
     costOfInactionCitations: [
       citations.policy_media,
       citations.fcc_media_policy,
@@ -497,7 +497,7 @@ export const policyFixes: PolicyFix[] = [
     economicImpact:
       "Community care costs less than unnecessary institutionalization over time and expands labor-force participation for disabled people and family caregivers.",
     costOfInaction:
-      "Without HCBS entitlements and ADA enforcement, institutionalization and poverty persist; Willowbrook-era warehousing returns in slower bureaucratic form.",
+      "Without HCBS entitlements and ADA enforcement, institutionalization and poverty persist; Willowbrook-era warehousing returns in slower bureaucratic form. ADA enforcement capacity and community-care access shrink when agencies treat disability rights as optional paperwork instead of civil rights (Pass28-DIS-deepen).",
     costOfInactionCitations: [
       citations.policy_disability,
       citations.gao_healthcare,
@@ -551,7 +551,7 @@ export const policyFixes: PolicyFix[] = [
     economicImpact:
       "Tribal self-determination raises local governance capacity and reduces crisis spending from health and public-safety underfunding. Consent-based permitting reduces litigation delay compared with imposed extraction.",
     costOfInaction:
-      "Without treaty enforcement and IHS parity, health gaps and land conflicts persist; extractive permits without consent repeat Standing Rock-style militarized confrontations.",
+      "Without treaty enforcement and IHS parity, health gaps and land conflicts persist; extractive permits without consent repeat Standing Rock-style militarized confrontations. Treaty obligations and consultation duties erode when lands, fishing, and energy proclamations treat Indigenous nations as afterthoughts (Pass28-IND-deepen).",
     costOfInactionCitations: [
       citations.policy_indigenous,
       citations.federal_lands_drilling,
@@ -621,6 +621,8 @@ export const safeguardItems: SafeguardItem[] = [
       "National emergency declarations expire after 90 days without congressional renewal",
       "Regulatory Stability Act: major rules cannot be overturned without 60-vote Senate threshold",
       "Inspector General protection from presidential removal without cause finding by bipartisan panel",
+      "Emergency proclamations and NSPMs expire after 90 days unless Congress renews (Pass28-SAFE002)",
+      "National-security memoranda must be logged in a public index within 14 days unless a narrow classified annex applies (Pass28-SAFE002)",
     ],
     citations: [citations.safeguard_executive, citations.crs_executive],
   },
@@ -647,6 +649,8 @@ export const safeguardItems: SafeguardItem[] = [
       "Mandatory publication of all lobbying contacts within 48 hours",
       "Whistleblower protection with 30% bounty on recovered fraud over $1M",
       "Live-streamed congressional committee hearings with searchable transcripts within 24 hours",
+      "Federal Register and White House presidential-action URLs archived daily with checksum manifests (Pass28-SAFE004)",
+      "Agency FOIA dashboards must publish backlog age percentiles monthly, not annual averages alone (Pass28-SAFE004)",
     ],
     citations: [citations.safeguard_transparency, citations.pew_trust],
   },

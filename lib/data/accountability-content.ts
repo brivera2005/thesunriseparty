@@ -140,6 +140,34 @@ export const accountabilityFacts: AccountabilityFact[] = [
     sourceIds: ["vaccine_realign_eo_2026", "cdc_grant_pause"],
   },
 
+
+  // Pass 28 accountability
+  {
+    title: "Freedom-to-Fix is an EPA enforcement posture shift",
+    body: "The June 29, 2026 presidential memorandum directs EPA guidance on aftermarket emissions repairs and deprioritization of certain tampering cases. DIY branding does not erase the Clean Air Act implications. Track the guidance text, not the slogan.",
+    sourceIds: ["freedom_to_fix_memo_2026", "epa_vehicle_emissions_rollback", "safeguard_transparency"],
+  },
+  {
+    title: "NSPM cascade concentrates security policy off-stage",
+    body: "NSPM-11 and NSPM-12 add to a mid-2026 stack of national-security presidential memoranda. These instruments can bind agencies with less public process than statutes or ordinary rules. Sunshine is the safeguard.",
+    sourceIds: ["nspm_11_2026", "nspm_12_2026", "safeguard_executive"],
+  },
+  {
+    title: "Trade-by-proclamation is still policy",
+    body: "Aircraft-parts and phosphate-fertilizer proclamations show industrial and farm policy moving through emergency and import authorities. Congress can reclaim the tariff and emergency lanes or keep rubber-stamping the receipt book.",
+    sourceIds: ["aircraft_imports_proclamation_2026", "phosphate_fertilizer_proclamation_2026", "trade_policy_eo"],
+  },
+  {
+    title: "Clemency patterns are accountability data",
+    body: "Individual pardons are constitutional. Patterns of allied clemency alongside Jan. 6 and corruption cases are still fair game for public judgment. Absolute power is exactly when character metrics matter.",
+    sourceIds: ["buyer_pardon_2026", "jan6_pardons_eo", "safeguard_anticorruption"],
+  },
+  {
+    title: "200+ tracker events are a receipt stack",
+    body: "Project Sunrise Pass 28 crosses 200 verified tracker actions. Volume is not vibes: each entry ties to White House, Federal Register, GAO, CRS, or other primary receipts so readers can audit the chain.",
+    sourceIds: ["wh_eo_index_2026", "fr_home_2026", "safeguard_transparency"],
+  },
+
 ];
 
 export const accountabilityExternalLinks = [
