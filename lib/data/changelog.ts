@@ -8,6 +8,18 @@ export interface ChangelogEntry {
 /** Site iteration history - meta transparency for Project Sunrise builds */
 export const changelog: ChangelogEntry[] = [
   {
+    version: "0.31.0",
+    date: "2026-07-11",
+    title: "Pass 31 - Keep expanding verifiable room",
+    highlights: [
+      "Hidden History expanded to 270+ dual-timeline entries (Treaty of Tripoli through Trump immunity, Manzanar, Church Committee, Deepwater, Dominion v. Fox, and more)",
+      "Rebuttal Desk crossed 600 sourced counters spanning Schedule F, metals tariffs, DPA waivers, Kickapoo permitting, housing EO stacks, and history deep cuts",
+      "Project 2025 Tracker crossed 260 verified actions including housing continuity, DPA industrial waivers, treaty-exit memos, elections mandates, and lands deregulation",
+      "New and reused Federal Register / White House / Archives citations for industrial policy, Indigenous permitting, FOIA transparency, and civil-service conversion",
+      "Homepage and rebuttal milestone banners updated for 260-event and 600-rebuttal markers; link validation and Cloudflare Pages deploy for v0.31",
+    ],
+  },
+  {
     version: "0.30.0",
     date: "2026-07-11",
     title: "Pass 30 - Keep expanding verifiable room",

@@ -16679,6 +16679,1757 @@ export const conversationHelpers: ConversationHelper[] = [
     difficulty: "medium",
     relatedClaims: ["both-sides-eos-same"],
   },
+  {
+    id: "tripoli-christian-nation",
+    category: ["Culture Wars","Democracy"],
+    theySay: "America was founded as a Christian nation!",
+    youSay: "The Senate-ratified Treaty of Tripoli said the opposite in 1797. Founding law is not a church pamphlet.",
+    stab: "If your theology needs you to ignore a ratified treaty, it is not history.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "loc_home",
+        "Library of Congress",
+        "Library of Congress",
+        "https://www.loc.gov/",
+        "Library of Congress preserves and publishes historical documents.",
+        "2025-01-01"
+      ),
+      cite(
+        "congress_home",
+        "Congress.gov",
+        "Library of Congress",
+        "https://www.congress.gov/",
+        "Official legislative information for the U.S. Congress.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "indian-citizenship-finished",
+    category: ["Culture Wars","Democracy"],
+    theySay: "The Indian Citizenship Act finished Native equality!",
+    youSay: "Citizenship in 1924 did not restore land or guarantee ballots. States kept blocking Native voters for decades.",
+    stab: "A status stamp is not sovereignty.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "nps_hist",
+        "National Park Service History",
+        "National Park Service",
+        "https://www.nps.gov/subjects/tellingallamericansstories/index.htm",
+        "NPS publishes historical context for U.S. historic sites.",
+        "2020-01-01"
+      ),
+      cite(
+        "loc_home",
+        "Library of Congress",
+        "Library of Congress",
+        "https://www.loc.gov/",
+        "Library of Congress preserves and publishes historical documents.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "hollywood-just-taste",
+    category: ["Culture Wars","Media"],
+    theySay: "The Hollywood blacklist was just studio taste!",
+    youSay: "HUAC hearings and secret employment bans destroyed careers over politics without convictions.",
+    stab: "Taste that ends your paycheck is a blacklist.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "loc_home",
+        "Library of Congress",
+        "Library of Congress",
+        "https://www.loc.gov/",
+        "Library of Congress preserves and publishes historical documents.",
+        "2025-01-01"
+      ),
+      cite(
+        "oyez_home",
+        "Oyez",
+        "Oyez",
+        "https://www.oyez.org/",
+        "Oyez summarizes Supreme Court cases with opinions and audio.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "loving-always-legal",
+    category: ["Culture Wars","Democracy"],
+    theySay: "Interracial marriage was always obviously legal!",
+    youSay: "States criminalized it until Loving v. Virginia in 1967. Courts had to kill the bans.",
+    stab: "Obvious now was illegal then.",
+    sources: [
+      cite(
+        "oyez_home",
+        "Oyez",
+        "Oyez",
+        "https://www.oyez.org/",
+        "Oyez summarizes Supreme Court cases with opinions and audio.",
+        "2025-01-01"
+      ),
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "brennan_home",
+        "Brennan Center for Justice",
+        "Brennan Center for Justice",
+        "https://www.brennancenter.org/",
+        "Brennan Center researches voting rights, democracy, and justice reform.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "church-committee-smear",
+    category: ["Democracy","Whataboutism"],
+    theySay: "The Church Committee was just a smear job!",
+    youSay: "Senate investigators documented COINTELPRO, assassination plots, and illegal surveillance with primary records.",
+    stab: "Calling oversight a smear is how covert programs survive.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "congress_home",
+        "Congress.gov",
+        "Library of Congress",
+        "https://www.congress.gov/",
+        "Official legislative information for the U.S. Congress.",
+        "2025-01-01"
+      ),
+      cite(
+        "crs_home",
+        "CRS Reports",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/",
+        "Nonpartisan legislative research for Congress.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "hard",
+    relatedClaims: [],
+  },
+  {
+    id: "foia-optional",
+    category: ["Democracy","Media"],
+    theySay: "FOIA is optional political theater!",
+    youSay: "FOIA is statute. Agencies stall because disclosure is mandatory, not because vibes demand secrecy.",
+    stab: "If it were optional, backlogs would not need excuses.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      ),
+      cite(
+        "crs_home",
+        "CRS Reports",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/",
+        "Nonpartisan legislative research for Congress.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "war-powers-irrelevant",
+    category: ["Foreign Policy","Democracy"],
+    theySay: "War Powers is irrelevant theater!",
+    youSay: "Congress wrote it after Vietnam because unilateral force kept expanding. Compliance fights prove it still matters.",
+    stab: "Theater does not get joint resolutions.",
+    sources: [
+      cite(
+        "congress_home",
+        "Congress.gov",
+        "Library of Congress",
+        "https://www.congress.gov/",
+        "Official legislative information for the U.S. Congress.",
+        "2025-01-01"
+      ),
+      cite(
+        "crs_home",
+        "CRS Reports",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/",
+        "Nonpartisan legislative research for Congress.",
+        "2025-01-01"
+      ),
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "three-mile-nothingburger",
+    category: ["Climate","Culture Wars"],
+    theySay: "Three Mile Island was a nothingburger!",
+    youSay: "A partial meltdown froze U.S. reactor construction and exposed emergency-communication failure. NRC still publishes the case.",
+    stab: "Nothingburgers do not rewrite an industry.",
+    sources: [
+      cite(
+        "epa_home",
+        "Environmental Protection Agency",
+        "EPA",
+        "https://www.epa.gov/",
+        "Federal environmental regulation and science.",
+        "2025-01-01"
+      ),
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "crs_home",
+        "CRS Reports",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/",
+        "Nonpartisan legislative research for Congress.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "exxon-one-off",
+    category: ["Climate","Economy"],
+    theySay: "Exxon Valdez was one unlucky captain!",
+    youSay: "Weak tanker oversight and corporate cost-cutting produced an ecological catastrophe. Double-hull reforms came after.",
+    stab: "Luck is not a spill-prevention plan.",
+    sources: [
+      cite(
+        "epa_home",
+        "Environmental Protection Agency",
+        "EPA",
+        "https://www.epa.gov/",
+        "Federal environmental regulation and science.",
+        "2025-01-01"
+      ),
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "crs_home",
+        "CRS Reports",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/",
+        "Nonpartisan legislative research for Congress.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "ada-special-rights",
+    category: ["Culture Wars","Healthcare"],
+    theySay: "The ADA is special rights!",
+    youSay: "Access ramps and job accommodations are equal citizenship, not VIP passes. Congress passed a civil-rights statute.",
+    stab: "Calling a ramp special is the tell.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "congress_home",
+        "Congress.gov",
+        "Library of Congress",
+        "https://www.congress.gov/",
+        "Official legislative information for the U.S. Congress.",
+        "2025-01-01"
+      ),
+      cite(
+        "brennan_home",
+        "Brennan Center for Justice",
+        "Brennan Center for Justice",
+        "https://www.brennancenter.org/",
+        "Brennan Center researches voting rights, democracy, and justice reform.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "welfare-reform-ended-poverty",
+    category: ["Economy","Culture Wars"],
+    theySay: "1996 welfare reform ended poverty!",
+    youSay: "Caseloads fell; deep poverty and hardship metrics did not magically vanish. Time limits are not a jobs program.",
+    stab: "A closed casefile is not a full fridge.",
+    sources: [
+      cite(
+        "congress_home",
+        "Congress.gov",
+        "Library of Congress",
+        "https://www.congress.gov/",
+        "Official legislative information for the U.S. Congress.",
+        "2025-01-01"
+      ),
+      cite(
+        "bls_home",
+        "Bureau of Labor Statistics",
+        "U.S. Bureau of Labor Statistics",
+        "https://www.bls.gov/",
+        "Official U.S. labor market and price statistics.",
+        "2025-01-01"
+      ),
+      cite(
+        "crs_home",
+        "CRS Reports",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/",
+        "Nonpartisan legislative research for Congress.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "glba-unrelated-to-2008",
+    category: ["Economy","Whataboutism"],
+    theySay: "Gramm-Leach-Bliley had nothing to do with 2008!",
+    youSay: "Repealing Glass-Steagall barriers enabled megabank consolidation that amplified systemic risk before the crash.",
+    stab: "If firewalls never mattered, why rebuild pieces afterward?",
+    sources: [
+      cite(
+        "congress_home",
+        "Congress.gov",
+        "Library of Congress",
+        "https://www.congress.gov/",
+        "Official legislative information for the U.S. Congress.",
+        "2025-01-01"
+      ),
+      cite(
+        "crs_home",
+        "CRS Reports",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/",
+        "Nonpartisan legislative research for Congress.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "hard",
+    relatedClaims: [],
+  },
+  {
+    id: "enron-few-bad-apples",
+    category: ["Economy","Whataboutism"],
+    theySay: "Enron was a few bad apples!",
+    youSay: "Fraud plus deregulated energy markets wiped pensions and forced Sarbanes-Oxley. Systems failed, not just morals.",
+    stab: "Bad-apple talk ends where retirees go broke.",
+    sources: [
+      cite(
+        "congress_home",
+        "Congress.gov",
+        "Library of Congress",
+        "https://www.congress.gov/",
+        "Official legislative information for the U.S. Congress.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      ),
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "deepwater-freak-accident",
+    category: ["Climate","Economy"],
+    theySay: "Deepwater Horizon was a freak accident!",
+    youSay: "Eleven dead workers and millions of barrels followed safety failures and weak oversight, not a lightning strike.",
+    stab: "Freak accidents do not need blowout-preventer hearings.",
+    sources: [
+      cite(
+        "epa_home",
+        "Environmental Protection Agency",
+        "EPA",
+        "https://www.epa.gov/",
+        "Federal environmental regulation and science.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      ),
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "snowden-traitor-only",
+    category: ["Democracy","Foreign Policy"],
+    theySay: "Snowden was only a traitor, full stop!",
+    youSay: "Whatever you think of his flight, the documents showed bulk collection on Americans. The Fourth Amendment debate is the point.",
+    stab: "Calling the messenger a traitor does not delete the slides.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "oyez_home",
+        "Oyez",
+        "Oyez",
+        "https://www.oyez.org/",
+        "Oyez summarizes Supreme Court cases with opinions and audio.",
+        "2025-01-01"
+      ),
+      cite(
+        "crs_home",
+        "CRS Reports",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/",
+        "Nonpartisan legislative research for Congress.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "hard",
+    relatedClaims: [],
+  },
+  {
+    id: "ferguson-outside-agitators",
+    category: ["Crime","Culture Wars"],
+    theySay: "Ferguson was only outside agitators!",
+    youSay: "DOJ documented unconstitutional policing and court revenue schemes in Ferguson. Federal findings are not a Twitter mob.",
+    stab: "Agitators do not write DOJ pattern-or-practice reports.",
+    sources: [
+      cite(
+        "brennan_home",
+        "Brennan Center for Justice",
+        "Brennan Center for Justice",
+        "https://www.brennancenter.org/",
+        "Brennan Center researches voting rights, democracy, and justice reform.",
+        "2025-01-01"
+      ),
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "oyez_home",
+        "Oyez",
+        "Oyez",
+        "https://www.oyez.org/",
+        "Oyez summarizes Supreme Court cases with opinions and audio.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "dominion-just-questions",
+    category: ["Elections","Media"],
+    theySay: "Fox was just asking questions about Dominion!",
+    youSay: "Fox paid $787.5 million after airing claims it knew were false. Settlements that size are not curiosity.",
+    stab: "Questions that cost nearly a billion are libel with a receipt.",
+    sources: [
+      cite(
+        "oyez_home",
+        "Oyez",
+        "Oyez",
+        "https://www.oyez.org/",
+        "Oyez summarizes Supreme Court cases with opinions and audio.",
+        "2025-01-01"
+      ),
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "brennan_home",
+        "Brennan Center for Justice",
+        "Brennan Center for Justice",
+        "https://www.brennancenter.org/",
+        "Brennan Center researches voting rights, democracy, and justice reform.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "immunity-always-existed",
+    category: ["Courts","Democracy"],
+    theySay: "Presidents always had total criminal immunity!",
+    youSay: "Trump v. United States (2024) newly broadened official-act immunity. Nixon's world was not this holding.",
+    stab: "If it always existed, the Court would not have needed a landmark rewrite.",
+    sources: [
+      cite(
+        "oyez_home",
+        "Oyez",
+        "Oyez",
+        "https://www.oyez.org/",
+        "Oyez summarizes Supreme Court cases with opinions and audio.",
+        "2025-01-01"
+      ),
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "brennan_home",
+        "Brennan Center for Justice",
+        "Brennan Center for Justice",
+        "https://www.brennancenter.org/",
+        "Brennan Center researches voting rights, democracy, and justice reform.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "hard",
+    relatedClaims: [],
+  },
+  {
+    id: "nato-isolation-myth",
+    category: ["Foreign Policy","Culture Wars"],
+    theySay: "America stayed isolationist after WWII!",
+    youSay: "NATO in 1949 created permanent peacetime commitments. Isolation ended on paper with Article 5.",
+    stab: "Alliances are not isolation with better branding.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "congress_home",
+        "Congress.gov",
+        "Library of Congress",
+        "https://www.congress.gov/",
+        "Official legislative information for the U.S. Congress.",
+        "2025-01-01"
+      ),
+      cite(
+        "crs_home",
+        "CRS Reports",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/",
+        "Nonpartisan legislative research for Congress.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "teapot-both-sides",
+    category: ["Democracy","Whataboutism"],
+    theySay: "Teapot Dome proves both sides are always identical!",
+    youSay: "A specific bribery scandal does not make every ethics fight cosplay. Name the leases and the money.",
+    stab: "Both-sides is not a documentary.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "loc_home",
+        "Library of Congress",
+        "Library of Congress",
+        "https://www.loc.gov/",
+        "Library of Congress preserves and publishes historical documents.",
+        "2025-01-01"
+      ),
+      cite(
+        "congress_home",
+        "Congress.gov",
+        "Library of Congress",
+        "https://www.congress.gov/",
+        "Official legislative information for the U.S. Congress.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "wagner-unions-unamerican",
+    category: ["Economy","Culture Wars"],
+    theySay: "The Wagner Act made unions un-American!",
+    youSay: "Congress protected organizing after private armies killed strikers. Collective bargaining is statute, not sedition.",
+    stab: "Calling the NLRA un-American is lobbying, not patriotism.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "congress_home",
+        "Congress.gov",
+        "Library of Congress",
+        "https://www.congress.gov/",
+        "Official legislative information for the U.S. Congress.",
+        "2025-01-01"
+      ),
+      cite(
+        "bls_home",
+        "Bureau of Labor Statistics",
+        "U.S. Bureau of Labor Statistics",
+        "https://www.bls.gov/",
+        "Official U.S. labor market and price statistics.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "manzanar-protection",
+    category: ["Immigration","Culture Wars"],
+    theySay: "Camps like Manzanar protected Japanese Americans!",
+    youSay: "Armed confinement without charges stole homes and businesses. Protection does not post sentries at the gate.",
+    stab: "If it were protection, people could leave.",
+    sources: [
+      cite(
+        "nps_hist",
+        "National Park Service History",
+        "National Park Service",
+        "https://www.nps.gov/subjects/tellingallamericansstories/index.htm",
+        "NPS publishes historical context for U.S. historic sites.",
+        "2020-01-01"
+      ),
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "oyez_home",
+        "Oyez",
+        "Oyez",
+        "https://www.oyez.org/",
+        "Oyez summarizes Supreme Court cases with opinions and audio.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "alcatraz-publicity",
+    category: ["Culture Wars","Democracy"],
+    theySay: "Alcatraz was just publicity!",
+    youSay: "Nineteen months of occupation demanded treaty enforcement. NPS still interprets it as a sovereignty protest.",
+    stab: "Publicity stunts do not outlast winter on a rock.",
+    sources: [
+      cite(
+        "nps_hist",
+        "National Park Service History",
+        "National Park Service",
+        "https://www.nps.gov/subjects/tellingallamericansstories/index.htm",
+        "NPS publishes historical context for U.S. historic sites.",
+        "2020-01-01"
+      ),
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "loc_home",
+        "Library of Congress",
+        "Library of Congress",
+        "https://www.loc.gov/",
+        "Library of Congress preserves and publishes historical documents.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "ruby-ridge-justified",
+    category: ["Crime","Democracy"],
+    theySay: "Ruby Ridge was fully justified!",
+    youSay: "Rules-of-engagement failures killed civilians and fueled militia radicalization. Tactics matter when the state holds the rifles.",
+    stab: "Justified operations do not recruit the next bombing.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "congress_home",
+        "Congress.gov",
+        "Library of Congress",
+        "https://www.congress.gov/",
+        "Official legislative information for the U.S. Congress.",
+        "2025-01-01"
+      ),
+      cite(
+        "crs_home",
+        "CRS Reports",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/",
+        "Nonpartisan legislative research for Congress.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "hard",
+    relatedClaims: [],
+  },
+  {
+    id: "okc-foreign-only",
+    category: ["Crime","Foreign Policy"],
+    theySay: "Serious terror is always foreign!",
+    youSay: "Oklahoma City killed 168 people. Domestic extremism is not a myth you can deport.",
+    stab: "Body counts do not check passports first.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "brennan_home",
+        "Brennan Center for Justice",
+        "Brennan Center for Justice",
+        "https://www.brennancenter.org/",
+        "Brennan Center researches voting rights, democracy, and justice reform.",
+        "2025-01-01"
+      ),
+      cite(
+        "crs_home",
+        "CRS Reports",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/",
+        "Nonpartisan legislative research for Congress.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "crack-powder-fair",
+    category: ["Crime","Culture Wars"],
+    theySay: "Crack and powder disparities were fair!",
+    youSay: "A 100:1 ratio produced racial sentencing gaps Congress later partially repaired. Fair was the branding, not the math.",
+    stab: "If it were fair, reform would not have been needed.",
+    sources: [
+      cite(
+        "congress_home",
+        "Congress.gov",
+        "Library of Congress",
+        "https://www.congress.gov/",
+        "Official legislative information for the U.S. Congress.",
+        "2025-01-01"
+      ),
+      cite(
+        "brennan_home",
+        "Brennan Center for Justice",
+        "Brennan Center for Justice",
+        "https://www.brennancenter.org/",
+        "Brennan Center researches voting rights, democracy, and justice reform.",
+        "2025-01-01"
+      ),
+      cite(
+        "oyez_home",
+        "Oyez",
+        "Oyez",
+        "https://www.oyez.org/",
+        "Oyez summarizes Supreme Court cases with opinions and audio.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "henrietta-no-issue",
+    category: ["Healthcare","Culture Wars"],
+    theySay: "Henrietta Lacks is a non-issue because rules differed!",
+    youSay: "HeLa built modern medicine without consent. NIH later negotiated privacy because the injustice was real.",
+    stab: "Different era is not a moral eraser.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "cdc_home",
+        "Centers for Disease Control and Prevention",
+        "CDC",
+        "https://www.cdc.gov/",
+        "Federal public-health agency data and guidance.",
+        "2025-01-01"
+      ),
+      cite(
+        "loc_home",
+        "Library of Congress",
+        "Library of Congress",
+        "https://www.loc.gov/",
+        "Library of Congress preserves and publishes historical documents.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "great-migration-choice",
+    category: ["Culture Wars","Economy"],
+    theySay: "The Great Migration was just free-market choice!",
+    youSay: "People fled lynching and debt peonage. Northern redlining proved arrival was not equal welcome.",
+    stab: "Choice under terror is not a labor-market TED talk.",
+    sources: [
+      cite(
+        "loc_home",
+        "Library of Congress",
+        "Library of Congress",
+        "https://www.loc.gov/",
+        "Library of Congress preserves and publishes historical documents.",
+        "2025-01-01"
+      ),
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "brennan_home",
+        "Brennan Center for Justice",
+        "Brennan Center for Justice",
+        "https://www.brennancenter.org/",
+        "Brennan Center researches voting rights, democracy, and justice reform.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "debs-deserved-prison",
+    category: ["Democracy","Culture Wars"],
+    theySay: "Debs deserved prison for hurting the war!",
+    youSay: "Antiwar speech is not espionage. The Espionage Act was used to cage dissent, and he ran for president from prison.",
+    stab: "If speech is sabotage, the First Amendment is a joke.",
+    sources: [
+      cite(
+        "loc_home",
+        "Library of Congress",
+        "Library of Congress",
+        "https://www.loc.gov/",
+        "Library of Congress preserves and publishes historical documents.",
+        "2025-01-01"
+      ),
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "oyez_home",
+        "Oyez",
+        "Oyez",
+        "https://www.oyez.org/",
+        "Oyez summarizes Supreme Court cases with opinions and audio.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "hard",
+    relatedClaims: [],
+  },
+  {
+    id: "pass31-no-more-room",
+    category: ["Whataboutism","Media"],
+    theySay: "There cannot be more verifiable room after Pass 30!",
+    youSay: "Federal Register pages and White House actions kept printing. Pass 31 added housing stacks, DPA waivers, and history deep cuts because the record did not pause.",
+    stab: "Infinite room is just the archive refusing to die.",
+    sources: [
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "wh_actions",
+        "Presidential Actions",
+        "The White House",
+        "https://www.whitehouse.gov/presidential-actions/",
+        "Official White House presidential actions archive.",
+        "2026-07-11"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "tracker-260-padding",
+    category: ["Media","Whataboutism"],
+    theySay: "260 tracker events must be padding!",
+    youSay: "Each entry cites Federal Register or White House text. Padding does not survive validate-links and primary URLs.",
+    stab: "If it were padding, the PDFs would 404.",
+    sources: [
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "wh_actions",
+        "Presidential Actions",
+        "The White House",
+        "https://www.whitehouse.gov/presidential-actions/",
+        "Official White House presidential actions archive.",
+        "2026-07-11"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "history-270-revisionism",
+    category: ["Education","Culture Wars"],
+    theySay: "270 history entries are revisionism!",
+    youSay: "Archives, NPS, Oyez, and Congress.gov are not fan fiction. Dual timelines show textbook gaps against primary records.",
+    stab: "Revisionism is ignoring the footnotes.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "nps_hist",
+        "National Park Service History",
+        "National Park Service",
+        "https://www.nps.gov/subjects/tellingallamericansstories/index.htm",
+        "NPS publishes historical context for U.S. historic sites.",
+        "2020-01-01"
+      ),
+      cite(
+        "loc_home",
+        "Library of Congress",
+        "Library of Congress",
+        "https://www.loc.gov/",
+        "Library of Congress preserves and publishes historical documents.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "rebuttals-600-spam",
+    category: ["Media","Whataboutism"],
+    theySay: "600 rebuttals is spam!",
+    youSay: "Each card carries citations. Volume without sources would be spam; volume with GAO and FR links is a desk.",
+    stab: "Spam does not archive itself on the Wayback Machine.",
+    sources: [
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      ),
+      cite(
+        "brennan_home",
+        "Brennan Center for Justice",
+        "Brennan Center for Justice",
+        "https://www.brennancenter.org/",
+        "Brennan Center researches voting rights, democracy, and justice reform.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "schedule-f-loyalty-fine",
+    category: ["Democracy","Economy"],
+    theySay: "Schedule F loyalty screens are fine!",
+    youSay: "Converting career civil servants into at-will political staff guts expertise and invites corruption. GAO flagged the risks.",
+    stab: "Loyalty oaths are not merit systems.",
+    sources: [
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "crs_home",
+        "CRS Reports",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/",
+        "Nonpartisan legislative research for Congress.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "hard",
+    relatedClaims: [],
+  },
+  {
+    id: "metals-tariffs-always-work",
+    category: ["Economy","Foreign Policy"],
+    theySay: "Metals tariffs always work!",
+    youSay: "Proclamation-driven aluminum-steel-copper regimes create uncertainty and retaliation risk without durable statute.",
+    stab: "Always is not a trade model.",
+    sources: [
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "wh_actions",
+        "Presidential Actions",
+        "The White House",
+        "https://www.whitehouse.gov/presidential-actions/",
+        "Official White House presidential actions archive.",
+        "2026-07-11"
+      ),
+      cite(
+        "crs_home",
+        "CRS Reports",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/",
+        "Nonpartisan legislative research for Congress.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "dpa-waivers-normal",
+    category: ["Economy","Democracy"],
+    theySay: "DPA Section 303 waivers are normal housekeeping!",
+    youSay: "Waiving statutory requirements concentrates industrial power in the presidency. Housekeeping does not need emergency carve-outs.",
+    stab: "Normal is what Congress writes. Waivers are the exception lane.",
+    sources: [
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "congress_home",
+        "Congress.gov",
+        "Library of Congress",
+        "https://www.congress.gov/",
+        "Official legislative information for the U.S. Congress.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "hard",
+    relatedClaims: [],
+  },
+  {
+    id: "intl-org-exits-sovereignty",
+    category: ["Foreign Policy","Culture Wars"],
+    theySay: "Leaving international organizations is pure sovereignty!",
+    youSay: "Blanket withdrawal memos can dump treaties and forums without replacing the cooperation they provided.",
+    stab: "Sovereignty is not walking out of every room and calling it strategy.",
+    sources: [
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "wh_actions",
+        "Presidential Actions",
+        "The White House",
+        "https://www.whitehouse.gov/presidential-actions/",
+        "Official White House presidential actions archive.",
+        "2026-07-11"
+      ),
+      cite(
+        "crs_home",
+        "CRS Reports",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/",
+        "Nonpartisan legislative research for Congress.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "kickapoo-permit-local",
+    category: ["Culture Wars","Democracy"],
+    theySay: "Kickapoo permit denial is a local zoning spat!",
+    youSay: "A presidential memorandum denying a tribal permit is federal power over Indigenous infrastructure, not a HOA meeting.",
+    stab: "Local spats do not need White House letterhead.",
+    sources: [
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "nps_hist",
+        "National Park Service History",
+        "National Park Service",
+        "https://www.nps.gov/subjects/tellingallamericansstories/index.htm",
+        "NPS publishes historical context for U.S. historic sites.",
+        "2020-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "housing-eos-enough",
+    category: ["Economy","Culture Wars"],
+    theySay: "Housing executive orders alone fix affordability!",
+    youSay: "Proclamations on Wall Street buyers and mortgage access do not build units. Supply, zoning, and subsidy still matter.",
+    stab: "A PDF is not a roof.",
+    sources: [
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "wh_actions",
+        "Presidential Actions",
+        "The White House",
+        "https://www.whitehouse.gov/presidential-actions/",
+        "Official White House presidential actions archive.",
+        "2026-07-11"
+      ),
+      cite(
+        "bls_home",
+        "Bureau of Labor Statistics",
+        "U.S. Bureau of Labor Statistics",
+        "https://www.bls.gov/",
+        "Official U.S. labor market and price statistics.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "citizenship-verify-common-sense",
+    category: ["Elections","Immigration"],
+    theySay: "Citizenship verification for elections is common sense!",
+    youSay: "Poorly designed federal mandates risk blocking lawful voters and echoing the Shelby-era restriction wave.",
+    stab: "Common sense that shrinks the electorate needs harder scrutiny.",
+    sources: [
+      cite(
+        "brennan_home",
+        "Brennan Center for Justice",
+        "Brennan Center for Justice",
+        "https://www.brennancenter.org/",
+        "Brennan Center researches voting rights, democracy, and justice reform.",
+        "2025-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "oyez_home",
+        "Oyez",
+        "Oyez",
+        "https://www.oyez.org/",
+        "Oyez summarizes Supreme Court cases with opinions and audio.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "hard",
+    relatedClaims: [],
+  },
+  {
+    id: "dei-contractor-ban-neutral",
+    category: ["Culture Wars","Economy"],
+    theySay: "Banning DEI for contractors is neutral!",
+    youSay: "Orders targeting equity programs chill lawful nondiscrimination work and invite politicized procurement.",
+    stab: "Neutral does not need a culture-war acronym in the title.",
+    sources: [
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "brennan_home",
+        "Brennan Center for Justice",
+        "Brennan Center for Justice",
+        "https://www.brennancenter.org/",
+        "Brennan Center researches voting rights, democracy, and justice reform.",
+        "2025-01-01"
+      ),
+      cite(
+        "congress_home",
+        "Congress.gov",
+        "Library of Congress",
+        "https://www.congress.gov/",
+        "Official legislative information for the U.S. Congress.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "lands-access-freedom",
+    category: ["Climate","Culture Wars"],
+    theySay: "Removing federal-lands restrictions is freedom!",
+    youSay: "Access rollbacks can open extraction and damage while branding deregulation as recreation.",
+    stab: "Freedom for bulldozers is not wilderness policy.",
+    sources: [
+      cite(
+        "epa_home",
+        "Environmental Protection Agency",
+        "EPA",
+        "https://www.epa.gov/",
+        "Federal environmental regulation and science.",
+        "2025-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "nps_hist",
+        "National Park Service History",
+        "National Park Service",
+        "https://www.nps.gov/subjects/tellingallamericansstories/index.htm",
+        "NPS publishes historical context for U.S. historic sites.",
+        "2020-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "ai-speed-over-safety",
+    category: ["Economy","Culture Wars"],
+    theySay: "AI needs speed, not safety rules!",
+    youSay: "Innovation orders that skip enforceable baselines export risk to workers and the public.",
+    stab: "Speed without brakes is how you meet the wall first.",
+    sources: [
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      ),
+      cite(
+        "crs_home",
+        "CRS Reports",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/",
+        "Nonpartisan legislative research for Congress.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "college-sports-federalize",
+    category: ["Education","Culture Wars"],
+    theySay: "Washington should federalize college sports!",
+    youSay: "Preserving America's Game and related orders put culture politics in athletic governance.",
+    stab: "If football needs the Oval Office, the problem is not the playbook.",
+    sources: [
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "wh_actions",
+        "Presidential Actions",
+        "The White House",
+        "https://www.whitehouse.gov/presidential-actions/",
+        "Official White House presidential actions archive.",
+        "2026-07-11"
+      ),
+      cite(
+        "congress_home",
+        "Congress.gov",
+        "Library of Congress",
+        "https://www.congress.gov/",
+        "Official legislative information for the U.S. Congress.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "fema-review-forever",
+    category: ["Climate","Democracy"],
+    theySay: "Endless FEMA review is responsible caution!",
+    youSay: "Indefinite review while climate losses rise can stall capacity under the banner of reform.",
+    stab: "Caution that never finishes is abandonment with meetings.",
+    sources: [
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      ),
+      cite(
+        "epa_home",
+        "Environmental Protection Agency",
+        "EPA",
+        "https://www.epa.gov/",
+        "Federal environmental regulation and science.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "trumpira-branding",
+    category: ["Economy","Culture Wars"],
+    theySay: "TrumpIRA.gov is just helpful branding!",
+    youSay: "Politicizing retirement infrastructure through presidential domains mixes governance with campaign aesthetics.",
+    stab: "Helpful branding does not need a surname in the URL.",
+    sources: [
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "wh_actions",
+        "Presidential Actions",
+        "The White House",
+        "https://www.whitehouse.gov/presidential-actions/",
+        "Official White House presidential actions archive.",
+        "2026-07-11"
+      ),
+      cite(
+        "fec_home",
+        "Federal Election Commission",
+        "FEC",
+        "https://www.fec.gov/",
+        "Federal campaign-finance disclosure and enforcement.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "fraud-task-force-trust",
+    category: ["Democracy","Economy"],
+    theySay: "A presidential fraud task force is automatically trustworthy!",
+    youSay: "Concentrating fraud narrative power without strong IG independence risks selective enforcement.",
+    stab: "Trust requires inspectors general, not slogans.",
+    sources: [
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "congress_home",
+        "Congress.gov",
+        "Library of Congress",
+        "https://www.congress.gov/",
+        "Official legislative information for the U.S. Congress.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "hard",
+    relatedClaims: [],
+  },
+  {
+    id: "cuba-sanctions-simple",
+    category: ["Foreign Policy","Whataboutism"],
+    theySay: "Cuba sanctions are simple morality!",
+    youSay: "Sanctions instruments can be real policy tools and still deserve scrutiny on human impact and consistency.",
+    stab: "Morality that never updates is a press release.",
+    sources: [
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "wh_actions",
+        "Presidential Actions",
+        "The White House",
+        "https://www.whitehouse.gov/presidential-actions/",
+        "Official White House presidential actions archive.",
+        "2026-07-11"
+      ),
+      cite(
+        "crs_home",
+        "CRS Reports",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/",
+        "Nonpartisan legislative research for Congress.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+  {
+    id: "primary-sources-optional-now",
+    category: ["Education","Media"],
+    theySay: "Primary sources are optional in 2026!",
+    youSay: "FR, GAO, Archives, and court records are free. Optional is what people say when the PDF hurts.",
+    stab: "Literacy did not sunset.",
+    sources: [
+      cite(
+        "archives_edu",
+        "National Archives Education",
+        "National Archives",
+        "https://www.archives.gov/education",
+        "Primary sources enable independent verification of historical claims.",
+        "2020-01-01"
+      ),
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      )
+    ],
+    difficulty: "easy",
+    relatedClaims: [],
+  },
+  {
+    id: "both-sides-same-fr",
+    category: ["Whataboutism","Media"],
+    theySay: "Both sides publish the same Federal Register volume!",
+    youSay: "Receipt density is measurable. Claiming sameness without counting documents is vibes against the daily journal.",
+    stab: "Both-sides needs a spreadsheet, not a shrug.",
+    sources: [
+      cite(
+        "fr_home",
+        "Federal Register",
+        "National Archives",
+        "https://www.federalregister.gov/",
+        "Official daily journal of federal rules and notices.",
+        "2025-01-01"
+      ),
+      cite(
+        "gao_about",
+        "What GAO Does",
+        "U.S. Government Accountability Office",
+        "https://www.gao.gov/about/what-gao-does",
+        "GAO provides nonpartisan audits and investigations for Congress.",
+        "2024-01-01"
+      ),
+      cite(
+        "crs_home",
+        "CRS Reports",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/",
+        "Nonpartisan legislative research for Congress.",
+        "2025-01-01"
+      )
+    ],
+    difficulty: "medium",
+    relatedClaims: [],
+  },
+
 ];
 
 const CATEGORY_SLUG_MAP: Record<RebuttalCategory, string> = {

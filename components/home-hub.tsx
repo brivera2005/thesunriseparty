@@ -251,7 +251,33 @@ export function HomeHub({ compact = false }: { compact?: boolean }) {
       </section>
 
 
-      {timelineEvents.length >= 240 && (
+      {timelineEvents.length >= 260 && (
+        <section
+          className="border-b border-border bg-gradient-to-r from-primary/10 via-sunrise/10 to-destructive/10"
+          aria-label="260 events milestone"
+        >
+          <div className="mx-auto flex max-w-6xl flex-col items-center gap-3 px-4 py-6 text-center sm:flex-row sm:justify-center sm:px-6 sm:py-8">
+            <PartyPopper className="size-8 shrink-0 text-sunrise" aria-hidden />
+            <div>
+              <p className="text-lg font-bold tracking-tight sm:text-xl">
+                260 actions tracked
+              </p>
+              <p className="mt-1 text-sm text-muted-foreground">
+                Pass 31 verifiable-room milestone - housing EO stacks, DPA waivers,
+                treaty-exit memos, and elections mandates now documented.{" "}
+                <Link
+                  href="/tracker/EVT-2026-0711-260"
+                  className="font-medium text-primary underline-offset-4 hover:underline"
+                >
+                  See event #260 →
+                </Link>
+              </p>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {timelineEvents.length >= 240 && timelineEvents.length < 260 && (
         <section
           className="border-b border-border bg-gradient-to-r from-primary/10 via-sunrise/10 to-destructive/10"
           aria-label="240 events milestone"

@@ -1,8 +1,8 @@
 {
   "meta": {
     "site": "https://thesunriseparty.pages.dev",
-    "generated": "2026-07-11T22:27:56.511Z",
-    "count": 242,
+    "generated": "2026-07-11T22:35:21.999Z",
+    "count": 262,
     "license": "CC-BY-4.0 - cite Project Sunrise (thesunriseparty.pages.dev)"
   },
   "events": [
@@ -11358,6 +11358,852 @@
           "publisher": "The White House",
           "url": "https://www.whitehouse.gov/presidential-actions/2025/01/protecting-the-american-people-against-invasion/",
           "date": "2025-01-20"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-2026-0711-243",
+      "date": "2026-07-11",
+      "actionType": "Housing Continuity",
+      "description": "Wall Street homebuyer restrictions, mortgage-credit access orders, and homeownership-month branding continue the housing EO stack that treats affordability as a proclamation problem.",
+      "severity": 7,
+      "category": "Economy",
+      "impactedSectors": [
+        "Economy",
+        "Civil Rights"
+      ],
+      "p2025Pillar": "Economy & Regulation",
+      "p2025Chapters": [],
+      "linkedFixId": "FIX-HOUS-001",
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-2026-0711-243",
+      "sources": [
+        {
+          "id": "wall_street_homebuyers_eo_2026",
+          "title": "Stopping Wall Street From Competing With Main Street Homebuyers",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/01/23/2026-01424/stopping-wall-street-from-competing-with-main-street-homebuyers",
+          "date": "2026-01-23"
+        },
+        {
+          "id": "mortgage_credit_eo_2026",
+          "title": "Promoting Access to Mortgage Credit",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/03/18/2026-05384/promoting-access-to-mortgage-credit",
+          "date": "2026-03-18"
+        },
+        {
+          "id": "homeownership_month_2026",
+          "title": "National Homeownership Month, 2026",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/06/18/2026-12435/national-homeownership-month-2026",
+          "date": "2026-06-18"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-2026-0711-244",
+      "date": "2026-07-11",
+      "actionType": "Labor Continuity",
+      "description": "Schedule Policy/Career excepted-service implementation keeps converting career protections into political loyalty screens across the administrative state.",
+      "severity": 9,
+      "category": "Democracy",
+      "impactedSectors": [
+        "Democracy",
+        "Economy"
+      ],
+      "p2025Pillar": "Personnel & Civil Service",
+      "p2025Chapters": [
+        "ch03-personnel"
+      ],
+      "linkedFixId": "FIX-SAFE-002",
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-2026-0711-244",
+      "sources": [
+        {
+          "id": "schedule_f_eo",
+          "title": "Restoring Accountability to Policy-Influencing Positions Within the Federal Workforce",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2025/01/restoring-accountability-to-policy-influencing-positions-within-the-federal-workforce/",
+          "date": "2025-01-20"
+        },
+        {
+          "id": "gao_schedule_f",
+          "title": "Schedule F: History, Legal Framework, and Policy Issues",
+          "publisher": "Congressional Research Service",
+          "url": "https://www.congress.gov/crs-product/R47394",
+          "date": "2025-01-15"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-2026-0711-245",
+      "date": "2026-07-11",
+      "actionType": "Trade Continuity",
+      "description": "Aluminum-steel-copper tariff adjustments and reciprocal-trade proclamations keep industrial policy on a presidency-by-proclamation track without durable statute.",
+      "severity": 8,
+      "category": "Economy",
+      "impactedSectors": [
+        "Economy"
+      ],
+      "p2025Pillar": "Economy & Regulation",
+      "p2025Chapters": [],
+      "linkedFixId": "FIX-ECO-001",
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-2026-0711-245",
+      "sources": [
+        {
+          "id": "metals_tariff_proclamation_2026",
+          "title": "Further Adjusting the Tariff Regimes for Imports of Aluminum, Steel, and Copper Into the United States",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/06/04/2026-11314/further-adjusting-the-tariff-regimes-for-imports-of-aluminum-steel-and-copper-into-the-united-states",
+          "date": "2026-06-04"
+        },
+        {
+          "id": "trade_policy_eo",
+          "title": "America First Trade Policy",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2025/01/america-first-trade-policy/",
+          "date": "2025-01-20"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-2026-0711-246",
+      "date": "2026-07-11",
+      "actionType": "Defense Production Continuity",
+      "description": "DPA Section 303 waivers and delegation reshuffles expand industrial-command discretion while congressional oversight lags the paperwork.",
+      "severity": 8,
+      "category": "Economy",
+      "impactedSectors": [
+        "Economy",
+        "Democracy"
+      ],
+      "p2025Pillar": "Economy & Regulation",
+      "p2025Chapters": [],
+      "linkedFixId": "FIX-SAFE-002",
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-2026-0711-246",
+      "sources": [
+        {
+          "id": "dpa_303_waiver_2026",
+          "title": "Presidential Waiver of Statutory Requirements Pursuant to Section 303 of the Defense Production Act of 1950, as Amended",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/02/19/2026-03380/presidential-waiver-of-statutory-requirements-pursuant-to-section-303-of-the-defense-production-act",
+          "date": "2026-02-19"
+        },
+        {
+          "id": "dpa_delegations_eo_2026",
+          "title": "Adjusting Certain Delegations Under the Defense Production Act",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/03/18/2026-05382/adjusting-certain-delegations-under-the-defense-production-act",
+          "date": "2026-03-18"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-2026-0711-247",
+      "date": "2026-07-11",
+      "actionType": "Foreign Policy Continuity",
+      "description": "International-organization withdrawal memoranda and arms-transfer strategy orders rewire diplomacy toward unilateral exits and transactional weapons policy.",
+      "severity": 8,
+      "category": "Democracy",
+      "impactedSectors": [
+        "Democracy"
+      ],
+      "p2025Pillar": "Foreign Policy",
+      "p2025Chapters": [],
+      "linkedFixId": "FIX-SAFE-004",
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-2026-0711-247",
+      "sources": [
+        {
+          "id": "intl_orgs_withdrawal_memo_2026",
+          "title": "Withdrawing the United States From International Organizations, Conventions, and Treaties That Are Contrary to the Interests of the United States",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/01/16/2026-00976/withdrawing-the-united-states-from-international-organizations-conventions-and-treaties-that-are",
+          "date": "2026-01-16"
+        },
+        {
+          "id": "arms_transfer_eo_2026",
+          "title": "Establishing an America First Arms Transfer Strategy",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/02/11/2026-02814/establishing-an-america-first-arms-transfer-strategy",
+          "date": "2026-02-11"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-2026-0711-248",
+      "date": "2026-07-11",
+      "actionType": "Indigenous Rights Continuity",
+      "description": "Kickapoo presidential-permit denial remains a live example of tribal infrastructure blocked by White House memorandum rather than negotiated consent.",
+      "severity": 7,
+      "category": "Civil Rights",
+      "impactedSectors": [
+        "Civil Rights",
+        "Democracy"
+      ],
+      "p2025Pillar": "Civil Rights Rollbacks",
+      "p2025Chapters": [],
+      "linkedFixId": "FIX-IND-001",
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-2026-0711-248",
+      "sources": [
+        {
+          "id": "kickapoo_permit_denial_2026",
+          "title": "Denial of Presidential Permit for the Kickapoo Traditional Tribe of Texas",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/01/14/2026-00697/denial-of-presidential-permit-for-the-kickapoo-traditional-tribe-of-texas",
+          "date": "2026-01-14"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-2026-0711-249",
+      "date": "2026-07-11",
+      "actionType": "Healthcare Continuity",
+      "description": "Mental-illness treatment acceleration orders and vaccine-schedule politicization keep public-health authority inside culture-war framing.",
+      "severity": 7,
+      "category": "Healthcare",
+      "impactedSectors": [
+        "Healthcare"
+      ],
+      "p2025Pillar": "Health & Social Policy",
+      "p2025Chapters": [],
+      "linkedFixId": "FIX-HC-001",
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-2026-0711-249",
+      "sources": [
+        {
+          "id": "mental_illness_eo_2026",
+          "title": "Accelerating Medical Treatments for Serious Mental Illness",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/04/22/2026-07907/accelerating-medical-treatments-for-serious-mental-illness",
+          "date": "2026-04-22"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-2026-0711-250",
+      "date": "2026-07-11",
+      "actionType": "Documentation Milestone",
+      "description": "Project Sunrise Pass 31 crosses 250 verified actions spanning housing EO stacks, DPA industrial waivers, treaty-exit memos, and civil-service conversion.",
+      "severity": 9,
+      "category": "Democracy",
+      "impactedSectors": [
+        "Democracy"
+      ],
+      "p2025Pillar": "Transparency",
+      "p2025Chapters": [
+        "ch02-eop"
+      ],
+      "linkedFixId": "FIX-SAFE-004",
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-2026-0711-250",
+      "sources": [
+        {
+          "id": "wh_eo_index_2026",
+          "title": "Executive Orders",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/executive-orders/",
+          "date": "2026-07-11"
+        },
+        {
+          "id": "safeguard_transparency",
+          "title": "Open Data Policy Guidelines",
+          "publisher": "Sunlight Foundation",
+          "url": "https://opendatapolicyhub.sunlightfoundation.com/guidelines/",
+          "date": "2018-01-01"
+        },
+        {
+          "id": "fr_home_2026",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2026-07-11"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-2026-0711-251",
+      "date": "2026-07-11",
+      "actionType": "Civil Rights Continuity",
+      "description": "DEI contractor discrimination orders and citizenship-verification election mandates continue converting equity programs into enforcement targets.",
+      "severity": 8,
+      "category": "Civil Rights",
+      "impactedSectors": [
+        "Civil Rights",
+        "Democracy"
+      ],
+      "p2025Pillar": "Civil Rights Rollbacks",
+      "p2025Chapters": [],
+      "linkedFixId": "FIX-VR-001",
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-2026-0711-251",
+      "sources": [
+        {
+          "id": "dei_contractors_eo_2026",
+          "title": "Addressing DEI Discrimination by Federal Contractors",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/03/31/2026-06286/addressing-dei-discrimination-by-federal-contractors",
+          "date": "2026-03-31"
+        },
+        {
+          "id": "citizenship_verification_eo_2026",
+          "title": "Ensuring Citizenship Verification and Integrity in Federal Elections",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/04/03/2026-06601/ensuring-citizenship-verification-and-integrity-in-federal-elections",
+          "date": "2026-04-03"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-2026-0711-252",
+      "date": "2026-07-11",
+      "actionType": "Environment Continuity",
+      "description": "Federal-lands access rollbacks and Freedom-to-Fix EPA posture keep compounding deregulation under efficiency and recreation branding.",
+      "severity": 8,
+      "category": "Environment",
+      "impactedSectors": [
+        "Environment"
+      ],
+      "p2025Pillar": "Energy & Environment",
+      "p2025Chapters": [
+        "ch12-energy",
+        "ch13-epa",
+        "ch16-interior"
+      ],
+      "linkedFixId": "FIX-ENV-001",
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-2026-0711-252",
+      "sources": [
+        {
+          "id": "freedom_to_fix_memo_2026",
+          "title": "Lowering the Cost of Living by Promoting the Freedom to Fix",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2026/06/lowering-the-cost-of-living-by-promoting-the-freedom-to-fix/",
+          "date": "2026-06-29"
+        },
+        {
+          "id": "federal_lands_restrictions_eo_2026",
+          "title": "Removing Unnecessary and Counterproductive Restrictions on Access to Federal Lands",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2026/05/removing-unnecessary-and-counterproductive-restrictions-on-access-to-federal-lands/",
+          "date": "2026-05-29"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-2026-0711-253",
+      "date": "2026-07-11",
+      "actionType": "Technology Continuity",
+      "description": "Advanced AI innovation-and-security orders continue deregulatory framing that prioritizes speed over enforceable safety baselines.",
+      "severity": 7,
+      "category": "Economy",
+      "impactedSectors": [
+        "Economy",
+        "Democracy"
+      ],
+      "p2025Pillar": "Economy & Regulation",
+      "p2025Chapters": [],
+      "linkedFixId": "FIX-ECO-001",
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-2026-0711-253",
+      "sources": [
+        {
+          "id": "ai_innovation_eo_2026",
+          "title": "Promoting Advanced Artificial Intelligence Innovation and Security",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/",
+          "date": "2026-06-02"
+        },
+        {
+          "id": "ai_innovation_fr_2026",
+          "title": "Promoting Advanced Artificial Intelligence Innovation and Security (FR)",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/06/05/2026-11415/promoting-advanced-artificial-intelligence-innovation-and-security",
+          "date": "2026-06-05"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-2026-0711-254",
+      "date": "2026-07-11",
+      "actionType": "Education Continuity",
+      "description": "College-sports federalization and parent-empowerment education orders keep culture-war mandates flowing through presidential sports and school instruments.",
+      "severity": 6,
+      "category": "Education",
+      "impactedSectors": [
+        "Education"
+      ],
+      "p2025Pillar": "Education",
+      "p2025Chapters": [
+        "ch11-education"
+      ],
+      "linkedFixId": "FIX-EDU-001",
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-2026-0711-254",
+      "sources": [
+        {
+          "id": "college_sports_eo_2026",
+          "title": "Urgent National Action To Save College Sports",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/04/09/2026-06961/urgent-national-action-to-save-college-sports",
+          "date": "2026-04-09"
+        },
+        {
+          "id": "preserving_americas_game_eo_2026",
+          "title": "Preserving America's Game",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/03/25/2026-05867/preserving-americas-game",
+          "date": "2026-03-25"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-2026-0711-255",
+      "date": "2026-07-11",
+      "actionType": "Immigration Continuity",
+      "description": "Criminal-actors interior enforcement and customs expansion remain the operational backbone beneath travel-ban and border spectacle headlines.",
+      "severity": 8,
+      "category": "Immigration",
+      "impactedSectors": [
+        "Immigration",
+        "Civil Rights"
+      ],
+      "p2025Pillar": "Immigration Enforcement",
+      "p2025Chapters": [
+        "ch05-dhs"
+      ],
+      "linkedFixId": "FIX-IMM-001",
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-2026-0711-255",
+      "sources": [
+        {
+          "id": "criminal_actors_eo_2026",
+          "title": "Protecting the National Security and Welfare of the United States and Its Citizens From Criminal Actors and Other Public Safety Threats",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/02/11/2026-02819/protecting-the-national-security-and-welfare-of-the-united-states-and-its-citizens-from-criminal",
+          "date": "2026-02-11"
+        },
+        {
+          "id": "customs_enforcement_eo_2026",
+          "title": "Strengthening Customs Enforcement",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2026/06/strengthening-customs-enforcement/",
+          "date": "2026-06-03"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-2026-0711-256",
+      "date": "2026-07-11",
+      "actionType": "Transparency Continuity",
+      "description": "FOIA backlog persistence, Federal Register receipt density, and appropriations-by-proclamation implementation keep sunshine dependent on proactive publishing norms.",
+      "severity": 7,
+      "category": "Democracy",
+      "impactedSectors": [
+        "Democracy"
+      ],
+      "p2025Pillar": "Transparency",
+      "p2025Chapters": [
+        "ch02-eop"
+      ],
+      "linkedFixId": "FIX-SAFE-004",
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-2026-0711-256",
+      "sources": [
+        {
+          "id": "foia_gov",
+          "title": "FOIA.gov - Freedom of Information Act",
+          "publisher": "U.S. Department of Justice",
+          "url": "https://www.foia.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "fr_home_2026",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2026-07-11"
+        },
+        {
+          "id": "appropriations_impl_proclamation_2026",
+          "title": "To Implement Certain Provisions in the Consolidated Appropriations Act, 2026, and for Other Purposes",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/05/22/2026-10398/to-implement-certain-provisions-in-the-consolidated-appropriations-act-2026-and-for-other-purposes",
+          "date": "2026-05-22"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-2026-0711-257",
+      "date": "2026-07-11",
+      "actionType": "Sanctions Continuity",
+      "description": "Cuba repression sanctions and recovery-initiative branding show foreign-policy and domestic addiction orders running on parallel proclamation tracks.",
+      "severity": 6,
+      "category": "Democracy",
+      "impactedSectors": [
+        "Democracy",
+        "Healthcare"
+      ],
+      "p2025Pillar": "Foreign Policy",
+      "p2025Chapters": [],
+      "linkedFixId": "FIX-SAFE-002",
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-2026-0711-257",
+      "sources": [
+        {
+          "id": "cuba_sanctions_eo_2026",
+          "title": "Imposing Sanctions on Those Responsible for Repression in Cuba and for Threats to United States National Security and Foreign Policy",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/05/07/2026-09173/imposing-sanctions-on-those-responsible-for-repression-in-cuba-and-for-threats-to-united-states",
+          "date": "2026-05-07"
+        },
+        {
+          "id": "recovery_initiative_eo_2026",
+          "title": "Addressing Addiction Through the Great American Recovery Initiative",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/02/03/2026-02249/addressing-addiction-through-the-great-american-recovery-initiative",
+          "date": "2026-02-03"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-2026-0711-258",
+      "date": "2026-07-11",
+      "actionType": "Elections Continuity",
+      "description": "Citizenship-verification election integrity orders keep federalizing voter eligibility fights that voting-rights advocates warn will suppress lawful ballots.",
+      "severity": 9,
+      "category": "Democracy",
+      "impactedSectors": [
+        "Democracy",
+        "Civil Rights"
+      ],
+      "p2025Pillar": "Election Administration",
+      "p2025Chapters": [],
+      "linkedFixId": "FIX-VR-001",
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-2026-0711-258",
+      "sources": [
+        {
+          "id": "citizenship_verification_eo_2026",
+          "title": "Ensuring Citizenship Verification and Integrity in Federal Elections",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/04/03/2026-06601/ensuring-citizenship-verification-and-integrity-in-federal-elections",
+          "date": "2026-04-03"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-2026-0711-259",
+      "date": "2026-07-11",
+      "actionType": "Fraud Task Force Continuity",
+      "description": "Eliminate-fraud task-force orders concentrate investigatory narrative power in the executive while inspectors general and GAO capacity remain contested.",
+      "severity": 7,
+      "category": "Democracy",
+      "impactedSectors": [
+        "Democracy",
+        "Economy"
+      ],
+      "p2025Pillar": "Personnel & Civil Service",
+      "p2025Chapters": [
+        "ch03-personnel"
+      ],
+      "linkedFixId": "FIX-SAFE-004",
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-2026-0711-259",
+      "sources": [
+        {
+          "id": "fraud_task_force_eo_2026",
+          "title": "Establishing the Task Force To Eliminate Fraud",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/03/19/2026-05497/establishing-the-task-force-to-eliminate-fraud",
+          "date": "2026-03-19"
+        },
+        {
+          "id": "gao_improper_payments",
+          "title": "Improper Payments",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/improper-payments",
+          "date": "2025-01-01"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-2026-0711-260",
+      "date": "2026-07-11",
+      "actionType": "Documentation Milestone",
+      "description": "Project Sunrise Pass 31 crosses 260 verified tracker actions with housing, DPA, treaty-exit, elections, and lands-deregulation continuity still publishing into the Federal Register.",
+      "severity": 9,
+      "category": "Democracy",
+      "impactedSectors": [
+        "Democracy"
+      ],
+      "p2025Pillar": "Transparency",
+      "p2025Chapters": [
+        "ch02-eop"
+      ],
+      "linkedFixId": "FIX-SAFE-004",
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-2026-0711-260",
+      "sources": [
+        {
+          "id": "wh_eo_index_2026",
+          "title": "Executive Orders",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/executive-orders/",
+          "date": "2026-07-11"
+        },
+        {
+          "id": "metals_tariff_proclamation_2026",
+          "title": "Further Adjusting the Tariff Regimes for Imports of Aluminum, Steel, and Copper Into the United States",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/06/04/2026-11314/further-adjusting-the-tariff-regimes-for-imports-of-aluminum-steel-and-copper-into-the-united-states",
+          "date": "2026-06-04"
+        },
+        {
+          "id": "safeguard_transparency",
+          "title": "Open Data Policy Guidelines",
+          "publisher": "Sunlight Foundation",
+          "url": "https://opendatapolicyhub.sunlightfoundation.com/guidelines/",
+          "date": "2018-01-01"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-2026-0711-261",
+      "date": "2026-07-11",
+      "actionType": "Retirement Continuity",
+      "description": "TrumpIRA.gov retirement-savings branding continues politicizing worker benefits infrastructure through presidential websites and EO marketing.",
+      "severity": 6,
+      "category": "Economy",
+      "impactedSectors": [
+        "Economy"
+      ],
+      "p2025Pillar": "Economy & Regulation",
+      "p2025Chapters": [],
+      "linkedFixId": "FIX-ECO-001",
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-2026-0711-261",
+      "sources": [
+        {
+          "id": "trump_ira_eo_2026",
+          "title": "Promoting Retirement-Savings Access for American Workers by Establishing TrumpIRA.gov",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/05/05/2026-08908/promoting-retirement-savings-access-for-american-workers-by-establishing-trumpiragov",
+          "date": "2026-05-05"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-2026-0711-262",
+      "date": "2026-07-11",
+      "actionType": "FEMA Continuity",
+      "description": "FEMA Review Council continuance keeps disaster governance under indefinite review while climate-driven loss events accelerate.",
+      "severity": 7,
+      "category": "Environment",
+      "impactedSectors": [
+        "Environment",
+        "Democracy"
+      ],
+      "p2025Pillar": "Energy & Environment",
+      "p2025Chapters": [
+        "ch12-energy",
+        "ch13-epa",
+        "ch16-interior"
+      ],
+      "linkedFixId": "FIX-ENV-001",
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-2026-0711-262",
+      "sources": [
+        {
+          "id": "fema_review_continuance_2026",
+          "title": "Further Continuance of the Federal Emergency Management Agency Review Council",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/03/27/2026-06075/further-continuance-of-the-federal-emergency-management-agency-review-council",
+          "date": "2026-03-27"
         }
       ],
       "externalTrackers": [
