@@ -8,6 +8,18 @@ export interface ChangelogEntry {
 /** Site iteration history - meta transparency for Project Sunrise builds */
 export const changelog: ChangelogEntry[] = [
   {
+    version: "0.34.0",
+    date: "2026-07-11",
+    title: "Pass 34 - Keep expanding verifiable room",
+    highlights: [
+      "Hidden History expanded to 360+ dual-timeline entries (Marbury through Bruen, Wilmot, Pacific Railway, Gettysburg Address, Prohibition, Kerner, ERA, Prop 13, AUMF, and more)",
+      "Rebuttal Desk crossed 750 sourced counters spanning history deep cuts, Schedule F, metals tariffs, DPA waivers, housing EO stacks, elections mandates, and continuity optics",
+      "Project 2025 Tracker crossed 320 verified actions including Schedule F continuity, tariff proclamations, DPA waivers, citizenship-verification, FEMA review, and lands deregulation",
+      "New Archives / NPS / State Department / Oyez / Congress.gov citations for judicial review, Reconstruction statutes, WWI diplomacy, Cold War strategy, and modern gun-rights doctrine",
+      "Homepage and rebuttal milestone banners updated for 320-event and 750-rebuttal markers; link validation and Cloudflare Pages deploy for v0.34",
+    ],
+  },
+  {
     version: "0.33.0",
     date: "2026-07-11",
     title: "Pass 33 - Keep expanding verifiable room",

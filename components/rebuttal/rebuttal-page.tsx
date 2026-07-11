@@ -46,6 +46,7 @@ function ShareButton() {
 }
 
 export function RebuttalPage() {
+  const milestoneRebuttal750 = conversationHelpers[749];
   const milestoneRebuttal700 = conversationHelpers[699];
   const milestoneRebuttal650 = conversationHelpers[649];
   const milestoneRebuttal600 = conversationHelpers[599];
@@ -94,7 +95,33 @@ export function RebuttalPage() {
         </section>
 
 
-        {conversationHelpers.length >= 700 && milestoneRebuttal700 && (
+        {conversationHelpers.length >= 750 && milestoneRebuttal750 && (
+          <section
+            className="border-b border-border bg-gradient-to-r from-sunrise/10 via-primary/10 to-sunrise/10"
+            aria-label="750 rebuttals milestone"
+          >
+            <div className="mx-auto flex max-w-6xl flex-col items-center gap-3 px-4 py-6 text-center sm:flex-row sm:justify-center sm:px-6 sm:py-8">
+              <PartyPopper className="size-8 shrink-0 text-sunrise" aria-hidden />
+              <div>
+                <p className="text-lg font-bold tracking-tight sm:text-xl">
+                  750 rebuttals ready
+                </p>
+                <p className="mt-1 text-sm text-muted-foreground">
+                  Pass 34 verifiable-room milestone - Marbury through Bruen history
+                  counters, Schedule F, tariffs, DPA, housing, and elections mandates.{" "}
+                  <Link
+                    href={rebuttalDetailPath(milestoneRebuttal750.id)}
+                    className="font-medium text-sunrise underline-offset-4 hover:underline"
+                  >
+                    See rebuttal #750 →
+                  </Link>
+                </p>
+              </div>
+            </div>
+          </section>
+        )}
+
+        {conversationHelpers.length >= 700 && conversationHelpers.length < 750 && milestoneRebuttal700 && (
           <section
             className="border-b border-border bg-gradient-to-r from-sunrise/10 via-primary/10 to-sunrise/10"
             aria-label="700 rebuttals milestone"

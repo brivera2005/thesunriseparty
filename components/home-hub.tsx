@@ -251,7 +251,34 @@ export function HomeHub({ compact = false }: { compact?: boolean }) {
       </section>
 
 
-      {timelineEvents.length >= 300 && (
+      {timelineEvents.length >= 320 && (
+        <section
+          className="border-b border-border bg-gradient-to-r from-primary/10 via-sunrise/10 to-destructive/10"
+          aria-label="320 events milestone"
+        >
+          <div className="mx-auto flex max-w-6xl flex-col items-center gap-3 px-4 py-6 text-center sm:flex-row sm:justify-center sm:px-6 sm:py-8">
+            <PartyPopper className="size-8 shrink-0 text-sunrise" aria-hidden />
+            <div>
+              <p className="text-lg font-bold tracking-tight sm:text-xl">
+                320 actions tracked
+              </p>
+              <p className="mt-1 text-sm text-muted-foreground">
+                Pass 34 verifiable-room milestone - Schedule F continuity, metals
+                tariffs, DPA waivers, housing stacks, elections mandates, and lands
+                deregulation now documented.{" "}
+                <Link
+                  href="/tracker/EVT-2026-0711-320"
+                  className="font-medium text-primary underline-offset-4 hover:underline"
+                >
+                  See event #320 →
+                </Link>
+              </p>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {timelineEvents.length >= 300 && timelineEvents.length < 320 && (
         <section
           className="border-b border-border bg-gradient-to-r from-primary/10 via-sunrise/10 to-destructive/10"
           aria-label="300 events milestone"
