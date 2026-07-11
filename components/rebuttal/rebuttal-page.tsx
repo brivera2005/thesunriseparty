@@ -46,6 +46,8 @@ function ShareButton() {
 }
 
 export function RebuttalPage() {
+  const milestoneRebuttal550 = conversationHelpers[549];
+  const milestoneRebuttal500 = conversationHelpers[499];
   const milestoneRebuttal240 = conversationHelpers[239];
   const milestoneRebuttal230 = conversationHelpers[229];
   const milestoneRebuttal220 = conversationHelpers[219];
@@ -88,7 +90,60 @@ export function RebuttalPage() {
           </div>
         </section>
 
-        {conversationHelpers.length >= 240 && milestoneRebuttal240 && (
+
+        {conversationHelpers.length >= 550 && milestoneRebuttal550 && (
+          <section
+            className="border-b border-border bg-gradient-to-r from-sunrise/10 via-primary/10 to-sunrise/10"
+            aria-label="550 rebuttals milestone"
+          >
+            <div className="mx-auto flex max-w-6xl flex-col items-center gap-3 px-4 py-6 text-center sm:flex-row sm:justify-center sm:px-6 sm:py-8">
+              <PartyPopper className="size-8 shrink-0 text-sunrise" aria-hidden />
+              <div>
+                <p className="text-lg font-bold tracking-tight sm:text-xl">
+                  550 rebuttals ready
+                </p>
+                <p className="mt-1 text-sm text-muted-foreground">
+                  Pass 30 verifiable-room milestone - metals tariffs, DPA waivers,
+                  treaty exits, and sports federalization counters.{" "}
+                  <Link
+                    href={rebuttalDetailPath(milestoneRebuttal550.id)}
+                    className="font-medium text-sunrise underline-offset-4 hover:underline"
+                  >
+                    See rebuttal #550 →
+                  </Link>
+                </p>
+              </div>
+            </div>
+          </section>
+        )}
+
+        {conversationHelpers.length >= 500 && conversationHelpers.length < 550 && milestoneRebuttal500 && (
+          <section
+            className="border-b border-border bg-gradient-to-r from-sunrise/10 via-primary/10 to-sunrise/10"
+            aria-label="500 rebuttals milestone"
+          >
+            <div className="mx-auto flex max-w-6xl flex-col items-center gap-3 px-4 py-6 text-center sm:flex-row sm:justify-center sm:px-6 sm:py-8">
+              <PartyPopper className="size-8 shrink-0 text-sunrise" aria-hidden />
+              <div>
+                <p className="text-lg font-bold tracking-tight sm:text-xl">
+                  500 rebuttals ready
+                </p>
+                <p className="mt-1 text-sm text-muted-foreground">
+                  A sourced milestone - every talking point backed by primary
+                  sources and copy-ready responses.{" "}
+                  <Link
+                    href={rebuttalDetailPath(milestoneRebuttal500.id)}
+                    className="font-medium text-sunrise underline-offset-4 hover:underline"
+                  >
+                    See rebuttal #500 →
+                  </Link>
+                </p>
+              </div>
+            </div>
+          </section>
+        )}
+
+        {conversationHelpers.length >= 240 && conversationHelpers.length < 500 && milestoneRebuttal240 && (
           <section
             className="border-b border-border bg-gradient-to-r from-sunrise/10 via-primary/10 to-sunrise/10"
             aria-label="240 rebuttals milestone"

@@ -168,6 +168,34 @@ export const accountabilityFacts: AccountabilityFact[] = [
     sourceIds: ["wh_eo_index_2026", "fr_home_2026", "safeguard_transparency"],
   },
 
+
+  // Pass 30 accountability
+  {
+    title: "Metals tariffs are industrial policy by proclamation",
+    body: "The June 2026 aluminum, steel, and copper tariff-regime proclamation stacks with reciprocal tariffs and aircraft-parts actions. Duty rates are distributional choices with receipts in the Federal Register.",
+    sourceIds: ["metals_tariff_proclamation_2026", "reciprocal_tariffs_eo", "aircraft_imports_proclamation_2026"],
+  },
+  {
+    title: "International-organization exits are still foreign policy",
+    body: "The January 2026 withdrawal memorandum directs exits from organizations and treaties framed as contrary to U.S. interests. Formality is not consequence: nonparticipation changes facts on the ground.",
+    sourceIds: ["intl_orgs_withdrawal_memo_2026", "who_withdrawal", "paris_withdrawal"],
+  },
+  {
+    title: "DPA waivers deserve sunlight",
+    body: "Section 303 waivers and DPA delegation adjustments steer industrial priorities. Speed without disclosure is how favors hide inside emergency grammar.",
+    sourceIds: ["dpa_303_waiver_2026", "dpa_delegations_eo_2026", "safeguard_executive"],
+  },
+  {
+    title: "Tribal permit denials are federal Indian law",
+    body: "Denying a presidential permit for the Kickapoo Traditional Tribe of Texas is not a HOA spat. Track the rationale beside Pacific fishing and lands rollbacks.",
+    sourceIds: ["kickapoo_permit_denial_2026", "pacific_fishing_proclamation_2026", "federal_lands_restrictions_eo_2026"],
+  },
+  {
+    title: "240+ tracker events remain a receipt stack",
+    body: "Project Sunrise Pass 30 crosses 240 verified tracker actions. Volume is auditability: each entry ties to White House, Federal Register, GAO, CRS, or other primary receipts.",
+    sourceIds: ["wh_eo_index_2026", "fr_home_2026", "safeguard_transparency"],
+  },
+
 ];
 
 export const accountabilityExternalLinks = [

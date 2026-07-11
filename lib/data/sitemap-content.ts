@@ -148,8 +148,8 @@ export const sitemapSections: SitemapSection[] = [
         description: "Multiple choice - pick the best counter.",
       },
       {
-        href: "/rebuttal/history-is-patriotism-only",
-        label: "Latest milestone - Pass 26 rebuttals",
+        href: "/rebuttal/pass30-infinite-room",
+        label: "Latest milestone - Pass 30 rebuttals",
         badge: "Milestone",
       },
       ...rebuttalCats.map((cat) => ({
