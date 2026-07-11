@@ -1,8 +1,8 @@
 {
   "meta": {
     "site": "https://thesunriseparty.pages.dev",
-    "generated": "2026-07-11T22:47:44.685Z",
-    "count": 655,
+    "generated": "2026-07-11T22:57:27.668Z",
+    "count": 705,
     "license": "CC-BY-4.0 - cite Project Sunrise (thesunriseparty.pages.dev)"
   },
   "rebuttals": [
@@ -22520,6 +22520,1795 @@
       "difficulty": "easy",
       "relatedClaims": [],
       "url": "https://thesunriseparty.pages.dev/rebuttal/rebuttal-650-spam",
+      "sources": [
+        {
+          "id": "archives_edu",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "fr_home",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "hist-constitutional-myth",
+      "categories": [
+        "Education",
+        "Democracy"
+      ],
+      "theySay": "The Constitution was born as pure democracy!",
+      "youSay": "Closed doors, slavery compromises, and a narrow franchise wrote a republic, not a town meeting.",
+      "stab": "Minutes beat mythology.",
+      "difficulty": "easy",
+      "relatedClaims": [],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/hist-constitutional-myth",
+      "sources": [
+        {
+          "id": "archives_edu",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "fr_home",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "hist-va-ky-freedom",
+      "categories": [
+        "Democracy",
+        "Education"
+      ],
+      "theySay": "Virginia and Kentucky Resolutions were just freedom essays!",
+      "youSay": "They seeded nullification arguments later used to defend slavery and secession.",
+      "stab": "States' rights had a body count.",
+      "difficulty": "medium",
+      "relatedClaims": [],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/hist-va-ky-freedom",
+      "sources": [
+        {
+          "id": "archives_edu",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "fr_home",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "hist-erie-neutral",
+      "categories": [
+        "Economy",
+        "Education"
+      ],
+      "theySay": "The Erie Canal was neutral infrastructure!",
+      "youSay": "It remade markets, cities, and westward pressure on Native nations. Neutrality is a tourist plaque.",
+      "stab": "Canals pick winners.",
+      "difficulty": "easy",
+      "relatedClaims": [],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/hist-erie-neutral",
+      "sources": [
+        {
+          "id": "archives_edu",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "fr_home",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "hist-antietam-nothing",
+      "categories": [
+        "Education",
+        "Democracy"
+      ],
+      "theySay": "Antietam changed nothing!",
+      "youSay": "It stalled Lee and opened the path to the Emancipation Proclamation. That is not nothing.",
+      "stab": "Bloodiest day, real politics.",
+      "difficulty": "medium",
+      "relatedClaims": [],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/hist-antietam-nothing",
+      "sources": [
+        {
+          "id": "archives_edu",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "fr_home",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "hist-sherman-evil",
+      "categories": [
+        "Foreign Policy",
+        "Education"
+      ],
+      "theySay": "Sherman's March was uniquely evil!",
+      "youSay": "Destroying a slave republic's logistics was strategy. Selective outrage skips the cause of the war.",
+      "stab": "Property in people was the stakes.",
+      "difficulty": "hard",
+      "relatedClaims": [],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/hist-sherman-evil",
+      "sources": [
+        {
+          "id": "archives_edu",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "fr_home",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "hist-credit-mobilier-blip",
+      "categories": [
+        "Economy",
+        "Democracy"
+      ],
+      "theySay": "Credit Mobilier was a one-off!",
+      "youSay": "Congressmen holding contractor stock is a system symptom, not a fluke.",
+      "stab": "Gilded means covered in gilt.",
+      "difficulty": "medium",
+      "relatedClaims": [],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/hist-credit-mobilier-blip",
+      "sources": [
+        {
+          "id": "archives_edu",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "fr_home",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "hist-pendleton-optional",
+      "categories": [
+        "Democracy",
+        "Economy"
+      ],
+      "theySay": "Civil service exams are optional niceties!",
+      "youSay": "Garfield's murder by a spoils seeker forced Pendleton. Merit rules exist because patronage kills.",
+      "stab": "Spoils had a funeral.",
+      "difficulty": "easy",
+      "relatedClaims": [],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/hist-pendleton-optional",
+      "sources": [
+        {
+          "id": "archives_edu",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "fr_home",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "hist-platt-liberation",
+      "categories": [
+        "Foreign Policy",
+        "Democracy"
+      ],
+      "theySay": "The Platt Amendment liberated Cuba!",
+      "youSay": "Intervention rights and treaty limits are occupation by paperwork.",
+      "stab": "Liberation with a veto is not freedom.",
+      "difficulty": "hard",
+      "relatedClaims": [],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/hist-platt-liberation",
+      "sources": [
+        {
+          "id": "archives_edu",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "fr_home",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "hist-ccc-leaf-raking",
+      "categories": [
+        "Economy",
+        "Education"
+      ],
+      "theySay": "The CCC was leaf-raking!",
+      "youSay": "Parks, firebreaks, and soil work still stand. Go touch a CCC wall.",
+      "stab": "Make-work that lasts is called work.",
+      "difficulty": "easy",
+      "relatedClaims": [],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/hist-ccc-leaf-raking",
+      "sources": [
+        {
+          "id": "archives_edu",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "fr_home",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "hist-tva-socialism",
+      "categories": [
+        "Economy"
+      ],
+      "theySay": "TVA proved socialism fails!",
+      "youSay": "Public power lit a poor valley. Monopoly talking points are not a blackout.",
+      "stab": "Lights are evidence.",
+      "difficulty": "medium",
+      "relatedClaims": [],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/hist-tva-socialism",
+      "sources": [
+        {
+          "id": "archives_edu",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "fr_home",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "hist-wpa-ethic",
+      "categories": [
+        "Economy",
+        "Education"
+      ],
+      "theySay": "WPA destroyed work ethic!",
+      "youSay": "Millions built roads and schools while private markets failed. Ethic lectures do not pave.",
+      "stab": "Hunger is not a curriculum.",
+      "difficulty": "medium",
+      "relatedClaims": [],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/hist-wpa-ethic",
+      "sources": [
+        {
+          "id": "archives_edu",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "fr_home",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "hist-neutrality-wise",
+      "categories": [
+        "Foreign Policy"
+      ],
+      "theySay": "1930s Neutrality Acts were pure wisdom!",
+      "youSay": "They constrained Allied aid while fascism expanded. Safety later required choosing sides.",
+      "stab": "Isolation is not a force field.",
+      "difficulty": "hard",
+      "relatedClaims": [],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/hist-neutrality-wise",
+      "sources": [
+        {
+          "id": "archives_edu",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "fr_home",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "hist-hatch-gag",
+      "categories": [
+        "Democracy",
+        "Economy"
+      ],
+      "theySay": "The Hatch Act is a gag order!",
+      "youSay": "It limits on-the-clock partisan coercion in the civil service. Public pay is not a PAC.",
+      "stab": "Clock-in is not campaign time.",
+      "difficulty": "medium",
+      "relatedClaims": [],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/hist-hatch-gag",
+      "sources": [
+        {
+          "id": "archives_edu",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "fr_home",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "hist-atlantic-pure",
+      "categories": [
+        "Foreign Policy"
+      ],
+      "theySay": "The Atlantic Charter meant freedom for all immediately!",
+      "youSay": "Self-determination language collided with empire. Colonized peoples saw the gap.",
+      "stab": "Press releases are not decolonization.",
+      "difficulty": "hard",
+      "relatedClaims": [],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/hist-atlantic-pure",
+      "sources": [
+        {
+          "id": "archives_edu",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "fr_home",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "hist-truman-narrow",
+      "categories": [
+        "Foreign Policy"
+      ],
+      "theySay": "The Truman Doctrine was narrow and temporary!",
+      "youSay": "It opened an open-ended containment blank check. Greece and Turkey were the door.",
+      "stab": "Temporary became decades.",
+      "difficulty": "medium",
+      "relatedClaims": [],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/hist-truman-narrow",
+      "sources": [
+        {
+          "id": "archives_edu",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "fr_home",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "hist-berlin-food",
+      "categories": [
+        "Foreign Policy",
+        "Democracy"
+      ],
+      "theySay": "Berlin Airlift was just food drops!",
+      "youSay": "It was a sovereignty fight over Europe's capital under blockade.",
+      "stab": "Calories were the strategy.",
+      "difficulty": "easy",
+      "relatedClaims": [],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/hist-berlin-food",
+      "sources": [
+        {
+          "id": "archives_edu",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "fr_home",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "hist-interstate-pure",
+      "categories": [
+        "Economy",
+        "Culture Wars"
+      ],
+      "theySay": "Interstates hurt no one!",
+      "youSay": "Urban demolitions and segregated suburb growth were baked into the maps.",
+      "stab": "Ramps have victims.",
+      "difficulty": "medium",
+      "relatedClaims": [],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/hist-interstate-pure",
+      "sources": [
+        {
+          "id": "archives_edu",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "fr_home",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "hist-mapp-technicality",
+      "categories": [
+        "Courts",
+        "Democracy"
+      ],
+      "theySay": "Mapp is a technicality for criminals!",
+      "youSay": "Without exclusion, the Fourth Amendment is a poster. Remedies make rights real.",
+      "stab": "Warrants need teeth.",
+      "difficulty": "medium",
+      "relatedClaims": [],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/hist-mapp-technicality",
+      "sources": [
+        {
+          "id": "archives_edu",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "fr_home",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "hist-gideon-coddle",
+      "categories": [
+        "Courts",
+        "Democracy"
+      ],
+      "theySay": "Gideon just coddles criminals!",
+      "youSay": "Poverty cannot cancel counsel. Fair trials are not optional upgrades.",
+      "stab": "Lawyers are due process.",
+      "difficulty": "easy",
+      "relatedClaims": [],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/hist-gideon-coddle",
+      "sources": [
+        {
+          "id": "archives_edu",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "fr_home",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "hist-great-society-fail",
+      "categories": [
+        "Healthcare",
+        "Economy"
+      ],
+      "theySay": "Great Society proved government fails!",
+      "youSay": "Medicare, Medicaid, and voting protections are measurable. Erasure is not analysis.",
+      "stab": "Seniors still enroll.",
+      "difficulty": "medium",
+      "relatedClaims": [],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/hist-great-society-fail",
+      "sources": [
+        {
+          "id": "archives_edu",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "fr_home",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "hist-miranda-loophole",
+      "categories": [
+        "Courts",
+        "Crime"
+      ],
+      "theySay": "Miranda is only a loophole!",
+      "youSay": "Innocent people get interrogated. Warnings are the floor of custody, not a cheat code.",
+      "stab": "Silence is a right.",
+      "difficulty": "easy",
+      "relatedClaims": [],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/hist-miranda-loophole",
+      "sources": [
+        {
+          "id": "archives_edu",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "fr_home",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "hist-camp-david-soft",
+      "categories": [
+        "Foreign Policy"
+      ],
+      "theySay": "Camp David was soft diplomacy!",
+      "youSay": "A peace treaty after wars is statecraft. Soft is a talk-radio word.",
+      "stab": "Accords are not vibes.",
+      "difficulty": "medium",
+      "relatedClaims": [],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/hist-camp-david-soft",
+      "sources": [
+        {
+          "id": "archives_edu",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "fr_home",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "hist-clinton-impeach-neutral",
+      "categories": [
+        "Democracy",
+        "Whataboutism"
+      ],
+      "theySay": "Clinton impeachment was never political!",
+      "youSay": "Party-line votes and media war say otherwise. Process can be legal and weaponized.",
+      "stab": "Neutral is not the transcript.",
+      "difficulty": "hard",
+      "relatedClaims": [],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/hist-clinton-impeach-neutral",
+      "sources": [
+        {
+          "id": "archives_edu",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "fr_home",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "hist-nclb-testing",
+      "categories": [
+        "Education"
+      ],
+      "theySay": "NCLB testing alone fixes schools!",
+      "youSay": "Measurement without resources becomes punishment. Scores are not a curriculum.",
+      "stab": "Tests are not teachers.",
+      "difficulty": "medium",
+      "relatedClaims": [],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/hist-nclb-testing",
+      "sources": [
+        {
+          "id": "archives_edu",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "fr_home",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "hist-tarp-free-market",
+      "categories": [
+        "Economy"
+      ],
+      "theySay": "TARP proved free markets work!",
+      "youSay": "Socializing bank losses is crisis socialism for capital.",
+      "stab": "Bailouts are not laissez-faire.",
+      "difficulty": "hard",
+      "relatedClaims": [],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/hist-tarp-free-market",
+      "sources": [
+        {
+          "id": "archives_edu",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "fr_home",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "hist-kansas-lab",
+      "categories": [
+        "Economy"
+      ],
+      "theySay": "Tax cuts always pay for themselves!",
+      "youSay": "Kansas ran the experiment. The budget bled until taxes rose again.",
+      "stab": "Lab results beat slogans.",
+      "difficulty": "easy",
+      "relatedClaims": [],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/hist-kansas-lab",
+      "sources": [
+        {
+          "id": "archives_edu",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "fr_home",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "hist-ira-nothing",
+      "categories": [
+        "Climate",
+        "Economy"
+      ],
+      "theySay": "The Inflation Reduction Act did nothing!",
+      "youSay": "Climate manufacturing, drug-cost tools, and tax enforcement are on the books.",
+      "stab": "Denial is not a statute.",
+      "difficulty": "medium",
+      "relatedClaims": [],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/hist-ira-nothing",
+      "sources": [
+        {
+          "id": "archives_edu",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "fr_home",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "hist-loper-housekeeping",
+      "categories": [
+        "Courts",
+        "Democracy"
+      ],
+      "theySay": "Loper Bright was quiet housekeeping!",
+      "youSay": "Ending Chevron shifts policy power from agencies to courts across the regulatory state.",
+      "stab": "Fish cases move mountains.",
+      "difficulty": "hard",
+      "relatedClaims": [],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/hist-loper-housekeeping",
+      "sources": [
+        {
+          "id": "archives_edu",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "fr_home",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "schedule-f-still-fine",
+      "categories": [
+        "Democracy"
+      ],
+      "theySay": "Schedule F is still no big deal!",
+      "youSay": "At-will conversion of policy roles is the personnel kill switch. Continuity is the point.",
+      "stab": "Civil service is the target.",
+      "difficulty": "medium",
+      "relatedClaims": [],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/schedule-f-still-fine",
+      "sources": [
+        {
+          "id": "archives_edu",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "fr_home",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "metals-tariff-vibes",
+      "categories": [
+        "Economy"
+      ],
+      "theySay": "Metals tariffs are just tough vibes!",
+      "youSay": "Proclamations raise input costs across manufacturing. Toughness shows up in prices.",
+      "stab": "Tariffs are taxes.",
+      "difficulty": "easy",
+      "relatedClaims": [],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/metals-tariff-vibes",
+      "sources": [
+        {
+          "id": "archives_edu",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "fr_home",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "dpa-waiver-yawn",
+      "categories": [
+        "Economy",
+        "Democracy"
+      ],
+      "theySay": "DPA waivers are yawn-worthy!",
+      "youSay": "Industrial policy by waiver still needs oversight. Yawns are how capture wins.",
+      "stab": "Waivers are power.",
+      "difficulty": "medium",
+      "relatedClaims": [],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/dpa-waiver-yawn",
+      "sources": [
+        {
+          "id": "archives_edu",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "fr_home",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "housing-eo-stack-ok",
+      "categories": [
+        "Economy",
+        "Democracy"
+      ],
+      "theySay": "Housing EO stacks are normal governance!",
+      "youSay": "Governing housing through cascading orders skips durable statute and public amendment.",
+      "stab": "Stacks are not statutes.",
+      "difficulty": "medium",
+      "relatedClaims": [],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/housing-eo-stack-ok",
+      "sources": [
+        {
+          "id": "archives_edu",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "fr_home",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "elections-mandate-fine",
+      "categories": [
+        "Elections",
+        "Democracy"
+      ],
+      "theySay": "Citizenship-verification mandates are fine!",
+      "youSay": "Unfunded mandates that chill lawful voters are not neutral hygiene.",
+      "stab": "Access is the test.",
+      "difficulty": "hard",
+      "relatedClaims": [],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/elections-mandate-fine",
+      "sources": [
+        {
+          "id": "archives_edu",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "fr_home",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "fema-review-still",
+      "categories": [
+        "Climate",
+        "Democracy"
+      ],
+      "theySay": "Endless FEMA review is still diligence!",
+      "youSay": "Storms accelerate while councils deliberate. Delay is a policy choice.",
+      "stab": "Weather does not wait.",
+      "difficulty": "medium",
+      "relatedClaims": [],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/fema-review-still",
+      "sources": [
+        {
+          "id": "archives_edu",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "fr_home",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "foia-backlog-culture",
+      "categories": [
+        "Democracy",
+        "Media"
+      ],
+      "theySay": "FOIA backlogs are just culture!",
+      "youSay": "Sunshine delayed is sunshine denied. Culture is a euphemism for capacity choices.",
+      "stab": "Days matter.",
+      "difficulty": "easy",
+      "relatedClaims": [],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/foia-backlog-culture",
+      "sources": [
+        {
+          "id": "archives_edu",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "fr_home",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "ai-speed-over-safety",
+      "categories": [
+        "Economy",
+        "Democracy"
+      ],
+      "theySay": "AI speed must beat safety rules!",
+      "youSay": "Speed without enforceable baselines socializes catastrophic downside.",
+      "stab": "Move fast still breaks things.",
+      "difficulty": "hard",
+      "relatedClaims": [],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/ai-speed-over-safety",
+      "sources": [
+        {
+          "id": "archives_edu",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "fr_home",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "lands-dereg-local",
+      "categories": [
+        "Climate",
+        "Democracy"
+      ],
+      "theySay": "Lands deregulation is local freedom!",
+      "youSay": "Federal public lands are a national trust. Local capture is not liberty by default.",
+      "stab": "Commons need rules.",
+      "difficulty": "medium",
+      "relatedClaims": [],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/lands-dereg-local",
+      "sources": [
+        {
+          "id": "archives_edu",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "fr_home",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "intl-exit-memos-ok",
+      "categories": [
+        "Foreign Policy"
+      ],
+      "theySay": "Treaty-exit memos are routine!",
+      "youSay": "Unilateral exits rewire alliances without Senate consent theater. Routine is the tell.",
+      "stab": "Exits have costs.",
+      "difficulty": "medium",
+      "relatedClaims": [],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/intl-exit-memos-ok",
+      "sources": [
+        {
+          "id": "archives_edu",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "fr_home",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "kickapoo-permit-local",
+      "categories": [
+        "Democracy",
+        "Culture Wars"
+      ],
+      "theySay": "Kickapoo permit denial is a local spat!",
+      "youSay": "Presidential permit power over tribal infrastructure is national policy, not gossip.",
+      "stab": "Sovereignty is not a spat.",
+      "difficulty": "hard",
+      "relatedClaims": [],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/kickapoo-permit-local",
+      "sources": [
+        {
+          "id": "archives_edu",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "fr_home",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "college-sports-federal",
+      "categories": [
+        "Education",
+        "Culture Wars"
+      ],
+      "theySay": "Federalizing college sports is harmless!",
+      "youSay": "Culture-war mandates through presidential sports orders are not athletic purity.",
+      "stab": "Scoreboards are not statutes.",
+      "difficulty": "medium",
+      "relatedClaims": [],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/college-sports-federal",
+      "sources": [
+        {
+          "id": "archives_edu",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "fr_home",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "fraud-task-force-optics",
+      "categories": [
+        "Democracy",
+        "Economy"
+      ],
+      "theySay": "Fraud task forces are always optics-free!",
+      "youSay": "Narrative enforcement without strong IG independence risks selective spectacle.",
+      "stab": "Optics need auditors.",
+      "difficulty": "medium",
+      "relatedClaims": [],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/fraud-task-force-optics",
+      "sources": [
+        {
+          "id": "archives_edu",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "fr_home",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "trump-ira-dotgov",
+      "categories": [
+        "Economy",
+        "Media"
+      ],
+      "theySay": "Branding retirement sites after presidents is fine!",
+      "youSay": "Dot-gov benefits infrastructure is not campaign merch.",
+      "stab": "IRA.gov is not a rally.",
+      "difficulty": "easy",
+      "relatedClaims": [],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/trump-ira-dotgov",
+      "sources": [
+        {
+          "id": "archives_edu",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "fr_home",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "both-sides-schedule-f",
+      "categories": [
+        "Whataboutism",
+        "Democracy"
+      ],
+      "theySay": "Both sides did Schedule F!",
+      "youSay": "Show the comparable mass at-will conversion order. Slogans are not FOIA results.",
+      "stab": "Both-sides needs PDFs.",
+      "difficulty": "hard",
+      "relatedClaims": [],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/both-sides-schedule-f",
+      "sources": [
+        {
+          "id": "archives_edu",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "fr_home",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "330-history-cap",
+      "categories": [
+        "Education",
+        "Democracy"
+      ],
+      "theySay": "330 history entries should be the ceiling!",
+      "youSay": "Verifiable room is not a lid. Documents keep existing whether curricula catch up or not.",
+      "stab": "Ceilings are political.",
+      "difficulty": "easy",
+      "relatedClaims": [],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/330-history-cap",
+      "sources": [
+        {
+          "id": "archives_edu",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "fr_home",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "tracker-300-noise",
+      "categories": [
+        "Media",
+        "Democracy"
+      ],
+      "theySay": "300 tracker events are noise!",
+      "youSay": "Pattern visibility requires continuity receipts. Noise is what power calls a stack.",
+      "stab": "Volume can be signal.",
+      "difficulty": "medium",
+      "relatedClaims": [],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/tracker-300-noise",
+      "sources": [
+        {
+          "id": "archives_edu",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "fr_home",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "rebuttal-700-spam",
+      "categories": [
+        "Media",
+        "Education"
+      ],
+      "theySay": "700 rebuttals are spam!",
+      "youSay": "Talking points recycle; sourced counters scale with the recycle rate. Spam is unsourced certainty.",
+      "stab": "Repetition is their strategy.",
+      "difficulty": "easy",
+      "relatedClaims": [],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/rebuttal-700-spam",
+      "sources": [
+        {
+          "id": "archives_edu",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "fr_home",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "pass33-enough",
+      "categories": [
+        "Democracy",
+        "Education"
+      ],
+      "theySay": "Pass 33 should stop expanding!",
+      "youSay": "If claims remain verifiable, the desk keeps filing. Stop is a preference, not a standard.",
+      "stab": "Infinite room, receipts required.",
+      "difficulty": "medium",
+      "relatedClaims": [],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/pass33-enough",
+      "sources": [
+        {
+          "id": "archives_edu",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "fr_home",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "chevron-was-tyranny",
+      "categories": [
+        "Courts",
+        "Democracy"
+      ],
+      "theySay": "Chevron was pure agency tyranny!",
+      "youSay": "Experts under statute are not kings; judges without elections are not automatically democrats.",
+      "stab": "Tyranny needs a definition.",
+      "difficulty": "hard",
+      "relatedClaims": [],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/chevron-was-tyranny",
+      "sources": [
+        {
+          "id": "archives_edu",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "fr_home",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "tarp-main-street-first",
+      "categories": [
+        "Economy",
+        "Whataboutism"
+      ],
+      "theySay": "Bailouts always hit Main Street first!",
+      "youSay": "TARP sequenced bank stabilization ahead of homeowner rescue. Sequence is the tell.",
+      "stab": "First matters.",
+      "difficulty": "medium",
+      "relatedClaims": [],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/tarp-main-street-first",
+      "sources": [
+        {
+          "id": "archives_edu",
+          "title": "National Archives Education",
+          "publisher": "National Archives",
+          "url": "https://www.archives.gov/education",
+          "date": "2020-01-01"
+        },
+        {
+          "id": "fr_home",
+          "title": "Federal Register",
+          "publisher": "National Archives",
+          "url": "https://www.federalregister.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "gao_about",
+          "title": "What GAO Does",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/about/what-gao-does",
+          "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "great-society-vietnam-cancel",
+      "categories": [
+        "Whataboutism",
+        "Healthcare"
+      ],
+      "theySay": "Vietnam cancels Great Society wins!",
+      "youSay": "War waste does not erase Medicare enrollment. Two things can be true.",
+      "stab": "Cancel is not accounting.",
+      "difficulty": "hard",
+      "relatedClaims": [],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/great-society-vietnam-cancel",
       "sources": [
         {
           "id": "archives_edu",

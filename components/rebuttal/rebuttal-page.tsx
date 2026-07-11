@@ -46,6 +46,7 @@ function ShareButton() {
 }
 
 export function RebuttalPage() {
+  const milestoneRebuttal700 = conversationHelpers[699];
   const milestoneRebuttal650 = conversationHelpers[649];
   const milestoneRebuttal600 = conversationHelpers[599];
   const milestoneRebuttal550 = conversationHelpers[549];
@@ -93,7 +94,34 @@ export function RebuttalPage() {
         </section>
 
 
-        {conversationHelpers.length >= 650 && milestoneRebuttal650 && (
+        {conversationHelpers.length >= 700 && milestoneRebuttal700 && (
+          <section
+            className="border-b border-border bg-gradient-to-r from-sunrise/10 via-primary/10 to-sunrise/10"
+            aria-label="700 rebuttals milestone"
+          >
+            <div className="mx-auto flex max-w-6xl flex-col items-center gap-3 px-4 py-6 text-center sm:flex-row sm:justify-center sm:px-6 sm:py-8">
+              <PartyPopper className="size-8 shrink-0 text-sunrise" aria-hidden />
+              <div>
+                <p className="text-lg font-bold tracking-tight sm:text-xl">
+                  700 rebuttals ready
+                </p>
+                <p className="mt-1 text-sm text-muted-foreground">
+                  Pass 33 verifiable-room milestone - Constitutional Convention through
+                  Loper Bright history counters, Schedule F, tariffs, DPA, and elections
+                  mandates.{" "}
+                  <Link
+                    href={rebuttalDetailPath(milestoneRebuttal700.id)}
+                    className="font-medium text-sunrise underline-offset-4 hover:underline"
+                  >
+                    See rebuttal #700 →
+                  </Link>
+                </p>
+              </div>
+            </div>
+          </section>
+        )}
+
+        {conversationHelpers.length >= 650 && conversationHelpers.length < 700 && milestoneRebuttal650 && (
           <section
             className="border-b border-border bg-gradient-to-r from-sunrise/10 via-primary/10 to-sunrise/10"
             aria-label="650 rebuttals milestone"
