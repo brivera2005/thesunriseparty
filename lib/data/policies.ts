@@ -13,7 +13,7 @@ export const policyFixes: PolicyFix[] = [
     economicImpact:
       "RAND analysis projects $450B in annual savings through administrative simplification and bulk purchasing. Average household healthcare costs drop $35,000/year. 2.1 million jobs transition with 5-year retraining guarantees.",
     costOfInaction:
-      "Without reform, medical debt will keep driving roughly two-thirds of personal bankruptcies while 27 million remain uninsured and Medicare Advantage overpayments drain $83B annually from public coffers.",
+      "Without reform, medical debt will keep driving roughly two-thirds of personal bankruptcies while 27 million remain uninsured and Medicare Advantage overpayments drain $83B annually from public coffers. GAO healthcare audits and CBO Medicare baselines show fragmentation and overpayments persist without structural change.",
     costOfInactionCitations: [
       citations.cost_inaction_healthcare,
       citations.gao_healthcare,
@@ -77,7 +77,7 @@ export const policyFixes: PolicyFix[] = [
     economicImpact:
       "EPI modeling shows 15 million jobs created at peak implementation. GDP growth of 1.2% annually from increased consumer spending. Union wage premium would lift median household income 16% within a decade.",
     costOfInaction:
-      "If labor power keeps eroding at current rates, gig workers remain misclassified without benefits, wage stagnation persists despite record profits, and the 17% union wage premium stays out of reach for 90% of workers.",
+      "If labor power keeps eroding at current rates, gig workers remain misclassified without benefits, wage stagnation persists despite record profits, and the 17% union wage premium stays out of reach for 90% of workers. BLS union-membership series remains near historic lows without card-check and misclassification reform.",
     costOfInactionCitations: [
       citations.cost_inaction_labor,
       citations.bls_wages,
@@ -141,7 +141,7 @@ export const policyFixes: PolicyFix[] = [
     economicImpact:
       "Data for Progress models 20 million clean energy jobs and 70% emissions reduction below 2005 levels by 2035. $2.9T in avoided climate disaster costs by 2050. Energy costs drop 40% for households through public utility ownership.",
     costOfInaction:
-      "Current rollback trajectory puts the U.S. on path for 2.8°C warming by 2100, with unmonitored methane leaks from 280,000 well sites and climate damages costing hundreds of billions annually in infrastructure, health, and lost productivity.",
+      "Current rollback trajectory puts the U.S. on path for 2.8°C warming by 2100, with unmonitored methane leaks from 280,000 well sites and climate damages costing hundreds of billions annually in infrastructure, health, and lost productivity. EPA rollback stacks and NOAA climate records make delay permanently costlier.",
     costOfInactionCitations: [
       citations.cost_inaction_climate,
       citations.ipcc_climate,
@@ -205,7 +205,7 @@ export const policyFixes: PolicyFix[] = [
     economicImpact:
       "AVR states saw 94% registration increase among young voters. Reduced election administration costs of $1.2B annually through standardized systems. Increased civic participation correlates with 0.3% GDP growth from policy stability.",
     costOfInaction:
-      "Without federal voting protections, restrictive state laws proliferate - 32 passed in 2025 alone - while 5.2 million citizens remain disenfranchised and gerrymandering locks minority rule into 28 congressional districts.",
+      "Without federal voting protections, restrictive state laws proliferate - 32 passed in 2025 alone - while 5.2 million citizens remain disenfranchised and gerrymandering locks minority rule into 28 congressional districts. Brennan Center tracking after Shelby County shows how preclearance loss enabled rapid restrictive voting changes.",
     costOfInactionCitations: [
       citations.cost_inaction_voting,
       citations.brennan_voting,
@@ -333,7 +333,7 @@ export const policyFixes: PolicyFix[] = [
     economicImpact:
       "CRS and labor analyses show immigrants raise labor-force growth and entrepreneurship. Legalization raises tax compliance and wage floors by reducing employer leverage over unauthorized workers.",
     costOfInaction:
-      "Without court staffing and legal pathways, backlogs keep growing, employers keep a shadowed labor pool, and enforcement-only strategies separate families without fixing root processing failures.",
+      "Without court staffing and legal pathways, backlogs keep growing, employers keep a shadowed labor pool, and enforcement-only strategies separate families without fixing root processing failures. CRS backlog analyses show multi-year court delays deepen without staffing and due-process investment.",
     costOfInactionCitations: [
       citations.cost_inaction_immigration,
       citations.aclu_immigration,

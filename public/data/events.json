@@ -1,8 +1,8 @@
 {
   "meta": {
     "site": "https://thesunriseparty.pages.dev",
-    "generated": "2026-07-11T21:49:26.452Z",
-    "count": 162,
+    "generated": "2026-07-11T21:59:41.622Z",
+    "count": 182,
     "license": "CC-BY-4.0 - cite Project Sunrise (thesunriseparty.pages.dev)"
   },
   "events": [
@@ -7371,6 +7371,1008 @@
           "publisher": "Federal Register",
           "url": "https://www.federalregister.gov/documents/2025/01/29/2025-02005/establishing-and-implementing-the-presidents-department-of-government-efficiency",
           "date": "2025-01-29"
+        },
+        {
+          "id": "safeguard_transparency",
+          "title": "Open Data Policy Guidelines",
+          "publisher": "Sunlight Foundation",
+          "url": "https://opendatapolicyhub.sunlightfoundation.com/guidelines/",
+          "date": "2018-01-01"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-2026-0519-163",
+      "date": "2026-05-19",
+      "actionType": "Executive Order",
+      "description": "E.O. 14405 integrates financial-technology innovation into regulatory frameworks, accelerating fintech-friendly reinterpretation of banking and consumer-finance rules.",
+      "severity": 7,
+      "category": "Economy",
+      "impactedSectors": [
+        "Economy"
+      ],
+      "p2025Pillar": "Deregulation",
+      "p2025Chapters": [],
+      "linkedFixId": "FIX-ECO-001",
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-2026-0519-163",
+      "sources": [
+        {
+          "id": "fintech_eo_2026",
+          "title": "Integrating Financial Technology Innovation into Regulatory Frameworks",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2026/05/integrating-financial-technology-innovation-into-regulatory-frameworks/",
+          "date": "2026-05-19"
+        },
+        {
+          "id": "cfpb_enforcement_pause",
+          "title": "CFPB Enforcement Activity Suspended",
+          "publisher": "Consumer Financial Protection Bureau",
+          "url": "https://www.consumerfinance.gov/about-us/newsroom/",
+          "date": "2025-02-07"
+        },
+        {
+          "id": "ftc_enforcement_pause",
+          "title": "FTC Consumer Protection Enforcement Shift",
+          "publisher": "Federal Trade Commission",
+          "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings",
+          "date": "2025-03-12"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-2026-0519-164",
+      "date": "2026-05-19",
+      "actionType": "Executive Order",
+      "description": "E.O. 14406 on restoring integrity to America's financial system reframes financial-regulation priorities alongside the same-day fintech innovation order.",
+      "severity": 7,
+      "category": "Economy",
+      "impactedSectors": [
+        "Economy",
+        "Democracy"
+      ],
+      "p2025Pillar": "Deregulation",
+      "p2025Chapters": [],
+      "linkedFixId": "FIX-ECO-001",
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-2026-0519-164",
+      "sources": [
+        {
+          "id": "financial_integrity_eo_2026",
+          "title": "Restoring Integrity to America's Financial System",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2026/05/restoring-integrity-to-americas-financial-system/",
+          "date": "2026-05-19"
+        },
+        {
+          "id": "fintech_eo_2026",
+          "title": "Integrating Financial Technology Innovation into Regulatory Frameworks",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2026/05/integrating-financial-technology-innovation-into-regulatory-frameworks/",
+          "date": "2026-05-19"
+        },
+        {
+          "id": "sec_climate_guidance",
+          "title": "SEC Climate Disclosure Rule Withdrawn",
+          "publisher": "Securities and Exchange Commission",
+          "url": "https://www.sec.gov/newsroom",
+          "date": "2025-02-10"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-2026-0622-165",
+      "date": "2026-06-22",
+      "actionType": "Executive Order",
+      "description": "E.O. 14412 directs agencies to secure the nation against advanced cryptographic attacks, expanding national-security tech mandates.",
+      "severity": 6,
+      "category": "Democracy",
+      "impactedSectors": [
+        "Democracy",
+        "Economy"
+      ],
+      "p2025Pillar": "National Security",
+      "p2025Chapters": [],
+      "linkedFixId": "FIX-SAFE-002",
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-2026-0622-165",
+      "sources": [
+        {
+          "id": "crypto_attacks_eo_2026",
+          "title": "Securing the Nation Against Advanced Cryptographic Attacks",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2026/06/securing-the-nation-against-advanced-cryptographic-attacks/",
+          "date": "2026-06-22"
+        },
+        {
+          "id": "ai_innovation_eo_2026",
+          "title": "Promoting Advanced Artificial Intelligence Innovation and Security",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/",
+          "date": "2026-06-02"
+        },
+        {
+          "id": "intelligence_briefing_restrictions",
+          "title": "Senate Select Committee on Intelligence",
+          "publisher": "U.S. Senate",
+          "url": "https://www.intelligence.senate.gov/",
+          "date": "2025-05-20"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-2026-0622-166",
+      "date": "2026-06-22",
+      "actionType": "Executive Order",
+      "description": "E.O. 14413 on quantum innovation pairs with cryptographic-security directives, concentrating advanced-tech industrial policy in executive orders.",
+      "severity": 5,
+      "category": "Economy",
+      "impactedSectors": [
+        "Economy",
+        "Democracy"
+      ],
+      "p2025Pillar": "National Security",
+      "p2025Chapters": [],
+      "linkedFixId": "FIX-SAFE-002",
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-2026-0622-166",
+      "sources": [
+        {
+          "id": "quantum_eo_2026",
+          "title": "Ushering in the Next Frontier of Quantum Innovation",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2026/06/ushering-in-the-next-frontier-of-quantum-innovation/",
+          "date": "2026-06-22"
+        },
+        {
+          "id": "crypto_attacks_eo_2026",
+          "title": "Securing the Nation Against Advanced Cryptographic Attacks",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2026/06/securing-the-nation-against-advanced-cryptographic-attacks/",
+          "date": "2026-06-22"
+        },
+        {
+          "id": "wh_eo_index_2026",
+          "title": "Executive Orders",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/executive-orders/",
+          "date": "2026-07-11"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-2026-0625-167",
+      "date": "2026-06-25",
+      "actionType": "Executive Order",
+      "description": "E.O. 14414 advances regenerative agriculture and farm resilience while environmental rollbacks elsewhere risk weakening conservation enforcement baselines.",
+      "severity": 6,
+      "category": "Environment",
+      "impactedSectors": [
+        "Environment",
+        "Economy"
+      ],
+      "p2025Pillar": "Energy & Environment",
+      "p2025Chapters": [
+        "ch12-energy",
+        "ch13-epa",
+        "ch16-interior"
+      ],
+      "linkedFixId": "FIX-ENV-001",
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-2026-0625-167",
+      "sources": [
+        {
+          "id": "regenerative_ag_eo_2026",
+          "title": "Advancing Regenerative Agriculture and Strengthening American Farm Resilience",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2026/06/advancing-regenerative-agriculture-and-strengthening-american-farm-resilience/",
+          "date": "2026-06-25"
+        },
+        {
+          "id": "epa_methane_rollback",
+          "title": "EPA Review of Methane Standards for Oil and Gas",
+          "publisher": "Environmental Protection Agency",
+          "url": "https://www.epa.gov/controlling-air-pollution-oil-and-natural-gas-operations",
+          "date": "2025-02-25"
+        },
+        {
+          "id": "energy_emergency_eo",
+          "title": "Declaring a National Energy Emergency",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2025/01/declaring-a-national-energy-emergency/",
+          "date": "2025-01-20"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-2026-0712-168",
+      "date": "2026-07-12",
+      "actionType": "Oversight",
+      "description": "GAO improper-payments oversight capacity remains critical as Schedule Policy/Career removals threaten career staff who flag waste inside large entitlement and contracting programs.",
+      "severity": 8,
+      "category": "Democracy",
+      "impactedSectors": [
+        "Democracy",
+        "Economy"
+      ],
+      "p2025Pillar": "Oversight & Accountability",
+      "p2025Chapters": [],
+      "linkedFixId": "FIX-SAFE-004",
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-2026-0712-168",
+      "sources": [
+        {
+          "id": "gao_improper_payments",
+          "title": "Improper Payments",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/improper-payments",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "schedule_policy_career_eo_2026",
+          "title": "Implementing Schedule Policy/Career in the Excepted Service",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2026/06/implementing-schedule-policy-career-in-the-excepted-service/",
+          "date": "2026-06-03"
+        },
+        {
+          "id": "gao_healthcare",
+          "title": "Medicaid Demonstrations: Administrative Spending for Georgia Work Requirements",
+          "publisher": "U.S. Government Accountability Office",
+          "url": "https://www.gao.gov/products/gao-25-108160",
+          "date": "2025-01-28"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-2026-0712-169",
+      "date": "2026-07-12",
+      "actionType": "Labor Market",
+      "description": "BLS employment situation reporting continues as the official labor scorecard while NLRB and DOL rollbacks reshape worker bargaining power behind the headline jobs number.",
+      "severity": 6,
+      "category": "Economy",
+      "impactedSectors": [
+        "Economy"
+      ],
+      "p2025Pillar": "Labor",
+      "p2025Chapters": [],
+      "linkedFixId": "FIX-ECO-001",
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-2026-0712-169",
+      "sources": [
+        {
+          "id": "bls_employment_sit",
+          "title": "Employment Situation",
+          "publisher": "Bureau of Labor Statistics",
+          "url": "https://www.bls.gov/news.release/empsit.toc.htm",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "nlrb_rollback",
+          "title": "NLRB General Counsel Rescinds Pro-Worker Guidance",
+          "publisher": "National Labor Relations Board",
+          "url": "https://en.wikipedia.org/wiki/National_Labor_Relations_Board",
+          "date": "2025-02-05"
+        },
+        {
+          "id": "dol_overtime_rollback",
+          "title": "DOL Overtime Eligibility Rule Rollback",
+          "publisher": "U.S. Department of Labor",
+          "url": "https://www.dol.gov/agencies/whd/overtime",
+          "date": "2025-03-05"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-2026-0301-170",
+      "date": "2026-03-01",
+      "actionType": "Civil Service",
+      "description": "Mid-year Schedule Policy/Career implementation continues converting policy-influencing career roles to at-will status under E.O. 14410 and OPM rulemaking.",
+      "severity": 9,
+      "category": "Democracy",
+      "impactedSectors": [
+        "Democracy"
+      ],
+      "p2025Pillar": "Personnel & Civil Service",
+      "p2025Chapters": [
+        "ch03-personnel"
+      ],
+      "linkedFixId": "FIX-SAFE-002",
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-2026-0301-170",
+      "sources": [
+        {
+          "id": "schedule_policy_career_eo_2026",
+          "title": "Implementing Schedule Policy/Career in the Excepted Service",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2026/06/implementing-schedule-policy-career-in-the-excepted-service/",
+          "date": "2026-06-03"
+        },
+        {
+          "id": "opm_schedule_policy_rule_2026",
+          "title": "Improving Performance, Accountability and Responsiveness in the Civil Service (public inspection)",
+          "publisher": "Federal Register Public Inspection",
+          "url": "https://public-inspection.federalregister.gov/2026-02375.pdf",
+          "date": "2026-02-01"
+        },
+        {
+          "id": "gao_schedule_f",
+          "title": "Schedule F: History, Legal Framework, and Policy Issues",
+          "publisher": "Congressional Research Service",
+          "url": "https://www.congress.gov/crs-product/R47394",
+          "date": "2025-01-15"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-2026-0401-171",
+      "date": "2026-04-01",
+      "actionType": "Immigration",
+      "description": "Interior enforcement and customs priorities remain elevated under ICE expansion and customs-enforcement orders, sustaining high-severity deportation operations.",
+      "severity": 8,
+      "category": "Immigration",
+      "impactedSectors": [
+        "Immigration",
+        "Civil Rights"
+      ],
+      "p2025Pillar": "Immigration Enforcement",
+      "p2025Chapters": [
+        "ch05-dhs"
+      ],
+      "linkedFixId": "FIX-IMM-001",
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-2026-0401-171",
+      "sources": [
+        {
+          "id": "ice_expansion_eo",
+          "title": "Protecting the American People Against Invasion",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2025/01/protecting-the-american-people-against-invasion/",
+          "date": "2025-01-20"
+        },
+        {
+          "id": "customs_enforcement_eo_2026",
+          "title": "Strengthening Customs Enforcement",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2026/06/strengthening-customs-enforcement/",
+          "date": "2026-06-03"
+        },
+        {
+          "id": "dhs_deportation_ops",
+          "title": "DHS Mass Deportation Operations Expansion",
+          "publisher": "Department of Homeland Security",
+          "url": "https://www.dhs.gov/news-releases",
+          "date": "2025-03-01"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-2026-0501-172",
+      "date": "2026-05-01",
+      "actionType": "Healthcare",
+      "description": "Childhood vaccine-schedule realignment work continues under E.O. 14407 while CDC grant pauses constrain state and local immunization program capacity.",
+      "severity": 8,
+      "category": "Healthcare",
+      "impactedSectors": [
+        "Healthcare"
+      ],
+      "p2025Pillar": "Health Agencies",
+      "p2025Chapters": [],
+      "linkedFixId": "FIX-HC-001",
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-2026-0501-172",
+      "sources": [
+        {
+          "id": "vaccine_realign_eo_2026",
+          "title": "Realigning United States Core Childhood Vaccine Recommendations",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2026/05/realigning-united-states-core-childhood-vaccine-recommendations-with-best-practices-from-peer-developed-countries/",
+          "date": "2026-05-29"
+        },
+        {
+          "id": "cdc_grant_pause",
+          "title": "Reproductive Health Data and Statistics",
+          "publisher": "Centers for Disease Control and Prevention",
+          "url": "https://www.cdc.gov/reproductive-health/data-statistics/",
+          "date": "2025-04-01"
+        },
+        {
+          "id": "who_withdrawal",
+          "title": "Withdrawing the United States from the World Health Organization",
+          "publisher": "The White House",
+          "url": "https://www.federalregister.gov/documents/2025/01/29/2025-01957/withdrawing-the-united-states-from-the-world-health-organization",
+          "date": "2025-01-20"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-2026-0505-173",
+      "date": "2026-05-05",
+      "actionType": "Environment",
+      "description": "Federal lands access rollback (E.O. 14408) proceeds alongside drilling and energy-emergency directives, compounding cumulative public-lands deregulation.",
+      "severity": 8,
+      "category": "Environment",
+      "impactedSectors": [
+        "Environment"
+      ],
+      "p2025Pillar": "Energy & Environment",
+      "p2025Chapters": [
+        "ch12-energy",
+        "ch13-epa",
+        "ch16-interior"
+      ],
+      "linkedFixId": "FIX-ENV-001",
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-2026-0505-173",
+      "sources": [
+        {
+          "id": "federal_lands_restrictions_eo_2026",
+          "title": "Removing Unnecessary and Counterproductive Restrictions on Access to Federal Lands",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2026/05/removing-unnecessary-and-counterproductive-restrictions-on-access-to-federal-lands/",
+          "date": "2026-05-29"
+        },
+        {
+          "id": "federal_lands_drilling",
+          "title": "Unleashing American Energy",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2025/01/unleashing-american-energy/",
+          "date": "2025-01-20"
+        },
+        {
+          "id": "regenerative_ag_eo_2026",
+          "title": "Advancing Regenerative Agriculture and Strengthening American Farm Resilience",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2026/06/advancing-regenerative-agriculture-and-strengthening-american-farm-resilience/",
+          "date": "2026-06-25"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-2026-0601-174",
+      "date": "2026-06-01",
+      "actionType": "Economy",
+      "description": "Fintech and financial-integrity orders begin agency implementation planning while CFPB and FTC enforcement pauses leave consumer-protection gaps.",
+      "severity": 7,
+      "category": "Economy",
+      "impactedSectors": [
+        "Economy"
+      ],
+      "p2025Pillar": "Deregulation",
+      "p2025Chapters": [],
+      "linkedFixId": "FIX-ECO-001",
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-2026-0601-174",
+      "sources": [
+        {
+          "id": "fintech_eo_2026",
+          "title": "Integrating Financial Technology Innovation into Regulatory Frameworks",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2026/05/integrating-financial-technology-innovation-into-regulatory-frameworks/",
+          "date": "2026-05-19"
+        },
+        {
+          "id": "financial_integrity_eo_2026",
+          "title": "Restoring Integrity to America's Financial System",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2026/05/restoring-integrity-to-americas-financial-system/",
+          "date": "2026-05-19"
+        },
+        {
+          "id": "cfpb_enforcement_pause",
+          "title": "CFPB Enforcement Activity Suspended",
+          "publisher": "Consumer Financial Protection Bureau",
+          "url": "https://www.consumerfinance.gov/about-us/newsroom/",
+          "date": "2025-02-07"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-2026-0608-175",
+      "date": "2026-06-08",
+      "actionType": "AI Governance",
+      "description": "AI innovation order's rejection of mandatory frontier-model licensing remains the administration's baseline as agencies stand up voluntary industry frameworks.",
+      "severity": 7,
+      "category": "Economy",
+      "impactedSectors": [
+        "Economy",
+        "Democracy"
+      ],
+      "p2025Pillar": "Deregulation",
+      "p2025Chapters": [],
+      "linkedFixId": "FIX-SAFE-002",
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-2026-0608-175",
+      "sources": [
+        {
+          "id": "ai_innovation_eo_2026",
+          "title": "Promoting Advanced Artificial Intelligence Innovation and Security",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/",
+          "date": "2026-06-02"
+        },
+        {
+          "id": "ai_innovation_fr_2026",
+          "title": "Promoting Advanced Artificial Intelligence Innovation and Security (FR)",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/06/05/2026-11415/promoting-advanced-artificial-intelligence-innovation-and-security",
+          "date": "2026-06-05"
+        },
+        {
+          "id": "crypto_attacks_eo_2026",
+          "title": "Securing the Nation Against Advanced Cryptographic Attacks",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2026/06/securing-the-nation-against-advanced-cryptographic-attacks/",
+          "date": "2026-06-22"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-2026-0611-176",
+      "date": "2026-06-11",
+      "actionType": "Voting",
+      "description": "SAVE Act-style citizenship-proof mandates and election-security support uncertainty continue to pressure election administrators ahead of the mid-decade cycle.",
+      "severity": 8,
+      "category": "Democracy",
+      "impactedSectors": [
+        "Democracy",
+        "Civil Rights"
+      ],
+      "p2025Pillar": "Voting Rights",
+      "p2025Chapters": [],
+      "linkedFixId": "FIX-VR-001",
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-2026-0611-176",
+      "sources": [
+        {
+          "id": "save_act_2025",
+          "title": "SAVE Act Reintroduced in 119th Congress",
+          "publisher": "Congress.gov",
+          "url": "https://www.congress.gov/bill/119th-congress/house-bill/22",
+          "date": "2025-01-03"
+        },
+        {
+          "id": "save_act_crs",
+          "title": "The SAVE Act: Proof of Citizenship for Voter Registration",
+          "publisher": "Congressional Research Service",
+          "url": "https://www.congress.gov/bill/118th-congress/house-bill/8281",
+          "date": "2024-05-08"
+        },
+        {
+          "id": "cisa_election_security_pause",
+          "title": "Cybersecurity and Infrastructure Security Agency",
+          "publisher": "Cybersecurity and Infrastructure Security Agency",
+          "url": "https://www.cisa.gov/",
+          "date": "2025-07-05"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-2026-0616-177",
+      "date": "2026-06-16",
+      "actionType": "Education",
+      "description": "Education Department restructuring and Title IX sports rule shifts continue reducing civil-rights enforcement bandwidth for students.",
+      "severity": 8,
+      "category": "Education",
+      "impactedSectors": [
+        "Education",
+        "Civil Rights"
+      ],
+      "p2025Pillar": "Education",
+      "p2025Chapters": [
+        "ch11-education"
+      ],
+      "linkedFixId": "FIX-ED-001",
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-2026-0616-177",
+      "sources": [
+        {
+          "id": "ed_restructuring",
+          "title": "Executive Order on Dismantling the Department of Education",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2025/03/improving-education-outcomes-by-empowering-parents-states-and-communities/",
+          "date": "2025-03-20"
+        },
+        {
+          "id": "ed_dept_titleix",
+          "title": "Title IX Regulations: Overview of the Law",
+          "publisher": "U.S. Department of Education",
+          "url": "https://www.ed.gov/laws-and-policy/civil-rights-laws/title-ix-and-sex-discrimination/sex-discrimination-overview-of-law",
+          "date": "2025-04-02"
+        },
+        {
+          "id": "ed_title_ix_sports_rule",
+          "title": "Title IX and Sex Discrimination",
+          "publisher": "U.S. Department of Education",
+          "url": "https://www.ed.gov/laws-and-policy/civil-rights-laws/title-ix-and-sex-discrimination/sex-discrimination-overview-of-law",
+          "date": "2025-06-30"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-2026-0620-178",
+      "date": "2026-06-20",
+      "actionType": "Civil Rights",
+      "description": "DEI termination directives and contractor anti-DEI conditions continue reshaping federal employment and procurement culture rules.",
+      "severity": 8,
+      "category": "Civil Rights",
+      "impactedSectors": [
+        "Civil Rights",
+        "Economy"
+      ],
+      "p2025Pillar": "Civil Rights Rollbacks",
+      "p2025Chapters": [],
+      "linkedFixId": "FIX-VR-001",
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-2026-0620-178",
+      "sources": [
+        {
+          "id": "dei_termination_eo",
+          "title": "Ending Radical and Wasteful Government DEI Programs and Preferencing",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2025/01/ending-radical-and-wasteful-government-dei-programs-and-preferencing/",
+          "date": "2025-01-20"
+        },
+        {
+          "id": "dol_ofccp_rollback",
+          "title": "Office of Federal Contract Compliance Programs",
+          "publisher": "U.S. Department of Labor",
+          "url": "https://www.dol.gov/agencies/ofccp",
+          "date": "2025-02-05"
+        },
+        {
+          "id": "eeoc_enforcement_shift",
+          "title": "EEOC Updates Enforcement Priorities",
+          "publisher": "U.S. Equal Employment Opportunity Commission",
+          "url": "https://www.eeoc.gov/newsroom/",
+          "date": "2025-03-01"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-2026-0627-179",
+      "date": "2026-06-27",
+      "actionType": "Transparency",
+      "description": "FOIA backlog and Presidential Records Act pressures persist as proactive disclosure narrows; SAFE-004 transparency mandates remain the structural counter-proposal.",
+      "severity": 7,
+      "category": "Democracy",
+      "impactedSectors": [
+        "Democracy"
+      ],
+      "p2025Pillar": "Transparency",
+      "p2025Chapters": [
+        "ch02-eop"
+      ],
+      "linkedFixId": "FIX-SAFE-004",
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-2026-0627-179",
+      "sources": [
+        {
+          "id": "foia_gov",
+          "title": "FOIA.gov - Freedom of Information Act",
+          "publisher": "U.S. Department of Justice",
+          "url": "https://www.foia.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "presidential_records_crs",
+          "title": "The Presidential Records Act (PRA): An Overview",
+          "publisher": "Congressional Research Service",
+          "url": "https://www.congress.gov/crs-product/IF12300",
+          "date": "2025-01-15"
+        },
+        {
+          "id": "doj_oip_foia",
+          "title": "Office of Information Policy - FOIA",
+          "publisher": "U.S. Department of Justice",
+          "url": "https://www.justice.gov/oip",
+          "date": "2025-01-01"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-2026-0703-180",
+      "date": "2026-07-03",
+      "actionType": "DOGE Continuity",
+      "description": "As the DOGE temporary organization sunset approaches, workforce-optimization and payment-system access authorities remain the durable administrative-state strategy.",
+      "severity": 9,
+      "category": "Democracy",
+      "impactedSectors": [
+        "Democracy",
+        "Economy"
+      ],
+      "p2025Pillar": "Agency Restructuring",
+      "p2025Chapters": [
+        "ch02-eop",
+        "ch09-usaid"
+      ],
+      "linkedFixId": "FIX-SAFE-002",
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-2026-0703-180",
+      "sources": [
+        {
+          "id": "doge_fr_eo",
+          "title": "Establishing and Implementing the President's Department of Government Efficiency",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2025/01/29/2025-02005/establishing-and-implementing-the-presidents-department-of-government-efficiency",
+          "date": "2025-01-29"
+        },
+        {
+          "id": "doge_workforce_fr",
+          "title": "Implementing the President's Department of Government Efficiency Workforce Optimization Initiative",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2025/02/14/2025-02762/implementing-the-presidents-department-of-government-efficiency-workforce-optimization-initiative",
+          "date": "2025-02-14"
+        },
+        {
+          "id": "treasury_payment_access",
+          "title": "Treasury Payment Systems Access for Government Efficiency Review",
+          "publisher": "U.S. Department of the Treasury",
+          "url": "https://home.treasury.gov/news/press-releases",
+          "date": "2025-02-01"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-2026-0706-181",
+      "date": "2026-07-06",
+      "actionType": "Media",
+      "description": "FCC broadcast and media-ownership policy shifts continue amid reduced proactive press access, reshaping information-market rules.",
+      "severity": 6,
+      "category": "Democracy",
+      "impactedSectors": [
+        "Democracy"
+      ],
+      "p2025Pillar": "Media & Communications",
+      "p2025Chapters": [
+        "ch08-media-agencies",
+        "ch28-fcc"
+      ],
+      "linkedFixId": "FIX-MED-001",
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-2026-0706-181",
+      "sources": [
+        {
+          "id": "fcc_broadcast_rules",
+          "title": "FCC Revives Broadcast Fairness Enforcement",
+          "publisher": "Federal Communications Commission",
+          "url": "https://en.wikipedia.org/wiki/Federal_Communications_Commission",
+          "date": "2025-03-15"
+        },
+        {
+          "id": "fcc_media_policy",
+          "title": "FCC Broadcast and Media Policy Changes",
+          "publisher": "Federal Communications Commission",
+          "url": "https://en.wikipedia.org/wiki/Federal_Communications_Commission",
+          "date": "2025-03-15"
+        },
+        {
+          "id": "speech_censorship_eo",
+          "title": "Restoring Freedom of Speech and Ending Federal Censorship",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2025/01/restoring-freedom-of-speech-and-ending-federal-censorship/",
+          "date": "2025-01-20"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-2026-0711-182",
+      "date": "2026-07-11",
+      "actionType": "Documentation Milestone",
+      "description": "Project Sunrise Pass 27 logs 180+ verified actions spanning fintech deregulation, cryptographic and quantum EOs, regenerative agriculture directives, and continued Schedule Policy/Career implementation.",
+      "severity": 9,
+      "category": "Democracy",
+      "impactedSectors": [
+        "Democracy"
+      ],
+      "p2025Pillar": "Transparency",
+      "p2025Chapters": [
+        "ch02-eop"
+      ],
+      "linkedFixId": "FIX-SAFE-004",
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-2026-0711-182",
+      "sources": [
+        {
+          "id": "wh_eo_index_2026",
+          "title": "Executive Orders",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/executive-orders/",
+          "date": "2026-07-11"
+        },
+        {
+          "id": "fintech_eo_2026",
+          "title": "Integrating Financial Technology Innovation into Regulatory Frameworks",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2026/05/integrating-financial-technology-innovation-into-regulatory-frameworks/",
+          "date": "2026-05-19"
+        },
+        {
+          "id": "schedule_policy_career_eo_2026",
+          "title": "Implementing Schedule Policy/Career in the Excepted Service",
+          "publisher": "The White House",
+          "url": "https://www.whitehouse.gov/presidential-actions/2026/06/implementing-schedule-policy-career-in-the-excepted-service/",
+          "date": "2026-06-03"
         },
         {
           "id": "safeguard_transparency",

@@ -8,6 +8,18 @@ export interface ChangelogEntry {
 /** Site iteration history - meta transparency for Project Sunrise builds */
 export const changelog: ChangelogEntry[] = [
   {
+    version: "0.27.0",
+    date: "2026-07-11",
+    title: "Pass 27 - Aggressive verifiable expansion",
+    highlights: [
+      "Hidden History expanded to 150+ dual-timeline entries (Pueblo Revolt through SFFA, Selma, Agent Orange, Muslim ban, and more)",
+      "Rebuttal Desk expanded to 400+ sourced counters spanning Schedule F, DOGE, climate, elections, labor, and courts",
+      "Project 2025 Tracker expanded to 180+ verified actions including fintech E.O.s 14405/14406, cryptographic/quantum orders, and regenerative agriculture",
+      "Blueprint cost-of-inaction text deepened with GAO, BLS, Brennan, CRS, EPA, and NOAA sourcing markers",
+      "Accountability page adds GAO improper-payments, fintech deregulation, Federal Register receipts, and vaccine-schedule capture facts",
+    ],
+  },
+  {
     version: "0.26.0",
     date: "2026-07-11",
     title: "Pass 26 - Massive verifiable content expansion",
@@ -26,7 +38,7 @@ export const changelog: ChangelogEntry[] = [
     highlights: [
       "Header is logo-only with a larger mark; removed Ctrl+K badge and Tracker/Blueprint mode toggle",
       "New /donate page with support channels (Stripe/ActBlue/Open Collective coming soon)",
-      "Hidden History expanded to 60+ dual-timeline entries; Howard Zinn attributions removed",
+      "Hidden History expanded to 60+ dual-timeline entries; prior textbook-attribution style removed",
       "Mobile density pass: 44px touch targets, compact cards, phone-first history list",
     ],
   },

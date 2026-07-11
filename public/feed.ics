@@ -6,6 +6,32 @@ METHOD:PUBLISH
 X-WR-CALNAME:Project Sunrise Tracker
 X-WR-CALDESC:Verified Project 2025 administrative actions
 BEGIN:VEVENT
+UID:EVT-2026-0712-168@thesunriseparty.pages.dev
+DTSTAMP:20260711T120000Z
+DTSTART;VALUE=DATE:20260712
+SUMMARY:Oversight: GAO improper-payments oversight capacity remains critica
+ l as Schedule Policy/Career removals threaten career staff who …
+DESCRIPTION:GAO improper-payments oversight capacity remains critical as Sc
+ hedule Policy/Career removals threaten career staff who flag waste inside 
+ large entitlement and contracting programs.\\n\\nSeverity: 8/10\\nCategory
+ : Democracy\\nSectors: Democracy\, Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0712-168
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2026-0712-169@thesunriseparty.pages.dev
+DTSTAMP:20260711T120000Z
+DTSTART;VALUE=DATE:20260712
+SUMMARY:Labor Market: BLS employment situation reporting continues as the o
+ fficial labor scorecard while NLRB and DOL rollbacks reshape worke…
+DESCRIPTION:BLS employment situation reporting continues as the official la
+ bor scorecard while NLRB and DOL rollbacks reshape worker bargaining power
+  behind the headline jobs number.\\n\\nSeverity: 6/10\\nCategory: Economy\
+ \nSectors: Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0712-169
+CATEGORIES:Economy
+END:VEVENT
+BEGIN:VEVENT
 UID:EVT-2026-0711-162@thesunriseparty.pages.dev
 DTSTAMP:20260711T120000Z
 DTSTART;VALUE=DATE:20260711
@@ -17,6 +43,20 @@ DESCRIPTION:Project Sunrise Pass 26 logs 160+ verified administrative actio
  tation\, AI deregulation\, lands access rollbacks\, and health-agency poli
  ticization.\\n\\nSeverity: 9/10\\nCategory: Democracy\\nSectors: Democracy
 URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0711-162
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2026-0711-182@thesunriseparty.pages.dev
+DTSTAMP:20260711T120000Z
+DTSTART;VALUE=DATE:20260711
+SUMMARY:Documentation Milestone: Project Sunrise Pass 27 logs 180+ verified
+  actions spanning fintech deregulation\, cryptographic and quantum EOs\, r
+ egene…
+DESCRIPTION:Project Sunrise Pass 27 logs 180+ verified actions spanning fin
+ tech deregulation\, cryptographic and quantum EOs\, regenerative agricultu
+ re directives\, and continued Schedule Policy/Career implementation.\\n\\n
+ Severity: 9/10\\nCategory: Democracy\\nSectors: Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0711-182
 CATEGORIES:Democracy
 END:VEVENT
 BEGIN:VEVENT
@@ -58,6 +98,18 @@ URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0708-149
 CATEGORIES:Democracy
 END:VEVENT
 BEGIN:VEVENT
+UID:EVT-2026-0706-181@thesunriseparty.pages.dev
+DTSTAMP:20260711T120000Z
+DTSTART;VALUE=DATE:20260706
+SUMMARY:Media: FCC broadcast and media-ownership policy shifts continue ami
+ d reduced proactive press access\, reshaping information-mar…
+DESCRIPTION:FCC broadcast and media-ownership policy shifts continue amid r
+ educed proactive press access\, reshaping information-market rules.\\n\\nS
+ everity: 6/10\\nCategory: Democracy\\nSectors: Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0706-181
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
 UID:EVT-2026-0705-160@thesunriseparty.pages.dev
 DTSTAMP:20260711T120000Z
 DTSTART;VALUE=DATE:20260705
@@ -82,6 +134,19 @@ DESCRIPTION:Statutory sunset date for the U.S. DOGE Service Temporary Organ
  rce directives persist beyond the temporary shell.\\n\\nSeverity: 9/10\\nC
  ategory: Democracy\\nSectors: Democracy\, Economy
 URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0704-148
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2026-0703-180@thesunriseparty.pages.dev
+DTSTAMP:20260711T120000Z
+DTSTART;VALUE=DATE:20260703
+SUMMARY:DOGE Continuity: As the DOGE temporary organization sunset approach
+ es\, workforce-optimization and payment-system access authorities rema…
+DESCRIPTION:As the DOGE temporary organization sunset approaches\, workforc
+ e-optimization and payment-system access authorities remain the durable ad
+ ministrative-state strategy.\\n\\nSeverity: 9/10\\nCategory: Democracy\\nS
+ ectors: Democracy\, Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0703-180
 CATEGORIES:Democracy
 END:VEVENT
 BEGIN:VEVENT
@@ -110,6 +175,19 @@ URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0628-159
 CATEGORIES:Civil Rights
 END:VEVENT
 BEGIN:VEVENT
+UID:EVT-2026-0627-179@thesunriseparty.pages.dev
+DTSTAMP:20260711T120000Z
+DTSTART;VALUE=DATE:20260627
+SUMMARY:Transparency: FOIA backlog and Presidential Records Act pressures p
+ ersist as proactive disclosure narrows\; SAFE-004 transparency mand…
+DESCRIPTION:FOIA backlog and Presidential Records Act pressures persist as 
+ proactive disclosure narrows\; SAFE-004 transparency mandates remain the s
+ tructural counter-proposal.\\n\\nSeverity: 7/10\\nCategory: Democracy\\nSe
+ ctors: Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0627-179
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
 UID:EVT-2026-0625-146@thesunriseparty.pages.dev
 DTSTAMP:20260711T120000Z
 DTSTART;VALUE=DATE:20260625
@@ -120,6 +198,19 @@ DESCRIPTION:Regenerative agriculture executive order reframes farm policy p
  aken conservation enforcement if paired with EPA rollbacks.\\n\\nSeverity:
   5/10\\nCategory: Environment\\nSectors: Environment\, Economy
 URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0625-146
+CATEGORIES:Environment
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2026-0625-167@thesunriseparty.pages.dev
+DTSTAMP:20260711T120000Z
+DTSTART;VALUE=DATE:20260625
+SUMMARY:Executive Order: E.O. 14414 advances regenerative agriculture and f
+ arm resilience while environmental rollbacks elsewhere risk weakening…
+DESCRIPTION:E.O. 14414 advances regenerative agriculture and farm resilienc
+ e while environmental rollbacks elsewhere risk weakening conservation enfo
+ rcement baselines.\\n\\nSeverity: 6/10\\nCategory: Environment\\nSectors: 
+ Environment\, Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0625-167
 CATEGORIES:Environment
 END:VEVENT
 BEGIN:VEVENT
@@ -136,6 +227,31 @@ URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0622-145
 CATEGORIES:Democracy
 END:VEVENT
 BEGIN:VEVENT
+UID:EVT-2026-0622-165@thesunriseparty.pages.dev
+DTSTAMP:20260711T120000Z
+DTSTART;VALUE=DATE:20260622
+SUMMARY:Executive Order: E.O. 14412 directs agencies to secure the nation a
+ gainst advanced cryptographic attacks\, expanding national-security te…
+DESCRIPTION:E.O. 14412 directs agencies to secure the nation against advanc
+ ed cryptographic attacks\, expanding national-security tech mandates.\\n\\
+ nSeverity: 6/10\\nCategory: Democracy\\nSectors: Democracy\, Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0622-165
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2026-0622-166@thesunriseparty.pages.dev
+DTSTAMP:20260711T120000Z
+DTSTART;VALUE=DATE:20260622
+SUMMARY:Executive Order: E.O. 14413 on quantum innovation pairs with crypto
+ graphic-security directives\, concentrating advanced-tech industrial p…
+DESCRIPTION:E.O. 14413 on quantum innovation pairs with cryptographic-secur
+ ity directives\, concentrating advanced-tech industrial policy in executiv
+ e orders.\\n\\nSeverity: 5/10\\nCategory: Economy\\nSectors: Economy\, Dem
+ ocracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0622-166
+CATEGORIES:Economy
+END:VEVENT
+BEGIN:VEVENT
 UID:EVT-2026-0620-144@thesunriseparty.pages.dev
 DTSTAMP:20260711T120000Z
 DTSTART;VALUE=DATE:20260620
@@ -149,6 +265,18 @@ URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0620-144
 CATEGORIES:Healthcare
 END:VEVENT
 BEGIN:VEVENT
+UID:EVT-2026-0620-178@thesunriseparty.pages.dev
+DTSTAMP:20260711T120000Z
+DTSTART;VALUE=DATE:20260620
+SUMMARY:Civil Rights: DEI termination directives and contractor anti-DEI co
+ nditions continue reshaping federal employment and procurement cul…
+DESCRIPTION:DEI termination directives and contractor anti-DEI conditions c
+ ontinue reshaping federal employment and procurement culture rules.\\n\\nS
+ everity: 8/10\\nCategory: Civil Rights\\nSectors: Civil Rights\, Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0620-178
+CATEGORIES:Civil Rights
+END:VEVENT
+BEGIN:VEVENT
 UID:EVT-2026-0618-158@thesunriseparty.pages.dev
 DTSTAMP:20260711T120000Z
 DTSTART;VALUE=DATE:20260618
@@ -159,6 +287,18 @@ DESCRIPTION:CFPB and FTC enforcement pauses leave consumer fraud and unfair
  \nSeverity: 7/10\\nCategory: Economy\\nSectors: Economy
 URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0618-158
 CATEGORIES:Economy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2026-0616-177@thesunriseparty.pages.dev
+DTSTAMP:20260711T120000Z
+DTSTART;VALUE=DATE:20260616
+SUMMARY:Education: Education Department restructuring and Title IX sports r
+ ule shifts continue reducing civil-rights enforcement bandwidth…
+DESCRIPTION:Education Department restructuring and Title IX sports rule shi
+ fts continue reducing civil-rights enforcement bandwidth for students.\\n\
+ \nSeverity: 8/10\\nCategory: Education\\nSectors: Education\, Civil Rights
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0616-177
+CATEGORIES:Education
 END:VEVENT
 BEGIN:VEVENT
 UID:EVT-2026-0615-143@thesunriseparty.pages.dev
@@ -186,6 +326,19 @@ URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0612-157
 CATEGORIES:Environment
 END:VEVENT
 BEGIN:VEVENT
+UID:EVT-2026-0611-176@thesunriseparty.pages.dev
+DTSTAMP:20260711T120000Z
+DTSTART;VALUE=DATE:20260611
+SUMMARY:Voting: SAVE Act-style citizenship-proof mandates and election-secu
+ rity support uncertainty continue to pressure election admin…
+DESCRIPTION:SAVE Act-style citizenship-proof mandates and election-security
+  support uncertainty continue to pressure election administrators ahead of
+  the mid-decade cycle.\\n\\nSeverity: 8/10\\nCategory: Democracy\\nSectors
+ : Democracy\, Civil Rights
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0611-176
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
 UID:EVT-2026-0610-142@thesunriseparty.pages.dev
 DTSTAMP:20260711T120000Z
 DTSTART;VALUE=DATE:20260610
@@ -197,6 +350,19 @@ DESCRIPTION:Independent trackers continue cross-referencing Schedule Policy
  cy\\nSectors: Democracy
 URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0610-142
 CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2026-0608-175@thesunriseparty.pages.dev
+DTSTAMP:20260711T120000Z
+DTSTART;VALUE=DATE:20260608
+SUMMARY:AI Governance: AI innovation order's rejection of mandatory frontie
+ r-model licensing remains the administration's baseline as agencies…
+DESCRIPTION:AI innovation order's rejection of mandatory frontier-model lic
+ ensing remains the administration's baseline as agencies stand up voluntar
+ y industry frameworks.\\n\\nSeverity: 7/10\\nCategory: Economy\\nSectors: 
+ Economy\, Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0608-175
+CATEGORIES:Economy
 END:VEVENT
 BEGIN:VEVENT
 UID:EVT-2026-0605-137@thesunriseparty.pages.dev
@@ -251,6 +417,18 @@ URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0602-134
 CATEGORIES:Economy
 END:VEVENT
 BEGIN:VEVENT
+UID:EVT-2026-0601-174@thesunriseparty.pages.dev
+DTSTAMP:20260711T120000Z
+DTSTART;VALUE=DATE:20260601
+SUMMARY:Economy: Fintech and financial-integrity orders begin agency implem
+ entation planning while CFPB and FTC enforcement pauses leave…
+DESCRIPTION:Fintech and financial-integrity orders begin agency implementat
+ ion planning while CFPB and FTC enforcement pauses leave consumer-protecti
+ on gaps.\\n\\nSeverity: 7/10\\nCategory: Economy\\nSectors: Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0601-174
+CATEGORIES:Economy
+END:VEVENT
+BEGIN:VEVENT
 UID:EVT-2026-0501-132@thesunriseparty.pages.dev
 DTSTAMP:20260711T120000Z
 DTSTART;VALUE=DATE:20260529
@@ -289,6 +467,32 @@ URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0520-156
 CATEGORIES:Healthcare
 END:VEVENT
 BEGIN:VEVENT
+UID:EVT-2026-0519-163@thesunriseparty.pages.dev
+DTSTAMP:20260711T120000Z
+DTSTART;VALUE=DATE:20260519
+SUMMARY:Executive Order: E.O. 14405 integrates financial-technology innovat
+ ion into regulatory frameworks\, accelerating fintech-friendly reinter…
+DESCRIPTION:E.O. 14405 integrates financial-technology innovation into regu
+ latory frameworks\, accelerating fintech-friendly reinterpretation of bank
+ ing and consumer-finance rules.\\n\\nSeverity: 7/10\\nCategory: Economy\\n
+ Sectors: Economy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0519-163
+CATEGORIES:Economy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2026-0519-164@thesunriseparty.pages.dev
+DTSTAMP:20260711T120000Z
+DTSTART;VALUE=DATE:20260519
+SUMMARY:Executive Order: E.O. 14406 on restoring integrity to America's fin
+ ancial system reframes financial-regulation priorities alongside the …
+DESCRIPTION:E.O. 14406 on restoring integrity to America's financial system
+  reframes financial-regulation priorities alongside the same-day fintech i
+ nnovation order.\\n\\nSeverity: 7/10\\nCategory: Economy\\nSectors: Econom
+ y\, Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0519-164
+CATEGORIES:Economy
+END:VEVENT
+BEGIN:VEVENT
 UID:EVT-2026-0515-155@thesunriseparty.pages.dev
 DTSTAMP:20260711T120000Z
 DTSTART;VALUE=DATE:20260515
@@ -300,6 +504,32 @@ DESCRIPTION:ICE expansion and deportation operational directives continue l
  Civil Rights
 URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0515-155
 CATEGORIES:Immigration
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2026-0505-173@thesunriseparty.pages.dev
+DTSTAMP:20260711T120000Z
+DTSTART;VALUE=DATE:20260505
+SUMMARY:Environment: Federal lands access rollback (E.O. 14408) proceeds al
+ ongside drilling and energy-emergency directives\, compounding cum…
+DESCRIPTION:Federal lands access rollback (E.O. 14408) proceeds alongside d
+ rilling and energy-emergency directives\, compounding cumulative public-la
+ nds deregulation.\\n\\nSeverity: 8/10\\nCategory: Environment\\nSectors: E
+ nvironment
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0505-173
+CATEGORIES:Environment
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2026-0501-172@thesunriseparty.pages.dev
+DTSTAMP:20260711T120000Z
+DTSTART;VALUE=DATE:20260501
+SUMMARY:Healthcare: Childhood vaccine-schedule realignment work continues u
+ nder E.O. 14407 while CDC grant pauses constrain state and local…
+DESCRIPTION:Childhood vaccine-schedule realignment work continues under E.O
+ . 14407 while CDC grant pauses constrain state and local immunization prog
+ ram capacity.\\n\\nSeverity: 8/10\\nCategory: Healthcare\\nSectors: Health
+ care
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0501-172
+CATEGORIES:Healthcare
 END:VEVENT
 BEGIN:VEVENT
 UID:EVT-2026-0430-131@thesunriseparty.pages.dev
@@ -327,6 +557,19 @@ URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0415-154
 CATEGORIES:Education
 END:VEVENT
 BEGIN:VEVENT
+UID:EVT-2026-0401-171@thesunriseparty.pages.dev
+DTSTAMP:20260711T120000Z
+DTSTART;VALUE=DATE:20260401
+SUMMARY:Immigration: Interior enforcement and customs priorities remain ele
+ vated under ICE expansion and customs-enforcement orders\, sustain…
+DESCRIPTION:Interior enforcement and customs priorities remain elevated und
+ er ICE expansion and customs-enforcement orders\, sustaining high-severity
+  deportation operations.\\n\\nSeverity: 8/10\\nCategory: Immigration\\nSec
+ tors: Immigration\, Civil Rights
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0401-171
+CATEGORIES:Immigration
+END:VEVENT
+BEGIN:VEVENT
 UID:EVT-2026-0326-139@thesunriseparty.pages.dev
 DTSTAMP:20260711T120000Z
 DTSTART;VALUE=DATE:20260326
@@ -350,6 +593,19 @@ DESCRIPTION:NLRB and DOL rollback trajectory continues to weaken union reco
  ters.\\n\\nSeverity: 7/10\\nCategory: Economy\\nSectors: Economy
 URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0315-153
 CATEGORIES:Economy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-2026-0301-170@thesunriseparty.pages.dev
+DTSTAMP:20260711T120000Z
+DTSTART;VALUE=DATE:20260301
+SUMMARY:Civil Service: Mid-year Schedule Policy/Career implementation conti
+ nues converting policy-influencing career roles to at-will status u…
+DESCRIPTION:Mid-year Schedule Policy/Career implementation continues conver
+ ting policy-influencing career roles to at-will status under E.O. 14410 an
+ d OPM rulemaking.\\n\\nSeverity: 9/10\\nCategory: Democracy\\nSectors: Dem
+ ocracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0301-170
+CATEGORIES:Democracy
 END:VEVENT
 BEGIN:VEVENT
 UID:EVT-2026-0215-152@thesunriseparty.pages.dev

@@ -112,6 +112,34 @@ export const accountabilityFacts: AccountabilityFact[] = [
     body: "Former officials become lobbyists and 'strategic advisors' who sell access rather than register every contact. Lifetime lobbying bans for senior officials (SAFE-001) and 48-hour contact publication (SAFE-004) treat capture as a structural problem, not a resume perk.",
     sourceIds: ["safeguard_anticorruption", "safeguard_transparency"],
   },
+
+  // Pass 27 accountability
+  {
+    title: "GAO improper payments dwarf campaign talking points",
+    body: "GAO's improper-payments portfolio documents tens of billions in annual payment errors across major programs. Schedule Policy/Career removals that thin career oversight staff raise the risk those errors grow while political messaging claims efficiency.",
+    sourceIds: ["gao_improper_payments", "schedule_policy_career_eo_2026", "safeguard_transparency"],
+  },
+  {
+    title: "Fintech deregulation without consumer cops",
+    body: "White House E.O.s 14405 and 14406 push fintech-friendly regulatory integration while CFPB and FTC enforcement capacity is paused or narrowed. Innovation without cops on the beat is a gift to predators in the payment stack.",
+    sourceIds: ["fintech_eo_2026", "financial_integrity_eo_2026", "cfpb_enforcement_pause"],
+  },
+  {
+    title: "Federal Register is the receipt book",
+    body: "Every durable executive restructuring eventually hits the Federal Register. Project Sunrise treats FR publications and White House presidential-action pages as primary evidence - not influencer summaries - because the official journal is where agencies must publish.",
+    sourceIds: ["doge_fr_eo", "wh_eo_index_2026", "safeguard_transparency"],
+  },
+  {
+    title: "OpenSecrets and FEC still understate dark money",
+    body: "Even with FEC filings and OpenSecrets aggregation, 501(c)(4) anonymity means the public ledger is incomplete by design. SAFE-004's real-time disclosure over $200 closes the gap Citizens United never required to stay dark.",
+    sourceIds: ["dark_money_transparency", "fec_campaign_data", "safeguard_transparency"],
+  },
+  {
+    title: "Vaccine-schedule politicization is a public-health capture risk",
+    body: "E.O. 14407's peer-country vaccine realignment inserts political framing into CDC scientific recommendation processes. Public health legitimacy depends on transparent evidence reviews, not executive branding exercises.",
+    sourceIds: ["vaccine_realign_eo_2026", "cdc_grant_pause"],
+  },
+
 ];
 
 export const accountabilityExternalLinks = [
