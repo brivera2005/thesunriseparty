@@ -53,8 +53,8 @@ export function BlueprintPage() {
         tone="default"
         eyebrow="Shareable Resource"
         title="The Progressive Blueprint"
-        description="Medicare for All, climate mobilization, voting rights, and irreversible safeguards - with bill numbers and timelines."
-        tip="Policy pillars and safeguards keep the same card layout from phone to desktop."
+        description="The fix, the receipts, and the gaslight exposed."
+        tip="Open any pillar for evidence, timelines, and shareable pages."
         actions={<ShareButton />}
       />
       <BlueprintSection standalone />

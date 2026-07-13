@@ -32,110 +32,113 @@ const trackerStats = getTrackerStats();
 const legislationStats = getLegislationStats();
 const scenarioStats = getScenarioStats();
 
+const livePulse = [
+  {
+    label: "Bills updated",
+    value: legislationStats.lastUpdated,
+    href: "/legislation",
+  },
+  {
+    label: "High-severity actions",
+    value: String(trackerStats.highSeverity),
+    href: "/tracker",
+  },
+  {
+    label: "Impact scenarios",
+    value: String(scenarioStats.total),
+    href: "/scenarios",
+  },
+  {
+    label: "Live rebuttals",
+    value: `${conversationHelpers.length}+`,
+    href: "/rebuttal",
+  },
+] as const;
+
 const platformCards = [
   {
     href: "/rebuttal",
     title: "Rebuttal Desk",
-    description:
-      "Copy-ready counters to common claims - every response backed by primary sources.",
+    description: "When they say X, you say Y. Copy-ready, sourced.",
     icon: MessageSquareQuote,
-    meta: `${conversationHelpers.length}+ rebuttals`,
+    meta: `${conversationHelpers.length}+ ready`,
   },
   {
     href: "/history",
     title: "Hidden History",
-    description:
-      "Textbook narrative vs. what the archives document, with historical rebuttals.",
+    description: "Textbook story vs. what the archives actually show.",
     icon: History,
-    meta: `${historyStats.entries}+ dual-timeline moments`,
+    meta: `${historyStats.entries}+ moments`,
   },
   {
     href: "/tracker",
-    title: "Project 2025 Tracker",
-    description:
-      "Executive actions scored by severity and cross-checked with independent watchdogs.",
+    title: "Tracker",
+    description: "Project 2025 and admin actions, scored by severity.",
     icon: Activity,
-    meta: `${trackerStats.total}+ verified actions`,
+    meta: `${trackerStats.highSeverity} high-severity`,
   },
   {
     href: "/legislation",
     title: "Live Legislation",
-    description:
-      "119th Congress bills with party-colored sponsors, roll-call tallies, and progressive analysis.",
+    description: "Live bills, sponsors, party votes. Updated continuously.",
     icon: Landmark,
-    meta: `${legislationStats.total} bills · updated ${legislationStats.lastUpdated}`,
+    meta: `${legislationStats.total} bills · ${legislationStats.lastUpdated}`,
   },
   {
     href: "/scenarios",
-    title: "Impact Scenarios",
-    description:
-      "Complex causal chains from administration actions and congressional blockage to lived family outcomes.",
+    title: "Scenarios",
+    description: "Family gets Y. Should get Z. Trace who blocked the fix.",
     icon: GitBranch,
-    meta: `${scenarioStats.total} causal scenarios`,
+    meta: `${scenarioStats.total} causal chains`,
   },
   {
     href: "/blueprint",
-    title: "The Blueprint",
-    description:
-      "Evidence-based progressive policy pillars with timelines and irreversible safeguards.",
+    title: "Blueprint",
+    description: "The fix, the receipts, and the gaslight exposed.",
     icon: BookOpen,
     meta: `${policyFixes.length} policy pillars`,
   },
   {
     href: "/mission",
     title: "Mission",
-    description:
-      "Why we exist, how we cite, and the transparency pledge that keeps us honest.",
+    description: "Why we exist and how we stay honest.",
     icon: Compass,
-    meta: "Open-source stance",
+    meta: "Transparency pledge",
   },
   {
     href: "/accountability",
     title: "Accountability",
-    description:
-      "Follow the money, the courts, and the structural fixes that constrain power.",
+    description: "Follow the money, the courts, and power constraints.",
     icon: Scale,
-    meta: "Citizens United & more",
+    meta: "Dark money & courts",
   },
   {
     href: "/methodology",
     title: "Methodology",
-    description:
-      "How we score severity, verify sources, and archive every citation for durability.",
+    description: "How we score, verify, and archive every claim.",
     icon: ShieldCheck,
     meta: "How we verify",
   },
   {
     href: "/donate",
     title: "Donate",
-    description:
-      "Keep the receipts public. Fund research, verification, and hosting.",
+    description: "Fund research, verification, and hosting.",
     icon: Heart,
-    meta: "Support the work",
+    meta: "Keep receipts public",
   },
   {
     href: "/contribute",
     title: "Contribute",
-    description:
-      "Suggest sources, report errors, or help expand rebuttals and history entries.",
+    description: "Suggest sources, fix errors, add rebuttals.",
     icon: Handshake,
     meta: "Community input",
   },
   {
-    href: "/start",
-    title: "Start Here",
-    description:
-      "A short guided tour through Rebuttal Desk, History, Tracker, and Blueprint.",
-    icon: Compass,
-    meta: "Guided tour",
-  },
-  {
     href: "/saved",
     title: "Saved",
-    description:
-      "Your bookmarked rebuttals, tracker events, and history moments - private to this device.",
+    description: "Your bookmarks on this device only.",
     icon: BookMarked,
-    meta: "Optional bookmarks",
+    meta: "Private to you",
   },
 ] as const;
 
@@ -149,10 +152,11 @@ export function LandingPage() {
             <BrandLogo variant="hero" priority />
           </FadeIn>
           <FadeIn delay={80}>
-            <p className="mx-auto mt-5 max-w-xl text-sm leading-relaxed text-muted-foreground sm:mt-6 sm:max-w-2xl">
-              Track the authoritarian agenda with primary sources. Arm yourself
-              with sourced rebuttals. Build the progressive counter-vision.
-              Every claim cited. Every link archived.
+            <p className="mx-auto mt-5 max-w-lg text-xl font-bold tracking-tight text-navy sm:mt-6 sm:text-2xl">
+              Track the agenda. Counter the lies. Build the fix.
+            </p>
+            <p className="mx-auto mt-2 max-w-md text-sm text-muted-foreground sm:text-base">
+              Live bills. Sourced counters. Family impact. Right now.
             </p>
           </FadeIn>
           <FadeIn delay={160}>
@@ -161,33 +165,68 @@ export function LandingPage() {
                 href="/start"
                 className="inline-flex h-11 min-w-[44px] items-center gap-2 rounded-lg bg-primary px-5 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90"
               >
-                Start here
+                Start tour
               </Link>
               <Link
                 href="/rebuttal"
                 className="inline-flex h-11 min-w-[44px] items-center gap-2 rounded-lg border border-border bg-white px-5 text-sm font-semibold text-navy transition-all hover:border-primary/40 hover:bg-accent"
               >
-                Open Rebuttal Desk
+                Rebuttal Desk
+              </Link>
+              <Link
+                href="/legislation"
+                className="inline-flex h-11 min-w-[44px] items-center gap-2 rounded-lg border border-border bg-white px-5 text-sm font-semibold text-navy transition-all hover:border-primary/40 hover:bg-accent"
+              >
+                Live bills
               </Link>
             </div>
           </FadeIn>
         </div>
       </section>
 
-      <section className="section-y bg-white" aria-label="Platform sections">
+      <section
+        className="border-b border-border bg-accent/40"
+        aria-label="Live pulse"
+      >
+        <div className="page-container py-4 sm:py-5">
+          <div className="mb-3 flex items-center justify-center gap-2 sm:justify-start">
+            <span className="relative flex size-2.5">
+              <span className="absolute inline-flex size-full animate-ping rounded-full bg-primary opacity-60" />
+              <span className="relative inline-flex size-2.5 rounded-full bg-primary" />
+            </span>
+            <p className="text-xs font-semibold tracking-[0.18em] text-navy uppercase">
+              Live now
+            </p>
+          </div>
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+            {livePulse.map((item) => (
+              <Link
+                key={item.label}
+                href={item.href}
+                className="rounded-lg border border-border bg-white px-3 py-3 text-left transition-colors hover:border-primary/40"
+              >
+                <p className="text-[11px] font-medium tracking-wide text-muted-foreground uppercase">
+                  {item.label}
+                </p>
+                <p className="mt-1 text-lg font-bold tabular-nums text-navy sm:text-xl">
+                  {item.value}
+                </p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section-y bg-white" aria-label="What we offer">
         <div className="page-container">
           <FadeIn>
             <div className="mb-6 text-center sm:mb-8">
               <p className="mb-1.5 text-xs font-semibold tracking-[0.22em] text-navy uppercase">
-                Explore the platform
+                Tools
               </p>
               <h2 className="text-xl font-bold tracking-tight text-navy sm:text-2xl">
-                Every major section, one grid
+                What you get here
               </h2>
-              <p className="mx-auto mt-2 max-w-2xl text-sm text-muted-foreground">
-                Same white canvas, navy type, and sunrise accents everywhere.
-                Pick a section and go deep.
-              </p>
             </div>
           </FadeIn>
 
@@ -209,11 +248,11 @@ export function LandingPage() {
                   <p className="mt-1 text-[11px] font-medium tracking-wide text-muted-foreground uppercase">
                     {card.meta}
                   </p>
-                  <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
+                  <p className="mt-2 flex-1 text-sm text-muted-foreground">
                     {card.description}
                   </p>
                   <span className="mt-4 inline-flex min-h-10 items-center gap-1.5 text-sm font-semibold text-primary">
-                    Explore
+                    Open
                     <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
                   </span>
                 </Link>

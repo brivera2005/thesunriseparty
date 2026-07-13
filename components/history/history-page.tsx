@@ -54,8 +54,8 @@ export function HistoryPage() {
         tone="amber"
         eyebrow="Suppressed History"
         title="Hidden History"
-        description="What textbooks leave out vs. what the archives document. Dual timeline with historical rebuttals. Every entry sourced."
-        tip={`${stats.entries} entries, ${stats.rebuttals} historical rebuttals, ${stats.eras} eras. Same filters and card anatomy on every screen size.`}
+        description="Textbook story vs. archives. Dual timeline, every entry sourced."
+        tip={`${stats.entries} entries · ${stats.rebuttals} rebuttals · ${stats.eras} eras`}
       />
 
       <section className="sticky top-14 z-30 border-b border-border bg-white/95 py-3 backdrop-blur-lg sm:top-16">

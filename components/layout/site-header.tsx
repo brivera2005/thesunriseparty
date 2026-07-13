@@ -28,27 +28,27 @@ const primaryNav: {
   {
     label: "Rebuttal",
     href: "/rebuttal",
-    description: "Copy-ready counters to common claims, every response sourced.",
+    description: "When they say X, you say Y.",
   },
   {
     label: "History",
     href: "/history",
-    description: "Textbook narrative vs. what the archives actually document.",
+    description: "Textbook vs. archives.",
   },
   {
     label: "Tracker",
     href: "/tracker",
-    description: "Executive actions scored by severity with primary-source receipts.",
+    description: "Admin actions scored by severity.",
   },
   {
     label: "Legislation",
     href: "/legislation",
-    description: "Live 119th Congress bill tracker with party colors and vote tallies.",
+    description: "Live bills and party votes.",
   },
   {
     label: "Blueprint",
     href: "/blueprint",
-    description: "Progressive policy pillars with timelines and irreversible safeguards.",
+    description: "The fix and the gaslight exposed.",
   },
 ];
 
@@ -60,42 +60,42 @@ const moreNav: {
   {
     label: "Scenarios",
     href: "/scenarios",
-    description: "Causal chains from policy choices to lived family outcomes.",
+    description: "Family gets Y. Should get Z.",
   },
   {
     label: "Mission",
     href: "/mission",
-    description: "Why we exist, how we cite, and how we stay accountable.",
+    description: "Why we exist. How we stay honest.",
   },
   {
     label: "Accountability",
     href: "/accountability",
-    description: "Dark money, lobbying, and structural elite capture.",
+    description: "Dark money, courts, power.",
   },
   {
     label: "Methodology",
     href: "/methodology",
-    description: "How we source, score, and verify every claim.",
+    description: "How we score and verify.",
   },
   {
     label: "Contribute",
     href: "/contribute",
-    description: "Submit events, corrections, and sourced rebuttals.",
+    description: "Sources, corrections, rebuttals.",
   },
   {
     label: "Start Here",
     href: "/start",
-    description: "Guided tour of the platform for first-time visitors.",
+    description: "Tools-first guided tour.",
   },
   {
     label: "Saved",
     href: "/saved",
-    description: "Bookmarks stored privately in this browser.",
+    description: "Bookmarks on this device.",
   },
   {
     label: "Changelog",
     href: "/changelog",
-    description: "Pass-by-pass build history and transparency notes.",
+    description: "What shipped each pass.",
   },
 ];
 

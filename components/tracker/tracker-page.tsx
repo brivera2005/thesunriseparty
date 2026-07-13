@@ -54,8 +54,8 @@ export function TrackerPage() {
         tone="critical"
         eyebrow="Shareable Resource"
         title="Project 2025 Tracker"
-        description="Full timeline with category and severity filters, cross-referenced against independent watchdogs - every action sourced."
-        tip="Filters, severity chips, and event cards use the same anatomy on mobile and desktop."
+        description="Admin actions scored by severity. Every claim cited."
+        tip="Filter by category or severity, then open any event for receipts."
         actions={
           <>
             <a

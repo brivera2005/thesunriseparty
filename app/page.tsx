@@ -6,11 +6,11 @@ import { defaultOg, SITE_URL } from "@/lib/metadata";
 export const metadata: Metadata = {
   title: "Project Sunrise | A New Beginning. Restoring Democracy.",
   description:
-    "Showcase landing for Project Sunrise: Rebuttal Desk, Hidden History, Project 2025 Tracker, Progressive Blueprint, and sourced accountability tools.",
+    "Track the agenda. Counter the lies. Build the fix. Live bills, sourced rebuttals, impact scenarios.",
   openGraph: {
     title: "Project Sunrise. Democracy Needs Receipts.",
     description:
-      "Evidence-based Project 2025 tracking, progressive policy blueprint, and sourced rebuttals.",
+      "Track the agenda. Counter the lies. Build the fix.",
     url: SITE_URL,
     siteName: defaultOg.siteName,
     type: "website",

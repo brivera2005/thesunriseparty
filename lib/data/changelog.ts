@@ -8,6 +8,18 @@ export interface ChangelogEntry {
 /** Site iteration history - meta transparency for Project Sunrise builds */
 export const changelog: ChangelogEntry[] = [
   {
+    version: "0.41.0",
+    date: "2026-07-13",
+    title: "Pass 41 - Newbie clarity + live-mode overhaul",
+    highlights: [
+      "Landing hero answers in under 10 words: Track the agenda. Counter the lies. Build the fix. CTAs: Start tour / Rebuttal Desk / Live bills",
+      "Deleted design-meta fluff (white canvas, navy type, sunrise accents, pick a section and go deep)",
+      "Live pulse strip: legislation last-updated, high-severity tracker count, scenarios, rebuttals",
+      "Guided tour reordered tools-first: Rebuttal, History, Tracker, Legislation, Scenarios, Blueprint, Mission last; one headline + two sentences per step",
+      "PageHero and nav copy tightened sitewide; SW cache bumped to sunrise-v41",
+    ],
+  },
+  {
     version: "0.40.0",
     date: "2026-07-13",
     title: "Pass 40 - Complex Impact Scenarios",

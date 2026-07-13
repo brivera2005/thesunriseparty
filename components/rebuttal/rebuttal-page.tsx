@@ -94,8 +94,8 @@ export function RebuttalPage() {
         tone="sunrise"
         eyebrow="Shareable Resource"
         title="The Rebuttal Desk"
-        description="A study guide for real conversations - every claim sourced, every response ready to copy."
-        tip="Browse, Study, and Quiz modes share the same entries and filters on mobile and desktop."
+        description="When they say X, you say Y. Copy-ready, every claim sourced."
+        tip="Browse, Study, and Quiz use the same entries and filters."
         actions={<ShareButton />}
       />
 

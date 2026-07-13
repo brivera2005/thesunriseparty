@@ -41,10 +41,9 @@ export function SiteFooter() {
             <Link href="/" className="mb-3 inline-block" aria-label="Project Sunrise home">
               <BrandLogo variant="footer" />
             </Link>
-            <p className="text-sm leading-relaxed text-muted-foreground">
-              Evidence-based tracking of authoritarian policy. Progressive
-              legislative vision for when democracy wins. Every claim sourced.
-              Every link archived. For the people, not the plutocrats.
+            <p className="text-sm text-muted-foreground">
+              Track the agenda. Counter the lies. Build the fix. Every claim
+              sourced. Every link archived.
             </p>
             <dl className="mt-6 grid grid-cols-2 gap-3 text-sm sm:grid-cols-4 lg:grid-cols-2">
               <div>

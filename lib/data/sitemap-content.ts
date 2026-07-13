@@ -52,8 +52,7 @@ const rebuttalCats = rebuttalCategories.filter((c) => c !== "All");
 
 export const sitemapIntro = {
   title: "Site Map",
-  subtitle:
-    "Every section of Project Sunrise - with live counts, quick links, and tools for tracking, learning, and building.",
+  subtitle: "Every tool, live counts, quick links.",
 };
 
 export const sitemapSections: SitemapSection[] = [
@@ -67,7 +66,7 @@ export const sitemapSections: SitemapSection[] = [
       {
         href: "/start",
         label: "Start Here - Guided Tour",
-        description: "Four-step walkthrough of mission, tracker, rebuttals, and blueprint.",
+        description: "Seven stops: tools first, Mission last.",
         badge: "New",
       },
       {

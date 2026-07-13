@@ -2,6 +2,9 @@ import {
   Activity,
   BookOpen,
   Compass,
+  GitBranch,
+  History,
+  Landmark,
   MessageSquareQuote,
   type LucideIcon,
 } from "lucide-react";
@@ -9,85 +12,106 @@ import {
 export interface TourStep {
   step: number;
   title: string;
-  subtitle: string;
-  description: string;
+  /** One sentence: what this tool is */
+  whatItIs: string;
+  /** One sentence: what you do there */
+  whatYouDo: string;
   icon: LucideIcon;
   href: string;
   cta: string;
-  highlights: string[];
   accent: string;
 }
 
 export const startTourIntro = {
-  title: "Start Here",
+  title: "Know the tools. Fast.",
   subtitle:
-    "New to Project Sunrise? This four-step tour shows where to track authoritarian policy, arm yourself for conversations, and explore the progressive counter-vision.",
+    "Seven stops. What each tool does, then how to use it. Mission last.",
   skipLabel: "Skip to homepage",
 };
 
 export const tourSteps: TourStep[] = [
   {
     step: 1,
-    title: "Know the Mission",
-    subtitle: "Why receipts matter",
-    description:
-      "Project Sunrise exists because democracy dies in darkness. We track Project 2025 and related executive actions with primary sources - not cable news narratives. Every claim links to filings, court opinions, and archived citations.",
-    icon: Compass,
-    href: "/mission",
-    cta: "Read our mission",
-    highlights: [
-      "Transparency pledge - no plutocrat funding",
-      "Anti-propaganda stance with Wayback archives",
-      "Cross-referenced with independent watchdogs",
-    ],
+    title: "Rebuttal Desk",
+    whatItIs:
+      "When they say X, you say Y: copy-ready counters with primary sources.",
+    whatYouDo:
+      "Browse a claim, copy the response, or drill study and quiz mode.",
+    icon: MessageSquareQuote,
+    href: "/rebuttal",
+    cta: "Open Rebuttal Desk",
     accent: "border-primary/30",
   },
   {
     step: 2,
-    title: "Track the Agenda",
-    subtitle: "120 verified events",
-    description:
-      "The Project 2025 Tracker logs executive actions with severity scores (1-10), impacted sectors, and links to the Heritage playbook chapters they implement. Filter by category, export CSV, or subscribe via RSS.",
-    icon: Activity,
-    href: "/tracker",
-    cta: "Open the tracker",
-    highlights: [
-      "Democracy threat level gauge",
-      "Per-event detail pages with related clusters",
-      "Compare vs. CPR and project2025.observer",
-    ],
+    title: "Hidden History",
+    whatItIs:
+      "Textbook narrative on one side, what the archives document on the other.",
+    whatYouDo:
+      "Pick an era, open a moment, compare the story to the receipts.",
+    icon: History,
+    href: "/history",
+    cta: "Open Hidden History",
     accent: "border-border",
   },
   {
     step: 3,
-    title: "Arm the Conversation",
-    subtitle: "230 sourced rebuttals",
-    description:
-      "The Rebuttal Desk gives you copy-ready counters for MAGA talking points - economy, immigration, democracy, culture wars. Use study mode to memorize, quiz mode to test yourself, and heart icons to bookmark favorites.",
-    icon: MessageSquareQuote,
-    href: "/rebuttal",
-    cta: "Browse rebuttals",
-    highlights: [
-      "They say / You say / Stab format",
-      "Difficulty tags: easy, medium, hard",
-      "Every response backed by primary sources",
-    ],
+    title: "Tracker",
+    whatItIs:
+      "Project 2025 and admin actions scored by severity with primary sources.",
+    whatYouDo:
+      "Filter by category or severity, open an event, follow the citations.",
+    icon: Activity,
+    href: "/tracker",
+    cta: "Open Tracker",
     accent: "border-primary/30",
   },
   {
     step: 4,
-    title: "Build the Future",
-    subtitle: "Progressive Blueprint",
-    description:
-      "When democracy wins, we need a plan - not vibes. The Blueprint pairs Medicare for All, voting rights, climate mobilization, and labor protections with bill numbers, economic modeling, and irreversible safeguards against rollback.",
+    title: "Legislation",
+    whatItIs:
+      "Live 119th Congress bills with sponsors, party colors, and vote tallies.",
+    whatYouDo:
+      "Scan active bills, check who sponsored, read progressive analysis.",
+    icon: Landmark,
+    href: "/legislation",
+    cta: "Open Live bills",
+    accent: "border-border",
+  },
+  {
+    step: 5,
+    title: "Scenarios",
+    whatItIs:
+      "Causal chains from policy choices to what a family actually gets.",
+    whatYouDo:
+      "Open a scenario, follow Gets Y vs Should Get Z, see who blocked the fix.",
+    icon: GitBranch,
+    href: "/scenarios",
+    cta: "Open Scenarios",
+    accent: "border-primary/30",
+  },
+  {
+    step: 6,
+    title: "Blueprint",
+    whatItIs:
+      "The progressive fix: policy pillars, timelines, and gaslight exposure.",
+    whatYouDo:
+      "Open a pillar, read the evidence, share the page when you need receipts.",
     icon: BookOpen,
     href: "/blueprint",
-    cta: "Explore the blueprint",
-    highlights: [
-      "Shareable policy pages with OG previews",
-      "Cost-of-inaction data on every fix",
-      "SAFE safeguards against elite capture",
-    ],
+    cta: "Open Blueprint",
+    accent: "border-border",
+  },
+  {
+    step: 7,
+    title: "Mission",
+    whatItIs:
+      "Why Project Sunrise exists and the transparency pledge that keeps us honest.",
+    whatYouDo:
+      "Read the pledge after you know the tools, then dig into methodology.",
+    icon: Compass,
+    href: "/mission",
+    cta: "Read Mission",
     accent: "border-primary/30",
   },
 ];

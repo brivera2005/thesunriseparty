@@ -62,8 +62,8 @@ export function ScenariosPage() {
         tone="sunrise"
         eyebrow="Lived Outcomes"
         title="Impact Scenarios"
-        description="Real families, real blockers, real receipts. Each scenario traces administration actions, congressional blockage, budget priorities, and propaganda to the outcome people actually live."
-        tip="Filter by topic, then open any card for a vertical causal chain color-coded by actor."
+        description="Family gets Y. Should get Z. Trace who blocked the fix."
+        tip="Filter by topic, then open a card for the full causal chain."
         actions={
           <>
             <span className="inline-flex h-9 items-center gap-2 rounded-md border border-border bg-white px-3 text-xs text-muted-foreground">

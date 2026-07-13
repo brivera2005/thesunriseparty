@@ -18,7 +18,7 @@ const sizeMap = {
     width: 640,
     height: 349,
     className:
-      "h-auto w-[min(100%,280px)] sm:w-[320px] md:w-[380px] lg:w-[440px]",
+      "h-auto w-[min(100%,320px)] sm:w-[380px] md:w-[440px] lg:w-[520px]",
   },
   // Header + footer share the same chrome size for cohesion
   header: {
