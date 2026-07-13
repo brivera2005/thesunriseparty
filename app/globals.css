@@ -135,48 +135,28 @@
   --sidebar-ring: oklch(0.58 0.22 25);
 }
 
-.mode-tracker {
+/* Mode classes kept for legacy store compatibility but intentionally
+   identical to :root so Tracker/Blueprint never recolor the whole product. */
+.mode-tracker,
+.mode-blueprint {
   --background: #ffffff;
   --foreground: oklch(0.22 0.03 55);
   --card: #ffffff;
   --card-foreground: oklch(0.22 0.03 55);
   --popover: #ffffff;
   --popover-foreground: oklch(0.22 0.03 55);
-  --primary: oklch(0.55 0.22 25);
+  --primary: oklch(0.68 0.17 72);
   --primary-foreground: oklch(0.98 0.01 90);
-  --secondary: oklch(0.97 0.01 25);
+  --secondary: oklch(0.97 0.008 90);
   --secondary-foreground: oklch(0.30 0.04 55);
-  --muted: oklch(0.965 0.008 25);
+  --muted: oklch(0.965 0.006 90);
   --muted-foreground: oklch(0.48 0.03 60);
-  --accent: oklch(0.97 0.02 25);
+  --accent: oklch(0.97 0.02 85);
   --accent-foreground: oklch(0.28 0.05 55);
   --destructive: oklch(0.55 0.22 25);
-  --border: oklch(0.91 0.015 25);
-  --input: oklch(0.91 0.015 25);
-  --ring: oklch(0.55 0.22 25);
-  --sunrise: oklch(0.72 0.17 68);
-  --sunrise-foreground: oklch(0.22 0.05 55);
-}
-
-.mode-blueprint {
-  --background: #ffffff;
-  --foreground: oklch(0.22 0.04 230);
-  --card: #ffffff;
-  --card-foreground: oklch(0.22 0.04 230);
-  --popover: #ffffff;
-  --popover-foreground: oklch(0.22 0.04 230);
-  --primary: oklch(0.55 0.14 240);
-  --primary-foreground: oklch(0.98 0.01 90);
-  --secondary: oklch(0.97 0.015 240);
-  --secondary-foreground: oklch(0.28 0.05 230);
-  --muted: oklch(0.965 0.01 240);
-  --muted-foreground: oklch(0.48 0.04 230);
-  --accent: oklch(0.96 0.025 240);
-  --accent-foreground: oklch(0.26 0.06 230);
-  --destructive: oklch(0.55 0.22 25);
-  --border: oklch(0.91 0.02 240);
-  --input: oklch(0.91 0.02 240);
-  --ring: oklch(0.55 0.14 240);
+  --border: oklch(0.91 0.01 90);
+  --input: oklch(0.91 0.01 90);
+  --ring: oklch(0.68 0.17 72);
   --sunrise: oklch(0.72 0.17 68);
   --sunrise-foreground: oklch(0.22 0.05 55);
 }
@@ -277,11 +257,34 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground transition-colors duration-300;
+    @apply bg-white text-foreground transition-colors duration-300;
   }
   html {
     @apply font-sans;
     scroll-behavior: smooth;
+  }
+}
+
+/* Shared layout rhythm — same scale on 375px and 1280px */
+@layer components {
+  .page-container {
+    @apply mx-auto max-w-6xl px-4 sm:px-6;
+  }
+
+  .section-y {
+    @apply py-8 sm:py-12;
+  }
+
+  .section-y-tight {
+    @apply py-6 sm:py-8;
+  }
+
+  .surface-card {
+    @apply rounded-xl border border-border bg-white shadow-sm transition-all duration-200;
+  }
+
+  .surface-card-interactive {
+    @apply rounded-xl border border-border bg-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md;
   }
 }
 

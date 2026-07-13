@@ -93,28 +93,28 @@ export function RebuttalDeskSection({
     <section
       id="rebuttal-desk"
       className={cn(
-        "section-rebuttal scroll-mt-16 py-16 sm:py-20",
+        "section-rebuttal section-y scroll-mt-16",
         !standalone && "border-t border-border"
       )}
     >
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+      <div className="page-container">
         {!standalone && (
-          <div className="mb-10">
-            <div className="mb-3 flex items-center gap-2">
+          <div className="mb-6 sm:mb-8">
+            <div className="mb-2 flex items-center gap-2">
               <div className="size-2 rounded-full bg-sunrise shadow-[0_0_8px_oklch(0.76_0.16_66/40%)]" />
-              <span className="text-xs font-semibold tracking-[0.2em] text-sunrise uppercase">
+              <span className="text-xs font-semibold tracking-[0.22em] text-sunrise uppercase">
                 Counter-Intel
               </span>
             </div>
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+            <h2 className="text-xl font-bold tracking-tight sm:text-2xl lg:text-3xl">
               The Rebuttal Desk
             </h2>
-            <p className="mt-3 max-w-2xl text-muted-foreground">
+            <p className="mt-2 max-w-2xl text-sm text-muted-foreground">
               A study guide for countering MAGA talking points with facts, primary
               sources, and sharp rebuttals. Expand a claim, learn the response,
               copy it to your clipboard.
             </p>
-            <p className="mt-2 text-sm text-muted-foreground/80">
+            <p className="mt-1.5 text-sm text-muted-foreground/80">
               {conversationHelpers.length} entries &middot; sourced &middot; ready
               to deploy
             </p>

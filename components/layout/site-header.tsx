@@ -13,15 +13,52 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
 
-const navItems = [
-  { label: "Rebuttal Desk", href: "/rebuttal", accent: "text-sunrise" },
-  { label: "The Tracker", href: "/tracker" },
-  { label: "The Blueprint", href: "/blueprint" },
-  { label: "Hidden History", href: "/history", accent: "text-amber-600" },
-  { label: "Mission", href: "/mission" },
-  { label: "Donate", href: "/donate", accent: "text-primary" },
+const navItems: {
+  label: string;
+  href: string;
+  description: string;
+  accent?: string;
+}[] = [
+  {
+    label: "Rebuttal Desk",
+    href: "/rebuttal",
+    accent: "text-sunrise",
+    description: "Copy-ready counters to common claims, every response sourced.",
+  },
+  {
+    label: "The Tracker",
+    href: "/tracker",
+    description: "Executive actions scored by severity with primary-source receipts.",
+  },
+  {
+    label: "The Blueprint",
+    href: "/blueprint",
+    description: "Progressive policy pillars with timelines and irreversible safeguards.",
+  },
+  {
+    label: "Hidden History",
+    href: "/history",
+    accent: "text-amber-600",
+    description: "Textbook narrative vs. what the archives actually document.",
+  },
+  {
+    label: "Mission",
+    href: "/mission",
+    description: "Why we exist, how we cite, and how we stay accountable.",
+  },
+  {
+    label: "Donate",
+    href: "/donate",
+    accent: "text-primary",
+    description: "Keep the receipts public. Fund research and verification.",
+  },
 ];
 
 export function SiteHeader() {
@@ -31,44 +68,58 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-40 overflow-visible border-b border-border bg-white/95 backdrop-blur-lg supports-[backdrop-filter]:bg-white/90">
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-2 px-3 py-2.5 sm:gap-3 sm:px-6 sm:py-3">
+      <div className="page-container flex items-center justify-between gap-2 py-2.5 sm:gap-3 sm:py-3">
         <Link href="/" className="flex min-w-0 items-center py-0.5" aria-label="Project Sunrise home">
           <BrandLogo variant="header" priority />
         </Link>
 
-        <nav className="hidden items-center gap-0.5 lg:flex">
+        <nav className="hidden items-center gap-0.5 lg:flex" aria-label="Primary">
           {navItems.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className={cn(
-                buttonVariants({ variant: "ghost", size: "sm" }),
-                "h-9 px-2.5 text-[0.8rem]",
-                pathname === item.href && (item.accent ?? "text-primary")
-              )}
-            >
-              {item.label}
-            </Link>
+            <Tooltip key={item.href}>
+              <TooltipTrigger
+                delay={180}
+                closeOnClick
+                className={cn(
+                  buttonVariants({ variant: "ghost", size: "sm" }),
+                  "h-9 border-0 px-2.5 text-[0.8rem]",
+                  pathname === item.href && (item.accent ?? "text-primary")
+                )}
+                render={
+                  <Link href={item.href} />
+                }
+              >
+                {item.label}
+              </TooltipTrigger>
+              <TooltipContent side="bottom">{item.description}</TooltipContent>
+            </Tooltip>
           ))}
         </nav>
 
         <div className="flex items-center gap-1.5 sm:gap-2">
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={() => setCommandOpen(true)}
-            className="hidden h-9 gap-2 sm:inline-flex"
-            aria-label="Search"
-          >
-            <Search className="size-3.5" />
-            <span className="text-muted-foreground">Search</span>
-          </Button>
+          <Tooltip>
+            <TooltipTrigger
+              delay={180}
+              className={cn(
+                buttonVariants({ variant: "outline", size: "sm" }),
+                "hidden h-9 gap-2 border-border sm:inline-flex"
+              )}
+              onClick={() => setCommandOpen(true)}
+              aria-label="Search"
+            >
+              <Search className="size-3.5" />
+              <span className="text-muted-foreground">Search</span>
+            </TooltipTrigger>
+            <TooltipContent side="bottom">
+              Search rebuttals, tracker events, history, and blueprint policies.
+            </TooltipContent>
+          </Tooltip>
           <Button
             variant="outline"
             size="icon"
             onClick={() => setCommandOpen(true)}
             className="size-11 sm:hidden"
-            aria-label="Search"
+            aria-label="Search the site"
+            title="Search rebuttals, tracker, history, and blueprint"
           >
             <Search className="size-4" />
           </Button>
@@ -79,6 +130,7 @@ export function SiteHeader() {
               buttonVariants({ variant: "default", size: "sm" }),
               "hidden h-9 gap-1.5 sm:inline-flex"
             )}
+            title="Support Project Sunrise"
           >
             <Heart className="size-3.5" />
             Donate
@@ -115,18 +167,21 @@ export function SiteHeader() {
               </Button>
             </DialogTitle>
           </DialogHeader>
-          <nav className="flex flex-col gap-1 pt-2">
+          <nav className="flex flex-col gap-1 pt-2" aria-label="Mobile primary">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
                 onClick={() => setMobileOpen(false)}
                 className={cn(
-                  "flex min-h-11 items-center rounded-lg px-4 py-3 text-sm font-medium transition-colors hover:bg-accent",
+                  "flex min-h-11 flex-col justify-center rounded-lg px-4 py-2.5 transition-colors hover:bg-accent",
                   pathname === item.href && "bg-accent text-primary"
                 )}
               >
-                {item.label}
+                <span className="text-sm font-medium">{item.label}</span>
+                <span className="mt-0.5 text-[11px] leading-snug text-muted-foreground">
+                  {item.description}
+                </span>
               </Link>
             ))}
           </nav>

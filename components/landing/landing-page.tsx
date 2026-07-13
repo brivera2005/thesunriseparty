@@ -11,15 +11,14 @@ import {
   ShieldCheck,
   Sparkles,
 } from "lucide-react";
-import { SiteHeader } from "@/components/layout/site-header";
-import { SiteFooter } from "@/components/layout/site-footer";
-import { SkipLink } from "@/components/layout/skip-link";
-import { CommandPalette } from "@/components/layout/command-palette";
-import { CitationModal } from "@/components/citation";
+import { PageShell } from "@/components/layout/page-shell";
+import { SectionHeader } from "@/components/layout/section-header";
 import { BrandLogo } from "@/components/brand-logo";
 import { FadeIn } from "@/components/ui/fade-in";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { ExpandableHint } from "@/components/ui/info-tip";
+import { StatTile } from "@/components/ui/stat-tile";
 import {
   conversationHelpers,
   rebuttalDetailPath,
@@ -76,7 +75,7 @@ const platformCards = [
     description:
       "When they say X, you say Y. Copy-ready counter-arguments with primary sources.",
     icon: MessageSquareQuote,
-    accent: "border-sunrise/40 hover:border-sunrise hover:shadow-sunrise/10",
+    accent: "border-sunrise/40 hover:border-sunrise",
     iconBg: "bg-sunrise/15 text-sunrise",
     featured: true,
   },
@@ -132,386 +131,338 @@ const platformCards = [
 
 export function LandingPage() {
   return (
-    <div className="min-h-screen bg-white text-foreground">
-      <SkipLink />
-      <SiteHeader />
-      <CommandPalette />
-      <CitationModal />
-
-      <main id="main-content">
-        {/* 1. Hero */}
-        <section className="relative overflow-hidden border-b border-border bg-white">
-          <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,_oklch(0.98_0.015_75)_0%,_#ffffff_60%)]" />
-          <div className="relative mx-auto flex max-w-6xl flex-col items-center px-4 py-10 text-center sm:px-6 sm:py-16 lg:py-20">
-            <FadeIn>
-              <h1 className="sr-only">Project Sunrise</h1>
-              <BrandLogo variant="hero" priority />
-            </FadeIn>
-            <FadeIn delay={80}>
-              <p className="mx-auto mt-6 max-w-xl text-sm leading-relaxed text-muted-foreground sm:mt-8 sm:max-w-2xl sm:text-base">
-                Track the authoritarian agenda with primary sources. Arm
-                yourself with sourced rebuttals. Build the progressive
-                counter-vision. Every claim cited. Every link archived.
-              </p>
-            </FadeIn>
-            <FadeIn delay={160}>
-              <div className="mt-6 flex flex-wrap items-center justify-center gap-2.5 sm:mt-8 sm:gap-3">
-                <Link
-                  href="/start"
-                  className="inline-flex h-11 min-w-[44px] items-center gap-2 rounded-lg bg-primary px-5 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 hover:shadow-md sm:px-6"
-                >
-                  <Compass className="size-4" />
-                  Start here
-                </Link>
-                <Link
-                  href="/rebuttal"
-                  className="inline-flex h-11 min-w-[44px] items-center gap-2 rounded-lg border border-border bg-white px-5 text-sm font-semibold transition-all hover:border-sunrise/50 hover:bg-sunrise/5 sm:px-6"
-                >
-                  <MessageSquareQuote className="size-4 text-sunrise" />
-                  Open Rebuttal Desk
-                </Link>
-              </div>
-            </FadeIn>
-          </div>
-        </section>
-
-        {/* 2. Platform overview */}
-        <section
-          className="border-b border-border bg-white py-10 sm:py-16"
-          aria-label="Platform overview"
-        >
-          <div className="mx-auto max-w-6xl px-4 sm:px-6">
-            <FadeIn>
-              <div className="mb-6 text-center sm:mb-8">
-                <p className="text-xs font-semibold tracking-[0.25em] text-primary uppercase">
-                  Explore the platform
-                </p>
-                <h2 className="mt-2 text-xl font-bold tracking-tight sm:text-3xl">
-                  Everything you need in one place
-                </h2>
-                <p className="mx-auto mt-2 max-w-xl text-sm text-muted-foreground sm:text-base">
-                  Five tools. One mission. Pick a door and go deeper.
-                </p>
-              </div>
-            </FadeIn>
-
-            <div className="grid gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3">
-              {platformCards.map((card, i) => (
-                <FadeIn key={card.href} delay={i * 60}>
-                  <Link
-                    href={card.href}
-                    className={cn(
-                      "group flex h-full flex-col rounded-xl border bg-white p-4 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md sm:rounded-2xl sm:p-5",
-                      card.accent,
-                      card.featured && "sm:col-span-2 lg:col-span-1 lg:row-span-1"
-                    )}
-                  >
-                    <div className="mb-3 flex items-start justify-between gap-3">
-                      <span
-                        className={cn(
-                          "inline-flex size-10 items-center justify-center rounded-xl sm:size-11",
-                          card.iconBg
-                        )}
-                      >
-                        <card.icon className="size-5" strokeWidth={1.75} />
-                      </span>
-                      {card.featured && (
-                        <Badge className="bg-sunrise/15 text-sunrise-foreground hover:bg-sunrise/20">
-                          Featured
-                        </Badge>
-                      )}
-                    </div>
-                    <h3 className="text-base font-semibold group-hover:text-primary sm:text-lg">
-                      {card.title}
-                    </h3>
-                    <p className="mt-1 text-xl font-bold tabular-nums tracking-tight sm:text-2xl">
-                      {card.stat}
-                      <span className="ml-2 text-[10px] font-medium tracking-wide text-muted-foreground uppercase sm:text-xs">
-                        {card.statLabel}
-                      </span>
-                    </p>
-                    <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
-                      {card.description}
-                    </p>
-                    <span className="mt-4 inline-flex min-h-11 items-center gap-1.5 text-sm font-semibold text-primary sm:min-h-0 sm:mt-5">
-                      Explore
-                      <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
-                    </span>
-                  </Link>
-                </FadeIn>
-              ))}
+    <PageShell>
+      {/* 1. Hero */}
+      <section className="relative overflow-hidden border-b border-border bg-white">
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,_oklch(0.98_0.015_75)_0%,_#ffffff_60%)]" />
+        <div className="page-container relative flex flex-col items-center py-8 text-center sm:py-12 lg:py-14">
+          <FadeIn>
+            <h1 className="sr-only">Project Sunrise</h1>
+            <BrandLogo variant="hero" priority />
+          </FadeIn>
+          <FadeIn delay={80}>
+            <p className="mx-auto mt-5 max-w-xl text-sm leading-relaxed text-muted-foreground sm:mt-6 sm:max-w-2xl">
+              Track the authoritarian agenda with primary sources. Arm yourself
+              with sourced rebuttals. Build the progressive counter-vision.
+              Every claim cited. Every link archived.
+            </p>
+          </FadeIn>
+          <FadeIn delay={160}>
+            <div className="mt-5 flex flex-wrap items-center justify-center gap-2.5 sm:mt-6 sm:gap-3">
+              <Link
+                href="/start"
+                className="inline-flex h-11 min-w-[44px] items-center gap-2 rounded-lg bg-primary px-5 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 hover:shadow-md"
+                title="Guided tour of Rebuttal Desk, History, Tracker, and Blueprint"
+              >
+                <Compass className="size-4" />
+                Start here
+              </Link>
+              <Link
+                href="/rebuttal"
+                className="inline-flex h-11 min-w-[44px] items-center gap-2 rounded-lg border border-border bg-white px-5 text-sm font-semibold transition-all hover:border-sunrise/50 hover:bg-sunrise/5"
+                title="Open copy-ready sourced rebuttals"
+              >
+                <MessageSquareQuote className="size-4 text-sunrise" />
+                Open Rebuttal Desk
+              </Link>
             </div>
-          </div>
-        </section>
+          </FadeIn>
+        </div>
+      </section>
 
-        {/* 3. Featured Rebuttal */}
-        <section className="border-b border-border bg-muted/20 py-16 sm:py-20">
-          <div className="mx-auto max-w-6xl px-4 sm:px-6">
-            <FadeIn>
-              <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
-                <div>
-                  <p className="text-xs font-semibold tracking-[0.25em] text-sunrise uppercase">
-                    Featured Rebuttal
+      {/* 2. Platform overview */}
+      <section className="section-y border-b border-border bg-white" aria-label="Platform overview">
+        <div className="page-container">
+          <FadeIn>
+            <SectionHeader
+              align="center"
+              eyebrow="Explore the platform"
+              title="Everything you need in one place"
+              description="Five tools. One mission. Same structure on phone and desktop."
+              tip="Each card opens a full workspace with the same filters and detail flow at every screen size."
+            />
+          </FadeIn>
+
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {platformCards.map((card, i) => (
+              <FadeIn key={card.href} delay={i * 50}>
+                <Link
+                  href={card.href}
+                  className={cn(
+                    "group surface-card-interactive flex h-full flex-col p-4 sm:p-4",
+                    card.accent
+                  )}
+                >
+                  <div className="mb-2.5 flex items-start justify-between gap-3">
+                    <span
+                      className={cn(
+                        "inline-flex size-9 items-center justify-center rounded-lg sm:size-10",
+                        card.iconBg
+                      )}
+                    >
+                      <card.icon className="size-5" strokeWidth={1.75} />
+                    </span>
+                    {card.featured && (
+                      <Badge className="bg-sunrise/15 text-sunrise-foreground hover:bg-sunrise/20">
+                        Featured
+                      </Badge>
+                    )}
+                  </div>
+                  <h3 className="text-base font-semibold group-hover:text-primary">
+                    {card.title}
+                  </h3>
+                  <p className="mt-1 text-lg font-bold tabular-nums tracking-tight sm:text-xl">
+                    {card.stat}
+                    <span className="ml-2 text-[10px] font-medium tracking-wide text-muted-foreground uppercase">
+                      {card.statLabel}
+                    </span>
                   </p>
-                  <h2 className="mt-2 text-2xl font-bold tracking-tight sm:text-3xl">
-                    They say / You say
-                  </h2>
-                </div>
+                  <div className="mt-2 flex-1">
+                    <ExpandableHint text={card.description} />
+                  </div>
+                  <span className="mt-3 inline-flex min-h-10 items-center gap-1.5 text-sm font-semibold text-primary">
+                    Explore
+                    <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
+                  </span>
+                </Link>
+              </FadeIn>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 3. Featured Rebuttal */}
+      <section className="section-y border-b border-border bg-muted/15">
+        <div className="page-container">
+          <FadeIn>
+            <SectionHeader
+              eyebrow="Featured Rebuttal"
+              eyebrowClassName="text-sunrise"
+              title="They say / You say"
+              tip="Open the full rebuttal for sources, copy buttons, and related counters."
+              action={
                 <Link
                   href="/rebuttal"
-                  className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
+                  className="inline-flex min-h-10 items-center gap-1.5 text-sm font-medium text-primary hover:underline"
                 >
                   Browse all {conversationHelpers.length}+
                   <ArrowRight className="size-4" />
                 </Link>
-              </div>
-            </FadeIn>
+              }
+            />
+          </FadeIn>
 
-            <FadeIn delay={80}>
-              <Link
-                href={rebuttalDetailPath(featuredRebuttal.id)}
-                className="group block"
-              >
-                <Card className="overflow-hidden border-sunrise/30 bg-white shadow-sm transition-all hover:border-sunrise/60 hover:shadow-md">
-                  <CardContent className="grid gap-0 p-0 md:grid-cols-2">
-                    <div className="border-b border-border p-6 md:border-r md:border-b-0 md:p-8">
-                      <p className="mb-3 text-xs font-semibold tracking-wide text-destructive uppercase">
-                        They say
-                      </p>
-                      <p className="text-lg font-medium leading-snug sm:text-xl">
-                        &ldquo;{featuredRebuttal.theySay}&rdquo;
-                      </p>
-                    </div>
-                    <div className="bg-sunrise/5 p-6 md:p-8">
-                      <p className="mb-3 text-xs font-semibold tracking-wide text-sunrise uppercase">
-                        You say
-                      </p>
-                      <p className="text-base leading-relaxed text-foreground/90 sm:text-lg">
-                        {featuredRebuttal.youSay.length > 280
-                          ? featuredRebuttal.youSay.slice(0, 280).trim() + "…"
-                          : featuredRebuttal.youSay}
-                      </p>
-                      <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-primary group-hover:underline">
-                        Read full rebuttal
-                        <ArrowRight className="size-4" />
-                      </span>
-                    </div>
-                  </CardContent>
-                </Card>
-              </Link>
-            </FadeIn>
-          </div>
-        </section>
+          <FadeIn delay={60}>
+            <Link href={rebuttalDetailPath(featuredRebuttal.id)} className="group block">
+              <Card className="overflow-hidden border-sunrise/30 transition-all hover:border-sunrise/60 hover:shadow-md">
+                <CardContent className="grid gap-0 p-0 md:grid-cols-2">
+                  <div className="border-b border-border p-4 md:border-r md:border-b-0 sm:p-5 md:p-6">
+                    <p className="mb-2 text-xs font-semibold tracking-wide text-destructive uppercase">
+                      They say
+                    </p>
+                    <p className="text-base font-medium leading-snug sm:text-lg">
+                      &ldquo;{featuredRebuttal.theySay}&rdquo;
+                    </p>
+                  </div>
+                  <div className="bg-sunrise/5 p-4 sm:p-5 md:p-6">
+                    <p className="mb-2 text-xs font-semibold tracking-wide text-sunrise uppercase">
+                      You say
+                    </p>
+                    <p className="text-sm leading-relaxed text-foreground/90 sm:text-base">
+                      {featuredRebuttal.youSay.length > 220
+                        ? featuredRebuttal.youSay.slice(0, 220).trim() + "…"
+                        : featuredRebuttal.youSay}
+                    </p>
+                    <span className="mt-4 inline-flex min-h-10 items-center gap-1.5 text-sm font-semibold text-primary group-hover:underline">
+                      Read full rebuttal
+                      <ArrowRight className="size-4" />
+                    </span>
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
+          </FadeIn>
+        </div>
+      </section>
 
-        {/* 4. Featured History moment */}
-        <section className="border-b border-border bg-white py-16 sm:py-20">
-          <div className="mx-auto max-w-6xl px-4 sm:px-6">
-            <FadeIn>
-              <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
-                <div>
-                  <p className="text-xs font-semibold tracking-[0.25em] text-amber-700 uppercase">
-                    Hidden History
-                  </p>
-                  <h2 className="mt-2 text-2xl font-bold tracking-tight sm:text-3xl">
-                    Textbook vs. reality
-                  </h2>
-                </div>
+      {/* 4. Featured History */}
+      <section className="section-y border-b border-border bg-white">
+        <div className="page-container">
+          <FadeIn>
+            <SectionHeader
+              eyebrow="Hidden History"
+              eyebrowClassName="text-amber-700"
+              title="Textbook vs. reality"
+              tip="Same dual-column anatomy as the full Hidden History workspace."
+              action={
                 <Link
                   href="/history"
-                  className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
+                  className="inline-flex min-h-10 items-center gap-1.5 text-sm font-medium text-primary hover:underline"
                 >
                   Open dual timeline
                   <ArrowRight className="size-4" />
                 </Link>
-              </div>
-            </FadeIn>
+              }
+            />
+          </FadeIn>
 
-            <FadeIn delay={80}>
-              <Link
-                href={historyDetailPath(featuredHistory.id)}
-                className="group block"
-              >
-                <Card className="border-amber-500/25 bg-white transition-all hover:border-amber-500/50 hover:shadow-md">
-                  <CardContent className="p-6 sm:p-8">
-                    <div className="mb-4 flex flex-wrap items-center gap-2">
-                      <Badge variant="outline">{featuredHistory.era}</Badge>
-                      <span className="text-sm text-muted-foreground">
-                        {featuredHistory.date}
-                      </span>
-                      <span className="text-sm font-semibold">
-                        {featuredHistory.title}
-                      </span>
-                    </div>
-                    <div className="grid gap-6 md:grid-cols-2">
-                      <div>
-                        <p className="mb-2 text-xs font-semibold tracking-wide text-muted-foreground uppercase">
-                          Textbook version
-                        </p>
-                        <p className="text-sm leading-relaxed text-muted-foreground">
-                          {featuredHistory.textbookVersion}
-                        </p>
-                      </div>
-                      <div>
-                        <p className="mb-2 text-xs font-semibold tracking-wide text-amber-700 uppercase">
-                          What actually happened
-                        </p>
-                        <p className="text-sm leading-relaxed">
-                          {featuredHistory.actualHistory}
-                        </p>
-                      </div>
-                    </div>
-                    <span className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-primary group-hover:underline">
-                      Explore this moment
-                      <ArrowRight className="size-4" />
+          <FadeIn delay={60}>
+            <Link href={historyDetailPath(featuredHistory.id)} className="group block">
+              <Card className="border-amber-500/25 transition-all hover:border-amber-500/50 hover:shadow-md">
+                <CardContent>
+                  <div className="mb-3 flex flex-wrap items-center gap-2">
+                    <Badge variant="outline">{featuredHistory.era}</Badge>
+                    <span className="text-xs text-muted-foreground">
+                      {featuredHistory.date}
                     </span>
-                  </CardContent>
-                </Card>
-              </Link>
-            </FadeIn>
-          </div>
-        </section>
+                    <span className="text-sm font-semibold">{featuredHistory.title}</span>
+                  </div>
+                  <div className="grid gap-4 md:grid-cols-2">
+                    <div>
+                      <p className="mb-1.5 text-xs font-semibold tracking-wide text-muted-foreground uppercase">
+                        Textbook version
+                      </p>
+                      <ExpandableHint text={featuredHistory.textbookVersion} previewLines={2} />
+                    </div>
+                    <div>
+                      <p className="mb-1.5 text-xs font-semibold tracking-wide text-amber-700 uppercase">
+                        What actually happened
+                      </p>
+                      <ExpandableHint text={featuredHistory.actualHistory} previewLines={2} />
+                    </div>
+                  </div>
+                  <span className="mt-4 inline-flex min-h-10 items-center gap-1.5 text-sm font-semibold text-primary group-hover:underline">
+                    Explore this moment
+                    <ArrowRight className="size-4" />
+                  </span>
+                </CardContent>
+              </Card>
+            </Link>
+          </FadeIn>
+        </div>
+      </section>
 
-        {/* 5. Tracker snapshot */}
-        <section className="border-b border-border bg-muted/20 py-16 sm:py-20">
-          <div className="mx-auto max-w-6xl px-4 sm:px-6">
-            <FadeIn>
-              <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
-                <div>
-                  <p className="text-xs font-semibold tracking-[0.25em] text-destructive uppercase">
-                    Tracker snapshot
-                  </p>
-                  <h2 className="mt-2 text-2xl font-bold tracking-tight sm:text-3xl">
-                    Latest high-severity events
-                  </h2>
-                </div>
+      {/* 5. Tracker snapshot */}
+      <section className="section-y border-b border-border bg-muted/15">
+        <div className="page-container">
+          <FadeIn>
+            <SectionHeader
+              eyebrow="Tracker snapshot"
+              eyebrowClassName="text-destructive"
+              title="Latest high-severity events"
+              tip="Severity scores use the same 1-10 scale as the full Tracker filters."
+              action={
                 <Link
                   href="/tracker"
-                  className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
+                  className="inline-flex min-h-10 items-center gap-1.5 text-sm font-medium text-primary hover:underline"
                 >
                   Full tracker
                   <ArrowRight className="size-4" />
                 </Link>
-              </div>
-            </FadeIn>
+              }
+            />
+          </FadeIn>
 
-            <div className="space-y-3">
-              {highSeverityLatest.map((event, i) => (
-                <FadeIn key={event.Event_ID} delay={i * 70}>
-                  <Link href={eventDetailPath(event.Event_ID)} className="block">
-                    <Card className="border-border bg-white transition-all hover:border-destructive/40 hover:shadow-sm">
-                      <CardContent className="flex flex-col gap-3 p-4 sm:flex-row sm:items-center sm:justify-between sm:p-5">
-                        <div className="min-w-0 flex-1">
-                          <div className="mb-1.5 flex flex-wrap items-center gap-2">
-                            <Badge variant="destructive" className="text-[10px]">
-                              {event.Action_Type}
-                            </Badge>
-                            <span className="text-[11px] text-muted-foreground">
-                              {formatDate(event.Date)}
-                            </span>
-                          </div>
-                          <p className="line-clamp-2 text-sm leading-snug">
-                            {event.Description}
-                          </p>
+          <div className="space-y-2.5">
+            {highSeverityLatest.map((event, i) => (
+              <FadeIn key={event.Event_ID} delay={i * 50}>
+                <Link href={eventDetailPath(event.Event_ID)} className="block">
+                  <Card className="transition-all hover:border-destructive/40 hover:shadow-sm">
+                    <CardContent className="flex flex-col gap-2.5 p-3.5 sm:flex-row sm:items-center sm:justify-between sm:p-4">
+                      <div className="min-w-0 flex-1">
+                        <div className="mb-1 flex flex-wrap items-center gap-2">
+                          <Badge variant="destructive" className="text-[10px]">
+                            {event.Action_Type}
+                          </Badge>
+                          <span className="text-[11px] text-muted-foreground">
+                            {formatDate(event.Date)}
+                          </span>
                         </div>
-                        <span
-                          className={cn(
-                            "shrink-0 text-lg font-bold tabular-nums",
-                            severityTextClass(event.Severity_Score)
-                          )}
-                        >
-                          {event.Severity_Score}/10
-                        </span>
-                      </CardContent>
-                    </Card>
-                  </Link>
-                </FadeIn>
-              ))}
-            </div>
-            <p className="mt-4 flex items-center gap-1.5 text-xs text-muted-foreground">
-              <ShieldCheck className="size-3.5 text-primary" />
-              Cross-referenced with independent Project 2025 monitors
-            </p>
-          </div>
-        </section>
-
-        {/* 6. Stats strip */}
-        <section
-          className="border-b border-border bg-white py-12 sm:py-16"
-          aria-label="Platform statistics"
-        >
-          <div className="mx-auto max-w-6xl px-4 sm:px-6">
-            <FadeIn>
-              <div className="grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-border bg-border sm:grid-cols-4">
-                {[
-                  {
-                    label: "Tracker events",
-                    value: trackerStats.total,
-                    sub: `${trackerStats.highSeverity} high severity`,
-                  },
-                  {
-                    label: "Rebuttals",
-                    value: conversationHelpers.length,
-                    sub: `${rebuttalCategorySlugs.length} categories`,
-                  },
-                  {
-                    label: "History entries",
-                    value: historyStats.entries,
-                    sub: `${historyStats.rebuttals} historical rebuttals`,
-                  },
-                  {
-                    label: "Verified links",
-                    value: validatedUrls.size,
-                    sub: "archived + checked",
-                  },
-                ].map((stat) => (
-                  <div
-                    key={stat.label}
-                    className="flex flex-col items-center justify-center bg-white px-4 py-8 text-center"
-                  >
-                    <p className="text-3xl font-bold tabular-nums sm:text-4xl">
-                      {stat.value}
-                    </p>
-                    <p className="mt-1 text-xs font-semibold tracking-wide text-foreground uppercase">
-                      {stat.label}
-                    </p>
-                    <p className="mt-0.5 text-[11px] text-muted-foreground">
-                      {stat.sub}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </FadeIn>
-          </div>
-        </section>
-
-        {/* 7. Start here CTA */}
-        <section className="border-b border-border bg-white py-16 sm:py-20">
-          <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
-            <FadeIn>
-              <div className="rounded-3xl border border-primary/20 bg-gradient-to-b from-primary/8 to-white px-6 py-12 sm:px-10">
-                <Sparkles className="mx-auto size-8 text-primary" />
-                <h2 className="mt-4 text-2xl font-bold tracking-tight sm:text-3xl">
-                  New here? Start with the tour.
-                </h2>
-                <p className="mx-auto mt-3 max-w-lg text-muted-foreground">
-                  A short guided path through the Rebuttal Desk, Hidden History,
-                  Tracker, and Blueprint so you know where to go next.
-                </p>
-                <Link
-                  href="/start"
-                  className="mt-8 inline-flex h-11 items-center gap-2 rounded-lg bg-primary px-6 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 hover:shadow-md"
-                >
-                  <Compass className="size-4" />
-                  Take the guided tour
-                  <ArrowRight className="size-4" />
+                        <p className="line-clamp-2 text-sm leading-snug">
+                          {event.Description}
+                        </p>
+                      </div>
+                      <span
+                        className={cn(
+                          "shrink-0 text-base font-bold tabular-nums sm:text-lg",
+                          severityTextClass(event.Severity_Score)
+                        )}
+                        title={`Severity ${event.Severity_Score} of 10`}
+                      >
+                        {event.Severity_Score}/10
+                      </span>
+                    </CardContent>
+                  </Card>
                 </Link>
-              </div>
-            </FadeIn>
+              </FadeIn>
+            ))}
           </div>
-        </section>
-      </main>
+          <p className="mt-3 flex items-center gap-1.5 text-xs text-muted-foreground">
+            <ShieldCheck className="size-3.5 text-primary" />
+            Cross-referenced with independent Project 2025 monitors
+          </p>
+        </div>
+      </section>
 
-      <SiteFooter />
-    </div>
+      {/* 6. Stats strip */}
+      <section className="section-y-tight border-b border-border bg-white" aria-label="Platform statistics">
+        <div className="page-container">
+          <FadeIn>
+            <div className="grid grid-cols-2 gap-px overflow-hidden rounded-xl border border-border bg-border sm:grid-cols-4">
+              <StatTile
+                label="Tracker events"
+                value={trackerStats.total}
+                sub={`${trackerStats.highSeverity} high severity`}
+                tip="Verified executive actions scored by democratic risk."
+              />
+              <StatTile
+                label="Rebuttals"
+                value={conversationHelpers.length}
+                sub={`${rebuttalCategorySlugs.length} categories`}
+                tip="Sourced they-say / you-say counters ready to copy."
+              />
+              <StatTile
+                label="History entries"
+                value={historyStats.entries}
+                sub={`${historyStats.rebuttals} historical rebuttals`}
+                tip="Dual-timeline moments textbooks often skip."
+              />
+              <StatTile
+                label="Verified links"
+                value={validatedUrls.size}
+                sub="archived + checked"
+                tip="Primary URLs checked and archived for durability."
+              />
+            </div>
+          </FadeIn>
+        </div>
+      </section>
+
+      {/* 7. Start here CTA */}
+      <section className="section-y border-b border-border bg-white">
+        <div className="page-container max-w-3xl text-center">
+          <FadeIn>
+            <div className="rounded-2xl border border-primary/20 bg-gradient-to-b from-primary/8 to-white px-5 py-8 sm:px-8 sm:py-10">
+              <Sparkles className="mx-auto size-7 text-primary" />
+              <h2 className="mt-3 text-xl font-bold tracking-tight sm:text-2xl">
+                New here? Start with the tour.
+              </h2>
+              <p className="mx-auto mt-2 max-w-lg text-sm text-muted-foreground">
+                A short guided path through Rebuttal Desk, Hidden History,
+                Tracker, and Blueprint so you know where to go next.
+              </p>
+              <Link
+                href="/start"
+                className="mt-5 inline-flex h-11 items-center gap-2 rounded-lg bg-primary px-5 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 hover:shadow-md"
+              >
+                <Compass className="size-4" />
+                Take the guided tour
+                <ArrowRight className="size-4" />
+              </Link>
+            </div>
+          </FadeIn>
+        </div>
+      </section>
+    </PageShell>
   );
 }

@@ -74,22 +74,22 @@ export function BlueprintSection({
       <BlueprintHashNav onOpenPolicy={setOpenPolicy} />
       <section
         id={standalone ? undefined : "blueprint"}
-        className={cn("scroll-mt-16 py-16 sm:py-20", standalone && "py-10")}
+        className={cn("section-y scroll-mt-16", standalone && "section-y-tight")}
         aria-labelledby={standalone ? undefined : "blueprint-heading"}
       >
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+        <div className="page-container">
           {!standalone && (
-          <div className="mb-10">
-            <div className="mb-3 flex items-center gap-2">
+          <div className="mb-6 sm:mb-8">
+            <div className="mb-2 flex items-center gap-2">
               <div className="size-2 rounded-full bg-primary shadow-[0_0_8px_oklch(0.70_0.17_70/40%)]" />
-              <span className="text-xs font-semibold tracking-[0.2em] text-primary uppercase">
+              <span className="text-xs font-semibold tracking-[0.22em] text-primary uppercase">
                 Progressive Legislature
               </span>
             </div>
-            <h2 id="blueprint-heading" className="text-3xl font-bold tracking-tight sm:text-4xl">
+            <h2 id="blueprint-heading" className="text-xl font-bold tracking-tight sm:text-2xl lg:text-3xl">
               The Blueprint
             </h2>
-            <p className="mt-3 max-w-2xl text-muted-foreground">
+            <p className="mt-2 max-w-2xl text-sm text-muted-foreground">
               Evidence-based policy proposals with economic modeling, implementation
               pathways, and built-in safeguards against reversal.
             </p>
@@ -253,19 +253,19 @@ export function BlueprintSection({
       <section
         id="safeguards"
         className={cn(
-          "section-safeguards scroll-mt-16 border-t border-border py-16 sm:py-20",
-          standalone && "py-10"
+          "section-safeguards section-y scroll-mt-16 border-t border-border",
+          standalone && "section-y-tight"
         )}
       >
-        <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <div className="mb-10 text-center">
-            <Badge variant="outline" className="mb-3 border-primary/30 text-primary">
+        <div className="page-container">
+          <div className="mb-6 text-center sm:mb-8">
+            <Badge variant="outline" className="mb-2 border-primary/30 text-primary">
               Constitutional Architecture
             </Badge>
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+            <h2 className="text-xl font-bold tracking-tight sm:text-2xl lg:text-3xl">
               Irreversible Safeguards
             </h2>
-            <p className="mx-auto mt-3 max-w-2xl text-muted-foreground">
+            <p className="mx-auto mt-2 max-w-2xl text-sm text-muted-foreground">
               Structural reforms designed to survive electoral cycles and prevent
               the rollback of democratic and economic progress.
             </p>

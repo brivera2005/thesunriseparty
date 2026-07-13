@@ -1,16 +1,11 @@
 "use client";
 
-import Link from "next/link";
-import { ArrowLeft, Share2 } from "lucide-react";
+import { Share2 } from "lucide-react";
 import { useState, useEffect } from "react";
-import { SiteHeader } from "@/components/layout/site-header";
-import { SiteFooter } from "@/components/layout/site-footer";
-import { SkipLink } from "@/components/layout/skip-link";
-import { CitationModal } from "@/components/citation";
-import { CommandPalette } from "@/components/layout/command-palette";
+import { PageShell } from "@/components/layout/page-shell";
+import { PageHero } from "@/components/layout/page-hero";
 import { BlueprintSection } from "@/components/blueprint/blueprint-section";
-import { Button, buttonVariants } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
 import { useAppStore } from "@/lib/store";
 
 function ShareButton() {
@@ -38,7 +33,7 @@ function ShareButton() {
   };
 
   return (
-    <Button variant="outline" size="sm" onClick={handleShare} className="gap-2">
+    <Button variant="outline" size="sm" onClick={handleShare} className="h-9 gap-2">
       <Share2 className="size-3.5" />
       {copied ? "Link copied" : "Share"}
     </Button>
@@ -53,47 +48,16 @@ export function BlueprintPage() {
   }, [setMode]);
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <SkipLink />
-      <SiteHeader />
-      <CommandPalette />
-      <CitationModal />
-
-      <main id="main-content">
-        <section className="border-b border-border bg-gradient-to-b from-primary/5 to-background">
-          <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14">
-            <Link
-              href="/"
-              className={cn(
-                buttonVariants({ variant: "ghost", size: "sm" }),
-                "mb-6 gap-2 text-muted-foreground"
-              )}
-            >
-              <ArrowLeft className="size-3.5" />
-              Back to Project Sunrise
-            </Link>
-            <div className="flex flex-wrap items-start justify-between gap-4">
-              <div className="max-w-2xl">
-                <p className="mb-2 text-sm font-semibold tracking-[0.2em] text-primary uppercase">
-                  Shareable Resource
-                </p>
-                <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
-                  The Progressive Blueprint
-                </h1>
-                <p className="mt-3 text-muted-foreground">
-                  Medicare for All, climate mobilization, voting rights, and
-                  irreversible safeguards - with bill numbers and timelines.
-                </p>
-              </div>
-              <ShareButton />
-            </div>
-          </div>
-        </section>
-
-        <BlueprintSection standalone />
-      </main>
-
-      <SiteFooter />
-    </div>
+    <PageShell>
+      <PageHero
+        tone="default"
+        eyebrow="Shareable Resource"
+        title="The Progressive Blueprint"
+        description="Medicare for All, climate mobilization, voting rights, and irreversible safeguards - with bill numbers and timelines."
+        tip="Policy pillars and safeguards keep the same card layout from phone to desktop."
+        actions={<ShareButton />}
+      />
+      <BlueprintSection standalone />
+    </PageShell>
   );
 }

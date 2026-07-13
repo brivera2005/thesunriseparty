@@ -32,9 +32,9 @@ export function SiteFooter() {
   const heritage = trackerSources.find((s) => s.id === "heritage");
 
   return (
-    <footer className="border-t border-border bg-muted/30">
-      <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-12">
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-5 lg:gap-10">
+    <footer className="border-t border-border bg-white">
+      <div className="page-container py-8 sm:py-10">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-5 lg:gap-8">
           <div className="lg:col-span-2">
             <Link href="/" className="mb-3 inline-block" aria-label="Project Sunrise home">
               <BrandLogo variant="footer" />

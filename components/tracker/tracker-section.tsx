@@ -172,22 +172,22 @@ export function TrackerSection({
   return (
     <section
       id={standalone ? undefined : "tracker"}
-      className={cn("scroll-mt-16 py-16 sm:py-20", standalone && "py-10")}
+      className={cn("section-y scroll-mt-16", standalone && "section-y-tight")}
       aria-labelledby={standalone ? undefined : "tracker-heading"}
     >
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+      <div className="page-container">
         {!standalone && (
-        <div className="mb-10">
-          <div className="mb-3 flex items-center gap-2">
+        <div className="mb-6 sm:mb-8">
+          <div className="mb-2 flex items-center gap-2">
             <div className="size-2 animate-pulse rounded-full bg-destructive shadow-[0_0_8px_oklch(0.58_0.22_25/50%)]" />
-            <span className="text-xs font-semibold tracking-[0.2em] text-destructive uppercase">
+            <span className="text-xs font-semibold tracking-[0.22em] text-destructive uppercase">
               Live Monitoring
             </span>
           </div>
-          <h2 id="tracker-heading" className="text-3xl font-bold tracking-tight sm:text-4xl">
+          <h2 id="tracker-heading" className="text-xl font-bold tracking-tight sm:text-2xl lg:text-3xl">
             Project 2025 Tracker
           </h2>
-          <p className="mt-3 max-w-2xl text-muted-foreground">
+          <p className="mt-2 max-w-2xl text-sm text-muted-foreground">
             Documenting authoritarian policy implementation with primary-source
             citations, severity scoring, and cross-references to independent
             watchdog trackers.

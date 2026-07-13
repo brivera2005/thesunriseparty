@@ -1,16 +1,9 @@
 "use client";
 
-import { useEffect } from "react";
-import { useAppStore } from "@/lib/store";
+import { TooltipProvider } from "@/components/ui/tooltip";
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const mode = useAppStore((s) => s.mode);
-
-  useEffect(() => {
-    const root = document.documentElement;
-    root.classList.remove("mode-tracker", "mode-blueprint", "dark");
-    root.classList.add(`mode-${mode}`);
-  }, [mode]);
-
-  return <>{children}</>;
+  // Unified white + sunrise palette across every route.
+  // Mode store values remain for navigation prefs but no longer recolor the UI.
+  return <TooltipProvider delay={280}>{children}</TooltipProvider>;
 }
