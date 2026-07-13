@@ -14539,7 +14539,7 @@ export const conversationHelpers: ConversationHelper[] = [
     sources: [
       cite("wh_regen_ag", "Advancing Regenerative Agriculture and Strengthening American Farm Resilience", "The White House", "https://www.whitehouse.gov/presidential-actions/2026/06/advancing-regenerative-agriculture-and-strengthening-american-farm-resilience/", "E.O. 14414 sets regenerative agriculture directives.", "2026-06-25"),
       cite("epa_climate_reb", "Climate Change", "EPA", "https://www.epa.gov/climate-change", "EPA publishes U.S. climate science and sector emissions context.", "2025-01-01"),
-      cite("usda_climate", "Climate Change", "USDA", "https://www.usda.gov/topics/climate-solutions", "USDA tracks climate and agriculture adaptation programs.", "2025-01-01")
+      cite("usda_climate", "Climate Change", "USDA", "https://www.usda.gov/", "USDA publishes agriculture and climate adaptation programs.", "2025-01-01")
     ],
     difficulty: "easy",
     relatedClaims: ["climate-hoax", "climate-not-urgent"],

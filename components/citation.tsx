@@ -1,6 +1,6 @@
 "use client";
 
-import { ExternalLink, Archive, ShieldCheck } from "lucide-react";
+import { ExternalLink, Archive, ShieldCheck, AlertTriangle } from "lucide-react";
 import type { CitationSource } from "@/lib/types";
 import { useAppStore } from "@/lib/store";
 import {
@@ -15,6 +15,10 @@ import {
   isUrlValidated,
   extractArchiveDate,
 } from "@/lib/data/validated-urls";
+import {
+  normalizeCitationUrl,
+  waybackCalendarUrl,
+} from "@/lib/data/conversation-citations";
 import { getSourceTier } from "@/lib/data/source-tier";
 import { cn } from "@/lib/utils";
 
@@ -38,11 +42,22 @@ export function Citation({ source, index, children }: CitationProps) {
   );
 }
 
+function safeHref(url: string | undefined | null): string | null {
+  const absolute = normalizeCitationUrl(url ?? "");
+  return absolute || null;
+}
+
 export function CitationModal() {
   const activeCitation = useAppStore((s) => s.activeCitation);
   const closeCitation = useAppStore((s) => s.closeCitation);
 
-  const verified = activeCitation ? isUrlValidated(activeCitation.url) : false;
+  const primaryHref = activeCitation ? safeHref(activeCitation.url) : null;
+  const archiveHref = activeCitation
+    ? safeHref(activeCitation.waybackUrl) ||
+      (primaryHref ? waybackCalendarUrl(primaryHref) : null)
+    : null;
+  const verified = primaryHref ? isUrlValidated(primaryHref) : false;
+  const preferArchive = Boolean(archiveHref) && (!primaryHref || !verified);
   const archiveDate = activeCitation
     ? extractArchiveDate(activeCitation.waybackUrl)
     : null;
@@ -82,6 +97,15 @@ export function CitationModal() {
                     Verified
                   </Badge>
                 )}
+                {!verified && primaryHref && (
+                  <Badge
+                    variant="outline"
+                    className="gap-1 border-amber-500/40 text-amber-800"
+                  >
+                    <AlertTriangle className="size-3" />
+                    Use archive if primary fails
+                  </Badge>
+                )}
               </div>
               <DialogTitle className="text-left leading-snug">
                 {activeCitation.title}
@@ -98,38 +122,73 @@ export function CitationModal() {
             </blockquote>
 
             <div className="space-y-3 pt-2">
-              {activeCitation.url && (
+              {preferArchive && archiveHref ? (
                 <div className="rounded-lg border border-primary/25 bg-primary/5 p-3">
                   <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-primary">
+                    Archived Copy (recommended)
+                  </p>
+                  <a
+                    href={archiveHref}
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    className="inline-flex h-8 items-center gap-1.5 rounded-md border border-primary/30 bg-background px-3 text-sm font-medium hover:bg-muted"
+                  >
+                    <Archive className="size-3.5" />
+                    Open archive
+                  </a>
+                  <p className="mt-2 truncate text-[11px] text-muted-foreground">
+                    {archiveHref}
+                  </p>
+                </div>
+              ) : null}
+
+              {primaryHref ? (
+                <div
+                  className={cn(
+                    "rounded-lg border p-3",
+                    preferArchive
+                      ? "border-border bg-muted/30"
+                      : "border-primary/25 bg-primary/5"
+                  )}
+                >
+                  <p
+                    className={cn(
+                      "mb-2 text-xs font-semibold uppercase tracking-wider",
+                      preferArchive ? "text-muted-foreground" : "text-primary"
+                    )}
+                  >
                     Primary Source
                   </p>
                   <a
-                    href={activeCitation.url}
+                    href={primaryHref}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex h-8 items-center gap-1.5 rounded-md border border-primary/30 bg-background px-3 text-sm font-medium hover:bg-muted"
+                    className="inline-flex h-8 items-center gap-1.5 rounded-md border border-border bg-background px-3 text-sm font-medium hover:bg-muted"
                   >
                     <ExternalLink className="size-3.5" />
                     Open original
                   </a>
                   <p className="mt-2 truncate text-[11px] text-muted-foreground">
-                    {activeCitation.url}
+                    {primaryHref}
                   </p>
                 </div>
+              ) : (
+                <p className="rounded-lg border border-border bg-muted/30 p-3 text-sm text-muted-foreground">
+                  No primary URL on file
+                  {archiveHref ? " — use the archived copy above." : "."}
+                </p>
               )}
 
-              {activeCitation.waybackUrl && (
+              {!preferArchive && archiveHref ? (
                 <div className="rounded-lg border border-border bg-muted/30 p-3">
                   <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
                     Archived Copy
                   </p>
                   <a
-                    href={activeCitation.waybackUrl}
+                    href={archiveHref}
                     target="_blank"
-                    rel="noopener noreferrer"
-                    className={cn(
-                      "inline-flex h-8 items-center gap-1.5 rounded-md border border-border bg-background px-3 text-sm font-medium hover:bg-muted"
-                    )}
+                    rel="noopener noreferrer nofollow"
+                    className="inline-flex h-8 items-center gap-1.5 rounded-md border border-border bg-background px-3 text-sm font-medium hover:bg-muted"
                   >
                     <Archive className="size-3.5" />
                     Wayback Machine
@@ -140,7 +199,7 @@ export function CitationModal() {
                     </p>
                   )}
                 </div>
-              )}
+              ) : null}
             </div>
           </>
         )}

@@ -14,12 +14,7 @@ import type { TimelineEvent } from "@/lib/types";
 import { eventDetailPath, getRelatedEvents } from "@/lib/data/timeline-events";
 import { policyFixPath } from "@/lib/data/policies";
 import { SaveButton } from "@/components/ui/save-button";
-import { SiteHeader } from "@/components/layout/site-header";
-import { SiteFooter } from "@/components/layout/site-footer";
-import { SkipLink } from "@/components/layout/skip-link";
-import { CitationModal } from "@/components/citation";
 import { CitationList } from "@/components/citation";
-import { CommandPalette } from "@/components/layout/command-palette";
 import { SeverityGauge } from "@/components/tracker/severity-gauge";
 import { EventEmbedSnippet } from "@/components/tracker/event-embed-snippet";
 import { Badge } from "@/components/ui/badge";
@@ -27,6 +22,7 @@ import { Button, buttonVariants } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { SITE_URL } from "@/lib/metadata";
+import { PageShell } from "@/components/layout/page-shell";
 
 function formatDate(dateStr: string) {
   const d = new Date(dateStr + "T00:00:00");
@@ -73,14 +69,9 @@ export function EventDetailPage({ event }: { event: TimelineEvent }) {
   const relatedEvents = getRelatedEvents(event);
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <SkipLink />
-      <SiteHeader />
-      <CommandPalette />
-      <CitationModal />
+    <PageShell>
 
-      <main id="main-content">
-        <section className="border-b border-border bg-gradient-to-b from-destructive/5 to-background">
+        <section className="border-b border-border bg-white">
           <div className="mx-auto max-w-3xl px-4 py-10 sm:px-6 sm:py-14">
             <Link
               href="/tracker"
@@ -231,9 +222,6 @@ export function EventDetailPage({ event }: { event: TimelineEvent }) {
             )}
           </div>
         </section>
-      </main>
-
-      <SiteFooter />
-    </div>
+      </PageShell>
   );
 }

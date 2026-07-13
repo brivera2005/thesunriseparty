@@ -66,9 +66,26 @@ function looksLikeSoft404(html, url) {
     "no longer available",
     "document not found",
     "we couldn't find that page",
+    "sorry, we can't find that page",
+    "sorry, we can&apos;t find that page",
+    "hmmm, we couldn't find",
+    "the requested url was not found",
+    "error 404",
+    "not found |",
+    "404 not found",
   ];
   if (patterns.some((p) => lower.includes(p))) return true;
   if (url.includes("whitehouse.gov") && lower.includes("<title>") && lower.includes("404")) {
+    return true;
+  }
+  // Wayback interstitial when timestamp has no capture
+  if (
+    url.includes("web.archive.org") &&
+    (lower.includes("this url has been excluded") ||
+      lower.includes("page cannot be crawled") ||
+      lower.includes("wayback machine doesn't have") ||
+      lower.includes("has not been archived"))
+  ) {
     return true;
   }
   return false;

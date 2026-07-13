@@ -1,8 +1,9 @@
 import type { CitationSource } from "@/lib/types";
+import { waybackCalendarUrl } from "@/lib/data/conversation-citations";
 
 /** Archive.org calendar link - always resolves even when no snapshot exists yet. */
 function wayback(url: string): string {
-  return `https://web.archive.org/web/*/${url}`;
+  return waybackCalendarUrl(url);
 }
 
 export const citations: Record<string, CitationSource> = {

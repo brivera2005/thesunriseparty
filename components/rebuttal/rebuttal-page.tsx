@@ -52,7 +52,7 @@ function MilestoneBanner({
 }) {
   return (
     <section
-      className="border-b border-border bg-gradient-to-r from-sunrise/10 via-primary/10 to-sunrise/10"
+      className="border-b border-border bg-white"
       aria-label={`${count} rebuttals milestone`}
     >
       <div className="page-container flex flex-col items-center gap-2.5 py-5 text-center sm:flex-row sm:justify-center sm:py-6">

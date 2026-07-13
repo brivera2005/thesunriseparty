@@ -15,18 +15,14 @@ import {
 import type { ConversationHelper } from "@/lib/types";
 import { rebuttalDetailPath, conversationHelpers } from "@/lib/data/conversation-helpers";
 import { SaveButton } from "@/components/ui/save-button";
-import { SiteHeader } from "@/components/layout/site-header";
-import { SiteFooter } from "@/components/layout/site-footer";
-import { SkipLink } from "@/components/layout/skip-link";
-import { CitationModal } from "@/components/citation";
 import { CitationList } from "@/components/citation";
-import { CommandPalette } from "@/components/layout/command-palette";
 import { Badge } from "@/components/ui/badge";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { SITE_URL } from "@/lib/metadata";
 import type { RebuttalDifficulty } from "@/lib/types";
+import { PageShell } from "@/components/layout/page-shell";
 
 const difficultyStyles: Record<RebuttalDifficulty, string> = {
   easy: "border-severity-low/40 text-severity-low",
@@ -98,14 +94,9 @@ function CopyButton({ text, label }: { text: string; label: string }) {
 
 export function RebuttalDetailPage({ entry }: { entry: ConversationHelper }) {
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <SkipLink />
-      <SiteHeader />
-      <CommandPalette />
-      <CitationModal />
+    <PageShell>
 
-      <main id="main-content">
-        <section className="border-b border-border bg-gradient-to-b from-sunrise/5 to-background">
+        <section className="border-b border-border bg-white">
           <div className="mx-auto max-w-3xl px-4 py-10 sm:px-6 sm:py-14">
             <Link
               href="/rebuttal"
@@ -221,9 +212,6 @@ export function RebuttalDetailPage({ entry }: { entry: ConversationHelper }) {
             </Card>
           </div>
         </section>
-      </main>
-
-      <SiteFooter />
-    </div>
+      </PageShell>
   );
 }

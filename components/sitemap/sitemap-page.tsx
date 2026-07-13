@@ -7,11 +7,6 @@ import {
   ExternalLink,
   Rss,
 } from "lucide-react";
-import { SiteHeader } from "@/components/layout/site-header";
-import { SiteFooter } from "@/components/layout/site-footer";
-import { SkipLink } from "@/components/layout/skip-link";
-import { CommandPalette } from "@/components/layout/command-palette";
-import { CitationModal } from "@/components/citation";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { buttonVariants } from "@/components/ui/button";
@@ -21,18 +16,13 @@ import {
   sitemapStats,
 } from "@/lib/data/sitemap-content";
 import { cn } from "@/lib/utils";
+import { PageShell } from "@/components/layout/page-shell";
 
 export function SitemapPage() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <SkipLink />
-      <SiteHeader />
-      <CommandPalette />
-      <CitationModal />
+    <PageShell>
 
-      <main id="main-content">
-        <section className="relative overflow-hidden border-b border-border">
-          <div className="hero-gradient-blueprint absolute inset-0 opacity-60" />
+        <section className="relative overflow-hidden border-b border-border bg-white">
           <div className="relative mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16">
             <Link
               href="/"
@@ -180,9 +170,6 @@ export function SitemapPage() {
             ))}
           </div>
         </section>
-      </main>
-
-      <SiteFooter />
-    </div>
+      </PageShell>
   );
 }

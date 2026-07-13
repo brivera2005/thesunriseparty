@@ -2,11 +2,6 @@
 
 import Link from "next/link";
 import { ArrowLeft, MessageSquareQuote } from "lucide-react";
-import { SiteHeader } from "@/components/layout/site-header";
-import { SiteFooter } from "@/components/layout/site-footer";
-import { SkipLink } from "@/components/layout/skip-link";
-import { CommandPalette } from "@/components/layout/command-palette";
-import { CitationModal } from "@/components/citation";
 import { Citation } from "@/components/citation";
 import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
@@ -19,6 +14,7 @@ import {
 import type { HistoryEra } from "@/lib/types";
 import { useMemo, useState } from "react";
 import { cn } from "@/lib/utils";
+import { PageShell } from "@/components/layout/page-shell";
 
 const allRebuttals = getAllHistoricalRebuttals();
 
@@ -31,14 +27,9 @@ export function HistoryRebuttalsPage() {
   }, [eraFilter]);
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <SkipLink />
-      <SiteHeader />
-      <CommandPalette />
-      <CitationModal />
+    <PageShell>
 
-      <main id="main-content">
-        <section className="border-b border-border bg-gradient-to-b from-sunrise/5 to-background">
+        <section className="border-b border-border bg-white">
           <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14">
             <Link
               href="/history"
@@ -148,9 +139,6 @@ export function HistoryRebuttalsPage() {
             </p>
           </div>
         </section>
-      </main>
-
-      <SiteFooter />
-    </div>
+      </PageShell>
   );
 }

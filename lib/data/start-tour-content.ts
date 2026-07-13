@@ -40,7 +40,7 @@ export const tourSteps: TourStep[] = [
       "Anti-propaganda stance with Wayback archives",
       "Cross-referenced with independent watchdogs",
     ],
-    accent: "from-primary/15 to-primary/5 border-primary/30",
+    accent: "border-primary/30",
   },
   {
     step: 2,
@@ -56,7 +56,7 @@ export const tourSteps: TourStep[] = [
       "Per-event detail pages with related clusters",
       "Compare vs. CPR and project2025.observer",
     ],
-    accent: "from-destructive/15 to-destructive/5 border-destructive/30",
+    accent: "border-border",
   },
   {
     step: 3,
@@ -72,7 +72,7 @@ export const tourSteps: TourStep[] = [
       "Difficulty tags: easy, medium, hard",
       "Every response backed by primary sources",
     ],
-    accent: "from-sunrise/15 to-sunrise/5 border-sunrise/30",
+    accent: "border-primary/30",
   },
   {
     step: 4,
@@ -88,6 +88,6 @@ export const tourSteps: TourStep[] = [
       "Cost-of-inaction data on every fix",
       "SAFE safeguards against elite capture",
     ],
-    accent: "from-primary/15 to-sunrise/5 border-primary/30",
+    accent: "border-primary/30",
   },
 ];

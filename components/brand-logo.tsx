@@ -20,16 +20,16 @@ const sizeMap = {
     className:
       "h-auto w-[min(100%,280px)] sm:w-[320px] md:w-[380px] lg:w-[440px]",
   },
+  // Header + footer share the same chrome size for cohesion
   header: {
-    width: 320,
-    height: 174,
-    // Keep below header padding so the mark never clips the sticky border
-    className: "h-10 w-auto sm:h-11 md:h-12",
+    width: 280,
+    height: 152,
+    className: "h-11 w-auto sm:h-12",
   },
   footer: {
-    width: 220,
-    height: 120,
-    className: "h-auto w-[150px] sm:w-[170px]",
+    width: 280,
+    height: 152,
+    className: "h-11 w-auto sm:h-12",
   },
 } as const;
 

@@ -214,7 +214,7 @@ export function HomeHub({ compact = false }: { compact?: boolean }) {
   return (
     <>
       <section className="relative overflow-hidden border-b border-border">
-        <div className="hero-gradient-blueprint absolute inset-0" />
+        <div className=" absolute inset-0" />
         <div className="relative mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-24">
           <div className="max-w-3xl">
             <p className="mb-4 text-sm font-semibold tracking-[0.2em] text-primary uppercase">
@@ -253,7 +253,7 @@ export function HomeHub({ compact = false }: { compact?: boolean }) {
 
       {timelineEvents.length >= 320 && (
         <section
-          className="border-b border-border bg-gradient-to-r from-primary/10 via-sunrise/10 to-destructive/10"
+          className="border-b border-border bg-white"
           aria-label="320 events milestone"
         >
           <div className="mx-auto flex max-w-6xl flex-col items-center gap-3 px-4 py-6 text-center sm:flex-row sm:justify-center sm:px-6 sm:py-8">
@@ -280,7 +280,7 @@ export function HomeHub({ compact = false }: { compact?: boolean }) {
 
       {timelineEvents.length >= 300 && timelineEvents.length < 320 && (
         <section
-          className="border-b border-border bg-gradient-to-r from-primary/10 via-sunrise/10 to-destructive/10"
+          className="border-b border-border bg-white"
           aria-label="300 events milestone"
         >
           <div className="mx-auto flex max-w-6xl flex-col items-center gap-3 px-4 py-6 text-center sm:flex-row sm:justify-center sm:px-6 sm:py-8">
@@ -307,7 +307,7 @@ export function HomeHub({ compact = false }: { compact?: boolean }) {
 
       {timelineEvents.length >= 280 && timelineEvents.length < 300 && (
         <section
-          className="border-b border-border bg-gradient-to-r from-primary/10 via-sunrise/10 to-destructive/10"
+          className="border-b border-border bg-white"
           aria-label="280 events milestone"
         >
           <div className="mx-auto flex max-w-6xl flex-col items-center gap-3 px-4 py-6 text-center sm:flex-row sm:justify-center sm:px-6 sm:py-8">
@@ -334,7 +334,7 @@ export function HomeHub({ compact = false }: { compact?: boolean }) {
 
       {timelineEvents.length >= 260 && timelineEvents.length < 280 && (
         <section
-          className="border-b border-border bg-gradient-to-r from-primary/10 via-sunrise/10 to-destructive/10"
+          className="border-b border-border bg-white"
           aria-label="260 events milestone"
         >
           <div className="mx-auto flex max-w-6xl flex-col items-center gap-3 px-4 py-6 text-center sm:flex-row sm:justify-center sm:px-6 sm:py-8">
@@ -360,7 +360,7 @@ export function HomeHub({ compact = false }: { compact?: boolean }) {
 
       {timelineEvents.length >= 240 && timelineEvents.length < 260 && (
         <section
-          className="border-b border-border bg-gradient-to-r from-primary/10 via-sunrise/10 to-destructive/10"
+          className="border-b border-border bg-white"
           aria-label="240 events milestone"
         >
           <div className="mx-auto flex max-w-6xl flex-col items-center gap-3 px-4 py-6 text-center sm:flex-row sm:justify-center sm:px-6 sm:py-8">
@@ -386,7 +386,7 @@ export function HomeHub({ compact = false }: { compact?: boolean }) {
 
       {timelineEvents.length >= 125 && timelineEvents.length < 240 && (
         <section
-          className="border-b border-border bg-gradient-to-r from-primary/10 via-sunrise/10 to-destructive/10"
+          className="border-b border-border bg-white"
           aria-label="125 events milestone"
         >
           <div className="mx-auto flex max-w-6xl flex-col items-center gap-3 px-4 py-6 text-center sm:flex-row sm:justify-center sm:px-6 sm:py-8">
@@ -412,7 +412,7 @@ export function HomeHub({ compact = false }: { compact?: boolean }) {
 
       {timelineEvents.length >= 120 && timelineEvents.length < 125 && (
         <section
-          className="border-b border-border bg-gradient-to-r from-primary/10 via-sunrise/10 to-destructive/10"
+          className="border-b border-border bg-white"
           aria-label="120 events milestone"
         >
           <div className="mx-auto flex max-w-6xl flex-col items-center gap-3 px-4 py-6 text-center sm:flex-row sm:justify-center sm:px-6 sm:py-8">
@@ -438,7 +438,7 @@ export function HomeHub({ compact = false }: { compact?: boolean }) {
 
       {timelineEvents.length >= 115 && timelineEvents.length < 120 && (
         <section
-          className="border-b border-border bg-gradient-to-r from-primary/10 via-sunrise/10 to-destructive/10"
+          className="border-b border-border bg-white"
           aria-label="115 events milestone"
         >
           <div className="mx-auto flex max-w-6xl flex-col items-center gap-3 px-4 py-6 text-center sm:flex-row sm:justify-center sm:px-6 sm:py-8">
@@ -464,7 +464,7 @@ export function HomeHub({ compact = false }: { compact?: boolean }) {
 
       {timelineEvents.length >= 110 && timelineEvents.length < 115 && (
         <section
-          className="border-b border-border bg-gradient-to-r from-primary/10 via-sunrise/10 to-destructive/10"
+          className="border-b border-border bg-white"
           aria-label="110 events milestone"
         >
           <div className="mx-auto flex max-w-6xl flex-col items-center gap-3 px-4 py-6 text-center sm:flex-row sm:justify-center sm:px-6 sm:py-8">
@@ -490,7 +490,7 @@ export function HomeHub({ compact = false }: { compact?: boolean }) {
 
       {timelineEvents.length >= 100 && timelineEvents.length < 110 && (
         <section
-          className="border-b border-border bg-gradient-to-r from-primary/10 via-sunrise/10 to-destructive/10"
+          className="border-b border-border bg-white"
           aria-label="100 events milestone"
         >
           <div className="mx-auto flex max-w-6xl flex-col items-center gap-3 px-4 py-6 text-center sm:flex-row sm:justify-center sm:px-6 sm:py-8">

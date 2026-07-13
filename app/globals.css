@@ -41,6 +41,7 @@
   --color-card: var(--card);
   --color-sunrise: var(--sunrise);
   --color-sunrise-foreground: var(--sunrise-foreground);
+  --color-navy: var(--navy);
   --color-severity-low: var(--severity-low);
   --color-severity-moderate: var(--severity-moderate);
   --color-severity-high: var(--severity-high);
@@ -54,111 +55,104 @@
   --radius-4xl: calc(var(--radius) * 2.6);
 }
 
+/* Logo palette: pure white + navy + sunrise orange. No page-specific themes. */
 :root {
   --background: #ffffff;
-  --foreground: oklch(0.22 0.03 55);
+  --foreground: #0b1f3a;
   --card: #ffffff;
-  --card-foreground: oklch(0.22 0.03 55);
+  --card-foreground: #0b1f3a;
   --popover: #ffffff;
-  --popover-foreground: oklch(0.22 0.03 55);
-  --primary: oklch(0.68 0.17 72);
-  --primary-foreground: oklch(0.98 0.01 90);
-  --secondary: oklch(0.97 0.008 90);
-  --secondary-foreground: oklch(0.30 0.04 55);
-  --muted: oklch(0.965 0.006 90);
-  --muted-foreground: oklch(0.48 0.03 60);
-  --accent: oklch(0.97 0.02 85);
-  --accent-foreground: oklch(0.28 0.05 55);
-  --destructive: oklch(0.55 0.22 25);
-  --border: oklch(0.91 0.01 90);
-  --input: oklch(0.91 0.01 90);
-  --ring: oklch(0.68 0.17 72);
-  --sunrise: oklch(0.72 0.17 68);
-  --sunrise-foreground: oklch(0.22 0.05 55);
-  --severity-low: oklch(0.45 0.14 145);
-  --severity-moderate: oklch(0.48 0.14 70);
-  --severity-high: oklch(0.46 0.17 45);
-  --severity-critical: oklch(0.44 0.20 25);
-  --chart-1: oklch(0.75 0.16 68);
-  --chart-2: oklch(0.68 0.17 72);
-  --chart-3: oklch(0.62 0.14 55);
-  --chart-4: oklch(0.55 0.22 25);
-  --chart-5: oklch(0.52 0.04 60);
+  --popover-foreground: #0b1f3a;
+  --primary: #e16323;
+  --primary-foreground: #ffffff;
+  --secondary: #f7f8fa;
+  --secondary-foreground: #0b1f3a;
+  --muted: #f4f6f8;
+  --muted-foreground: #4a5a6e;
+  --accent: #fff4ec;
+  --accent-foreground: #0b1f3a;
+  --destructive: #b42318;
+  --border: #e2e7ee;
+  --input: #e2e7ee;
+  --ring: #e16323;
+  --sunrise: #f0a020;
+  --sunrise-foreground: #0b1f3a;
+  --navy: #0b1f3a;
+  --severity-low: #1f7a4d;
+  --severity-moderate: #b7791f;
+  --severity-high: #c05621;
+  --severity-critical: #b42318;
+  --chart-1: #f0a020;
+  --chart-2: #e16323;
+  --chart-3: #0b1f3a;
+  --chart-4: #b42318;
+  --chart-5: #4a5a6e;
   --radius: 0.75rem;
-  --sidebar: oklch(0.975 0.02 90);
-  --sidebar-foreground: oklch(0.28 0.04 55);
-  --sidebar-primary: oklch(0.68 0.17 72);
-  --sidebar-primary-foreground: oklch(0.22 0.05 55);
-  --sidebar-accent: oklch(0.96 0.035 88);
-  --sidebar-accent-foreground: oklch(0.32 0.05 55);
-  --sidebar-border: oklch(0.90 0.04 82);
-  --sidebar-ring: oklch(0.68 0.17 72);
+  --sidebar: #ffffff;
+  --sidebar-foreground: #0b1f3a;
+  --sidebar-primary: #e16323;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #fff4ec;
+  --sidebar-accent-foreground: #0b1f3a;
+  --sidebar-border: #e2e7ee;
+  --sidebar-ring: #e16323;
 }
 
+/* Dark kept for system preference only; product chrome stays light/white. */
 .dark {
-  --background: oklch(0.18 0.045 25);
-  --foreground: oklch(0.93 0.02 55);
-  --card: oklch(0.22 0.055 28);
-  --card-foreground: oklch(0.93 0.02 55);
-  --popover: oklch(0.22 0.055 28);
-  --popover-foreground: oklch(0.93 0.02 55);
-  --primary: oklch(0.58 0.22 25);
-  --primary-foreground: oklch(0.97 0.01 55);
-  --secondary: oklch(0.28 0.06 28);
-  --secondary-foreground: oklch(0.93 0.02 55);
-  --muted: oklch(0.28 0.06 28);
-  --muted-foreground: oklch(0.68 0.04 40);
-  --accent: oklch(0.32 0.08 30);
-  --accent-foreground: oklch(0.93 0.02 55);
-  --destructive: oklch(0.58 0.22 25);
-  --border: oklch(0.38 0.07 28 / 45%);
-  --input: oklch(0.38 0.07 28 / 55%);
-  --ring: oklch(0.58 0.22 25);
-  --sunrise: oklch(0.58 0.22 25);
-  --sunrise-foreground: oklch(0.97 0.01 55);
-  --severity-low: oklch(0.72 0.14 145);
-  --severity-moderate: oklch(0.78 0.13 80);
-  --severity-high: oklch(0.75 0.15 55);
-  --severity-critical: oklch(0.72 0.18 25);
-  --chart-1: oklch(0.55 0.22 25);
-  --chart-2: oklch(0.68 0.18 55);
-  --chart-3: oklch(0.72 0.15 85);
-  --chart-4: oklch(0.62 0.16 145);
-  --chart-5: oklch(0.68 0.04 40);
-  --sidebar: oklch(0.22 0.055 28);
-  --sidebar-foreground: oklch(0.93 0.02 55);
-  --sidebar-primary: oklch(0.58 0.22 25);
-  --sidebar-primary-foreground: oklch(0.97 0.01 55);
-  --sidebar-accent: oklch(0.28 0.06 28);
-  --sidebar-accent-foreground: oklch(0.93 0.02 55);
-  --sidebar-border: oklch(0.38 0.07 28 / 45%);
-  --sidebar-ring: oklch(0.58 0.22 25);
+  --background: #ffffff;
+  --foreground: #0b1f3a;
+  --card: #ffffff;
+  --card-foreground: #0b1f3a;
+  --popover: #ffffff;
+  --popover-foreground: #0b1f3a;
+  --primary: #e16323;
+  --primary-foreground: #ffffff;
+  --secondary: #f7f8fa;
+  --secondary-foreground: #0b1f3a;
+  --muted: #f4f6f8;
+  --muted-foreground: #4a5a6e;
+  --accent: #fff4ec;
+  --accent-foreground: #0b1f3a;
+  --destructive: #b42318;
+  --border: #e2e7ee;
+  --input: #e2e7ee;
+  --ring: #e16323;
+  --sunrise: #f0a020;
+  --sunrise-foreground: #0b1f3a;
+  --navy: #0b1f3a;
+  --sidebar: #ffffff;
+  --sidebar-foreground: #0b1f3a;
+  --sidebar-primary: #e16323;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #fff4ec;
+  --sidebar-accent-foreground: #0b1f3a;
+  --sidebar-border: #e2e7ee;
+  --sidebar-ring: #e16323;
 }
 
-/* Mode classes kept for legacy store compatibility but intentionally
-   identical to :root so Tracker/Blueprint never recolor the whole product. */
+/* Legacy mode classes: never recolor pages. */
 .mode-tracker,
 .mode-blueprint {
   --background: #ffffff;
-  --foreground: oklch(0.22 0.03 55);
+  --foreground: #0b1f3a;
   --card: #ffffff;
-  --card-foreground: oklch(0.22 0.03 55);
+  --card-foreground: #0b1f3a;
   --popover: #ffffff;
-  --popover-foreground: oklch(0.22 0.03 55);
-  --primary: oklch(0.68 0.17 72);
-  --primary-foreground: oklch(0.98 0.01 90);
-  --secondary: oklch(0.97 0.008 90);
-  --secondary-foreground: oklch(0.30 0.04 55);
-  --muted: oklch(0.965 0.006 90);
-  --muted-foreground: oklch(0.48 0.03 60);
-  --accent: oklch(0.97 0.02 85);
-  --accent-foreground: oklch(0.28 0.05 55);
-  --destructive: oklch(0.55 0.22 25);
-  --border: oklch(0.91 0.01 90);
-  --input: oklch(0.91 0.01 90);
-  --ring: oklch(0.68 0.17 72);
-  --sunrise: oklch(0.72 0.17 68);
-  --sunrise-foreground: oklch(0.22 0.05 55);
+  --popover-foreground: #0b1f3a;
+  --primary: #e16323;
+  --primary-foreground: #ffffff;
+  --secondary: #f7f8fa;
+  --secondary-foreground: #0b1f3a;
+  --muted: #f4f6f8;
+  --muted-foreground: #4a5a6e;
+  --accent: #fff4ec;
+  --accent-foreground: #0b1f3a;
+  --border: #e2e7ee;
+  --input: #e2e7ee;
+  --ring: #e16323;
+  --sunrise: #f0a020;
+  --sunrise-foreground: #0b1f3a;
 }
 
 @keyframes accordion-down {
@@ -179,44 +173,14 @@
   animation: accordion-up 0.2s ease-out;
 }
 
-.hero-gradient-blueprint {
-  background: linear-gradient(
-    135deg,
-    #ffffff 0%,
-    oklch(0.98 0.02 240) 50%,
-    #ffffff 100%
-  );
-}
-
-.hero-gradient-tracker {
-  background: linear-gradient(
-    135deg,
-    #ffffff 0%,
-    oklch(0.98 0.015 25) 50%,
-    #ffffff 100%
-  );
-}
-
-.hero-gradient-rebuttal {
-  background: linear-gradient(
-    135deg,
-    #ffffff 0%,
-    oklch(0.985 0.015 75) 50%,
-    #ffffff 100%
-  );
-}
-
+/* Gradients neutralized — white only, no blue/red/cream islands */
+.hero-gradient-blueprint,
+.hero-gradient-tracker,
+.hero-gradient-rebuttal,
+.mission-gradient,
+.section-rebuttal,
 .section-safeguards {
   background: #ffffff;
-}
-
-.section-rebuttal {
-  background: linear-gradient(
-    180deg,
-    #ffffff 0%,
-    oklch(0.985 0.015 75) 50%,
-    #ffffff 100%
-  );
 }
 
 .section-divider {
@@ -224,7 +188,7 @@
   background: linear-gradient(
     90deg,
     transparent 0%,
-    oklch(0.68 0.17 72 / 40%) 50%,
+    color-mix(in srgb, var(--primary) 40%, transparent) 50%,
     transparent 100%
   );
 }
@@ -244,14 +208,6 @@
   animation: fade-in-up 0.5s ease-out forwards;
 }
 
-.mission-gradient {
-  background: linear-gradient(
-    180deg,
-    oklch(0.98 0.02 75 / 40%) 0%,
-    #ffffff 100%
-  );
-}
-
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -265,7 +221,6 @@
   }
 }
 
-/* Shared layout rhythm — same scale on 375px and 1280px */
 @layer components {
   .page-container {
     @apply mx-auto max-w-6xl px-4 sm:px-6;
@@ -288,7 +243,6 @@
   }
 }
 
-/* Logo PNGs are processed to pure #fff so they sit seamless on white pages */
 .logo-seamless {
   background-color: #ffffff;
   mix-blend-mode: multiply;

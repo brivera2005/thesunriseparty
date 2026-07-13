@@ -3,11 +3,6 @@
 import Link from "next/link";
 import { ArrowLeft, MessageSquareQuote } from "lucide-react";
 import { useMemo, useState } from "react";
-import { SiteHeader } from "@/components/layout/site-header";
-import { SiteFooter } from "@/components/layout/site-footer";
-import { SkipLink } from "@/components/layout/skip-link";
-import { CommandPalette } from "@/components/layout/command-palette";
-import { CitationModal } from "@/components/citation";
 import { RebuttalCard } from "@/components/rebuttal/rebuttal-card";
 import { RebuttalDifficultyFilter } from "@/components/rebuttal/rebuttal-difficulty-filter";
 import { Accordion } from "@/components/ui/accordion";
@@ -20,6 +15,7 @@ import {
   rebuttalCategories,
 } from "@/lib/data/conversation-helpers";
 import { cn } from "@/lib/utils";
+import { PageShell } from "@/components/layout/page-shell";
 
 const CATEGORY_DESCRIPTIONS: Record<RebuttalCategory, string> = {
   Economy:
@@ -68,14 +64,9 @@ export function RebuttalCategoryPage({ category }: RebuttalCategoryPageProps) {
   const slug = rebuttalCategoryPath(category).split("/").pop();
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <SkipLink />
-      <SiteHeader />
-      <CommandPalette />
-      <CitationModal />
+    <PageShell>
 
-      <main id="main-content">
-        <section className="border-b border-border bg-gradient-to-b from-sunrise/5 to-background">
+        <section className="border-b border-border bg-white">
           <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14">
             <Link
               href="/rebuttal"
@@ -166,9 +157,6 @@ export function RebuttalCategoryPage({ category }: RebuttalCategoryPageProps) {
             </Link>
           </div>
         </section>
-      </main>
-
-      <SiteFooter />
-    </div>
+      </PageShell>
   );
 }

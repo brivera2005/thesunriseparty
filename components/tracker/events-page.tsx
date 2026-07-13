@@ -3,15 +3,11 @@
 import Link from "next/link";
 import { ArrowLeft, CalendarDays } from "lucide-react";
 import { useEffect } from "react";
-import { SiteHeader } from "@/components/layout/site-header";
-import { SiteFooter } from "@/components/layout/site-footer";
-import { SkipLink } from "@/components/layout/skip-link";
-import { CitationModal } from "@/components/citation";
-import { CommandPalette } from "@/components/layout/command-palette";
 import { TrackerSection } from "@/components/tracker/tracker-section";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useAppStore } from "@/lib/store";
+import { PageShell } from "@/components/layout/page-shell";
 
 export function EventsPage() {
   const setMode = useAppStore((s) => s.setMode);
@@ -21,14 +17,9 @@ export function EventsPage() {
   }, [setMode]);
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <SkipLink />
-      <SiteHeader />
-      <CommandPalette />
-      <CitationModal />
+    <PageShell>
 
-      <main id="main-content">
-        <section className="border-b border-border bg-gradient-to-b from-destructive/5 to-background">
+        <section className="border-b border-border bg-white">
           <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14">
             <Link
               href="/"
@@ -60,9 +51,6 @@ export function EventsPage() {
         </section>
 
         <TrackerSection standalone defaultView="calendar" />
-      </main>
-
-      <SiteFooter />
-    </div>
+      </PageShell>
   );
 }

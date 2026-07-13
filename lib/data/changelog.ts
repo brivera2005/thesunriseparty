@@ -8,6 +8,18 @@ export interface ChangelogEntry {
 /** Site iteration history - meta transparency for Project Sunrise builds */
 export const changelog: ChangelogEntry[] = [
   {
+    version: "0.36.0",
+    date: "2026-07-12",
+    title: "Pass 36 - Cohesion + sources that actually open",
+    highlights: [
+      "Unified white + navy + sunrise-orange palette across every route; killed mode-tracker/blueprint and page-specific gradient islands",
+      "BrandLogo only in header/footer at consistent size; PageShell wraps every page",
+      "Homepage rebuilt as a clear grid of all major sections (Rebuttal, History, Tracker, Blueprint, Mission, Accountability, Methodology, Donate, Contribute, Start, Saved)",
+      "Fixed citation Wayback links that used fabricated timestamps (often 404 for recent White House pages) — now use durable archive.org/web/*/ calendar URLs",
+      "Citation modal prefers archive when primary is unverified; absolute https-only hrefs; validate-links soft-404 detection expanded",
+    ],
+  },
+  {
     version: "0.34.0",
     date: "2026-07-11",
     title: "Pass 34 - Keep expanding verifiable room",

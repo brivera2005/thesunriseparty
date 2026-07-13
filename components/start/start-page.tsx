@@ -3,15 +3,11 @@
 import { useState } from "react";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight, Check } from "lucide-react";
-import { SiteHeader } from "@/components/layout/site-header";
-import { SiteFooter } from "@/components/layout/site-footer";
-import { SkipLink } from "@/components/layout/skip-link";
-import { CommandPalette } from "@/components/layout/command-palette";
-import { CitationModal } from "@/components/citation";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { startTourIntro, tourSteps } from "@/lib/data/start-tour-content";
 import { cn } from "@/lib/utils";
+import { PageShell } from "@/components/layout/page-shell";
 
 export function StartPage() {
   const [activeStep, setActiveStep] = useState(0);
@@ -19,14 +15,9 @@ export function StartPage() {
   const isLast = activeStep === tourSteps.length - 1;
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <SkipLink />
-      <SiteHeader />
-      <CommandPalette />
-      <CitationModal />
+    <PageShell>
 
-      <main id="main-content">
-        <section className="border-b border-border bg-gradient-to-b from-primary/5 to-white">
+        <section className="border-b border-border bg-white">
           <div className="mx-auto max-w-3xl px-4 py-10 text-center sm:px-6 sm:py-14">
             <Link
               href="/"
@@ -84,7 +75,7 @@ export function StartPage() {
         <section className="mx-auto max-w-3xl px-4 py-10 sm:px-6 sm:py-14">
           <Card
             className={cn(
-              "overflow-hidden border-2 bg-gradient-to-br",
+              "overflow-hidden border-2 bg-white",
               step.accent
             )}
           >
@@ -166,9 +157,6 @@ export function StartPage() {
             with counts for all {tourSteps.length} core sections and more.
           </p>
         </section>
-      </main>
-
-      <SiteFooter />
-    </div>
+      </PageShell>
   );
 }

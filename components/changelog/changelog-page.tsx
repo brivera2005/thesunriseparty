@@ -2,15 +2,11 @@
 
 import Link from "next/link";
 import { ArrowLeft, GitCommitHorizontal } from "lucide-react";
-import { SiteHeader } from "@/components/layout/site-header";
-import { SiteFooter } from "@/components/layout/site-footer";
-import { SkipLink } from "@/components/layout/skip-link";
-import { CommandPalette } from "@/components/layout/command-palette";
-import { CitationModal } from "@/components/citation";
 import { changelog } from "@/lib/data/changelog";
 import { buttonVariants } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
+import { PageShell } from "@/components/layout/page-shell";
 
 function formatDate(dateStr: string) {
   const d = new Date(dateStr + "T00:00:00");
@@ -23,14 +19,9 @@ function formatDate(dateStr: string) {
 
 export function ChangelogPage() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <SkipLink />
-      <SiteHeader />
-      <CommandPalette />
-      <CitationModal />
+    <PageShell>
 
-      <main id="main-content">
-        <section className="border-b border-border bg-gradient-to-b from-primary/5 to-background">
+        <section className="border-b border-border bg-white">
           <div className="mx-auto max-w-3xl px-4 py-10 sm:px-6 sm:py-14">
             <Link
               href="/"
@@ -96,9 +87,6 @@ export function ChangelogPage() {
             ))}
           </ol>
         </section>
-      </main>
-
-      <SiteFooter />
-    </div>
+      </PageShell>
   );
 }

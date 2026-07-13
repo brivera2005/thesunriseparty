@@ -15,21 +15,8 @@ type PageHeroProps = {
   actions?: ReactNode;
   eyebrowClassName?: string;
   className?: string;
+  /** @deprecated Tones no longer recolor pages — kept for call-site compatibility */
   tone?: "default" | "sunrise" | "amber" | "critical";
-};
-
-const toneGradients: Record<NonNullable<PageHeroProps["tone"]>, string> = {
-  default: "bg-gradient-to-b from-primary/5 to-white",
-  sunrise: "bg-gradient-to-b from-sunrise/5 to-white",
-  amber: "bg-gradient-to-b from-amber-500/5 to-white",
-  critical: "bg-gradient-to-b from-destructive/5 to-white",
-};
-
-const toneEyebrows: Record<NonNullable<PageHeroProps["tone"]>, string> = {
-  default: "text-primary",
-  sunrise: "text-sunrise",
-  amber: "text-amber-700",
-  critical: "text-destructive",
 };
 
 export function PageHero({
@@ -42,17 +29,10 @@ export function PageHero({
   actions,
   eyebrowClassName,
   className,
-  tone = "default",
 }: PageHeroProps) {
   return (
-    <section
-      className={cn(
-        "border-b border-border",
-        toneGradients[tone],
-        className
-      )}
-    >
-      <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-10">
+    <section className={cn("border-b border-border bg-white", className)}>
+      <div className="page-container py-8 sm:py-10">
         <Link
           href={backHref}
           className={cn(
@@ -67,15 +47,14 @@ export function PageHero({
           <div className="max-w-2xl">
             <p
               className={cn(
-                "mb-1.5 text-xs font-semibold tracking-[0.22em] uppercase",
-                toneEyebrows[tone],
+                "mb-1.5 text-xs font-semibold tracking-[0.22em] text-navy uppercase",
                 eyebrowClassName
               )}
             >
               {eyebrow}
             </p>
             <div className="flex items-center gap-1.5">
-              <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">
+              <h1 className="text-2xl font-bold tracking-tight text-navy sm:text-3xl">
                 {title}
               </h1>
               {tip ? <InfoTip label={tip} /> : null}

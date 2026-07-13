@@ -1,11 +1,17 @@
 import type { CitationSource } from "@/lib/types";
-
-function wayback(url: string): string {
-  return `https://web.archive.org/web/*/${url}`;
-}
+import { waybackCalendarUrl, normalizeCitationUrl } from "@/lib/data/conversation-citations";
 
 function c(id: string, title: string, publisher: string, url: string, excerpt: string, date: string): CitationSource {
-  return { id, title, publisher, url, waybackUrl: wayback(url), excerpt, date };
+  const absolute = normalizeCitationUrl(url);
+  return {
+    id,
+    title,
+    publisher,
+    url: absolute,
+    waybackUrl: waybackCalendarUrl(absolute),
+    excerpt,
+    date,
+  };
 }
 
 export const historyCitations: Record<string, CitationSource> = {
@@ -32,7 +38,7 @@ export const historyCitations: Record<string, CitationSource> = {
   tulsa_massacre: c("tulsa_massacre", "Tulsa Race Massacre", "Wikipedia", "https://en.wikipedia.org/wiki/Tulsa_race_massacre", "White mobs destroyed Greenwood and killed hundreds in 1921.", "1921-05-31"),
   rosewood: c("rosewood", "Rosewood Massacre", "Wikipedia", "https://en.wikipedia.org/wiki/Rosewood_massacre", "A white mob destroyed Rosewood, Florida in 1923; the state covered it up for decades.", "1923-01-01"),
   tuskegee_study: c("tuskegee_study", "Tuskegee Syphilis Study", "Centers for Disease Control and Prevention", "https://www.cdc.gov/tuskegee/about/index.html", "Researchers withheld treatment from Black men with syphilis for 40 years without consent.", "1932-01-01"),
-  bonus_army: c("bonus_army", "Bonus Army", "Federal Reserve History", "https://www.federalreservehistory.org/essays/bonus-army", "The U.S. Army violently dispersed WWI veteran protesters in Washington in 1932.", "1932-07-28"),
+  bonus_army: c("bonus_army", "Bonus Army", "Wikipedia", "https://en.wikipedia.org/wiki/Bonus_Army", "The U.S. Army violently dispersed WWI veteran protesters in Washington in 1932.", "1932-07-28"),
   redlining_hud: c("redlining_hud", "Redlining", "Wikipedia", "https://en.wikipedia.org/wiki/Redlining", "Federal HOLC maps denied mortgages to Black families and created lasting wealth gaps.", "1934-01-01"),
   japanese_internment: c("japanese_internment", "Japanese American Internment", "National Archives", "https://www.archives.gov/education/lessons/japanese-relocation", "120,000 Japanese Americans were imprisoned without charges based on ancestry.", "1942-02-19"),
   operation_paperclip: c("operation_paperclip", "Operation Paperclip", "Wikipedia", "https://en.wikipedia.org/wiki/Operation_Paperclip", "The U.S. secretly brought 1,600+ German scientists including Nazi weapons researchers.", "1945-01-01"),

@@ -24,12 +24,10 @@ const navItems: {
   label: string;
   href: string;
   description: string;
-  accent?: string;
 }[] = [
   {
     label: "Rebuttal Desk",
     href: "/rebuttal",
-    accent: "text-sunrise",
     description: "Copy-ready counters to common claims, every response sourced.",
   },
   {
@@ -45,7 +43,6 @@ const navItems: {
   {
     label: "Hidden History",
     href: "/history",
-    accent: "text-amber-600",
     description: "Textbook narrative vs. what the archives actually document.",
   },
   {
@@ -56,7 +53,6 @@ const navItems: {
   {
     label: "Donate",
     href: "/donate",
-    accent: "text-primary",
     description: "Keep the receipts public. Fund research and verification.",
   },
 ];
@@ -82,7 +78,7 @@ export function SiteHeader() {
                 className={cn(
                   buttonVariants({ variant: "ghost", size: "sm" }),
                   "h-9 border-0 px-2.5 text-[0.8rem]",
-                  pathname === item.href && (item.accent ?? "text-primary")
+                  pathname === item.href && "text-primary"
                 )}
                 render={
                   <Link href={item.href} />

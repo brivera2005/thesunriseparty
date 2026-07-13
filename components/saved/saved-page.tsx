@@ -9,10 +9,6 @@ import {
   MessageSquareQuote,
   Trash2,
 } from "lucide-react";
-import { SiteHeader } from "@/components/layout/site-header";
-import { SiteFooter } from "@/components/layout/site-footer";
-import { SkipLink } from "@/components/layout/skip-link";
-import { CommandPalette } from "@/components/layout/command-palette";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
@@ -24,6 +20,7 @@ import {
   type SavedItem,
 } from "@/lib/saved-items";
 import { cn } from "@/lib/utils";
+import { PageShell } from "@/components/layout/page-shell";
 
 function SavedItemRow({ item, onRemove }: { item: SavedItem; onRemove: () => void }) {
   return (
@@ -84,13 +81,9 @@ export function SavedPage() {
   const rebuttals = items.filter((i) => i.type === "rebuttal");
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <SkipLink />
-      <SiteHeader />
-      <CommandPalette />
+    <PageShell>
 
-      <main id="main-content">
-        <section className="border-b border-border bg-gradient-to-b from-destructive/5 to-background">
+        <section className="border-b border-border bg-white">
           <div className="mx-auto max-w-3xl px-4 py-10 sm:px-6 sm:py-14">
             <Link
               href="/"
@@ -179,9 +172,6 @@ export function SavedPage() {
             )}
           </div>
         </section>
-      </main>
-
-      <SiteFooter />
-    </div>
+      </PageShell>
   );
 }

@@ -2,12 +2,6 @@
 
 import Link from "next/link";
 import { ArrowLeft, ExternalLink, Heart, Mail } from "lucide-react";
-import { SiteHeader } from "@/components/layout/site-header";
-import { SiteFooter } from "@/components/layout/site-footer";
-import { SkipLink } from "@/components/layout/skip-link";
-import { CommandPalette } from "@/components/layout/command-palette";
-import { CitationModal } from "@/components/citation";
-import { BrandLogo } from "@/components/brand-logo";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
@@ -18,17 +12,13 @@ import {
   donateSupports,
 } from "@/lib/data/donate-content";
 import { cn } from "@/lib/utils";
+import { PageShell } from "@/components/layout/page-shell";
 
 export function DonatePage() {
   return (
-    <div className="min-h-screen bg-white text-foreground">
-      <SkipLink />
-      <SiteHeader />
-      <CommandPalette />
-      <CitationModal />
+    <PageShell>
 
-      <main id="main-content">
-        <section className="border-b border-border bg-gradient-to-b from-primary/5 to-white">
+        <section className="border-b border-border bg-white">
           <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6 sm:py-12">
             <Link
               href="/"
@@ -40,10 +30,7 @@ export function DonatePage() {
               <ArrowLeft className="size-3.5" />
               Back to Project Sunrise
             </Link>
-            <div className="mb-5">
-              <BrandLogo variant="footer" />
-            </div>
-            <p className="mb-2 text-xs font-semibold tracking-[0.2em] text-primary uppercase sm:text-sm">
+            <p className="mb-2 text-xs font-semibold tracking-[0.2em] text-navy uppercase sm:text-sm">
               Keep the lights on
             </p>
             <h1 className="text-2xl font-bold tracking-tight sm:text-4xl">
@@ -157,9 +144,6 @@ export function DonatePage() {
             </p>
           </div>
         </section>
-      </main>
-
-      <SiteFooter />
-    </div>
+      </PageShell>
   );
 }
