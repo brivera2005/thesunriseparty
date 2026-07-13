@@ -10,6 +10,7 @@ import {
   Handshake,
   Heart,
   History,
+  Landmark,
   MessageSquareQuote,
   Scale,
   ShieldCheck,
@@ -20,11 +21,13 @@ import { FadeIn } from "@/components/ui/fade-in";
 import { conversationHelpers } from "@/lib/data/conversation-helpers";
 import { getTrackerStats } from "@/lib/data/timeline-events";
 import { getHistoryStats } from "@/lib/data/hidden-history";
+import { getLegislationStats } from "@/lib/data/legislation";
 import { policyFixes } from "@/lib/data/policies";
 import { cn } from "@/lib/utils";
 
 const historyStats = getHistoryStats();
 const trackerStats = getTrackerStats();
+const legislationStats = getLegislationStats();
 
 const platformCards = [
   {
@@ -50,6 +53,14 @@ const platformCards = [
       "Executive actions scored by severity and cross-checked with independent watchdogs.",
     icon: Activity,
     meta: `${trackerStats.total}+ verified actions`,
+  },
+  {
+    href: "/legislation",
+    title: "Live Legislation",
+    description:
+      "119th Congress bills with party-colored sponsors, roll-call tallies, and progressive analysis.",
+    icon: Landmark,
+    meta: `${legislationStats.total} bills · updated ${legislationStats.lastUpdated}`,
   },
   {
     href: "/blueprint",

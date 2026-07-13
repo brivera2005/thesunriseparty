@@ -15,6 +15,7 @@ import {
 import { Shield, Lock, Scale, Eye, Ban, ExternalLink, CalendarClock, Link2, Check } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { BlueprintHashNav } from "./blueprint-hash-nav";
+import { PolicyEvidencePanel } from "./policy-evidence-panel";
 import { SITE_URL } from "@/lib/metadata";
 
 const safeguardIcons: Record<string, React.ReactNode> = {
@@ -181,6 +182,15 @@ export function BlueprintSection({
                     </div>
                   </div>
 
+                  <PolicyEvidencePanel
+                    fields={{
+                      whyItWorks: policy.whyItWorks,
+                      whyPeopleCallItExtreme: policy.whyPeopleCallItExtreme,
+                      theGaslight: policy.theGaslight,
+                      alreadyWorksWhere: policy.alreadyWorksWhere,
+                    }}
+                  />
+
                   {policy.billReferences && policy.billReferences.length > 0 && (
                     <div className="mt-6 border-t border-border pt-4">
                       <h4 className="mb-2 text-xs font-semibold tracking-wider text-muted-foreground uppercase">
@@ -282,8 +292,11 @@ export function BlueprintSection({
                   <div className="flex size-10 shrink-0 items-center justify-center rounded-lg bg-accent">
                     {safeguardIcons[item.id]}
                   </div>
-                  <div>
-                    <CardTitle className="text-base">{item.title}</CardTitle>
+                  <div className="min-w-0 flex-1">
+                    <div className="flex flex-wrap items-center justify-between gap-2">
+                      <CardTitle className="text-base">{item.title}</CardTitle>
+                      <PolicyCopyLink policyId={item.id} />
+                    </div>
                     <p className="mt-1 text-sm text-muted-foreground">
                       {item.description}
                     </p>
@@ -301,6 +314,14 @@ export function BlueprintSection({
                       </li>
                     ))}
                   </ul>
+                  <PolicyEvidencePanel
+                    fields={{
+                      whyItWorks: item.whyItWorks,
+                      whyPeopleCallItExtreme: item.whyPeopleCallItExtreme,
+                      theGaslight: item.theGaslight,
+                      alreadyWorksWhere: item.alreadyWorksWhere,
+                    }}
+                  />
                   <p className="mt-4 text-xs text-muted-foreground">
                     <CitationList sources={item.citations} />
                   </p>

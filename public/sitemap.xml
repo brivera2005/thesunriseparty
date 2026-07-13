@@ -5938,6 +5938,76 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://thesunriseparty.pages.dev/blueprint/FIX-CC-001</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thesunriseparty.pages.dev/blueprint/FIX-GUN-001</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thesunriseparty.pages.dev/blueprint/FIX-RR-001</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thesunriseparty.pages.dev/blueprint/FIX-TAX-001</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thesunriseparty.pages.dev/blueprint/FIX-SS-001</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thesunriseparty.pages.dev/blueprint/FIX-RUR-001</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thesunriseparty.pages.dev/blueprint/FIX-VET-001</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thesunriseparty.pages.dev/blueprint/FIX-INF-001</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thesunriseparty.pages.dev/blueprint/FIX-CORR-001</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thesunriseparty.pages.dev/blueprint/FIX-DRUG-001</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thesunriseparty.pages.dev/blueprint/FIX-WAGE-001</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thesunriseparty.pages.dev/blueprint/FIX-AT-001</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thesunriseparty.pages.dev/blueprint/FIX-CJ-001</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thesunriseparty.pages.dev/blueprint/FIX-MH-001</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://thesunriseparty.pages.dev/blueprint/SAFE-001</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

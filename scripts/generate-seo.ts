@@ -9,6 +9,7 @@ import { conversationHelpers } from "../lib/data/conversation-helpers";
 import { policyFixes, safeguardItems, blueprintDetailPath } from "../lib/data/policies";
 import { eventDetailPath } from "../lib/data/timeline-events";
 import { rebuttalDetailPath, rebuttalCategorySlugs } from "../lib/data/conversation-helpers";
+import { legislationBills, legislationDetailPath } from "../lib/data/legislation";
 
 const SITE = "https://thesunriseparty.pages.dev";
 
@@ -29,6 +30,8 @@ const STATIC_PAGES: SitemapEntry[] = [
   { loc: `${SITE}/saved`, changefreq: "monthly", priority: 0.65 },
   { loc: `${SITE}/accountability`, changefreq: "monthly", priority: 0.75 },
   { loc: `${SITE}/tracker`, changefreq: "daily", priority: 0.9 },
+  { loc: `${SITE}/legislation`, changefreq: "daily", priority: 0.9 },
+  { loc: `${SITE}/bills`, changefreq: "daily", priority: 0.75 },
   { loc: `${SITE}/events`, changefreq: "daily", priority: 0.85 },
   { loc: `${SITE}/blueprint`, changefreq: "monthly", priority: 0.85 },
   { loc: `${SITE}/rebuttal`, changefreq: "weekly", priority: 0.85 },
@@ -102,12 +105,20 @@ const blueprintPages: SitemapEntry[] = [
   })),
 ];
 
+const legislationPages: SitemapEntry[] = legislationBills.map((bill) => ({
+  loc: `${SITE}${legislationDetailPath(bill.id)}`,
+  lastmod: toLastmod(bill.lastActionDate),
+  changefreq: "weekly",
+  priority: 0.72,
+}));
+
 const allEntries = [
   ...STATIC_PAGES,
   ...eventPages,
   ...rebuttalPages,
   ...rebuttalCategoryPages,
   ...blueprintPages,
+  ...legislationPages,
 ];
 const sitemap = buildSitemap(allEntries);
 

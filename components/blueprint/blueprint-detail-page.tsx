@@ -23,6 +23,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { SITE_URL } from "@/lib/metadata";
 import { PageShell } from "@/components/layout/page-shell";
+import { PolicyEvidencePanel } from "./policy-evidence-panel";
 
 const safeguardIcons: Record<string, React.ReactNode> = {
   "SAFE-001": <Ban className="size-5 text-primary" />,
@@ -122,6 +123,15 @@ function PolicyFixDetail({ policy }: { policy: PolicyFix }) {
           </div>
         </div>
 
+        <PolicyEvidencePanel
+          fields={{
+            whyItWorks: policy.whyItWorks,
+            whyPeopleCallItExtreme: policy.whyPeopleCallItExtreme,
+            theGaslight: policy.theGaslight,
+            alreadyWorksWhere: policy.alreadyWorksWhere,
+          }}
+        />
+
         {policy.billReferences && policy.billReferences.length > 0 && (
           <div className="border-t border-border pt-6">
             <p className="mb-2 text-xs font-semibold tracking-wider text-muted-foreground uppercase">
@@ -209,6 +219,14 @@ function SafeguardDetail({ safeguard }: { safeguard: SafeguardItem }) {
             </li>
           ))}
         </ul>
+        <PolicyEvidencePanel
+          fields={{
+            whyItWorks: safeguard.whyItWorks,
+            whyPeopleCallItExtreme: safeguard.whyPeopleCallItExtreme,
+            theGaslight: safeguard.theGaslight,
+            alreadyWorksWhere: safeguard.alreadyWorksWhere,
+          }}
+        />
         <p className="mt-4 text-xs text-muted-foreground">
           <CitationList sources={safeguard.citations} />
         </p>

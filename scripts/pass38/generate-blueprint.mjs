@@ -1,7 +1,41 @@
-import type { PolicyFix, SafeguardItem } from "@/lib/types";
-import { citations } from "./citations";
+/**
+ * Pass 38 - expand Blueprint FIX policies to 24 pillars with evidence fields.
+ * Run: node scripts/pass38/generate-blueprint.mjs
+ */
+import { writeFileSync } from "fs";
+import { join, dirname } from "path";
+import { fileURLToPath } from "url";
 
-export const policyFixes: PolicyFix[] = [
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const OUT = join(__dirname, "../../lib/data/policies.ts");
+
+function assertClean(obj, path = "") {
+  for (const [k, v] of Object.entries(obj)) {
+    const p = path ? `${path}.${k}` : k;
+    if (typeof v === "string") {
+      if (v.includes("\u2014") || v.includes("\u2013")) {
+        throw new Error(`Em/en dash in ${p}`);
+      }
+      if (/zinn/i.test(v)) throw new Error(`Zinn reference in ${p}`);
+    } else if (Array.isArray(v)) {
+      v.forEach((item, i) => {
+        if (typeof item === "string") {
+          if (item.includes("\u2014") || item.includes("\u2013")) {
+            throw new Error(`Em/en dash in ${p}[${i}]`);
+          }
+        } else if (item && typeof item === "object") assertClean(item, `${p}[${i}]`);
+      });
+    } else if (v && typeof v === "object") {
+      assertClean(v, p);
+    }
+  }
+}
+
+function cite(keys) {
+  return keys.map((k) => `citations.${k}`);
+}
+
+const policies = [
   {
     id: "FIX-HC-001",
     category: "Healthcare",
@@ -22,24 +56,14 @@ export const policyFixes: PolicyFix[] = [
       "RAND analysis projects $450B in annual savings through administrative simplification and bulk purchasing. Average household healthcare costs drop $35,000/year. 2.1 million jobs transition with 5-year retraining guarantees.",
     costOfInaction:
       "Without reform, medical debt will keep driving roughly two-thirds of personal bankruptcies while 27 million remain uninsured and Medicare Advantage overpayments drain $83B annually from public coffers. GAO healthcare audits and CBO Medicare baselines show fragmentation and overpayments persist without structural change.",
-    costOfInactionCitations: [
-      citations.cost_inaction_healthcare,
-      citations.gao_healthcare,
-      citations.cbo_medicare,
-    ],
+    costOfInactionCitations: ["cost_inaction_healthcare", "gao_healthcare", "cbo_medicare"],
     safeguards: [
       "Constitutional amendment protecting universal healthcare as a right",
       "Independent Payment Advisory Board with public nomination process",
       "5-year transition fund for displaced insurance industry workers",
       "Annual public audit of all pharmaceutical pricing negotiations",
     ],
-    citations: [
-      citations.policy_healthcare,
-      citations.cbo_medicare,
-      citations.aca_premium,
-      citations.hr_medicare_for_all,
-      citations.oecd_health,
-    ],
+    citations: ["policy_healthcare", "cbo_medicare", "aca_premium", "hr_medicare_for_all", "oecd_health"],
     billReferences: [
       {
         number: "H.R. 3421",
@@ -95,24 +119,14 @@ export const policyFixes: PolicyFix[] = [
       "EPI modeling shows 15 million jobs created at peak implementation. GDP growth of 1.2% annually from increased consumer spending. Union wage premium would lift median household income 16% within a decade.",
     costOfInaction:
       "If labor power keeps eroding at current rates, gig workers remain misclassified without benefits, wage stagnation persists despite record profits, and the 17% union wage premium stays out of reach for 90% of workers. BLS union-membership series remains near historic lows without card-check and misclassification reform.",
-    costOfInactionCitations: [
-      citations.cost_inaction_labor,
-      citations.bls_wages,
-      citations.brookings_labor,
-    ],
+    costOfInactionCitations: ["cost_inaction_labor", "bls_wages", "brookings_labor"],
     safeguards: [
       "Jobs Guarantee Board with labor union majority representation",
       "Automatic cost-of-living adjustments tied to regional price indices",
       "Anti-retaliation protections with triple-damages for employer violations",
       "Sunset review every 10 years with mandatory congressional reauthorization",
     ],
-    citations: [
-      citations.policy_economy,
-      citations.bls_wages,
-      citations.brookings_labor,
-      citations.hr_pro_act,
-      citations.epi_unions,
-    ],
+    citations: ["policy_economy", "bls_wages", "brookings_labor", "hr_pro_act", "epi_unions"],
     billReferences: [
       {
         number: "H.R. 1274",
@@ -168,23 +182,14 @@ export const policyFixes: PolicyFix[] = [
       "Data for Progress models 20 million clean energy jobs and 70% emissions reduction below 2005 levels by 2035. $2.9T in avoided climate disaster costs by 2050. Energy costs drop 40% for households through public utility ownership.",
     costOfInaction:
       "Current rollback trajectory puts the U.S. on path for 2.8C warming by 2100, with unmonitored methane leaks from 280,000 well sites and climate damages costing hundreds of billions annually in infrastructure, health, and lost productivity. EPA rollback stacks and NOAA climate records make delay permanently costlier.",
-    costOfInactionCitations: [
-      citations.cost_inaction_climate,
-      citations.ipcc_climate,
-      citations.epa_methane_rollback,
-    ],
+    costOfInactionCitations: ["cost_inaction_climate", "ipcc_climate", "epa_methane_rollback"],
     safeguards: [
       "Climate Impact Office with subpoena power over fossil fuel companies",
       "Just transition fund: 5 years full salary for displaced fossil fuel workers",
       "Community ownership requirements for 30% of new renewable capacity",
       "Annual emissions budget with automatic trigger for additional measures",
     ],
-    citations: [
-      citations.policy_environment,
-      citations.ipcc_climate,
-      citations.epa_rule,
-      citations.epa_methane_rollback,
-    ],
+    citations: ["policy_environment", "ipcc_climate", "epa_rule", "epa_methane_rollback"],
     billReferences: [
       {
         number: "H.R. 7941",
@@ -240,23 +245,14 @@ export const policyFixes: PolicyFix[] = [
       "AVR states saw 94% registration increase among young voters. Reduced election administration costs of $1.2B annually through standardized systems. Increased civic participation correlates with 0.3% GDP growth from policy stability.",
     costOfInaction:
       "Without federal voting protections, restrictive state laws proliferate - 32 passed in 2025 alone - while 5.2 million citizens remain disenfranchised and gerrymandering locks minority rule into 28 congressional districts. Brennan Center tracking after Shelby County shows how preclearance loss enabled rapid restrictive voting changes.",
-    costOfInactionCitations: [
-      citations.cost_inaction_voting,
-      citations.brennan_voting,
-      citations.policy_voting,
-    ],
+    costOfInactionCitations: ["cost_inaction_voting", "brennan_voting", "policy_voting"],
     safeguards: [
       "Constitutional amendment guaranteeing universal suffrage",
       "Federal election monitors with binding authority in non-compliant jurisdictions",
       "Proportional representation pilot programs in 5 states",
       "Mandatory public campaign financing with 6:1 small-dollar matching",
     ],
-    citations: [
-      citations.policy_voting,
-      citations.brennan_voting,
-      citations.hr_john_lewis,
-      citations.save_act_crs,
-    ],
+    citations: ["policy_voting", "brennan_voting", "hr_john_lewis", "save_act_crs"],
     billReferences: [
       {
         number: "H.R. 14",
@@ -312,23 +308,14 @@ export const policyFixes: PolicyFix[] = [
       "NBER research links universal pre-K to 13% higher college enrollment and 8% lifetime earnings increase. Student debt cancellation would boost GDP $86B annually. Title I funding closes achievement gaps within two generations.",
     costOfInaction:
       "Families keep paying $15,000+ annually for childcare while $1.6 trillion in student debt delays homeownership; Title IX rollbacks leave 19 million students with weaker campus safety protections and achievement gaps persist across generations. Department of Education restructuring and Title IX enforcement shifts reduce the civil-rights bandwidth students rely on when states roll back protections.",
-    costOfInactionCitations: [
-      citations.cost_inaction_education,
-      citations.policy_education,
-      citations.ed_dept_titleix,
-    ],
+    costOfInactionCitations: ["cost_inaction_education", "policy_education", "ed_dept_titleix"],
     safeguards: [
       "Education Trust Fund insulated from annual appropriations battles",
       "Faculty and student majority on university governance boards",
       "Debt cancellation limited to public and non-profit institution loans",
       "10-year review of pre-K outcomes with mandatory program adjustments",
     ],
-    citations: [
-      citations.policy_education,
-      citations.ed_dept_titleix,
-      citations.ed_restructuring,
-      citations.policy_student_debt,
-    ],
+    citations: ["policy_education", "ed_dept_titleix", "ed_restructuring", "policy_student_debt"],
     billReferences: [
       {
         number: "H.R. 4647",
@@ -384,23 +371,14 @@ export const policyFixes: PolicyFix[] = [
       "CRS and labor analyses show immigrants raise labor-force growth and entrepreneurship. Legalization raises tax compliance and wage floors by reducing employer leverage over unauthorized workers.",
     costOfInaction:
       "Without court staffing and legal pathways, backlogs keep growing, employers keep a shadowed labor pool, and enforcement-only strategies separate families without fixing root processing failures. CRS backlog analyses show multi-year court delays deepen without staffing and due-process investment.",
-    costOfInactionCitations: [
-      citations.cost_inaction_immigration,
-      citations.aclu_immigration,
-      citations.policy_immigration,
-    ],
+    costOfInactionCitations: ["cost_inaction_immigration", "aclu_immigration", "policy_immigration"],
     safeguards: [
       "Statutory caps on family detention with judicial review",
       "Independent immigration court under Article I, insulated from AG political control",
       "Annual public backlog dashboards with judge staffing ratios",
       "Labor-standards enforcement paired with any new work-visa expansion",
     ],
-    citations: [
-      citations.policy_immigration,
-      citations.aclu_immigration,
-      citations.cost_inaction_immigration,
-      citations.dhs_deportation_ops,
-    ],
+    citations: ["policy_immigration", "aclu_immigration", "cost_inaction_immigration", "dhs_deportation_ops"],
     billReferences: [
       {
         number: "Congress.gov",
@@ -450,22 +428,14 @@ export const policyFixes: PolicyFix[] = [
       "Stable housing raises employment continuity and child educational outcomes. Construction jobs from social housing expand middle-skill employment while cutting shelter and ER costs tied to homelessness.",
     costOfInaction:
       "Without supply and assistance, rent burdens and homelessness keep rising; eviction cascades destroy credit and employment; fair-housing pauses let discrimination harden into neighborhood exclusion. HUD fair-housing pauses and high rent burdens in Census data show housing scarcity is a policy outcome, not a personal failure epidemic.",
-    costOfInactionCitations: [
-      citations.cost_inaction_housing,
-      citations.policy_housing,
-      citations.hud_fair_housing_pause,
-    ],
+    costOfInactionCitations: ["cost_inaction_housing", "policy_housing", "hud_fair_housing_pause"],
     safeguards: [
       "Tenant right to counsel in eviction courts receiving federal funds",
       "Anti-displacement rules for any federally subsidized redevelopment",
       "Public land disposition preference for social housing over speculative sale",
       "Annual homelessness point-in-time transparency with HUD Inspector General audits",
     ],
-    citations: [
-      citations.policy_housing,
-      citations.cost_inaction_housing,
-      citations.hud_fair_housing_pause,
-    ],
+    citations: ["policy_housing", "cost_inaction_housing", "hud_fair_housing_pause"],
     billReferences: [
       {
         number: "Congress.gov",
@@ -515,23 +485,14 @@ export const policyFixes: PolicyFix[] = [
       "Local journalism employment rebounds; advertisers gain clearer markets; reduced misinformation externalities lower democratic instability costs that markets do not price.",
     costOfInaction:
       "Without pluralism rules, news deserts expand, capture worsens, and voters face algorithmically amplified propaganda with fewer local reporters to check it. FCC ownership and broadcast rule shifts plus reduced proactive disclosure concentrate information power while local news deserts widen.",
-    costOfInactionCitations: [
-      citations.policy_media,
-      citations.fcc_media_policy,
-      citations.dark_money_transparency,
-    ],
+    costOfInactionCitations: ["policy_media", "fcc_media_policy", "dark_money_transparency"],
     safeguards: [
       "First Amendment-compliant structural rules (ownership, disclosure) rather than viewpoint censorship boards",
       "Independent public-media trust insulated from annual partisan zero-outs",
       "Journalist shield protections paired with platform transparency mandates",
       "Merger review with democracy-impact analysis, not price effects alone",
     ],
-    citations: [
-      citations.policy_media,
-      citations.fcc_broadcast_rules,
-      citations.fcc_media_policy,
-      citations.dark_money_transparency,
-    ],
+    citations: ["policy_media", "fcc_broadcast_rules", "fcc_media_policy", "dark_money_transparency"],
     billReferences: [
       {
         number: "Congress.gov",
@@ -550,8 +511,7 @@ export const policyFixes: PolicyFix[] = [
       {
         phase: "Ownership & local news",
         timeframe: "Year 2-3",
-        description:
-          "Tighten ownership caps; launch spectrum-fee journalism endowment.",
+        description: "Tighten ownership caps; launch spectrum-fee journalism endowment.",
       },
       {
         phase: "Interoperability",
@@ -581,22 +541,14 @@ export const policyFixes: PolicyFix[] = [
       "Community care costs less than unnecessary institutionalization over time and expands labor-force participation for disabled people and family caregivers.",
     costOfInaction:
       "Without HCBS entitlements and ADA enforcement, institutionalization and poverty persist; Willowbrook-era warehousing returns in slower bureaucratic form. ADA enforcement capacity and community-care access shrink when agencies treat disability rights as optional paperwork instead of civil rights.",
-    costOfInactionCitations: [
-      citations.policy_disability,
-      citations.gao_healthcare,
-      citations.policy_healthcare,
-    ],
+    costOfInactionCitations: ["policy_disability", "gao_healthcare", "policy_healthcare"],
     safeguards: [
       "Olmstead enforcement unit with independent monitoring",
       "Ban new federal funds for institutions that fail community-integration benchmarks",
       "Care-worker collective bargaining recognition in federally funded programs",
       "Annual ADA compliance audits of federally assisted transit agencies",
     ],
-    citations: [
-      citations.policy_disability,
-      citations.gao_healthcare,
-      citations.policy_healthcare,
-    ],
+    citations: ["policy_disability", "gao_healthcare", "policy_healthcare"],
     billReferences: [
       {
         number: "Congress.gov",
@@ -615,14 +567,12 @@ export const policyFixes: PolicyFix[] = [
       {
         phase: "Wage & education",
         timeframe: "Year 2-3",
-        description:
-          "End 14(c) subminimum wages; fully fund IDEA; care-worker wage floors.",
+        description: "End 14(c) subminimum wages; fully fund IDEA; care-worker wage floors.",
       },
       {
         phase: "Access enforcement",
         timeframe: "Year 3-5",
-        description:
-          "Transit and housing accessibility surge grants with ADA litigation support.",
+        description: "Transit and housing accessibility surge grants with ADA litigation support.",
       },
     ],
   },
@@ -646,22 +596,14 @@ export const policyFixes: PolicyFix[] = [
       "Tribal self-determination raises local governance capacity and reduces crisis spending from health and public-safety underfunding. Consent-based permitting reduces litigation delay compared with imposed extraction.",
     costOfInaction:
       "Without treaty enforcement and IHS parity, health gaps and land conflicts persist; extractive permits without consent repeat Standing Rock-style militarized confrontations. Treaty obligations and consultation duties erode when lands, fishing, and energy proclamations treat Indigenous nations as afterthoughts.",
-    costOfInactionCitations: [
-      citations.policy_indigenous,
-      citations.federal_lands_drilling,
-      citations.energy_emergency_eo,
-    ],
+    costOfInactionCitations: ["policy_indigenous", "federal_lands_drilling", "energy_emergency_eo"],
     safeguards: [
       "Tribal consultation that requires consent, not checkbox notice",
       "Independent treaty-rights ombuds with subpoena power",
       "IHS funding formulas insulated from annual hostage-taking",
       "Sacred-site veto overlapping federal land dispositions",
     ],
-    citations: [
-      citations.policy_indigenous,
-      citations.federal_lands_drilling,
-      citations.blm_hardrock_mining,
-    ],
+    citations: ["policy_indigenous", "federal_lands_drilling", "blm_hardrock_mining"],
     billReferences: [
       {
         number: "Congress.gov",
@@ -691,6 +633,8 @@ export const policyFixes: PolicyFix[] = [
       },
     ],
   },
+
+  // --- NEW PILLARS (Pass 38) ---
   {
     id: "FIX-CC-001",
     category: "Childcare & Care Economy",
@@ -711,23 +655,14 @@ export const policyFixes: PolicyFix[] = [
       "Higher parental labor supply raises GDP and tax revenue. Lower turnover and fewer emergency absences cut employer costs that unpaid leave currently externalizes onto workers.",
     costOfInaction:
       "Without public childcare and paid leave, parents keep exiting jobs, wage gaps widen, and early childhood inequality compounds into lifelong opportunity gaps documented by labor and education research.",
-    costOfInactionCitations: [
-      citations.policy_childcare,
-      citations.dol_fmla,
-      citations.cost_inaction_education,
-    ],
+    costOfInactionCitations: ["policy_childcare", "dol_fmla", "cost_inaction_education"],
     safeguards: [
       "Care-worker wage floors tied to regional living costs",
       "Parent and worker seats on state childcare quality boards",
       "Small-business premium assistance within leave insurance",
       "Annual public dashboards of childcare slots, waitlists, and leave uptake",
     ],
-    citations: [
-      citations.policy_childcare,
-      citations.dol_fmla,
-      citations.hr_paid_leave,
-      citations.policy_education,
-    ],
+    citations: ["policy_childcare", "dol_fmla", "hr_paid_leave", "policy_education"],
     billReferences: [
       {
         number: "H.R. 2813",
@@ -746,20 +681,17 @@ export const policyFixes: PolicyFix[] = [
       {
         phase: "Leave insurance launch",
         timeframe: "Year 1",
-        description:
-          "Stand up national paid leave insurance with progressive wage replacement.",
+        description: "Stand up national paid leave insurance with progressive wage replacement.",
       },
       {
         phase: "Childcare cost caps",
         timeframe: "Year 1-3",
-        description:
-          "Federal match to cap family childcare costs at 7% of income; expand slots.",
+        description: "Federal match to cap family childcare costs at 7% of income; expand slots.",
       },
       {
         phase: "Workforce standards",
         timeframe: "Year 3-5",
-        description:
-          "Care-worker wage floors, training pipelines, and quality dashboards live nationwide.",
+        description: "Care-worker wage floors, training pipelines, and quality dashboards live nationwide.",
       },
     ],
   },
@@ -783,22 +715,14 @@ export const policyFixes: PolicyFix[] = [
       "Fewer shootings cut medical, policing, and lost-productivity costs. Insurance and hospital systems face lower trauma burdens when firearm deaths and injuries fall.",
     costOfInaction:
       "Without closing loopholes, prohibited purchasers keep exploiting private sales while firearm deaths remain a leading cause of death for young Americans. CDC firearm-violence data make delay a body-count policy.",
-    costOfInactionCitations: [
-      citations.cost_inaction_guns,
-      citations.cdc_firearms,
-      citations.hr_background_checks,
-    ],
+    costOfInactionCitations: ["cost_inaction_guns", "cdc_firearms", "hr_background_checks"],
     safeguards: [
       "Due-process hearings for extreme-risk orders with counsel rights",
       "No federal gun registry of ordinary long guns; license assault-style categories only",
       "Hunting and sport exemptions with safety training requirements",
       "Annual CDC and ATF public reporting on trafficking pathways",
     ],
-    citations: [
-      citations.cdc_firearms,
-      citations.cost_inaction_guns,
-      citations.hr_background_checks,
-    ],
+    citations: ["cdc_firearms", "cost_inaction_guns", "hr_background_checks"],
     billReferences: [
       {
         number: "Congress.gov",
@@ -811,20 +735,17 @@ export const policyFixes: PolicyFix[] = [
       {
         phase: "Close the gap",
         timeframe: "Year 1",
-        description:
-          "Universal background checks for all transfers; fund state extreme-risk systems.",
+        description: "Universal background checks for all transfers; fund state extreme-risk systems.",
       },
       {
         phase: "Storage & licensing",
         timeframe: "Year 2-3",
-        description:
-          "Safe-storage mandates; assault-style licensing with renewal checks.",
+        description: "Safe-storage mandates; assault-style licensing with renewal checks.",
       },
       {
         phase: "Trafficking enforcement",
         timeframe: "Year 3-5",
-        description:
-          "ATF capacity surge against straw purchasing with public trafficking dashboards.",
+        description: "ATF capacity surge against straw purchasing with public trafficking dashboards.",
       },
     ],
   },
@@ -848,22 +769,14 @@ export const policyFixes: PolicyFix[] = [
       "Reproductive autonomy raises educational attainment and lifetime earnings. Avoided maternal morbidity and interstate care costs reduce public and family medical spending.",
     costOfInaction:
       "Criminalization and clinic closures keep raising maternal deaths and forcing delayed care. Guttmacher tracking after Dobbs documents access collapse in ban states and cascading harms to obstetric workforce supply.",
-    costOfInactionCitations: [
-      citations.guttmacher_repro,
-      citations.policy_healthcare,
-      citations.gao_healthcare,
-    ],
+    costOfInactionCitations: ["guttmacher_repro", "policy_healthcare", "gao_healthcare"],
     safeguards: [
       "Conscience exemptions limited to individual clinicians, not entire hospital systems denying emergencies",
       "Patient privacy shields against out-of-state subpoenas for legal care",
       "Rural clinic capital fund so access is not coastal-only",
       "Annual maternal mortality reporting by state with CDC methods",
     ],
-    citations: [
-      citations.guttmacher_repro,
-      citations.policy_healthcare,
-      citations.oecd_health,
-    ],
+    citations: ["guttmacher_repro", "policy_healthcare", "oecd_health"],
     billReferences: [
       {
         number: "Congress.gov",
@@ -876,20 +789,17 @@ export const policyFixes: PolicyFix[] = [
       {
         phase: "Federal floor",
         timeframe: "Year 1",
-        description:
-          "Codify abortion and contraception rights; block interstate travel prosecutions.",
+        description: "Codify abortion and contraception rights; block interstate travel prosecutions.",
       },
       {
         phase: "Clinic capacity",
         timeframe: "Year 1-3",
-        description:
-          "Title X and rural clinic surge funding; provider shield statutes.",
+        description: "Title X and rural clinic surge funding; provider shield statutes.",
       },
       {
         phase: "Maternal health",
         timeframe: "Year 3-5",
-        description:
-          "Maternal mortality reduction grants tied to evidence-based obstetric standards.",
+        description: "Maternal mortality reduction grants tied to evidence-based obstetric standards.",
       },
     ],
   },
@@ -913,22 +823,14 @@ export const policyFixes: PolicyFix[] = [
       "Hundreds of billions in additional revenue over a decade from rate alignment and enforcement. Reduced inequality lowers social-insurance stress and funds infrastructure without cutting benefits.",
     costOfInaction:
       "Leaving capital-income loopholes open shifts tax burden onto wages and underfunds Social Security, Medicare, and infrastructure that businesses also use. Treasury and IRS SOI data document the effective-rate gap at the top.",
-    costOfInactionCitations: [
-      citations.cost_inaction_tax,
-      citations.treasury_tax,
-      citations.irs_soi,
-    ],
+    costOfInactionCitations: ["cost_inaction_tax", "treasury_tax", "irs_soi"],
     safeguards: [
       "No tax increases on income under $400,000",
       "Public IRS audit-rate dashboards by income bracket",
       "Anti-inversion and country-by-country reporting for multinationals",
       "Independent Tax Fairness Commission reporting every Congress",
     ],
-    citations: [
-      citations.treasury_tax,
-      citations.irs_soi,
-      citations.cost_inaction_tax,
-    ],
+    citations: ["treasury_tax", "irs_soi", "cost_inaction_tax"],
     billReferences: [
       {
         number: "Congress.gov",
@@ -941,20 +843,17 @@ export const policyFixes: PolicyFix[] = [
       {
         phase: "Enforcement first",
         timeframe: "Year 1",
-        description:
-          "Restore IRS high-income audit capacity; close carried interest.",
+        description: "Restore IRS high-income audit capacity; close carried interest.",
       },
       {
         phase: "Rate alignment",
         timeframe: "Year 1-2",
-        description:
-          "Tax capital gains as ordinary income above $1M; raise top brackets over $10M.",
+        description: "Tax capital gains as ordinary income above $1M; raise top brackets over $10M.",
       },
       {
         phase: "Estate basis reform",
         timeframe: "Year 2-4",
-        description:
-          "End stepped-up basis above $5M with small-business and farm continuity rules.",
+        description: "End stepped-up basis above $5M with small-business and farm continuity rules.",
       },
     ],
   },
@@ -978,23 +877,14 @@ export const policyFixes: PolicyFix[] = [
       "Stable benefits support consumer demand among retirees. Avoided poverty and delayed long-term-care costs reduce Medicaid pressure. Negotiation savings free Medicare capacity for care rather than middlemen.",
     costOfInaction:
       "Delaying revenue fixes forces steeper benefit cuts later; early modest payroll-base expansions preserve benefits without privatization gambles. SSA Trustees reports make the choice calendar explicit.",
-    costOfInactionCitations: [
-      citations.cost_inaction_ss,
-      citations.ssa_trustees,
-      citations.cbo_medicare,
-    ],
+    costOfInactionCitations: ["cost_inaction_ss", "ssa_trustees", "cbo_medicare"],
     safeguards: [
       "Statutory ban on Social Security privatization without 60% public referendum",
       "Trust-fund solvency dashboard updated with each Trustees report",
       "Medicare Advantage payment audits with clawbacks for upcoding",
       "No benefit cuts for current beneficiaries or workers within 10 years of eligibility",
     ],
-    citations: [
-      citations.ssa_trustees,
-      citations.cost_inaction_ss,
-      citations.cbo_medicare,
-      citations.cbo_drug_negotiation,
-    ],
+    citations: ["ssa_trustees", "cost_inaction_ss", "cbo_medicare", "cbo_drug_negotiation"],
     billReferences: [
       {
         number: "Congress.gov",
@@ -1007,20 +897,17 @@ export const policyFixes: PolicyFix[] = [
       {
         phase: "Cap lift",
         timeframe: "Year 1",
-        description:
-          "Apply payroll tax above $400,000; publish solvency dashboard.",
+        description: "Apply payroll tax above $400,000; publish solvency dashboard.",
       },
       {
         phase: "Medicare integrity",
         timeframe: "Year 1-3",
-        description:
-          "Advantage overpayment reform; expand drug negotiation classes.",
+        description: "Advantage overpayment reform; expand drug negotiation classes.",
       },
       {
         phase: "Lockbox",
         timeframe: "Year 3-5",
-        description:
-          "Dedicate progressive revenues to trust funds with anti-raid rules.",
+        description: "Dedicate progressive revenues to trust funds with anti-raid rules.",
       },
     ],
   },
@@ -1044,22 +931,14 @@ export const policyFixes: PolicyFix[] = [
       "Kept-open hospitals and broadband raise farm productivity, remote work options, and clinic revenue. Avoided ambulance transfers and ER diversions cut public emergency costs.",
     costOfInaction:
       "Closures and digital deserts keep compounding population loss. USDA and FCC data show rural survival depends on care and connectivity that private markets alone leave unserved.",
-    costOfInactionCitations: [
-      citations.usda_rural,
-      citations.fcc_broadband,
-      citations.gao_healthcare,
-    ],
+    costOfInactionCitations: ["usda_rural", "fcc_broadband", "gao_healthcare"],
     safeguards: [
       "Open-access fiber requirements on federally funded builds",
       "Hospital funds barred from private-equity dividend extraction",
       "Community broadband co-op preference in grant scoring",
       "Annual rural obstetric access maps with GAO review",
     ],
-    citations: [
-      citations.usda_rural,
-      citations.fcc_broadband,
-      citations.gao_healthcare,
-    ],
+    citations: ["usda_rural", "fcc_broadband", "gao_healthcare"],
     billReferences: [
       {
         number: "Congress.gov",
@@ -1072,20 +951,17 @@ export const policyFixes: PolicyFix[] = [
       {
         phase: "Stabilize hospitals",
         timeframe: "Year 1-2",
-        description:
-          "Emergency rural hospital fund; clinician loan forgiveness surge.",
+        description: "Emergency rural hospital fund; clinician loan forgiveness surge.",
       },
       {
         phase: "Broadband build",
         timeframe: "Year 1-4",
-        description:
-          "Open-access fiber to unserved tracts with co-op preference.",
+        description: "Open-access fiber to unserved tracts with co-op preference.",
       },
       {
         phase: "Telehealth parity",
         timeframe: "Year 2-5",
-        description:
-          "Permanent telehealth payment parity for rural clinics and pharmacies.",
+        description: "Permanent telehealth payment parity for rural clinics and pharmacies.",
       },
     ],
   },
@@ -1109,22 +985,14 @@ export const policyFixes: PolicyFix[] = [
       "Timely VA care reduces crisis hospitalizations and homelessness costs. Faster claims processing cuts disability poverty and raises veteran labor-force participation.",
     costOfInaction:
       "Backlogs and privatization experiments shift risk onto veterans while contractors extract margins. VA health program data show demand rising faster than funded capacity without a guarantee.",
-    costOfInactionCitations: [
-      citations.va_health,
-      citations.gao_healthcare,
-      citations.policy_healthcare,
-    ],
+    costOfInactionCitations: ["va_health", "gao_healthcare", "policy_healthcare"],
     safeguards: [
       "Statutory VA funding floors indexed to enrolled veterans",
       "Inspector General audits of community-care contractor quality",
       "Veteran majority on local VA advisory boards",
       "Ban on selling VA real estate without Congressional approval",
     ],
-    citations: [
-      citations.va_health,
-      citations.gao_healthcare,
-      citations.policy_healthcare,
-    ],
+    citations: ["va_health", "gao_healthcare", "policy_healthcare"],
     billReferences: [
       {
         number: "Congress.gov",
@@ -1137,20 +1005,17 @@ export const policyFixes: PolicyFix[] = [
       {
         phase: "Capacity surge",
         timeframe: "Year 1-2",
-        description:
-          "Hire VA clinicians; clear claims backlog; freeze privatization expansions.",
+        description: "Hire VA clinicians; clear claims backlog; freeze privatization expansions.",
       },
       {
         phase: "Toxic exposure",
         timeframe: "Year 1-3",
-        description:
-          "Full PACT Act implementation with presumptive-condition expansions as evidence warrants.",
+        description: "Full PACT Act implementation with presumptive-condition expansions as evidence warrants.",
       },
       {
         phase: "Housing & mental health",
         timeframe: "Year 2-5",
-        description:
-          "Homeless-veteran voucher guarantee; suicide-prevention staffing ratios met.",
+        description: "Homeless-veteran voucher guarantee; suicide-prevention staffing ratios met.",
       },
     ],
   },
@@ -1174,22 +1039,14 @@ export const policyFixes: PolicyFix[] = [
       "Construction employment, reduced congestion costs, and higher property-value capture near transit corridors. Lower household transportation costs free wages for local spending.",
     costOfInaction:
       "Deferred maintenance multiplies into bridge failures, water crises, and transit death spirals. DOT transit data document capital and operating gaps that worsen without permanent federal partnership.",
-    costOfInactionCitations: [
-      citations.dot_transit,
-      citations.policy_environment,
-      citations.cost_inaction_climate,
-    ],
+    costOfInactionCitations: ["dot_transit", "policy_environment", "cost_inaction_climate"],
     safeguards: [
       "Project-labor agreements and prevailing wage on federal builds",
       "Accessibility mandates under ADA for all new federally funded stations",
       "Transparency portals for project cost overruns over 10%",
       "Operating aid formulas that reward ridership and frequency, not fare hikes alone",
     ],
-    citations: [
-      citations.dot_transit,
-      citations.policy_environment,
-      citations.fcc_broadband,
-    ],
+    citations: ["dot_transit", "policy_environment", "fcc_broadband"],
     billReferences: [
       {
         number: "Congress.gov",
@@ -1202,20 +1059,17 @@ export const policyFixes: PolicyFix[] = [
       {
         phase: "State of good repair",
         timeframe: "Year 1-3",
-        description:
-          "Bridge, water, and rail state-of-good-repair surge with Buy America rules.",
+        description: "Bridge, water, and rail state-of-good-repair surge with Buy America rules.",
       },
       {
         phase: "Transit operations",
         timeframe: "Year 1-5",
-        description:
-          "Permanent operating aid; frequency standards on core urban corridors.",
+        description: "Permanent operating aid; frequency standards on core urban corridors.",
       },
       {
         phase: "Electrification",
         timeframe: "Year 3-10",
-        description:
-          "Bus and rail electrification with utility partnerships and workforce training.",
+        description: "Bus and rail electrification with utility partnerships and workforce training.",
       },
     ],
   },
@@ -1239,23 +1093,14 @@ export const policyFixes: PolicyFix[] = [
       "Reduced capture means regulations and tax rules track public interest more often, cutting the hidden tax of monopolies and bailouts written by lobbyists.",
     costOfInaction:
       "Dark money and revolving doors keep rewriting rules for donors. OpenSecrets tracking shows undisclosed spending rising each cycle while STOCK Act enforcement gaps leave official trading conflicts unresolved.",
-    costOfInactionCitations: [
-      citations.opensecrets_dark_money,
-      citations.stock_act,
-      citations.safeguard_anticorruption,
-    ],
+    costOfInactionCitations: ["opensecrets_dark_money", "stock_act", "safeguard_anticorruption"],
     safeguards: [
       "Real-time FEC filing with criminal penalties for shell-donor schemes",
       "Blind trusts mandatory for covered officials' liquid assets",
       "Matching funds only for candidates who reject Super PAC coordination",
       "Inspector General audits of lobbying ban compliance",
     ],
-    citations: [
-      citations.opensecrets_dark_money,
-      citations.stock_act,
-      citations.safeguard_anticorruption,
-      citations.safeguard_transparency,
-    ],
+    citations: ["opensecrets_dark_money", "stock_act", "safeguard_anticorruption", "safeguard_transparency"],
     billReferences: [
       {
         number: "Congress.gov",
@@ -1268,20 +1113,17 @@ export const policyFixes: PolicyFix[] = [
       {
         phase: "Disclosure now",
         timeframe: "Year 1",
-        description:
-          "Real-time disclosure over $200; congressional stock-trading ban.",
+        description: "Real-time disclosure over $200; congressional stock-trading ban.",
       },
       {
         phase: "Public financing",
         timeframe: "Year 2-3",
-        description:
-          "Small-dollar matching for House and Senate; presidential system update.",
+        description: "Small-dollar matching for House and Senate; presidential system update.",
       },
       {
         phase: "Revolving door",
         timeframe: "Year 3-5",
-        description:
-          "Lifetime lobbying bans for senior officials; OGE subpoena authority.",
+        description: "Lifetime lobbying bans for senior officials; OGE subpoena authority.",
       },
     ],
   },
@@ -1305,23 +1147,14 @@ export const policyFixes: PolicyFix[] = [
       "Federal and household savings in the tens of billions annually. Fewer medical bankruptcies from specialty drugs; employers see lower premium growth.",
     costOfInaction:
       "Without negotiation and rebate reform, Americans keep paying peer-leading prices for insulin, cancer drugs, and specialty therapies. KFF tracking shows out-of-pocket burdens remain extreme without structural bargaining power.",
-    costOfInactionCitations: [
-      citations.cost_inaction_drugs,
-      citations.kff_drug_costs,
-      citations.cbo_drug_negotiation,
-    ],
+    costOfInactionCitations: ["cost_inaction_drugs", "kff_drug_costs", "cbo_drug_negotiation"],
     safeguards: [
       "Guaranteed exclusivity window before negotiation to preserve true innovation returns",
       "Public negotiation memos with redactions only for narrow trade secrets",
       "Anti-shortage stockpile authority when companies threaten supply withdrawals",
       "Annual GAO review of evergreening patent thickets",
     ],
-    citations: [
-      citations.kff_drug_costs,
-      citations.cbo_drug_negotiation,
-      citations.cost_inaction_drugs,
-      citations.oecd_health,
-    ],
+    citations: ["kff_drug_costs", "cbo_drug_negotiation", "cost_inaction_drugs", "oecd_health"],
     billReferences: [
       {
         number: "Congress.gov",
@@ -1334,20 +1167,17 @@ export const policyFixes: PolicyFix[] = [
       {
         phase: "Expand negotiation",
         timeframe: "Year 1-2",
-        description:
-          "Widen Medicare negotiation classes; insulin and essential-drug caps.",
+        description: "Widen Medicare negotiation classes; insulin and essential-drug caps.",
       },
       {
         phase: "Reference pricing",
         timeframe: "Year 2-3",
-        description:
-          "International reference bands for new launches; pass-through to commercial markets.",
+        description: "International reference bands for new launches; pass-through to commercial markets.",
       },
       {
         phase: "Patent abuse",
         timeframe: "Year 3-5",
-        description:
-          "Evergreening and pay-for-delay enforcement with FTC/DOJ capacity.",
+        description: "Evergreening and pay-for-delay enforcement with FTC/DOJ capacity.",
       },
     ],
   },
@@ -1371,23 +1201,14 @@ export const policyFixes: PolicyFix[] = [
       "Billions in annual wage gains for low- and middle-income households recirculate as local demand. Reduced turnover cuts hiring costs for compliant employers.",
     costOfInaction:
       "Keeping $7.25 and eroded overtime locks in poverty wages despite record profits. EPI and BLS series show wage stagnation for typical workers while executive pay diverges.",
-    costOfInactionCitations: [
-      citations.epi_minimum_wage,
-      citations.dol_overtime,
-      citations.cost_inaction_labor,
-    ],
+    costOfInactionCitations: ["epi_minimum_wage", "dol_overtime", "cost_inaction_labor"],
     safeguards: [
       "Regional floors so high-cost metros cannot undercut living costs",
       "Small-business technical assistance during phase-in",
       "DOL wage-and-hour staffing floors indexed to covered workers",
       "Public employer wage-theft database for repeat violators",
     ],
-    citations: [
-      citations.epi_minimum_wage,
-      citations.dol_overtime,
-      citations.bls_wages,
-      citations.epi_unions,
-    ],
+    citations: ["epi_minimum_wage", "dol_overtime", "bls_wages", "epi_unions"],
     billReferences: [
       {
         number: "Congress.gov",
@@ -1400,20 +1221,17 @@ export const policyFixes: PolicyFix[] = [
       {
         phase: "Phase-in wage",
         timeframe: "Year 1-5",
-        description:
-          "Step federal minimum to $17 with indexing thereafter.",
+        description: "Step federal minimum to $17 with indexing thereafter.",
       },
       {
         phase: "Overtime restore",
         timeframe: "Year 1-2",
-        description:
-          "Raise salary threshold so middle-income workers regain overtime.",
+        description: "Raise salary threshold so middle-income workers regain overtime.",
       },
       {
         phase: "Wage theft",
         timeframe: "Year 2-4",
-        description:
-          "Triple damages; DOL hiring surge; public violator database.",
+        description: "Triple damages; DOL hiring surge; public violator database.",
       },
     ],
   },
@@ -1437,22 +1255,14 @@ export const policyFixes: PolicyFix[] = [
       "Lower consumer prices and higher startup formation. Worker wage gains where labor-market concentration falls. Reduced political spending power from fewer mega-firms.",
     costOfInaction:
       "Without revival, mergers keep raising prices and shrinking choice across tech, pharma, and retail. FTC and DOJ capacity gaps leave monopoly conduct cheaper than compliance.",
-    costOfInactionCitations: [
-      citations.ftc_antitrust,
-      citations.doj_antitrust,
-      citations.policy_media,
-    ],
+    costOfInactionCitations: ["ftc_antitrust", "doj_antitrust", "policy_media"],
     safeguards: [
       "Worker and consumer harm tests in merger review, not price alone",
       "Cooling-off bans on revolving-door moves from FTC/DOJ to client firms",
       "Public merger-challenge memos for rejected and accepted deals",
       "Circuit-split review commission to restore coherent antitrust doctrine",
     ],
-    citations: [
-      citations.ftc_antitrust,
-      citations.doj_antitrust,
-      citations.policy_media,
-    ],
+    citations: ["ftc_antitrust", "doj_antitrust", "policy_media"],
     billReferences: [
       {
         number: "Congress.gov",
@@ -1465,20 +1275,17 @@ export const policyFixes: PolicyFix[] = [
       {
         phase: "Capacity",
         timeframe: "Year 1",
-        description:
-          "Double FTC/DOJ antitrust staffing; issue bright-line merger guidelines.",
+        description: "Double FTC/DOJ antitrust staffing; issue bright-line merger guidelines.",
       },
       {
         phase: "Structural cases",
         timeframe: "Year 2-4",
-        description:
-          "Pursue breakups and separations in dominant platform and pharma markets.",
+        description: "Pursue breakups and separations in dominant platform and pharma markets.",
       },
       {
         phase: "Labor collusion",
         timeframe: "Year 2-5",
-        description:
-          "No-poach and wage-fixing enforcement with private rights of action.",
+        description: "No-poach and wage-fixing enforcement with private rights of action.",
       },
     ],
   },
@@ -1502,23 +1309,14 @@ export const policyFixes: PolicyFix[] = [
       "Millions of high-road clean-energy jobs with local hire. Reduced opioid and out-migration crises in fossil regions when paychecks continue through transition.",
     costOfInaction:
       "Without a just transition, climate delay continues under jobs rhetoric while closures still arrive unmanaged. EPI and climate-job modeling show high-road standards determine whether clean energy rebuilds the middle class.",
-    costOfInactionCitations: [
-      citations.cost_inaction_climate,
-      citations.policy_economy,
-      citations.epi_unions,
-    ],
+    costOfInactionCitations: ["cost_inaction_climate", "policy_economy", "epi_unions"],
     safeguards: [
       "Wage replacement administered by DOL with union oversight boards",
       "Local-hire and tribal-hire preferences on federal clean projects",
       "Abandoned well cleanup jobs prioritized for displaced workers",
       "Annual public accounting of transition dollars by county",
     ],
-    citations: [
-      citations.policy_environment,
-      citations.policy_economy,
-      citations.epi_unions,
-      citations.cost_inaction_climate,
-    ],
+    citations: ["policy_environment", "policy_economy", "epi_unions", "cost_inaction_climate"],
     billReferences: [
       {
         number: "H.R. 7941",
@@ -1531,20 +1329,17 @@ export const policyFixes: PolicyFix[] = [
       {
         phase: "Wage bridge",
         timeframe: "Year 1",
-        description:
-          "Stand up five-year wage replacement and first-hire registries.",
+        description: "Stand up five-year wage replacement and first-hire registries.",
       },
       {
         phase: "High-road builds",
         timeframe: "Year 1-5",
-        description:
-          "PLA and prevailing-wage mandates on all federal clean projects.",
+        description: "PLA and prevailing-wage mandates on all federal clean projects.",
       },
       {
         phase: "Community ownership",
         timeframe: "Year 3-10",
-        description:
-          "30% community or tribal ownership stakes on new federally aided capacity.",
+        description: "30% community or tribal ownership stakes on new federally aided capacity.",
       },
     ],
   },
@@ -1568,22 +1363,14 @@ export const policyFixes: PolicyFix[] = [
       "Lower ER and incarceration costs; higher employment among people with managed conditions. Employers see reduced absenteeism when networks actually answer the phone.",
     costOfInaction:
       "Without parity enforcement and community capacity, jails and ERs remain the de facto mental-health system. NIMH documents the cost of untreated conditions in disability, suicide risk, and lost productivity.",
-    costOfInactionCitations: [
-      citations.nimh_mental_health,
-      citations.gao_healthcare,
-      citations.policy_healthcare,
-    ],
+    costOfInactionCitations: ["nimh_mental_health", "gao_healthcare", "policy_healthcare"],
     safeguards: [
       "Network-adequacy audits with automatic fines for ghost networks",
       "Peer specialist certification funded as a Medicaid billable service",
       "Crisis-team response standards under 30 minutes in urban areas, 60 in rural",
       "Annual public dashboards of wait times and jail diversion outcomes",
     ],
-    citations: [
-      citations.nimh_mental_health,
-      citations.policy_healthcare,
-      citations.gao_healthcare,
-    ],
+    citations: ["nimh_mental_health", "policy_healthcare", "gao_healthcare"],
     billReferences: [
       {
         number: "Congress.gov",
@@ -1596,26 +1383,23 @@ export const policyFixes: PolicyFix[] = [
       {
         phase: "Parity teeth",
         timeframe: "Year 1",
-        description:
-          "Network-adequacy penalties; ghost-network audits begin.",
+        description: "Network-adequacy penalties; ghost-network audits begin.",
       },
       {
         phase: "Community centers",
         timeframe: "Year 1-4",
-        description:
-          "CCBHC or equivalent in every county; mobile crisis teams statewide.",
+        description: "CCBHC or equivalent in every county; mobile crisis teams statewide.",
       },
       {
         phase: "Workforce",
         timeframe: "Year 2-5",
-        description:
-          "Loan forgiveness and peer specialist pipelines meet shortage-area targets.",
+        description: "Loan forgiveness and peer specialist pipelines meet shortage-area targets.",
       },
     ],
-  }
+  },
 ];
 
-export const safeguardItems: SafeguardItem[] = [
+const safeguards = [
   {
     id: "SAFE-001",
     title: "Anti-Corruption Architecture",
@@ -1627,11 +1411,7 @@ export const safeguardItems: SafeguardItem[] = [
       "Independent Office of Public Integrity with power to refer cases directly to federal prosecutors",
       "Mandatory blind trusts for all federal judges and agency heads",
     ],
-    citations: [
-      citations.safeguard_anticorruption,
-      citations.opensecrets_dark_money,
-      citations.stock_act,
-    ],
+    citations: ["safeguard_anticorruption", "opensecrets_dark_money", "stock_act"],
     whyItWorks:
       "Structural bans and public financing remove the profit model of influence-peddling instead of relying on after-the-fact scandals.",
     whyPeopleCallItExtreme:
@@ -1654,10 +1434,7 @@ export const safeguardItems: SafeguardItem[] = [
       "Emergency proclamations and NSPMs expire after 90 days unless Congress renews",
       "National-security memoranda must be logged in a public index within 14 days unless a narrow classified annex applies",
     ],
-    citations: [
-      citations.safeguard_executive,
-      citations.crs_executive,
-    ],
+    citations: ["safeguard_executive", "crs_executive"],
     whyItWorks:
       "Sunsets and funding cutoffs force Congress back into war and emergency decisions instead of permanent one-person rule by memo.",
     whyPeopleCallItExtreme:
@@ -1678,9 +1455,7 @@ export const safeguardItems: SafeguardItem[] = [
       "Jurisdiction stripping for partisan gerrymandering cases to independent commissions",
       "Court expansion to 13 justices to match federal circuit court structure",
     ],
-    citations: [
-      citations.safeguard_judicial,
-    ],
+    citations: ["safeguard_judicial"],
     whyItWorks:
       "Regular appointments reduce lottery-of-death court packing by mortality and restore ethics teeth the Court refused to give itself.",
     whyPeopleCallItExtreme:
@@ -1703,11 +1478,7 @@ export const safeguardItems: SafeguardItem[] = [
       "Federal Register and White House presidential-action URLs archived daily with checksum manifests",
       "Agency FOIA dashboards must publish backlog age percentiles monthly, not annual averages alone",
     ],
-    citations: [
-      citations.safeguard_transparency,
-      citations.pew_trust,
-      citations.opensecrets_dark_money,
-    ],
+    citations: ["safeguard_transparency", "pew_trust", "opensecrets_dark_money"],
     whyItWorks:
       "Real-time spending and lobbying logs let journalists and voters catch capture before it hardens into irreversible policy.",
     whyPeopleCallItExtreme:
@@ -1716,7 +1487,113 @@ export const safeguardItems: SafeguardItem[] = [
       "They say transparency endangers security and privacy. SAFE-004 targets government spending and lobbying, not private diaries; classified annexes remain for narrow cases.",
     alreadyWorksWhere:
       "USASpending.gov and FOIA are incomplete U.S. prototypes. Nordic open-government practices and OpenSecrets aggregations show the demand these mandates would meet by default.",
+  },
+];
+
+for (const p of policies) assertClean(p, p.id);
+for (const s of safeguards) assertClean(s, s.id);
+
+if (policies.length < 20) throw new Error(`Need 20+ policies, got ${policies.length}`);
+
+function serStr(s) {
+  return JSON.stringify(s);
+}
+
+function serPolicy(p) {
+  const lines = [];
+  lines.push(`  {`);
+  lines.push(`    id: ${serStr(p.id)},`);
+  lines.push(`    category: ${serStr(p.category)},`);
+  lines.push(`    title: ${serStr(p.title)},`);
+  lines.push(`    problem:`);
+  lines.push(`      ${serStr(p.problem)},`);
+  lines.push(`    proposedFix:`);
+  lines.push(`      ${serStr(p.proposedFix)},`);
+  lines.push(`    whyItWorks:`);
+  lines.push(`      ${serStr(p.whyItWorks)},`);
+  lines.push(`    whyPeopleCallItExtreme:`);
+  lines.push(`      ${serStr(p.whyPeopleCallItExtreme)},`);
+  lines.push(`    theGaslight:`);
+  lines.push(`      ${serStr(p.theGaslight)},`);
+  lines.push(`    alreadyWorksWhere:`);
+  lines.push(`      ${serStr(p.alreadyWorksWhere)},`);
+  lines.push(`    economicImpact:`);
+  lines.push(`      ${serStr(p.economicImpact)},`);
+  lines.push(`    costOfInaction:`);
+  lines.push(`      ${serStr(p.costOfInaction)},`);
+  lines.push(`    costOfInactionCitations: [`);
+  for (const c of p.costOfInactionCitations) {
+    lines.push(`      citations.${c},`);
   }
+  lines.push(`    ],`);
+  lines.push(`    safeguards: [`);
+  for (const s of p.safeguards) lines.push(`      ${serStr(s)},`);
+  lines.push(`    ],`);
+  lines.push(`    citations: [`);
+  for (const c of p.citations) lines.push(`      citations.${c},`);
+  lines.push(`    ],`);
+  if (p.billReferences?.length) {
+    lines.push(`    billReferences: [`);
+    for (const b of p.billReferences) {
+      lines.push(`      {`);
+      lines.push(`        number: ${serStr(b.number)},`);
+      lines.push(`        title: ${serStr(b.title)},`);
+      lines.push(`        url: ${serStr(b.url)},`);
+      lines.push(`        status: ${serStr(b.status)},`);
+      lines.push(`      },`);
+    }
+    lines.push(`    ],`);
+  }
+  if (p.implementationTimeline?.length) {
+    lines.push(`    implementationTimeline: [`);
+    for (const ph of p.implementationTimeline) {
+      lines.push(`      {`);
+      lines.push(`        phase: ${serStr(ph.phase)},`);
+      lines.push(`        timeframe: ${serStr(ph.timeframe)},`);
+      lines.push(`        description:`);
+      lines.push(`          ${serStr(ph.description)},`);
+      lines.push(`      },`);
+    }
+    lines.push(`    ],`);
+  }
+  lines.push(`  }`);
+  return lines.join("\n");
+}
+
+function serSafeguard(s) {
+  const lines = [];
+  lines.push(`  {`);
+  lines.push(`    id: ${serStr(s.id)},`);
+  lines.push(`    title: ${serStr(s.title)},`);
+  lines.push(`    description:`);
+  lines.push(`      ${serStr(s.description)},`);
+  lines.push(`    mechanisms: [`);
+  for (const m of s.mechanisms) lines.push(`      ${serStr(m)},`);
+  lines.push(`    ],`);
+  lines.push(`    citations: [`);
+  for (const c of s.citations) lines.push(`      citations.${c},`);
+  lines.push(`    ],`);
+  lines.push(`    whyItWorks:`);
+  lines.push(`      ${serStr(s.whyItWorks)},`);
+  lines.push(`    whyPeopleCallItExtreme:`);
+  lines.push(`      ${serStr(s.whyPeopleCallItExtreme)},`);
+  lines.push(`    theGaslight:`);
+  lines.push(`      ${serStr(s.theGaslight)},`);
+  lines.push(`    alreadyWorksWhere:`);
+  lines.push(`      ${serStr(s.alreadyWorksWhere)},`);
+  lines.push(`  }`);
+  return lines.join("\n");
+}
+
+const out = `import type { PolicyFix, SafeguardItem } from "@/lib/types";
+import { citations } from "./citations";
+
+export const policyFixes: PolicyFix[] = [
+${policies.map(serPolicy).join(",\n")}
+];
+
+export const safeguardItems: SafeguardItem[] = [
+${safeguards.map(serSafeguard).join(",\n")}
 ];
 
 /** All shareable blueprint page IDs (policy fixes + safeguards) */
@@ -1726,7 +1603,7 @@ export const blueprintPageIds: string[] = [
 ];
 
 export function blueprintDetailPath(id: string): string {
-  return `/blueprint/${encodeURIComponent(id)}`;
+  return \`/blueprint/\${encodeURIComponent(id)}\`;
 }
 
 /** Deep-link path to a blueprint policy fix or safeguard page */
@@ -1752,3 +1629,7 @@ export function isBlueprintPageId(id: string): boolean {
 export function isBlueprintAnchorId(id: string): boolean {
   return isBlueprintPageId(id);
 }
+`;
+
+writeFileSync(OUT, out);
+console.log(`Wrote ${policies.length} policies and ${safeguards.length} safeguards to ${OUT}`);

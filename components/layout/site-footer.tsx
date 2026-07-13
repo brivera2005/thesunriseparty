@@ -17,6 +17,7 @@ const sitePages = [
   { href: "/methodology", label: "Methodology" },
   { href: "/events", label: "Events Hub" },
   { href: "/tracker", label: "Project 2025 Tracker" },
+  { href: "/legislation", label: "Live Legislation" },
   { href: "/blueprint", label: "Progressive Blueprint" },
   { href: "/rebuttal", label: "Rebuttal Desk" },
   { href: "/history", label: "Hidden History" },

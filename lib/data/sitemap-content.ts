@@ -2,13 +2,12 @@ import {
   Activity,
   BookOpen,
   Compass,
-  FileText,
   Heart,
   History,
+  Landmark,
   LayoutGrid,
   Map,
   MessageSquareQuote,
-  Rss,
   Scale,
   ShieldCheck,
   Sparkles,
@@ -22,6 +21,7 @@ import {
 } from "./conversation-helpers";
 import { hiddenHistoryEntries, getHistoryStats } from "./hidden-history";
 import { policyFixes, safeguardItems } from "./policies";
+import { legislationBills, getLegislationStats } from "./legislation";
 import { validatedUrls } from "./validated-urls";
 import { trackerSources } from "./tracker-sources";
 
@@ -44,6 +44,7 @@ export interface SitemapSection {
 
 const trackerStats = getTrackerStats();
 const historyStats = getHistoryStats();
+const legislationStats = getLegislationStats();
 const rebuttalCats = rebuttalCategories.filter((c) => c !== "All");
 
 export const sitemapIntro = {
@@ -121,6 +122,37 @@ export const sitemapSections: SitemapSection[] = [
         href: "/feed.xml",
         label: "RSS feed",
         description: "Subscribe to new tracker events.",
+      },
+    ],
+  },
+  {
+    id: "legislation",
+    title: "Live Legislation",
+    description: "119th Congress bills with party colors, roll calls, and progressive analysis.",
+    icon: Landmark,
+    accent: "text-sky-700 border-sky-300/50 bg-sky-50",
+    links: [
+      {
+        href: "/legislation",
+        label: "Bill tracker",
+        count: legislationBills.length,
+        description: `${legislationStats.withVotes} with roll calls · updated ${legislationStats.lastUpdated}`,
+        badge: "New",
+      },
+      {
+        href: "/legislation/hr-1",
+        label: "Featured: H.R. 1",
+        description: "One Big Beautiful Bill Act — reconciliation receipts.",
+      },
+      {
+        href: "/legislation/s-2",
+        label: "Featured: S. 2",
+        description: "Secure America Act — enacted enforcement funding.",
+      },
+      {
+        href: "/bills",
+        label: "Alias /bills",
+        description: "Same tracker under the /bills path.",
       },
     ],
   },
@@ -267,9 +299,9 @@ export const sitemapSections: SitemapSection[] = [
 
 export const sitemapStats = [
   { label: "Tracker events", value: timelineEvents.length, icon: Activity },
+  { label: "Bills tracked", value: legislationBills.length, icon: Landmark },
   { label: "Rebuttals", value: conversationHelpers.length, icon: MessageSquareQuote },
   { label: "Policy items", value: policyFixes.length + safeguardItems.length, icon: BookOpen },
   { label: "Links verified", value: validatedUrls.size, icon: ShieldCheck },
   { label: "External trackers", value: trackerSources.length, icon: Map },
-  { label: "Rebuttal categories", value: rebuttalCats.length, icon: FileText },
 ] as const;

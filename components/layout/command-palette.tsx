@@ -7,6 +7,7 @@ import {
   AlertTriangle,
   Compass,
   History,
+  Landmark,
   MessageSquareQuote,
   Shield,
   Pin,
@@ -56,6 +57,7 @@ const typeIcons: Record<SearchResultType, React.ReactNode> = {
   Rebuttal: <MessageSquareQuote className="size-4 text-sunrise" />,
   Safeguard: <Shield className="size-4 text-primary" />,
   History: <History className="size-4 text-amber-600" />,
+  Legislation: <Landmark className="size-4 text-sky-600" />,
 };
 
 function toSearchResult(pin: PalettePin): SearchResult {
@@ -121,6 +123,7 @@ export function CommandPalette() {
       Rebuttal: [],
       Safeguard: [],
       History: [],
+      Legislation: [],
     };
     for (const r of results) {
       groups[r.type].push(r);
@@ -216,7 +219,7 @@ export function CommandPalette() {
   return (
     <CommandDialog open={open} onOpenChange={setOpen}>
       <CommandInput
-        placeholder="Search events, policies, rebuttals, safeguards…"
+        placeholder="Search events, bills, policies, rebuttals…"
         value={query}
         onValueChange={setQuery}
       />
@@ -224,17 +227,24 @@ export function CommandPalette() {
         {!hasResults && query.trim() && (
           <CommandEmpty>No results found. Try a different keyword.</CommandEmpty>
         )}
-        {(["Tracker", "Blueprint", "Rebuttal", "Safeguard"] as SearchResultType[]).map(
-          (type) => {
-            const items = grouped[type];
-            if (items.length === 0) return null;
-            return (
-              <CommandGroup key={type} heading={type}>
-                {items.map(renderResultItem)}
-              </CommandGroup>
-            );
-          }
-        )}
+        {(
+          [
+            "Tracker",
+            "Legislation",
+            "Blueprint",
+            "Rebuttal",
+            "Safeguard",
+            "History",
+          ] as SearchResultType[]
+        ).map((type) => {
+          const items = grouped[type];
+          if (items.length === 0) return null;
+          return (
+            <CommandGroup key={type} heading={type}>
+              {items.map(renderResultItem)}
+            </CommandGroup>
+          );
+        })}
         {showPrefs && savedItems.length > 0 && (
           <>
             <CommandSeparator />
@@ -351,29 +361,33 @@ export function CommandPalette() {
         )}
         {showPrefs && (
           <CommandGroup heading="Quick Navigate">
+            <CommandItem onSelect={() => navigateTo({ id: "nav-rebuttal", type: "Rebuttal", title: "", body: "", score: 1, href: "/rebuttal" })}>
+              <MessageSquareQuote className="size-4 text-sunrise" />
+              Rebuttal Desk
+            </CommandItem>
+            <CommandItem onSelect={() => navigateTo({ id: "nav-history", type: "History", title: "", body: "", score: 1, href: "/history" })}>
+              <History className="size-4 text-amber-600" />
+              Hidden History
+            </CommandItem>
             <CommandItem onSelect={() => navigateTo({ id: "nav-tracker", type: "Tracker", title: "", body: "", score: 1, href: "/tracker" })}>
               <AlertTriangle className="size-4 text-destructive" />
               The Tracker
+            </CommandItem>
+            <CommandItem onSelect={() => navigateTo({ id: "nav-legislation", type: "Legislation", title: "", body: "", score: 1, href: "/legislation" })}>
+              <Landmark className="size-4 text-sky-600" />
+              Legislation
             </CommandItem>
             <CommandItem onSelect={() => navigateTo({ id: "nav-blueprint", type: "Blueprint", title: "", body: "", score: 1, href: "/blueprint" })}>
               <Compass className="size-4 text-primary" />
               The Blueprint
             </CommandItem>
-            <CommandItem onSelect={() => navigateTo({ id: "nav-safeguards", type: "Safeguard", title: "", body: "", score: 1, href: "/blueprint", anchor: "safeguards" })}>
-              <Shield className="size-4 text-primary" />
-              Irreversible Safeguards
-            </CommandItem>
-            <CommandItem onSelect={() => navigateTo({ id: "nav-rebuttal", type: "Rebuttal", title: "", body: "", score: 1, href: "/rebuttal", anchor: "rebuttal-desk" })}>
-              <MessageSquareQuote className="size-4 text-sunrise" />
-              Rebuttal Desk
+            <CommandItem onSelect={() => { setOpen(false); router.push("/donate"); }}>
+              <Heart className="size-4 text-primary" />
+              Donate
             </CommandItem>
             <CommandItem onSelect={() => { setOpen(false); router.push("/saved"); }}>
               <Heart className="size-4 text-destructive" />
               My Saved
-            </CommandItem>
-            <CommandItem onSelect={() => { setOpen(false); router.push("/accountability"); }}>
-              <Shield className="size-4 text-primary" />
-              Dark Money & Accountability
             </CommandItem>
           </CommandGroup>
         )}

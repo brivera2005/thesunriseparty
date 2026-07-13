@@ -8,6 +8,28 @@ export interface ChangelogEntry {
 /** Site iteration history - meta transparency for Project Sunrise builds */
 export const changelog: ChangelogEntry[] = [
   {
+    version: "0.39.0",
+    date: "2026-07-13",
+    title: "Pass 39 - Live Legislation Tracker + nav overhaul",
+    highlights: [
+      "New /legislation (alias /bills) live tracker for 119th Congress bills with party-colored sponsors, roll-call bars, and progressive analysis",
+      "Hybrid data: curated major bills + scripts/fetch-legislation.ts for Congress.gov API refresh when CONGRESS_API_KEY is set",
+      "Nav decluttered: primary = Rebuttal · History · Tracker · Legislation · Blueprint; overflow More menu + Donate accent",
+      "Homepage, footer, sitemap, SEO, and command palette wired for legislation search",
+    ],
+  },
+  {
+    version: "0.38.0",
+    date: "2026-07-13",
+    title: "Pass 38 - Blueprint common-sense pillars expanded",
+    highlights: [
+      "Blueprint FIX policies expanded from 10 to 24 pillars (childcare, gun safety, reproductive rights, tax fairness, Social Security/Medicare, rural care, veterans, transit, anti-corruption, drug pricing, living wage, antitrust, climate jobs, mental health, plus deepened originals)",
+      "Every policy and safeguard now ships whyItWorks, whyPeopleCallItExtreme, theGaslight, alreadyWorksWhere, cost of inaction, and verified sources",
+      "Blueprint accordion and /blueprint/[id] share pages surface Evidence & framing subsections; safeguards get the same treatment plus copy-link",
+      "Shareable pages for all new IDs (e.g. /blueprint/FIX-CC-001, /blueprint/FIX-GUN-001); search indexes the new fields",
+    ],
+  },
+  {
     version: "0.37.0",
     date: "2026-07-13",
     title: "Pass 37 - Mobile cache bust + Kamala projection rebuttal",

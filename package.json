@@ -1,11 +1,12 @@
 {
   "name": "project-sunrise",
-  "version": "0.37.0",
+  "version": "0.39.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "generate-feed": "npx tsx scripts/generate-feed.ts",
     "generate-data": "npx tsx scripts/generate-data-export.ts",
+    "fetch-legislation": "npx tsx scripts/fetch-legislation.ts",
     "prebuild": "npm run generate-feed && npx tsx scripts/generate-seo.ts && npm run generate-data",
     "build": "next build",
     "start": "next start",

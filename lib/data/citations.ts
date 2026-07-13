@@ -1964,10 +1964,10 @@ export const citations: Record<string, CitationSource> = {
   },
   cdc_firearms: {
     id: "cdc_firearms",
-    title: "Firearm Violence Prevention",
+    title: "Firearm Injury and Death Prevention",
     publisher: "Centers for Disease Control and Prevention",
-    url: "https://www.cdc.gov/firearm-violence/index.html",
-    waybackUrl: wayback("https://www.cdc.gov/firearm-violence/index.html"),
+    url: "https://www.cdc.gov/firearm-violence/about/index.html",
+    waybackUrl: wayback("https://www.cdc.gov/firearm-violence/about/index.html"),
     excerpt:
       "CDC firearm-violence data show tens of thousands of U.S. deaths annually; background-check and safe-storage policies are public-health tools, not confiscation schemes.",
     date: "2025-01-01",
@@ -1996,8 +1996,8 @@ export const citations: Record<string, CitationSource> = {
     id: "irs_soi",
     title: "Statistics of Income",
     publisher: "Internal Revenue Service",
-    url: "https://www.irs.gov/statistics/soi-tax-stats",
-    waybackUrl: wayback("https://www.irs.gov/statistics/soi-tax-stats"),
+    url: "https://www.irs.gov/statistics/soi-tax-stats-statistics-of-income",
+    waybackUrl: wayback("https://www.irs.gov/statistics/soi-tax-stats-statistics-of-income"),
     excerpt:
       "IRS SOI tables document concentration of income and wealth at the top and the scale of preferential capital-gains treatment.",
     date: "2025-01-01",
@@ -2106,8 +2106,8 @@ export const citations: Record<string, CitationSource> = {
     id: "cost_inaction_guns",
     title: "Firearm Mortality",
     publisher: "Centers for Disease Control and Prevention",
-    url: "https://www.cdc.gov/firearm-violence/index.html",
-    waybackUrl: wayback("https://www.cdc.gov/firearm-violence/index.html"),
+    url: "https://www.cdc.gov/firearm-violence/about/index.html",
+    waybackUrl: wayback("https://www.cdc.gov/firearm-violence/about/index.html"),
     excerpt:
       "Without background-check gaps closed, prohibited purchasers keep exploiting private-sale loopholes while firearm deaths remain a leading cause of death for young Americans.",
     date: "2025-01-01",

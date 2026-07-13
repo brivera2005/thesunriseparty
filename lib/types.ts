@@ -198,3 +198,100 @@ export interface HiddenHistoryEntry {
   relatedEvents?: string[];
   relatedRebuttalIds?: string[];
 }
+
+export type BillChamber = "house" | "senate" | "both";
+export type PartyCode = "D" | "R" | "I";
+export type BillStatus =
+  | "introduced"
+  | "committee"
+  | "floor"
+  | "passed"
+  | "failed"
+  | "enacted"
+  | "vetoed";
+
+export interface PartyVoteBreakdown {
+  yea: number;
+  nay: number;
+}
+
+export interface BillVote {
+  chamber: "house" | "senate";
+  date: string;
+  question: string;
+  yeas: number;
+  nays: number;
+  present: number;
+  notVoting: number;
+  byParty: {
+    D: PartyVoteBreakdown;
+    R: PartyVoteBreakdown;
+    I: PartyVoteBreakdown;
+  };
+}
+
+export interface BillSponsor {
+  name: string;
+  party: PartyCode;
+  state: string;
+}
+
+export interface LegislationBill {
+  id: string;
+  chamber: BillChamber;
+  billNumber: string;
+  title: string;
+  status: BillStatus;
+  lastAction: string;
+  lastActionDate: string;
+  sponsor: BillSponsor;
+  cosponsorsSummary?: { D: number; R: number; I: number };
+  votes?: BillVote[];
+  summary: string;
+  whyItMatters: string;
+  progressiveTake: string;
+  impactSeverity?: number;
+  topics: string[];
+  congressGovUrl: string;
+  sources: CitationSource[];
+}
+
+/** Causal-chain actors in Impact Scenarios */
+export type ScenarioActor =
+  | "Trump admin"
+  | "Congress"
+  | "Senate"
+  | "House"
+  | "Courts"
+  | "Corporations"
+  | "State gov"
+  | "Propaganda"
+  | (string & {});
+
+export interface ScenarioCausalStep {
+  actor: ScenarioActor;
+  action: string;
+  effect: string;
+  linkedEventId?: string;
+  linkedBillId?: string;
+  linkedFixId?: string;
+  sources: CitationSource[];
+}
+
+export interface ImpactScenario {
+  id: string;
+  title: string;
+  persona: {
+    who: string;
+    location?: string;
+    situation: string;
+  };
+  getsY: string;
+  shouldGetZ: string;
+  whyNotZ: {
+    steps: ScenarioCausalStep[];
+  };
+  bottomLine: string;
+  topics: string[];
+  severity: number;
+}

@@ -2,10 +2,21 @@ import { timelineEvents } from "@/lib/data/timeline-events";
 import { policyFixes, safeguardItems, blueprintDetailPath } from "@/lib/data/policies";
 import { conversationHelpers } from "@/lib/data/conversation-helpers";
 import { hiddenHistoryEntries, historyDetailPath } from "@/lib/data/hidden-history";
+import {
+  legislationBills,
+  legislationDetailPath,
+  statusLabel,
+} from "@/lib/data/legislation";
 
 export { highlightMatches } from "@/lib/search-highlight";
 
-export type SearchResultType = "Tracker" | "Blueprint" | "Rebuttal" | "Safeguard" | "History";
+export type SearchResultType =
+  | "Tracker"
+  | "Blueprint"
+  | "Rebuttal"
+  | "Safeguard"
+  | "History"
+  | "Legislation";
 
 export interface SearchResult {
   id: string;
@@ -81,6 +92,10 @@ export function buildSearchIndex(): SearchResult[] {
       policy.problem,
       policy.proposedFix,
       policy.economicImpact,
+      policy.whyItWorks ?? "",
+      policy.whyPeopleCallItExtreme ?? "",
+      policy.theGaslight ?? "",
+      policy.alreadyWorksWhere ?? "",
       ...policy.safeguards,
       policy.id,
     ].join(" ");
@@ -100,6 +115,10 @@ export function buildSearchIndex(): SearchResult[] {
       safeguard.title,
       safeguard.description,
       ...safeguard.mechanisms,
+      safeguard.whyItWorks ?? "",
+      safeguard.whyPeopleCallItExtreme ?? "",
+      safeguard.theGaslight ?? "",
+      safeguard.alreadyWorksWhere ?? "",
       safeguard.id,
     ].join(" ");
     results.push({
@@ -153,6 +172,29 @@ export function buildSearchIndex(): SearchResult[] {
     });
   }
 
+  for (const bill of legislationBills) {
+    const body = [
+      bill.billNumber,
+      bill.title,
+      bill.summary,
+      bill.whyItMatters,
+      bill.progressiveTake,
+      bill.sponsor.name,
+      bill.status,
+      ...bill.topics,
+      bill.id,
+    ].join(" ");
+    results.push({
+      id: bill.id,
+      type: "Legislation",
+      title: `${bill.billNumber}: ${bill.title}`,
+      subtitle: `${statusLabel(bill.status)} · ${bill.sponsor.party}-${bill.sponsor.state}`,
+      body,
+      score: 0,
+      href: legislationDetailPath(bill.id),
+    });
+  }
+
   return results;
 }
 
@@ -179,4 +221,5 @@ export const searchTypeBadgeStyles: Record<SearchResultType, string> = {
   Rebuttal: "border-sunrise/40 bg-sunrise/10 text-sunrise",
   Safeguard: "border-severity-moderate/40 bg-severity-moderate/10 text-severity-moderate",
   History: "border-amber-500/40 bg-amber-500/10 text-amber-700 dark:text-amber-400",
+  Legislation: "border-sky-500/40 bg-sky-500/10 text-sky-700 dark:text-sky-400",
 };

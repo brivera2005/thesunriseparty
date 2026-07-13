@@ -31,13 +31,26 @@ export const sectionOg = {
   blueprint: {
     title: "The Progressive Blueprint | Project Sunrise",
     description:
-      "Medicare for All, PRO Act, climate mobilization, voting rights - evidence-based policy with bill numbers and implementation timelines.",
+      "24 common-sense policy pillars with bill numbers, cost of inaction, and evidence fields that expose gaslight framing - plus irreversible safeguards.",
     images: [
       {
         url: `${SITE_URL}/og/sunrise-blueprint.svg`,
         width: 1200,
         height: 630,
         alt: "Project Sunrise - Progressive Blueprint",
+      },
+    ],
+  },
+  legislation: {
+    title: "Live Legislation Tracker | Project Sunrise",
+    description:
+      "Active Congress bills with party-colored sponsors, roll-call tallies, and progressive analysis grounded in primary sources.",
+    images: [
+      {
+        url: `${SITE_URL}/og/sunrise-tracker.svg`,
+        width: 1200,
+        height: 630,
+        alt: "Project Sunrise - Live Legislation Tracker",
       },
     ],
   },
