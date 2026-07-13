@@ -7,12 +7,14 @@ import { Button, buttonVariants } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { FadeIn } from "@/components/ui/fade-in";
 import { startTourIntro, tourSteps } from "@/lib/data/start-tour-content";
+import { getSectionTheme } from "@/lib/section-theme";
 import { cn } from "@/lib/utils";
 import { PageShell } from "@/components/layout/page-shell";
 
 export function StartPage() {
   const [activeStep, setActiveStep] = useState(0);
   const step = tourSteps[activeStep];
+  const theme = getSectionTheme(step.section);
   const isLast = activeStep === tourSteps.length - 1;
 
   return (
@@ -51,24 +53,36 @@ export function StartPage() {
               role="tablist"
               aria-label="Tour progress"
             >
-              {tourSteps.map((s, i) => (
-                <button
-                  key={s.step}
-                  type="button"
-                  role="tab"
-                  aria-selected={i === activeStep}
-                  aria-label={s.title}
-                  onClick={() => setActiveStep(i)}
-                  className={cn(
-                    "transition-all duration-300",
-                    i === activeStep
-                      ? "h-2.5 w-8 rounded-full bg-primary shadow-sm"
-                      : i < activeStep
-                        ? "size-2.5 rounded-full bg-primary/50 hover:bg-primary/70"
-                        : "size-2.5 rounded-full bg-border hover:bg-muted-foreground/40"
-                  )}
-                />
-              ))}
+              {tourSteps.map((s, i) => {
+                const t = getSectionTheme(s.section);
+                return (
+                  <button
+                    key={s.step}
+                    type="button"
+                    role="tab"
+                    aria-selected={i === activeStep}
+                    aria-label={s.title}
+                    onClick={() => setActiveStep(i)}
+                    className="transition-all duration-300"
+                    style={
+                      i === activeStep
+                        ? {
+                            height: 10,
+                            width: 32,
+                            borderRadius: 999,
+                            backgroundColor: t.hex,
+                          }
+                        : {
+                            height: 10,
+                            width: 10,
+                            borderRadius: 999,
+                            backgroundColor:
+                              i < activeStep ? `${t.hex}80` : undefined,
+                          }
+                    }
+                  />
+                );
+              })}
             </div>
           </FadeIn>
         </div>
@@ -77,18 +91,18 @@ export function StartPage() {
       <section className="mx-auto max-w-3xl px-4 py-10 sm:px-6 sm:py-14">
         <FadeIn key={step.step}>
           <Card
-            className={cn(
-              "overflow-hidden border-2 bg-white shadow-sm transition-shadow duration-300 hover:shadow-md",
-              step.accent
-            )}
+            className="overflow-hidden border-2 bg-white shadow-sm transition-shadow duration-300 hover:shadow-md"
+            style={{ borderColor: `${theme.hex}59` }}
           >
             <CardContent className="p-8 sm:p-10">
               <div className="mb-6 flex items-center gap-4">
                 <div
-                  className={cn(
-                    "flex size-14 items-center justify-center rounded-2xl border-2 bg-accent/60 text-primary",
-                    step.accent
-                  )}
+                  className="flex size-14 items-center justify-center rounded-2xl border-2"
+                  style={{
+                    backgroundColor: theme.soft,
+                    borderColor: `${theme.hex}59`,
+                    color: theme.hex,
+                  }}
                 >
                   <step.icon className="size-7" aria-hidden />
                 </div>
@@ -109,7 +123,8 @@ export function StartPage() {
               <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
                 <Link
                   href={step.href}
-                  className={cn(buttonVariants({ size: "lg" }), "gap-2")}
+                  className={cn(buttonVariants({ size: "lg" }), "gap-2 text-white")}
+                  style={{ backgroundColor: theme.hex }}
                 >
                   {step.cta}
                   <ArrowRight className="size-4" />
@@ -135,6 +150,8 @@ export function StartPage() {
                     <Button
                       size="sm"
                       onClick={() => setActiveStep((s) => s + 1)}
+                      style={{ backgroundColor: theme.hex }}
+                      className="text-white"
                     >
                       Next
                     </Button>

@@ -51,7 +51,7 @@ export function HistoryPage() {
   return (
     <PageShell>
       <PageHero
-        tone="amber"
+        section="history"
         eyebrow="Suppressed History"
         title="Hidden History"
         description="Textbook story vs. archives. Dual timeline, every entry sourced."

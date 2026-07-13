@@ -25,43 +25,66 @@ import { getHistoryStats } from "@/lib/data/hidden-history";
 import { getLegislationStats } from "@/lib/data/legislation";
 import { policyFixes } from "@/lib/data/policies";
 import { getScenarioStats } from "@/lib/data/scenarios";
+import { formatDateUS } from "@/lib/format-date";
+import {
+  getSectionTheme,
+  type SectionId,
+} from "@/lib/section-theme";
 import { cn } from "@/lib/utils";
 
 const historyStats = getHistoryStats();
 const trackerStats = getTrackerStats();
 const legislationStats = getLegislationStats();
 const scenarioStats = getScenarioStats();
+const billsUpdated = formatDateUS(legislationStats.lastUpdated);
 
-const livePulse = [
+const livePulse: {
+  label: string;
+  value: string;
+  href: string;
+  section: SectionId;
+}[] = [
   {
     label: "Bills updated",
-    value: legislationStats.lastUpdated,
+    value: billsUpdated,
     href: "/legislation",
+    section: "legislation",
   },
   {
     label: "High-severity actions",
     value: String(trackerStats.highSeverity),
     href: "/tracker",
+    section: "tracker",
   },
   {
     label: "Impact scenarios",
     value: String(scenarioStats.total),
     href: "/scenarios",
+    section: "scenarios",
   },
   {
     label: "Live rebuttals",
     value: `${conversationHelpers.length}+`,
     href: "/rebuttal",
+    section: "rebuttal",
   },
-] as const;
+];
 
-const platformCards = [
+const platformCards: {
+  href: string;
+  title: string;
+  description: string;
+  icon: typeof MessageSquareQuote;
+  meta: string;
+  section: SectionId;
+}[] = [
   {
     href: "/rebuttal",
     title: "Rebuttal Desk",
-    description: "Someone lied. Get the sourced answer — ready to copy.",
+    description: "Someone lied. Get the sourced answer, ready to copy.",
     icon: MessageSquareQuote,
     meta: `${conversationHelpers.length}+ ready`,
+    section: "rebuttal",
   },
   {
     href: "/history",
@@ -69,20 +92,23 @@ const platformCards = [
     description: "Textbook story vs. what the archives actually show.",
     icon: History,
     meta: `${historyStats.entries}+ moments`,
+    section: "history",
   },
   {
     href: "/tracker",
     title: "Tracker",
-    description: "Admin actions scored by severity — every claim cited.",
+    description: "Admin actions scored by severity, every claim cited.",
     icon: Activity,
     meta: `${trackerStats.highSeverity} high-severity`,
+    section: "tracker",
   },
   {
     href: "/legislation",
     title: "Live Legislation",
     description: "Live bills, sponsors, and party votes. Updated continuously.",
     icon: Landmark,
-    meta: `${legislationStats.total} bills · ${legislationStats.lastUpdated}`,
+    meta: `${legislationStats.total} bills · ${billsUpdated}`,
+    section: "legislation",
   },
   {
     href: "/scenarios",
@@ -90,6 +116,7 @@ const platformCards = [
     description: "See how a policy choice lands on a real family.",
     icon: GitBranch,
     meta: `${scenarioStats.total} causal chains`,
+    section: "scenarios",
   },
   {
     href: "/blueprint",
@@ -97,6 +124,7 @@ const platformCards = [
     description: "The fix, the receipts, and the gaslight exposed.",
     icon: BookOpen,
     meta: `${policyFixes.length} policy pillars`,
+    section: "blueprint",
   },
   {
     href: "/mission",
@@ -104,6 +132,7 @@ const platformCards = [
     description: "Why we exist and how we stay honest.",
     icon: Compass,
     meta: "Transparency pledge",
+    section: "mission",
   },
   {
     href: "/accountability",
@@ -111,6 +140,7 @@ const platformCards = [
     description: "Follow the money, the courts, and power.",
     icon: Scale,
     meta: "Dark money & courts",
+    section: "accountability",
   },
   {
     href: "/methodology",
@@ -118,6 +148,7 @@ const platformCards = [
     description: "How we score, verify, and archive every claim.",
     icon: ShieldCheck,
     meta: "How we verify",
+    section: "methodology",
   },
   {
     href: "/donate",
@@ -125,6 +156,7 @@ const platformCards = [
     description: "Fund research, verification, and hosting.",
     icon: Heart,
     meta: "Keep receipts public",
+    section: "donate",
   },
   {
     href: "/contribute",
@@ -132,6 +164,7 @@ const platformCards = [
     description: "Suggest sources, fix errors, add rebuttals.",
     icon: Handshake,
     meta: "Community input",
+    section: "contribute",
   },
   {
     href: "/saved",
@@ -139,8 +172,9 @@ const platformCards = [
     description: "Your bookmarks on this device only.",
     icon: BookMarked,
     meta: "Private to you",
+    section: "saved",
   },
-] as const;
+];
 
 export function LandingPage() {
   return (
@@ -164,7 +198,7 @@ export function LandingPage() {
               Track. Counter. Fix.
             </p>
             <p className="mx-auto mt-3 max-w-md text-base text-muted-foreground sm:text-lg">
-              Live bills. Sourced answers. Real impact — right now.
+              Live bills. Sourced answers. Real impact, right now.
             </p>
           </FadeIn>
           <FadeIn delay={160}>
@@ -178,13 +212,13 @@ export function LandingPage() {
               </Link>
               <Link
                 href="/rebuttal"
-                className="inline-flex h-12 min-w-[44px] items-center gap-2 rounded-xl border border-border bg-white px-6 text-sm font-semibold text-navy transition-all hover:border-primary/40 hover:bg-accent"
+                className="inline-flex h-12 min-w-[44px] items-center gap-2 rounded-xl border border-[color:var(--section-rebuttal)]/40 bg-white px-6 text-sm font-semibold text-navy transition-all hover:bg-[color:var(--section-rebuttal-soft)]"
               >
                 Rebuttal Desk
               </Link>
               <Link
                 href="/legislation"
-                className="inline-flex h-12 min-w-[44px] items-center gap-2 rounded-xl border border-border bg-white px-6 text-sm font-semibold text-navy transition-all hover:border-primary/40 hover:bg-accent"
+                className="inline-flex h-12 min-w-[44px] items-center gap-2 rounded-xl border border-[color:var(--section-legislation)]/40 bg-white px-6 text-sm font-semibold text-navy transition-all hover:bg-[color:var(--section-legislation-soft)]"
               >
                 Live bills
               </Link>
@@ -208,20 +242,27 @@ export function LandingPage() {
             </p>
           </div>
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-            {livePulse.map((item) => (
-              <Link
-                key={item.label}
-                href={item.href}
-                className="rounded-xl border border-border bg-white px-3 py-3 text-left shadow-sm transition-all hover:border-primary/40 hover:shadow-md"
-              >
-                <p className="text-[11px] font-medium tracking-wide text-muted-foreground uppercase">
-                  {item.label}
-                </p>
-                <p className="mt-1 text-lg font-bold tabular-nums text-navy sm:text-xl">
-                  {item.value}
-                </p>
-              </Link>
-            ))}
+            {livePulse.map((item) => {
+              const theme = getSectionTheme(item.section);
+              return (
+                <Link
+                  key={item.label}
+                  href={item.href}
+                  className="rounded-xl border border-border border-l-4 bg-white px-3 py-3 text-left shadow-sm transition-all hover:shadow-md"
+                  style={{ borderLeftColor: theme.hex }}
+                >
+                  <p className="text-[11px] font-medium tracking-wide text-muted-foreground uppercase">
+                    {item.label}
+                  </p>
+                  <p
+                    className="mt-1 text-lg font-bold tabular-nums sm:text-xl"
+                    style={{ color: theme.hex }}
+                  >
+                    {item.value}
+                  </p>
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -240,33 +281,49 @@ export function LandingPage() {
           </FadeIn>
 
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {platformCards.map((card, i) => (
-              <FadeIn key={card.href} delay={i * 40}>
-                <Link
-                  href={card.href}
-                  className={cn(
-                    "group surface-card-interactive flex h-full flex-col p-4 sm:p-5"
-                  )}
-                >
-                  <span className="mb-3 inline-flex size-10 items-center justify-center rounded-xl bg-accent text-primary transition-transform duration-300 group-hover:scale-105">
-                    <card.icon className="size-5" strokeWidth={1.75} />
-                  </span>
-                  <h3 className="text-base font-semibold text-navy group-hover:text-primary">
-                    {card.title}
-                  </h3>
-                  <p className="mt-1 text-[11px] font-medium tracking-wide text-muted-foreground uppercase">
-                    {card.meta}
-                  </p>
-                  <p className="mt-2 flex-1 text-sm text-muted-foreground">
-                    {card.description}
-                  </p>
-                  <span className="mt-4 inline-flex min-h-10 items-center gap-1.5 text-sm font-semibold text-primary">
-                    Open
-                    <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
-                  </span>
-                </Link>
-              </FadeIn>
-            ))}
+            {platformCards.map((card, i) => {
+              const theme = getSectionTheme(card.section);
+              return (
+                <FadeIn key={card.href} delay={i * 40}>
+                  <Link
+                    href={card.href}
+                    className={cn(
+                      "group surface-card-interactive flex h-full flex-col border-l-4 p-4 sm:p-5"
+                    )}
+                    style={{ borderLeftColor: theme.hex }}
+                  >
+                    <span
+                      className="mb-3 inline-flex size-10 items-center justify-center rounded-xl transition-transform duration-300 group-hover:scale-105"
+                      style={{
+                        backgroundColor: theme.soft,
+                        color: theme.hex,
+                      }}
+                    >
+                      <card.icon className="size-5" strokeWidth={1.75} />
+                    </span>
+                    <h3
+                      className="text-base font-semibold text-navy transition-colors"
+                      style={{ ["--hover" as string]: theme.hex }}
+                    >
+                      {card.title}
+                    </h3>
+                    <p className="mt-1 text-[11px] font-medium tracking-wide text-muted-foreground uppercase">
+                      {card.meta}
+                    </p>
+                    <p className="mt-2 flex-1 text-sm text-muted-foreground">
+                      {card.description}
+                    </p>
+                    <span
+                      className="mt-4 inline-flex min-h-10 items-center gap-1.5 text-sm font-semibold"
+                      style={{ color: theme.hex }}
+                    >
+                      Open
+                      <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
+                    </span>
+                  </Link>
+                </FadeIn>
+              );
+            })}
           </div>
         </div>
       </section>

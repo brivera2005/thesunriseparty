@@ -10,6 +10,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { SeverityGauge } from "./severity-gauge";
 import { cn } from "@/lib/utils";
+import { formatDateUS, formatMonthUS } from "@/lib/format-date";
 
 interface EventDetailSlideoverProps {
   event: TimelineEvent | null;
@@ -18,12 +19,7 @@ interface EventDetailSlideoverProps {
 }
 
 function formatDate(dateStr: string) {
-  const d = new Date(dateStr + "T00:00:00");
-  return d.toLocaleDateString("en-US", {
-    month: "short",
-    day: "numeric",
-    year: "numeric",
-  });
+  return formatDateUS(dateStr);
 }
 
 export function EventDetailSlideover({

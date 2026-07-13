@@ -4,6 +4,10 @@ import { ArrowLeft } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
 import { InfoTip } from "@/components/ui/info-tip";
 import { cn } from "@/lib/utils";
+import {
+  getSectionTheme,
+  type SectionId,
+} from "@/lib/section-theme";
 
 type PageHeroProps = {
   eyebrow: string;
@@ -15,7 +19,9 @@ type PageHeroProps = {
   actions?: ReactNode;
   eyebrowClassName?: string;
   className?: string;
-  /** @deprecated Tones no longer recolor pages — kept for call-site compatibility */
+  /** Section accent for eyebrow + left border (white canvas preserved) */
+  section?: SectionId;
+  /** @deprecated Prefer `section`; kept for call-site compatibility */
   tone?: "default" | "sunrise" | "amber" | "critical";
 };
 
@@ -29,9 +35,18 @@ export function PageHero({
   actions,
   eyebrowClassName,
   className,
+  section = "default",
 }: PageHeroProps) {
+  const theme = getSectionTheme(section);
+
   return (
-    <section className={cn("border-b border-border bg-white", className)}>
+    <section
+      className={cn(
+        "border-b border-border border-l-4 bg-white",
+        className
+      )}
+      style={{ borderLeftColor: theme.hex }}
+    >
       <div className="page-container py-8 sm:py-10">
         <Link
           href={backHref}
@@ -47,7 +62,8 @@ export function PageHero({
           <div className="max-w-2xl">
             <p
               className={cn(
-                "mb-1.5 text-xs font-semibold tracking-[0.22em] text-navy uppercase",
+                "mb-1.5 text-xs font-semibold tracking-[0.22em] uppercase",
+                theme.text,
                 eyebrowClassName
               )}
             >

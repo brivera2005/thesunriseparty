@@ -59,7 +59,7 @@ export function ScenariosPage() {
   return (
     <PageShell>
       <PageHero
-        tone="sunrise"
+        section="scenarios"
         eyebrow="Lived Outcomes"
         title="Impact Scenarios"
         description="Family gets Y. Should get Z. Trace who blocked the fix."

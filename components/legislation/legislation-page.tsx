@@ -14,11 +14,16 @@ import {
   legislationTopics,
   statusLabel,
 } from "@/lib/data/legislation";
+import { formatDateUS } from "@/lib/format-date";
 import type { BillChamber, BillStatus, PartyCode } from "@/lib/types";
 
 type ChamberFilter = "all" | BillChamber;
 type StatusFilter = "all" | BillStatus;
 type PartyFilter = "all" | PartyCode;
+
+function formatUpdated(dateStr: string) {
+  return formatDateUS(dateStr);
+}
 
 const chamberOptions: { value: ChamberFilter; label: string }[] = [
   { value: "all", label: "All chambers" },
@@ -43,14 +48,6 @@ const partyOptions: { value: PartyFilter; label: string }[] = [
   { value: "R", label: "Republican" },
   { value: "I", label: "Independent" },
 ];
-
-function formatUpdated(dateStr: string) {
-  return new Date(`${dateStr}T12:00:00`).toLocaleDateString("en-US", {
-    month: "long",
-    day: "numeric",
-    year: "numeric",
-  });
-}
 
 export function LegislationPage() {
   const stats = getLegislationStats();
@@ -96,7 +93,7 @@ export function LegislationPage() {
   return (
     <PageShell>
       <PageHero
-        tone="default"
+        section="legislation"
         eyebrow="Live Congress Tracker"
         title="Legislation"
         description="Live bills, sponsors, party votes. Analysis from the text."

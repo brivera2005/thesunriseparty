@@ -5,9 +5,10 @@ import {
   legislationDetailPath,
   statusLabel,
 } from "@/lib/data/legislation";
-import { PartyBadge } from "@/components/legislation/party-badge";
+import { LegislatorName } from "@/components/legislation/legislator-name";
 import { VoteBars } from "@/components/legislation/vote-bars";
 import { Badge } from "@/components/ui/badge";
+import { formatDateUS } from "@/lib/format-date";
 import { cn } from "@/lib/utils";
 
 const statusStyles: Record<string, string> = {
@@ -70,16 +71,18 @@ export function BillCard({ bill }: { bill: LegislationBill }) {
           </p>
         </div>
 
-        <PartyBadge
+        <LegislatorName
+          name={bill.sponsor.name}
           party={bill.sponsor.party}
           state={bill.sponsor.state}
-          name={bill.sponsor.name}
         />
 
         <p className="text-[11px] text-muted-foreground">
           <span className="font-medium text-navy">Last action:</span>{" "}
           {bill.lastAction}{" "}
-          <span className="tabular-nums">({bill.lastActionDate})</span>
+          <span className="tabular-nums">
+            ({formatDateUS(bill.lastActionDate)})
+          </span>
         </p>
 
         {latestVote && (
@@ -103,7 +106,7 @@ export function BillCard({ bill }: { bill: LegislationBill }) {
       <div className="flex items-center justify-between gap-2 border-t border-border bg-muted/20 px-4 py-2.5 sm:px-5">
         <Link
           href={legislationDetailPath(bill.id)}
-          className="inline-flex min-h-10 items-center gap-1.5 text-sm font-semibold text-primary"
+          className="inline-flex min-h-10 items-center gap-1.5 text-sm font-semibold text-[color:var(--section-legislation)]"
         >
           Full analysis
           <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-0.5" />

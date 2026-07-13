@@ -21,6 +21,7 @@ import {
 } from "@/lib/data/conversation-citations";
 import { getSourceTier } from "@/lib/data/source-tier";
 import { cn } from "@/lib/utils";
+import { formatDateUS, formatMonthUS } from "@/lib/format-date";
 
 interface CitationProps {
   source: CitationSource;
@@ -111,7 +112,7 @@ export function CitationModal() {
                 {activeCitation.title}
               </DialogTitle>
               <DialogDescription className="text-left">
-                Published {activeCitation.date}
+                Published {formatDateUS(activeCitation.date)}
               </DialogDescription>
             </DialogHeader>
             <blockquote
@@ -175,7 +176,7 @@ export function CitationModal() {
               ) : (
                 <p className="rounded-lg border border-border bg-muted/30 p-3 text-sm text-muted-foreground">
                   No primary URL on file
-                  {archiveHref ? " — use the archived copy above." : "."}
+                  {archiveHref ? "; use the archived copy above." : "."}
                 </p>
               )}
 
@@ -195,7 +196,7 @@ export function CitationModal() {
                   </a>
                   {archiveDate && (
                     <p className="mt-2 text-[11px] text-muted-foreground">
-                      Snapshot archived {archiveDate}
+                      Snapshot archived {archiveDate ? formatDateUS(archiveDate) : archiveDate}
                     </p>
                   )}
                 </div>

@@ -42,6 +42,7 @@ import { TrackerCalendar } from "./tracker-calendar";
 import { TrackerTimelineScrubber } from "./tracker-timeline-scrubber";
 import { EventDetailSlideover } from "./event-detail-slideover";
 import { cn } from "@/lib/utils";
+import { formatDateUS, formatMonthUS } from "@/lib/format-date";
 import { useAppStore } from "@/lib/store";
 import { policyFixPath } from "@/lib/data/policies";
 import {
@@ -54,12 +55,7 @@ type TrackerView = "list" | "calendar";
 type SortMode = "date-desc" | "date-asc" | "severity-desc" | "severity-asc";
 
 function formatDate(dateStr: string) {
-  const d = new Date(dateStr + "T00:00:00");
-  return d.toLocaleDateString("en-US", {
-    month: "short",
-    day: "numeric",
-    year: "numeric",
-  });
+  return formatDateUS(dateStr);
 }
 
 function severityTextClass(score: number) {
@@ -75,17 +71,11 @@ const statusStyles = {
 };
 
 function formatThreatDate(dateStr: string) {
-  const d = new Date(dateStr + "T00:00:00");
-  return d.toLocaleDateString("en-US", {
-    month: "short",
-    day: "numeric",
-    year: "numeric",
-  });
+  return formatDateUS(dateStr);
 }
 
 function monthKey(dateStr: string) {
-  const d = new Date(dateStr + "T00:00:00");
-  return d.toLocaleDateString("en-US", { month: "long", year: "numeric" });
+  return formatMonthUS(dateStr);
 }
 
 function groupByMonth(events: TimelineEvent[]) {

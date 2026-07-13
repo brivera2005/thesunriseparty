@@ -7,7 +7,7 @@ import type {
 } from "@/lib/types";
 import { cite } from "@/lib/data/conversation-citations";
 
-/** Hybrid live-tracker metadata — refresh via `npm run fetch-legislation`. */
+/** Hybrid live-tracker metadata (refresh via `npm run fetch-legislation`). */
 export const legislationMeta = {
   congress: 119,
   congressLabel: "119th Congress",
@@ -29,7 +29,7 @@ const senateActive = cite(
 
 const govinfoCalendar = cite(
   "govinfo-hcal-2026-06-23",
-  "House Calendars — Status of Major Bills (June 23, 2026)",
+  "House Calendars: Status of Major Bills (June 23, 2026)",
   "U.S. Government Publishing Office",
   "https://www.govinfo.gov/content/pkg/CCAL-119hcal-2026-06-23/html/CCAL-119hcal-2026-06-23-pt22.htm",
   "Official House calendar summarizing status of major second-session bills including reconciliation and appropriations.",
@@ -98,9 +98,9 @@ export const legislationBills: LegislationBill[] = [
     summary:
       "Budget reconciliation package pairing a debt-limit increase with partisan tax, spending, and policy riders advanced under majority-only procedures.",
     whyItMatters:
-      "Reconciliation lets one chamber majority rewrite large slices of fiscal policy without a 60-vote Senate cloture threshold — so the bill becomes the vehicle for policy that could not survive regular order.",
+      "Reconciliation lets one chamber majority rewrite large slices of fiscal policy without a 60-vote Senate cloture threshold. So the bill becomes the vehicle for policy that could not survive regular order.",
     progressiveTake:
-      "Receipts: Public Law 119-21 is the majority's signature fiscal rewrite. Watch the tax distribution tables, Medicaid/SNAP riders, and debt-limit timing — not the branding. Reconciliation is a process cheat code, not a mandate for every rider stuffed inside.",
+      "Receipts: Public Law 119-21 is the majority's signature fiscal rewrite. Watch the tax distribution tables, Medicaid/SNAP riders, and debt-limit timing, not the branding. Reconciliation is a process cheat code, not a mandate for every rider stuffed inside.",
     impactSeverity: 9,
     topics: ["Budget", "Taxes", "Democracy", "Economy"],
     congressGovUrl: cgov("house-bill", 1),
@@ -124,7 +124,7 @@ export const legislationBills: LegislationBill[] = [
     whyItMatters:
       "It locks large enforcement appropriations through FY2029 and pairs them with reconciliation timing that sidelines ordinary appropriations bargaining.",
     progressiveTake:
-      "The statute text funds hiring, training, and detention capacity — not vibes. Progressive critique should track dollar amounts, sunset dates, and civil-liberty oversight gaps in the public law, not conspiracy framing.",
+      "The statute text funds hiring, training, and detention capacity, not vibes. Progressive critique should track dollar amounts, sunset dates, and civil-liberty oversight gaps in the public law, not conspiracy framing.",
     impactSeverity: 9,
     topics: ["Immigration", "Budget", "National Security"],
     congressGovUrl: cgov("senate-bill", 2),
@@ -132,7 +132,7 @@ export const legislationBills: LegislationBill[] = [
       senateActive,
       cite(
         "plaw-119-98",
-        "Public Law 119-98 — Secure America Act",
+        "Public Law 119-98: Secure America Act",
         "U.S. Government Publishing Office",
         "https://www.congress.gov/119/plaws/publ98/PLAW-119publ98.htm",
         "Enacted text of the Secure America Act providing reconciliation funding for border and immigration enforcement.",
@@ -160,7 +160,7 @@ export const legislationBills: LegislationBill[] = [
     whyItMatters:
       "It hard-codes detention mandates that reduce DHS discretion and invites state AG litigation strategy against federal immigration administration.",
     progressiveTake:
-      "Named bills travel on tragedy. The receipts are the statutory detention triggers and standing clauses — evaluate due-process impacts and crime-rate evidence separately from the branding.",
+      "Named bills travel on tragedy. The receipts are the statutory detention triggers and standing clauses. Evaluate due-process impacts and crime-rate evidence separately from the branding.",
     impactSeverity: 8,
     topics: ["Immigration", "Crime", "Courts"],
     congressGovUrl: cgov("house-bill", 29),
@@ -201,7 +201,7 @@ export const legislationBills: LegislationBill[] = [
     summary:
       "Directs disclosure of federal investigative materials related to Jeffrey Epstein with defined exemptions, creating a statutory disclosure clock.",
     whyItMatters:
-      "Rare cross-partisan transparency fight over elite accountability files — tests whether Congress will force sunlight on powerful networks.",
+      "Rare cross-partisan transparency fight over elite accountability files. Tests whether Congress will force sunlight on powerful networks.",
     progressiveTake:
       "Progressives should celebrate enforceable disclosure schedules while watching exemption abuse. Transparency that stops at politically inconvenient names is theater.",
     impactSeverity: 7,
@@ -226,7 +226,7 @@ export const legislationBills: LegislationBill[] = [
     whyItMatters:
       "Rescissions can quietly defund programs after the political fight over the original appropriation has passed.",
     progressiveTake:
-      "Follow which accounts get hit — climate, housing, foreign aid, and oversight budgets are frequent targets. A rescission is a second vote to undo a first vote.",
+      "Follow which accounts get hit (climate, housing, foreign aid, and oversight budgets are frequent targets). A rescission is a second vote to undo a first vote.",
     impactSeverity: 7,
     topics: ["Budget", "Economy"],
     congressGovUrl: cgov("house-bill", 4),
@@ -268,7 +268,7 @@ export const legislationBills: LegislationBill[] = [
     summary:
       "CR extending funding into early 2026 and locking full-year funding for Agriculture, Military Construction/VA, and Legislative Branch.",
     whyItMatters:
-      "Splits the appropriations map — some bills get certainty while others stay on cliff calendars.",
+      "Splits the appropriations map: some bills get certainty while others stay on cliff calendars.",
     progressiveTake:
       "Partial full-year packages can be used to isolate fights over DHS, State, and Labor-HHS. Track which fights the majority chooses to keep live.",
     impactSeverity: 6,
@@ -289,7 +289,7 @@ export const legislationBills: LegislationBill[] = [
       vote("senate", "2026-04-02", "On Disagreeing to House Amendment", partyVote(5, 42, 48, 3), 0, 2),
     ],
     summary:
-      "Homeland Security funding measure that survived a House–Senate amendment ping-pong before final agreement.",
+      "Homeland Security funding measure that survived a House-Senate amendment ping-pong before final agreement.",
     whyItMatters:
       "DHS funding is where detention, asylum processing, FEMA, and CBP capacity actually get paid for.",
     progressiveTake:
@@ -312,7 +312,7 @@ export const legislationBills: LegislationBill[] = [
       vote("senate", "2026-01-30", "On Passage with Amendments", partyVote(35, 12, 42, 9), 0, 2),
     ],
     summary:
-      "Omnibus wrapping Defense and multiple domestic bills — Labor-HHS-Education, Transportation-HUD, Financial Services, National Security/State, and Homeland Security provisions.",
+      "Omnibus wrapping Defense and multiple domestic bills (Labor-HHS-Education, Transportation-HUD, Financial Services, National Security/State, and Homeland Security provisions).",
     whyItMatters:
       "Omnibuses concentrate leverage: must-pass defense dollars pull domestic priorities and poison pills along for the ride.",
     progressiveTake:
@@ -338,7 +338,7 @@ export const legislationBills: LegislationBill[] = [
     whyItMatters:
       "Controls DOJ, NSF, EPA-adjacent interior accounts, and energy project funding in one package.",
     progressiveTake:
-      "Watch DOJ grant conditions, EPA rider language, and science-agency freezes — minibuses are where culture-war riders hitch a ride on must-pass science funding.",
+      "Watch DOJ grant conditions, EPA rider language, and science-agency freezes. Minibuses are where culture-war riders hitch a ride on must-pass science funding.",
     impactSeverity: 7,
     topics: ["Appropriations", "Environment", "Justice"],
     congressGovUrl: cgov("house-bill", 6938),
@@ -360,7 +360,7 @@ export const legislationBills: LegislationBill[] = [
     whyItMatters:
       "NDAA is the yearly Christmas tree for force structure, contractor rules, and sometimes unrelated policy riders.",
     progressiveTake:
-      "Separate readiness and troop pay from contractor giveaways and civil-liberties riders. Authorization is not the same as appropriation — both matter.",
+      "Separate readiness and troop pay from contractor giveaways and civil-liberties riders. Authorization is not the same as appropriation (both matter).",
     impactSeverity: 7,
     topics: ["Defense", "National Security"],
     congressGovUrl: cgov("senate-bill", 1071),
@@ -406,7 +406,7 @@ export const legislationBills: LegislationBill[] = [
     whyItMatters:
       "Scheduling decisions shape prosecution exposure, research barriers, and treatment pathways for years.",
     progressiveTake:
-      "Overdose deaths are real. Permanent Schedule I classification without treatment expansion and research pathways repeats the failures of punitive-only drug policy — demand both supply interdiction and care.",
+      "Overdose deaths are real. Permanent Schedule I classification without treatment expansion and research pathways repeats the failures of punitive-only drug policy. Demand both supply interdiction and care.",
     impactSeverity: 7,
     topics: ["Healthcare", "Crime", "Justice"],
     congressGovUrl: cgov("senate-bill", 331),
@@ -428,7 +428,7 @@ export const legislationBills: LegislationBill[] = [
     whyItMatters:
       "FISA fights are where surveillance power, warrant standards, and query rules get renewed under deadline pressure.",
     progressiveTake:
-      "Short extensions are leverage. Use them to force warrant fixes and auditability — do not rubber-stamp surveillance calendars.",
+      "Short extensions are leverage. Use them to force warrant fixes and auditability. Do not rubber-stamp surveillance calendars.",
     impactSeverity: 8,
     topics: ["Civil Liberties", "National Security", "Democracy"],
     congressGovUrl: cgov("house-bill", 8322),
@@ -470,7 +470,7 @@ export const legislationBills: LegislationBill[] = [
     whyItMatters:
       "The farm bill is the largest nutrition and rural investment package Congress regularly rewrites.",
     progressiveTake:
-      "SNAP adequacy, climate-smart conservation, and consolidation of mega-farm subsidies are the real scoreboard — not the ribbon-cutting.",
+      "SNAP adequacy, climate-smart conservation, and consolidation of mega-farm subsidies are the real scoreboard, not the ribbon-cutting.",
     impactSeverity: 7,
     topics: ["Agriculture", "Economy", "Healthcare"],
     congressGovUrl: cgov("house-bill", 7567),
@@ -490,7 +490,7 @@ export const legislationBills: LegislationBill[] = [
     whyItMatters:
       "Housing costs drive inflation perceptions and working-class instability more than most culture-war bills.",
     progressiveTake:
-      "Pair supply incentives with tenant protections and public housing capital — supply-only bills can become developer windfalls without guardrails.",
+      "Pair supply incentives with tenant protections and public housing capital. Supply-only bills can become developer windfalls without guardrails.",
     impactSeverity: 7,
     topics: ["Housing", "Economy"],
     congressGovUrl: cgov("senate-bill", 2651),
@@ -510,7 +510,7 @@ export const legislationBills: LegislationBill[] = [
     whyItMatters:
       "House and Senate housing vehicles will define whether Congress treats shelter as infrastructure or afterthought.",
     progressiveTake:
-      "Demand enforceable fair-housing dollars and voucher funding levels in the CBO score — messaging bills without budget authority are press releases.",
+      "Demand enforceable fair-housing dollars and voucher funding levels in the CBO score. Messaging bills without budget authority are press releases.",
     impactSeverity: 6,
     topics: ["Housing", "Civil Rights", "Economy"],
     congressGovUrl: cgov("house-bill", 6644),
@@ -599,7 +599,7 @@ export const legislationBills: LegislationBill[] = [
     id: "sconres-33",
     chamber: "senate",
     billNumber: "S.Con.Res. 33",
-    title: "Budget Resolution FY2027–FY2035",
+    title: "Budget Resolution FY2027-FY2035",
     status: "passed",
     lastAction: "Senate agreed to budget resolution setting reconciliation instructions.",
     lastActionDate: "2026-05-15",
@@ -621,7 +621,7 @@ export const legislationBills: LegislationBill[] = [
     id: "sconres-7",
     chamber: "both",
     billNumber: "S.Con.Res. 7",
-    title: "Budget Resolution FY2026–FY2034",
+    title: "Budget Resolution FY2026-FY2034",
     status: "passed",
     lastAction: "Advanced in both chambers; paired with H.Con.Res. 14 track.",
     lastActionDate: "2025-04-05",
@@ -630,7 +630,7 @@ export const legislationBills: LegislationBill[] = [
       vote("senate", "2025-04-04", "On the Concurrent Resolution", partyVote(0, 47, 51, 2), 0, 0),
     ],
     summary:
-      "Earlier budget resolution setting the FY2026–34 fiscal framework and reconciliation runway for H.R. 1.",
+      "Earlier budget resolution setting the FY2026-34 fiscal framework and reconciliation runway for H.R. 1.",
     whyItMatters:
       "Shows the two-step: pass a resolution, then ram the policy bill through reconciliation.",
     progressiveTake:
@@ -643,7 +643,7 @@ export const legislationBills: LegislationBill[] = [
     id: "hconres-14",
     chamber: "house",
     billNumber: "H.Con.Res. 14",
-    title: "House Budget Resolution FY2026–FY2034",
+    title: "House Budget Resolution FY2026-FY2034",
     status: "passed",
     lastAction: "House agreed; conference/coordination with Senate resolution track.",
     lastActionDate: "2025-02-25",
@@ -735,7 +735,7 @@ export const legislationBills: LegislationBill[] = [
     whyItMatters:
       "State/ForeignOps bills are where diplomacy funding and refugee admissions get squeezed.",
     progressiveTake:
-      "Track refugee ceilings, UN dues, and democracy programs — soft power cuts show up as harder crises later.",
+      "Track refugee ceilings, UN dues, and democracy programs. Soft power cuts show up as harder crises later.",
     impactSeverity: 6,
     topics: ["Appropriations", "Foreign Policy"],
     congressGovUrl: cgov("house-bill", 8595),
@@ -813,7 +813,7 @@ export const legislationBills: LegislationBill[] = [
     summary:
       "Establishes a single-payer national health insurance program covering medically necessary care.",
     whyItMatters:
-      "Forces a public debate on whether health care is a market commodity or a right — with CBO-scoreable design choices.",
+      "Forces a public debate on whether health care is a market commodity or a right, with CBO-scoreable design choices.",
     progressiveTake:
       "Meet fearmongering with OECD outcomes: the U.S. pays more for worse coverage. Point to the bill's benefits package and transition timeline, not vibes.",
     impactSeverity: 9,
@@ -853,7 +853,7 @@ export const legislationBills: LegislationBill[] = [
     summary:
       "Declares a climate emergency and authorizes accelerated clean-energy and resilience investments with labor standards.",
     whyItMatters:
-      "Emergency framing unlocks urgency — and tests whether Congress will match IPCC timelines with statutory tools.",
+      "Emergency framing unlocks urgency, and tests whether Congress will match IPCC timelines with statutory tools.",
     progressiveTake:
       "Pair emissions targets with Just Transition funding. Climate bills that strand workers without wage floors recreate the backlash machine.",
     impactSeverity: 8,
@@ -971,7 +971,7 @@ export const legislationBills: LegislationBill[] = [
     summary:
       "Resolution pressing that senators should not collect pay while forcing a shutdown.",
     whyItMatters:
-      "Symbolic — but it frames who bears costs when brinkmanship closes services.",
+      "Symbolic, but it frames who bears costs when brinkmanship closes services.",
     progressiveTake:
       "Pair pay-withholding messaging with concrete CR votes. Optics without whip counts change nothing.",
     impactSeverity: 3,
@@ -992,7 +992,7 @@ export const legislationBills: LegislationBill[] = [
     whyItMatters:
       "FSGG is where IRS funding, election assistance, and financial regulators get squeezed.",
     progressiveTake:
-      "IRS enforcement funding is progressive tax policy by another name — defend it against 'weaponization' theater.",
+      "IRS enforcement funding is progressive tax policy by another name. Defend it against 'weaponization' theater.",
     impactSeverity: 6,
     topics: ["Appropriations", "Taxes", "Economy"],
     congressGovUrl: cgov("house-bill", 8495),
@@ -1007,7 +1007,7 @@ export const legislationBills: LegislationBill[] = [
     lastActionDate: "2026-06-20",
     sponsor: { name: "Robert Aderholt", party: "R", state: "AL" },
     summary:
-      "FY2027 Labor-HHS-Education funding bill — the core domestic social-insurance appropriations vehicle.",
+      "FY2027 Labor-HHS-Education funding bill: the core domestic social-insurance appropriations vehicle.",
     whyItMatters:
       "Funds Title I, NIH, CDC, child care, and worker protection agencies in one knife fight.",
     progressiveTake:
@@ -1050,7 +1050,7 @@ export const legislationBills: LegislationBill[] = [
     whyItMatters:
       "Codifies LGBTQ civil-rights protections against a patchwork of state preemption fights.",
     progressiveTake:
-      "Equality is not a social-media debate — it is statutory coverage in housing, credit, and public accommodations. Point to the United States Code sections.",
+      "Equality is not a social-media debate; it is statutory coverage in housing, credit, and public accommodations. Point to the United States Code sections.",
     impactSeverity: 7,
     topics: ["Civil Rights", "LGBTQ"],
     congressGovUrl: cgov("house-bill", 15),
@@ -1088,7 +1088,7 @@ export const legislationBills: LegislationBill[] = [
     summary:
       "Establishes a federal commission to study reparations proposals stemming from slavery and continuing discrimination.",
     whyItMatters:
-      "Creates an official factual record and policy menu — the prerequisite to any serious redress debate.",
+      "Creates an official factual record and policy menu: the prerequisite to any serious redress debate.",
     progressiveTake:
       "A study commission is not a blank check. Opponents who refuse even the inquiry are refusing the historical record.",
     impactSeverity: 6,
@@ -1110,7 +1110,7 @@ export const legislationBills: LegislationBill[] = [
     whyItMatters:
       "Ends taxation without full representation for more than 700,000 residents and adds Senate representation.",
     progressiveTake:
-      "This is democracy math. Opposition is usually about Senate seats, not constitutional theology — say that out loud.",
+      "This is democracy math. Opposition is usually about Senate seats, not constitutional theology. Say that out loud.",
     impactSeverity: 8,
     topics: ["Democracy", "Civil Rights"],
     congressGovUrl: cgov("senate-bill", 25),
@@ -1153,7 +1153,7 @@ export const legislationBills: LegislationBill[] = [
     whyItMatters:
       "Improper-payment plumbing is unglamorous governance that saves real money without cutting eligible beneficiaries by slogan.",
     progressiveTake:
-      "Support payment-integrity tools that fix admin error — reject versions that become eligibility witch hunts.",
+      "Support payment-integrity tools that fix admin error. Reject versions that become eligibility witch hunts.",
     impactSeverity: 3,
     topics: ["Accountability", "Budget"],
     congressGovUrl: cgov("senate-bill", 269),
@@ -1176,7 +1176,7 @@ export const legislationBills: LegislationBill[] = [
     whyItMatters:
       "Bipartisan regional environmental funding that protects drinking water for tens of millions.",
     progressiveTake:
-      "Celebrate durable environmental wins — and contrast them with reconciliation riders that cut EPA capacity elsewhere.",
+      "Celebrate durable environmental wins, and contrast them with reconciliation riders that cut EPA capacity elsewhere.",
     impactSeverity: 4,
     topics: ["Environment", "Climate"],
     congressGovUrl: cgov("senate-bill", 2878),
@@ -1236,7 +1236,7 @@ export const legislationBills: LegislationBill[] = [
     whyItMatters:
       "Senate markup is where earmarks and policy riders get traded for votes.",
     progressiveTake:
-      "Publish the difference between committee-reported and enacted totals — that delta is the real negotiation.",
+      "Publish the difference between committee-reported and enacted totals. That delta is the real negotiation.",
     impactSeverity: 6,
     topics: ["Defense", "Appropriations"],
     congressGovUrl: cgov("senate-bill", 2572),
@@ -1330,7 +1330,7 @@ export const legislationBills: LegislationBill[] = [
     summary:
       "Authorizes a congressional time capsule commemorating the 250th anniversary of the United States.",
     whyItMatters:
-      "Low-stakes civic memory bill — useful contrast against the high-stakes reconciliation fights of the same session.",
+      "Low-stakes civic memory bill: useful contrast against the high-stakes reconciliation fights of the same session.",
     progressiveTake:
       "Commemoration is fine. Just do not let patriotic pageantry substitute for protecting the democracy being commemorated.",
     impactSeverity: 1,

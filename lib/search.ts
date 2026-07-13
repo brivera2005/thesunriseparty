@@ -1,3 +1,4 @@
+import { formatDateUS, formatMonthUS } from "@/lib/format-date";
 import { timelineEvents } from "@/lib/data/timeline-events";
 import { policyFixes, safeguardItems, blueprintDetailPath } from "@/lib/data/policies";
 import { conversationHelpers } from "@/lib/data/conversation-helpers";
@@ -83,7 +84,7 @@ export function buildSearchIndex(): SearchResult[] {
       id: event.Event_ID,
       type: "Tracker",
       title: `${event.Action_Type}: ${event.Description.slice(0, 80)}`,
-      subtitle: `${event.Date} · ${event.Severity_Score}/10`,
+      subtitle: `${formatDateUS(event.Date)} · ${event.Severity_Score}/10`,
       body,
       score: 0,
       href: `/tracker/${event.Event_ID}`,

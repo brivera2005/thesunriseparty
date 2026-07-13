@@ -31,7 +31,7 @@ export function PwaRegister() {
           if (!worker) return;
           worker.addEventListener("statechange", () => {
             if (worker.state === "installed" && navigator.serviceWorker.controller) {
-              // New SW ready — tell it to take over immediately.
+              // New SW ready: tell it to take over immediately.
               worker.postMessage?.({ type: "SKIP_WAITING" });
             }
           });
@@ -44,7 +44,7 @@ export function PwaRegister() {
             "controllerchange",
             () => {
               if (cancelled) return;
-              const key = "sunrise-sw-reload-v37";
+              const key = "sunrise-sw-reload-v43";
               if (sessionStorage.getItem(key)) return;
               sessionStorage.setItem(key, "1");
               window.location.reload();

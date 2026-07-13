@@ -5,6 +5,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import type { TimelineEvent } from "@/lib/types";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { formatDateUS, formatMonthUS } from "@/lib/format-date";
 
 const WEEKDAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
@@ -47,10 +48,7 @@ export function TrackerCalendar({
     return map;
   }, [events]);
 
-  const monthLabel = month.toLocaleDateString("en-US", {
-    month: "long",
-    year: "numeric",
-  });
+  const monthLabel = formatMonthUS(month);
 
   const calendarDays = useMemo(() => {
     const year = month.getFullYear();

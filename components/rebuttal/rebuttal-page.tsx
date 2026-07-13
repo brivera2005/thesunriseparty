@@ -91,7 +91,7 @@ export function RebuttalPage() {
   return (
     <PageShell>
       <PageHero
-        tone="sunrise"
+        section="rebuttal"
         eyebrow="Conversation Ready"
         title="The Rebuttal Desk"
         description="When they say X, you say Y. Copy-ready, every claim sourced."

@@ -8,12 +8,23 @@ export interface ChangelogEntry {
 /** Site iteration history - meta transparency for Project Sunrise builds */
 export const changelog: ChangelogEntry[] = [
   {
+    version: "0.43.0",
+    date: "2026-07-13",
+    title: "Pass 43 - Full nav grid + section colors + US dates + contacts",
+    highlights: [
+      "Removed More dropdown: all 12 core sections visible in an even desktop grid (4/6/12 cols) and a 2-column mobile grid with section accent colors",
+      "Per-section accents (Rebuttal orange, History teal, Tracker crimson, Legislation blue, Scenarios violet, Blueprint sky, Mission/Accountability/Methodology slate, Donate green) on homepage cards, PageHero, nav, and tour",
+      "Em/en dashes purged from app/components/lib; dates display as MM/DD/YYYY via shared formatDateUS",
+      "LegislatorName shows official Contact links from congress-legislators (no invented emails); SW cache bumped to sunrise-v43",
+    ],
+  },
+  {
     version: "0.42.0",
     date: "2026-07-13",
     title: "Pass 42 - Kill meta copy + newbie product polish",
     highlights: [
       "Deleted published agent/meta language from /start, sitemap, nav, and SEO (seven stops / mission last / tour structure narration)",
-      "Landing hero: Track. Counter. Fix. — Start here / Rebuttal Desk / Live bills; friendlier section cards",
+      "Landing hero: Track. Counter. Fix. Start here / Rebuttal Desk / Live bills; friendlier section cards",
       "Guided tour rewritten as a product walkthrough with progress dots and punchy per-tool copy",
       "PageHero eyebrows de-meta'd (Conversation Ready, Severity Scored, Policy Fixes); SW cache bumped to sunrise-v42",
     ],
@@ -82,7 +93,7 @@ export const changelog: ChangelogEntry[] = [
       "Unified white + navy + sunrise-orange palette across every route; killed mode-tracker/blueprint and page-specific gradient islands",
       "BrandLogo only in header/footer at consistent size; PageShell wraps every page",
       "Homepage rebuilt as a clear grid of all major sections (Rebuttal, History, Tracker, Blueprint, Mission, Accountability, Methodology, Donate, Contribute, Start, Saved)",
-      "Fixed citation Wayback links that used fabricated timestamps (often 404 for recent White House pages) — now use durable archive.org/web/*/ calendar URLs",
+      "Fixed citation Wayback links that used fabricated timestamps (often 404 for recent White House pages). Now use durable archive.org/web/*/ calendar URLs",
       "Citation modal prefers archive when primary is unverified; absolute https-only hrefs; validate-links soft-404 detection expanded",
     ],
   },

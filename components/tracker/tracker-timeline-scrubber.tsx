@@ -3,6 +3,7 @@
 import { useMemo } from "react";
 import type { TimelineEvent } from "@/lib/types";
 import { cn } from "@/lib/utils";
+import { formatDateUS, formatMonthUS } from "@/lib/format-date";
 
 interface TrackerTimelineScrubberProps {
   events: TimelineEvent[];
@@ -31,7 +32,7 @@ export function TrackerTimelineScrubber({
       <div className="mb-3 flex items-center justify-between text-xs text-muted-foreground">
         <span className="font-semibold uppercase tracking-wider">Timeline</span>
         <span className="tabular-nums">
-          {sorted[0].Date} → {sorted[sorted.length - 1].Date}
+          {formatDateUS(sorted[0].Date)} → {formatDateUS(sorted[sorted.length - 1].Date)}
         </span>
       </div>
       <div className="relative h-12">
@@ -44,7 +45,7 @@ export function TrackerTimelineScrubber({
             <button
               key={event.Event_ID}
               type="button"
-              title={`${event.Date}: ${event.Description.slice(0, 60)}…`}
+              title={`${formatDateUS(event.Date)}: ${event.Description.slice(0, 60)}…`}
               onClick={() => onSelect(event)}
               className={cn(
                 "absolute top-1/2 size-3 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 transition-all",
@@ -57,7 +58,7 @@ export function TrackerTimelineScrubber({
                       : "border-muted-foreground/40 bg-muted hover:scale-125"
               )}
               style={{ left: `${Math.min(98, Math.max(2, pos))}%` }}
-              aria-label={`${event.Date} - severity ${event.Severity_Score}`}
+              aria-label={`${formatDateUS(event.Date)} - severity ${event.Severity_Score}`}
             />
           );
         })}

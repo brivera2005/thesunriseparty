@@ -44,7 +44,7 @@ async function main() {
   if (!apiKey) {
     console.log(`
 ┌─────────────────────────────────────────────────────────────┐
-│  Project Sunrise — Legislation refresh                      │
+│  Project Sunrise: Legislation refresh                      │
 │  No CONGRESS_API_KEY found.                                 │
 │                                                             │
 │  Curated dataset remains the live tracker source:           │

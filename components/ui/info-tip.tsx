@@ -21,7 +21,7 @@ type InfoTipProps = {
 
 /**
  * Progressive disclosure: hover tooltip on fine pointers; tap-to-toggle on touch.
- * Critical copy should not live only here — use for secondary descriptions.
+ * Critical copy should not live only here; use for secondary descriptions.
  */
 export function InfoTip({
   label,

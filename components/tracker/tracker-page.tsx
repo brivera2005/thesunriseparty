@@ -51,7 +51,7 @@ export function TrackerPage() {
   return (
     <PageShell>
       <PageHero
-        tone="critical"
+        section="tracker"
         eyebrow="Severity Scored"
         title="Project 2025 Tracker"
         description="Admin actions scored by severity. Every claim cited."

@@ -42,6 +42,18 @@
   --color-sunrise: var(--sunrise);
   --color-sunrise-foreground: var(--sunrise-foreground);
   --color-navy: var(--navy);
+  --color-section-rebuttal: var(--section-rebuttal);
+  --color-section-history: var(--section-history);
+  --color-section-tracker: var(--section-tracker);
+  --color-section-legislation: var(--section-legislation);
+  --color-section-scenarios: var(--section-scenarios);
+  --color-section-blueprint: var(--section-blueprint);
+  --color-section-mission: var(--section-mission);
+  --color-section-accountability: var(--section-accountability);
+  --color-section-methodology: var(--section-methodology);
+  --color-section-donate: var(--section-donate);
+  --color-section-contribute: var(--section-contribute);
+  --color-section-saved: var(--section-saved);
   --color-severity-low: var(--severity-low);
   --color-severity-moderate: var(--severity-moderate);
   --color-severity-high: var(--severity-high);
@@ -55,7 +67,7 @@
   --radius-4xl: calc(var(--radius) * 2.6);
 }
 
-/* Logo palette: pure white + navy + sunrise orange. No page-specific themes. */
+/* White canvas + navy type + per-section accent chips (not page-wide fills). */
 :root {
   --background: #ffffff;
   --foreground: #0b1f3a;
@@ -99,6 +111,30 @@
   --sidebar-accent-foreground: #0b1f3a;
   --sidebar-border: #e2e7ee;
   --sidebar-ring: #e16323;
+  --section-rebuttal: #e16323;
+  --section-rebuttal-soft: #fff4ec;
+  --section-history: #0f766e;
+  --section-history-soft: #ecfdf8;
+  --section-tracker: #b42318;
+  --section-tracker-soft: #fef3f2;
+  --section-legislation: #1d4ed8;
+  --section-legislation-soft: #eff6ff;
+  --section-scenarios: #7c3aed;
+  --section-scenarios-soft: #f5f3ff;
+  --section-blueprint: #0284c7;
+  --section-blueprint-soft: #f0f9ff;
+  --section-mission: #334155;
+  --section-mission-soft: #f1f5f9;
+  --section-accountability: #475569;
+  --section-accountability-soft: #f8fafc;
+  --section-methodology: #1e293b;
+  --section-methodology-soft: #f1f5f9;
+  --section-donate: #15803d;
+  --section-donate-soft: #f0fdf4;
+  --section-contribute: #0f766e;
+  --section-contribute-soft: #f0fdfa;
+  --section-saved: #4a5a6e;
+  --section-saved-soft: #f4f6f8;
 }
 
 /* Dark kept for system preference only; product chrome stays light/white. */
@@ -176,7 +212,7 @@
   animation: accordion-up 0.2s ease-out;
 }
 
-/* Gradients neutralized — white only, no blue/red/cream islands */
+/* Gradients neutralized: white only, no blue/red/cream islands */
 .hero-gradient-blueprint,
 .hero-gradient-tracker,
 .hero-gradient-rebuttal,

@@ -14,7 +14,8 @@ import {
   partyColor,
   statusLabel,
 } from "@/lib/data/legislation";
-import { PartyBadge } from "@/components/legislation/party-badge";
+import { LegislatorName } from "@/components/legislation/legislator-name";
+import { formatDateUS } from "@/lib/format-date";
 import { VoteBars } from "@/components/legislation/vote-bars";
 import { CitationList } from "@/components/citation";
 import { PageShell } from "@/components/layout/page-shell";
@@ -93,10 +94,10 @@ export function BillDetailPage({ bill }: { bill: LegislationBill }) {
               {bill.title}
             </h1>
             <div className="mt-4 flex flex-wrap items-center gap-3">
-              <PartyBadge
+              <LegislatorName
+                name={bill.sponsor.name}
                 party={bill.sponsor.party}
                 state={bill.sponsor.state}
-                name={bill.sponsor.name}
               />
               {bill.cosponsorsSummary && (
                 <span className="text-xs text-muted-foreground">
@@ -141,7 +142,9 @@ export function BillDetailPage({ bill }: { bill: LegislationBill }) {
               <dt className="text-[11px] font-semibold tracking-wide text-muted-foreground uppercase">
                 Action date
               </dt>
-              <dd className="mt-1 tabular-nums text-navy">{bill.lastActionDate}</dd>
+              <dd className="mt-1 tabular-nums text-navy">
+                {formatDateUS(bill.lastActionDate)}
+              </dd>
             </div>
           </dl>
 

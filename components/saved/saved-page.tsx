@@ -20,6 +20,7 @@ import {
   type SavedItem,
 } from "@/lib/saved-items";
 import { cn } from "@/lib/utils";
+import { formatDateUS, formatMonthUS } from "@/lib/format-date";
 import { PageShell } from "@/components/layout/page-shell";
 
 function SavedItemRow({ item, onRemove }: { item: SavedItem; onRemove: () => void }) {
@@ -37,7 +38,7 @@ function SavedItemRow({ item, onRemove }: { item: SavedItem; onRemove: () => voi
               {item.type === "event" ? "Tracker" : "Rebuttal"}
             </Badge>
             <span className="text-[10px] text-muted-foreground">
-              Saved {new Date(item.savedAt).toLocaleDateString()}
+              Saved {formatDateUS(new Date(item.savedAt))}
             </span>
           </div>
           <Link

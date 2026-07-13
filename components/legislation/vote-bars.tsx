@@ -2,6 +2,7 @@
 
 import type { BillVote } from "@/lib/types";
 import { partyColor } from "@/lib/data/legislation";
+import { formatDateUS } from "@/lib/format-date";
 import { cn } from "@/lib/utils";
 
 function Segment({
@@ -43,7 +44,7 @@ export function VoteBars({
           {vote.chamber === "house" ? "House" : "Senate"} · {vote.question}
         </p>
         <p className="tabular-nums text-muted-foreground">
-          {vote.date} · Yea {vote.yeas} · Nay {vote.nays}
+          {formatDateUS(vote.date)} · Yea {vote.yeas} · Nay {vote.nays}
           {vote.present ? ` · Present ${vote.present}` : ""}
           {vote.notVoting ? ` · NV ${vote.notVoting}` : ""}
         </p>

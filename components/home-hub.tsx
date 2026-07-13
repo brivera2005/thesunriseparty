@@ -20,6 +20,7 @@ import { ThreatGaugeMini } from "@/components/tracker/severity-gauge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
+import { formatDateUS, formatMonthUS } from "@/lib/format-date";
 
 const portalCards = [
   {
@@ -61,12 +62,7 @@ const portalCards = [
 ] as const;
 
 function formatDate(dateStr: string) {
-  const d = new Date(dateStr + "T00:00:00");
-  return d.toLocaleDateString("en-US", {
-    month: "short",
-    day: "numeric",
-    year: "numeric",
-  });
+  return formatDateUS(dateStr);
 }
 
 function severityTextClass(score: number) {

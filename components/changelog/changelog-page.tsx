@@ -6,15 +6,11 @@ import { changelog } from "@/lib/data/changelog";
 import { buttonVariants } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
+import { formatDateUS, formatMonthUS } from "@/lib/format-date";
 import { PageShell } from "@/components/layout/page-shell";
 
 function formatDate(dateStr: string) {
-  const d = new Date(dateStr + "T00:00:00");
-  return d.toLocaleDateString("en-US", {
-    month: "long",
-    day: "numeric",
-    year: "numeric",
-  });
+  return formatDateUS(dateStr);
 }
 
 export function ChangelogPage() {

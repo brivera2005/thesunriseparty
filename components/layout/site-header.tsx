@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useRef, useState } from "react";
-import { ChevronDown, Heart, Menu, Search, X } from "lucide-react";
+import { useState } from "react";
+import { Heart, Menu, Search, X } from "lucide-react";
 import { useAppStore } from "@/lib/store";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { BrandLogo } from "@/components/brand-logo";
@@ -19,83 +19,89 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
+import {
+  getSectionTheme,
+  type SectionId,
+} from "@/lib/section-theme";
 
-const primaryNav: {
+/** Every core destination, always visible (no More dropdown). */
+const siteNav: {
   label: string;
   href: string;
   description: string;
+  section: SectionId;
 }[] = [
   {
     label: "Rebuttal",
     href: "/rebuttal",
     description: "When they say X, you say Y.",
+    section: "rebuttal",
   },
   {
     label: "History",
     href: "/history",
     description: "Textbook vs. archives.",
+    section: "history",
   },
   {
     label: "Tracker",
     href: "/tracker",
     description: "Admin actions scored by severity.",
+    section: "tracker",
   },
   {
     label: "Legislation",
     href: "/legislation",
     description: "Live bills and party votes.",
+    section: "legislation",
+  },
+  {
+    label: "Scenarios",
+    href: "/scenarios",
+    description: "Family gets Y. Should get Z.",
+    section: "scenarios",
   },
   {
     label: "Blueprint",
     href: "/blueprint",
     description: "The fix and the gaslight exposed.",
-  },
-];
-
-const moreNav: {
-  label: string;
-  href: string;
-  description: string;
-}[] = [
-  {
-    label: "Scenarios",
-    href: "/scenarios",
-    description: "Family gets Y. Should get Z.",
+    section: "blueprint",
   },
   {
     label: "Mission",
     href: "/mission",
     description: "Why we exist. How we stay honest.",
+    section: "mission",
   },
   {
     label: "Accountability",
     href: "/accountability",
     description: "Dark money, courts, power.",
+    section: "accountability",
   },
   {
     label: "Methodology",
     href: "/methodology",
     description: "How we score and verify.",
+    section: "methodology",
+  },
+  {
+    label: "Donate",
+    href: "/donate",
+    description: "Fund research and hosting.",
+    section: "donate",
   },
   {
     label: "Contribute",
     href: "/contribute",
     description: "Sources, corrections, rebuttals.",
+    section: "contribute",
   },
   {
-    label: "Start Here",
+    label: "Start",
     href: "/start",
     description: "A quick product walkthrough.",
-  },
-  {
-    label: "Saved",
-    href: "/saved",
-    description: "Bookmarks on this device.",
-  },
-  {
-    label: "Changelog",
-    href: "/changelog",
-    description: "What shipped each pass.",
+    section: "start",
   },
 ];
 
@@ -108,115 +114,17 @@ export function SiteHeader() {
   const pathname = usePathname();
   const setCommandOpen = useAppStore((s) => s.setCommandOpen);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [moreOpen, setMoreOpen] = useState(false);
-  const moreRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    setMoreOpen(false);
-  }, [pathname]);
-
-  useEffect(() => {
-    if (!moreOpen) return;
-    const onPointer = (e: MouseEvent) => {
-      if (moreRef.current && !moreRef.current.contains(e.target as Node)) {
-        setMoreOpen(false);
-      }
-    };
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setMoreOpen(false);
-    };
-    document.addEventListener("mousedown", onPointer);
-    document.addEventListener("keydown", onKey);
-    return () => {
-      document.removeEventListener("mousedown", onPointer);
-      document.removeEventListener("keydown", onKey);
-    };
-  }, [moreOpen]);
-
-  const moreActive = moreNav.some((item) => pathActive(pathname, item.href));
 
   return (
-    <header className="sticky top-0 z-40 overflow-visible border-b border-border bg-white/95 backdrop-blur-lg supports-[backdrop-filter]:bg-white/90">
+    <header className="sticky top-0 z-40 border-b border-border bg-white/95 backdrop-blur-lg supports-[backdrop-filter]:bg-white/90">
       <div className="page-container flex items-center justify-between gap-2 py-2.5 sm:gap-3 sm:py-3">
-        <Link href="/" className="flex min-w-0 items-center py-0.5" aria-label="Project Sunrise home">
+        <Link
+          href="/"
+          className="flex min-w-0 items-center py-0.5"
+          aria-label="Project Sunrise home"
+        >
           <BrandLogo variant="header" priority />
         </Link>
-
-        <nav className="hidden items-center gap-0.5 lg:flex" aria-label="Primary">
-          {primaryNav.map((item) => (
-            <Tooltip key={item.href}>
-              <TooltipTrigger
-                delay={180}
-                closeOnClick
-                className={cn(
-                  buttonVariants({ variant: "ghost", size: "sm" }),
-                  "h-9 border-0 px-2.5 text-[0.8rem]",
-                  pathActive(pathname, item.href) && "text-primary"
-                )}
-                render={<Link href={item.href} />}
-              >
-                {item.label}
-              </TooltipTrigger>
-              <TooltipContent side="bottom">{item.description}</TooltipContent>
-            </Tooltip>
-          ))}
-
-          <div className="relative" ref={moreRef}>
-            <Button
-              variant="ghost"
-              size="sm"
-              className={cn(
-                "h-9 gap-1 border-0 px-2.5 text-[0.8rem]",
-                moreActive && "text-primary"
-              )}
-              aria-expanded={moreOpen}
-              aria-haspopup="menu"
-              onClick={() => setMoreOpen((v) => !v)}
-            >
-              More
-              <ChevronDown
-                className={cn(
-                  "size-3.5 transition-transform",
-                  moreOpen && "rotate-180"
-                )}
-              />
-            </Button>
-            {moreOpen && (
-              <div
-                role="menu"
-                className="absolute top-full right-0 z-50 mt-1 w-64 overflow-hidden rounded-xl border border-border bg-white py-1 shadow-lg"
-              >
-                {moreNav.map((item) => (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    role="menuitem"
-                    onClick={() => setMoreOpen(false)}
-                    className={cn(
-                      "block px-3.5 py-2.5 transition-colors hover:bg-accent",
-                      pathActive(pathname, item.href) && "bg-accent/80 text-primary"
-                    )}
-                  >
-                    <span className="block text-sm font-medium">{item.label}</span>
-                    <span className="mt-0.5 block text-[11px] leading-snug text-muted-foreground">
-                      {item.description}
-                    </span>
-                  </Link>
-                ))}
-                <div className="border-t border-border px-3.5 py-2.5">
-                  <Link
-                    href="/donate"
-                    onClick={() => setMoreOpen(false)}
-                    className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary"
-                  >
-                    <Heart className="size-3.5" />
-                    Donate
-                  </Link>
-                </div>
-              </div>
-            )}
-          </div>
-        </nav>
 
         <div className="flex items-center gap-1.5 sm:gap-2">
           <Tooltip>
@@ -250,8 +158,8 @@ export function SiteHeader() {
           <Link
             href="/donate"
             className={cn(
-              buttonVariants({ variant: "default", size: "sm" }),
-              "hidden h-9 gap-1.5 sm:inline-flex"
+              buttonVariants({ size: "sm" }),
+              "hidden h-9 gap-1.5 sm:inline-flex bg-[color:var(--section-donate)] text-white hover:bg-[color:var(--section-donate)]/90"
             )}
             title="Support Project Sunrise"
           >
@@ -263,7 +171,7 @@ export function SiteHeader() {
             variant="outline"
             size="icon"
             onClick={() => setMobileOpen(true)}
-            className="size-11 lg:hidden"
+            className="size-11 md:hidden"
             aria-label="Open menu"
           >
             <Menu className="size-4" />
@@ -271,14 +179,62 @@ export function SiteHeader() {
         </div>
       </div>
 
+      {/* Desktop / tablet: even wrap grid of every section */}
+      <nav
+        className="hidden border-t border-border bg-white md:block"
+        aria-label="Site sections"
+      >
+        <div className="page-container py-2">
+          <ul className="grid grid-cols-4 gap-1.5 lg:grid-cols-6 xl:grid-cols-12">
+            {siteNav.map((item) => {
+              const active = pathActive(pathname, item.href);
+              const theme = getSectionTheme(item.section);
+              return (
+                <li key={item.href}>
+                  <Tooltip>
+                    <TooltipTrigger
+                      delay={160}
+                      closeOnClick
+                      className={cn(
+                        "flex h-9 w-full items-center justify-center rounded-lg border px-1 text-center text-[11px] font-semibold tracking-wide transition-colors sm:text-xs",
+                        active
+                          ? "text-white shadow-sm"
+                          : "border-border bg-white text-navy hover:bg-muted/60"
+                      )}
+                      style={
+                        active
+                          ? {
+                              backgroundColor: theme.hex,
+                              borderColor: theme.hex,
+                            }
+                          : {
+                              borderLeftWidth: 3,
+                              borderLeftColor: theme.hex,
+                            }
+                      }
+                      render={<Link href={item.href} />}
+                    >
+                      {item.label}
+                    </TooltipTrigger>
+                    <TooltipContent side="bottom">
+                      {item.description}
+                    </TooltipContent>
+                  </Tooltip>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </nav>
+
       <Dialog open={mobileOpen} onOpenChange={setMobileOpen}>
         <DialogContent
-          className="fixed top-0 right-0 left-auto h-full w-[min(100vw-1.5rem,320px)] max-w-none translate-x-0 translate-y-0 rounded-none border-l data-[state=closed]:slide-out-to-right data-[state=open]:slide-in-from-right"
+          className="fixed top-0 right-0 left-auto h-full w-[min(100vw-1rem,360px)] max-w-none translate-x-0 translate-y-0 rounded-none border-l data-[state=closed]:slide-out-to-right data-[state=open]:slide-in-from-right"
           aria-label="Mobile navigation menu"
         >
           <DialogHeader>
             <DialogTitle className="flex items-center justify-between">
-              Menu
+              All sections
               <Button
                 variant="ghost"
                 size="icon"
@@ -291,57 +247,59 @@ export function SiteHeader() {
             </DialogTitle>
           </DialogHeader>
 
-          <div className="flex flex-col gap-5 overflow-y-auto pt-2 pb-6">
-            <nav className="flex flex-col gap-1" aria-label="Primary sections">
-              <p className="px-4 pb-1 text-[10px] font-semibold tracking-[0.18em] text-muted-foreground uppercase">
-                Primary
-              </p>
-              {primaryNav.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  onClick={() => setMobileOpen(false)}
-                  className={cn(
-                    "flex min-h-11 flex-col justify-center rounded-lg px-4 py-2.5 transition-colors hover:bg-accent",
-                    pathActive(pathname, item.href) && "bg-accent text-primary"
-                  )}
-                >
-                  <span className="text-sm font-medium">{item.label}</span>
-                  <span className="mt-0.5 text-[11px] leading-snug text-muted-foreground">
-                    {item.description}
-                  </span>
-                </Link>
-              ))}
-            </nav>
-
-            <nav className="flex flex-col gap-1" aria-label="More sections">
-              <p className="px-4 pb-1 text-[10px] font-semibold tracking-[0.18em] text-muted-foreground uppercase">
-                More
-              </p>
-              {moreNav.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  onClick={() => setMobileOpen(false)}
-                  className={cn(
-                    "flex min-h-11 flex-col justify-center rounded-lg px-4 py-2.5 transition-colors hover:bg-accent",
-                    pathActive(pathname, item.href) && "bg-accent text-primary"
-                  )}
-                >
-                  <span className="text-sm font-medium">{item.label}</span>
-                  <span className="mt-0.5 text-[11px] leading-snug text-muted-foreground">
-                    {item.description}
-                  </span>
-                </Link>
-              ))}
+          <div className="flex flex-col gap-4 overflow-y-auto pt-2 pb-6">
+            <nav aria-label="Site sections">
+              <ul className="grid grid-cols-2 gap-2 px-1">
+                {siteNav.map((item) => {
+                  const active = pathActive(pathname, item.href);
+                  const theme = getSectionTheme(item.section);
+                  return (
+                    <li key={item.href}>
+                      <Link
+                        href={item.href}
+                        onClick={() => setMobileOpen(false)}
+                        className={cn(
+                          "flex min-h-[4.25rem] flex-col justify-center rounded-xl border px-3 py-2.5 transition-colors",
+                          active ? "text-white shadow-sm" : "bg-white text-navy"
+                        )}
+                        style={
+                          active
+                            ? {
+                                backgroundColor: theme.hex,
+                                borderColor: theme.hex,
+                              }
+                            : {
+                                borderColor: `${theme.hex}55`,
+                                borderLeftWidth: 4,
+                                borderLeftColor: theme.hex,
+                                backgroundColor: theme.soft,
+                              }
+                        }
+                      >
+                        <span className="text-sm font-semibold leading-tight">
+                          {item.label}
+                        </span>
+                        <span
+                          className={cn(
+                            "mt-1 line-clamp-2 text-[10px] leading-snug",
+                            active ? "text-white/85" : "text-muted-foreground"
+                          )}
+                        >
+                          {item.description}
+                        </span>
+                      </Link>
+                    </li>
+                  );
+                })}
+              </ul>
             </nav>
 
             <Link
               href="/donate"
               onClick={() => setMobileOpen(false)}
               className={cn(
-                buttonVariants({ variant: "default" }),
-                "mx-4 h-11 gap-2"
+                buttonVariants(),
+                "mx-1 h-11 gap-2 bg-[color:var(--section-donate)] text-white hover:bg-[color:var(--section-donate)]/90"
               )}
             >
               <Heart className="size-4" />

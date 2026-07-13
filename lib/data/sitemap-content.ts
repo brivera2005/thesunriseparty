@@ -144,12 +144,12 @@ export const sitemapSections: SitemapSection[] = [
       {
         href: "/legislation/hr-1",
         label: "Featured: H.R. 1",
-        description: "One Big Beautiful Bill Act — reconciliation receipts.",
+        description: "One Big Beautiful Bill Act: reconciliation receipts.",
       },
       {
         href: "/legislation/s-2",
         label: "Featured: S. 2",
-        description: "Secure America Act — enacted enforcement funding.",
+        description: "Secure America Act: enacted enforcement funding.",
       },
       {
         href: "/bills",

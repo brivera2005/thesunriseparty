@@ -1,3 +1,4 @@
+import { formatDateUS, formatMonthUS } from "@/lib/format-date";
 import type { TimelineEvent } from "@/lib/types";
 import { citations } from "./citations";
 import { observerBase, cprTrackerBase } from "./tracker-sources";
@@ -4413,7 +4414,7 @@ export function getEventsByMonth(
       const d = new Date(`${month}-01T00:00:00`);
       return {
         month,
-        label: d.toLocaleDateString("en-US", { month: "short", year: "2-digit" }),
+        label: formatMonthUS(d),
         count,
       };
     });

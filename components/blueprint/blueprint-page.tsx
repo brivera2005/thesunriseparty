@@ -50,7 +50,7 @@ export function BlueprintPage() {
   return (
     <PageShell>
       <PageHero
-        tone="default"
+        section="blueprint"
         eyebrow="Policy Fixes"
         title="The Progressive Blueprint"
         description="The fix, the receipts, and the gaslight exposed."
