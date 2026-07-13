@@ -85,7 +85,7 @@ const moreNav: {
   {
     label: "Start Here",
     href: "/start",
-    description: "Tools-first guided tour.",
+    description: "A quick product walkthrough.",
   },
   {
     label: "Saved",

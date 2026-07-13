@@ -8,6 +8,17 @@ export interface ChangelogEntry {
 /** Site iteration history - meta transparency for Project Sunrise builds */
 export const changelog: ChangelogEntry[] = [
   {
+    version: "0.42.0",
+    date: "2026-07-13",
+    title: "Pass 42 - Kill meta copy + newbie product polish",
+    highlights: [
+      "Deleted published agent/meta language from /start, sitemap, nav, and SEO (seven stops / mission last / tour structure narration)",
+      "Landing hero: Track. Counter. Fix. — Start here / Rebuttal Desk / Live bills; friendlier section cards",
+      "Guided tour rewritten as a product walkthrough with progress dots and punchy per-tool copy",
+      "PageHero eyebrows de-meta'd (Conversation Ready, Severity Scored, Policy Fixes); SW cache bumped to sunrise-v42",
+    ],
+  },
+  {
     version: "0.41.0",
     date: "2026-07-13",
     title: "Pass 41 - Newbie clarity + live-mode overhaul",
@@ -15,7 +26,7 @@ export const changelog: ChangelogEntry[] = [
       "Landing hero answers in under 10 words: Track the agenda. Counter the lies. Build the fix. CTAs: Start tour / Rebuttal Desk / Live bills",
       "Deleted design-meta fluff (white canvas, navy type, sunrise accents, pick a section and go deep)",
       "Live pulse strip: legislation last-updated, high-severity tracker count, scenarios, rebuttals",
-      "Guided tour reordered tools-first: Rebuttal, History, Tracker, Legislation, Scenarios, Blueprint, Mission last; one headline + two sentences per step",
+      "Guided tour: Rebuttal, History, Tracker, Legislation, Scenarios, Blueprint, Mission",
       "PageHero and nav copy tightened sitewide; SW cache bumped to sunrise-v41",
     ],
   },

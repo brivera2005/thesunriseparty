@@ -92,7 +92,7 @@ export function RebuttalPage() {
     <PageShell>
       <PageHero
         tone="sunrise"
-        eyebrow="Shareable Resource"
+        eyebrow="Conversation Ready"
         title="The Rebuttal Desk"
         description="When they say X, you say Y. Copy-ready, every claim sourced."
         tip="Browse, Study, and Quiz use the same entries and filters."

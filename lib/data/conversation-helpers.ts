@@ -6217,7 +6217,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Media", "Democracy"],
     theySay: "There's too much data! I can't keep up - just tell me what to think!",
     youSay:
-      "That's why Project Sunrise built a site map and a tools-first start guide - you don't need to read hundreds of events on day one. Start with Rebuttal Desk, pick one claim you hear at work, and bookmark what matters. Democracy fails when citizens outsource thinking to cable news; it recovers when people use structured tools instead of doom-scrolling.",
+      "That's why Project Sunrise has a clear start guide and a site map - you don't need to read hundreds of events on day one. Start with Rebuttal Desk, pick one claim you hear at work, and bookmark what matters. Democracy fails when citizens outsource thinking to cable news; it recovers when people use structured tools instead of doom-scrolling.",
     stab: "Overwhelm is a feature of propaganda, not research.",
     sources: [
       cite(
@@ -6441,7 +6441,7 @@ export const conversationHelpers: ConversationHelper[] = [
     category: ["Culture Wars", "Media"],
     theySay: "A guided tour? You think we're stupid!",
     youSay:
-      "Onboarding isn't insulting - it's how every serious tool works. The start guide shows Rebuttal Desk, History, Tracker, Legislation, Scenarios, and Blueprint first, with Mission last. You can skip it in one click. Complex civic infrastructure that assumes everyone already knows how FOIA, Schedule F, and dark money interact is why oligarchs win. Meeting people where they are isn't babying; it's organizing.",
+      "A short walkthrough isn't insulting - it's how every serious tool works. Open Rebuttal Desk, History, Tracker, or Legislation when you need them. You can skip the guide in one click. Complex civic infrastructure that assumes everyone already knows how FOIA, Schedule F, and dark money interact is why oligarchs win. Meeting people where they are isn't babying; it's organizing.",
     stab: "Skip the tour - if you can find everything.",
     sources: [
       cite(

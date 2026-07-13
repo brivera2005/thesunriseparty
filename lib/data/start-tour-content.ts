@@ -23,9 +23,8 @@ export interface TourStep {
 }
 
 export const startTourIntro = {
-  title: "Know the tools. Fast.",
-  subtitle:
-    "Seven stops. What each tool does, then how to use it. Mission last.",
+  title: "Here's what you can do.",
+  subtitle: "Open any tool. Skip anytime.",
   skipLabel: "Skip to homepage",
 };
 
@@ -34,9 +33,9 @@ export const tourSteps: TourStep[] = [
     step: 1,
     title: "Rebuttal Desk",
     whatItIs:
-      "When they say X, you say Y: copy-ready counters with primary sources.",
+      "Someone just lied to you. Here's the answer with sources.",
     whatYouDo:
-      "Browse a claim, copy the response, or drill study and quiz mode.",
+      "Browse a claim, copy the response, or practice in Study and Quiz.",
     icon: MessageSquareQuote,
     href: "/rebuttal",
     cta: "Open Rebuttal Desk",
@@ -46,7 +45,7 @@ export const tourSteps: TourStep[] = [
     step: 2,
     title: "Hidden History",
     whatItIs:
-      "Textbook narrative on one side, what the archives document on the other.",
+      "What the textbook left out — and what the archives prove.",
     whatYouDo:
       "Pick an era, open a moment, compare the story to the receipts.",
     icon: History,
@@ -58,9 +57,9 @@ export const tourSteps: TourStep[] = [
     step: 3,
     title: "Tracker",
     whatItIs:
-      "Project 2025 and admin actions scored by severity with primary sources.",
+      "What's happening now, scored by how bad it is — with receipts.",
     whatYouDo:
-      "Filter by category or severity, open an event, follow the citations.",
+      "Filter by category or severity, then open any event.",
     icon: Activity,
     href: "/tracker",
     cta: "Open Tracker",
@@ -70,9 +69,9 @@ export const tourSteps: TourStep[] = [
     step: 4,
     title: "Legislation",
     whatItIs:
-      "Live 119th Congress bills with sponsors, party colors, and vote tallies.",
+      "Live bills in Congress. Who sponsored them. How they voted.",
     whatYouDo:
-      "Scan active bills, check who sponsored, read progressive analysis.",
+      "Scan active bills and read the progressive analysis.",
     icon: Landmark,
     href: "/legislation",
     cta: "Open Live bills",
@@ -82,9 +81,9 @@ export const tourSteps: TourStep[] = [
     step: 5,
     title: "Scenarios",
     whatItIs:
-      "Causal chains from policy choices to what a family actually gets.",
+      "How a policy choice lands on a real family.",
     whatYouDo:
-      "Open a scenario, follow Gets Y vs Should Get Z, see who blocked the fix.",
+      "Follow Gets Y vs Should Get Z — and who blocked the fix.",
     icon: GitBranch,
     href: "/scenarios",
     cta: "Open Scenarios",
@@ -94,9 +93,9 @@ export const tourSteps: TourStep[] = [
     step: 6,
     title: "Blueprint",
     whatItIs:
-      "The progressive fix: policy pillars, timelines, and gaslight exposure.",
+      "The progressive fix — policy pillars with evidence you can share.",
     whatYouDo:
-      "Open a pillar, read the evidence, share the page when you need receipts.",
+      "Open a pillar, read the receipts, share the page.",
     icon: BookOpen,
     href: "/blueprint",
     cta: "Open Blueprint",
@@ -106,9 +105,9 @@ export const tourSteps: TourStep[] = [
     step: 7,
     title: "Mission",
     whatItIs:
-      "Why Project Sunrise exists and the transparency pledge that keeps us honest.",
+      "Why Project Sunrise exists — and the pledge that keeps us honest.",
     whatYouDo:
-      "Read the pledge after you know the tools, then dig into methodology.",
+      "Read the transparency pledge, then dig into methodology if you want.",
     icon: Compass,
     href: "/mission",
     cta: "Read Mission",

@@ -59,7 +59,7 @@ const platformCards = [
   {
     href: "/rebuttal",
     title: "Rebuttal Desk",
-    description: "When they say X, you say Y. Copy-ready, sourced.",
+    description: "Someone lied. Get the sourced answer — ready to copy.",
     icon: MessageSquareQuote,
     meta: `${conversationHelpers.length}+ ready`,
   },
@@ -73,21 +73,21 @@ const platformCards = [
   {
     href: "/tracker",
     title: "Tracker",
-    description: "Project 2025 and admin actions, scored by severity.",
+    description: "Admin actions scored by severity — every claim cited.",
     icon: Activity,
     meta: `${trackerStats.highSeverity} high-severity`,
   },
   {
     href: "/legislation",
     title: "Live Legislation",
-    description: "Live bills, sponsors, party votes. Updated continuously.",
+    description: "Live bills, sponsors, and party votes. Updated continuously.",
     icon: Landmark,
     meta: `${legislationStats.total} bills · ${legislationStats.lastUpdated}`,
   },
   {
     href: "/scenarios",
     title: "Scenarios",
-    description: "Family gets Y. Should get Z. Trace who blocked the fix.",
+    description: "See how a policy choice lands on a real family.",
     icon: GitBranch,
     meta: `${scenarioStats.total} causal chains`,
   },
@@ -108,7 +108,7 @@ const platformCards = [
   {
     href: "/accountability",
     title: "Accountability",
-    description: "Follow the money, the courts, and power constraints.",
+    description: "Follow the money, the courts, and power.",
     icon: Scale,
     meta: "Dark money & courts",
   },
@@ -146,36 +146,45 @@ export function LandingPage() {
   return (
     <PageShell>
       <section className="relative overflow-hidden border-b border-border bg-white">
-        <div className="page-container relative flex flex-col items-center py-8 text-center sm:py-12 lg:py-14">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(249,115,22,0.10),_transparent_50%)]"
+        />
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-accent/30 to-transparent"
+        />
+        <div className="page-container relative flex flex-col items-center py-10 text-center sm:py-14 lg:py-16">
           <FadeIn>
             <h1 className="sr-only">Project Sunrise</h1>
             <BrandLogo variant="hero" priority />
           </FadeIn>
           <FadeIn delay={80}>
-            <p className="mx-auto mt-5 max-w-lg text-xl font-bold tracking-tight text-navy sm:mt-6 sm:text-2xl">
-              Track the agenda. Counter the lies. Build the fix.
+            <p className="mx-auto mt-6 max-w-xl text-3xl font-bold tracking-tight text-navy sm:mt-7 sm:text-4xl">
+              Track. Counter. Fix.
             </p>
-            <p className="mx-auto mt-2 max-w-md text-sm text-muted-foreground sm:text-base">
-              Live bills. Sourced counters. Family impact. Right now.
+            <p className="mx-auto mt-3 max-w-md text-base text-muted-foreground sm:text-lg">
+              Live bills. Sourced answers. Real impact — right now.
             </p>
           </FadeIn>
           <FadeIn delay={160}>
-            <div className="mt-5 flex flex-wrap items-center justify-center gap-2.5 sm:mt-6 sm:gap-3">
+            <div className="mt-7 flex flex-wrap items-center justify-center gap-2.5 sm:mt-8 sm:gap-3">
               <Link
                 href="/start"
-                className="inline-flex h-11 min-w-[44px] items-center gap-2 rounded-lg bg-primary px-5 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90"
+                className="inline-flex h-12 min-w-[44px] items-center gap-2 rounded-xl bg-primary px-6 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 hover:shadow-md"
               >
-                Start tour
+                Start here
+                <ArrowRight className="size-4" />
               </Link>
               <Link
                 href="/rebuttal"
-                className="inline-flex h-11 min-w-[44px] items-center gap-2 rounded-lg border border-border bg-white px-5 text-sm font-semibold text-navy transition-all hover:border-primary/40 hover:bg-accent"
+                className="inline-flex h-12 min-w-[44px] items-center gap-2 rounded-xl border border-border bg-white px-6 text-sm font-semibold text-navy transition-all hover:border-primary/40 hover:bg-accent"
               >
                 Rebuttal Desk
               </Link>
               <Link
                 href="/legislation"
-                className="inline-flex h-11 min-w-[44px] items-center gap-2 rounded-lg border border-border bg-white px-5 text-sm font-semibold text-navy transition-all hover:border-primary/40 hover:bg-accent"
+                className="inline-flex h-12 min-w-[44px] items-center gap-2 rounded-xl border border-border bg-white px-6 text-sm font-semibold text-navy transition-all hover:border-primary/40 hover:bg-accent"
               >
                 Live bills
               </Link>
@@ -203,7 +212,7 @@ export function LandingPage() {
               <Link
                 key={item.label}
                 href={item.href}
-                className="rounded-lg border border-border bg-white px-3 py-3 text-left transition-colors hover:border-primary/40"
+                className="rounded-xl border border-border bg-white px-3 py-3 text-left shadow-sm transition-all hover:border-primary/40 hover:shadow-md"
               >
                 <p className="text-[11px] font-medium tracking-wide text-muted-foreground uppercase">
                   {item.label}
@@ -217,12 +226,12 @@ export function LandingPage() {
         </div>
       </section>
 
-      <section className="section-y bg-white" aria-label="What we offer">
+      <section className="section-y bg-white" aria-label="What you get">
         <div className="page-container">
           <FadeIn>
             <div className="mb-6 text-center sm:mb-8">
               <p className="mb-1.5 text-xs font-semibold tracking-[0.22em] text-navy uppercase">
-                Tools
+                For you
               </p>
               <h2 className="text-xl font-bold tracking-tight text-navy sm:text-2xl">
                 What you get here
@@ -239,7 +248,7 @@ export function LandingPage() {
                     "group surface-card-interactive flex h-full flex-col p-4 sm:p-5"
                   )}
                 >
-                  <span className="mb-3 inline-flex size-10 items-center justify-center rounded-lg bg-accent text-primary">
+                  <span className="mb-3 inline-flex size-10 items-center justify-center rounded-xl bg-accent text-primary transition-transform duration-300 group-hover:scale-105">
                     <card.icon className="size-5" strokeWidth={1.75} />
                   </span>
                   <h3 className="text-base font-semibold text-navy group-hover:text-primary">

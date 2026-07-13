@@ -51,7 +51,7 @@ export function BlueprintPage() {
     <PageShell>
       <PageHero
         tone="default"
-        eyebrow="Shareable Resource"
+        eyebrow="Policy Fixes"
         title="The Progressive Blueprint"
         description="The fix, the receipts, and the gaslight exposed."
         tip="Open any pillar for evidence, timelines, and shareable pages."

@@ -66,7 +66,7 @@ export const sitemapSections: SitemapSection[] = [
       {
         href: "/start",
         label: "Start Here - Guided Tour",
-        description: "Seven stops: tools first, Mission last.",
+        description: "A quick walkthrough of every tool.",
         badge: "New",
       },
       {
