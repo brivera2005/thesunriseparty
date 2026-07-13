@@ -2,7 +2,7 @@
  * Cache-first on HTML/CSS was serving pre-Pass-35 layouts on phones.
  * Documents and styles now network-first; only offline fallback uses cache.
  */
-const CACHE = "sunrise-v47-20260713T1630";
+const CACHE = "sunrise-v47-20260713T1645-final";
 const PRECACHE = [
   "/manifest.webmanifest",
   "/icon-192.png",

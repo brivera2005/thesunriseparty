@@ -15,7 +15,7 @@ export const changelog: ChangelogEntry[] = [
       "Homepage: TRACK. COUNTER. FIX. + LIVE BILLS. SOURCED ANSWERS. REAL IMPACT. RIGHT NOW. then grid only — no For you / What you get / redundant hero CTAs",
       "Tracker rebuilt timeline-first (observer-style): month groups, chronological scrubber, newest/oldest sort, date-range + category + severity filters, detail slideover",
       "Header remains single-row desktop / hamburger left of Search on mobile; no hero duplicate logo",
-      "SW cache hard-bumped to sunrise-v47-20260713T1630",
+      "SW cache hard-bumped to sunrise-v47-20260713T1645-final",
     ],
   },
   {
