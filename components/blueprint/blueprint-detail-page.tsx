@@ -24,6 +24,7 @@ import { cn } from "@/lib/utils";
 import { SITE_URL } from "@/lib/metadata";
 import { PageShell } from "@/components/layout/page-shell";
 import { PolicyEvidencePanel } from "./policy-evidence-panel";
+import { OppositionFramingPanel } from "./opposition-framing-panel";
 
 const safeguardIcons: Record<string, React.ReactNode> = {
   "SAFE-001": <Ban className="size-5 text-primary" />,
@@ -123,11 +124,18 @@ function PolicyFixDetail({ policy }: { policy: PolicyFix }) {
           </div>
         </div>
 
+        <OppositionFramingPanel
+          fields={{
+            whyTheyFight: policy.whyTheyFight,
+            whatTheyHide: policy.whatTheyHide,
+            theGaslight: policy.theGaslight,
+            whyTheyOppose: policy.whyTheyOppose,
+          }}
+        />
+
         <PolicyEvidencePanel
           fields={{
             whyItWorks: policy.whyItWorks,
-            whyPeopleCallItExtreme: policy.whyPeopleCallItExtreme,
-            theGaslight: policy.theGaslight,
             alreadyWorksWhere: policy.alreadyWorksWhere,
           }}
         />

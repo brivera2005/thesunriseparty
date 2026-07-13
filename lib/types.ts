@@ -75,6 +75,18 @@ export interface ImplementationPhase {
   description: string;
 }
 
+/** Pass 44b: opposition framing shown prominently on Blueprint */
+export interface PolicyOppositionFraming {
+  /** Why they fight it / why they do not want it */
+  whyTheyFight: string;
+  /** What the opposition conceals */
+  whatTheyHide: string;
+  /** How they frame reform as extreme or impossible */
+  gaslightMove: string;
+  /** BIG reason: money, power, donors, liability */
+  whyTheyOppose: string;
+}
+
 export interface PolicyFix {
   id: string;
   category: string;
@@ -97,6 +109,12 @@ export interface PolicyFix {
   theGaslight?: string;
   /** Peer nations / U.S. states already running a version of this */
   alreadyWorksWhere?: string;
+  /** Why opponents fight this policy */
+  whyTheyFight?: string;
+  /** What opponents conceal about costs, evidence, or beneficiaries */
+  whatTheyHide?: string;
+  /** BIG reason they oppose: money, power, donors, liability */
+  whyTheyOppose?: string;
 }
 
 export interface SafeguardItem {

@@ -1,7 +1,8 @@
 import type { PolicyFix, SafeguardItem } from "@/lib/types";
 import { citations } from "./citations";
+import { policyOppositionById } from "./policy-opposition";
 
-export const policyFixes: PolicyFix[] = [
+const policyFixesBase: PolicyFix[] = [
   {
     id: "FIX-HC-001",
     category: "Healthcare",
@@ -1614,6 +1615,21 @@ export const policyFixes: PolicyFix[] = [
     ],
   }
 ];
+
+/** Merge Pass 44b opposition framing onto every FIX policy */
+export const policyFixes: PolicyFix[] = policyFixesBase.map((policy) => {
+  const opposition = policyOppositionById[policy.id];
+  if (!opposition) return policy;
+  return {
+    ...policy,
+    whyTheyFight: opposition.whyTheyFight,
+    whatTheyHide: opposition.whatTheyHide,
+    whyTheyOppose: opposition.whyTheyOppose,
+    // Strengthen legacy gaslight / extreme fields from opposition copy
+    theGaslight: opposition.gaslightMove,
+    whyPeopleCallItExtreme: opposition.whyTheyFight,
+  };
+});
 
 export const safeguardItems: SafeguardItem[] = [
   {

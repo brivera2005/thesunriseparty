@@ -8,6 +8,17 @@ export interface ChangelogEntry {
 /** Site iteration history - meta transparency for Project Sunrise builds */
 export const changelog: ChangelogEntry[] = [
   {
+    version: "0.44.1",
+    date: "2026-07-13",
+    title: "Pass 44b - Blueprint opposition framing",
+    highlights: [
+      "Every FIX policy now answers: Why they fight it, What they're hiding, The gaslight, The real reason (money/power/donors)",
+      "New fields whyTheyFight, whatTheyHide, whyTheyOppose plus strengthened theGaslight; receipt-backed copy (EPI, OpenSecrets, CBO, KFF, OECD)",
+      "Prominent sky-accent Opposition framing panel on /blueprint and /blueprint/[id] (always visible, not buried)",
+      "SW cache bumped to sunrise-v44b",
+    ],
+  },
+  {
     version: "0.44.0",
     date: "2026-07-13",
     title: "Pass 44 - Compact nav under logo",

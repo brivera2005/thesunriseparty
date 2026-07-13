@@ -16,6 +16,7 @@ import { Shield, Lock, Scale, Eye, Ban, ExternalLink, CalendarClock, Link2, Chec
 import { cn } from "@/lib/utils";
 import { BlueprintHashNav } from "./blueprint-hash-nav";
 import { PolicyEvidencePanel } from "./policy-evidence-panel";
+import { OppositionFramingPanel } from "./opposition-framing-panel";
 import { SITE_URL } from "@/lib/metadata";
 
 const safeguardIcons: Record<string, React.ReactNode> = {
@@ -182,11 +183,18 @@ export function BlueprintSection({
                     </div>
                   </div>
 
+                  <OppositionFramingPanel
+                    fields={{
+                      whyTheyFight: policy.whyTheyFight,
+                      whatTheyHide: policy.whatTheyHide,
+                      theGaslight: policy.theGaslight,
+                      whyTheyOppose: policy.whyTheyOppose,
+                    }}
+                  />
+
                   <PolicyEvidencePanel
                     fields={{
                       whyItWorks: policy.whyItWorks,
-                      whyPeopleCallItExtreme: policy.whyPeopleCallItExtreme,
-                      theGaslight: policy.theGaslight,
                       alreadyWorksWhere: policy.alreadyWorksWhere,
                     }}
                   />

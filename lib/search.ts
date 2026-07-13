@@ -102,6 +102,9 @@ export function buildSearchIndex(): SearchResult[] {
       policy.whyPeopleCallItExtreme ?? "",
       policy.theGaslight ?? "",
       policy.alreadyWorksWhere ?? "",
+      policy.whyTheyFight ?? "",
+      policy.whatTheyHide ?? "",
+      policy.whyTheyOppose ?? "",
       ...policy.safeguards,
       policy.id,
     ].join(" ");
