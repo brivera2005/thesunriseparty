@@ -1,12 +1,14 @@
 {
   "name": "project-sunrise",
-  "version": "0.48.0",
+  "version": "0.49.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "generate-feed": "npx tsx scripts/generate-feed.ts",
     "generate-data": "npx tsx scripts/generate-data-export.ts",
     "fetch-legislation": "npx tsx scripts/fetch-legislation.ts",
+    "refresh:tracker": "npx tsx scripts/update-tracker-data.ts",
+    "deploy:pages": "npx wrangler pages deploy out --project-name=thesunriseparty --branch=main",
     "prebuild": "npm run generate-feed && npx tsx scripts/generate-seo.ts && npm run generate-data",
     "build": "next build",
     "start": "next start",

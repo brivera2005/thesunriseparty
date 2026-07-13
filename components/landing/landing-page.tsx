@@ -97,7 +97,7 @@ export function LandingPage() {
         />
         <div className="page-container relative flex flex-col items-center py-12 text-center sm:py-16 lg:py-20">
           <FadeIn>
-            <h1 className="text-3xl font-bold tracking-[0.06em] text-navy uppercase sm:text-4xl lg:text-5xl">
+            <h1 className="mx-auto max-w-full overflow-hidden px-2 text-[clamp(1.05rem,5.5vw,1.875rem)] font-bold tracking-[0.03em] text-navy uppercase whitespace-nowrap sm:px-0 sm:text-4xl sm:tracking-[0.06em] lg:text-5xl">
               Track. Counter. Fix.
             </h1>
             <p className="mx-auto mt-3 max-w-full overflow-hidden px-2 text-[clamp(9px,2.65vw,0.875rem)] font-semibold tracking-[0.04em] text-navy/55 uppercase whitespace-nowrap sm:mt-4 sm:tracking-[0.08em] md:text-base md:tracking-[0.1em]">

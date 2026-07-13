@@ -8,6 +8,16 @@ export interface ChangelogEntry {
 /** Site iteration history - meta transparency for Project Sunrise builds */
 export const changelog: ChangelogEntry[] = [
   {
+    version: "0.49.0",
+    date: "2026-07-13",
+    title: "Pass 49 - One-line hero headline",
+    highlights: [
+      "TRACK. COUNTER. FIX. uses mobile clamp + whitespace-nowrap so all three words fit one line",
+      "Desktop unchanged (sm:text-4xl / lg:text-5xl)",
+      "SW cache hard-bumped to sunrise-v49-20260713T1548-headline",
+    ],
+  },
+  {
     version: "0.48.0",
     date: "2026-07-13",
     title: "Pass 48 - Mobile homepage density",
