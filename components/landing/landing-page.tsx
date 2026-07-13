@@ -7,6 +7,7 @@ import {
   BookMarked,
   BookOpen,
   Compass,
+  GitBranch,
   Handshake,
   Heart,
   History,
@@ -23,18 +24,20 @@ import { getTrackerStats } from "@/lib/data/timeline-events";
 import { getHistoryStats } from "@/lib/data/hidden-history";
 import { getLegislationStats } from "@/lib/data/legislation";
 import { policyFixes } from "@/lib/data/policies";
+import { getScenarioStats } from "@/lib/data/scenarios";
 import { cn } from "@/lib/utils";
 
 const historyStats = getHistoryStats();
 const trackerStats = getTrackerStats();
 const legislationStats = getLegislationStats();
+const scenarioStats = getScenarioStats();
 
 const platformCards = [
   {
     href: "/rebuttal",
     title: "Rebuttal Desk",
     description:
-      "Copy-ready counters to common claims — every response backed by primary sources.",
+      "Copy-ready counters to common claims - every response backed by primary sources.",
     icon: MessageSquareQuote,
     meta: `${conversationHelpers.length}+ rebuttals`,
   },
@@ -61,6 +64,14 @@ const platformCards = [
       "119th Congress bills with party-colored sponsors, roll-call tallies, and progressive analysis.",
     icon: Landmark,
     meta: `${legislationStats.total} bills · updated ${legislationStats.lastUpdated}`,
+  },
+  {
+    href: "/scenarios",
+    title: "Impact Scenarios",
+    description:
+      "Complex causal chains from administration actions and congressional blockage to lived family outcomes.",
+    icon: GitBranch,
+    meta: `${scenarioStats.total} causal scenarios`,
   },
   {
     href: "/blueprint",

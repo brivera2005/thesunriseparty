@@ -58,6 +58,11 @@ const moreNav: {
   description: string;
 }[] = [
   {
+    label: "Scenarios",
+    href: "/scenarios",
+    description: "Causal chains from policy choices to lived family outcomes.",
+  },
+  {
     label: "Mission",
     href: "/mission",
     description: "Why we exist, how we cite, and how we stay accountable.",

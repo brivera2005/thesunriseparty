@@ -158,4 +158,17 @@ export const sectionOg = {
       },
     ],
   },
+  scenarios: {
+    title: "Impact Scenarios | Project Sunrise",
+    description:
+      "Complex causal chains from policy choices to lived outcomes - families, workers, and elders with Tracker and Blueprint receipts.",
+    images: [
+      {
+        url: `${SITE_URL}/og/sunrise-default.svg`,
+        width: 1200,
+        height: 630,
+        alt: "Project Sunrise - Impact Scenarios",
+      },
+    ],
+  },
 };

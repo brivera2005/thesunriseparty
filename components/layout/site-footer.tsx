@@ -18,6 +18,7 @@ const sitePages = [
   { href: "/events", label: "Events Hub" },
   { href: "/tracker", label: "Project 2025 Tracker" },
   { href: "/legislation", label: "Live Legislation" },
+  { href: "/scenarios", label: "Impact Scenarios" },
   { href: "/blueprint", label: "Progressive Blueprint" },
   { href: "/rebuttal", label: "Rebuttal Desk" },
   { href: "/history", label: "Hidden History" },
