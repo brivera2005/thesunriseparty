@@ -13,8 +13,6 @@ import {
   History,
   Landmark,
   MessageSquareQuote,
-  Scale,
-  ShieldCheck,
 } from "lucide-react";
 import { PageShell } from "@/components/layout/page-shell";
 import { BrandLogo } from "@/components/brand-logo";
@@ -45,22 +43,10 @@ const livePulse: {
   section: SectionId;
 }[] = [
   {
-    label: "Bills updated",
-    value: billsUpdated,
-    href: "/legislation",
-    section: "legislation",
-  },
-  {
     label: "High-severity actions",
     value: String(trackerStats.highSeverity),
     href: "/tracker",
     section: "tracker",
-  },
-  {
-    label: "Impact scenarios",
-    value: String(scenarioStats.total),
-    href: "/scenarios",
-    section: "scenarios",
   },
   {
     label: "Live rebuttals",
@@ -68,8 +54,21 @@ const livePulse: {
     href: "/rebuttal",
     section: "rebuttal",
   },
+  {
+    label: "Bills updated",
+    value: billsUpdated,
+    href: "/legislation",
+    section: "legislation",
+  },
+  {
+    label: "Impact scenarios",
+    value: String(scenarioStats.total),
+    href: "/scenarios",
+    section: "scenarios",
+  },
 ];
 
+/** Primary tools match header nav order; Start/Donate/Contribute are footer-only. */
 const platformCards: {
   href: string;
   title: string;
@@ -79,6 +78,14 @@ const platformCards: {
   section: SectionId;
 }[] = [
   {
+    href: "/tracker",
+    title: "Project 2025 Tracker",
+    description: "Admin actions scored by severity, every claim cited.",
+    icon: Activity,
+    meta: `${trackerStats.highSeverity} high-severity`,
+    section: "tracker",
+  },
+  {
     href: "/rebuttal",
     title: "Rebuttal Desk",
     description: "Someone lied. Get the sourced answer, ready to copy.",
@@ -87,28 +94,20 @@ const platformCards: {
     section: "rebuttal",
   },
   {
+    href: "/legislation",
+    title: "Legislation",
+    description: "Live bills, sponsors, and party votes. Updated continuously.",
+    icon: Landmark,
+    meta: `${legislationStats.total} bills · ${billsUpdated}`,
+    section: "legislation",
+  },
+  {
     href: "/history",
     title: "Hidden History",
     description: "Textbook story vs. what the archives actually show.",
     icon: History,
     meta: `${historyStats.entries}+ moments`,
     section: "history",
-  },
-  {
-    href: "/tracker",
-    title: "Tracker",
-    description: "Admin actions scored by severity, every claim cited.",
-    icon: Activity,
-    meta: `${trackerStats.highSeverity} high-severity`,
-    section: "tracker",
-  },
-  {
-    href: "/legislation",
-    title: "Live Legislation",
-    description: "Live bills, sponsors, and party votes. Updated continuously.",
-    icon: Landmark,
-    meta: `${legislationStats.total} bills · ${billsUpdated}`,
-    section: "legislation",
   },
   {
     href: "/scenarios",
@@ -128,27 +127,20 @@ const platformCards: {
   },
   {
     href: "/mission",
-    title: "Mission",
-    description: "Why we exist and how we stay honest.",
+    title: "About",
+    description:
+      "Mission, accountability, and methodology - why we exist and how we verify.",
     icon: Compass,
-    meta: "Transparency pledge",
+    meta: "Mission · Accountability · Methodology",
     section: "mission",
   },
   {
-    href: "/accountability",
-    title: "Accountability",
-    description: "Follow the money, the courts, and power.",
-    icon: Scale,
-    meta: "Dark money & courts",
-    section: "accountability",
-  },
-  {
-    href: "/methodology",
-    title: "Methodology",
-    description: "How we score, verify, and archive every claim.",
-    icon: ShieldCheck,
-    meta: "How we verify",
-    section: "methodology",
+    href: "/saved",
+    title: "Saved",
+    description: "Your bookmarks on this device only.",
+    icon: BookMarked,
+    meta: "Private to you",
+    section: "saved",
   },
   {
     href: "/donate",
@@ -165,14 +157,6 @@ const platformCards: {
     icon: Handshake,
     meta: "Community input",
     section: "contribute",
-  },
-  {
-    href: "/saved",
-    title: "Saved",
-    description: "Your bookmarks on this device only.",
-    icon: BookMarked,
-    meta: "Private to you",
-    section: "saved",
   },
 ];
 
@@ -204,10 +188,10 @@ export function LandingPage() {
           <FadeIn delay={160}>
             <div className="mt-7 flex flex-wrap items-center justify-center gap-2.5 sm:mt-8 sm:gap-3">
               <Link
-                href="/start"
+                href="/tracker"
                 className="inline-flex h-12 min-w-[44px] items-center gap-2 rounded-xl bg-primary px-6 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 hover:shadow-md"
               >
-                Start here
+                Project 2025 Tracker
                 <ArrowRight className="size-4" />
               </Link>
               <Link
@@ -220,7 +204,7 @@ export function LandingPage() {
                 href="/legislation"
                 className="inline-flex h-12 min-w-[44px] items-center gap-2 rounded-xl border border-[color:var(--section-legislation)]/40 bg-white px-6 text-sm font-semibold text-navy transition-all hover:bg-[color:var(--section-legislation-soft)]"
               >
-                Live bills
+                Legislation
               </Link>
             </div>
           </FadeIn>

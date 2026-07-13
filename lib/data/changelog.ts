@@ -8,6 +8,17 @@ export interface ChangelogEntry {
 /** Site iteration history - meta transparency for Project Sunrise builds */
 export const changelog: ChangelogEntry[] = [
   {
+    version: "0.44.0",
+    date: "2026-07-13",
+    title: "Pass 44 - Compact nav under logo",
+    highlights: [
+      "Header rebuilt: logo on top row, compact 7-item nav grid underneath (2-col mobile / 4-col tablet / 7-col desktop)",
+      "Nav order: Project 2025 Tracker · Rebuttal Desk · Legislation · Hidden History · Scenarios · Blueprint · About",
+      "Start, Contribute, and Donate removed from header (footer only); Mission + Accountability + Methodology grouped as About → /mission",
+      "Homepage section cards and hero CTAs match nav priority; SW cache bumped to sunrise-v44",
+    ],
+  },
+  {
     version: "0.43.0",
     date: "2026-07-13",
     title: "Pass 43 - Full nav grid + section colors + US dates + contacts",

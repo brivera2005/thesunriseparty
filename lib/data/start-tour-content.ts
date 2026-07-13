@@ -32,6 +32,17 @@ export const startTourIntro = {
 export const tourSteps: TourStep[] = [
   {
     step: 1,
+    title: "Project 2025 Tracker",
+    whatItIs:
+      "What's happening now, scored by how bad it is, with receipts.",
+    whatYouDo: "Filter by category or severity, then open any event.",
+    icon: Activity,
+    href: "/tracker",
+    cta: "Open Tracker",
+    section: "tracker",
+  },
+  {
+    step: 2,
     title: "Rebuttal Desk",
     whatItIs: "Someone just lied to you. Here's the answer with sources.",
     whatYouDo:
@@ -42,7 +53,18 @@ export const tourSteps: TourStep[] = [
     section: "rebuttal",
   },
   {
-    step: 2,
+    step: 3,
+    title: "Legislation",
+    whatItIs:
+      "Live bills in Congress. Who sponsored them. How they voted.",
+    whatYouDo: "Scan active bills and read the progressive analysis.",
+    icon: Landmark,
+    href: "/legislation",
+    cta: "Open Legislation",
+    section: "legislation",
+  },
+  {
+    step: 4,
     title: "Hidden History",
     whatItIs:
       "What the textbook left out, and what the archives prove.",
@@ -52,28 +74,6 @@ export const tourSteps: TourStep[] = [
     href: "/history",
     cta: "Open Hidden History",
     section: "history",
-  },
-  {
-    step: 3,
-    title: "Tracker",
-    whatItIs:
-      "What's happening now, scored by how bad it is, with receipts.",
-    whatYouDo: "Filter by category or severity, then open any event.",
-    icon: Activity,
-    href: "/tracker",
-    cta: "Open Tracker",
-    section: "tracker",
-  },
-  {
-    step: 4,
-    title: "Legislation",
-    whatItIs:
-      "Live bills in Congress. Who sponsored them. How they voted.",
-    whatYouDo: "Scan active bills and read the progressive analysis.",
-    icon: Landmark,
-    href: "/legislation",
-    cta: "Open Live bills",
-    section: "legislation",
   },
   {
     step: 5,
@@ -99,14 +99,14 @@ export const tourSteps: TourStep[] = [
   },
   {
     step: 7,
-    title: "Mission",
+    title: "About",
     whatItIs:
-      "Why Project Sunrise exists, and the pledge that keeps us honest.",
+      "Mission, accountability, and methodology - why we exist and how we verify.",
     whatYouDo:
-      "Read the transparency pledge, then dig into methodology if you want.",
+      "Read the transparency pledge, then dig into accountability or methodology.",
     icon: Compass,
     href: "/mission",
-    cta: "Read Mission",
+    cta: "Read About",
     section: "mission",
   },
 ];

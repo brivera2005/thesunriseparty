@@ -86,17 +86,72 @@ export function MissionPage() {
             <div className="mt-8 flex flex-wrap gap-3">
               <ShareButton />
               <Link
+                href="/accountability"
+                className={cn(buttonVariants({ variant: "outline", size: "sm" }), "gap-2")}
+              >
+                Accountability
+              </Link>
+              <Link
                 href="/methodology"
                 className={cn(buttonVariants({ variant: "outline", size: "sm" }), "gap-2")}
               >
-                Research Methodology
+                Methodology
               </Link>
               <Link
-                href="/#tracker"
+                href="/tracker"
                 className={cn(buttonVariants({ size: "sm" }), "gap-2")}
               >
                 Explore the Tracker
                 <ChevronDown className="size-4" />
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* About group: Mission + Accountability + Methodology */}
+        <section
+          className="scroll-mt-16 border-b border-border bg-muted/20 py-10 sm:py-12"
+          id="about"
+          aria-label="About Project Sunrise"
+        >
+          <div className="mx-auto max-w-4xl px-4 sm:px-6">
+            <p className="mb-2 text-xs font-semibold tracking-[0.2em] text-muted-foreground uppercase">
+              About
+            </p>
+            <h2 className="mb-3 text-2xl font-bold tracking-tight sm:text-3xl">
+              Mission, accountability, methodology
+            </h2>
+            <p className="mb-6 max-w-2xl text-sm leading-relaxed text-muted-foreground sm:text-base">
+              One place for why we exist, how we follow power, and how every claim
+              is scored and archived.
+            </p>
+            <div className="grid gap-3 sm:grid-cols-3">
+              <a
+                href="#pledge"
+                className="rounded-xl border border-border bg-white p-4 transition-colors hover:border-primary/40"
+              >
+                <p className="text-sm font-semibold text-navy">Mission</p>
+                <p className="mt-1 text-xs text-muted-foreground">
+                  Transparency pledge and anti-plutocracy stance.
+                </p>
+              </a>
+              <Link
+                href="/accountability"
+                className="rounded-xl border border-border bg-white p-4 transition-colors hover:border-primary/40"
+              >
+                <p className="text-sm font-semibold text-navy">Accountability</p>
+                <p className="mt-1 text-xs text-muted-foreground">
+                  Dark money, courts, and elite capture.
+                </p>
+              </Link>
+              <Link
+                href="/methodology"
+                className="rounded-xl border border-border bg-white p-4 transition-colors hover:border-primary/40"
+              >
+                <p className="text-sm font-semibold text-navy">Methodology</p>
+                <p className="mt-1 text-xs text-muted-foreground">
+                  How we score, verify, and archive.
+                </p>
               </Link>
             </div>
           </div>
