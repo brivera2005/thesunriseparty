@@ -7,7 +7,6 @@ import {
   ArrowRight,
   Calendar,
   Share2,
-  SlidersHorizontal,
 } from "lucide-react";
 import {
   timelineEvents,
@@ -19,6 +18,10 @@ import { EventDetailSlideover } from "@/components/tracker/event-detail-slideove
 import { TrackerTimelineScrubber } from "@/components/tracker/tracker-timeline-scrubber";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import {
+  CollapsibleFilters,
+  FilterPanelSection,
+} from "@/components/ui/collapsible-filters";
 import { cn } from "@/lib/utils";
 import { formatMonthUS } from "@/lib/format-date";
 
@@ -124,21 +127,44 @@ export function TrackerTimelineFeed() {
     el?.scrollIntoView({ behavior: "smooth", block: "center" });
   };
 
+  const activeFilterCount =
+    (activeCategory !== "All" ? 1 : 0) +
+    (minSeverity > 1 ? 1 : 0) +
+    (dateFrom ? 1 : 0) +
+    (dateTo ? 1 : 0) +
+    (sortMode !== "date-desc" ? 1 : 0);
+
+  const clearFilters = () => {
+    setDateFrom("");
+    setDateTo("");
+    setMinSeverity(1);
+    setActiveCategory("All");
+    setSortMode("date-desc");
+  };
+
   return (
     <section className="section-y-tight bg-white" aria-label="Event timeline">
       <div className="page-container">
-        {/* Sticky filter / sort bar */}
-        <div className="sticky top-14 z-30 -mx-4 mb-6 border-b border-border bg-white/95 px-4 py-3 backdrop-blur-lg supports-[backdrop-filter]:bg-white/90 sm:-mx-6 sm:px-6 lg:top-16">
-          <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
+        <CollapsibleFilters
+          sticky
+          className="-mx-4 mb-6 px-4 sm:-mx-6 sm:px-6 lg:top-16"
+          activeCount={activeFilterCount}
+          label="Sort & filter"
+          summary={`${filtered.length} of ${timelineEvents.length} events`}
+          onClear={clearFilters}
+          leading={
             <p className="text-xs font-semibold tracking-[0.18em] text-navy/50 uppercase">
-              Timeline · {filtered.length} of {timelineEvents.length} events
+              Timeline
             </p>
+          }
+        >
+          <FilterPanelSection label="Sort">
             <div className="flex items-center gap-2">
               <ArrowDownUp className="size-3.5 text-navy/40" />
               <select
                 value={sortMode}
                 onChange={(e) => setSortMode(e.target.value as SortMode)}
-                className="h-8 rounded-md border border-border bg-white px-2.5 text-xs font-medium text-navy"
+                className="h-9 w-full rounded-md border border-border bg-white px-2.5 text-xs font-medium text-navy"
                 aria-label="Sort timeline"
               >
                 <option value="date-desc">Newest first</option>
@@ -147,52 +173,57 @@ export function TrackerTimelineFeed() {
                 <option value="severity-asc">Lowest severity</option>
               </select>
             </div>
-          </div>
+          </FilterPanelSection>
 
-          <div className="mb-3 flex flex-wrap gap-1.5">
-            {timelineCategories.map((cat) => (
-              <Button
-                key={cat}
-                variant={activeCategory === cat ? "default" : "outline"}
-                size="sm"
-                onClick={() => setActiveCategory(cat)}
-                className={cn(
-                  "h-7 px-2.5 text-xs",
-                  activeCategory === cat
-                    ? "bg-navy text-white hover:bg-navy/90"
-                    : "border-navy/15 text-navy/70 hover:bg-navy/[0.04]"
-                )}
-              >
-                {cat}
-              </Button>
-            ))}
-          </div>
+          <FilterPanelSection label="Category">
+            <div className="flex flex-wrap gap-1.5">
+              {timelineCategories.map((cat) => (
+                <Button
+                  key={cat}
+                  variant={activeCategory === cat ? "default" : "outline"}
+                  size="sm"
+                  onClick={() => setActiveCategory(cat)}
+                  className={cn(
+                    "h-8 px-2.5 text-xs",
+                    activeCategory === cat
+                      ? "bg-navy text-white hover:bg-navy/90"
+                      : "border-navy/15 text-navy/70 hover:bg-navy/[0.04]"
+                  )}
+                >
+                  {cat}
+                </Button>
+              ))}
+            </div>
+          </FilterPanelSection>
 
-          <div className="flex flex-wrap items-center gap-3">
-            <label className="flex items-center gap-2 text-xs text-muted-foreground">
-              <span className="font-medium text-navy/60">From</span>
-              <input
-                type="date"
-                value={dateFrom}
-                onChange={(e) => setDateFrom(e.target.value)}
-                className="h-8 rounded-md border border-border bg-white px-2 text-xs"
-                aria-label="Filter from date"
-              />
-            </label>
-            <label className="flex items-center gap-2 text-xs text-muted-foreground">
-              <span className="font-medium text-navy/60">To</span>
-              <input
-                type="date"
-                value={dateTo}
-                onChange={(e) => setDateTo(e.target.value)}
-                className="h-8 rounded-md border border-border bg-white px-2 text-xs"
-                aria-label="Filter to date"
-              />
-            </label>
-            <div className="flex items-center gap-2 text-xs text-muted-foreground">
-              <SlidersHorizontal className="size-3.5" />
-              <span className="font-medium text-navy/60">Min severity</span>
-              <span className={cn("font-bold tabular-nums", severityText(minSeverity))}>
+          <FilterPanelSection label="Date range">
+            <div className="flex flex-wrap items-center gap-3">
+              <label className="flex flex-1 min-w-[8rem] items-center gap-2 text-xs text-muted-foreground">
+                <span className="font-medium text-navy/60">From</span>
+                <input
+                  type="date"
+                  value={dateFrom}
+                  onChange={(e) => setDateFrom(e.target.value)}
+                  className="h-9 w-full rounded-md border border-border bg-white px-2 text-xs"
+                  aria-label="Filter from date"
+                />
+              </label>
+              <label className="flex flex-1 min-w-[8rem] items-center gap-2 text-xs text-muted-foreground">
+                <span className="font-medium text-navy/60">To</span>
+                <input
+                  type="date"
+                  value={dateTo}
+                  onChange={(e) => setDateTo(e.target.value)}
+                  className="h-9 w-full rounded-md border border-border bg-white px-2 text-xs"
+                  aria-label="Filter to date"
+                />
+              </label>
+            </div>
+          </FilterPanelSection>
+
+          <FilterPanelSection label="Min severity">
+            <div className="flex flex-wrap items-center gap-3">
+              <span className={cn("text-sm font-bold tabular-nums", severityText(minSeverity))}>
                 {minSeverity}+
               </span>
               <input
@@ -202,33 +233,20 @@ export function TrackerTimelineFeed() {
                 step={1}
                 value={minSeverity}
                 onChange={(e) => setMinSeverity(Number(e.target.value))}
-                className="h-1.5 w-28 cursor-pointer accent-navy sm:w-40"
+                className="h-1.5 min-w-[10rem] flex-1 cursor-pointer accent-navy"
                 aria-label="Minimum severity filter"
               />
             </div>
-            {(dateFrom || dateTo || minSeverity > 1 || activeCategory !== "All") && (
-              <Button
-                variant="ghost"
-                size="sm"
-                className="h-8 text-xs"
-                onClick={() => {
-                  setDateFrom("");
-                  setDateTo("");
-                  setMinSeverity(1);
-                  setActiveCategory("All");
-                }}
-              >
-                Reset filters
-              </Button>
-            )}
-          </div>
-        </div>
+          </FilterPanelSection>
 
-        <TrackerTimelineScrubber
-          events={filtered}
-          selectedId={selectedEvent.Event_ID}
-          onSelect={jumpToEvent}
-        />
+          <FilterPanelSection label="Timeline scrubber">
+            <TrackerTimelineScrubber
+              events={filtered}
+              selectedId={selectedEvent.Event_ID}
+              onSelect={jumpToEvent}
+            />
+          </FilterPanelSection>
+        </CollapsibleFilters>
 
         {/* Vertical timeline feed */}
         <div ref={listRef} className="relative mx-auto max-w-3xl">

@@ -16,6 +16,10 @@ import { StudyMode } from "@/components/rebuttal/study-mode";
 import { QuizMode } from "@/components/rebuttal/quiz-mode";
 import { LazyVisible } from "@/components/rebuttal/lazy-visible";
 import { RebuttalDifficultyFilter } from "@/components/rebuttal/rebuttal-difficulty-filter";
+import {
+  CollapsibleFilters,
+  FilterPanelSection,
+} from "@/components/ui/collapsible-filters";
 import { cn } from "@/lib/utils";
 
 const LAZY_AFTER_INDEX = 8;
@@ -89,6 +93,14 @@ export function RebuttalDeskSection({
     return results;
   }, [activeCategory, activeDifficulty, search, compact, limit]);
 
+  const activeFilterCount =
+    (activeCategory !== "All" ? 1 : 0) + (activeDifficulty !== "All" ? 1 : 0);
+
+  const clearFilters = () => {
+    setActiveCategory("All");
+    setActiveDifficulty("All");
+  };
+
   return (
     <section
       id="rebuttal-desk"
@@ -124,7 +136,7 @@ export function RebuttalDeskSection({
         {!compact && (
         <>
         <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-center">
-          <div className="relative flex-1">
+          <div className="relative min-w-0 flex-1">
             <Search className="absolute top-1/2 left-3 size-4 -translate-y-1/2 text-muted-foreground" />
             <Input
               placeholder="Search claims, responses, categories..."
@@ -180,29 +192,38 @@ export function RebuttalDeskSection({
         </div>
 
         {!studyMode && !quizMode && (
-        <>
-        <RebuttalDifficultyFilter
-          value={activeDifficulty}
-          onChange={setActiveDifficulty}
-          className="mb-4"
-        />
-        <div className="mb-8 flex flex-wrap gap-2">
-          {rebuttalCategories.map((cat) => (
-            <Button
-              key={cat}
-              variant={activeCategory === cat ? "default" : "outline"}
-              size="sm"
-              onClick={() => setActiveCategory(cat)}
-              className={cn(
-                activeCategory === cat &&
-                  "bg-sunrise text-sunrise-foreground hover:bg-sunrise/90"
-              )}
-            >
-              {cat}
-            </Button>
-          ))}
-        </div>
-        </>
+        <CollapsibleFilters
+          className="mb-8"
+          activeCount={activeFilterCount}
+          label="Filters"
+          summary={`${filtered.length} entries`}
+          onClear={clearFilters}
+        >
+          <FilterPanelSection label="Difficulty">
+            <RebuttalDifficultyFilter
+              value={activeDifficulty}
+              onChange={setActiveDifficulty}
+            />
+          </FilterPanelSection>
+          <FilterPanelSection label="Category">
+            <div className="flex flex-wrap gap-2">
+              {rebuttalCategories.map((cat) => (
+                <Button
+                  key={cat}
+                  variant={activeCategory === cat ? "default" : "outline"}
+                  size="sm"
+                  onClick={() => setActiveCategory(cat)}
+                  className={cn(
+                    activeCategory === cat &&
+                      "bg-sunrise text-sunrise-foreground hover:bg-sunrise/90"
+                  )}
+                >
+                  {cat}
+                </Button>
+              ))}
+            </div>
+          </FilterPanelSection>
+        </CollapsibleFilters>
         )}
         </>
         )}

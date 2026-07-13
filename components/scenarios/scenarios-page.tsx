@@ -6,6 +6,10 @@ import { PageShell } from "@/components/layout/page-shell";
 import { PageHero } from "@/components/layout/page-hero";
 import { ScenarioCard } from "@/components/scenarios/scenario-card";
 import { FilterChips } from "@/components/ui/filter-chips";
+import {
+  CollapsibleFilters,
+  FilterPanelSection,
+} from "@/components/ui/collapsible-filters";
 import { Button } from "@/components/ui/button";
 import {
   getScenarioStats,
@@ -56,6 +60,10 @@ export function ScenariosPage() {
     label: t === "All" ? `All (${stats.total})` : t,
   }));
 
+  const activeFilterCount = topic !== "All" ? 1 : 0;
+
+  const clearFilters = () => setTopic("All");
+
   return (
     <PageShell>
       <PageHero
@@ -77,17 +85,21 @@ export function ScenariosPage() {
 
       <section className="border-b border-border bg-white">
         <div className="page-container py-4 sm:py-5">
-          <FilterChips
-            label="Topic"
-            labelTip="Each scenario can appear under multiple topics."
-            options={chipOptions}
-            value={topic}
-            onChange={setTopic}
-          />
-          <p className="mt-3 text-xs text-muted-foreground">
-            Showing {filtered.length} scenario{filtered.length === 1 ? "" : "s"}
-            {topic !== "All" ? ` in ${topic}` : ""}.
-          </p>
+          <CollapsibleFilters
+            activeCount={activeFilterCount}
+            label="Filters"
+            summary={`${filtered.length} scenario${filtered.length === 1 ? "" : "s"}${topic !== "All" ? ` in ${topic}` : ""}`}
+            onClear={clearFilters}
+          >
+            <FilterPanelSection label="Topic">
+              <FilterChips
+                labelTip="Each scenario can appear under multiple topics."
+                options={chipOptions}
+                value={topic}
+                onChange={setTopic}
+              />
+            </FilterPanelSection>
+          </CollapsibleFilters>
         </div>
       </section>
 

@@ -1,8 +1,8 @@
 {
   "meta": {
     "site": "https://thesunriseparty.pages.dev",
-    "generated": "2026-07-13T15:39:03.598Z",
-    "count": 322,
+    "generated": "2026-07-13T16:03:06.254Z",
+    "count": 340,
     "license": "CC-BY-4.0 - cite Project Sunrise (thesunriseparty.pages.dev)"
   },
   "events": [
@@ -14790,6 +14790,630 @@
         {
           "name": "project2025.observer",
           "url": "https://www.project2025.observer"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-AUTO-20260708-26-13842",
+      "date": "2026-07-08",
+      "actionType": "Presidential Document",
+      "description": "250th Anniversary of the Adoption of the Declaration of Independence — auto-ingested from Federal Register; severity and narrative pending editorial review.",
+      "severity": 5,
+      "category": "Democracy",
+      "impactedSectors": [
+        "Democracy"
+      ],
+      "p2025Pillar": "Executive Authority",
+      "p2025Chapters": [],
+      "linkedFixId": null,
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-AUTO-20260708-26-13842",
+      "sources": [
+        {
+          "id": "fr_auto_2026_13842",
+          "title": "250th Anniversary of the Adoption of the Declaration of Independence",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/07/08/2026-13842/250th-anniversary-of-the-adoption-of-the-declaration-of-independence",
+          "date": "2026-07-08"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer/"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-AUTO-20260706-26-13631",
+      "date": "2026-07-06",
+      "actionType": "Presidential Document",
+      "description": "Presidential Determination on Assistance to Venezuela Consistent With the Trafficking Victims Protection Act of 2000 — auto-ingested from Federal Register; severity and narrative pending editorial review.",
+      "severity": 5,
+      "category": "Democracy",
+      "impactedSectors": [
+        "Democracy"
+      ],
+      "p2025Pillar": "Executive Authority",
+      "p2025Chapters": [],
+      "linkedFixId": null,
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-AUTO-20260706-26-13631",
+      "sources": [
+        {
+          "id": "fr_auto_2026_13631",
+          "title": "Presidential Determination on Assistance to Venezuela Consistent With the Trafficking Victims Protection Act of 2000",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/07/06/2026-13631/presidential-determination-on-assistance-to-venezuela-consistent-with-the-trafficking-victims",
+          "date": "2026-07-06"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer/"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-AUTO-20260702-26-13588",
+      "date": "2026-07-02",
+      "actionType": "Presidential Document",
+      "description": "Declaration of Emergency and Authorization for Temporary Duty-Free Importation of Phosphate Fertilizer From Morocco — auto-ingested from Federal Register; severity and narrative pending editorial review.",
+      "severity": 7,
+      "category": "Democracy",
+      "impactedSectors": [
+        "Democracy"
+      ],
+      "p2025Pillar": "Executive Authority",
+      "p2025Chapters": [],
+      "linkedFixId": null,
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-AUTO-20260702-26-13588",
+      "sources": [
+        {
+          "id": "fr_auto_2026_13588",
+          "title": "Declaration of Emergency and Authorization for Temporary Duty-Free Importation of Phosphate Fertilizer From Morocco",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/07/02/2026-13588/declaration-of-emergency-and-authorization-for-temporary-duty-free-importation-of-phosphate",
+          "date": "2026-07-02"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer/"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-AUTO-20260701-26-13408",
+      "date": "2026-07-01",
+      "actionType": "Presidential Document",
+      "description": "Presidential Determination Concerning the Department of the Air Force's Rehabilitation and Revitalization of the Joint Base Andrews Golf Course — auto-ingested from Federal Register; severity and narrative pending editorial review.",
+      "severity": 5,
+      "category": "Environment",
+      "impactedSectors": [
+        "Environment"
+      ],
+      "p2025Pillar": "Energy & Environment",
+      "p2025Chapters": [
+        "ch12-energy",
+        "ch13-epa",
+        "ch16-interior"
+      ],
+      "linkedFixId": null,
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-AUTO-20260701-26-13408",
+      "sources": [
+        {
+          "id": "fr_auto_2026_13408",
+          "title": "Presidential Determination Concerning the Department of the Air Force's Rehabilitation and Revitalization of the Joint Base Andrews Golf Course",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/07/01/2026-13408/presidential-determination-concerning-the-department-of-the-air-forces-rehabilitation-and",
+          "date": "2026-07-01"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer/"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-AUTO-20260630-26-13254",
+      "date": "2026-06-30",
+      "actionType": "Presidential Document",
+      "description": "Advancing Regenerative Agriculture and Strengthening American Farm Resilience — auto-ingested from Federal Register; severity and narrative pending editorial review.",
+      "severity": 5,
+      "category": "Democracy",
+      "impactedSectors": [
+        "Democracy"
+      ],
+      "p2025Pillar": "Executive Authority",
+      "p2025Chapters": [],
+      "linkedFixId": null,
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-AUTO-20260630-26-13254",
+      "sources": [
+        {
+          "id": "fr_auto_2026_13254",
+          "title": "Advancing Regenerative Agriculture and Strengthening American Farm Resilience",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/06/30/2026-13254/advancing-regenerative-agriculture-and-strengthening-american-farm-resilience",
+          "date": "2026-06-30"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer/"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-AUTO-20260625-26-12910",
+      "date": "2026-06-25",
+      "actionType": "Presidential Document",
+      "description": "Ushering in the Next Frontier of Quantum Innovation — auto-ingested from Federal Register; severity and narrative pending editorial review.",
+      "severity": 5,
+      "category": "Democracy",
+      "impactedSectors": [
+        "Democracy"
+      ],
+      "p2025Pillar": "Executive Authority",
+      "p2025Chapters": [],
+      "linkedFixId": null,
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-AUTO-20260625-26-12910",
+      "sources": [
+        {
+          "id": "fr_auto_2026_12910",
+          "title": "Ushering in the Next Frontier of Quantum Innovation",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/06/25/2026-12910/ushering-in-the-next-frontier-of-quantum-innovation",
+          "date": "2026-06-25"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer/"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-AUTO-20260625-26-12909",
+      "date": "2026-06-25",
+      "actionType": "Presidential Document",
+      "description": "Securing the Nation Against Advanced Cryptographic Attacks — auto-ingested from Federal Register; severity and narrative pending editorial review.",
+      "severity": 5,
+      "category": "Democracy",
+      "impactedSectors": [
+        "Democracy"
+      ],
+      "p2025Pillar": "Executive Authority",
+      "p2025Chapters": [],
+      "linkedFixId": null,
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-AUTO-20260625-26-12909",
+      "sources": [
+        {
+          "id": "fr_auto_2026_12909",
+          "title": "Securing the Nation Against Advanced Cryptographic Attacks",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/06/25/2026-12909/securing-the-nation-against-advanced-cryptographic-attacks",
+          "date": "2026-06-25"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer/"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-AUTO-20260624-26-12837",
+      "date": "2026-06-24",
+      "actionType": "Presidential Document",
+      "description": "Continuation of the National Emergency With Respect to the Western Balkans — auto-ingested from Federal Register; severity and narrative pending editorial review.",
+      "severity": 7,
+      "category": "Democracy",
+      "impactedSectors": [
+        "Democracy"
+      ],
+      "p2025Pillar": "Executive Authority",
+      "p2025Chapters": [],
+      "linkedFixId": null,
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-AUTO-20260624-26-12837",
+      "sources": [
+        {
+          "id": "fr_auto_2026_12837",
+          "title": "Continuation of the National Emergency With Respect to the Western Balkans",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/06/24/2026-12837/continuation-of-the-national-emergency-with-respect-to-the-western-balkans",
+          "date": "2026-06-24"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer/"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-AUTO-20260624-26-12836",
+      "date": "2026-06-24",
+      "actionType": "Presidential Document",
+      "description": "Continuation of the National Emergency With Respect to North Korea — auto-ingested from Federal Register; severity and narrative pending editorial review.",
+      "severity": 7,
+      "category": "Democracy",
+      "impactedSectors": [
+        "Democracy"
+      ],
+      "p2025Pillar": "Executive Authority",
+      "p2025Chapters": [],
+      "linkedFixId": null,
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-AUTO-20260624-26-12836",
+      "sources": [
+        {
+          "id": "fr_auto_2026_12836",
+          "title": "Continuation of the National Emergency With Respect to North Korea",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/06/24/2026-12836/continuation-of-the-national-emergency-with-respect-to-north-korea",
+          "date": "2026-06-24"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer/"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-AUTO-20260618-26-12436",
+      "date": "2026-06-18",
+      "actionType": "Presidential Document",
+      "description": "Flag Day and National Flag Week, 2026 — auto-ingested from Federal Register; severity and narrative pending editorial review.",
+      "severity": 3,
+      "category": "Democracy",
+      "impactedSectors": [
+        "Democracy"
+      ],
+      "p2025Pillar": "Executive Authority",
+      "p2025Chapters": [],
+      "linkedFixId": null,
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-AUTO-20260618-26-12436",
+      "sources": [
+        {
+          "id": "fr_auto_2026_12436",
+          "title": "Flag Day and National Flag Week, 2026",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/06/18/2026-12436/flag-day-and-national-flag-week-2026",
+          "date": "2026-06-18"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer/"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-AUTO-20260617-26-12286",
+      "date": "2026-06-17",
+      "actionType": "Presidential Document",
+      "description": "Presidential Determination and Delegation of Authority Under Section 708 of the Defense Production Act of 1950, as Amended — auto-ingested from Federal Register; severity and narrative pending editorial review.",
+      "severity": 5,
+      "category": "Democracy",
+      "impactedSectors": [
+        "Democracy"
+      ],
+      "p2025Pillar": "Executive Authority",
+      "p2025Chapters": [],
+      "linkedFixId": null,
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-AUTO-20260617-26-12286",
+      "sources": [
+        {
+          "id": "fr_auto_2026_12286",
+          "title": "Presidential Determination and Delegation of Authority Under Section 708 of the Defense Production Act of 1950, as Amended",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/06/17/2026-12286/presidential-determination-and-delegation-of-authority-under-section-708-of-the-defense-production",
+          "date": "2026-06-17"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer/"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-AUTO-20260617-26-12283",
+      "date": "2026-06-17",
+      "actionType": "Presidential Document",
+      "description": "Restoring American Commercial Fishing in the Pacific — auto-ingested from Federal Register; severity and narrative pending editorial review.",
+      "severity": 5,
+      "category": "Democracy",
+      "impactedSectors": [
+        "Democracy"
+      ],
+      "p2025Pillar": "Executive Authority",
+      "p2025Chapters": [],
+      "linkedFixId": null,
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-AUTO-20260617-26-12283",
+      "sources": [
+        {
+          "id": "fr_auto_2026_12283",
+          "title": "Restoring American Commercial Fishing in the Pacific",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/06/17/2026-12283/restoring-american-commercial-fishing-in-the-pacific",
+          "date": "2026-06-17"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer/"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-AUTO-20260617-26-12282",
+      "date": "2026-06-17",
+      "actionType": "Presidential Document",
+      "description": "75th Anniversary of the White House Navy Mess, 2026 — auto-ingested from Federal Register; severity and narrative pending editorial review.",
+      "severity": 5,
+      "category": "Democracy",
+      "impactedSectors": [
+        "Democracy"
+      ],
+      "p2025Pillar": "Executive Authority",
+      "p2025Chapters": [],
+      "linkedFixId": null,
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-AUTO-20260617-26-12282",
+      "sources": [
+        {
+          "id": "fr_auto_2026_12282",
+          "title": "75th Anniversary of the White House Navy Mess, 2026",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/06/17/2026-12282/75th-anniversary-of-the-white-house-navy-mess-2026",
+          "date": "2026-06-17"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer/"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-AUTO-20260610-26-11741",
+      "date": "2026-06-10",
+      "actionType": "Presidential Document",
+      "description": "Granting Pardon to Stephen E. Buyer — auto-ingested from Federal Register; severity and narrative pending editorial review.",
+      "severity": 5,
+      "category": "Democracy",
+      "impactedSectors": [
+        "Democracy"
+      ],
+      "p2025Pillar": "Executive Authority",
+      "p2025Chapters": [],
+      "linkedFixId": null,
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-AUTO-20260610-26-11741",
+      "sources": [
+        {
+          "id": "fr_auto_2026_11741",
+          "title": "Granting Pardon to Stephen E. Buyer",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/06/10/2026-11741/granting-pardon-to-stephen-e-buyer",
+          "date": "2026-06-10"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer/"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-AUTO-20260610-26-11595",
+      "date": "2026-06-10",
+      "actionType": "Presidential Document",
+      "description": "Strengthening Customs Enforcement — auto-ingested from Federal Register; severity and narrative pending editorial review.",
+      "severity": 5,
+      "category": "Immigration",
+      "impactedSectors": [
+        "Immigration"
+      ],
+      "p2025Pillar": "Immigration Enforcement",
+      "p2025Chapters": [
+        "ch05-dhs"
+      ],
+      "linkedFixId": null,
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-AUTO-20260610-26-11595",
+      "sources": [
+        {
+          "id": "fr_auto_2026_11595",
+          "title": "Strengthening Customs Enforcement",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/06/10/2026-11595/strengthening-customs-enforcement",
+          "date": "2026-06-10"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer/"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-AUTO-20260610-26-11594",
+      "date": "2026-06-10",
+      "actionType": "Presidential Document",
+      "description": "Implementing Schedule Policy/Career in the Excepted Service — auto-ingested from Federal Register; severity and narrative pending editorial review.",
+      "severity": 7,
+      "category": "Civil Rights",
+      "impactedSectors": [
+        "Civil Rights"
+      ],
+      "p2025Pillar": "Personnel & Civil Service",
+      "p2025Chapters": [
+        "ch03-personnel"
+      ],
+      "linkedFixId": null,
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-AUTO-20260610-26-11594",
+      "sources": [
+        {
+          "id": "fr_auto_2026_11594",
+          "title": "Implementing Schedule Policy/Career in the Excepted Service",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/06/10/2026-11594/implementing-schedule-policycareer-in-the-excepted-service",
+          "date": "2026-06-10"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer/"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-AUTO-20260603-26-11181",
+      "date": "2026-06-03",
+      "actionType": "Presidential Document",
+      "description": "Removing Unnecessary and Counterproductive Restrictions on Access to Federal Lands — auto-ingested from Federal Register; severity and narrative pending editorial review.",
+      "severity": 5,
+      "category": "Environment",
+      "impactedSectors": [
+        "Environment"
+      ],
+      "p2025Pillar": "Energy & Environment",
+      "p2025Chapters": [
+        "ch12-energy",
+        "ch13-epa",
+        "ch16-interior"
+      ],
+      "linkedFixId": null,
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-AUTO-20260603-26-11181",
+      "sources": [
+        {
+          "id": "fr_auto_2026_11181",
+          "title": "Removing Unnecessary and Counterproductive Restrictions on Access to Federal Lands",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/06/03/2026-11181/removing-unnecessary-and-counterproductive-restrictions-on-access-to-federal-lands",
+          "date": "2026-06-03"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer/"
+        },
+        {
+          "name": "CPR Executive Action Tracker",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/"
+        }
+      ]
+    },
+    {
+      "id": "EVT-AUTO-20260603-26-11180",
+      "date": "2026-06-03",
+      "actionType": "Presidential Document",
+      "description": "Realigning United States Core Childhood Vaccine Recommendations With Best Practices From Peer, Developed Countries — auto-ingested from Federal Register; severity and narrative pending editorial review.",
+      "severity": 5,
+      "category": "Democracy",
+      "impactedSectors": [
+        "Democracy"
+      ],
+      "p2025Pillar": "Executive Authority",
+      "p2025Chapters": [],
+      "linkedFixId": null,
+      "url": "https://thesunriseparty.pages.dev/tracker/EVT-AUTO-20260603-26-11180",
+      "sources": [
+        {
+          "id": "fr_auto_2026_11180",
+          "title": "Realigning United States Core Childhood Vaccine Recommendations With Best Practices From Peer, Developed Countries",
+          "publisher": "Federal Register",
+          "url": "https://www.federalregister.gov/documents/2026/06/03/2026-11180/realigning-united-states-core-childhood-vaccine-recommendations-with-best-practices-from-peer",
+          "date": "2026-06-03"
+        }
+      ],
+      "externalTrackers": [
+        {
+          "name": "project2025.observer",
+          "url": "https://www.project2025.observer/"
         },
         {
           "name": "CPR Executive Action Tracker",

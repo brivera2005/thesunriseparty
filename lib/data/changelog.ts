@@ -8,6 +8,17 @@ export interface ChangelogEntry {
 /** Site iteration history - meta transparency for Project Sunrise builds */
 export const changelog: ChangelogEntry[] = [
   {
+    version: "0.51.0",
+    date: "2026-07-13",
+    title: "Pass 51 - Collapsible sort and filter panels",
+    highlights: [
+      "New CollapsibleFilters component: compact bar with Sort & filter toggle, active count badge, Clear all",
+      "Mobile bottom sheet and desktop dropdown; search stays visible where it is primary",
+      "Tracker, Rebuttal, History, Legislation, Scenarios, and events tracker updated",
+      "SW cache hard-bumped to sunrise-v51-20260713T1700-filters",
+    ],
+  },
+  {
     version: "0.50.0",
     date: "2026-07-13",
     title: "Pass 50 - Destination grid sunrise polish",

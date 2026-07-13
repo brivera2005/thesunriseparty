@@ -1515,6 +1515,20 @@ URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0708-149
 CATEGORIES:Democracy
 END:VEVENT
 BEGIN:VEVENT
+UID:EVT-AUTO-20260708-26-13842@thesunriseparty.pages.dev
+DTSTAMP:20260713T120000Z
+DTSTART;VALUE=DATE:20260708
+SUMMARY:Presidential Document: 250th Anniversary of the Adoption of the Dec
+ laration of Independence — auto-ingested from Federal Register\; severity 
+ an…
+DESCRIPTION:250th Anniversary of the Adoption of the Declaration of Indepen
+ dence — auto-ingested from Federal Register\; severity and narrative pendi
+ ng editorial review.\\n\\nSeverity: 5/10\\nCategory: Democracy\\nSectors: 
+ Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-AUTO-20260708-26-13842
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
 UID:EVT-2026-0706-181@thesunriseparty.pages.dev
 DTSTAMP:20260713T120000Z
 DTSTART;VALUE=DATE:20260706
@@ -1524,6 +1538,20 @@ DESCRIPTION:FCC broadcast and media-ownership policy shifts continue amid r
  educed proactive press access\, reshaping information-market rules.\\n\\nS
  everity: 6/10\\nCategory: Democracy\\nSectors: Democracy
 URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0706-181
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-AUTO-20260706-26-13631@thesunriseparty.pages.dev
+DTSTAMP:20260713T120000Z
+DTSTART;VALUE=DATE:20260706
+SUMMARY:Presidential Document: Presidential Determination on Assistance to 
+ Venezuela Consistent With the Trafficking Victims Protection Act of 2000 —
+  …
+DESCRIPTION:Presidential Determination on Assistance to Venezuela Consisten
+ t With the Trafficking Victims Protection Act of 2000 — auto-ingested from
+  Federal Register\; severity and narrative pending editorial review.\\n\\n
+ Severity: 5/10\\nCategory: Democracy\\nSectors: Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-AUTO-20260706-26-13631
 CATEGORIES:Democracy
 END:VEVENT
 BEGIN:VEVENT
@@ -1580,6 +1608,20 @@ URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0711-219
 CATEGORIES:Democracy
 END:VEVENT
 BEGIN:VEVENT
+UID:EVT-AUTO-20260702-26-13588@thesunriseparty.pages.dev
+DTSTAMP:20260713T120000Z
+DTSTART;VALUE=DATE:20260702
+SUMMARY:Presidential Document: Declaration of Emergency and Authorization f
+ or Temporary Duty-Free Importation of Phosphate Fertilizer From Morocco — 
+ a…
+DESCRIPTION:Declaration of Emergency and Authorization for Temporary Duty-F
+ ree Importation of Phosphate Fertilizer From Morocco — auto-ingested from 
+ Federal Register\; severity and narrative pending editorial review.\\n\\nS
+ everity: 7/10\\nCategory: Democracy\\nSectors: Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-AUTO-20260702-26-13588
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
 UID:EVT-2026-0701-147@thesunriseparty.pages.dev
 DTSTAMP:20260713T120000Z
 DTSTART;VALUE=DATE:20260701
@@ -1590,6 +1632,35 @@ DESCRIPTION:U.S. DOGE Service Temporary Organization approaches its July 4\
  n does not end other DOGE authorities.\\n\\nSeverity: 7/10\\nCategory: Dem
  ocracy\\nSectors: Democracy\, Economy
 URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0701-147
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-AUTO-20260701-26-13408@thesunriseparty.pages.dev
+DTSTAMP:20260713T120000Z
+DTSTART;VALUE=DATE:20260701
+SUMMARY:Presidential Document: Presidential Determination Concerning the De
+ partment of the Air Force's Rehabilitation and Revitalization of the Joint
+  …
+DESCRIPTION:Presidential Determination Concerning the Department of the Air
+  Force's Rehabilitation and Revitalization of the Joint Base Andrews Golf 
+ Course — auto-ingested from Federal Register\; severity and narrative pend
+ ing editorial review.\\n\\nSeverity: 5/10\\nCategory: Environment\\nSector
+ s: Environment
+URL:https://thesunriseparty.pages.dev/tracker/EVT-AUTO-20260701-26-13408
+CATEGORIES:Environment
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-AUTO-20260630-26-13254@thesunriseparty.pages.dev
+DTSTAMP:20260713T120000Z
+DTSTART;VALUE=DATE:20260630
+SUMMARY:Presidential Document: Advancing Regenerative Agriculture and Stren
+ gthening American Farm Resilience — auto-ingested from Federal Register\; 
+ se…
+DESCRIPTION:Advancing Regenerative Agriculture and Strengthening American F
+ arm Resilience — auto-ingested from Federal Register\; severity and narrat
+ ive pending editorial review.\\n\\nSeverity: 5/10\\nCategory: Democracy\\n
+ Sectors: Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-AUTO-20260630-26-13254
 CATEGORIES:Democracy
 END:VEVENT
 BEGIN:VEVENT
@@ -1670,6 +1741,60 @@ DESCRIPTION:E.O. 14414 advances regenerative agriculture and farm resilienc
  Environment\, Economy
 URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0625-167
 CATEGORIES:Environment
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-AUTO-20260625-26-12910@thesunriseparty.pages.dev
+DTSTAMP:20260713T120000Z
+DTSTART;VALUE=DATE:20260625
+SUMMARY:Presidential Document: Ushering in the Next Frontier of Quantum Inn
+ ovation — auto-ingested from Federal Register\; severity and narrative pen
+ di…
+DESCRIPTION:Ushering in the Next Frontier of Quantum Innovation — auto-inge
+ sted from Federal Register\; severity and narrative pending editorial revi
+ ew.\\n\\nSeverity: 5/10\\nCategory: Democracy\\nSectors: Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-AUTO-20260625-26-12910
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-AUTO-20260625-26-12909@thesunriseparty.pages.dev
+DTSTAMP:20260713T120000Z
+DTSTART;VALUE=DATE:20260625
+SUMMARY:Presidential Document: Securing the Nation Against Advanced Cryptog
+ raphic Attacks — auto-ingested from Federal Register\; severity and narrat
+ iv…
+DESCRIPTION:Securing the Nation Against Advanced Cryptographic Attacks — au
+ to-ingested from Federal Register\; severity and narrative pending editori
+ al review.\\n\\nSeverity: 5/10\\nCategory: Democracy\\nSectors: Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-AUTO-20260625-26-12909
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-AUTO-20260624-26-12837@thesunriseparty.pages.dev
+DTSTAMP:20260713T120000Z
+DTSTART;VALUE=DATE:20260624
+SUMMARY:Presidential Document: Continuation of the National Emergency With 
+ Respect to the Western Balkans — auto-ingested from Federal Register\; sev
+ er…
+DESCRIPTION:Continuation of the National Emergency With Respect to the West
+ ern Balkans — auto-ingested from Federal Register\; severity and narrative
+  pending editorial review.\\n\\nSeverity: 7/10\\nCategory: Democracy\\nSec
+ tors: Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-AUTO-20260624-26-12837
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-AUTO-20260624-26-12836@thesunriseparty.pages.dev
+DTSTAMP:20260713T120000Z
+DTSTART;VALUE=DATE:20260624
+SUMMARY:Presidential Document: Continuation of the National Emergency With 
+ Respect to North Korea — auto-ingested from Federal Register\; severity an
+ d …
+DESCRIPTION:Continuation of the National Emergency With Respect to North Ko
+ rea — auto-ingested from Federal Register\; severity and narrative pending
+  editorial review.\\n\\nSeverity: 7/10\\nCategory: Democracy\\nSectors: De
+ mocracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-AUTO-20260624-26-12836
+CATEGORIES:Democracy
 END:VEVENT
 BEGIN:VEVENT
 UID:EVT-2026-0622-145@thesunriseparty.pages.dev
@@ -1760,6 +1885,59 @@ URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0618-229
 CATEGORIES:Economy
 END:VEVENT
 BEGIN:VEVENT
+UID:EVT-AUTO-20260618-26-12436@thesunriseparty.pages.dev
+DTSTAMP:20260713T120000Z
+DTSTART;VALUE=DATE:20260618
+SUMMARY:Presidential Document: Flag Day and National Flag Week\, 2026 — aut
+ o-ingested from Federal Register\; severity and narrative pending editoria
+ l r…
+DESCRIPTION:Flag Day and National Flag Week\, 2026 — auto-ingested from Fed
+ eral Register\; severity and narrative pending editorial review.\\n\\nSeve
+ rity: 3/10\\nCategory: Democracy\\nSectors: Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-AUTO-20260618-26-12436
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-AUTO-20260617-26-12286@thesunriseparty.pages.dev
+DTSTAMP:20260713T120000Z
+DTSTART;VALUE=DATE:20260617
+SUMMARY:Presidential Document: Presidential Determination and Delegation of
+  Authority Under Section 708 of the Defense Production Act of 1950\, as Am
+ en…
+DESCRIPTION:Presidential Determination and Delegation of Authority Under Se
+ ction 708 of the Defense Production Act of 1950\, as Amended — auto-ingest
+ ed from Federal Register\; severity and narrative pending editorial review
+ .\\n\\nSeverity: 5/10\\nCategory: Democracy\\nSectors: Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-AUTO-20260617-26-12286
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-AUTO-20260617-26-12283@thesunriseparty.pages.dev
+DTSTAMP:20260713T120000Z
+DTSTART;VALUE=DATE:20260617
+SUMMARY:Presidential Document: Restoring American Commercial Fishing in the
+  Pacific — auto-ingested from Federal Register\; severity and narrative pe
+ nd…
+DESCRIPTION:Restoring American Commercial Fishing in the Pacific — auto-ing
+ ested from Federal Register\; severity and narrative pending editorial rev
+ iew.\\n\\nSeverity: 5/10\\nCategory: Democracy\\nSectors: Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-AUTO-20260617-26-12283
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-AUTO-20260617-26-12282@thesunriseparty.pages.dev
+DTSTAMP:20260713T120000Z
+DTSTART;VALUE=DATE:20260617
+SUMMARY:Presidential Document: 75th Anniversary of the White House Navy Mes
+ s\, 2026 — auto-ingested from Federal Register\; severity and narrative pe
+ ndi…
+DESCRIPTION:75th Anniversary of the White House Navy Mess\, 2026 — auto-ing
+ ested from Federal Register\; severity and narrative pending editorial rev
+ iew.\\n\\nSeverity: 5/10\\nCategory: Democracy\\nSectors: Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-AUTO-20260617-26-12282
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
 UID:EVT-2026-0616-177@thesunriseparty.pages.dev
 DTSTAMP:20260713T120000Z
 DTSTART;VALUE=DATE:20260616
@@ -1847,6 +2025,46 @@ DESCRIPTION:Independent trackers continue cross-referencing Schedule Policy
  cy\\nSectors: Democracy
 URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0610-142
 CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-AUTO-20260610-26-11741@thesunriseparty.pages.dev
+DTSTAMP:20260713T120000Z
+DTSTART;VALUE=DATE:20260610
+SUMMARY:Presidential Document: Granting Pardon to Stephen E. Buyer — auto-i
+ ngested from Federal Register\; severity and narrative pending editorial r
+ ev…
+DESCRIPTION:Granting Pardon to Stephen E. Buyer — auto-ingested from Federa
+ l Register\; severity and narrative pending editorial review.\\n\\nSeverit
+ y: 5/10\\nCategory: Democracy\\nSectors: Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-AUTO-20260610-26-11741
+CATEGORIES:Democracy
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-AUTO-20260610-26-11595@thesunriseparty.pages.dev
+DTSTAMP:20260713T120000Z
+DTSTART;VALUE=DATE:20260610
+SUMMARY:Presidential Document: Strengthening Customs Enforcement — auto-ing
+ ested from Federal Register\; severity and narrative pending editorial rev
+ ie…
+DESCRIPTION:Strengthening Customs Enforcement — auto-ingested from Federal 
+ Register\; severity and narrative pending editorial review.\\n\\nSeverity:
+  5/10\\nCategory: Immigration\\nSectors: Immigration
+URL:https://thesunriseparty.pages.dev/tracker/EVT-AUTO-20260610-26-11595
+CATEGORIES:Immigration
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-AUTO-20260610-26-11594@thesunriseparty.pages.dev
+DTSTAMP:20260713T120000Z
+DTSTART;VALUE=DATE:20260610
+SUMMARY:Presidential Document: Implementing Schedule Policy/Career in the E
+ xcepted Service — auto-ingested from Federal Register\; severity and narra
+ ti…
+DESCRIPTION:Implementing Schedule Policy/Career in the Excepted Service — a
+ uto-ingested from Federal Register\; severity and narrative pending editor
+ ial review.\\n\\nSeverity: 7/10\\nCategory: Civil Rights\\nSectors: Civil 
+ Rights
+URL:https://thesunriseparty.pages.dev/tracker/EVT-AUTO-20260610-26-11594
+CATEGORIES:Civil Rights
 END:VEVENT
 BEGIN:VEVENT
 UID:EVT-2026-0608-175@thesunriseparty.pages.dev
@@ -1940,6 +2158,34 @@ DESCRIPTION:Strengthening Customs Enforcement order expands customs and tra
  ion\, Economy
 URL:https://thesunriseparty.pages.dev/tracker/EVT-2026-0603-136
 CATEGORIES:Immigration
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-AUTO-20260603-26-11181@thesunriseparty.pages.dev
+DTSTAMP:20260713T120000Z
+DTSTART;VALUE=DATE:20260603
+SUMMARY:Presidential Document: Removing Unnecessary and Counterproductive R
+ estrictions on Access to Federal Lands — auto-ingested from Federal Regist
+ e…
+DESCRIPTION:Removing Unnecessary and Counterproductive Restrictions on Acce
+ ss to Federal Lands — auto-ingested from Federal Register\; severity and n
+ arrative pending editorial review.\\n\\nSeverity: 5/10\\nCategory: Environ
+ ment\\nSectors: Environment
+URL:https://thesunriseparty.pages.dev/tracker/EVT-AUTO-20260603-26-11181
+CATEGORIES:Environment
+END:VEVENT
+BEGIN:VEVENT
+UID:EVT-AUTO-20260603-26-11180@thesunriseparty.pages.dev
+DTSTAMP:20260713T120000Z
+DTSTART;VALUE=DATE:20260603
+SUMMARY:Presidential Document: Realigning United States Core Childhood Vacc
+ ine Recommendations With Best Practices From Peer\, Developed Countries — 
+ au…
+DESCRIPTION:Realigning United States Core Childhood Vaccine Recommendations
+  With Best Practices From Peer\, Developed Countries — auto-ingested from 
+ Federal Register\; severity and narrative pending editorial review.\\n\\nS
+ everity: 5/10\\nCategory: Democracy\\nSectors: Democracy
+URL:https://thesunriseparty.pages.dev/tracker/EVT-AUTO-20260603-26-11180
+CATEGORIES:Democracy
 END:VEVENT
 BEGIN:VEVENT
 UID:EVT-2026-0602-134@thesunriseparty.pages.dev

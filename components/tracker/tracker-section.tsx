@@ -6,7 +6,6 @@ import {
   ArrowDown,
   ArrowRight,
   ArrowUp,
-  BookOpen,
   Calendar,
   CalendarDays,
   ExternalLink,
@@ -15,7 +14,6 @@ import {
   BarChart3,
   Globe,
   List,
-  SlidersHorizontal,
   Share2,
 } from "lucide-react";
 import {
@@ -41,6 +39,10 @@ import { P2025ChapterMap } from "./p2025-chapter-map";
 import { TrackerCalendar } from "./tracker-calendar";
 import { TrackerTimelineScrubber } from "./tracker-timeline-scrubber";
 import { EventDetailSlideover } from "./event-detail-slideover";
+import {
+  CollapsibleFilters,
+  FilterPanelSection,
+} from "@/components/ui/collapsible-filters";
 import { cn } from "@/lib/utils";
 import { formatDateUS, formatMonthUS } from "@/lib/format-date";
 import { useAppStore } from "@/lib/store";
@@ -155,6 +157,34 @@ export function TrackerSection({
     activeChapter !== "all" ? getChapterById(activeChapter) : undefined;
 
   const monthGroups = useMemo(() => groupByMonth(filtered), [filtered]);
+
+  const activeFilterCount =
+    (activeCategory !== "All" ? 1 : 0) +
+    (activeChapter !== "all" ? 1 : 0) +
+    (minSeverity > 1 ? 1 : 0) +
+    (dateFrom ? 1 : 0) +
+    (dateTo ? 1 : 0) +
+    (sortMode !== "date-desc" ? 1 : 0);
+
+  const clearFilters = () => {
+    setActiveCategory("All");
+    setActiveChapter("all");
+    setMinSeverity(1);
+    setDateFrom("");
+    setDateTo("");
+    setSortMode("date-desc");
+  };
+
+  const selectCategory = (cat: string) => {
+    setActiveCategory(cat);
+    const first =
+      cat === "All"
+        ? timelineEvents.find((e) => e.Severity_Score >= minSeverity)
+        : timelineEvents.find(
+            (e) => e.category === cat && e.Severity_Score >= minSeverity
+          );
+    if (first) setSelectedEvent(first);
+  };
 
   const stats = getTrackerStats(filtered);
   const threat = getThreatLevel(filtered);
@@ -323,39 +353,14 @@ export function TrackerSection({
           </div>
         ) : (
         <>
-        <TrackerTimelineScrubber
-          events={filtered}
-          selectedId={selectedEvent.Event_ID}
-          onSelect={(e) => selectEvent(e)}
-        />
-
-        <div className="sticky top-14 z-30 -mx-4 mb-6 border-b border-border bg-white/95 px-4 py-3 backdrop-blur-lg supports-[backdrop-filter]:bg-white/90 sm:-mx-6 sm:px-6">
-          <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
-            <div className="flex flex-wrap items-center gap-2">
-            {timelineCategories.map((cat) => (
-              <Button
-                key={cat}
-                variant={activeCategory === cat ? "default" : "outline"}
-                size="sm"
-                onClick={() => {
-                  setActiveCategory(cat);
-                  const first =
-                    cat === "All"
-                      ? timelineEvents.find((e) => e.Severity_Score >= minSeverity)
-                      : timelineEvents.find(
-                          (e) => e.category === cat && e.Severity_Score >= minSeverity
-                        );
-                  if (first) setSelectedEvent(first);
-                }}
-                className={cn(
-                  activeCategory === cat &&
-                    "bg-destructive text-destructive-foreground hover:bg-destructive/90"
-                )}
-              >
-                {cat}
-              </Button>
-            ))}
-            </div>
+        <CollapsibleFilters
+          sticky
+          className="-mx-4 mb-6 px-4 sm:-mx-6 sm:px-6"
+          activeCount={activeFilterCount}
+          label="Sort & filter"
+          summary={`${filtered.length} of ${timelineEvents.length} events`}
+          onClear={clearFilters}
+          leading={
             <div className="flex items-center gap-1 rounded-lg border border-border p-0.5">
               <Button
                 variant={viewMode === "list" ? "default" : "ghost"}
@@ -363,7 +368,8 @@ export function TrackerSection({
                 onClick={() => setViewMode("list")}
                 className={cn(
                   "h-7 gap-1.5 px-2.5 text-xs",
-                  viewMode === "list" && "bg-destructive text-destructive-foreground hover:bg-destructive/90"
+                  viewMode === "list" &&
+                    "bg-destructive text-destructive-foreground hover:bg-destructive/90"
                 )}
               >
                 <List className="size-3.5" />
@@ -375,61 +381,77 @@ export function TrackerSection({
                 onClick={() => setViewMode("calendar")}
                 className={cn(
                   "h-7 gap-1.5 px-2.5 text-xs",
-                  viewMode === "calendar" && "bg-destructive text-destructive-foreground hover:bg-destructive/90"
+                  viewMode === "calendar" &&
+                    "bg-destructive text-destructive-foreground hover:bg-destructive/90"
                 )}
               >
                 <CalendarDays className="size-3.5" />
                 Calendar
               </Button>
             </div>
-          </div>
-          <div className="flex flex-wrap items-center gap-3">
-            <div className="flex items-center gap-2 text-xs text-muted-foreground">
-              <BookOpen className="size-3.5" />
-              <label htmlFor="p2025-chapter-filter" className="font-medium">
-                Heritage chapter:
-              </label>
-            </div>
-            <select
-              id="p2025-chapter-filter"
-              value={activeChapter}
-              onChange={(e) => {
-                setActiveChapter(e.target.value);
-                const next = filterEventsByChapter(
-                  activeCategory === "All"
-                    ? timelineEvents
-                    : timelineEvents.filter((c) => c.category === activeCategory),
-                  e.target.value
-                ).find((ev) => ev.Severity_Score >= minSeverity);
-                if (next) setSelectedEvent(next);
-              }}
-              className="h-8 max-w-xs flex-1 rounded-md border border-border bg-background px-2.5 text-xs font-medium text-foreground"
-              aria-label="Filter by Heritage Mandate chapter"
-            >
-              <option value="all">All chapters ({timelineEvents.length} events)</option>
-              {chapterSections.map(({ section, chapters }) => (
-                <optgroup key={section} label={section}>
-                  {chapters.map((chapter) => (
-                    <option key={chapter.id} value={chapter.id}>
-                      Ch. {chapter.number}: {chapter.title}
-                    </option>
-                  ))}
-                </optgroup>
+          }
+        >
+          <FilterPanelSection label="Category">
+            <div className="flex flex-wrap gap-2">
+              {timelineCategories.map((cat) => (
+                <Button
+                  key={cat}
+                  variant={activeCategory === cat ? "default" : "outline"}
+                  size="sm"
+                  onClick={() => selectCategory(cat)}
+                  className={cn(
+                    activeCategory === cat &&
+                      "bg-destructive text-destructive-foreground hover:bg-destructive/90"
+                  )}
+                >
+                  {cat}
+                </Button>
               ))}
-            </select>
-            {activeChapterMeta && (
-              <Badge variant="secondary" className="text-[10px]">
-                Ch. {activeChapterMeta.number} · {activeChapterMeta.title}
-              </Badge>
-            )}
-          </div>
-          <div className="mt-3 flex flex-wrap items-center gap-3">
-            <div className="flex items-center gap-2 text-xs text-muted-foreground">
-              <SlidersHorizontal className="size-3.5" />
-              <span className="font-medium">Min severity:</span>
+            </div>
+          </FilterPanelSection>
+
+          <FilterPanelSection label="Heritage chapter">
+            <div className="flex flex-wrap items-center gap-3">
+              <select
+                id="p2025-chapter-filter"
+                value={activeChapter}
+                onChange={(e) => {
+                  setActiveChapter(e.target.value);
+                  const next = filterEventsByChapter(
+                    activeCategory === "All"
+                      ? timelineEvents
+                      : timelineEvents.filter((c) => c.category === activeCategory),
+                    e.target.value
+                  ).find((ev) => ev.Severity_Score >= minSeverity);
+                  if (next) setSelectedEvent(next);
+                }}
+                className="h-9 w-full rounded-md border border-border bg-background px-2.5 text-xs font-medium text-foreground"
+                aria-label="Filter by Heritage Mandate chapter"
+              >
+                <option value="all">All chapters ({timelineEvents.length} events)</option>
+                {chapterSections.map(({ section, chapters }) => (
+                  <optgroup key={section} label={section}>
+                    {chapters.map((chapter) => (
+                      <option key={chapter.id} value={chapter.id}>
+                        Ch. {chapter.number}: {chapter.title}
+                      </option>
+                    ))}
+                  </optgroup>
+                ))}
+              </select>
+              {activeChapterMeta ? (
+                <Badge variant="secondary" className="text-[10px]">
+                  Ch. {activeChapterMeta.number} · {activeChapterMeta.title}
+                </Badge>
+              ) : null}
+            </div>
+          </FilterPanelSection>
+
+          <FilterPanelSection label="Min severity">
+            <div className="flex flex-wrap items-center gap-3">
               <span
                 className={cn(
-                  "font-bold tabular-nums",
+                  "text-sm font-bold tabular-nums",
                   minSeverity >= 8
                     ? "text-destructive"
                     : minSeverity >= 6
@@ -439,53 +461,56 @@ export function TrackerSection({
               >
                 {minSeverity}+
               </span>
+              <input
+                type="range"
+                min={1}
+                max={10}
+                step={1}
+                value={minSeverity}
+                onChange={(e) => {
+                  const val = Number(e.target.value);
+                  setMinSeverity(val);
+                  if (selectedEvent.Severity_Score < val) {
+                    const next = filtered.find((ev) => ev.Severity_Score >= val);
+                    if (next) setSelectedEvent(next);
+                  }
+                }}
+                className="h-1.5 min-w-[10rem] flex-1 cursor-pointer accent-destructive"
+                aria-label="Minimum severity filter"
+              />
             </div>
-            <input
-              type="range"
-              min={1}
-              max={10}
-              step={1}
-              value={minSeverity}
-              onChange={(e) => {
-                const val = Number(e.target.value);
-                setMinSeverity(val);
-                if (selectedEvent.Severity_Score < val) {
-                  const next = filtered.find((ev) => ev.Severity_Score >= val);
-                  if (next) setSelectedEvent(next);
-                }
-              }}
-              className="h-1.5 w-full max-w-xs cursor-pointer accent-destructive"
-              aria-label="Minimum severity filter"
-            />
-            <span className="text-[10px] text-muted-foreground">
-              {filtered.length} of {timelineEvents.length} events
-            </span>
-          </div>
-          <div className="mt-3 flex flex-wrap items-center gap-3">
-            <label className="flex items-center gap-2 text-xs text-muted-foreground">
-              <span className="font-medium">From:</span>
-              <input
-                type="date"
-                value={dateFrom}
-                onChange={(e) => setDateFrom(e.target.value)}
-                className="h-8 rounded-md border border-border bg-white px-2 text-xs"
-                aria-label="Filter from date"
-              />
-            </label>
-            <label className="flex items-center gap-2 text-xs text-muted-foreground">
-              <span className="font-medium">To:</span>
-              <input
-                type="date"
-                value={dateTo}
-                onChange={(e) => setDateTo(e.target.value)}
-                className="h-8 rounded-md border border-border bg-white px-2 text-xs"
-                aria-label="Filter to date"
-              />
-            </label>
+          </FilterPanelSection>
+
+          <FilterPanelSection label="Date range">
+            <div className="flex flex-wrap items-center gap-3">
+              <label className="flex flex-1 min-w-[8rem] items-center gap-2 text-xs text-muted-foreground">
+                <span className="font-medium">From</span>
+                <input
+                  type="date"
+                  value={dateFrom}
+                  onChange={(e) => setDateFrom(e.target.value)}
+                  className="h-9 w-full rounded-md border border-border bg-white px-2 text-xs"
+                  aria-label="Filter from date"
+                />
+              </label>
+              <label className="flex flex-1 min-w-[8rem] items-center gap-2 text-xs text-muted-foreground">
+                <span className="font-medium">To</span>
+                <input
+                  type="date"
+                  value={dateTo}
+                  onChange={(e) => setDateTo(e.target.value)}
+                  className="h-9 w-full rounded-md border border-border bg-white px-2 text-xs"
+                  aria-label="Filter to date"
+                />
+              </label>
+            </div>
+          </FilterPanelSection>
+
+          <FilterPanelSection label="Sort">
             <select
               value={sortMode}
               onChange={(e) => setSortMode(e.target.value as SortMode)}
-              className="h-8 rounded-md border border-border bg-white px-2.5 text-xs font-medium"
+              className="h-9 w-full rounded-md border border-border bg-white px-2.5 text-xs font-medium"
               aria-label="Sort events"
             >
               <option value="date-desc">Newest first</option>
@@ -493,21 +518,16 @@ export function TrackerSection({
               <option value="severity-desc">Highest severity</option>
               <option value="severity-asc">Lowest severity</option>
             </select>
-            {(dateFrom || dateTo) && (
-              <Button
-                variant="ghost"
-                size="sm"
-                className="h-8 text-xs"
-                onClick={() => {
-                  setDateFrom("");
-                  setDateTo("");
-                }}
-              >
-                Clear dates
-              </Button>
-            )}
-          </div>
-        </div>
+          </FilterPanelSection>
+
+          <FilterPanelSection label="Timeline scrubber">
+            <TrackerTimelineScrubber
+              events={filtered}
+              selectedId={selectedEvent.Event_ID}
+              onSelect={(e) => selectEvent(e)}
+            />
+          </FilterPanelSection>
+        </CollapsibleFilters>
 
         <div className="grid gap-6 lg:grid-cols-5">
           {viewMode === "calendar" ? (

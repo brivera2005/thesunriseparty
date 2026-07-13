@@ -6,6 +6,10 @@ import { PageShell } from "@/components/layout/page-shell";
 import { PageHero } from "@/components/layout/page-hero";
 import { BillCard } from "@/components/legislation/bill-card";
 import { FilterChips } from "@/components/ui/filter-chips";
+import {
+  CollapsibleFilters,
+  FilterPanelSection,
+} from "@/components/ui/collapsible-filters";
 import { Input } from "@/components/ui/input";
 import {
   getLegislationStats,
@@ -90,6 +94,19 @@ export function LegislationPage() {
       .sort((a, b) => b.lastActionDate.localeCompare(a.lastActionDate));
   }, [chamber, status, party, topic, query]);
 
+  const activeFilterCount =
+    (chamber !== "all" ? 1 : 0) +
+    (status !== "all" ? 1 : 0) +
+    (party !== "all" ? 1 : 0) +
+    (topic !== "all" ? 1 : 0);
+
+  const clearFilters = () => {
+    setChamber("all");
+    setStatus("all");
+    setParty("all");
+    setTopic("all");
+  };
+
   return (
     <PageShell>
       <PageHero
@@ -138,66 +155,70 @@ export function LegislationPage() {
       </section>
 
       <section className="border-b border-border bg-white">
-        <div className="page-container space-y-4 py-5 sm:py-6">
-          <div className="relative max-w-xl">
-            <Search className="pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2 text-muted-foreground" />
-            <Input
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              placeholder="Search bill number, title, sponsor, topic…"
-              className="h-11 pl-10"
-              aria-label="Search legislation"
-            />
-          </div>
-
-          <FilterChips
-            label="Chamber"
-            options={chamberOptions}
-            value={chamber}
-            onChange={setChamber}
-          />
-          <FilterChips
-            label="Status"
-            options={statusOptions}
-            value={status}
-            onChange={setStatus}
-          />
-          <FilterChips
-            label="Sponsor"
-            options={partyOptions}
-            value={party}
-            onChange={setParty}
-            activeClassName={
-              party === "D"
-                ? "bg-[#2563eb] hover:bg-[#2563eb]/90"
-                : party === "R"
-                  ? "bg-[#dc2626] hover:bg-[#dc2626]/90"
-                  : party === "I"
-                    ? "bg-[#7c3aed] hover:bg-[#7c3aed]/90"
-                    : undefined
+        <div className="page-container py-5 sm:py-6">
+          <CollapsibleFilters
+            activeCount={activeFilterCount}
+            label="Filters"
+            summary={`Showing ${filtered.length} of ${stats.total}`}
+            onClear={clearFilters}
+            leading={
+              <div className="relative min-w-0 flex-1 max-w-xl">
+                <Search className="pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2 text-muted-foreground" />
+                <Input
+                  value={query}
+                  onChange={(e) => setQuery(e.target.value)}
+                  placeholder="Search bill number, title, sponsor, topic…"
+                  className="h-11 pl-10"
+                  aria-label="Search legislation"
+                />
+              </div>
             }
-          />
-
-          <div className="flex flex-wrap items-center gap-2">
-            <span className="mr-1 text-[11px] font-semibold tracking-wide text-muted-foreground uppercase">
-              Topic
-            </span>
-            <select
-              value={topic}
-              onChange={(e) => setTopic(e.target.value)}
-              className="h-9 rounded-md border border-border bg-white px-3 text-xs"
-              aria-label="Filter by topic"
-            >
-              {topicOptions.map((opt) => (
-                <option key={opt.value} value={opt.value}>
-                  {opt.label}
-                </option>
-              ))}
-            </select>
-            <span className="text-xs text-muted-foreground">
-              Showing {filtered.length} of {stats.total}
-            </span>
-          </div>
+          >
+            <FilterPanelSection label="Chamber">
+              <FilterChips
+                options={chamberOptions}
+                value={chamber}
+                onChange={setChamber}
+              />
+            </FilterPanelSection>
+            <FilterPanelSection label="Status">
+              <FilterChips
+                options={statusOptions}
+                value={status}
+                onChange={setStatus}
+              />
+            </FilterPanelSection>
+            <FilterPanelSection label="Sponsor">
+              <FilterChips
+                options={partyOptions}
+                value={party}
+                onChange={setParty}
+                activeClassName={
+                  party === "D"
+                    ? "bg-[#2563eb] hover:bg-[#2563eb]/90"
+                    : party === "R"
+                      ? "bg-[#dc2626] hover:bg-[#dc2626]/90"
+                      : party === "I"
+                        ? "bg-[#7c3aed] hover:bg-[#7c3aed]/90"
+                        : undefined
+                }
+              />
+            </FilterPanelSection>
+            <FilterPanelSection label="Topic">
+              <select
+                value={topic}
+                onChange={(e) => setTopic(e.target.value)}
+                className="h-9 w-full rounded-md border border-border bg-white px-3 text-xs"
+                aria-label="Filter by topic"
+              >
+                {topicOptions.map((opt) => (
+                  <option key={opt.value} value={opt.value}>
+                    {opt.label}
+                  </option>
+                ))}
+              </select>
+            </FilterPanelSection>
+          </CollapsibleFilters>
         </div>
       </section>
 
