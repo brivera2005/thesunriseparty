@@ -8,6 +8,17 @@ export interface ChangelogEntry {
 /** Site iteration history - meta transparency for Project Sunrise builds */
 export const changelog: ChangelogEntry[] = [
   {
+    version: "0.47.0",
+    date: "2026-07-13",
+    title: "Pass 47 - Punchy homepage + timeline tracker",
+    highlights: [
+      "Homepage: TRACK. COUNTER. FIX. + LIVE BILLS. SOURCED ANSWERS. REAL IMPACT. RIGHT NOW. then grid only — no For you / What you get / redundant hero CTAs",
+      "Tracker rebuilt timeline-first (observer-style): month groups, chronological scrubber, newest/oldest sort, date-range + category + severity filters, detail slideover",
+      "Header remains single-row desktop / hamburger left of Search on mobile; no hero duplicate logo",
+      "SW cache hard-bumped to sunrise-v47-20260713T1630",
+    ],
+  },
+  {
     version: "0.46.0",
     date: "2026-07-13",
     title: "Pass 46 - Inline header + mobile hamburger",

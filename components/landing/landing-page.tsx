@@ -101,49 +101,15 @@ export function LandingPage() {
             <h1 className="text-3xl font-bold tracking-tight text-navy sm:text-4xl lg:text-[2.75rem]">
               Track. Counter. Fix.
             </h1>
-            <p className="mx-auto mt-3 max-w-md text-base text-muted-foreground sm:text-lg">
-              Live bills. Sourced answers. Real impact, right now.
+            <p className="mx-auto mt-3 max-w-lg text-base text-muted-foreground sm:text-lg">
+              Live bills. Sourced answers. Real impact. Right now.
             </p>
-          </FadeIn>
-          <FadeIn delay={100}>
-            <div className="mt-7 flex flex-wrap items-center justify-center gap-2.5 sm:mt-8 sm:gap-3">
-              <Link
-                href="/tracker"
-                className="inline-flex h-11 min-w-[44px] items-center gap-2 rounded-xl bg-navy px-5 text-sm font-semibold text-white shadow-sm transition-all hover:bg-navy/90"
-              >
-                Project 2025 Tracker
-                <ArrowRight className="size-4" />
-              </Link>
-              <Link
-                href="/rebuttal"
-                className="inline-flex h-11 min-w-[44px] items-center gap-2 rounded-xl border border-navy/15 bg-white px-5 text-sm font-semibold text-navy transition-all hover:bg-navy/[0.04]"
-              >
-                Rebuttal Desk
-              </Link>
-              <Link
-                href="/legislation"
-                className="inline-flex h-11 min-w-[44px] items-center gap-2 rounded-xl border border-navy/15 bg-white px-5 text-sm font-semibold text-navy transition-all hover:bg-navy/[0.04]"
-              >
-                Legislation
-              </Link>
-            </div>
           </FadeIn>
         </div>
       </section>
 
-      <section className="section-y bg-white" aria-label="What you get">
+      <section className="section-y bg-white" aria-label="Destinations">
         <div className="page-container">
-          <FadeIn>
-            <div className="mb-6 text-center sm:mb-8">
-              <p className="mb-1.5 text-xs font-semibold tracking-[0.22em] text-navy/50 uppercase">
-                For you
-              </p>
-              <h2 className="text-xl font-bold tracking-tight text-navy sm:text-2xl">
-                What you get here
-              </h2>
-            </div>
-          </FadeIn>
-
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
             {platformCards.map((card, i) => (
               <FadeIn key={card.href} delay={i * 30}>

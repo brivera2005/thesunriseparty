@@ -4,7 +4,7 @@ import { Share2, Download, CalendarPlus } from "lucide-react";
 import { useState, useEffect } from "react";
 import { PageShell } from "@/components/layout/page-shell";
 import { PageHero } from "@/components/layout/page-hero";
-import { TrackerSection } from "@/components/tracker/tracker-section";
+import { TrackerTimelineFeed } from "@/components/tracker/tracker-timeline-feed";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useAppStore } from "@/lib/store";
@@ -52,10 +52,10 @@ export function TrackerPage() {
     <PageShell>
       <PageHero
         section="tracker"
-        eyebrow="Severity Scored"
+        eyebrow="Timeline"
         title="Project 2025 Tracker"
-        description="Admin actions scored by severity. Every claim cited."
-        tip="Filter by category or severity, then open any event for receipts."
+        description="When each action happened — sorted, filterable, and cited. Severity and sources on every event."
+        tip="Sort newest/oldest, scrub the timeline, or filter by date range, category, and severity."
         actions={
           <>
             <a
@@ -79,7 +79,7 @@ export function TrackerPage() {
           </>
         }
       />
-      <TrackerSection standalone />
+      <TrackerTimelineFeed />
     </PageShell>
   );
 }
