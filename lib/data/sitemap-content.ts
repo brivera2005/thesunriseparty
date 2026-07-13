@@ -2,6 +2,7 @@ import {
   Activity,
   BookOpen,
   Compass,
+  GitBranch,
   Heart,
   History,
   Landmark,
@@ -22,6 +23,7 @@ import {
 import { hiddenHistoryEntries, getHistoryStats } from "./hidden-history";
 import { policyFixes, safeguardItems } from "./policies";
 import { legislationBills, getLegislationStats } from "./legislation";
+import { impactScenarios, getScenarioStats } from "./scenarios";
 import { validatedUrls } from "./validated-urls";
 import { trackerSources } from "./tracker-sources";
 
@@ -45,6 +47,7 @@ export interface SitemapSection {
 const trackerStats = getTrackerStats();
 const historyStats = getHistoryStats();
 const legislationStats = getLegislationStats();
+const scenarioStats = getScenarioStats();
 const rebuttalCats = rebuttalCategories.filter((c) => c !== "All");
 
 export const sitemapIntro = {
@@ -153,6 +156,32 @@ export const sitemapSections: SitemapSection[] = [
         href: "/bills",
         label: "Alias /bills",
         description: "Same tracker under the /bills path.",
+      },
+    ],
+  },
+  {
+    id: "scenarios",
+    title: "Impact Scenarios",
+    description: "Complex causal chains from policy choices to lived outcomes.",
+    icon: GitBranch,
+    accent: "text-violet-700 border-violet-300/50 bg-violet-50",
+    links: [
+      {
+        href: "/scenarios",
+        label: "All scenarios",
+        count: impactScenarios.length,
+        description: `${scenarioStats.highSeverity} high severity · avg ${scenarioStats.avgSeverity}/10`,
+        badge: "New",
+      },
+      {
+        href: "/scenarios/SCN-INSULIN-001",
+        label: "Featured: Ramirez insulin chain",
+        description: "Pharma prices to subsidy cliffs to lived rationing.",
+      },
+      {
+        href: "/scenarios/SCN-FEMA-009",
+        label: "Featured: Hurricane wait times",
+        description: "FEMA cuts meet climate disasters.",
       },
     ],
   },

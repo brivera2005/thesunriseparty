@@ -133,7 +133,7 @@ const platformCards = [
     href: "/saved",
     title: "Saved",
     description:
-      "Your bookmarked rebuttals, tracker events, and history moments — private to this device.",
+      "Your bookmarked rebuttals, tracker events, and history moments - private to this device.",
     icon: BookMarked,
     meta: "Optional bookmarks",
   },

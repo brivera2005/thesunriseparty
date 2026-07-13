@@ -8,6 +8,17 @@ export interface ChangelogEntry {
 /** Site iteration history - meta transparency for Project Sunrise builds */
 export const changelog: ChangelogEntry[] = [
   {
+    version: "0.40.0",
+    date: "2026-07-13",
+    title: "Pass 40 - Complex Impact Scenarios",
+    highlights: [
+      "New /scenarios hub with 32 multi-step causal chains linking administration actions, Congress, budgets, propaganda, and lived outcomes",
+      "Vertical actor-color timelines, Gets Y vs Should Get Z panels, topic filters, and deep links to Tracker events and Blueprint fixes",
+      "Scenarios wired into More nav (top), homepage grid, footer, sitemap, SEO, and command-palette search",
+      "Plain-language family personas with verified institutional sources across healthcare, housing, labor, climate, immigration, and more",
+    ],
+  },
+  {
     version: "0.39.0",
     date: "2026-07-13",
     title: "Pass 39 - Live Legislation Tracker + nav overhaul",

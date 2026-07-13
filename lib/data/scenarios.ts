@@ -1758,8 +1758,8 @@ export const impactScenarios: ImpactScenario[] = [
           sources: [citations.ipcc_climate, citations.cost_inaction_climate],
         },
         {
-          actor: "Immigration",
-          action: "Status fear blocks complaints.",
+          actor: "Trump admin",
+          action: "Status fear from ICE expansion blocks heat-illness complaints.",
           effect: "The most exposed workers are the least able to report.",
           sources: [citations.aclu_immigration, citations.ice_expansion_eo],
         },
