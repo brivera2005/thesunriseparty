@@ -8,6 +8,17 @@ export interface ChangelogEntry {
 /** Site iteration history - meta transparency for Project Sunrise builds */
 export const changelog: ChangelogEntry[] = [
   {
+    version: "0.37.0",
+    date: "2026-07-13",
+    title: "Pass 37 - Mobile cache bust + Kamala projection rebuttal",
+    highlights: [
+      "Service worker rewritten: network-first for HTML/CSS/JS, hard cache bump to sunrise-v37 (fixes phones stuck on pre-Pass-35 layout)",
+      "PWA register forces SW update, updateViaCache none, one-time soft reload on controllerchange",
+      "New Rebuttal Desk entry kamala-would-have-been-worse with search aliases (kamala worse, dodged a bullet, if kamala won)",
+      "Blueprint schema prepared for gaslight-exposure fields; pillar expansion continues next",
+    ],
+  },
+  {
     version: "0.36.0",
     date: "2026-07-12",
     title: "Pass 36 - Cohesion + sources that actually open",

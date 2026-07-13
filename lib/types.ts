@@ -89,6 +89,14 @@ export interface PolicyFix {
   citations: CitationSource[];
   billReferences?: PolicyBillReference[];
   implementationTimeline?: ImplementationPhase[];
+  /** Propaganda framing that paints a basic reform as radical */
+  whyPeopleCallItExtreme?: string;
+  /** Evidence path: outcomes, mechanism, peer comparisons */
+  whyItWorks?: string;
+  /** Projection/fear claims vs what the evidence actually shows */
+  theGaslight?: string;
+  /** Peer nations / U.S. states already running a version of this */
+  alreadyWorksWhere?: string;
 }
 
 export interface SafeguardItem {
@@ -97,6 +105,10 @@ export interface SafeguardItem {
   description: string;
   mechanisms: string[];
   citations: CitationSource[];
+  whyPeopleCallItExtreme?: string;
+  whyItWorks?: string;
+  theGaslight?: string;
+  alreadyWorksWhere?: string;
 }
 
 export type RebuttalDifficulty = "easy" | "medium" | "hard";
@@ -127,6 +139,8 @@ export interface ConversationHelper {
   sources: CitationSource[];
   difficulty?: RebuttalDifficulty;
   relatedClaims?: string[];
+  /** Extra phrases that should surface this rebuttal in search */
+  searchAliases?: string[];
 }
 
 export type HistoryEra =

@@ -1861,4 +1861,294 @@ export const citations: Record<string, CitationSource> = {
     date: "2026-06-18",
   },
 
+  // Pass 37 Blueprint pillar citations (durable institutional sources)
+  oecd_health: {
+    id: "oecd_health",
+    title: "OECD Health Statistics",
+    publisher: "Organisation for Economic Co-operation and Development",
+    url: "https://www.oecd.org/en/topics/health.html",
+    waybackUrl: wayback("https://www.oecd.org/en/topics/health.html"),
+    excerpt:
+      "OECD health data show peer nations with universal coverage spend less per capita while achieving comparable or better life expectancy and lower uninsured rates than the United States.",
+    date: "2025-01-01",
+  },
+  kff_drug_costs: {
+    id: "kff_drug_costs",
+    title: "Prescription Drug Costs and Policy",
+    publisher: "Kaiser Family Foundation",
+    url: "https://www.kff.org/health-costs/",
+    waybackUrl: wayback("https://www.kff.org/health-costs/"),
+    excerpt:
+      "KFF tracking shows U.S. retail drug prices and out-of-pocket burdens remain far above peer-country averages without negotiation and rebate reform.",
+    date: "2025-01-01",
+  },
+  cbo_drug_negotiation: {
+    id: "cbo_drug_negotiation",
+    title: "CBO Analysis of Medicare Drug Price Negotiation",
+    publisher: "Congressional Budget Office",
+    url: "https://www.cbo.gov/",
+    waybackUrl: wayback("https://www.cbo.gov/"),
+    excerpt:
+      "CBO scorekeeping of Medicare negotiation authority finds federal savings when government bargains for selected high-cost drugs, contrary to claims that negotiation collapses innovation overnight.",
+    date: "2024-01-01",
+  },
+  nimh_mental_health: {
+    id: "nimh_mental_health",
+    title: "Mental Health Information",
+    publisher: "National Institute of Mental Health",
+    url: "https://www.nimh.nih.gov/health",
+    waybackUrl: wayback("https://www.nimh.nih.gov/health"),
+    excerpt:
+      "NIMH documents high prevalence of treatable mental illness and the cost of untreated conditions in disability, suicide risk, and lost productivity.",
+    date: "2025-01-01",
+  },
+  epi_minimum_wage: {
+    id: "epi_minimum_wage",
+    title: "Minimum Wage Research",
+    publisher: "Economic Policy Institute",
+    url: "https://www.epi.org/research/minimum-wage/",
+    waybackUrl: wayback("https://www.epi.org/research/minimum-wage/"),
+    excerpt:
+      "EPI research finds raising the federal minimum wage lifts pay for low-wage workers with modest employment effects when phased and indexed, contradicting mass-job-loss talking points.",
+    date: "2025-01-01",
+  },
+  epi_unions: {
+    id: "epi_unions",
+    title: "Unions and Workers",
+    publisher: "Economic Policy Institute",
+    url: "https://www.epi.org/research/unions-and-labor-standards/",
+    waybackUrl: wayback("https://www.epi.org/research/unions-and-labor-standards/"),
+    excerpt:
+      "EPI documents a large union wage premium and links declining union density to wage stagnation for typical workers.",
+    date: "2025-01-01",
+  },
+  dol_fmla: {
+    id: "dol_fmla",
+    title: "Family and Medical Leave",
+    publisher: "U.S. Department of Labor",
+    url: "https://www.dol.gov/agencies/whd/fmla",
+    waybackUrl: wayback("https://www.dol.gov/agencies/whd/fmla"),
+    excerpt:
+      "Current FMLA leave is unpaid and excludes millions of workers; peer nations already fund paid family leave with measurable maternal and infant health gains.",
+    date: "2025-01-01",
+  },
+  dol_overtime: {
+    id: "dol_overtime",
+    title: "Overtime Pay",
+    publisher: "U.S. Department of Labor",
+    url: "https://www.dol.gov/agencies/whd/overtime",
+    waybackUrl: wayback("https://www.dol.gov/agencies/whd/overtime"),
+    excerpt:
+      "DOL overtime rules determine which salaried workers receive time-and-a-half; raising the threshold restores overtime to middle-income workers misclassified as exempt.",
+    date: "2025-01-01",
+  },
+  fcc_broadband: {
+    id: "fcc_broadband",
+    title: "Broadband Data Collection",
+    publisher: "Federal Communications Commission",
+    url: "https://www.fcc.gov/BroadbandData",
+    waybackUrl: wayback("https://www.fcc.gov/BroadbandData"),
+    excerpt:
+      "FCC broadband maps show persistent rural and low-income gaps in high-speed access that private markets alone leave unserved.",
+    date: "2025-01-01",
+  },
+  dot_transit: {
+    id: "dot_transit",
+    title: "Public Transportation",
+    publisher: "U.S. Department of Transportation",
+    url: "https://www.transit.dot.gov/",
+    waybackUrl: wayback("https://www.transit.dot.gov/"),
+    excerpt:
+      "FTA and DOT programs document ridership, safety, and capital needs for buses, rail, and accessible transit serving workers who cannot drive.",
+    date: "2025-01-01",
+  },
+  cdc_firearms: {
+    id: "cdc_firearms",
+    title: "Firearm Violence Prevention",
+    publisher: "Centers for Disease Control and Prevention",
+    url: "https://www.cdc.gov/firearm-violence/index.html",
+    waybackUrl: wayback("https://www.cdc.gov/firearm-violence/index.html"),
+    excerpt:
+      "CDC firearm-violence data show tens of thousands of U.S. deaths annually; background-check and safe-storage policies are public-health tools, not confiscation schemes.",
+    date: "2025-01-01",
+  },
+  guttmacher_repro: {
+    id: "guttmacher_repro",
+    title: "Abortion and Reproductive Health Data",
+    publisher: "Guttmacher Institute",
+    url: "https://www.guttmacher.org/",
+    waybackUrl: wayback("https://www.guttmacher.org/"),
+    excerpt:
+      "Guttmacher research tracks abortion access, maternal health outcomes, and the documented harms of criminalization and clinic closures after Dobbs.",
+    date: "2025-01-01",
+  },
+  treasury_tax: {
+    id: "treasury_tax",
+    title: "Tax Policy",
+    publisher: "U.S. Department of the Treasury",
+    url: "https://home.treasury.gov/policy-issues/tax-policy",
+    waybackUrl: wayback("https://home.treasury.gov/policy-issues/tax-policy"),
+    excerpt:
+      "Treasury tax analyses describe how preferential rates on capital income and aggressive avoidance widen the effective-rate gap between ultra-wealthy households and wage earners.",
+    date: "2025-01-01",
+  },
+  irs_soi: {
+    id: "irs_soi",
+    title: "Statistics of Income",
+    publisher: "Internal Revenue Service",
+    url: "https://www.irs.gov/statistics/soi-tax-stats",
+    waybackUrl: wayback("https://www.irs.gov/statistics/soi-tax-stats"),
+    excerpt:
+      "IRS SOI tables document concentration of income and wealth at the top and the scale of preferential capital-gains treatment.",
+    date: "2025-01-01",
+  },
+  ssa_trustees: {
+    id: "ssa_trustees",
+    title: "Social Security Trustees Report",
+    publisher: "Social Security Administration",
+    url: "https://www.ssa.gov/oact/TR/",
+    waybackUrl: wayback("https://www.ssa.gov/oact/TR/"),
+    excerpt:
+      "Trustees reports show Social Security is solvent for years with manageable revenue fixes; benefit cuts are a political choice, not an actuarial inevitability.",
+    date: "2025-01-01",
+  },
+  usda_rural: {
+    id: "usda_rural",
+    title: "Rural Development",
+    publisher: "U.S. Department of Agriculture",
+    url: "https://www.rd.usda.gov/",
+    waybackUrl: wayback("https://www.rd.usda.gov/"),
+    excerpt:
+      "USDA Rural Development programs address hospital closures, broadband gaps, and farm credit needs that determine whether rural communities survive.",
+    date: "2025-01-01",
+  },
+  va_health: {
+    id: "va_health",
+    title: "VA Health Care",
+    publisher: "U.S. Department of Veterans Affairs",
+    url: "https://www.va.gov/health-care/",
+    waybackUrl: wayback("https://www.va.gov/health-care/"),
+    excerpt:
+      "VA health programs serve millions of veterans; underfunding and privatization experiments shift risk onto veterans while contractors extract margins.",
+    date: "2025-01-01",
+  },
+  ftc_antitrust: {
+    id: "ftc_antitrust",
+    title: "Competition and Antitrust",
+    publisher: "Federal Trade Commission",
+    url: "https://www.ftc.gov/news-events/topics/competition-enforcement",
+    waybackUrl: wayback("https://www.ftc.gov/news-events/topics/competition-enforcement"),
+    excerpt:
+      "FTC competition enforcement targets mergers and monopoly conduct that raise prices and shrink consumer choice across tech, pharma, and retail.",
+    date: "2025-01-01",
+  },
+  doj_antitrust: {
+    id: "doj_antitrust",
+    title: "Antitrust Division",
+    publisher: "U.S. Department of Justice",
+    url: "https://www.justice.gov/atr",
+    waybackUrl: wayback("https://www.justice.gov/atr"),
+    excerpt:
+      "DOJ Antitrust brings cases against monopolization and anticompetitive mergers under Sherman and Clayton Act authority.",
+    date: "2025-01-01",
+  },
+  opensecrets_dark_money: {
+    id: "opensecrets_dark_money",
+    title: "Dark Money and Influence",
+    publisher: "OpenSecrets",
+    url: "https://www.opensecrets.org/dark-money",
+    waybackUrl: wayback("https://www.opensecrets.org/dark-money"),
+    excerpt:
+      "OpenSecrets tracks undisclosed political spending that lets billionaires and corporations buy influence without voters knowing who paid.",
+    date: "2025-01-01",
+  },
+  stock_act: {
+    id: "stock_act",
+    title: "STOCK Act",
+    publisher: "Congress.gov",
+    url: "https://www.congress.gov/bill/112th-congress/senate-bill/2038",
+    waybackUrl: wayback("https://www.congress.gov/bill/112th-congress/senate-bill/2038"),
+    excerpt:
+      "The STOCK Act banned insider trading by members of Congress; enforcement gaps and continued trading by officials keep conflict-of-interest reforms unfinished.",
+    date: "2012-04-04",
+  },
+  policy_childcare: {
+    id: "policy_childcare",
+    title: "Child Care Costs",
+    publisher: "U.S. Department of Labor / Women's Bureau",
+    url: "https://www.dol.gov/agencies/wb",
+    waybackUrl: wayback("https://www.dol.gov/agencies/wb"),
+    excerpt:
+      "Federal labor and women's-bureau analyses document childcare costs that rival rent and push parents, especially mothers, out of the labor force.",
+    date: "2025-01-01",
+  },
+  policy_student_debt: {
+    id: "policy_student_debt",
+    title: "Federal Student Aid",
+    publisher: "U.S. Department of Education",
+    url: "https://studentaid.gov/",
+    waybackUrl: wayback("https://studentaid.gov/"),
+    excerpt:
+      "Federal student aid data show more than $1.6 trillion in outstanding student loans delaying homeownership and family formation for millions of borrowers.",
+    date: "2025-01-01",
+  },
+  cost_inaction_drugs: {
+    id: "cost_inaction_drugs",
+    title: "Prescription Drug Affordability",
+    publisher: "Kaiser Family Foundation",
+    url: "https://www.kff.org/health-costs/",
+    waybackUrl: wayback("https://www.kff.org/health-costs/"),
+    excerpt:
+      "Without negotiation and rebate reform, Americans keep paying peer-leading prices for insulin, cancer drugs, and specialty therapies.",
+    date: "2025-01-01",
+  },
+  cost_inaction_guns: {
+    id: "cost_inaction_guns",
+    title: "Firearm Mortality",
+    publisher: "Centers for Disease Control and Prevention",
+    url: "https://www.cdc.gov/firearm-violence/index.html",
+    waybackUrl: wayback("https://www.cdc.gov/firearm-violence/index.html"),
+    excerpt:
+      "Without background-check gaps closed, prohibited purchasers keep exploiting private-sale loopholes while firearm deaths remain a leading cause of death for young Americans.",
+    date: "2025-01-01",
+  },
+  cost_inaction_tax: {
+    id: "cost_inaction_tax",
+    title: "Tax Avoidance and Inequality",
+    publisher: "U.S. Department of the Treasury",
+    url: "https://home.treasury.gov/policy-issues/tax-policy",
+    waybackUrl: wayback("https://home.treasury.gov/policy-issues/tax-policy"),
+    excerpt:
+      "Leaving capital-income loopholes open shifts tax burden onto wages and underfunds Social Security, Medicare, and infrastructure that businesses also use.",
+    date: "2025-01-01",
+  },
+  cost_inaction_ss: {
+    id: "cost_inaction_ss",
+    title: "Social Security Solvency Choices",
+    publisher: "Social Security Administration",
+    url: "https://www.ssa.gov/oact/TR/",
+    waybackUrl: wayback("https://www.ssa.gov/oact/TR/"),
+    excerpt:
+      "Delaying revenue fixes forces steeper benefit cuts later; early modest payroll-base expansions preserve benefits without privatization gambles.",
+    date: "2025-01-01",
+  },
+  hr_background_checks: {
+    id: "hr_background_checks",
+    title: "Search firearm background-check legislation",
+    publisher: "Congress.gov",
+    url: "https://www.congress.gov/",
+    waybackUrl: wayback("https://www.congress.gov/"),
+    excerpt: "Congress.gov indexes universal background-check and gun-violence prevention bills.",
+    date: "2025-01-01",
+  },
+  hr_paid_leave: {
+    id: "hr_paid_leave",
+    title: "Search paid leave legislation",
+    publisher: "Congress.gov",
+    url: "https://www.congress.gov/",
+    waybackUrl: wayback("https://www.congress.gov/"),
+    excerpt: "Congress.gov indexes federal paid family and medical leave proposals.",
+    date: "2025-01-01",
+  },
+
 };

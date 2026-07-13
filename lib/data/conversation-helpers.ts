@@ -751,7 +751,7 @@ export const conversationHelpers: ConversationHelper[] = [
       ),
     ],
     difficulty: "easy",
-    relatedClaims: ["whataboutism-pattern"],
+    relatedClaims: ["whataboutism-pattern", "kamala-would-have-been-worse"],
   },
   {
     id: "project-2025-doesnt-exist",
@@ -779,7 +779,7 @@ export const conversationHelpers: ConversationHelper[] = [
       ),
     ],
     difficulty: "easy",
-    relatedClaims: ["deep-state", "take-your-guns"],
+    relatedClaims: ["deep-state", "take-your-guns", "kamala-would-have-been-worse"],
   },
   {
     id: "trump-never-said-that",
@@ -1513,7 +1513,7 @@ export const conversationHelpers: ConversationHelper[] = [
       ),
     ],
     difficulty: "medium",
-    relatedClaims: ["trump-fixed-economy", "inflation-biden-fault"],
+    relatedClaims: ["trump-fixed-economy", "inflation-biden-fault", "kamala-would-have-been-worse"],
   },
   {
     id: "trump-donated-salary",
@@ -3046,7 +3046,7 @@ export const conversationHelpers: ConversationHelper[] = [
       ),
     ],
     difficulty: "hard",
-    relatedClaims: ["deep-state", "doge-saving-money"],
+    relatedClaims: ["deep-state", "doge-saving-money", "kamala-would-have-been-worse"],
   },
   {
     id: "disaster-aid-politics",
@@ -3158,7 +3158,7 @@ export const conversationHelpers: ConversationHelper[] = [
       ),
     ],
     difficulty: "medium",
-    relatedClaims: ["project-2025-doesnt-exist", "deep-state"],
+    relatedClaims: ["project-2025-doesnt-exist", "deep-state", "kamala-would-have-been-worse"],
   },
   {
     id: "unelected-billionaires",
@@ -23679,7 +23679,140 @@ export const conversationHelpers: ConversationHelper[] = [
     ],
     difficulty: "easy",
     relatedClaims: [],
-  }
+  },
+  {
+    id: "kamala-would-have-been-worse",
+    category: ["Whataboutism", "Democracy", "Elections", "Economy"],
+    theySay:
+      "If Kamala would have gotten in it would have been much worse! We dodged a bullet!",
+    youSay:
+      "That line is projection dressed up as prophecy. It invents a catastrophic Harris future so you don't have to defend the documented Trump present. Harris ran on extending ACA premium tax credits, expanding drug-price negotiation, protecting reproductive rights as healthcare, and building on the Inflation Reduction Act's clean-energy jobs. Those are boring, measurable platform planks Tax Foundation, KFF, and campaign policy books already scored. What you actually got instead is Project 2025-aligned governance: Schedule F civil-service purges, DOGE-style outsourcing of agency power to unelected allies, tariff taxes paid by American importers and households, reproductive-rights rollbacks, and open contempt for the 2020 election and January 6 accountability. CBO and Tax Foundation model tariffs as a tax on U.S. buyers, not a magic China invoice. Brennan Center and court records document the election-denial and Jan 6 record. The gaslight is calling a normal Democratic platform 'destroying America' while treating Schedule F, rights rollbacks, and consumer-paid tariffs as patriotic. 'Much worse' is not evidence. It is a coping slogan for people who cannot look at Federal Register actions, GAO warnings, and price tags and still pretend hypothetical Kamala is the emergency.",
+    stab:
+      "You are not dodging a bullet. You are eating the tariff, the purge, and the rights rollback, then blaming a woman who never got the keys for the mess you voted for.",
+    sources: [
+      cite(
+        "harris_policy_book_2024",
+        "A New Way Forward for the Middle Class (Harris 2024 Policy Book)",
+        "Harris-Walz Campaign",
+        "https://www.kamalaharris.com/wp-content/uploads/2024/09/Policy_Book_Economic-Opportunity.pdf",
+        "Harris 2024 economic policy book details permanent ACA tax-credit enhancements, drug-cost relief, housing cost measures, and clean-energy cost cuts for households.",
+        "2024-09-01"
+      ),
+      cite(
+        "taxfoundation_harris_2024",
+        "Kamala Harris Tax Plan 2024: Details and Analysis",
+        "Tax Foundation",
+        "https://taxfoundation.org/research/all/federal/kamala-harris-tax-plan-2024/",
+        "Tax Foundation analyzed Harris 2024 tax and credit proposals, including ACA premium tax credit permanence and high-earner revenue measures, as a scored platform rather than vibes.",
+        "2024-10-07"
+      ),
+      cite(
+        "kff_aca_credits",
+        "ACA Marketplace Premium Payments if Enhanced Tax Credits Expire",
+        "Kaiser Family Foundation",
+        "https://www.kff.org/affordable-care-act/aca-marketplace-premium-payments-would-more-than-double-on-average-next-year-if-enhanced-premium-tax-credits-expire/",
+        "KFF estimated enhanced ACA premium tax credits more than double average subsidized premiums if they expire, the exact coverage cliff Harris pledged to prevent.",
+        "2025-11-08"
+      ),
+      cite(
+        "taxfoundation_tariffs_rebut",
+        "Trump Tariffs Tracker and Household Cost Estimates",
+        "Tax Foundation",
+        "https://taxfoundation.org/research/all/federal/trump-tariffs/",
+        "Tax Foundation documents that U.S. importers pay tariff revenue and that costs pass through to American households and firms.",
+        "2025-01-01"
+      ),
+      cite(
+        "cbo_budget_options",
+        "Congressional Budget Office",
+        "Congressional Budget Office",
+        "https://www.cbo.gov/",
+        "CBO scorekeeping treats tariffs and major fiscal policies as domestic budget and price effects, not foreign gifts.",
+        "2025-01-01"
+      ),
+      cite(
+        "project2025_policy",
+        "Project 2025 Policy Agenda",
+        "Heritage Foundation / Project 2025",
+        "https://www.project2025.org/policy/",
+        "Project 2025 published an explicit conservative governing manual covering agency restructuring, civil service, and social policy priorities now echoed in executive actions.",
+        "2023-04-21"
+      ),
+      cite(
+        "cpr_p2025_tracker",
+        "Project 2025 Executive Action Tracker",
+        "Center for Progressive Reform",
+        "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/",
+        "CPR tracks Project 2025 domestic administrative agenda items initiated or completed through executive action.",
+        "2026-02-01"
+      ),
+      cite(
+        "crs_schedule_f",
+        "Schedule F and the Civil Service",
+        "Congressional Research Service",
+        "https://crsreports.congress.gov/",
+        "CRS analyzes Schedule F reclassification of career policy roles into at-will political appointments.",
+        "2025-01-01"
+      ),
+      cite(
+        "brennan_jan6",
+        "January 6 and Election Denial Documentation",
+        "Brennan Center for Justice",
+        "https://www.brennancenter.org/",
+        "Brennan Center documents election-subversion efforts, voting restrictions, and democratic-norm erosion surrounding Jan 6 and subsequent denial politics.",
+        "2025-01-01"
+      ),
+      cite(
+        "ap_jan6",
+        "AP Fact Check and January 6 Coverage Hub",
+        "Associated Press",
+        "https://apnews.com/hub/capitol-siege",
+        "AP reporting and fact checks document the Capitol attack, convictions, and false stolen-election claims used to justify political violence.",
+        "2025-01-01"
+      ),
+      cite(
+        "factcheck_election_claims",
+        "FactCheck.org Election and Policy Claims",
+        "FactCheck.org",
+        "https://www.factcheck.org/",
+        "FactCheck.org archives false and misleading claims about elections, governance, and policy outcomes used in whataboutism and doomsday framing.",
+        "2025-01-01"
+      ),
+      cite(
+        "guttmacher_access",
+        "Abortion and Reproductive Health Access Data",
+        "Guttmacher Institute",
+        "https://www.guttmacher.org/",
+        "Guttmacher tracks clinic closures, travel burdens, and health harms after Dobbs, the rights landscape Harris pledged to protect and opponents celebrated restricting.",
+        "2025-01-01"
+      ),
+    ],
+    difficulty: "hard",
+    relatedClaims: [
+      "project-2025-doesnt-exist",
+      "p2025-just-suggestions",
+      "schedule-f-necessary",
+      "tariffs-win-trade",
+      "tariffs-are-paid-by-china",
+      "election-stolen",
+      "jan-6-tourist-visit",
+      "whataboutism-pattern",
+      "both-sides-equivalence",
+      "unelected-billionaires",
+    ],
+    searchAliases: [
+      "kamala worse",
+      "harris worse",
+      "kamala would have been worse",
+      "harris would have been worse",
+      "dodged a bullet",
+      "if kamala won",
+      "if harris won",
+      "kamala would have destroyed america",
+      "we dodged a bullet with kamala",
+      "kamala much worse than trump",
+    ],
+  },
 ];
 
 const CATEGORY_SLUG_MAP: Record<RebuttalCategory, string> = {

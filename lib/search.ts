@@ -120,6 +120,7 @@ export function buildSearchIndex(): SearchResult[] {
       entry.stab ?? "",
       ...entry.category,
       entry.id,
+      ...(entry.searchAliases ?? []),
     ].join(" ");
     results.push({
       id: entry.id,
@@ -128,8 +129,7 @@ export function buildSearchIndex(): SearchResult[] {
       subtitle: entry.category.join(", "),
       body,
       score: 0,
-      href: "/rebuttal",
-      anchor: `rebuttal-${entry.id}`,
+      href: `/rebuttal/${encodeURIComponent(entry.id)}`,
     });
   }
 

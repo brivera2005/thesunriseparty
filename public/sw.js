@@ -1,25 +1,70 @@
-const CACHE = "sunrise-v1";
-const PRECACHE = ["/", "/rebuttal", "/tracker", "/blueprint", "/mission", "/manifest.webmanifest", "/icon.svg"];
+/* Project Sunrise service worker — Pass 37 cache bust.
+ * Cache-first on HTML/CSS was serving pre-Pass-35 layouts on phones.
+ * Documents and styles now network-first; only offline fallback uses cache.
+ */
+const CACHE = "sunrise-v37-20260713";
+const PRECACHE = ["/manifest.webmanifest", "/icon.svg"];
+
+self.addEventListener("message", (event) => {
+  if (event.data && event.data.type === "SKIP_WAITING") {
+    self.skipWaiting();
+  }
+});
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
-    caches.open(CACHE).then((cache) => cache.addAll(PRECACHE)).then(() => self.skipWaiting())
+    caches
+      .open(CACHE)
+      .then((cache) => cache.addAll(PRECACHE))
+      .then(() => self.skipWaiting())
   );
 });
 
 self.addEventListener("activate", (event) => {
   event.waitUntil(
-    caches.keys().then((keys) =>
-      Promise.all(keys.filter((k) => k !== CACHE).map((k) => caches.delete(k)))
-    ).then(() => self.clients.claim())
+    caches
+      .keys()
+      .then((keys) =>
+        Promise.all(keys.filter((k) => k !== CACHE).map((k) => caches.delete(k)))
+      )
+      .then(() => self.clients.claim())
   );
 });
+
+function isDocumentOrAsset(request, url) {
+  if (request.mode === "navigate") return "document";
+  const dest = request.destination;
+  if (dest === "document" || dest === "style" || dest === "script") return "document";
+  if (url.pathname.endsWith(".html") || url.pathname.endsWith(".css") || url.pathname.endsWith(".js")) {
+    return "document";
+  }
+  return "other";
+}
 
 self.addEventListener("fetch", (event) => {
   if (event.request.method !== "GET") return;
   const url = new URL(event.request.url);
   if (url.origin !== self.location.origin) return;
 
+  const kind = isDocumentOrAsset(event.request, url);
+
+  // Network-first for HTML/CSS/JS so mobile never sticks on an old shell.
+  if (kind === "document") {
+    event.respondWith(
+      fetch(event.request)
+        .then((response) => {
+          if (response && response.status === 200 && response.type === "basic") {
+            const clone = response.clone();
+            caches.open(CACHE).then((cache) => cache.put(event.request, clone));
+          }
+          return response;
+        })
+        .catch(() => caches.match(event.request))
+    );
+    return;
+  }
+
+  // Cache-first only for icons/manifest offline helpers.
   event.respondWith(
     caches.match(event.request).then((cached) => {
       if (cached) return cached;

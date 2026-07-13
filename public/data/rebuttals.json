@@ -1,8 +1,8 @@
 {
   "meta": {
     "site": "https://thesunriseparty.pages.dev",
-    "generated": "2026-07-13T01:39:05.225Z",
-    "count": 755,
+    "generated": "2026-07-13T01:48:09.177Z",
+    "count": 756,
     "license": "CC-BY-4.0 - cite Project Sunrise (thesunriseparty.pages.dev)"
   },
   "rebuttals": [
@@ -803,7 +803,8 @@
       "stab": "The only disaster FEMA won't fix is the one between your ears.",
       "difficulty": "easy",
       "relatedClaims": [
-        "whataboutism-pattern"
+        "whataboutism-pattern",
+        "kamala-would-have-been-worse"
       ],
       "url": "https://thesunriseparty.pages.dev/rebuttal/fema-only-democrats",
       "sources": [
@@ -834,7 +835,8 @@
       "difficulty": "easy",
       "relatedClaims": [
         "deep-state",
-        "take-your-guns"
+        "take-your-guns",
+        "kamala-would-have-been-worse"
       ],
       "url": "https://thesunriseparty.pages.dev/rebuttal/project-2025-doesnt-exist",
       "sources": [
@@ -1651,7 +1653,8 @@
       "difficulty": "medium",
       "relatedClaims": [
         "trump-fixed-economy",
-        "inflation-biden-fault"
+        "inflation-biden-fault",
+        "kamala-would-have-been-worse"
       ],
       "url": "https://thesunriseparty.pages.dev/rebuttal/tariffs-win-trade",
       "sources": [
@@ -3380,7 +3383,8 @@
       "difficulty": "hard",
       "relatedClaims": [
         "deep-state",
-        "doge-saving-money"
+        "doge-saving-money",
+        "kamala-would-have-been-worse"
       ],
       "url": "https://thesunriseparty.pages.dev/rebuttal/schedule-f-necessary",
       "sources": [
@@ -3508,7 +3512,8 @@
       "difficulty": "medium",
       "relatedClaims": [
         "project-2025-doesnt-exist",
-        "deep-state"
+        "deep-state",
+        "kamala-would-have-been-worse"
       ],
       "url": "https://thesunriseparty.pages.dev/rebuttal/p2025-just-suggestions",
       "sources": [
@@ -26130,6 +26135,118 @@
           "publisher": "U.S. Government Accountability Office",
           "url": "https://www.gao.gov/about/what-gao-does",
           "date": "2024-01-01"
+        }
+      ]
+    },
+    {
+      "id": "kamala-would-have-been-worse",
+      "categories": [
+        "Whataboutism",
+        "Democracy",
+        "Elections",
+        "Economy"
+      ],
+      "theySay": "If Kamala would have gotten in it would have been much worse! We dodged a bullet!",
+      "youSay": "That line is projection dressed up as prophecy. It invents a catastrophic Harris future so you don't have to defend the documented Trump present. Harris ran on extending ACA premium tax credits, expanding drug-price negotiation, protecting reproductive rights as healthcare, and building on the Inflation Reduction Act's clean-energy jobs. Those are boring, measurable platform planks Tax Foundation, KFF, and campaign policy books already scored. What you actually got instead is Project 2025-aligned governance: Schedule F civil-service purges, DOGE-style outsourcing of agency power to unelected allies, tariff taxes paid by American importers and households, reproductive-rights rollbacks, and open contempt for the 2020 election and January 6 accountability. CBO and Tax Foundation model tariffs as a tax on U.S. buyers, not a magic China invoice. Brennan Center and court records document the election-denial and Jan 6 record. The gaslight is calling a normal Democratic platform 'destroying America' while treating Schedule F, rights rollbacks, and consumer-paid tariffs as patriotic. 'Much worse' is not evidence. It is a coping slogan for people who cannot look at Federal Register actions, GAO warnings, and price tags and still pretend hypothetical Kamala is the emergency.",
+      "stab": "You are not dodging a bullet. You are eating the tariff, the purge, and the rights rollback, then blaming a woman who never got the keys for the mess you voted for.",
+      "difficulty": "hard",
+      "relatedClaims": [
+        "project-2025-doesnt-exist",
+        "p2025-just-suggestions",
+        "schedule-f-necessary",
+        "tariffs-win-trade",
+        "tariffs-are-paid-by-china",
+        "election-stolen",
+        "jan-6-tourist-visit",
+        "whataboutism-pattern",
+        "both-sides-equivalence",
+        "unelected-billionaires"
+      ],
+      "url": "https://thesunriseparty.pages.dev/rebuttal/kamala-would-have-been-worse",
+      "sources": [
+        {
+          "id": "harris_policy_book_2024",
+          "title": "A New Way Forward for the Middle Class (Harris 2024 Policy Book)",
+          "publisher": "Harris-Walz Campaign",
+          "url": "https://www.kamalaharris.com/wp-content/uploads/2024/09/Policy_Book_Economic-Opportunity.pdf",
+          "date": "2024-09-01"
+        },
+        {
+          "id": "taxfoundation_harris_2024",
+          "title": "Kamala Harris Tax Plan 2024: Details and Analysis",
+          "publisher": "Tax Foundation",
+          "url": "https://taxfoundation.org/research/all/federal/kamala-harris-tax-plan-2024/",
+          "date": "2024-10-07"
+        },
+        {
+          "id": "kff_aca_credits",
+          "title": "ACA Marketplace Premium Payments if Enhanced Tax Credits Expire",
+          "publisher": "Kaiser Family Foundation",
+          "url": "https://www.kff.org/affordable-care-act/aca-marketplace-premium-payments-would-more-than-double-on-average-next-year-if-enhanced-premium-tax-credits-expire/",
+          "date": "2025-11-08"
+        },
+        {
+          "id": "taxfoundation_tariffs_rebut",
+          "title": "Trump Tariffs Tracker and Household Cost Estimates",
+          "publisher": "Tax Foundation",
+          "url": "https://taxfoundation.org/research/all/federal/trump-tariffs/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "cbo_budget_options",
+          "title": "Congressional Budget Office",
+          "publisher": "Congressional Budget Office",
+          "url": "https://www.cbo.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "project2025_policy",
+          "title": "Project 2025 Policy Agenda",
+          "publisher": "Heritage Foundation / Project 2025",
+          "url": "https://www.project2025.org/policy/",
+          "date": "2023-04-21"
+        },
+        {
+          "id": "cpr_p2025_tracker",
+          "title": "Project 2025 Executive Action Tracker",
+          "publisher": "Center for Progressive Reform",
+          "url": "https://progressivereform.org/tracking-trump-2/project-2025-executive-action-tracker/",
+          "date": "2026-02-01"
+        },
+        {
+          "id": "crs_schedule_f",
+          "title": "Schedule F and the Civil Service",
+          "publisher": "Congressional Research Service",
+          "url": "https://crsreports.congress.gov/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "brennan_jan6",
+          "title": "January 6 and Election Denial Documentation",
+          "publisher": "Brennan Center for Justice",
+          "url": "https://www.brennancenter.org/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "ap_jan6",
+          "title": "AP Fact Check and January 6 Coverage Hub",
+          "publisher": "Associated Press",
+          "url": "https://apnews.com/hub/capitol-siege",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "factcheck_election_claims",
+          "title": "FactCheck.org Election and Policy Claims",
+          "publisher": "FactCheck.org",
+          "url": "https://www.factcheck.org/",
+          "date": "2025-01-01"
+        },
+        {
+          "id": "guttmacher_access",
+          "title": "Abortion and Reproductive Health Access Data",
+          "publisher": "Guttmacher Institute",
+          "url": "https://www.guttmacher.org/",
+          "date": "2025-01-01"
         }
       ]
     }
