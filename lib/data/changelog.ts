@@ -17,7 +17,7 @@ export const changelog: ChangelogEntry[] = [
       "Removed duplicate hero logo on the homepage — header mark only",
       "Stripped candy section accents from PageHero borders and homepage cards; navy/gray chrome only",
       "Homepage section cards: even tight grid, equal cards, no vanity meta chips",
-      "SW cache hard-bumped to sunrise-v46-20260713T1530",
+      "SW cache hard-bumped to sunrise-v46-20260713T1535-force; _headers no-store for /sw.js",
     ],
   },
   {
