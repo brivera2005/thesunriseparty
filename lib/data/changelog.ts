@@ -8,6 +8,17 @@ export interface ChangelogEntry {
 /** Site iteration history - meta transparency for Project Sunrise builds */
 export const changelog: ChangelogEntry[] = [
   {
+    version: "0.45.0",
+    date: "2026-07-13",
+    title: "Pass 45 - Project Sunrise brand mark",
+    highlights: [
+      "Replaced legacy THE SUNRISE PARTY logos with the PROJECT SUNRISE horizontal mark sitewide",
+      "Header logo enlarged (~160–260px wide by breakpoint) with extra header padding; hero/footer use the same asset",
+      "Favicon and apple-touch-icon cropped from the sun icon only; manifest icons updated",
+      "SW cache bumped to sunrise-v45",
+    ],
+  },
+  {
     version: "0.44.1",
     date: "2026-07-13",
     title: "Pass 44b - Blueprint opposition framing",

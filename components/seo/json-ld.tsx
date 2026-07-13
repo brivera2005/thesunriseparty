@@ -28,7 +28,7 @@ const structuredData = {
       url: SITE_URL,
       logo: {
         "@type": "ImageObject",
-        url: `${SITE_URL}/icon.svg`,
+        url: `${SITE_URL}/logo.png`,
       },
       description:
         "Independent transparency project documenting Project 2025 implementation with primary sources, archived citations, and a progressive legislative blueprint.",

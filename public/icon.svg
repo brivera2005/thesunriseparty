@@ -1,18 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Project Sunrise">
+  <rect width="512" height="512" fill="#ffffff"/>
+  <!-- Horizon arc -->
+  <path d="M56 420 Q256 300 456 420 L456 460 Q256 360 56 460 Z" fill="#1e3a5f"/>
+  <!-- Sun body -->
   <defs>
-    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#2d1f1a"/>
-      <stop offset="55%" stop-color="#5c3d2e"/>
-      <stop offset="100%" stop-color="#8b5a3c"/>
-    </linearGradient>
-    <linearGradient id="sun" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f5d080"/>
-      <stop offset="50%" stop-color="#e8a840"/>
-      <stop offset="100%" stop-color="#d47830"/>
+    <linearGradient id="sunGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c2410c"/>
+      <stop offset="45%" stop-color="#ea580c"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
     </linearGradient>
   </defs>
-  <rect width="512" height="512" rx="96" fill="url(#sky)"/>
-  <circle cx="256" cy="300" r="120" fill="url(#sun)" opacity="0.95"/>
-  <circle cx="256" cy="300" r="90" fill="#f0c050" opacity="0.6"/>
-  <path d="M0 380 Q128 340 256 360 T512 380 L512 512 L0 512 Z" fill="#1a1210" opacity="0.5"/>
+  <ellipse cx="230" cy="300" rx="95" ry="78" fill="url(#sunGrad)"/>
+  <!-- Sharp rays left -->
+  <polygon points="150,250 95,175 175,235" fill="#ea580c"/>
+  <polygon points="175,220 145,130 205,210" fill="#f59e0b"/>
+  <polygon points="205,205 195,115 240,200" fill="#fbbf24"/>
+  <!-- Flowing rays right -->
+  <path d="M280 220 Q340 140 400 90 Q360 170 310 240 Z" fill="#fbbf24"/>
+  <path d="M300 250 Q380 180 460 140 Q400 220 330 270 Z" fill="#f59e0b"/>
+  <path d="M310 280 Q390 240 470 220 Q410 280 340 300 Z" fill="#ea580c"/>
 </svg>

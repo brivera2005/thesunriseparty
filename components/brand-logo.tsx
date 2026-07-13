@@ -13,29 +13,33 @@ type BrandLogoProps = {
   showTagline?: boolean;
 };
 
+/** Intrinsic size of public/logo.png (1024×341). */
+const LOGO_W = 1024;
+const LOGO_H = 341;
+
 const sizeMap = {
   hero: {
-    width: 640,
-    height: 349,
+    width: LOGO_W,
+    height: LOGO_H,
     className:
-      "h-auto w-[min(100%,320px)] sm:w-[380px] md:w-[440px] lg:w-[520px]",
+      "h-auto w-[min(100%,300px)] sm:w-[380px] md:w-[460px] lg:w-[520px]",
   },
-  // Header + footer share the same chrome size for cohesion
+  // Width-first: horizontal mark needs room; ~160–260px across breakpoints
   header: {
-    width: 280,
-    height: 152,
-    className: "h-11 w-auto sm:h-12",
+    width: LOGO_W,
+    height: LOGO_H,
+    className: "h-auto w-[160px] sm:w-[200px] md:w-[240px] lg:w-[260px]",
   },
   footer: {
-    width: 280,
-    height: 152,
-    className: "h-11 w-auto sm:h-12",
+    width: LOGO_W,
+    height: LOGO_H,
+    className: "h-auto w-[160px] sm:w-[200px] md:w-[220px]",
   },
 } as const;
 
 /**
- * Logo wrapper: mix-blend-multiply removes the off-white textured PNG background
- * on pure white (#ffffff) pages so the mark sits flush without a visible box.
+ * Brand mark: PROJECT SUNRISE horizontal logo (sun icon + wordmark + tagline).
+ * White PNG background matches site chrome — no mix-blend needed.
  */
 export function BrandLogo({
   variant = "header",
@@ -47,22 +51,16 @@ export function BrandLogo({
 
   return (
     <span
-      className={cn(
-        "inline-flex shrink-0 flex-col items-start bg-white",
-        className
-      )}
+      className={cn("inline-flex shrink-0 flex-col items-start", className)}
     >
-      <span className="inline-block bg-white leading-none">
+      <span className="inline-block leading-none">
         <Image
           src="/logo.png"
-          alt={`The Sunrise Party. ${TAGLINE}`}
+          alt={`Project Sunrise. ${TAGLINE}`}
           width={width}
           height={height}
           priority={priority}
-          className={cn(
-            "object-contain object-left mix-blend-multiply",
-            sizeClass
-          )}
+          className={cn("object-contain object-left", sizeClass)}
         />
       </span>
       {showTagline && variant === "hero" && (

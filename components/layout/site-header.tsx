@@ -94,10 +94,10 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-white/95 backdrop-blur-lg supports-[backdrop-filter]:bg-white/90">
       {/* Top row: logo + search */}
-      <div className="page-container flex items-center justify-between gap-2 py-2 sm:py-2.5">
+      <div className="page-container flex items-center justify-between gap-3 py-3 sm:py-3.5">
         <Link
           href="/"
-          className="flex min-w-0 items-center py-0.5"
+          className="flex min-w-0 items-center"
           aria-label="Project Sunrise home"
         >
           <BrandLogo variant="header" priority />
