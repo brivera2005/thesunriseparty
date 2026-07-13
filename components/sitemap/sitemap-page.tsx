@@ -13,7 +13,6 @@ import { buttonVariants } from "@/components/ui/button";
 import {
   sitemapIntro,
   sitemapSections,
-  sitemapStats,
 } from "@/lib/data/sitemap-content";
 import { cn } from "@/lib/utils";
 import { PageShell } from "@/components/layout/page-shell";
@@ -58,21 +57,6 @@ export function SitemapPage() {
                 v0.21.0 changelog
               </Link>
             </div>
-          </div>
-        </section>
-
-        <section className="border-b border-border bg-muted/20">
-          <div className="mx-auto grid max-w-6xl grid-cols-2 gap-4 px-4 py-8 sm:grid-cols-3 sm:px-6 lg:grid-cols-6">
-            {sitemapStats.map((stat) => (
-              <div
-                key={stat.label}
-                className="flex flex-col items-center rounded-xl border border-border bg-card p-4 text-center shadow-sm"
-              >
-                <stat.icon className="mb-2 size-5 text-primary" aria-hidden />
-                <p className="text-2xl font-bold tabular-nums">{stat.value}</p>
-                <p className="mt-1 text-xs text-muted-foreground">{stat.label}</p>
-              </div>
-            ))}
           </div>
         </section>
 

@@ -1,8 +1,8 @@
-/* Project Sunrise service worker - Pass 45 cache bust.
+/* Project Sunrise service worker - Pass 45b cache bust.
  * Cache-first on HTML/CSS was serving pre-Pass-35 layouts on phones.
  * Documents and styles now network-first; only offline fallback uses cache.
  */
-const CACHE = "sunrise-v45-20260713";
+const CACHE = "sunrise-v45b-20260713";
 const PRECACHE = [
   "/manifest.webmanifest",
   "/icon-192.png",

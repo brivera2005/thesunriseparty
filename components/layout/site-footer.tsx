@@ -2,11 +2,6 @@ import Link from "next/link";
 import { ExternalLink, FileText, Heart, Rss } from "lucide-react";
 import { BrandLogo } from "@/components/brand-logo";
 import { trackerSources } from "@/lib/data/tracker-sources";
-import { getTrackerStats } from "@/lib/data/timeline-events";
-import { conversationHelpers } from "@/lib/data/conversation-helpers";
-import { validatedUrls } from "@/lib/data/validated-urls";
-
-const stats = getTrackerStats();
 
 const sitePages = [
   { href: "/", label: "Home" },
@@ -41,34 +36,10 @@ export function SiteFooter() {
             <Link href="/" className="mb-3 inline-block" aria-label="Project Sunrise home">
               <BrandLogo variant="footer" />
             </Link>
-            <p className="text-sm text-muted-foreground">
+            <p className="mt-3 text-sm text-muted-foreground">
               Track the agenda. Counter the lies. Build the fix. Every claim
               sourced. Every link archived.
             </p>
-            <dl className="mt-6 grid grid-cols-2 gap-3 text-sm sm:grid-cols-4 lg:grid-cols-2">
-              <div>
-                <dt className="text-muted-foreground">Actions tracked</dt>
-                <dd className="text-xl font-bold tabular-nums">{stats.total}</dd>
-              </div>
-              <div>
-                <dt className="text-muted-foreground">Rebuttals ready</dt>
-                <dd className="text-xl font-bold tabular-nums">
-                  {conversationHelpers.length}
-                </dd>
-              </div>
-              <div>
-                <dt className="text-muted-foreground">Links verified</dt>
-                <dd className="text-xl font-bold tabular-nums text-primary">
-                  {validatedUrls.size}
-                </dd>
-              </div>
-              <div>
-                <dt className="text-muted-foreground">High severity</dt>
-                <dd className="text-xl font-bold tabular-nums text-destructive">
-                  {stats.highSeverity}
-                </dd>
-              </div>
-            </dl>
           </div>
 
           <div>

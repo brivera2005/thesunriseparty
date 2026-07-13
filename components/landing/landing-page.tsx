@@ -17,56 +17,11 @@ import {
 import { PageShell } from "@/components/layout/page-shell";
 import { BrandLogo } from "@/components/brand-logo";
 import { FadeIn } from "@/components/ui/fade-in";
-import { conversationHelpers } from "@/lib/data/conversation-helpers";
-import { getTrackerStats } from "@/lib/data/timeline-events";
-import { getHistoryStats } from "@/lib/data/hidden-history";
-import { getLegislationStats } from "@/lib/data/legislation";
-import { policyFixes } from "@/lib/data/policies";
-import { getScenarioStats } from "@/lib/data/scenarios";
-import { formatDateUS } from "@/lib/format-date";
 import {
   getSectionTheme,
   type SectionId,
 } from "@/lib/section-theme";
 import { cn } from "@/lib/utils";
-
-const historyStats = getHistoryStats();
-const trackerStats = getTrackerStats();
-const legislationStats = getLegislationStats();
-const scenarioStats = getScenarioStats();
-const billsUpdated = formatDateUS(legislationStats.lastUpdated);
-
-const livePulse: {
-  label: string;
-  value: string;
-  href: string;
-  section: SectionId;
-}[] = [
-  {
-    label: "High-severity actions",
-    value: String(trackerStats.highSeverity),
-    href: "/tracker",
-    section: "tracker",
-  },
-  {
-    label: "Live rebuttals",
-    value: `${conversationHelpers.length}+`,
-    href: "/rebuttal",
-    section: "rebuttal",
-  },
-  {
-    label: "Bills updated",
-    value: billsUpdated,
-    href: "/legislation",
-    section: "legislation",
-  },
-  {
-    label: "Impact scenarios",
-    value: String(scenarioStats.total),
-    href: "/scenarios",
-    section: "scenarios",
-  },
-];
 
 /** Primary tools match header nav order; Start/Donate/Contribute are footer-only. */
 const platformCards: {
@@ -82,7 +37,7 @@ const platformCards: {
     title: "Project 2025 Tracker",
     description: "Admin actions scored by severity, every claim cited.",
     icon: Activity,
-    meta: `${trackerStats.highSeverity} high-severity`,
+    meta: "Severity-scored actions",
     section: "tracker",
   },
   {
@@ -90,7 +45,7 @@ const platformCards: {
     title: "Rebuttal Desk",
     description: "Someone lied. Get the sourced answer, ready to copy.",
     icon: MessageSquareQuote,
-    meta: `${conversationHelpers.length}+ ready`,
+    meta: "Copy-ready counters",
     section: "rebuttal",
   },
   {
@@ -98,7 +53,7 @@ const platformCards: {
     title: "Legislation",
     description: "Live bills, sponsors, and party votes. Updated continuously.",
     icon: Landmark,
-    meta: `${legislationStats.total} bills · ${billsUpdated}`,
+    meta: "Live Congress feed",
     section: "legislation",
   },
   {
@@ -106,7 +61,7 @@ const platformCards: {
     title: "Hidden History",
     description: "Textbook story vs. what the archives actually show.",
     icon: History,
-    meta: `${historyStats.entries}+ moments`,
+    meta: "Archives vs. myth",
     section: "history",
   },
   {
@@ -114,7 +69,7 @@ const platformCards: {
     title: "Scenarios",
     description: "See how a policy choice lands on a real family.",
     icon: GitBranch,
-    meta: `${scenarioStats.total} causal chains`,
+    meta: "Causal impact chains",
     section: "scenarios",
   },
   {
@@ -122,7 +77,7 @@ const platformCards: {
     title: "Blueprint",
     description: "The fix, the receipts, and the gaslight exposed.",
     icon: BookOpen,
-    meta: `${policyFixes.length} policy pillars`,
+    meta: "Policy pillars",
     section: "blueprint",
   },
   {
@@ -211,46 +166,6 @@ export function LandingPage() {
         </div>
       </section>
 
-      <section
-        className="border-b border-border bg-accent/40"
-        aria-label="Live pulse"
-      >
-        <div className="page-container py-4 sm:py-5">
-          <div className="mb-3 flex items-center justify-center gap-2 sm:justify-start">
-            <span className="relative flex size-2.5">
-              <span className="absolute inline-flex size-full animate-ping rounded-full bg-primary opacity-60" />
-              <span className="relative inline-flex size-2.5 rounded-full bg-primary" />
-            </span>
-            <p className="text-xs font-semibold tracking-[0.18em] text-navy uppercase">
-              Live now
-            </p>
-          </div>
-          <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-            {livePulse.map((item) => {
-              const theme = getSectionTheme(item.section);
-              return (
-                <Link
-                  key={item.label}
-                  href={item.href}
-                  className="rounded-xl border border-border border-l-4 bg-white px-3 py-3 text-left shadow-sm transition-all hover:shadow-md"
-                  style={{ borderLeftColor: theme.hex }}
-                >
-                  <p className="text-[11px] font-medium tracking-wide text-muted-foreground uppercase">
-                    {item.label}
-                  </p>
-                  <p
-                    className="mt-1 text-lg font-bold tabular-nums sm:text-xl"
-                    style={{ color: theme.hex }}
-                  >
-                    {item.value}
-                  </p>
-                </Link>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
       <section className="section-y bg-white" aria-label="What you get">
         <div className="page-container">
           <FadeIn>
@@ -285,10 +200,7 @@ export function LandingPage() {
                     >
                       <card.icon className="size-5" strokeWidth={1.75} />
                     </span>
-                    <h3
-                      className="text-base font-semibold text-navy transition-colors"
-                      style={{ ["--hover" as string]: theme.hex }}
-                    >
+                    <h3 className="text-base font-semibold text-navy transition-colors">
                       {card.title}
                     </h3>
                     <p className="mt-1 text-[11px] font-medium tracking-wide text-muted-foreground uppercase">

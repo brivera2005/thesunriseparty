@@ -8,6 +8,17 @@ export interface ChangelogEntry {
 /** Site iteration history - meta transparency for Project Sunrise builds */
 export const changelog: ChangelogEntry[] = [
   {
+    version: "0.45.1",
+    date: "2026-07-13",
+    title: "Pass 45b - Modern header + kill vanity stats",
+    highlights: [
+      "Header rebuilt: glass/white sticky chrome, PROJECT SUNRISE mark, muted navy text nav with hairline separators (no candy-colored pills)",
+      "Nav order unchanged: Tracker / Rebuttal / Legislation / History / Scenarios / Blueprint / About; 2-col mobile text grid",
+      "Removed Live pulse strip, landing count chips, footer platform counters, rebuttal milestone banners, and sitemap vanity stats",
+      "SW cache bumped to sunrise-v45b",
+    ],
+  },
+  {
     version: "0.45.0",
     date: "2026-07-13",
     title: "Pass 45 - Project Sunrise brand mark",
@@ -35,7 +46,7 @@ export const changelog: ChangelogEntry[] = [
     title: "Pass 44 - Compact nav under logo",
     highlights: [
       "Header rebuilt: logo on top row, compact 7-item nav grid underneath (2-col mobile / 4-col tablet / 7-col desktop)",
-      "Nav order: Project 2025 Tracker · Rebuttal Desk · Legislation · Hidden History · Scenarios · Blueprint · About",
+      "Nav order: Project 2025 Tracker / Rebuttal Desk / Legislation / Hidden History / Scenarios / Blueprint / About",
       "Start, Contribute, and Donate removed from header (footer only); Mission + Accountability + Methodology grouped as About → /mission",
       "Homepage section cards and hero CTAs match nav priority; SW cache bumped to sunrise-v44",
     ],

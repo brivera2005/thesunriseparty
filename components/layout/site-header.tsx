@@ -12,62 +12,50 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
-import {
-  getSectionTheme,
-  type SectionId,
-} from "@/lib/section-theme";
 
 /** Primary nav only - Start / Contribute / Donate live in the footer. */
 const siteNav: {
   label: string;
   href: string;
   description: string;
-  section: SectionId;
   /** Extra path prefixes that count as active (About group). */
   activePrefixes?: string[];
 }[] = [
   {
-    label: "Project 2025 Tracker",
+    label: "Tracker",
     href: "/tracker",
-    description: "Admin actions scored by severity.",
-    section: "tracker",
+    description: "Project 2025 Tracker - admin actions scored by severity.",
   },
   {
-    label: "Rebuttal Desk",
+    label: "Rebuttal",
     href: "/rebuttal",
-    description: "When they say X, you say Y.",
-    section: "rebuttal",
+    description: "Rebuttal Desk - when they say X, you say Y.",
   },
   {
     label: "Legislation",
     href: "/legislation",
     description: "Live bills and party votes.",
-    section: "legislation",
     activePrefixes: ["/bills"],
   },
   {
-    label: "Hidden History",
+    label: "History",
     href: "/history",
-    description: "Textbook vs. archives.",
-    section: "history",
+    description: "Hidden History - textbook vs. archives.",
   },
   {
     label: "Scenarios",
     href: "/scenarios",
     description: "Family gets Y. Should get Z.",
-    section: "scenarios",
   },
   {
     label: "Blueprint",
     href: "/blueprint",
     description: "The fix and the gaslight exposed.",
-    section: "blueprint",
   },
   {
     label: "About",
     href: "/mission",
     description: "Mission, accountability, and methodology.",
-    section: "mission",
     activePrefixes: ["/accountability", "/methodology"],
   },
 ];
@@ -92,9 +80,9 @@ export function SiteHeader() {
   const setCommandOpen = useAppStore((s) => s.setCommandOpen);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-border bg-white/95 backdrop-blur-lg supports-[backdrop-filter]:bg-white/90">
+    <header className="sticky top-0 z-40 border-b border-black/[0.06] bg-white/80 backdrop-blur-xl supports-[backdrop-filter]:bg-white/70">
       {/* Top row: logo + search */}
-      <div className="page-container flex items-center justify-between gap-3 py-3 sm:py-3.5">
+      <div className="page-container flex items-center justify-between gap-4 py-3.5 sm:py-4">
         <Link
           href="/"
           className="flex min-w-0 items-center"
@@ -108,24 +96,24 @@ export function SiteHeader() {
             <TooltipTrigger
               delay={180}
               className={cn(
-                buttonVariants({ variant: "outline", size: "sm" }),
-                "hidden h-8 gap-1.5 border-border px-2.5 text-xs sm:inline-flex"
+                buttonVariants({ variant: "ghost", size: "sm" }),
+                "hidden h-8 gap-1.5 px-2.5 text-xs text-navy/70 hover:bg-black/[0.04] hover:text-navy sm:inline-flex"
               )}
               onClick={() => setCommandOpen(true)}
               aria-label="Search"
             >
               <Search className="size-3.5" />
-              <span className="text-muted-foreground">Search</span>
+              <span>Search</span>
             </TooltipTrigger>
             <TooltipContent side="bottom">
               Search rebuttals, tracker, legislation, history, and blueprint.
             </TooltipContent>
           </Tooltip>
           <Button
-            variant="outline"
+            variant="ghost"
             size="icon"
             onClick={() => setCommandOpen(true)}
-            className="size-9 sm:hidden"
+            className="size-9 text-navy/70 hover:bg-black/[0.04] hover:text-navy sm:hidden"
             aria-label="Search the site"
             title="Search the site"
           >
@@ -134,46 +122,70 @@ export function SiteHeader() {
         </div>
       </div>
 
-      {/* Compact nav grid under logo - same order on mobile + desktop */}
-      <nav
-        className="border-t border-border bg-white"
-        aria-label="Site sections"
-      >
-        <div className="page-container py-1.5 sm:py-2">
-          <ul className="grid grid-cols-2 gap-1 sm:grid-cols-4 lg:grid-cols-7">
+      {/* Compact nav under logo - text row desktop / 2-col mobile */}
+      <nav className="border-t border-black/[0.05]" aria-label="Site sections">
+        <div className="page-container py-2 sm:py-2.5">
+          {/* Mobile: clean 2-col text grid */}
+          <ul className="grid grid-cols-2 gap-x-1 gap-y-0.5 sm:hidden">
             {siteNav.map((item) => {
               const active = pathActive(
                 pathname,
                 item.href,
                 item.activePrefixes
               );
-              const theme = getSectionTheme(item.section);
               return (
                 <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    className={cn(
+                      "flex min-h-9 items-center justify-center rounded-md px-2 text-[12px] tracking-wide transition-colors",
+                      active
+                        ? "bg-black/[0.05] font-semibold text-navy"
+                        : "font-medium text-navy/65 hover:bg-black/[0.03] hover:text-navy"
+                    )}
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+
+          {/* Desktop/tablet: elegant text row with hairline separators */}
+          <ul className="hidden items-center justify-center sm:flex sm:gap-0">
+            {siteNav.map((item, i) => {
+              const active = pathActive(
+                pathname,
+                item.href,
+                item.activePrefixes
+              );
+              return (
+                <li key={item.href} className="flex items-center">
+                  {i > 0 ? (
+                    <span
+                      aria-hidden
+                      className="mx-1 h-3 w-px shrink-0 bg-black/10 sm:mx-1.5 lg:mx-2"
+                    />
+                  ) : null}
                   <Tooltip>
                     <TooltipTrigger
                       delay={160}
                       closeOnClick
                       className={cn(
-                        "flex h-7 w-full items-center justify-center rounded-md border px-1 text-center text-[10px] font-semibold leading-tight tracking-wide transition-colors sm:h-8 sm:text-[11px]",
+                        "relative rounded-md px-2 py-1.5 text-[12px] tracking-wide transition-colors lg:px-2.5 lg:text-[13px]",
                         active
-                          ? "text-white shadow-sm"
-                          : "border-border bg-white text-navy hover:bg-muted/60"
+                          ? "font-semibold text-navy"
+                          : "font-medium text-navy/60 hover:bg-black/[0.04] hover:text-navy"
                       )}
-                      style={
-                        active
-                          ? {
-                              backgroundColor: theme.hex,
-                              borderColor: theme.hex,
-                            }
-                          : {
-                              borderLeftWidth: 2,
-                              borderLeftColor: theme.hex,
-                            }
-                      }
                       render={<Link href={item.href} />}
                     >
                       {item.label}
+                      {active ? (
+                        <span
+                          aria-hidden
+                          className="absolute inset-x-2 -bottom-0.5 h-px bg-navy/80 lg:inset-x-2.5"
+                        />
+                      ) : null}
                     </TooltipTrigger>
                     <TooltipContent side="bottom">
                       {item.description}
