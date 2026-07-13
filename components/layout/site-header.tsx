@@ -1,8 +1,9 @@
 "use client";
 
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Search } from "lucide-react";
+import { Menu, Search, X } from "lucide-react";
 import { useAppStore } from "@/lib/store";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { BrandLogo } from "@/components/brand-logo";
@@ -78,20 +79,115 @@ function pathActive(
 export function SiteHeader() {
   const pathname = usePathname();
   const setCommandOpen = useAppStore((s) => s.setCommandOpen);
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    setMobileOpen(false);
+  }, [pathname]);
+
+  useEffect(() => {
+    if (!mobileOpen) return;
+    function onKey(e: KeyboardEvent) {
+      if (e.key === "Escape") setMobileOpen(false);
+    }
+    function onPointer(e: MouseEvent | TouchEvent) {
+      const el = menuRef.current;
+      if (el && !el.contains(e.target as Node)) setMobileOpen(false);
+    }
+    document.addEventListener("keydown", onKey);
+    document.addEventListener("mousedown", onPointer);
+    document.addEventListener("touchstart", onPointer);
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      document.removeEventListener("mousedown", onPointer);
+      document.removeEventListener("touchstart", onPointer);
+    };
+  }, [mobileOpen]);
 
   return (
     <header className="sticky top-0 z-40 border-b border-black/[0.06] bg-white/80 backdrop-blur-xl supports-[backdrop-filter]:bg-white/70">
-      {/* Top row: logo + search */}
-      <div className="page-container flex items-center justify-between gap-4 py-3.5 sm:py-4">
+      {/* Single top bar: logo | nav (desktop) | hamburger + search (mobile) */}
+      <div className="page-container relative flex h-14 items-center gap-3 sm:h-16 sm:gap-4">
         <Link
           href="/"
-          className="flex min-w-0 items-center"
+          className="flex shrink-0 items-center"
           aria-label="Project Sunrise home"
         >
           <BrandLogo variant="header" priority />
         </Link>
 
-        <div className="flex items-center gap-1.5">
+        {/* Desktop: inline section links on the same row */}
+        <nav
+          className="hidden min-w-0 flex-1 items-center justify-center lg:flex"
+          aria-label="Site sections"
+        >
+          <ul className="flex flex-wrap items-center justify-center gap-0">
+            {siteNav.map((item, i) => {
+              const active = pathActive(
+                pathname,
+                item.href,
+                item.activePrefixes
+              );
+              return (
+                <li key={item.href} className="flex items-center">
+                  {i > 0 ? (
+                    <span
+                      aria-hidden
+                      className="mx-1 h-3 w-px shrink-0 bg-black/10 lg:mx-1.5"
+                    />
+                  ) : null}
+                  <Tooltip>
+                    <TooltipTrigger
+                      delay={160}
+                      closeOnClick
+                      className={cn(
+                        "relative rounded-md px-1.5 py-1.5 text-[12px] tracking-wide transition-colors xl:px-2 xl:text-[13px]",
+                        active
+                          ? "font-semibold text-navy"
+                          : "font-medium text-navy/60 hover:bg-black/[0.04] hover:text-navy"
+                      )}
+                      render={<Link href={item.href} />}
+                    >
+                      {item.label}
+                      {active ? (
+                        <span
+                          aria-hidden
+                          className="absolute inset-x-1.5 -bottom-0.5 h-px bg-navy/80 xl:inset-x-2"
+                        />
+                      ) : null}
+                    </TooltipTrigger>
+                    <TooltipContent side="bottom">
+                      {item.description}
+                    </TooltipContent>
+                  </Tooltip>
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
+
+        {/* Spacer on mobile so actions sit far right */}
+        <div className="min-w-0 flex-1 lg:hidden" aria-hidden />
+
+        <div className="relative flex shrink-0 items-center gap-0.5" ref={menuRef}>
+          {/* Mobile/tablet: hamburger LEFT of search */}
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={() => setMobileOpen((o) => !o)}
+            className="size-9 text-navy/70 hover:bg-black/[0.04] hover:text-navy lg:hidden"
+            aria-label={mobileOpen ? "Close menu" : "Open menu"}
+            aria-expanded={mobileOpen}
+            aria-controls="mobile-site-nav"
+          >
+            {mobileOpen ? (
+              <X className="size-4" />
+            ) : (
+              <Menu className="size-4" />
+            )}
+          </Button>
+
           <Tooltip>
             <TooltipTrigger
               delay={180}
@@ -103,7 +199,7 @@ export function SiteHeader() {
               aria-label="Search"
             >
               <Search className="size-3.5" />
-              <span>Search</span>
+              <span className="hidden lg:inline">Search</span>
             </TooltipTrigger>
             <TooltipContent side="bottom">
               Search rebuttals, tracker, legislation, history, and blueprint.
@@ -119,84 +215,42 @@ export function SiteHeader() {
           >
             <Search className="size-3.5" />
           </Button>
+
+          {/* Mobile dropdown: all 7 items, only when open */}
+          {mobileOpen ? (
+            <nav
+              id="mobile-site-nav"
+              className="absolute top-[calc(100%+0.5rem)] right-0 z-50 w-[min(100vw-2rem,16rem)] rounded-xl border border-black/[0.08] bg-white py-1.5 shadow-lg lg:hidden"
+              aria-label="Site sections"
+            >
+              <ul className="flex flex-col">
+                {siteNav.map((item) => {
+                  const active = pathActive(
+                    pathname,
+                    item.href,
+                    item.activePrefixes
+                  );
+                  return (
+                    <li key={item.href}>
+                      <Link
+                        href={item.href}
+                        className={cn(
+                          "flex min-h-11 items-center px-4 text-[14px] tracking-wide transition-colors",
+                          active
+                            ? "bg-navy/[0.06] font-semibold text-navy"
+                            : "font-medium text-navy/70 hover:bg-black/[0.03] hover:text-navy"
+                        )}
+                      >
+                        {item.label}
+                      </Link>
+                    </li>
+                  );
+                })}
+              </ul>
+            </nav>
+          ) : null}
         </div>
       </div>
-
-      {/* Compact nav under logo - text row desktop / 2-col mobile */}
-      <nav className="border-t border-black/[0.05]" aria-label="Site sections">
-        <div className="page-container py-2 sm:py-2.5">
-          {/* Mobile: clean 2-col text grid */}
-          <ul className="grid grid-cols-2 gap-x-1 gap-y-0.5 sm:hidden">
-            {siteNav.map((item) => {
-              const active = pathActive(
-                pathname,
-                item.href,
-                item.activePrefixes
-              );
-              return (
-                <li key={item.href}>
-                  <Link
-                    href={item.href}
-                    className={cn(
-                      "flex min-h-9 items-center justify-center rounded-md px-2 text-[12px] tracking-wide transition-colors",
-                      active
-                        ? "bg-black/[0.05] font-semibold text-navy"
-                        : "font-medium text-navy/65 hover:bg-black/[0.03] hover:text-navy"
-                    )}
-                  >
-                    {item.label}
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
-
-          {/* Desktop/tablet: elegant text row with hairline separators */}
-          <ul className="hidden items-center justify-center sm:flex sm:gap-0">
-            {siteNav.map((item, i) => {
-              const active = pathActive(
-                pathname,
-                item.href,
-                item.activePrefixes
-              );
-              return (
-                <li key={item.href} className="flex items-center">
-                  {i > 0 ? (
-                    <span
-                      aria-hidden
-                      className="mx-1 h-3 w-px shrink-0 bg-black/10 sm:mx-1.5 lg:mx-2"
-                    />
-                  ) : null}
-                  <Tooltip>
-                    <TooltipTrigger
-                      delay={160}
-                      closeOnClick
-                      className={cn(
-                        "relative rounded-md px-2 py-1.5 text-[12px] tracking-wide transition-colors lg:px-2.5 lg:text-[13px]",
-                        active
-                          ? "font-semibold text-navy"
-                          : "font-medium text-navy/60 hover:bg-black/[0.04] hover:text-navy"
-                      )}
-                      render={<Link href={item.href} />}
-                    >
-                      {item.label}
-                      {active ? (
-                        <span
-                          aria-hidden
-                          className="absolute inset-x-2 -bottom-0.5 h-px bg-navy/80 lg:inset-x-2.5"
-                        />
-                      ) : null}
-                    </TooltipTrigger>
-                    <TooltipContent side="bottom">
-                      {item.description}
-                    </TooltipContent>
-                  </Tooltip>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-      </nav>
     </header>
   );
 }

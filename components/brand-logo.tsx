@@ -24,11 +24,11 @@ const sizeMap = {
     className:
       "h-auto w-[min(100%,300px)] sm:w-[380px] md:w-[460px] lg:w-[520px]",
   },
-  // Width-first: horizontal mark needs room; ~160–260px across breakpoints
+  // Compact for single-row header with inline nav (~100–140px)
   header: {
     width: LOGO_W,
     height: LOGO_H,
-    className: "h-auto w-[160px] sm:w-[200px] md:w-[240px] lg:w-[260px]",
+    className: "h-auto w-[100px] sm:w-[120px] md:w-[130px] lg:w-[140px]",
   },
   footer: {
     width: LOGO_W,

@@ -8,6 +8,19 @@ export interface ChangelogEntry {
 /** Site iteration history - meta transparency for Project Sunrise builds */
 export const changelog: ChangelogEntry[] = [
   {
+    version: "0.46.0",
+    date: "2026-07-13",
+    title: "Pass 46 - Inline header + mobile hamburger",
+    highlights: [
+      "Desktop: one-row header — compact logo, inline section links, search far right",
+      "Mobile: Logo | flex | hamburger (left of Search) | Search; 7 links only in dropdown (no permanent nav grid)",
+      "Removed duplicate hero logo on the homepage — header mark only",
+      "Stripped candy section accents from PageHero borders and homepage cards; navy/gray chrome only",
+      "Homepage section cards: even tight grid, equal cards, no vanity meta chips",
+      "SW cache hard-bumped to sunrise-v46-20260713T1530",
+    ],
+  },
+  {
     version: "0.45.1",
     date: "2026-07-13",
     title: "Pass 45b - Modern header + kill vanity stats",
