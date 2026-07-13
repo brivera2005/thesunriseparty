@@ -100,7 +100,7 @@ export function LandingPage() {
             <h1 className="text-3xl font-bold tracking-[0.06em] text-navy uppercase sm:text-4xl lg:text-5xl">
               Track. Counter. Fix.
             </h1>
-            <p className="mx-auto mt-4 max-w-2xl text-sm font-semibold tracking-[0.14em] text-navy/55 uppercase sm:text-base">
+            <p className="mx-auto mt-3 max-w-full overflow-hidden px-2 text-[clamp(9px,2.65vw,0.875rem)] font-semibold tracking-[0.04em] text-navy/55 uppercase whitespace-nowrap sm:mt-4 sm:tracking-[0.08em] md:text-base md:tracking-[0.1em]">
               Live bills. Sourced answers. Real impact. Right now.
             </p>
           </FadeIn>
@@ -109,28 +109,30 @@ export function LandingPage() {
 
       <section className="section-y bg-white" aria-label="Sections">
         <div className="page-container">
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+          <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 sm:gap-3 lg:grid-cols-3 xl:grid-cols-5">
             {platformCards.map((card, i) => (
               <FadeIn key={card.href} delay={i * 25}>
                 <Link
                   href={card.href}
                   className={cn(
-                    "group surface-card-interactive flex h-full min-h-[10.5rem] flex-col p-4 sm:p-5"
+                    "group surface-card-interactive flex h-full flex-col p-3 sm:p-3.5"
                   )}
                 >
-                  <span className="mb-3 inline-flex size-9 items-center justify-center rounded-lg bg-navy/[0.06] text-navy transition-transform duration-300 group-hover:scale-105">
-                    <card.icon className="size-4" strokeWidth={1.75} />
-                  </span>
-                  <h2 className="text-[15px] font-semibold text-navy">
-                    {card.title}
-                  </h2>
-                  <p className="mt-1.5 flex-1 text-sm leading-snug text-muted-foreground">
+                  <div className="flex items-center gap-2">
+                    <span className="inline-flex size-7 shrink-0 items-center justify-center rounded-md bg-navy/[0.06] text-navy transition-transform duration-300 group-hover:scale-105">
+                      <card.icon className="size-3.5" strokeWidth={1.75} />
+                    </span>
+                    <h2 className="min-w-0 flex-1 truncate text-sm font-semibold text-navy">
+                      {card.title}
+                    </h2>
+                    <span className="inline-flex shrink-0 items-center gap-0.5 text-xs font-semibold text-navy/70 transition-colors group-hover:text-navy">
+                      Open
+                      <ArrowRight className="size-3 transition-transform group-hover:translate-x-0.5" />
+                    </span>
+                  </div>
+                  <p className="mt-1.5 text-xs leading-snug text-muted-foreground sm:text-[13px]">
                     {card.description}
                   </p>
-                  <span className="mt-3 inline-flex min-h-8 items-center gap-1 text-sm font-semibold text-navy/70 transition-colors group-hover:text-navy">
-                    Open
-                    <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-0.5" />
-                  </span>
                 </Link>
               </FadeIn>
             ))}

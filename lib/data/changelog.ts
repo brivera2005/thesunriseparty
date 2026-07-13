@@ -8,6 +8,16 @@ export interface ChangelogEntry {
 /** Site iteration history - meta transparency for Project Sunrise builds */
 export const changelog: ChangelogEntry[] = [
   {
+    version: "0.48.0",
+    date: "2026-07-13",
+    title: "Pass 48 - Mobile homepage density",
+    highlights: [
+      "Support line smaller on mobile (text-[11px], tighter tracking, nowrap) so it fits one line",
+      "Destination cards: icon + title + Open on one row; less padding, shorter descriptions",
+      "SW cache hard-bumped to sunrise-v48-20260713T1545-dense",
+    ],
+  },
+  {
     version: "0.47.0",
     date: "2026-07-13",
     title: "Pass 47 - Punchy homepage + timeline tracker",
