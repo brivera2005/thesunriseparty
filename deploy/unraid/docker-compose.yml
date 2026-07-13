@@ -1,0 +1,53 @@
+# Project Sunrise auto-updater on unRAID (always-on).
+# Default: clone+pull GitHub inside the container, refresh tracker, build, deploy Pages.
+#
+# Deploy path on NAS: /mnt/user/appdata/project-sunrise-updater
+#
+# From Windows (example):
+#   Copy-Item -Recurse C:\Users\Benjamin\Projects\sunrise\deploy\unraid\* \\NAS\appdata\project-sunrise-updater -Force
+
+name: project-sunrise-updater
+
+services:
+  project-sunrise-updater:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: project-sunrise-updater
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      TZ: ${TZ:-America/Chicago}
+      UPDATE_HOURS: ${UPDATE_HOURS:-2}
+      RUN_ON_START: ${RUN_ON_START:-1}
+      MOUNT_MODE: ${MOUNT_MODE:-clone}
+      REPO_DIR: ${REPO_DIR:-/workspace/sunrise}
+      REPO_URL: ${REPO_URL:-https://github.com/brivera2005/thesunriseparty.git}
+      REPO_BRANCH: ${REPO_BRANCH:-master}
+      PAGES_PROJECT: ${PAGES_PROJECT:-thesunriseparty}
+      PAGES_BRANCH: ${PAGES_BRANCH:-main}
+      PUSH_DATA_UPDATES: ${PUSH_DATA_UPDATES:-0}
+      SKIP_DEPLOY: ${SKIP_DEPLOY:-0}
+      SKIP_BUILD: ${SKIP_BUILD:-0}
+      TRACKER_LOOKBACK_DAYS: ${TRACKER_LOOKBACK_DAYS:-45}
+      TRACKER_MAX_NEW: ${TRACKER_MAX_NEW:-40}
+      FR_PRESIDENT: ${FR_PRESIDENT:-donald-trump}
+      CLOUDFLARE_API_TOKEN: ${CLOUDFLARE_API_TOKEN:-}
+      CLOUDFLARE_ACCOUNT_ID: ${CLOUDFLARE_ACCOUNT_ID:-}
+      CONGRESS_API_KEY: ${CONGRESS_API_KEY:-}
+      GITHUB_TOKEN: ${GITHUB_TOKEN:-}
+    volumes:
+      # Persist clone + node_modules between restarts (clone mode)
+      - sunrise_workspace:/workspace
+      # Optional host mount (uncomment + set MOUNT_MODE=mount in .env):
+      # - ${SUNRISE_HOST_PATH:-/mnt/user/appdata/sunrise-src}:/workspace/sunrise:rw
+      - ./logs:/var/log/sunrise-updater
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "5"
+
+volumes:
+  sunrise_workspace:

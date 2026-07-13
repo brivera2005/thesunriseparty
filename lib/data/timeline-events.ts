@@ -1,6 +1,7 @@
 import { formatDateUS, formatMonthUS } from "@/lib/format-date";
 import type { TimelineEvent } from "@/lib/types";
 import { citations } from "./citations";
+import { autoTimelineEvents } from "./tracker-auto-events";
 import { observerBase, cprTrackerBase } from "./tracker-sources";
 
 const observer = (path = ""): { name: string; url: string } => ({
@@ -13,7 +14,8 @@ const cpr = (): { name: string; url: string } => ({
   url: cprTrackerBase,
 });
 
-export const timelineEvents: TimelineEvent[] = [
+/** Hand-curated tracker events (editorial source of truth). */
+const curatedTimelineEvents: TimelineEvent[] = [
   {
     Event_ID: "EVT-2025-0120-001",
     Date: "2025-01-20",
@@ -4397,6 +4399,15 @@ export const timelineEvents: TimelineEvent[] = [
   },
 
 
+];
+
+/**
+ * Full tracker: curated events plus auto-ingested Federal Register stubs
+ * from `npm run refresh:tracker` (lib/data/tracker-auto-events.ts).
+ */
+export const timelineEvents: TimelineEvent[] = [
+  ...curatedTimelineEvents,
+  ...autoTimelineEvents,
 ];
 
 /** Events grouped by calendar month (YYYY-MM), sorted chronologically */

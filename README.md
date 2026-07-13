@@ -89,11 +89,18 @@ Open [http://localhost:3000](http://localhost:3000).
 | `npm run build` | Production static export → `out/` |
 | `npm run start` | Serve production build (after build) |
 | `npm run lint` | ESLint |
+| `npm run refresh:tracker` | Pull Federal Register docs into auto tracker events (+ legislation if keyed) |
+| `npm run fetch-legislation` | Congress.gov → `public/data/legislation-live.json` (needs `CONGRESS_API_KEY`) |
+| `npm run deploy:pages` | Deploy `out/` to Cloudflare Pages (`thesunriseparty`) |
 | `npm run validate-links` | Check all citation URLs in `lib/data/` |
 | `npm run generate-feed` | Regenerate RSS/iCal (runs in prebuild) |
 | `npm run generate-data` | Regenerate JSON/CSV exports (runs in prebuild) |
 
 The `prebuild` hook runs feed generation, SEO artifacts, and data exports automatically before `next build`.
+
+### Always-on Unraid updater
+
+See [`deploy/unraid/README.md`](./deploy/unraid/README.md) for the `project-sunrise-updater` container (scheduled pull → refresh tracker → build → Wrangler deploy).
 
 ---
 
@@ -120,8 +127,11 @@ This project uses **static export** (`output: "export"` in `next.config.ts`). Th
 
 ```bash
 npm run build
-npx wrangler pages deploy out --project-name=thesunriseparty
+npm run deploy:pages
+# equivalent: npx wrangler pages deploy out --project-name=thesunriseparty --branch=main
 ```
+
+Required env: `CLOUDFLARE_API_TOKEN`, preferably `CLOUDFLARE_ACCOUNT_ID`.
 
 ### Release checklist
 
