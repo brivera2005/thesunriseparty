@@ -10,6 +10,7 @@ import { policyFixes, safeguardItems, blueprintDetailPath } from "../lib/data/po
 import { eventDetailPath } from "../lib/data/timeline-events";
 import { rebuttalDetailPath, rebuttalCategorySlugs } from "../lib/data/conversation-helpers";
 import { legislationBills, legislationDetailPath } from "../lib/data/legislation";
+import { impactScenarios, scenarioDetailPath } from "../lib/data/scenarios";
 
 const SITE = "https://thesunriseparty.pages.dev";
 
@@ -32,6 +33,7 @@ const STATIC_PAGES: SitemapEntry[] = [
   { loc: `${SITE}/tracker`, changefreq: "daily", priority: 0.9 },
   { loc: `${SITE}/legislation`, changefreq: "daily", priority: 0.9 },
   { loc: `${SITE}/bills`, changefreq: "daily", priority: 0.75 },
+  { loc: `${SITE}/scenarios`, changefreq: "weekly", priority: 0.88 },
   { loc: `${SITE}/events`, changefreq: "daily", priority: 0.85 },
   { loc: `${SITE}/blueprint`, changefreq: "monthly", priority: 0.85 },
   { loc: `${SITE}/rebuttal`, changefreq: "weekly", priority: 0.85 },
@@ -112,6 +114,12 @@ const legislationPages: SitemapEntry[] = legislationBills.map((bill) => ({
   priority: 0.72,
 }));
 
+const scenarioPages: SitemapEntry[] = impactScenarios.map((scenario) => ({
+  loc: `${SITE}${scenarioDetailPath(scenario.id)}`,
+  changefreq: "monthly",
+  priority: 0.74,
+}));
+
 const allEntries = [
   ...STATIC_PAGES,
   ...eventPages,
@@ -119,6 +127,7 @@ const allEntries = [
   ...rebuttalCategoryPages,
   ...blueprintPages,
   ...legislationPages,
+  ...scenarioPages,
 ];
 const sitemap = buildSitemap(allEntries);
 

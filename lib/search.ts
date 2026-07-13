@@ -7,6 +7,10 @@ import {
   legislationDetailPath,
   statusLabel,
 } from "@/lib/data/legislation";
+import {
+  impactScenarios,
+  scenarioDetailPath,
+} from "@/lib/data/scenarios";
 
 export { highlightMatches } from "@/lib/search-highlight";
 
@@ -16,7 +20,8 @@ export type SearchResultType =
   | "Rebuttal"
   | "Safeguard"
   | "History"
-  | "Legislation";
+  | "Legislation"
+  | "Scenario";
 
 export interface SearchResult {
   id: string;
@@ -195,6 +200,30 @@ export function buildSearchIndex(): SearchResult[] {
     });
   }
 
+  for (const scenario of impactScenarios) {
+    const body = [
+      scenario.title,
+      scenario.persona.who,
+      scenario.persona.location ?? "",
+      scenario.persona.situation,
+      scenario.getsY,
+      scenario.shouldGetZ,
+      scenario.bottomLine,
+      ...scenario.topics,
+      ...scenario.whyNotZ.steps.map((s) => `${s.actor} ${s.action} ${s.effect}`),
+      scenario.id,
+    ].join(" ");
+    results.push({
+      id: scenario.id,
+      type: "Scenario",
+      title: scenario.title,
+      subtitle: `${scenario.persona.who} · severity ${scenario.severity}/10`,
+      body,
+      score: 0,
+      href: scenarioDetailPath(scenario.id),
+    });
+  }
+
   return results;
 }
 
@@ -222,4 +251,5 @@ export const searchTypeBadgeStyles: Record<SearchResultType, string> = {
   Safeguard: "border-severity-moderate/40 bg-severity-moderate/10 text-severity-moderate",
   History: "border-amber-500/40 bg-amber-500/10 text-amber-700 dark:text-amber-400",
   Legislation: "border-sky-500/40 bg-sky-500/10 text-sky-700 dark:text-sky-400",
+  Scenario: "border-violet-500/40 bg-violet-500/10 text-violet-700 dark:text-violet-400",
 };
