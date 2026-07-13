@@ -8,6 +8,17 @@ export interface ChangelogEntry {
 /** Site iteration history - meta transparency for Project Sunrise builds */
 export const changelog: ChangelogEntry[] = [
   {
+    version: "0.50.0",
+    date: "2026-07-13",
+    title: "Pass 50 - Destination grid sunrise polish",
+    highlights: [
+      "Homepage destination cards: soft orange→yellow left accent wash progressing Tracker→Contribute",
+      "Navy logo stroke (#0b1f3a) on every card so they hold on white",
+      "Compact Pass 48 row layout kept (icon + title + Open)",
+      "SW cache hard-bumped to sunrise-v50-20260713T1555-grid",
+    ],
+  },
+  {
     version: "0.49.0",
     date: "2026-07-13",
     title: "Pass 49 - One-line hero headline",

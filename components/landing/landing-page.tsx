@@ -87,7 +87,27 @@ const platformCards: {
   },
 ];
 
+/** Logo navy — PROJECT SUNRISE mark (~#0b1f3a). */
+const LOGO_NAVY = "#0b1f3a";
+
+/**
+ * Sunrise orange → yellow progression across the destination grid.
+ * Index 0 (Tracker) leans orange; last (Contribute) leans yellow.
+ */
+function sunriseCardAccent(index: number, total: number) {
+  const t = total <= 1 ? 0 : index / (total - 1);
+  const h = 24 + t * 26; // 24° orange → 50° yellow
+  const s = 92 - t * 10;
+  const l = 50 + t * 8;
+  return {
+    accent: `hsl(${h} ${s}% ${l}%)`,
+    wash: `hsl(${h} ${s}% ${l}% / 0.1)`,
+  };
+}
+
 export function LandingPage() {
+  const cardCount = platformCards.length;
+
   return (
     <PageShell>
       <section className="relative overflow-hidden border-b border-border bg-white">
@@ -110,32 +130,40 @@ export function LandingPage() {
       <section className="section-y bg-white" aria-label="Sections">
         <div className="page-container">
           <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 sm:gap-3 lg:grid-cols-3 xl:grid-cols-5">
-            {platformCards.map((card, i) => (
-              <FadeIn key={card.href} delay={i * 25}>
-                <Link
-                  href={card.href}
-                  className={cn(
-                    "group surface-card-interactive flex h-full flex-col p-3 sm:p-3.5"
-                  )}
-                >
-                  <div className="flex items-center gap-2">
-                    <span className="inline-flex size-7 shrink-0 items-center justify-center rounded-md bg-navy/[0.06] text-navy transition-transform duration-300 group-hover:scale-105">
-                      <card.icon className="size-3.5" strokeWidth={1.75} />
-                    </span>
-                    <h2 className="min-w-0 flex-1 truncate text-sm font-semibold text-navy">
-                      {card.title}
-                    </h2>
-                    <span className="inline-flex shrink-0 items-center gap-0.5 text-xs font-semibold text-navy/70 transition-colors group-hover:text-navy">
-                      Open
-                      <ArrowRight className="size-3 transition-transform group-hover:translate-x-0.5" />
-                    </span>
-                  </div>
-                  <p className="mt-1.5 text-xs leading-snug text-muted-foreground sm:text-[13px]">
-                    {card.description}
-                  </p>
-                </Link>
-              </FadeIn>
-            ))}
+            {platformCards.map((card, i) => {
+              const { accent, wash } = sunriseCardAccent(i, cardCount);
+              return (
+                <FadeIn key={card.href} delay={i * 25}>
+                  <Link
+                    href={card.href}
+                    className={cn(
+                      "group relative flex h-full flex-col overflow-hidden rounded-xl border bg-white p-3 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md sm:p-3.5"
+                    )}
+                    style={{
+                      borderColor: LOGO_NAVY,
+                      backgroundImage: `linear-gradient(90deg, ${wash} 0%, transparent 55%)`,
+                      boxShadow: `inset 3px 0 0 0 ${accent}`,
+                    }}
+                  >
+                    <div className="flex items-center gap-2">
+                      <span className="inline-flex size-7 shrink-0 items-center justify-center rounded-md bg-navy/[0.06] text-navy transition-transform duration-300 group-hover:scale-105">
+                        <card.icon className="size-3.5" strokeWidth={1.75} />
+                      </span>
+                      <h2 className="min-w-0 flex-1 truncate text-sm font-semibold text-navy">
+                        {card.title}
+                      </h2>
+                      <span className="inline-flex shrink-0 items-center gap-0.5 text-xs font-semibold text-navy/70 transition-colors group-hover:text-navy">
+                        Open
+                        <ArrowRight className="size-3 transition-transform group-hover:translate-x-0.5" />
+                      </span>
+                    </div>
+                    <p className="mt-1.5 text-xs leading-snug text-muted-foreground sm:text-[13px]">
+                      {card.description}
+                    </p>
+                  </Link>
+                </FadeIn>
+              );
+            })}
           </div>
         </div>
       </section>
