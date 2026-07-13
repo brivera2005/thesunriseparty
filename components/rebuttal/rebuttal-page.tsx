@@ -6,6 +6,7 @@ import { PageShell } from "@/components/layout/page-shell";
 import { PageHero } from "@/components/layout/page-hero";
 import { RebuttalDeskSection } from "@/components/rebuttal/rebuttal-desk-section";
 import { Button } from "@/components/ui/button";
+import { HeroActions, heroActionClass } from "@/components/ui/hero-actions";
 
 function ShareButton() {
   const [copied, setCopied] = useState(false);
@@ -32,9 +33,14 @@ function ShareButton() {
   };
 
   return (
-    <Button variant="outline" size="sm" onClick={handleShare} className="h-9 gap-2">
-      <Share2 className="size-3.5" />
-      {copied ? "Link copied" : "Share"}
+    <Button
+      variant="outline"
+      size="sm"
+      onClick={handleShare}
+      className={heroActionClass}
+    >
+      <Share2 className="size-3" />
+      {copied ? "Copied" : "Share"}
     </Button>
   );
 }
@@ -44,11 +50,16 @@ export function RebuttalPage() {
     <PageShell>
       <PageHero
         section="rebuttal"
+        compact
         eyebrow="Conversation Ready"
         title="The Rebuttal Desk"
         description="When they say X, you say Y. Copy-ready, every claim sourced."
         tip="Browse, Study, and Quiz use the same entries and filters."
-        actions={<ShareButton />}
+        actions={
+          <HeroActions>
+            <ShareButton />
+          </HeroActions>
+        }
       />
 
       <RebuttalDeskSection standalone />

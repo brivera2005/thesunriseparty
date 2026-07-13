@@ -107,6 +107,20 @@ export function LegislationPage() {
     setTopic("all");
   };
 
+  const floorBills = useMemo(
+    () => legislationBills.filter((b) => b.status === "floor"),
+    []
+  );
+  const houseFloor = floorBills.filter((b) => b.chamber === "house").length;
+  const senateFloor = floorBills.filter((b) => b.chamber === "senate").length;
+
+  const statItems = [
+    { label: "Tracked", value: stats.total },
+    { label: "Roll calls", value: stats.withVotes },
+    { label: "Enacted", value: stats.byStatus.enacted },
+    { label: "On floor", value: stats.byStatus.floor },
+  ];
+
   return (
     <PageShell>
       <PageHero
@@ -132,27 +146,43 @@ export function LegislationPage() {
       />
 
       <section className="border-b border-border bg-muted/20">
-        <div className="page-container grid grid-cols-2 gap-px bg-border sm:grid-cols-4">
-          {[
-            { label: "Bills tracked", value: stats.total },
-            { label: "With roll calls", value: stats.withVotes },
-            { label: "Enacted", value: stats.byStatus.enacted },
-            { label: "On the floor", value: stats.byStatus.floor },
-          ].map((stat) => (
+        <div className="page-container flex flex-nowrap items-stretch justify-between gap-1 overflow-x-auto py-2 sm:gap-2 sm:py-2.5">
+          {statItems.map((stat) => (
             <div
               key={stat.label}
-              className="flex flex-col items-center justify-center bg-background px-4 py-5 text-center"
+              className="flex min-w-0 flex-1 flex-col items-center justify-center px-1 text-center"
             >
-              <p className="text-2xl font-bold tabular-nums text-navy sm:text-3xl">
+              <p className="text-sm font-bold tabular-nums text-navy sm:text-lg">
                 {stat.value}
               </p>
-              <p className="mt-1 text-[10px] font-medium tracking-wide text-muted-foreground uppercase">
+              <p className="text-[8px] font-medium tracking-wide text-muted-foreground uppercase sm:text-[9px]">
                 {stat.label}
               </p>
             </div>
           ))}
         </div>
       </section>
+
+      {stats.byStatus.floor > 0 ? (
+        <section
+          className="border-b border-sky-200 bg-sky-50"
+          aria-label="Bills live on the floor"
+        >
+          <div className="page-container flex flex-nowrap items-center justify-center gap-2 overflow-x-auto px-2 py-2 text-center">
+            <span className="relative flex size-2 shrink-0">
+              <span className="absolute inline-flex size-full animate-ping rounded-full bg-sky-400 opacity-70" />
+              <span className="relative inline-flex size-2 rounded-full bg-sky-500" />
+            </span>
+            <p className="text-[10px] font-semibold whitespace-nowrap text-sky-900 sm:text-xs">
+              LIVE NOW: {stats.byStatus.floor} on the floor
+              {houseFloor > 0 ? ` · ${houseFloor} House` : ""}
+              {senateFloor > 0 ? ` · ${senateFloor} Senate` : ""}
+              {" · "}
+              Votes and debate happening now
+            </p>
+          </div>
+        </section>
+      ) : null}
 
       <section className="border-b border-border bg-white">
         <div className="page-container py-5 sm:py-6">

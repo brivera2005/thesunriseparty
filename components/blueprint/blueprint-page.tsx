@@ -6,6 +6,7 @@ import { PageShell } from "@/components/layout/page-shell";
 import { PageHero } from "@/components/layout/page-hero";
 import { BlueprintSection } from "@/components/blueprint/blueprint-section";
 import { Button } from "@/components/ui/button";
+import { HeroActions, heroActionClass } from "@/components/ui/hero-actions";
 import { useAppStore } from "@/lib/store";
 
 function ShareButton() {
@@ -33,9 +34,14 @@ function ShareButton() {
   };
 
   return (
-    <Button variant="outline" size="sm" onClick={handleShare} className="h-9 gap-2">
-      <Share2 className="size-3.5" />
-      {copied ? "Link copied" : "Share"}
+    <Button
+      variant="outline"
+      size="sm"
+      onClick={handleShare}
+      className={heroActionClass}
+    >
+      <Share2 className="size-3" />
+      {copied ? "Copied" : "Share"}
     </Button>
   );
 }
@@ -51,11 +57,15 @@ export function BlueprintPage() {
     <PageShell>
       <PageHero
         section="blueprint"
-        eyebrow="Policy Fixes"
+        eyebrow="The Fix"
         title="The Progressive Blueprint"
-        description="The fix, the receipts, and the gaslight exposed."
+        description="How we enact change when democracy wins. Evidence, safeguards, and the gaslight exposed."
         tip="Open any pillar for evidence, timelines, and shareable pages."
-        actions={<ShareButton />}
+        actions={
+          <HeroActions>
+            <ShareButton />
+          </HeroActions>
+        }
       />
       <BlueprintSection standalone />
     </PageShell>

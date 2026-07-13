@@ -1,4 +1,4 @@
-export interface ChangelogEntry {
+﻿export interface ChangelogEntry {
   version: string;
   date: string;
   title: string;
@@ -7,6 +7,19 @@ export interface ChangelogEntry {
 
 /** Site iteration history - meta transparency for Project Sunrise builds */
 export const changelog: ChangelogEntry[] = [
+  {
+    version: "0.52.0",
+    date: "2026-07-13",
+    title: "Pass 52 - Comprehensive mobile UX pass",
+    highlights: [
+      "Hero action rows stay one line on mobile: compact CSV, iCal, Share buttons via HeroActions",
+      "CollapsibleFilters mobile sheet: scroll to top on open, z-index fix, drag handle, smooth slide",
+      "Homepage grid reordered (Tracker to Blueprint); Blueprint highlighted blue as THE FIX; About/Donate/Contribute nav-only",
+      "Legislation stats one row; LIVE floor banner and per-bill House/Senate floor badges",
+      "Rebuttal compact PageHero; all em/en dashes removed from user-facing copy",
+      "SW cache hard-bumped to sunrise-v52-20260713T1815-mobile",
+    ],
+  },
   {
     version: "0.51.0",
     date: "2026-07-13",
@@ -54,7 +67,7 @@ export const changelog: ChangelogEntry[] = [
     date: "2026-07-13",
     title: "Pass 47 - Punchy homepage + timeline tracker",
     highlights: [
-      "Homepage: TRACK. COUNTER. FIX. + LIVE BILLS. SOURCED ANSWERS. REAL IMPACT. RIGHT NOW. then grid only — no For you / What you get / redundant hero CTAs",
+      "Homepage: TRACK. COUNTER. FIX. + LIVE BILLS. SOURCED ANSWERS. REAL IMPACT. RIGHT NOW. then grid only  -  no For you / What you get / redundant hero CTAs",
       "Tracker rebuilt timeline-first (observer-style): month groups, chronological scrubber, newest/oldest sort, date-range + category + severity filters, detail slideover",
       "Header remains single-row desktop / hamburger left of Search on mobile; no hero duplicate logo",
       "SW cache hard-bumped to sunrise-v47-20260713T1645-final",
@@ -65,9 +78,9 @@ export const changelog: ChangelogEntry[] = [
     date: "2026-07-13",
     title: "Pass 46 - Inline header + mobile hamburger",
     highlights: [
-      "Desktop: one-row header — compact logo, inline section links, search far right",
+      "Desktop: one-row header  -  compact logo, inline section links, search far right",
       "Mobile: Logo | flex | hamburger (left of Search) | Search; 7 links only in dropdown (no permanent nav grid)",
-      "Removed duplicate hero logo on the homepage — header mark only",
+      "Removed duplicate hero logo on the homepage  -  header mark only",
       "Stripped candy section accents from PageHero borders and homepage cards; navy/gray chrome only",
       "Homepage section cards: even tight grid, equal cards, no vanity meta chips",
       "SW cache hard-bumped to sunrise-v46-20260713T1535-force; _headers no-store for /sw.js",
@@ -90,7 +103,7 @@ export const changelog: ChangelogEntry[] = [
     title: "Pass 45 - Project Sunrise brand mark",
     highlights: [
       "Replaced legacy THE SUNRISE PARTY logos with the PROJECT SUNRISE horizontal mark sitewide",
-      "Header logo enlarged (~160–260px wide by breakpoint) with extra header padding; hero/footer use the same asset",
+      "Header logo enlarged (~160-260px wide by breakpoint) with extra header padding; hero/footer use the same asset",
       "Favicon and apple-touch-icon cropped from the sun icon only; manifest icons updated",
       "SW cache bumped to sunrise-v45",
     ],

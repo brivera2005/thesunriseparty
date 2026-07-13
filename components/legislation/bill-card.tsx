@@ -4,6 +4,7 @@ import type { LegislationBill } from "@/lib/types";
 import {
   legislationDetailPath,
   statusLabel,
+  floorStatusLabel,
 } from "@/lib/data/legislation";
 import { LegislatorName } from "@/components/legislation/legislator-name";
 import { VoteBars } from "@/components/legislation/vote-bars";
@@ -39,22 +40,31 @@ export function BillCard({ bill }: { bill: LegislationBill }) {
       }}
     >
       <div className="flex flex-1 flex-col gap-3 p-4 sm:p-5">
-        <div className="flex flex-wrap items-center gap-2">
-          <span className="font-mono text-xs font-bold tracking-wide text-navy">
+        <div className="flex flex-nowrap items-center gap-1.5 overflow-x-auto">
+          <span className="shrink-0 font-mono text-xs font-bold tracking-wide text-navy">
             {bill.billNumber}
           </span>
-          <Badge
-            variant="outline"
-            className={cn("text-[10px]", statusStyles[bill.status])}
-          >
-            {statusLabel(bill.status)}
-          </Badge>
-          <Badge variant="outline" className="text-[10px] capitalize">
+          {bill.status === "floor" ? (
+            <Badge
+              variant="outline"
+              className="shrink-0 animate-pulse border-sky-400 bg-sky-100 text-[9px] font-bold text-sky-900 uppercase"
+            >
+              {floorStatusLabel(bill)}
+            </Badge>
+          ) : (
+            <Badge
+              variant="outline"
+              className={cn("shrink-0 text-[10px]", statusStyles[bill.status])}
+            >
+              {statusLabel(bill.status)}
+            </Badge>
+          )}
+          <Badge variant="outline" className="shrink-0 text-[10px] capitalize">
             {bill.chamber}
           </Badge>
           {bill.impactSeverity != null && (
-            <span className="ml-auto text-xs font-bold tabular-nums text-navy">
-              Impact {bill.impactSeverity}/10
+            <span className="ml-auto shrink-0 text-xs font-bold tabular-nums text-navy">
+              {bill.impactSeverity}/10
             </span>
           )}
         </div>

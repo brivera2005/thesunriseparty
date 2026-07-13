@@ -61,6 +61,7 @@ export function CollapsibleFilters({
   const canHover = useCanHover();
   const panelId = useId();
   const rootRef = useRef<HTMLDivElement>(null);
+  const sheetRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (!open || !canHover) return;
@@ -91,11 +92,17 @@ export function CollapsibleFilters({
     return () => document.removeEventListener("keydown", handler);
   }, [open]);
 
+  useEffect(() => {
+    if (!open || canHover) return;
+    const id = requestAnimationFrame(() => {
+      if (sheetRef.current) sheetRef.current.scrollTop = 0;
+    });
+    return () => cancelAnimationFrame(id);
+  }, [open, canHover]);
+
   const toggleLabel = activeCount > 0 ? `${label} (${activeCount})` : label;
 
-  const panelBody = (
-    <div className="space-y-4">{children}</div>
-  );
+  const panelBody = <div className="space-y-4">{children}</div>;
 
   const clearRow =
     activeCount > 0 && onClear ? (
@@ -122,7 +129,7 @@ export function CollapsibleFilters({
     >
       <div
         className={cn(
-          "flex flex-wrap items-center gap-2 sm:gap-3",
+          "flex flex-nowrap items-center gap-2 overflow-x-auto sm:gap-3",
           sticky && "py-3",
           barClassName
         )}
@@ -147,7 +154,7 @@ export function CollapsibleFilters({
           />
         </Button>
         {summary ? (
-          <span className="text-xs text-muted-foreground">{summary}</span>
+          <span className="shrink-0 text-xs text-muted-foreground">{summary}</span>
         ) : null}
       </div>
 
@@ -155,17 +162,20 @@ export function CollapsibleFilters({
         <>
           <button
             type="button"
-            className="fixed inset-0 z-50 bg-black/40"
+            className="fixed inset-0 z-[100] bg-black/40 animate-in fade-in duration-200"
             onClick={() => setOpen(false)}
             aria-label="Close filters"
           />
           <div
             id={panelId}
+            ref={sheetRef}
             role="dialog"
             aria-label={label}
-            className="fixed inset-x-0 bottom-0 z-50 max-h-[85vh] overflow-y-auto rounded-t-2xl border border-border bg-white p-4 pb-[max(1rem,env(safe-area-inset-bottom))] shadow-2xl animate-in slide-in-from-bottom duration-200"
+            aria-modal="true"
+            className="fixed inset-x-0 bottom-0 z-[101] flex max-h-[min(85vh,100dvh)] flex-col rounded-t-2xl border border-border bg-white shadow-2xl animate-in slide-in-from-bottom duration-300 ease-out"
           >
-            <div className="mb-4 flex items-center justify-between gap-3">
+            <div className="mx-auto mt-2 h-1 w-10 shrink-0 rounded-full bg-border" aria-hidden />
+            <div className="flex shrink-0 items-center justify-between gap-3 border-b border-border px-4 py-3">
               <h3 className="text-sm font-semibold">{label}</h3>
               <Button
                 type="button"
@@ -177,8 +187,10 @@ export function CollapsibleFilters({
                 <X className="size-4" />
               </Button>
             </div>
-            {panelBody}
-            <div className="mt-4 flex gap-2 border-t border-border pt-4">
+            <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain px-4 py-4 pb-[max(1rem,env(safe-area-inset-bottom))]">
+              {panelBody}
+            </div>
+            <div className="flex shrink-0 gap-2 border-t border-border px-4 py-3 pb-[max(0.75rem,env(safe-area-inset-bottom))]">
               {clearRow ? (
                 <Button
                   type="button"

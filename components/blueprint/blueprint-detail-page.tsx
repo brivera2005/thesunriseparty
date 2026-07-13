@@ -19,6 +19,7 @@ import { blueprintDetailPath, policyFixes } from "@/lib/data/policies";
 import { CitationList } from "@/components/citation";
 import { Badge } from "@/components/ui/badge";
 import { Button, buttonVariants } from "@/components/ui/button";
+import { HeroActions, heroActionClass } from "@/components/ui/hero-actions";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { SITE_URL } from "@/lib/metadata";
@@ -58,9 +59,14 @@ function ShareBlueprintButton({ id, title }: { id: string; title: string }) {
   };
 
   return (
-    <Button variant="outline" size="sm" onClick={handleShare} className="gap-2">
-      <Share2 className="size-3.5" />
-      {copied ? "Link copied" : "Share policy"}
+    <Button
+      variant="outline"
+      size="sm"
+      onClick={handleShare}
+      className={heroActionClass}
+    >
+      <Share2 className="size-3" />
+      {copied ? "Copied" : "Share"}
     </Button>
   );
 }
@@ -262,7 +268,7 @@ export function BlueprintDetailPage({
     <PageShell>
 
         <section className="border-b border-border bg-white">
-          <div className="mx-auto max-w-3xl px-4 py-10 sm:px-6 sm:py-14">
+          <div className="mx-auto max-w-3xl px-4 py-6 sm:px-6 sm:py-8">
             <Link
               href="/blueprint"
               className={cn(
@@ -288,15 +294,20 @@ export function BlueprintDetailPage({
               {title}
             </h1>
 
-            <div className="mt-6 flex flex-wrap gap-2">
-              <ShareBlueprintButton id={id} title={title} />
-              <Link
-                href="/blueprint"
-                className={cn(buttonVariants({ variant: "outline", size: "sm" }), "gap-2")}
-              >
-                View all policies
-                <ArrowRight className="size-3.5" />
-              </Link>
+            <div className="mt-4">
+              <HeroActions>
+                <ShareBlueprintButton id={id} title={title} />
+                <Link
+                  href="/blueprint"
+                  className={cn(
+                    buttonVariants({ variant: "outline", size: "sm" }),
+                    heroActionClass
+                  )}
+                >
+                  All policies
+                  <ArrowRight className="size-3" />
+                </Link>
+              </HeroActions>
             </div>
           </div>
         </section>

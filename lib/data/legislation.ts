@@ -1408,3 +1408,10 @@ export function statusLabel(status: BillStatus): string {
   };
   return map[status];
 }
+
+export function floorStatusLabel(bill: LegislationBill): string {
+  if (bill.status !== "floor") return statusLabel(bill.status);
+  if (bill.chamber === "house") return "House floor LIVE";
+  if (bill.chamber === "senate") return "Senate floor LIVE";
+  return "Floor LIVE";
+}

@@ -11,6 +11,8 @@ import {
   FilterPanelSection,
 } from "@/components/ui/collapsible-filters";
 import { Button } from "@/components/ui/button";
+import { HeroActions, heroActionClass } from "@/components/ui/hero-actions";
+import { cn } from "@/lib/utils";
 import {
   getScenarioStats,
   getScenariosByTopic,
@@ -43,9 +45,14 @@ function ShareButton() {
   };
 
   return (
-    <Button variant="outline" size="sm" onClick={handleShare} className="h-9 gap-2">
-      <Share2 className="size-3.5" />
-      {copied ? "Link copied" : "Share"}
+    <Button
+      variant="outline"
+      size="sm"
+      onClick={handleShare}
+      className={heroActionClass}
+    >
+      <Share2 className="size-3" />
+      {copied ? "Copied" : "Share"}
     </Button>
   );
 }
@@ -73,13 +80,13 @@ export function ScenariosPage() {
         description="Family gets Y. Should get Z. Trace who blocked the fix."
         tip="Filter by topic, then open a card for the full causal chain."
         actions={
-          <>
-            <span className="inline-flex h-9 items-center gap-2 rounded-md border border-border bg-white px-3 text-xs text-muted-foreground">
-              <GitBranch className="size-3.5 text-primary" />
-              {stats.total} scenarios · avg severity {stats.avgSeverity}
+          <HeroActions>
+            <span className={cn(heroActionClass, "rounded-md border border-border bg-white text-muted-foreground")}>
+              <GitBranch className="size-3 text-primary" />
+              {stats.total} · avg {stats.avgSeverity}
             </span>
             <ShareButton />
-          </>
+          </HeroActions>
         }
       />
 

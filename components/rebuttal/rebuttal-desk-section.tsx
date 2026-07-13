@@ -105,8 +105,8 @@ export function RebuttalDeskSection({
     <section
       id="rebuttal-desk"
       className={cn(
-        "section-rebuttal section-y scroll-mt-16",
-        !standalone && "border-t border-border"
+        "section-rebuttal scroll-mt-16",
+        standalone ? "py-4 sm:py-6" : "section-y border-t border-border"
       )}
     >
       <div className="page-container">

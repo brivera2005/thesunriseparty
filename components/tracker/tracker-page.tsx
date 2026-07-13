@@ -6,6 +6,7 @@ import { PageShell } from "@/components/layout/page-shell";
 import { PageHero } from "@/components/layout/page-hero";
 import { TrackerTimelineFeed } from "@/components/tracker/tracker-timeline-feed";
 import { Button, buttonVariants } from "@/components/ui/button";
+import { HeroActions, heroActionClass } from "@/components/ui/hero-actions";
 import { cn } from "@/lib/utils";
 import { useAppStore } from "@/lib/store";
 
@@ -34,9 +35,14 @@ function ShareButton() {
   };
 
   return (
-    <Button variant="outline" size="sm" onClick={handleShare} className="h-9 gap-2">
-      <Share2 className="size-3.5" />
-      {copied ? "Link copied" : "Share"}
+    <Button
+      variant="outline"
+      size="sm"
+      onClick={handleShare}
+      className={heroActionClass}
+    >
+      <Share2 className="size-3" />
+      {copied ? "Copied" : "Share"}
     </Button>
   );
 }
@@ -54,29 +60,29 @@ export function TrackerPage() {
         section="tracker"
         eyebrow="Timeline"
         title="Project 2025 Tracker"
-        description="When each action happened — sorted, filterable, and cited. Severity and sources on every event."
+        description="When each action happened, sorted, filterable, and cited. Severity and sources on every event."
         tip="Sort newest/oldest, scrub the timeline, or filter by date range, category, and severity."
         actions={
-          <>
+          <HeroActions>
             <a
               href="/data/events.csv"
               download="project-sunrise-events.csv"
-              className={cn(buttonVariants({ variant: "outline", size: "sm" }), "h-9 gap-2")}
+              className={cn(buttonVariants({ variant: "outline", size: "sm" }), heroActionClass)}
               title="Download the full event dataset as CSV"
             >
-              <Download className="size-3.5" />
-              Download CSV
+              <Download className="size-3" />
+              CSV
             </a>
             <a
               href="/feed.ics"
-              className={cn(buttonVariants({ variant: "outline", size: "sm" }), "h-9 gap-2")}
+              className={cn(buttonVariants({ variant: "outline", size: "sm" }), heroActionClass)}
               title="Subscribe to tracker updates in your calendar"
             >
-              <CalendarPlus className="size-3.5" />
-              Subscribe iCal
+              <CalendarPlus className="size-3" />
+              iCal
             </a>
             <ShareButton />
-          </>
+          </HeroActions>
         }
       />
       <TrackerTimelineFeed />

@@ -24,7 +24,7 @@ const sizeMap = {
     className:
       "h-auto w-[min(100%,300px)] sm:w-[380px] md:w-[460px] lg:w-[520px]",
   },
-  // Compact for single-row header with inline nav (~100–140px)
+  // Compact for single-row header with inline nav (~100-140px)
   header: {
     width: LOGO_W,
     height: LOGO_H,
@@ -39,7 +39,7 @@ const sizeMap = {
 
 /**
  * Brand mark: PROJECT SUNRISE horizontal logo (sun icon + wordmark + tagline).
- * White PNG background matches site chrome — no mix-blend needed.
+ * White PNG background matches site chrome; no mix-blend needed.
  */
 export function BrandLogo({
   variant = "header",
