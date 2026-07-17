@@ -8,6 +8,17 @@
 /** Site iteration history - meta transparency for Project Sunrise builds */
 export const changelog: ChangelogEntry[] = [
   {
+    version: "0.53.0",
+    date: "2026-07-17",
+    title: "Pass 53 - Political Standing Quiz",
+    highlights: [
+      "New /quiz: ~20 definitive questions with ? help tips that demystify politicized framing",
+      "Results: economic/social compass, camp alignment %, shareable URL, Trump reality check when answers diverge from MAGA branding",
+      "Quiz added to hamburger nav (after Rebuttal) and homepage destination grid",
+      "SW cache hard-bumped to sunrise-v53-20260717T0940-quiz",
+    ],
+  },
+  {
     version: "0.52.0",
     date: "2026-07-13",
     title: "Pass 52 - Comprehensive mobile UX pass",

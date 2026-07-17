@@ -198,6 +198,12 @@ export const sitemapSections: SitemapSection[] = [
         description: `${rebuttalCats.length} categories · easy / medium / hard tags`,
       },
       {
+        href: "/quiz",
+        label: "Political Standing Quiz",
+        description: "Find where you actually stand. Compass, camps, Trump reality check.",
+        badge: "New",
+      },
+      {
         href: "/rebuttal?study=1",
         label: "Study Mode",
         description: "Flashcard-style practice for talking points.",

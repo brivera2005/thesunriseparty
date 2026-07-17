@@ -171,4 +171,17 @@ export const sectionOg = {
       },
     ],
   },
+  quiz: {
+    title: "Political Standing Quiz | Project Sunrise",
+    description:
+      "Twenty clear questions. Compass quadrant, camp alignment, and a Trump reality check when branding and answers diverge. About 3 minutes.",
+    images: [
+      {
+        url: `${SITE_URL}/og/sunrise-default.svg`,
+        width: 1200,
+        height: 630,
+        alt: "Project Sunrise - Political Standing Quiz",
+      },
+    ],
+  },
 };

@@ -33,6 +33,11 @@ const siteNav: {
     description: "Rebuttal Desk - when they say X, you say Y.",
   },
   {
+    label: "Quiz",
+    href: "/quiz",
+    description: "Political Standing Quiz - find where you actually stand.",
+  },
+  {
     label: "Legislation",
     href: "/legislation",
     description: "Live bills and party votes.",
@@ -216,7 +221,7 @@ export function SiteHeader() {
             <Search className="size-3.5" />
           </Button>
 
-          {/* Mobile dropdown: all 7 items, only when open */}
+          {/* Mobile dropdown: all primary nav items, only when open */}
           {mobileOpen ? (
             <nav
               id="mobile-site-nav"

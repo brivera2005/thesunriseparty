@@ -369,6 +369,10 @@ export function CommandPalette() {
               <MessageSquareQuote className="size-4 text-sunrise" />
               Rebuttal Desk
             </CommandItem>
+            <CommandItem onSelect={() => navigateTo({ id: "nav-quiz", type: "Rebuttal", title: "", body: "", score: 1, href: "/quiz" })}>
+              <Compass className="size-4 text-navy" />
+              Political Standing Quiz
+            </CommandItem>
             <CommandItem onSelect={() => navigateTo({ id: "nav-history", type: "History", title: "", body: "", score: 1, href: "/history" })}>
               <History className="size-4 text-amber-600" />
               Hidden History

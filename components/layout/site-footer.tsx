@@ -7,6 +7,7 @@ const sitePages = [
   { href: "/", label: "Home" },
   { href: "/tracker", label: "Project 2025 Tracker" },
   { href: "/rebuttal", label: "Rebuttal Desk" },
+  { href: "/quiz", label: "Political Standing Quiz" },
   { href: "/legislation", label: "Legislation" },
   { href: "/history", label: "Hidden History" },
   { href: "/scenarios", label: "Impact Scenarios" },

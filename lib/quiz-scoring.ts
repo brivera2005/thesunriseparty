@@ -1,0 +1,283 @@
+import {
+  QUIZ_CAMPS,
+  quizQuestions,
+  type QuizCampId,
+  type QuizOption,
+  type QuizQuestion,
+} from "@/lib/data/quiz-questions";
+
+export type QuizAnswers = Record<string, string>;
+
+export type CampAlignment = {
+  id: QuizCampId;
+  label: string;
+  short: string;
+  percent: number;
+};
+
+export type TrumpCallout = {
+  questionId: string;
+  topic: string;
+  prompt: string;
+  yourLabel: string;
+  magaLabel: string;
+  why: string;
+};
+
+export type QuizResult = {
+  economic: number;
+  social: number;
+  quadrant: string;
+  quadrantBlurb: string;
+  alignments: CampAlignment[];
+  topCamps: CampAlignment[];
+  magaPercent: number;
+  showTrumpRealityCheck: boolean;
+  trumpCallouts: TrumpCallout[];
+  answeredCount: number;
+};
+
+function clamp(n: number, min: number, max: number) {
+  return Math.max(min, Math.min(max, n));
+}
+
+function findOption(q: QuizQuestion, optionId: string): QuizOption | undefined {
+  return q.options.find((o) => o.id === optionId);
+}
+
+function magaPreferredOption(q: QuizQuestion): QuizOption | undefined {
+  return (
+    q.options.find((o) => o.magaPreferred) ??
+    [...q.options].sort(
+      (a, b) => (b.alignments.maga ?? 0) - (a.alignments.maga ?? 0)
+    )[0]
+  );
+}
+
+export function quadrantFor(
+  economic: number,
+  social: number
+): { quadrant: string; blurb: string } {
+  const econSide =
+    economic < -1.5 ? "left" : economic > 1.5 ? "right" : "center";
+  const socSide =
+    social < -1.5 ? "libertarian" : social > 1.5 ? "authoritarian" : "center";
+
+  if (econSide === "left" && socSide === "libertarian") {
+    return {
+      quadrant: "Libertarian Left",
+      blurb:
+        "You favor shared economic security and wide personal freedom. Progressive on pocketbook and social liberty.",
+    };
+  }
+  if (econSide === "right" && socSide === "libertarian") {
+    return {
+      quadrant: "Libertarian Right",
+      blurb:
+        "You favor markets and low taxes, with skepticism of social control. Classic small-government posture.",
+    };
+  }
+  if (econSide === "left" && socSide === "authoritarian") {
+    return {
+      quadrant: "Authoritarian Left",
+      blurb:
+        "You favor economic leveling with stronger social rules. Less common in U.S. party brands, but a real compass corner.",
+    };
+  }
+  if (econSide === "right" && socSide === "authoritarian") {
+    return {
+      quadrant: "Authoritarian Right",
+      blurb:
+        "You favor markets plus stronger social and cultural enforcement. Closest to hard-right / MAGA space when extreme.",
+    };
+  }
+  if (econSide === "center" && socSide === "libertarian") {
+    return {
+      quadrant: "Social Libertarian",
+      blurb:
+        "Economically mixed, socially hands-off. Live-and-let-live with flexible fiscal views.",
+    };
+  }
+  if (econSide === "center" && socSide === "authoritarian") {
+    return {
+      quadrant: "Social Authoritarian",
+      blurb:
+        "Economically mixed, socially strict. Order and tradition matter more than left/right tax fights.",
+    };
+  }
+  if (econSide === "left" && socSide === "center") {
+    return {
+      quadrant: "Economic Progressive",
+      blurb:
+        "Left on taxes and public goods, middle on social control. New Deal style more than culture warrior.",
+    };
+  }
+  if (econSide === "right" && socSide === "center") {
+    return {
+      quadrant: "Economic Conservative",
+      blurb:
+        "Right on markets and taxes, middle on social questions. Chamber-of-commerce conservatism.",
+    };
+  }
+  return {
+    quadrant: "Political Center",
+    blurb:
+      "Your answers sit near the middle on both axes. That can mean pragmatism, or different left/right pulls that cancel out.",
+  };
+}
+
+export function scoreQuiz(answers: QuizAnswers): QuizResult {
+  let economicSum = 0;
+  let socialSum = 0;
+  let answered = 0;
+
+  const campSums: Record<QuizCampId, number> = {
+    progressive: 0,
+    moderate_dem: 0,
+    independent: 0,
+    moderate_gop: 0,
+    maga: 0,
+  };
+  const campMax: Record<QuizCampId, number> = {
+    progressive: 0,
+    moderate_dem: 0,
+    independent: 0,
+    moderate_gop: 0,
+    maga: 0,
+  };
+
+  const trumpCallouts: TrumpCallout[] = [];
+
+  for (const q of quizQuestions) {
+    const optionId = answers[q.id];
+    if (!optionId) continue;
+    const opt = findOption(q, optionId);
+    if (!opt) continue;
+
+    answered += 1;
+    economicSum += opt.scores.economic;
+    socialSum += opt.scores.social;
+
+    for (const camp of QUIZ_CAMPS) {
+      const w = opt.alignments[camp.id] ?? 0;
+      campSums[camp.id] += w;
+      const maxForQ = Math.max(
+        ...q.options.map((o) => o.alignments[camp.id] ?? 0),
+        0
+      );
+      campMax[camp.id] += maxForQ;
+    }
+
+    const magaOpt = magaPreferredOption(q);
+    if (magaOpt && magaOpt.id !== opt.id) {
+      const yourMaga = opt.alignments.maga ?? 0;
+      const preferredMaga = magaOpt.alignments.maga ?? 0;
+      if (preferredMaga - yourMaga >= 5) {
+        trumpCallouts.push({
+          questionId: q.id,
+          topic: q.topic,
+          prompt: q.prompt,
+          yourLabel: opt.label,
+          magaLabel: magaOpt.label,
+          why: `${opt.help} Trump-aligned politics usually picks: "${magaOpt.label}"`,
+        });
+      }
+    }
+  }
+
+  const n = Math.max(answered, 1);
+  const economic = clamp(economicSum / n, -10, 10);
+  const social = clamp(socialSum / n, -10, 10);
+  const { quadrant, blurb } = quadrantFor(economic, social);
+
+  const alignments: CampAlignment[] = QUIZ_CAMPS.map((camp) => {
+    const max = campMax[camp.id] || 1;
+    const percent = Math.round((campSums[camp.id] / max) * 100);
+    return {
+      id: camp.id,
+      label: camp.label,
+      short: camp.short,
+      percent: clamp(percent, 0, 100),
+    };
+  }).sort((a, b) => b.percent - a.percent);
+
+  const magaPercent = alignments.find((a) => a.id === "maga")?.percent ?? 0;
+  const topCamps = alignments.slice(0, 3);
+
+  const showTrumpRealityCheck = magaPercent < 55 && trumpCallouts.length >= 3;
+
+  return {
+    economic: Math.round(economic * 10) / 10,
+    social: Math.round(social * 10) / 10,
+    quadrant,
+    quadrantBlurb: blurb,
+    alignments,
+    topCamps,
+    magaPercent,
+    showTrumpRealityCheck,
+    trumpCallouts: trumpCallouts.slice(0, 6),
+    answeredCount: answered,
+  };
+}
+
+export function encodeResultsCompact(answers: QuizAnswers): string {
+  const tokens: string[] = [];
+  quizQuestions.forEach((q, qi) => {
+    const oid = answers[q.id];
+    if (!oid) return;
+    const oi = q.options.findIndex((o) => o.id === oid);
+    if (oi < 0) return;
+    tokens.push(`${qi}:${oi}`);
+  });
+  return `a=${tokens.join(",")}`;
+}
+
+export function decodeAnswers(search: string): QuizAnswers | null {
+  const raw = search.startsWith("?") ? search.slice(1) : search.replace(/^#/, "");
+  if (!raw) return null;
+
+  const answers: QuizAnswers = {};
+  const params = new URLSearchParams(raw);
+  const compact = params.get("a");
+
+  if (compact) {
+    for (const token of compact.split(",")) {
+      const [qiStr, oiStr] = token.split(":");
+      const qi = Number(qiStr);
+      const oi = Number(oiStr);
+      const q = quizQuestions[qi];
+      if (!q || Number.isNaN(oi) || !q.options[oi]) continue;
+      answers[q.id] = q.options[oi].id;
+    }
+    return Object.keys(answers).length ? answers : null;
+  }
+
+  for (const q of quizQuestions) {
+    const v = params.get(q.id);
+    if (v == null) continue;
+    const oi = Number(v);
+    if (!Number.isNaN(oi) && q.options[oi]) {
+      answers[q.id] = q.options[oi].id;
+    } else if (q.options.some((o) => o.id === v)) {
+      answers[q.id] = v;
+    }
+  }
+
+  return Object.keys(answers).length ? answers : null;
+}
+
+export function resultsShareUrl(answers: QuizAnswers, origin?: string): string {
+  const base =
+    origin ??
+    (typeof window !== "undefined"
+      ? window.location.origin
+      : "https://thesunriseparty.pages.dev");
+  return `${base}/quiz?${encodeResultsCompact(answers)}`;
+}
+
+export function resultsShareText(result: QuizResult): string {
+  const top = result.topCamps
+    .map((c) => `${c.label} ${c.percent}%`)
+    .join(", ");
+  return `My Project Sunrise Political Standing: ${result.quadrant} (econ ${result.economic}, social ${result.social}). Closest: ${top}. Take the quiz:`;
+}
