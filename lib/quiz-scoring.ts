@@ -49,6 +49,53 @@ function clamp(n: number, min: number, max: number) {
   return Math.max(min, Math.min(max, n));
 }
 
+/**
+ * Per-axis average of the most extreme option on each answered question.
+ * Raw option scores are typically ±1..9, so a plain mean never reaches the
+ * compass edges at ±10. We use these bounds to stretch consistent answer
+ * patterns onto the full plot.
+ */
+export function attainableAxisBounds(questions: QuizQuestion[]): {
+  economicMin: number;
+  economicMax: number;
+  socialMin: number;
+  socialMax: number;
+} {
+  let economicMin = 0;
+  let economicMax = 0;
+  let socialMin = 0;
+  let socialMax = 0;
+  const n = Math.max(questions.length, 1);
+  for (const q of questions) {
+    const econ = q.options.map((o) => o.scores.economic);
+    const soc = q.options.map((o) => o.scores.social);
+    economicMin += Math.min(...econ);
+    economicMax += Math.max(...econ);
+    socialMin += Math.min(...soc);
+    socialMax += Math.max(...soc);
+  }
+  return {
+    economicMin: economicMin / n,
+    economicMax: economicMax / n,
+    socialMin: socialMin / n,
+    socialMax: socialMax / n,
+  };
+}
+
+/** Map a raw average onto -10..10 using the quiz's attainable min/max. Zero stays zero. */
+export function scaleAxisToCompass(
+  rawAvg: number,
+  minAttainable: number,
+  maxAttainable: number
+): number {
+  if (rawAvg >= 0) {
+    const denom = Math.max(maxAttainable, 1e-9);
+    return clamp((rawAvg / denom) * 10, -10, 10);
+  }
+  const denom = Math.max(Math.abs(minAttainable), 1e-9);
+  return clamp((rawAvg / denom) * 10, -10, 10);
+}
+
 function findOption(q: QuizQuestion, optionId: string): QuizOption | undefined {
   return q.options.find((o) => o.id === optionId);
 }
@@ -138,6 +185,7 @@ export function scoreQuiz(answers: QuizAnswers): QuizResult {
   let economicSum = 0;
   let socialSum = 0;
   let answered = 0;
+  const answeredQuestions: QuizQuestion[] = [];
 
   const campSums: Record<QuizCampId, number> = {
     progressive: 0,
@@ -163,6 +211,7 @@ export function scoreQuiz(answers: QuizAnswers): QuizResult {
     if (!opt) continue;
 
     answered += 1;
+    answeredQuestions.push(q);
     economicSum += opt.scores.economic;
     socialSum += opt.scores.social;
 
@@ -194,8 +243,17 @@ export function scoreQuiz(answers: QuizAnswers): QuizResult {
   }
 
   const n = Math.max(answered, 1);
-  const economic = clamp(economicSum / n, -10, 10);
-  const social = clamp(socialSum / n, -10, 10);
+  const bounds = attainableAxisBounds(answeredQuestions);
+  const economic = scaleAxisToCompass(
+    economicSum / n,
+    bounds.economicMin,
+    bounds.economicMax
+  );
+  const social = scaleAxisToCompass(
+    socialSum / n,
+    bounds.socialMin,
+    bounds.socialMax
+  );
   const { quadrant, blurb } = quadrantFor(economic, social);
 
   const alignments: CampAlignment[] = QUIZ_CAMPS.map((camp) => {

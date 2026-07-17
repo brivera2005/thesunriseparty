@@ -2,7 +2,7 @@
  * Quiz results: unified Your review flashcard deck.
  */
 
-const CACHE = "sunrise-v58-20260717T1700-quiz-review-deck";
+const CACHE = "sunrise-v59-20260717T1600-quiz-compass-scale";
 
 const PRECACHE = [
 

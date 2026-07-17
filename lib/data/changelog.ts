@@ -8,6 +8,17 @@
 /** Site iteration history - meta transparency for Project Sunrise builds */
 export const changelog: ChangelogEntry[] = [
   {
+    version: "0.59.0",
+    date: "2026-07-17",
+    title: "Pass 59 - Quiz compass reaches real extremes",
+    highlights: [
+      "Compass scoring now scales to the quiz's attainable min/max so consistent one-way answers can hit the edges (±10)",
+      "Before: averaging option scores capped around ±4 to ±5 while the plot still showed ±10, so extremes looked near-center",
+      "Zero stays centered; camp alignment and share URLs unchanged",
+      "SW cache hard-bumped to sunrise-v59-20260717T1600-quiz-compass-scale",
+    ],
+  },
+  {
     version: "0.58.0",
     date: "2026-07-17",
     title: "Pass 58 - Quiz results as one Review deck",

@@ -8,7 +8,10 @@ type QuizCompassProps = {
   className?: string;
 };
 
-/** Simple SVG political compass. economic: -10..10 (left..right), social: -10..10 (lib..auth). */
+/**
+ * SVG political compass. Coordinates are already scaled to -10..10
+ * (economic left..right, social libertarian..authoritarian) by scoreQuiz.
+ */
 export function QuizCompass({ economic, social, className }: QuizCompassProps) {
   const size = 280;
   const pad = 28;
