@@ -293,10 +293,13 @@ export function resultsShareUrl(answers: QuizAnswers, origin?: string): string {
 
 export function resultsShareText(result: QuizResult): string {
   const top = result.topCamps
-    .map((c) => `${c.label} ${c.percent}%`)
-    .join(", ");
+    .map((c) => `${c.short} ${c.percent}%`)
+    .join(" · ");
   const person = result.topPerson
-    ? ` Closest figure: ${result.topPerson.name} (${result.topPerson.percent}%).`
+    ? ` Top person: ${result.topPerson.name} ${result.topPerson.percent}%.`
     : "";
-  return `My Project Sunrise Political Standing: ${result.quadrant} (econ ${result.economic}, social ${result.social}). Closest camps: ${top}.${person} Take the quiz:`;
+  return `My Project Sunrise Political Standing: ${result.quadrant} (econ ${result.economic}, social ${result.social}). Alignment: ${top}.${person} Take the quiz:`;
 }
+
+/** Minimum answers needed to restore a shared results link after the bank grows. */
+export const QUIZ_SHARE_MIN_ANSWERS = 12;

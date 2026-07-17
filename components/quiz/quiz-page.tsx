@@ -7,6 +7,8 @@ import {
   ArrowRight,
   Check,
   Copy,
+  ExternalLink,
+  Link2,
   RotateCcw,
   Share2,
 } from "lucide-react";
@@ -14,14 +16,17 @@ import { PageShell } from "@/components/layout/page-shell";
 import { PageHero } from "@/components/layout/page-hero";
 import { InfoTip } from "@/components/ui/info-tip";
 import { Button, buttonVariants } from "@/components/ui/button";
+import { CitationList } from "@/components/citation";
 import { QuizCompass } from "@/components/quiz/quiz-compass";
 import {
   QUIZ_QUESTION_COUNT,
+  QUIZ_SUNRISE_ASK_COUNT,
   quizQuestions,
   type QuizQuestion,
 } from "@/lib/data/quiz-questions";
 import {
   decodeAnswers,
+  QUIZ_SHARE_MIN_ANSWERS,
   resultsShareText,
   resultsShareUrl,
   scoreQuiz,
@@ -55,6 +60,23 @@ function OptionHelp({ help }: { help: string }) {
         iconClassName="size-8 shrink-0 text-navy/50"
       />
     </span>
+  );
+}
+
+function QuestionSources({ question }: { question: QuizQuestion }) {
+  if (!question.sources?.length) return null;
+  return (
+    <div className="mt-4 rounded-xl border border-navy/10 bg-navy/[0.03] px-3.5 py-3">
+      <p className="text-[10px] font-semibold tracking-[0.16em] text-navy/50 uppercase">
+        Sources · Learn more
+      </p>
+      <p className="mt-1 text-xs leading-relaxed text-muted-foreground">
+        Tap a citation for publisher, excerpt, and archived link.
+      </p>
+      <div className="mt-2">
+        <CitationList sources={question.sources} />
+      </div>
+    </div>
   );
 }
 
@@ -195,7 +217,7 @@ function AlignmentBars({ result }: { result: QuizResult }) {
           <div className="h-2.5 overflow-hidden rounded-full bg-navy/[0.08]">
             <div
               className={cn(
-                "h-full rounded-full transition-all",
+                "h-full rounded-full transition-all duration-500",
                 camp.id === "maga" ? "bg-navy" : "bg-[#e16323]"
               )}
               style={{ width: `${camp.percent}%` }}
@@ -215,14 +237,15 @@ function PersonAlignments({ result }: { result: QuizResult }) {
       </h3>
       <p className="mt-1 text-sm text-muted-foreground">
         Named public figures and coalitions ranked from your answer vectors. Not an
-        endorsement. Not a personality test.
+        endorsement. Not a personality test. Use it to see which governing style your
+        kitchen-table picks resemble.
       </p>
       <ul className="mt-5 space-y-3">
         {result.personAlignments.map((p) => (
           <li
             key={p.id}
             className={cn(
-              "rounded-xl border p-4",
+              "rounded-xl border p-4 transition-colors",
               p.isTop
                 ? "border-navy/35 bg-navy/[0.06] ring-1 ring-navy/15"
                 : "border-black/[0.08] bg-white"
@@ -251,7 +274,7 @@ function PersonAlignments({ result }: { result: QuizResult }) {
             <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-navy/[0.08]">
               <div
                 className={cn(
-                  "h-full rounded-full",
+                  "h-full rounded-full transition-all duration-500",
                   p.isTop ? "bg-[#e16323]" : "bg-navy/70"
                 )}
                 style={{ width: `${p.percent}%` }}
@@ -282,7 +305,7 @@ function MagaNotGopCallout() {
   );
 }
 
-function ResultsView({
+function ShareResultsCard({
   result,
   answers,
   onRetake,
@@ -292,16 +315,23 @@ function ResultsView({
   onRetake: () => void;
 }) {
   const [copied, setCopied] = useState<"link" | "text" | null>(null);
+  const [canNativeShare, setCanNativeShare] = useState(false);
 
   const shareUrl = useMemo(() => resultsShareUrl(answers), [answers]);
   const shareBody = useMemo(
     () => `${resultsShareText(result)} ${shareUrl}`,
     [result, shareUrl]
   );
-  const policyIdeas = useMemo(
-    () => selectPolicyIdeasForAnswers(answers, quizQuestions, 4),
-    [answers]
-  );
+  const tweetHref = useMemo(() => {
+    const text = resultsShareText(result);
+    return `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(shareUrl)}`;
+  }, [result, shareUrl]);
+
+  useEffect(() => {
+    setCanNativeShare(
+      typeof navigator !== "undefined" && typeof navigator.share === "function"
+    );
+  }, []);
 
   const copy = async (kind: "link" | "text") => {
     const value = kind === "link" ? shareUrl : shareBody;
@@ -313,6 +343,160 @@ function ResultsView({
       // ignore
     }
   };
+
+  const nativeShare = async () => {
+    try {
+      await navigator.share({
+        title: `Project Sunrise: ${result.quadrant}`,
+        text: resultsShareText(result),
+        url: shareUrl,
+      });
+    } catch {
+      // user cancelled or unsupported
+    }
+  };
+
+  return (
+    <section className="overflow-hidden rounded-2xl border-2 border-navy/20 bg-gradient-to-br from-navy/[0.06] via-white to-[#e16323]/[0.08] p-5 sm:p-7">
+      <p className="text-[10px] font-semibold tracking-[0.2em] text-navy/50 uppercase">
+        Share card
+      </p>
+      <h3 className="mt-1 text-xl font-bold text-navy sm:text-2xl">
+        Pass it on
+      </h3>
+      <p className="mt-1 text-sm text-muted-foreground">
+        Your compass, camp %, and top person are baked into the link. No account. No
+        tracking backend.
+      </p>
+
+      <div className="mt-5 rounded-xl border border-navy/15 bg-white/90 p-4 shadow-sm sm:p-5">
+        <p className="text-[10px] font-semibold tracking-[0.16em] text-[#e16323] uppercase">
+          Project Sunrise Political Standing
+        </p>
+        <p className="mt-1 text-2xl font-bold text-navy sm:text-3xl">
+          {result.quadrant}
+        </p>
+        <p className="mt-2 text-sm text-navy/75">
+          Econ {result.economic} · Social {result.social}
+        </p>
+        <p className="mt-3 text-sm font-medium text-navy">
+          {result.topCamps.map((c) => `${c.short} ${c.percent}%`).join(" · ")}
+        </p>
+        {result.topPerson ? (
+          <p className="mt-1 text-sm text-navy/80">
+            Closest figure:{" "}
+            <span className="font-semibold text-navy">
+              {result.topPerson.name} {result.topPerson.percent}%
+            </span>
+          </p>
+        ) : null}
+        <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
+          {result.quadrantBlurb}
+        </p>
+      </div>
+
+      <div className="mt-5 grid gap-2 sm:grid-cols-2">
+        {canNativeShare ? (
+          <Button
+            type="button"
+            size="lg"
+            className="h-12 gap-2 bg-navy text-white hover:bg-navy/90 sm:col-span-2"
+            onClick={nativeShare}
+          >
+            <Share2 className="size-4" />
+            Share results
+          </Button>
+        ) : null}
+        <Button
+          type="button"
+          size="lg"
+          variant="outline"
+          className="h-12 gap-2 border-navy/25"
+          onClick={() => copy("link")}
+        >
+          {copied === "link" ? (
+            <Check className="size-4" />
+          ) : (
+            <Link2 className="size-4" />
+          )}
+          {copied === "link" ? "Link copied" : "Copy link"}
+        </Button>
+        <Button
+          type="button"
+          size="lg"
+          variant="outline"
+          className="h-12 gap-2 border-navy/25"
+          onClick={() => copy("text")}
+        >
+          {copied === "text" ? (
+            <Check className="size-4" />
+          ) : (
+            <Copy className="size-4" />
+          )}
+          {copied === "text" ? "Text copied" : "Copy share text"}
+        </Button>
+        <a
+          href={tweetHref}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={cn(
+            buttonVariants({ variant: "outline", size: "lg" }),
+            "h-12 gap-2 border-navy/25 sm:col-span-2"
+          )}
+        >
+          <ExternalLink className="size-4" />
+          Post with prefilled text
+        </a>
+        <Button
+          type="button"
+          size="lg"
+          variant="ghost"
+          className="h-12 gap-2 sm:col-span-2"
+          onClick={onRetake}
+        >
+          <RotateCcw className="size-4" />
+          Retake quiz
+        </Button>
+      </div>
+    </section>
+  );
+}
+
+function StickyRetakeBar({ onRetake }: { onRetake: () => void }) {
+  return (
+    <div className="fixed inset-x-0 bottom-0 z-40 border-t border-navy/10 bg-white/95 px-4 py-3 shadow-[0_-8px_24px_rgba(15,23,42,0.08)] backdrop-blur-md sm:px-6">
+      <div className="mx-auto flex max-w-2xl items-center justify-between gap-3">
+        <p className="min-w-0 truncate text-xs text-navy/70 sm:text-sm">
+          Done? Share above, or run it again clean.
+        </p>
+        <Button
+          type="button"
+          size="sm"
+          variant="outline"
+          className="h-9 shrink-0 gap-1.5 border-navy/25"
+          onClick={onRetake}
+        >
+          <RotateCcw className="size-3.5" />
+          Retake
+        </Button>
+      </div>
+    </div>
+  );
+}
+
+function ResultsView({
+  result,
+  answers,
+  onRetake,
+}: {
+  result: QuizResult;
+  answers: QuizAnswers;
+  onRetake: () => void;
+}) {
+  const policyIdeas = useMemo(
+    () => selectPolicyIdeasForAnswers(answers, quizQuestions, 5),
+    [answers]
+  );
 
   const explore = [
     {
@@ -337,9 +521,29 @@ function ResultsView({
     },
   ];
 
+  useEffect(() => {
+    const prev = document.title;
+    const person = result.topPerson
+      ? ` · ${result.topPerson.name} ${result.topPerson.percent}%`
+      : "";
+    document.title = `${result.quadrant}${person} | Political Standing Quiz | Project Sunrise`;
+    const desc = document.querySelector('meta[name="description"]');
+    const prevDesc = desc?.getAttribute("content") ?? null;
+    desc?.setAttribute(
+      "content",
+      `${result.quadrant}. Alignment: ${result.topCamps
+        .map((c) => `${c.short} ${c.percent}%`)
+        .join(", ")}.${person} Take the Project Sunrise quiz.`
+    );
+    return () => {
+      document.title = prev;
+      if (desc && prevDesc != null) desc.setAttribute("content", prevDesc);
+    };
+  }, [result]);
+
   return (
-    <div className="space-y-10">
-      <section className="rounded-2xl border border-black/[0.08] bg-white p-5 sm:p-7">
+    <div className="space-y-10 pb-24">
+      <section className="animate-in fade-in slide-in-from-bottom-2 rounded-2xl border border-black/[0.08] bg-white p-5 duration-300 sm:p-7">
         <p className="text-[10px] font-semibold tracking-[0.2em] text-navy/50 uppercase">
           Your standing
         </p>
@@ -347,7 +551,9 @@ function ResultsView({
           {result.quadrant}
         </h2>
         <p className="mt-2 max-w-xl text-sm leading-relaxed text-muted-foreground">
-          {result.quadrantBlurb}
+          {result.quadrantBlurb} Scores average your definitive picks across{" "}
+          {result.answeredCount} questions on economic left/right and social
+          liberty/authority axes.
         </p>
         <div className="mt-6">
           <QuizCompass economic={result.economic} social={result.social} />
@@ -369,10 +575,13 @@ function ResultsView({
         </p>
       </section>
 
+      <ShareResultsCard result={result} answers={answers} onRetake={onRetake} />
+
       <section className="rounded-2xl border border-black/[0.08] bg-white p-5 sm:p-7">
         <h3 className="text-lg font-bold text-navy">Alignment</h3>
         <p className="mt-1 text-sm text-muted-foreground">
           Percent match based on your answer vectors, not a party registration form.
+          MAGA here means hard-right loyalty politics, not every Republican.
         </p>
         <div className="mt-5">
           <AlignmentBars result={result} />
@@ -423,46 +632,11 @@ function ResultsView({
         </section>
       ) : null}
 
-      <PolicyIdeasSection ideas={policyIdeas} />
-
-      <section className="rounded-2xl border border-black/[0.08] bg-white p-5 sm:p-7">
-        <h3 className="text-lg font-bold text-navy">Share your results</h3>
-        <p className="mt-1 text-sm text-muted-foreground">
-          Link encodes your answers in the URL. No account. No backend.
-        </p>
-        <div className="mt-4 flex flex-wrap gap-2">
-          <Button
-            type="button"
-            variant="outline"
-            className="gap-1.5"
-            onClick={() => copy("link")}
-          >
-            {copied === "link" ? (
-              <Check className="size-3.5" />
-            ) : (
-              <Copy className="size-3.5" />
-            )}
-            {copied === "link" ? "Copied link" : "Copy link"}
-          </Button>
-          <Button
-            type="button"
-            variant="outline"
-            className="gap-1.5"
-            onClick={() => copy("text")}
-          >
-            {copied === "text" ? (
-              <Check className="size-3.5" />
-            ) : (
-              <Share2 className="size-3.5" />
-            )}
-            {copied === "text" ? "Copied text" : "Copy share text"}
-          </Button>
-          <Button type="button" variant="ghost" className="gap-1.5" onClick={onRetake}>
-            <RotateCcw className="size-3.5" />
-            Retake quiz
-          </Button>
-        </div>
-      </section>
+      <PolicyIdeasSection
+        ideas={policyIdeas}
+        title="Project Sunrise ideas matched to you"
+        blurb="Novel or proven-abroad fixes tied to topics you answered, including the future-facing questions at the end. Pros, cons, and where it already works."
+      />
 
       <section>
         <h3 className="text-lg font-bold text-navy">What to explore next</h3>
@@ -483,6 +657,8 @@ function ResultsView({
           ))}
         </ul>
       </section>
+
+      <StickyRetakeBar onRetake={onRetake} />
     </div>
   );
 }
@@ -493,11 +669,12 @@ export function QuizPage() {
   const [answers, setAnswers] = useState<QuizAnswers>({});
   const [result, setResult] = useState<QuizResult | null>(null);
   const [sessionSeed, setSessionSeed] = useState(() => createQuizSessionSeed());
+  const [transitionKey, setTransitionKey] = useState(0);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
     const decoded = decodeAnswers(window.location.search);
-    if (decoded && Object.keys(decoded).length >= QUIZ_QUESTION_COUNT) {
+    if (decoded && Object.keys(decoded).length >= QUIZ_SHARE_MIN_ANSWERS) {
       setAnswers(decoded);
       setResult(scoreQuiz(decoded));
       setPhase("results");
@@ -507,6 +684,7 @@ export function QuizPage() {
   const question = quizQuestions[index];
   const selected = answers[question?.id ?? ""];
   const progress = ((index + 1) / QUIZ_QUESTION_COUNT) * 100;
+  const answeredSoFar = Object.keys(answers).length;
 
   const selectOption = useCallback(
     (optionId: string) => {
@@ -531,6 +709,7 @@ export function QuizPage() {
       return;
     }
     setIndex((i) => i + 1);
+    setTransitionKey((k) => k + 1);
   };
 
   const goBack = () => {
@@ -539,6 +718,7 @@ export function QuizPage() {
       return;
     }
     setIndex((i) => i - 1);
+    setTransitionKey((k) => k + 1);
   };
 
   const start = () => {
@@ -547,6 +727,7 @@ export function QuizPage() {
     setIndex(0);
     setAnswers({});
     setResult(null);
+    setTransitionKey((k) => k + 1);
   };
 
   const retake = () => {
@@ -557,6 +738,7 @@ export function QuizPage() {
     setResult(null);
     if (typeof window !== "undefined") {
       window.history.replaceState(null, "", "/quiz");
+      document.title = "Political Standing Quiz | Project Sunrise";
     }
   };
 
@@ -565,8 +747,8 @@ export function QuizPage() {
       <PageHero
         eyebrow="Political Standing"
         title="Where do you actually stand?"
-        description="Twenty clear questions. About three minutes. No mushy both-sides fog. Tap the ? on any answer when a slogan invents a fake opposite."
-        tip="Most people share safety, freedom, and fairness. Campaigns sell branded traps. Answer the policy, not the team jersey."
+        description={`${QUIZ_QUESTION_COUNT} clear questions, including ${QUIZ_SUNRISE_ASK_COUNT} Project Sunrise asks on future-facing policy. About 5 to 7 minutes. No mushy both-sides fog. Tap ? tips and Sources when slogans invent fake opposites.`}
+        tip="Most people share safety, freedom, and fairness. Campaigns sell branded traps. Answer the policy, not the team jersey. MAGA is scored as hard-right politics, not every Republican."
         compact
       />
 
@@ -586,7 +768,8 @@ export function QuizPage() {
                 real border checks is not &quot;open borders.&quot; Background checks are not
                 a &quot;gun grab.&quot; Opposing a book ban is not &quot;indoctrinating
                 kids.&quot; Tap the ? tips when a label tries to invent an evil opposite.
-                Answer the actual policy choice.
+                Open Sources for Congress.gov, GAO, CBO, KFF, Brennan, OECD-tier
+                receipts. Answer the actual policy choice.
               </p>
               <ul className="mt-4 space-y-3 text-sm leading-relaxed text-navy/80">
                 <li>
@@ -599,12 +782,20 @@ export function QuizPage() {
                   Pick the option closest to what you would actually vote for. Gray
                   mush wastes an hour and teaches nothing.
                 </li>
+                <li>
+                  <span className="font-semibold text-navy">Finish with the future.</span>{" "}
+                  The last {QUIZ_SUNRISE_ASK_COUNT} questions are Project Sunrise asks:
+                  mobile voting with audits, carbon fee and dividend, ranked choice,
+                  public broadband, all-payer rates, social housing, postal banking, and
+                  digital ID with guardrails.
+                </li>
               </ul>
               <p className="mt-5 text-sm text-muted-foreground">
-                {QUIZ_QUESTION_COUNT} questions · about 3 minutes · results include a
-                compass, named-figure matches, camp alignment, novel policy ideas, and a
-                plain comparison to MAGA / hard-right positions when your answers diverge.
-                Answer order is shuffled each session so position habit does not steer you.
+                {QUIZ_QUESTION_COUNT} questions · about 5 to 7 minutes · results include a
+                compass, named-figure matches, camp alignment, novel policy ideas, share
+                card with Web Share, and a plain comparison to MAGA / hard-right
+                positions when your answers diverge. Answer order is shuffled each
+                session so position habit does not steer you.
               </p>
               <Button
                 type="button"
@@ -621,21 +812,37 @@ export function QuizPage() {
           {phase === "questions" && question ? (
             <div>
               <div className="mb-5">
-                <div className="mb-2 flex items-center justify-between text-xs font-medium text-navy/60">
-                  <span>
+                <div className="mb-2 flex flex-wrap items-center justify-between gap-x-3 gap-y-1 text-xs font-medium text-navy/60">
+                  <span className="tabular-nums">
                     Question {index + 1} of {QUIZ_QUESTION_COUNT}
+                    {answeredSoFar > 0 ? (
+                      <span className="text-navy/40">
+                        {" "}
+                        · {answeredSoFar} answered
+                      </span>
+                    ) : null}
                   </span>
-                  <span>{question.topic}</span>
+                  <span className="max-w-[55%] truncate text-right">
+                    {question.sunriseAsk ? "Project Sunrise asks" : question.topic}
+                  </span>
                 </div>
-                <div className="h-1.5 overflow-hidden rounded-full bg-navy/[0.08]">
+                <div className="h-2 overflow-hidden rounded-full bg-navy/[0.08]">
                   <div
-                    className="h-full rounded-full bg-[#e16323] transition-all"
+                    className="h-full rounded-full bg-[#e16323] transition-all duration-300 ease-out"
                     style={{ width: `${progress}%` }}
                   />
                 </div>
+                {question.sunriseAsk ? (
+                  <p className="mt-2 text-[11px] font-semibold tracking-[0.14em] text-[#e16323] uppercase">
+                    Future-facing · still pick a definitive option
+                  </p>
+                ) : null}
               </div>
 
-              <div className="rounded-2xl border border-black/[0.08] bg-white p-5 sm:p-7">
+              <div
+                key={transitionKey}
+                className="animate-in fade-in slide-in-from-right-2 rounded-2xl border border-black/[0.08] bg-white p-5 duration-200 sm:p-7"
+              >
                 <div className="flex items-start gap-2">
                   <h2 className="min-w-0 flex-1 text-lg font-bold leading-snug text-navy sm:text-xl">
                     {question.prompt}
@@ -659,6 +866,8 @@ export function QuizPage() {
                     />
                   )}
                 </div>
+
+                <QuestionSources question={question} />
               </div>
 
               <div className="mt-4 flex items-center justify-between gap-3">

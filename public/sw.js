@@ -1,8 +1,8 @@
-/* Project Sunrise service worker - Pass 55 hard cache bust.
- * Quiz: novel policy ideas, answer shuffle, MAGA naming, people alignment.
+/* Project Sunrise service worker - Pass 56 hard cache bust.
+ * Quiz: 33 questions, citations, share card, Sunrise asks, retake sticky.
  */
 
-const CACHE = "sunrise-v55-20260717T1520-quiz-people";
+const CACHE = "sunrise-v56-20260717T1545-quiz-share";
 
 const PRECACHE = [
 

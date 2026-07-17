@@ -8,6 +8,18 @@
 /** Site iteration history - meta transparency for Project Sunrise builds */
 export const changelog: ChangelogEntry[] = [
   {
+    version: "0.56.0",
+    date: "2026-07-17",
+    title: "Pass 56 - Quiz undeniable: citations, share, Sunrise asks",
+    highlights: [
+      "Quiz expanded to 33 definitive questions (~5-7 min) with real progress count; 8 Project Sunrise asks at the end (mobile voting, carbon fee & dividend, RCV, broadband, all-payer, social housing, postal banking, digital ID)",
+      "Sources / Learn more under questions with citation modal (Congress.gov, GAO, CBO, KFF, Brennan, NASA, Estonia e-gov, Maryland HSCRC, and peers)",
+      "Results share card: Web Share API, copy link, copy text, prefilled post; sticky Retake bar; richer intro and ? help",
+      "OG / meta refreshed for /quiz; client title updates when shared results load via query string",
+      "SW cache hard-bumped to sunrise-v56-20260717T1545-quiz-share",
+    ],
+  },
+  {
     version: "0.55.0",
     date: "2026-07-17",
     title: "Pass 55 - Quiz policy ideas, answer shuffle, MAGA framing",
