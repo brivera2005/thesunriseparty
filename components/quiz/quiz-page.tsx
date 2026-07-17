@@ -494,7 +494,7 @@ function ResultsView({
   onRetake: () => void;
 }) {
   const policyIdeas = useMemo(
-    () => selectPolicyIdeasForAnswers(answers, quizQuestions, 5),
+    () => selectPolicyIdeasForAnswers(answers, quizQuestions, 8),
     [answers]
   );
 
@@ -635,7 +635,7 @@ function ResultsView({
       <PolicyIdeasSection
         ideas={policyIdeas}
         title="Project Sunrise ideas matched to you"
-        blurb="Novel or proven-abroad fixes tied to topics you answered, including the future-facing questions at the end. Pros, cons, and where it already works."
+        blurb="Novel or proven-abroad fixes tied to your answers. Flip for pros and cons; swipe or tap Next for the next idea."
       />
 
       <section>
@@ -792,7 +792,7 @@ export function QuizPage() {
               </ul>
               <p className="mt-5 text-sm text-muted-foreground">
                 {QUIZ_QUESTION_COUNT} questions · about 5 to 7 minutes · results include a
-                compass, named-figure matches, camp alignment, novel policy ideas, share
+                compass, named-figure matches, camp alignment, policy idea flashcards, share
                 card with Web Share, and a plain comparison to MAGA / hard-right
                 positions when your answers diverge. Answer order is shuffled each
                 session so position habit does not steer you.

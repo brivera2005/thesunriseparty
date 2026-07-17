@@ -327,17 +327,18 @@ export function topicsFromAnswers(
 }
 
 /**
- * Pick 3-5 novel ideas weighted toward topics the user answered.
- * Stable order for a given answer set.
+ * Pick novel ideas weighted toward topics the user answered (flashcard deck).
+ * Stable order for a given answer set. Default deck size is 8.
  */
 export function selectPolicyIdeasForAnswers(
   answers: Record<string, string>,
   questions: { id: string; topic: string }[],
-  limit = 4
+  limit = 8
 ): SunrisePolicyIdea[] {
+  const cap = Math.max(1, Math.min(limit, sunrisePolicyIdeas.length));
   const topics = new Set(topicsFromAnswers(answers, questions));
   if (topics.size === 0) {
-    return sunrisePolicyIdeas.slice(0, limit);
+    return sunrisePolicyIdeas.slice(0, cap);
   }
 
   const scored = sunrisePolicyIdeas.map((idea, index) => {
@@ -352,12 +353,12 @@ export function selectPolicyIdeasForAnswers(
 
   const withHits = scored.filter((s) => s.hits > 0).map((s) => s.idea);
   if (withHits.length >= 3) {
-    return withHits.slice(0, Math.min(limit, 5));
+    return withHits.slice(0, cap);
   }
 
   const filler = scored
     .filter((s) => s.hits === 0)
     .map((s) => s.idea)
-    .slice(0, Math.max(0, 3 - withHits.length));
-  return [...withHits, ...filler].slice(0, Math.min(limit, 5));
+    .slice(0, Math.max(0, Math.min(3, cap) - withHits.length));
+  return [...withHits, ...filler].slice(0, cap);
 }

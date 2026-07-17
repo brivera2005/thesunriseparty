@@ -8,6 +8,17 @@
 /** Site iteration history - meta transparency for Project Sunrise builds */
 export const changelog: ChangelogEntry[] = [
   {
+    version: "0.57.0",
+    date: "2026-07-17",
+    title: "Pass 57 - Quiz results policy ideas as flashcards",
+    highlights: [
+      "Results: Project Sunrise policy ideas are a flashcard deck (one at a time) instead of a long scroll list",
+      "Flip for pros/cons/sources; Prev/Next, dots, N of M counter; swipe between cards on mobile",
+      "Deck sized up to 8 ideas matched to your topics; Blueprint still shows the full gallery",
+      "SW cache hard-bumped to sunrise-v57-20260717T1600-quiz-flashcards",
+    ],
+  },
+  {
     version: "0.56.0",
     date: "2026-07-17",
     title: "Pass 56 - Quiz undeniable: citations, share, Sunrise asks",

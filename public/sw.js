@@ -1,8 +1,8 @@
-/* Project Sunrise service worker - Pass 56 hard cache bust.
- * Quiz: 33 questions, citations, share card, Sunrise asks, retake sticky.
+/* Project Sunrise service worker - Pass 57 hard cache bust.
+ * Quiz results: policy ideas as flashcard deck (flip + swipe).
  */
 
-const CACHE = "sunrise-v56-20260717T1545-quiz-share";
+const CACHE = "sunrise-v57-20260717T1600-quiz-flashcards";
 
 const PRECACHE = [
 
