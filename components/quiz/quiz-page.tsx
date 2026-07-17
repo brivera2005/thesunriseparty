@@ -34,7 +34,21 @@ type Phase = "intro" | "questions" | "results";
 
 function OptionHelp({ help }: { help: string }) {
   return (
-    <InfoTip label={help} side="left" iconClassName="size-8 shrink-0 text-navy/50" />
+    <span
+      className="relative z-10 shrink-0"
+      onClick={(e) => {
+        e.preventDefault();
+        e.stopPropagation();
+      }}
+      onPointerDown={(e) => e.stopPropagation()}
+      onKeyDown={(e) => e.stopPropagation()}
+    >
+      <InfoTip
+        label={help}
+        side="left"
+        iconClassName="size-8 shrink-0 text-navy/50"
+      />
+    </span>
   );
 }
 
@@ -48,34 +62,49 @@ function ChoiceQuestion({
   onSelect: (optionId: string) => void;
 }) {
   return (
-    <ul className="space-y-2.5">
+    <ul className="space-y-2.5" role="radiogroup" aria-label={question.prompt}>
       {question.options.map((opt) => {
         const active = selected === opt.id;
         return (
           <li key={opt.id}>
             <div
               className={cn(
-                "flex items-start gap-2 rounded-xl border p-3 transition-colors sm:p-3.5",
+                "flex w-full items-stretch overflow-hidden rounded-xl border transition-colors",
                 active
-                  ? "border-navy bg-navy/[0.05] shadow-sm"
+                  ? "border-navy bg-navy/[0.07] shadow-sm ring-1 ring-navy/20"
                   : "border-black/[0.08] bg-white hover:border-navy/30 hover:bg-black/[0.02]"
               )}
             >
               <button
                 type="button"
+                role="radio"
+                aria-checked={active}
                 onClick={() => onSelect(opt.id)}
-                className="min-w-0 flex-1 text-left"
+                className="flex min-h-11 min-w-0 flex-1 cursor-pointer items-start gap-3 px-3.5 py-3.5 text-left sm:min-h-12 sm:px-4"
               >
                 <span
                   className={cn(
-                    "block text-[15px] leading-snug font-medium sm:text-base",
+                    "mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full border-2 transition-colors",
+                    active
+                      ? "border-navy bg-navy text-white"
+                      : "border-navy/35 bg-white"
+                  )}
+                  aria-hidden
+                >
+                  {active ? <Check className="size-3 stroke-[3]" /> : null}
+                </span>
+                <span
+                  className={cn(
+                    "block flex-1 text-[15px] leading-snug font-medium sm:text-base",
                     active ? "text-navy" : "text-navy/85"
                   )}
                 >
                   {opt.label}
                 </span>
               </button>
-              <OptionHelp help={opt.help} />
+              <div className="flex shrink-0 items-start pr-2.5 pt-2.5 sm:pr-3 sm:pt-3">
+                <OptionHelp help={opt.help} />
+              </div>
             </div>
           </li>
         );
@@ -252,14 +281,13 @@ function ResultsView({
       {result.showTrumpRealityCheck ? (
         <section className="rounded-2xl border-2 border-navy/25 bg-navy/[0.03] p-5 sm:p-7">
           <h3 className="text-lg font-bold text-navy">
-            You may like the brand. Your policy answers do not match it.
+            Where your answers diverge from Trump / MAGA
           </h3>
           <p className="mt-2 text-sm leading-relaxed text-navy/80">
-            MAGA / Trump alignment scored {result.magaPercent}%. Rally slogans and
-            kitchen-table choices are different things. Liking &quot;America First,&quot;
-            &quot;back the blue,&quot; or &quot;secure borders&quot; does not lock you into
-            every hard-line policy those brands sell. Here is where you parted ways,
-            in plain English:
+            Your answers match Trump / MAGA positions about {result.magaPercent}% of
+            the time. That is a policy comparison score, not a guess about who you
+            support or how you see yourself. On the questions below, the typical
+            Trump-aligned pick differed from yours:
           </p>
           <ul className="mt-5 space-y-4">
             {result.trumpCallouts.map((c) => (
@@ -272,11 +300,13 @@ function ResultsView({
                 </p>
                 <p className="mt-1 text-sm font-medium text-navy">{c.prompt}</p>
                 <p className="mt-2 text-sm text-navy/90">
-                  <span className="font-semibold text-[#e16323]">You chose:</span>{" "}
+                  <span className="font-semibold text-[#e16323]">Your answer:</span>{" "}
                   {c.yourLabel}
                 </p>
                 <p className="mt-1 text-sm text-navy/90">
-                  <span className="font-semibold text-navy">Typical MAGA pick:</span>{" "}
+                  <span className="font-semibold text-navy">
+                    Typical Trump / MAGA position:
+                  </span>{" "}
                   {c.magaLabel}
                 </p>
                 <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
@@ -462,8 +492,8 @@ export function QuizPage() {
               </ul>
               <p className="mt-5 text-sm text-muted-foreground">
                 {QUIZ_QUESTION_COUNT} questions · about 3 minutes · results include a
-                compass, camp alignment, and a Trump reality check when branding and
-                your answers do not match.
+                compass, camp alignment, and a plain comparison to Trump / MAGA positions
+                when your answers diverge.
               </p>
               <Button
                 type="button"

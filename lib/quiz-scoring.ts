@@ -179,7 +179,7 @@ export function scoreQuiz(answers: QuizAnswers): QuizResult {
           prompt: q.prompt,
           yourLabel: opt.label,
           magaLabel: magaOpt.label,
-          why: `${opt.help} Trump-aligned politics usually picks: "${magaOpt.label}"`,
+          why: `${opt.help} Typical Trump / MAGA position: "${magaOpt.label}"`,
         });
       }
     }

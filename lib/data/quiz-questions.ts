@@ -58,7 +58,7 @@ export const quizQuestions: QuizQuestion[] = [
     id: "economy-taxes",
     topic: "Economy / taxes",
     prompt: "Who should pay more in taxes when the country needs revenue?",
-    help: "Fair taxes are not 'punishing success.' Closing loopholes and asking high earners to pay a fairer share is not hatred of hard work. Almost everyone wants roads, courts, and defense funded. The fight is who pays how much.",
+    help: "Fair taxes are not 'punishing success' or a stealth plan for full socialism. Closing loopholes and asking high earners to pay a fairer share is ordinary budgeting. Almost everyone wants roads, courts, and defense funded. The fight is who pays how much.",
     type: "choice",
     options: [
       {
@@ -102,7 +102,7 @@ export const quizQuestions: QuizQuestion[] = [
       {
         id: "mixed-regulate",
         label: "Keep private insurance, expand subsidies and price rules",
-        help: "ACA-style: markets stay, with subsidies and rules. Not 'socialism.' Social Security, Medicare, public schools, and fire departments are popular shared systems. The 'socialism' smear flattens every public program into Venezuela.",
+        help: "ACA-style: markets stay, with subsidies and rules. That is not socialism, and America was never one vote away from becoming Venezuela. Social Security, Medicare, public schools, and fire departments are popular shared systems. The smear flattens every public program into a fake extreme.",
         scores: { economic: -2, social: -1 },
         alignments: { progressive: 4, moderate_dem: 9, independent: 7, moderate_gop: 3, maga: 1 },
       },
@@ -120,7 +120,7 @@ export const quizQuestions: QuizQuestion[] = [
     id: "abortion",
     topic: "Abortion / reproductive rights",
     prompt: "Who should decide whether abortion is legal?",
-    help: "'Pro-life' vs 'pro-choice' is a slogan trap. Rejecting forced-birth laws does not mean celebrating death or hating babies. Almost everyone wants fewer unwanted pregnancies and healthy families. The real dispute is who decides, and when the state can compel a pregnancy to continue.",
+    help: "'Pro-life' vs 'pro-choice' is a slogan trap. Rejecting forced-birth laws does not mean celebrating death or hating babies. Most abortions already happen early; late-term cases are rare medical crises, not a casual third-trimester free-for-all. The real dispute is who decides, and when the state can compel a pregnancy to continue.",
     type: "choice",
     options: [
       {
@@ -151,27 +151,27 @@ export const quizQuestions: QuizQuestion[] = [
     id: "immigration",
     topic: "Immigration",
     prompt: "How should the U.S. handle immigration and the border?",
-    help: "'Secure borders' vs 'open borders' is a false binary. Humane legal immigration plus real enforcement is not 'no borders.' Most people want orderly entry, fair asylum rules, and a working system. The fight is how hard the crackdown gets, and whether cruelty is the point.",
+    help: "'Open borders' has never been U.S. policy. Stop buying that propaganda. Every administration has run ports of entry, visas, asylum courts, and deportations. The real fight is how to fund and staff enforcement, clear asylum backlogs, and keep legal pathways working, not whether America has a border. Security, legality, and humanity can coexist.",
     type: "choice",
     options: [
       {
         id: "path-expand",
         label: "Expand legal pathways and due process; fix asylum backlogs",
-        help: "More visas, faster courts, work permits while cases pending. Not 'open borders.' Open borders would mean no inspection at all. This is orderly entry so people are not funneled into chaos at the line.",
+        help: "More visas, faster courts, work permits while cases pending. That is not open borders. Open borders would mean no inspection at all, and that has never been the law. This is orderly entry so people are processed instead of funneled into chaos.",
         scores: { economic: -3, social: -6 },
         alignments: { progressive: 9, moderate_dem: 7, independent: 4, moderate_gop: 1, maga: 0 },
       },
       {
         id: "balance",
         label: "Pair stronger enforcement with a path for long-term residents",
-        help: "Classic bipartisan package: more agents and tech, plus legal status for people who have been here working for years. Neither side's pure base loves it. That is why it stalls, not because the idea is radical.",
+        help: "Classic bipartisan package: more agents and tech, plus legal status for long-term residents who have been working here. Neither pure base loves it. That stall is politics, not proof that 'open borders' was ever on the table.",
         scores: { economic: 0, social: 0 },
         alignments: { progressive: 3, moderate_dem: 8, independent: 9, moderate_gop: 5, maga: 1 },
       },
       {
         id: "mass-deport",
         label: "Mass deportations and hard stops; prioritize deterrence",
-        help: "Frames immigration as invasion. Deterrence-first policies (family separation, camps, blanket bans) often cost more, clog lawful asylum, and still leave labor shortages. 'Law and order' language here sells maximal removal.",
+        help: "Frames immigration as invasion. The country already inspects, detains, and deports. Deterrence-first policies often cost more, clog lawful asylum, and still leave labor shortages. The debate is how hard and how fair, not whether a border exists.",
         scores: { economic: 4, social: 8 },
         alignments: { progressive: 0, moderate_dem: 0, independent: 2, moderate_gop: 6, maga: 10 },
         magaPreferred: true,
@@ -182,13 +182,13 @@ export const quizQuestions: QuizQuestion[] = [
     id: "guns",
     topic: "Guns",
     prompt: "What gun laws should the country have?",
-    help: "'Gun grabber' vs '2A absolute' is a slogan trap. Background checks and red-flag laws are not confiscating every hunting rifle. Hunters, veterans, and parents can want both self-defense rights and fewer mass shootings. The fight is which rules cut harm without pretending 'ban all guns' or 'no rules ever' are the only options.",
+    help: "'Gun grabber' vs '2A absolute' is a slogan trap. Nobody serious is confiscating every hunting rifle tomorrow. Background checks and red-flag laws are rules, not a raid on your safe. Hunters, veterans, and parents can want both self-defense rights and fewer mass shootings.",
     type: "choice",
     options: [
       {
         id: "strong-rules",
         label: "Universal background checks, assault-weapon limits, red-flag laws",
-        help: "Keeps most hunting and home-defense guns legal while tightening the deadliest categories and closing sale loopholes. Not a total confiscation plan, despite how ads frame every rule as a grab.",
+        help: "Keeps most hunting and home-defense guns legal while tightening the deadliest categories and closing sale loopholes. Ads frame every rule as a total grab. That extreme has never been the live bill on the floor.",
         scores: { economic: -1, social: -5 },
         alignments: { progressive: 9, moderate_dem: 8, independent: 5, moderate_gop: 1, maga: 0 },
       },
@@ -306,13 +306,13 @@ export const quizQuestions: QuizQuestion[] = [
     id: "education",
     topic: "Education",
     prompt: "Where should public education money go?",
-    help: "'Woke' vs 'anti-woke' is a culture-war brand fight. Parents want good schools and a say in what kids learn. Opposing book bans and supporting equal rights is not 'indoctrinating kids.' The real fight is whether public dollars follow kids into private systems, and how far curriculum wars go.",
+    help: "'Woke' vs 'anti-woke' is a culture-war brand fight. No national curriculum is turning every classroom into a re-education camp overnight. Parents want good schools and a say in what kids learn. Opposing book bans is not 'indoctrinating kids.' The real fight is public dollars, private vouchers, and how far curriculum wars go.",
     type: "choice",
     options: [
       {
         id: "public-invest",
         label: "Invest in public schools; keep church-state lines clear",
-        help: "Fund teachers, buildings, special ed. Opposes diverting taxes to private/religious schools at scale. Wanting honest history and fewer banned books is not a plot against parents. 'Parental rights' is sometimes used for that; sometimes it is used to scrub curriculum.",
+        help: "Fund teachers, buildings, special ed. Opposes diverting taxes to private/religious schools at scale. Wanting honest history and fewer banned books is not a plot against parents. 'Parental rights' is sometimes a real ask, and sometimes a slogan used to scrub curriculum.",
         scores: { economic: -5, social: -4 },
         alignments: { progressive: 9, moderate_dem: 7, independent: 4, moderate_gop: 2, maga: 0 },
       },
@@ -399,20 +399,20 @@ export const quizQuestions: QuizQuestion[] = [
     id: "criminal-justice",
     topic: "Criminal justice",
     prompt: "How should the justice system balance safety and fairness?",
-    help: "'Back the blue' vs 'defund' is a slogan trap. Wanting accountable policing does not mean hating cops or wanting chaos. Most people want safe streets and fair process. The fight is how you get both, not which team jersey you wear.",
+    help: "'Back the blue' vs 'defund' is a slogan trap. Cities never abolished police overnight, and wanting accountability is not a plot to leave streets empty. Most people want safe streets and fair process. The fight is how you get both, not which team jersey you wear.",
     type: "choice",
     options: [
       {
         id: "reform-safety",
         label: "Reform sentencing and policing; fund prevention and mental health",
-        help: "End cash-bail traps, reduce mandatory minimums for nonviolent crimes, add accountability for misconduct, and still investigate violent crime. Respect for good officers is not the same as a blank check when someone abuses the badge.",
+        help: "End cash-bail traps, reduce mandatory minimums for nonviolent crimes, add accountability for misconduct, and still investigate violent crime. Respect for good officers is not a blank check when someone abuses the badge.",
         scores: { economic: -3, social: -6 },
         alignments: { progressive: 9, moderate_dem: 7, independent: 4, moderate_gop: 1, maga: 0 },
       },
       {
         id: "balanced-cj",
         label: "Fund police well; keep reforms that cut wrongful harm",
-        help: "Hire and train officers, keep body cams and oversight, target violent crime. Middle path many mayors take. Not abolition, not 'anything goes.'",
+        help: "Hire and train officers, keep body cams and oversight, target violent crime. Middle path many mayors take. Not abolition, not 'anything goes.' That fake either/or is the slogan trap.",
         scores: { economic: 0, social: 0 },
         alignments: { progressive: 3, moderate_dem: 7, independent: 9, moderate_gop: 6, maga: 3 },
       },
@@ -481,7 +481,7 @@ export const quizQuestions: QuizQuestion[] = [
     id: "ss-medicare",
     topic: "Social Security / Medicare",
     prompt: "What should happen to Social Security and Medicare?",
-    help: "Social Security and Medicare are earned insurance most families rely on, not 'socialism' or handouts. The smear flattens popular programs into Venezuela. Privatization pitches often sound like modernization while shifting market risk onto retirees.",
+    help: "Social Security and Medicare are earned insurance most families rely on, not 'socialism' or handouts. The smear pretends popular programs are a Venezuela plot that never matched U.S. reality. Privatization pitches often sound like modernization while shifting market risk onto retirees.",
     type: "choice",
     options: [
       {
@@ -543,13 +543,13 @@ export const quizQuestions: QuizQuestion[] = [
     id: "church-state",
     topic: "Church and state",
     prompt: "How should government treat religion?",
-    help: "'Religious freedom' vs 'anti-religion' is a false binary. Separating church and state is not banning faith. Churchgoers keep the right to worship. The First Amendment also blocks one faith from writing civil law for everyone else.",
+    help: "'Religious freedom' vs 'anti-religion' is a false binary. Separating church and state is not banning faith or closing churches. That extreme was never the American settlement. Churchgoers keep the right to worship. The First Amendment also blocks one faith from writing civil law for everyone else.",
     type: "choice",
     options: [
       {
         id: "strict-separation",
         label: "Strict separation: no official religion in public policy",
-        help: "Schools and agencies stay secular; people keep private faith. Protects minorities, nonbelievers, and believers who do not want the state picking a church. Not hostility to religion.",
+        help: "Schools and agencies stay secular; people keep private faith. Protects minorities, nonbelievers, and believers who do not want the state picking a church. Secular government is not hostility to religion.",
         scores: { economic: 0, social: -7 },
         alignments: { progressive: 9, moderate_dem: 7, independent: 6, moderate_gop: 2, maga: 0 },
       },

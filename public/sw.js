@@ -1,8 +1,8 @@
-/* Project Sunrise service worker - Pass 53.1 hard cache bust.
- * Political Standing Quiz framing upgrade at /quiz.
+/* Project Sunrise service worker - Pass 53.2 hard cache bust.
+ * Quiz tap targets + tip framing + Trump comparison rewrite.
  */
 
-const CACHE = "sunrise-v53.1-20260717T0955-quiz-framing";
+const CACHE = "sunrise-v53.2-20260717T1000-quiz-tap";
 
 const PRECACHE = [
 

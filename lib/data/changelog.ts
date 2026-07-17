@@ -8,6 +8,17 @@
 /** Site iteration history - meta transparency for Project Sunrise builds */
 export const changelog: ChangelogEntry[] = [
   {
+    version: "0.53.2",
+    date: "2026-07-17",
+    title: "Pass 53.2 - Quiz tap targets and honest framing",
+    highlights: [
+      "Quiz answers: full-row click targets, sticky selected state with radio check, ? tips no longer steal the tap",
+      "Stronger ? demystifiers: open borders never U.S. policy, gun-grab / defund / socialism / woke slogan traps",
+      "Results Trump section rewritten as neutral policy comparison (no 'you may think you align' assumption)",
+      "SW cache hard-bumped to sunrise-v53.2-20260717T1000-quiz-tap",
+    ],
+  },
+  {
     version: "0.53.1",
     date: "2026-07-17",
     title: "Pass 53.1 - Quiz false-binary framing",
