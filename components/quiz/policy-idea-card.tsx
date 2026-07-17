@@ -77,7 +77,7 @@ export function PolicyIdeaCard({
   );
 }
 
-function PolicyIdeaFlashcard({
+export function PolicyIdeaFlashcard({
   idea,
   flipped,
   onToggleFlip,

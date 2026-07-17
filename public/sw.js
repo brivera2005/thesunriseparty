@@ -1,8 +1,8 @@
-/* Project Sunrise service worker - Pass 57 hard cache bust.
- * Quiz results: policy ideas as flashcard deck (flip + swipe).
+/* Project Sunrise service worker - Pass 58 hard cache bust.
+ * Quiz results: unified Your review flashcard deck.
  */
 
-const CACHE = "sunrise-v57-20260717T1600-quiz-flashcards";
+const CACHE = "sunrise-v58-20260717T1700-quiz-review-deck";
 
 const PRECACHE = [
 

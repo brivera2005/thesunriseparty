@@ -8,6 +8,18 @@
 /** Site iteration history - meta transparency for Project Sunrise builds */
 export const changelog: ChangelogEntry[] = [
   {
+    version: "0.58.0",
+    date: "2026-07-17",
+    title: "Pass 58 - Quiz results as one Review deck",
+    highlights: [
+      "Results: one unified Your review flashcard walkthrough instead of endless scroll sections",
+      "Card sequence: Alignment → people (one each) → MAGA is not the GOP → each divergence → each Sunrise idea",
+      "Compass stays in a compact header; Card N of M + progress bar; Prev/Next + swipe; flip where useful",
+      "Share + Retake sticky outside the deck; scoring and share URLs unchanged",
+      "SW cache hard-bumped to sunrise-v58-20260717T1700-quiz-review-deck",
+    ],
+  },
+  {
     version: "0.57.0",
     date: "2026-07-17",
     title: "Pass 57 - Quiz results policy ideas as flashcards",
