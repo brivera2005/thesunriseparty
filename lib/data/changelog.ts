@@ -8,6 +8,17 @@
 /** Site iteration history - meta transparency for Project Sunrise builds */
 export const changelog: ChangelogEntry[] = [
   {
+    version: "0.53.1",
+    date: "2026-07-17",
+    title: "Pass 53.1 - Quiz false-binary framing",
+    highlights: [
+      "Quiz intro rewritten to demolish slogan traps with shared-values examples (pro-life, policing, borders, guns, book bans)",
+      "Stronger ? help on abortion, guns, immigration, policing, religion, taxes, education, foreign policy, Social Security",
+      "Trump reality check results copy upgraded: brand loyalty vs kitchen-table policy",
+      "SW cache hard-bumped to sunrise-v53.1-20260717T0955-quiz-framing",
+    ],
+  },
+  {
     version: "0.53.0",
     date: "2026-07-17",
     title: "Pass 53 - Political Standing Quiz",

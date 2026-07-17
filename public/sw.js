@@ -1,10 +1,8 @@
-/* Project Sunrise service worker - Pass 53 hard cache bust.
-
- * Political Standing Quiz at /quiz.
-
+/* Project Sunrise service worker - Pass 53.1 hard cache bust.
+ * Political Standing Quiz framing upgrade at /quiz.
  */
 
-const CACHE = "sunrise-v53-20260717T0940-quiz";
+const CACHE = "sunrise-v53.1-20260717T0955-quiz-framing";
 
 const PRECACHE = [
 

@@ -252,12 +252,14 @@ function ResultsView({
       {result.showTrumpRealityCheck ? (
         <section className="rounded-2xl border-2 border-navy/25 bg-navy/[0.03] p-5 sm:p-7">
           <h3 className="text-lg font-bold text-navy">
-            You may think you align with Trump, but your answers do not
+            You may like the brand. Your policy answers do not match it.
           </h3>
           <p className="mt-2 text-sm leading-relaxed text-navy/80">
-            MAGA / Trump alignment scored {result.magaPercent}%. Brand loyalty and
-            policy answers are different things. Here is where your choices diverge
-            from the typical Trump-aligned stance, with plain-language receipts:
+            MAGA / Trump alignment scored {result.magaPercent}%. Rally slogans and
+            kitchen-table choices are different things. Liking &quot;America First,&quot;
+            &quot;back the blue,&quot; or &quot;secure borders&quot; does not lock you into
+            every hard-line policy those brands sell. Here is where you parted ways,
+            in plain English:
           </p>
           <ul className="mt-5 space-y-4">
             {result.trumpCallouts.map((c) => (
@@ -423,8 +425,8 @@ export function QuizPage() {
       <PageHero
         eyebrow="Political Standing"
         title="Where do you actually stand?"
-        description="Twenty clear questions. About three minutes. No mushy both-sides fog. Tap the ? on any answer to see what the words really mean."
-        tip="Remove party loyalty for a moment. Answer what you believe, not what your team is supposed to believe."
+        description="Twenty clear questions. About three minutes. No mushy both-sides fog. Tap the ? on any answer when a slogan invents a fake opposite."
+        tip="Most people share safety, freedom, and fairness. Campaigns sell branded traps. Answer the policy, not the team jersey."
         compact
       />
 
@@ -435,28 +437,33 @@ export function QuizPage() {
               <h2 className="text-xl font-bold text-navy sm:text-2xl">
                 Before you start
               </h2>
+              <p className="mt-4 text-sm leading-relaxed text-navy/85">
+                Most Americans share the same basics: keep kids safe, keep the country
+                free, keep work fair, keep streets livable. Campaigns sell slogan traps
+                that pretend those values have only one branded team. Rejecting
+                &quot;pro-life&quot; laws does not make you &quot;pro-death.&quot; Wanting
+                cops who follow the rules is not &quot;defund.&quot; Legal immigration plus
+                real border checks is not &quot;open borders.&quot; Background checks are not
+                a &quot;gun grab.&quot; Opposing a book ban is not &quot;indoctrinating
+                kids.&quot; Tap the ? tips when a label tries to invent an evil opposite.
+                Answer the actual policy choice.
+              </p>
               <ul className="mt-4 space-y-3 text-sm leading-relaxed text-navy/80">
                 <li>
                   <span className="font-semibold text-navy">Drop the team jersey.</span>{" "}
-                  The truest results come when you answer for yourself, not for a
-                  candidate, cable channel, or church bulletin.
-                </li>
-                <li>
-                  <span className="font-semibold text-navy">Language is loaded.</span>{" "}
-                  Use the ? tips. Example: &quot;pro-life&quot; does not mean everyone
-                  else is &quot;pro-death.&quot; Almost everyone values life. The policy
-                  question is about bodily autonomy and abortion access.
+                  Answer for yourself, not for a candidate, cable channel, or church
+                  bulletin.
                 </li>
                 <li>
                   <span className="font-semibold text-navy">Be definitive.</span>{" "}
                   Pick the option closest to what you would actually vote for. Gray
-                  mush is how quizzes waste an hour and teach nothing.
+                  mush wastes an hour and teaches nothing.
                 </li>
               </ul>
               <p className="mt-5 text-sm text-muted-foreground">
                 {QUIZ_QUESTION_COUNT} questions · about 3 minutes · results include a
-                compass, camp alignment, and a Trump reality check when your answers
-                diverge from MAGA branding.
+                compass, camp alignment, and a Trump reality check when branding and
+                your answers do not match.
               </p>
               <Button
                 type="button"
