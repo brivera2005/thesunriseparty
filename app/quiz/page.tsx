@@ -5,7 +5,7 @@ import { sectionOg, SITE_URL } from "@/lib/metadata";
 
 export const metadata: Metadata = {
   title: "Political Standing Quiz | Project Sunrise",
-  description: `${QUIZ_QUESTION_COUNT} clear questions. Find your compass quadrant, camp alignment, and whether your answers actually match Trump-era politics. About 3 minutes.`,
+  description: `${QUIZ_QUESTION_COUNT} clear questions. Find your compass quadrant, camp alignment, novel policy ideas, and whether your answers match MAGA / hard-right politics. About 3 minutes.`,
   openGraph: {
     title: sectionOg.quiz.title,
     description: sectionOg.quiz.description,

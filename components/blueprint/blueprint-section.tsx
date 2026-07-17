@@ -1,7 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { policyFixes, safeguardItems, blueprintDetailPath } from "@/lib/data/policies";
+import { sunrisePolicyIdeas } from "@/lib/data/sunrise-policy-ideas";
+import { PolicyIdeaCard } from "@/components/quiz/policy-idea-card";
 import { CitationList } from "@/components/citation";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -12,7 +15,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Shield, Lock, Scale, Eye, Ban, ExternalLink, CalendarClock, Link2, Check } from "lucide-react";
+import { Shield, Lock, Scale, Eye, Ban, ExternalLink, CalendarClock, Link2, Check, ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { BlueprintHashNav } from "./blueprint-hash-nav";
 import { PolicyEvidencePanel } from "./policy-evidence-panel";
@@ -97,6 +100,43 @@ export function BlueprintSection({
             </p>
           </div>
           )}
+
+          {standalone && !compact ? (
+            <div
+              id="sunrise-ideas"
+              className="mb-10 scroll-mt-24 rounded-2xl border border-black/[0.08] bg-navy/[0.03] p-5 sm:p-7"
+            >
+              <div className="flex flex-wrap items-start justify-between gap-3">
+                <div>
+                  <p className="text-[10px] font-semibold tracking-[0.2em] text-navy/50 uppercase">
+                    Novel & proven abroad
+                  </p>
+                  <h3 className="mt-1 text-xl font-bold text-navy">
+                    Project Sunrise policy ideas
+                  </h3>
+                  <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+                    Groundbreaking or peer-nation fixes with honest pros, cons, and
+                    where they already work. The quiz surfaces a personal shortlist on
+                    results; the full set lives here.
+                  </p>
+                </div>
+                <Link
+                  href="/quiz"
+                  className="inline-flex items-center gap-1.5 text-sm font-semibold text-navy hover:underline"
+                >
+                  Take the quiz
+                  <ArrowRight className="size-3.5" />
+                </Link>
+              </div>
+              <ul className="mt-5 grid gap-4 lg:grid-cols-2">
+                {sunrisePolicyIdeas.map((idea) => (
+                  <li key={idea.id}>
+                    <PolicyIdeaCard idea={idea} className="h-full" />
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ) : null}
 
           <Accordion
             type="single"

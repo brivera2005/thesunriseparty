@@ -200,7 +200,7 @@ export const sitemapSections: SitemapSection[] = [
       {
         href: "/quiz",
         label: "Political Standing Quiz",
-        description: "Find where you actually stand. Compass, camps, Trump / MAGA comparison.",
+        description: "Find where you actually stand. Compass, camps, MAGA comparison, novel policy ideas.",
         badge: "New",
       },
       {

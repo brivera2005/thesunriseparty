@@ -23,7 +23,7 @@ export type QuizOption = {
   help: string;
   scores: QuizScores;
   alignments: Partial<Record<QuizCampId, number>>;
-  /** True when this is the typical MAGA / Trump-aligned stance for reality-check callouts */
+  /** True when this is the typical MAGA / hard-right stance for reality-check callouts */
   magaPreferred?: boolean;
 };
 
@@ -50,7 +50,7 @@ export const QUIZ_CAMPS: {
   { id: "moderate_dem", label: "Moderate Democrats", short: "Mod. Dem" },
   { id: "independent", label: "Independents", short: "Independent" },
   { id: "moderate_gop", label: "Moderate Republicans", short: "Mod. GOP" },
-  { id: "maga", label: "MAGA / Trump", short: "MAGA" },
+  { id: "maga", label: "MAGA / hard-right", short: "MAGA" },
 ];
 
 export const quizQuestions: QuizQuestion[] = [
@@ -264,7 +264,7 @@ export const quizQuestions: QuizQuestion[] = [
       {
         id: "resist-steal",
         label: "Leaders should fight hard if they believe the vote was stolen",
-        help: "This is the 2020 Trump posture: treat loss as theft, mobilize to block certification. Believing a conspiracy without courtroom proof does not create a right to overturn electors. That is authoritarian politics wearing patriotic clothes.",
+        help: "This is the post-2020 MAGA posture: treat loss as theft, mobilize to block certification. Believing a conspiracy without courtroom proof does not create a right to overturn electors. That is authoritarian politics wearing patriotic clothes.",
         scores: { economic: 1, social: 9 },
         alignments: { progressive: 0, moderate_dem: 0, independent: 1, moderate_gop: 3, maga: 10 },
         magaPreferred: true,
@@ -707,7 +707,7 @@ export const quizQuestions: QuizQuestion[] = [
       {
         id: "punish-critics",
         label: "Punish 'enemy' media and protect friendly outlets",
-        help: "Trump-era posture: sue, threaten licenses, call press the enemy. That is not free speech absolutism. It is using state and legal power to chill critics.",
+        help: "Hard-right MAGA posture: sue, threaten licenses, call press the enemy. That is not free speech absolutism. It is using state and legal power to chill critics.",
         scores: { economic: 2, social: 8 },
         alignments: { progressive: 0, moderate_dem: 0, independent: 1, moderate_gop: 3, maga: 10 },
         magaPreferred: true,

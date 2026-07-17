@@ -8,6 +8,19 @@
 /** Site iteration history - meta transparency for Project Sunrise builds */
 export const changelog: ChangelogEntry[] = [
   {
+    version: "0.55.0",
+    date: "2026-07-17",
+    title: "Pass 55 - Quiz policy ideas, answer shuffle, MAGA framing",
+    highlights: [
+      "Quiz results: Project Sunrise novel / proven-abroad policy ideas matched to topics you answered (pros, cons, why incredible, where it works)",
+      "Choice answers shuffle per session (seeded) so top/bottom click habit cannot steer scores; option ids stay stable for scoring",
+      "Alignment and divergence copy uses MAGA / hard-right (not Trump); camp label renamed",
+      "Results: Who you most likely align with (named figures across the spectrum) plus MAGA is not the Republican Party callout",
+      "Blueprint adds full Sunrise ideas gallery at #sunrise-ideas",
+      "SW cache hard-bumped to sunrise-v55-20260717T1520-quiz-people",
+    ],
+  },
+  {
     version: "0.54.0",
     date: "2026-07-17",
     title: "Pass 54 - Legislation live refresh + always-on updater",
@@ -25,7 +38,7 @@ export const changelog: ChangelogEntry[] = [
     highlights: [
       "Quiz answers: full-row click targets, sticky selected state with radio check, ? tips no longer steal the tap",
       "Stronger ? demystifiers: open borders never U.S. policy, gun-grab / defund / socialism / woke slogan traps",
-      "Results Trump section rewritten as neutral policy comparison (no 'you may think you align' assumption)",
+      "Results MAGA section rewritten as neutral policy comparison (no 'you may think you align' assumption)",
       "SW cache hard-bumped to sunrise-v53.2-20260717T1000-quiz-tap",
     ],
   },
@@ -36,7 +49,7 @@ export const changelog: ChangelogEntry[] = [
     highlights: [
       "Quiz intro rewritten to demolish slogan traps with shared-values examples (pro-life, policing, borders, guns, book bans)",
       "Stronger ? help on abortion, guns, immigration, policing, religion, taxes, education, foreign policy, Social Security",
-      "Trump reality check results copy upgraded: brand loyalty vs kitchen-table policy",
+      "MAGA reality check results copy upgraded: brand loyalty vs kitchen-table policy",
       "SW cache hard-bumped to sunrise-v53.1-20260717T0955-quiz-framing",
     ],
   },
@@ -46,7 +59,7 @@ export const changelog: ChangelogEntry[] = [
     title: "Pass 53 - Political Standing Quiz",
     highlights: [
       "New /quiz: ~20 definitive questions with ? help tips that demystify politicized framing",
-      "Results: economic/social compass, camp alignment %, shareable URL, Trump reality check when answers diverge from MAGA branding",
+      "Results: economic/social compass, camp alignment %, shareable URL, MAGA reality check when answers diverge",
       "Quiz added to hamburger nav (after Rebuttal) and homepage destination grid",
       "SW cache hard-bumped to sunrise-v53-20260717T0940-quiz",
     ],

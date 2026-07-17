@@ -1,8 +1,8 @@
-/* Project Sunrise service worker - Pass 54 hard cache bust.
- * Legislation refresh: ROAD housing enacted, NDAA cloture fight, floor LIVE.
+/* Project Sunrise service worker - Pass 55 hard cache bust.
+ * Quiz: novel policy ideas, answer shuffle, MAGA naming, people alignment.
  */
 
-const CACHE = "sunrise-v54-20260717T1500-legislation";
+const CACHE = "sunrise-v55-20260717T1520-quiz-people";
 
 const PRECACHE = [
 

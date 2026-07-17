@@ -5,6 +5,10 @@ import {
   type QuizOption,
   type QuizQuestion,
 } from "@/lib/data/quiz-questions";
+import {
+  scorePersonAlignments,
+  type PersonAlignment,
+} from "@/lib/data/quiz-figures";
 
 export type QuizAnswers = Record<string, string>;
 
@@ -15,7 +19,7 @@ export type CampAlignment = {
   percent: number;
 };
 
-export type TrumpCallout = {
+export type MagaCallout = {
   questionId: string;
   topic: string;
   prompt: string;
@@ -24,6 +28,8 @@ export type TrumpCallout = {
   why: string;
 };
 
+export type { PersonAlignment };
+
 export type QuizResult = {
   economic: number;
   social: number;
@@ -31,9 +37,11 @@ export type QuizResult = {
   quadrantBlurb: string;
   alignments: CampAlignment[];
   topCamps: CampAlignment[];
+  personAlignments: PersonAlignment[];
+  topPerson: PersonAlignment | null;
   magaPercent: number;
-  showTrumpRealityCheck: boolean;
-  trumpCallouts: TrumpCallout[];
+  showMagaRealityCheck: boolean;
+  magaCallouts: MagaCallout[];
   answeredCount: number;
 };
 
@@ -146,7 +154,7 @@ export function scoreQuiz(answers: QuizAnswers): QuizResult {
     maga: 0,
   };
 
-  const trumpCallouts: TrumpCallout[] = [];
+  const magaCallouts: MagaCallout[] = [];
 
   for (const q of quizQuestions) {
     const optionId = answers[q.id];
@@ -173,13 +181,13 @@ export function scoreQuiz(answers: QuizAnswers): QuizResult {
       const yourMaga = opt.alignments.maga ?? 0;
       const preferredMaga = magaOpt.alignments.maga ?? 0;
       if (preferredMaga - yourMaga >= 5) {
-        trumpCallouts.push({
+        magaCallouts.push({
           questionId: q.id,
           topic: q.topic,
           prompt: q.prompt,
           yourLabel: opt.label,
           magaLabel: magaOpt.label,
-          why: `${opt.help} Typical Trump / MAGA position: "${magaOpt.label}"`,
+          why: `${opt.help} Typical MAGA / hard-right position: "${magaOpt.label}"`,
         });
       }
     }
@@ -204,7 +212,13 @@ export function scoreQuiz(answers: QuizAnswers): QuizResult {
   const magaPercent = alignments.find((a) => a.id === "maga")?.percent ?? 0;
   const topCamps = alignments.slice(0, 3);
 
-  const showTrumpRealityCheck = magaPercent < 55 && trumpCallouts.length >= 3;
+  const campPercentMap = Object.fromEntries(
+    alignments.map((a) => [a.id, a.percent])
+  ) as Record<QuizCampId, number>;
+  const personAlignments = scorePersonAlignments(campPercentMap).slice(0, 8);
+  const topPerson = personAlignments[0] ?? null;
+
+  const showMagaRealityCheck = magaPercent < 55 && magaCallouts.length >= 3;
 
   return {
     economic: Math.round(economic * 10) / 10,
@@ -213,9 +227,11 @@ export function scoreQuiz(answers: QuizAnswers): QuizResult {
     quadrantBlurb: blurb,
     alignments,
     topCamps,
+    personAlignments,
+    topPerson,
     magaPercent,
-    showTrumpRealityCheck,
-    trumpCallouts: trumpCallouts.slice(0, 6),
+    showMagaRealityCheck,
+    magaCallouts: magaCallouts.slice(0, 6),
     answeredCount: answered,
   };
 }
@@ -279,5 +295,8 @@ export function resultsShareText(result: QuizResult): string {
   const top = result.topCamps
     .map((c) => `${c.label} ${c.percent}%`)
     .join(", ");
-  return `My Project Sunrise Political Standing: ${result.quadrant} (econ ${result.economic}, social ${result.social}). Closest: ${top}. Take the quiz:`;
+  const person = result.topPerson
+    ? ` Closest figure: ${result.topPerson.name} (${result.topPerson.percent}%).`
+    : "";
+  return `My Project Sunrise Political Standing: ${result.quadrant} (econ ${result.economic}, social ${result.social}). Closest camps: ${top}.${person} Take the quiz:`;
 }

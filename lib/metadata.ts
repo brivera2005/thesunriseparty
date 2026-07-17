@@ -174,7 +174,7 @@ export const sectionOg = {
   quiz: {
     title: "Political Standing Quiz | Project Sunrise",
     description:
-      "Twenty clear questions. Compass quadrant, camp alignment, and a plain comparison to Trump / MAGA positions when answers diverge. About 3 minutes.",
+      "Twenty clear questions. Compass quadrant, camp alignment, novel policy ideas, and a plain comparison to MAGA positions when answers diverge. About 3 minutes.",
     images: [
       {
         url: `${SITE_URL}/og/sunrise-default.svg`,

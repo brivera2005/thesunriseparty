@@ -28,6 +28,12 @@ import {
   type QuizAnswers,
   type QuizResult,
 } from "@/lib/quiz-scoring";
+import {
+  createQuizSessionSeed,
+  shuffleChoiceOptions,
+} from "@/lib/quiz-shuffle";
+import { selectPolicyIdeasForAnswers } from "@/lib/data/sunrise-policy-ideas";
+import { PolicyIdeasSection } from "@/components/quiz/policy-idea-card";
 import { cn } from "@/lib/utils";
 
 type Phase = "intro" | "questions" | "results";
@@ -56,14 +62,21 @@ function ChoiceQuestion({
   question,
   selected,
   onSelect,
+  sessionSeed,
 }: {
   question: QuizQuestion;
   selected?: string;
   onSelect: (optionId: string) => void;
+  sessionSeed: string;
 }) {
+  const options = useMemo(
+    () => shuffleChoiceOptions(question.options, sessionSeed, question.id),
+    [question.id, question.options, sessionSeed]
+  );
+
   return (
     <ul className="space-y-2.5" role="radiogroup" aria-label={question.prompt}>
-      {question.options.map((opt) => {
+      {options.map((opt) => {
         const active = selected === opt.id;
         return (
           <li key={opt.id}>
@@ -194,6 +207,81 @@ function AlignmentBars({ result }: { result: QuizResult }) {
   );
 }
 
+function PersonAlignments({ result }: { result: QuizResult }) {
+  return (
+    <section className="rounded-2xl border border-black/[0.08] bg-white p-5 sm:p-7">
+      <h3 className="text-lg font-bold text-navy">
+        Who you most likely align with
+      </h3>
+      <p className="mt-1 text-sm text-muted-foreground">
+        Named public figures and coalitions ranked from your answer vectors. Not an
+        endorsement. Not a personality test.
+      </p>
+      <ul className="mt-5 space-y-3">
+        {result.personAlignments.map((p) => (
+          <li
+            key={p.id}
+            className={cn(
+              "rounded-xl border p-4",
+              p.isTop
+                ? "border-navy/35 bg-navy/[0.06] ring-1 ring-navy/15"
+                : "border-black/[0.08] bg-white"
+            )}
+          >
+            <div className="flex items-start justify-between gap-3">
+              <div className="min-w-0">
+                {p.isTop ? (
+                  <p className="text-[10px] font-semibold tracking-[0.16em] text-[#e16323] uppercase">
+                    Top match
+                  </p>
+                ) : null}
+                <p className="text-base font-bold text-navy">{p.name}</p>
+                <p className="text-xs font-medium text-navy/55">{p.coalition}</p>
+              </div>
+              <span
+                className={cn(
+                  "shrink-0 text-lg font-bold tabular-nums",
+                  p.isTop ? "text-[#e16323]" : "text-navy"
+                )}
+              >
+                {p.percent}%
+              </span>
+            </div>
+            <p className="mt-2 text-sm leading-relaxed text-navy/80">{p.why}</p>
+            <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-navy/[0.08]">
+              <div
+                className={cn(
+                  "h-full rounded-full",
+                  p.isTop ? "bg-[#e16323]" : "bg-navy/70"
+                )}
+                style={{ width: `${p.percent}%` }}
+              />
+            </div>
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+}
+
+function MagaNotGopCallout() {
+  return (
+    <aside className="rounded-2xl border border-[#e16323]/35 bg-[#e16323]/[0.06] p-5 sm:p-6">
+      <h3 className="text-base font-bold text-navy sm:text-lg">
+        MAGA is not the Republican Party
+      </h3>
+      <p className="mt-2 text-sm leading-relaxed text-navy/85">
+        MAGA captured the GOP brand and uses it as propaganda for low-information
+        voters. Traditional conservatives (Romney, Murkowski, Kinzinger-style
+        institutionalists) are a different coalition. You can hold conservative
+        values on taxes, guns, or faith without lining up with MAGA loyalty politics,
+        election denial, or hard-right culture-war maximalism. If you still say
+        &quot;I&apos;m a Republican,&quot; check which Republican you mean.
+      </p>
+    </aside>
+  );
+}
+
 function ResultsView({
   result,
   answers,
@@ -209,6 +297,10 @@ function ResultsView({
   const shareBody = useMemo(
     () => `${resultsShareText(result)} ${shareUrl}`,
     [result, shareUrl]
+  );
+  const policyIdeas = useMemo(
+    () => selectPolicyIdeasForAnswers(answers, quizQuestions, 4),
+    [answers]
   );
 
   const copy = async (kind: "link" | "text") => {
@@ -265,6 +357,15 @@ function ResultsView({
           <span className="font-semibold text-navy">
             {result.topCamps.map((c) => `${c.short} ${c.percent}%`).join(" · ")}
           </span>
+          {result.topPerson ? (
+            <>
+              {" "}
+              · Closest figure:{" "}
+              <span className="font-semibold text-navy">
+                {result.topPerson.name} {result.topPerson.percent}%
+              </span>
+            </>
+          ) : null}
         </p>
       </section>
 
@@ -278,19 +379,23 @@ function ResultsView({
         </div>
       </section>
 
-      {result.showTrumpRealityCheck ? (
+      <PersonAlignments result={result} />
+
+      <MagaNotGopCallout />
+
+      {result.showMagaRealityCheck ? (
         <section className="rounded-2xl border-2 border-navy/25 bg-navy/[0.03] p-5 sm:p-7">
           <h3 className="text-lg font-bold text-navy">
-            Where your answers diverge from Trump / MAGA
+            Where your answers diverge from MAGA
           </h3>
           <p className="mt-2 text-sm leading-relaxed text-navy/80">
-            Your answers match Trump / MAGA positions about {result.magaPercent}% of
+            Your answers match MAGA / hard-right positions about {result.magaPercent}% of
             the time. That is a policy comparison score, not a guess about who you
             support or how you see yourself. On the questions below, the typical
-            Trump-aligned pick differed from yours:
+            MAGA-aligned pick differed from yours:
           </p>
           <ul className="mt-5 space-y-4">
-            {result.trumpCallouts.map((c) => (
+            {result.magaCallouts.map((c) => (
               <li
                 key={c.questionId}
                 className="rounded-xl border border-black/[0.08] bg-white p-4"
@@ -305,7 +410,7 @@ function ResultsView({
                 </p>
                 <p className="mt-1 text-sm text-navy/90">
                   <span className="font-semibold text-navy">
-                    Typical Trump / MAGA position:
+                    Typical MAGA / hard-right position:
                   </span>{" "}
                   {c.magaLabel}
                 </p>
@@ -317,6 +422,8 @@ function ResultsView({
           </ul>
         </section>
       ) : null}
+
+      <PolicyIdeasSection ideas={policyIdeas} />
 
       <section className="rounded-2xl border border-black/[0.08] bg-white p-5 sm:p-7">
         <h3 className="text-lg font-bold text-navy">Share your results</h3>
@@ -385,6 +492,7 @@ export function QuizPage() {
   const [index, setIndex] = useState(0);
   const [answers, setAnswers] = useState<QuizAnswers>({});
   const [result, setResult] = useState<QuizResult | null>(null);
+  const [sessionSeed, setSessionSeed] = useState(() => createQuizSessionSeed());
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -434,6 +542,7 @@ export function QuizPage() {
   };
 
   const start = () => {
+    setSessionSeed(createQuizSessionSeed());
     setPhase("questions");
     setIndex(0);
     setAnswers({});
@@ -441,6 +550,7 @@ export function QuizPage() {
   };
 
   const retake = () => {
+    setSessionSeed(createQuizSessionSeed());
     setPhase("intro");
     setIndex(0);
     setAnswers({});
@@ -492,8 +602,9 @@ export function QuizPage() {
               </ul>
               <p className="mt-5 text-sm text-muted-foreground">
                 {QUIZ_QUESTION_COUNT} questions · about 3 minutes · results include a
-                compass, camp alignment, and a plain comparison to Trump / MAGA positions
-                when your answers diverge.
+                compass, named-figure matches, camp alignment, novel policy ideas, and a
+                plain comparison to MAGA / hard-right positions when your answers diverge.
+                Answer order is shuffled each session so position habit does not steer you.
               </p>
               <Button
                 type="button"
@@ -544,6 +655,7 @@ export function QuizPage() {
                       question={question}
                       selected={selected}
                       onSelect={selectOption}
+                      sessionSeed={sessionSeed}
                     />
                   )}
                 </div>
