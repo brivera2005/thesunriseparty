@@ -12,10 +12,10 @@ export const legislationMeta = {
   congress: 119,
   congressLabel: "119th Congress",
   session: "2nd Session",
-  lastUpdated: "2026-07-12",
+  lastUpdated: "2026-07-17",
   dataSource: "curated" as "curated" | "congress-api",
   refreshHint:
-    "Set CONGRESS_API_KEY and run `npm run fetch-legislation` before build to refresh from api.congress.gov.",
+    "Set CONGRESS_API_KEY and run `npm run fetch-legislation` before build to refresh from api.congress.gov. Without a key, the Unraid updater still probes Senate active-leg and redeploys curated data each cycle.",
 };
 
 const senateActive = cite(
@@ -23,8 +23,8 @@ const senateActive = cite(
   "Commonly Searched for Legislation (119th Congress)",
   "U.S. Senate",
   "https://www.senate.gov/legislative/active_leg_page.htm",
-  "Senate index of commonly searched active and recently enacted legislation for the 119th Congress.",
-  "2026-06-29"
+  "Senate index of commonly searched active and recently enacted legislation for the 119th Congress. Last Updated July 15, 2026.",
+  "2026-07-15"
 );
 
 const govinfoCalendar = cite(
@@ -461,8 +461,8 @@ export const legislationBills: LegislationBill[] = [
     billNumber: "H.R. 7567",
     title: "Farm Bill Reauthorization through FY2031",
     status: "floor",
-    lastAction: "Advanced action in the House; Senate companion pending.",
-    lastActionDate: "2026-05-20",
+    lastAction: "Advanced action in the House; Senate companion pending (Senate active-leg, July 15, 2026).",
+    lastActionDate: "2026-07-15",
     sponsor: { name: "G.T. Thompson", party: "R", state: "PA" },
     cosponsorsSummary: { D: 12, R: 28, I: 0 },
     summary:
@@ -479,41 +479,57 @@ export const legislationBills: LegislationBill[] = [
     id: "s-2651",
     chamber: "senate",
     billNumber: "S. 2651",
-    title: "Housing Supply and Affordability Act",
-    status: "committee",
-    lastAction: "Referred to Banking, Housing, and Urban Affairs.",
-    lastActionDate: "2026-03-12",
-    sponsor: { name: "Tina Smith", party: "D", state: "MN" },
-    cosponsorsSummary: { D: 18, R: 3, I: 1 },
+    title: "ROAD to Housing Act of 2025",
+    status: "passed",
+    lastAction:
+      "Senate housing vehicle negotiated into the enacted H.R. 6644 / P.L. 119-101 package.",
+    lastActionDate: "2026-06-23",
+    sponsor: { name: "Tim Scott", party: "R", state: "SC" },
+    cosponsorsSummary: { D: 18, R: 12, I: 1 },
     summary:
-      "Federal incentives for zoning reform, affordable production, and rental assistance expansions aimed at supply bottlenecks.",
+      "Senate housing-supply package that fed conference negotiations culminating in the 21st Century ROAD to Housing Act.",
     whyItMatters:
-      "Housing costs drive inflation perceptions and working-class instability more than most culture-war bills.",
+      "Shows how Senate Banking text can become the scaffolding for a House-numbered public law.",
     progressiveTake:
-      "Pair supply incentives with tenant protections and public housing capital. Supply-only bills can become developer windfalls without guardrails.",
+      "Read the enrolled H.R. 6644 text, not the press releases. Supply incentives without tenant and fair-housing guardrails can become developer windfalls.",
     impactSeverity: 7,
     topics: ["Housing", "Economy"],
     congressGovUrl: cgov("senate-bill", 2651),
   }),
   bill({
     id: "hr-6644",
-    chamber: "house",
+    chamber: "both",
     billNumber: "H.R. 6644",
-    title: "Housing Opportunity Through Modernization Expansion",
-    status: "committee",
-    lastAction: "House Financial Services markup scheduled discussion.",
-    lastActionDate: "2026-04-02",
-    sponsor: { name: "Maxine Waters", party: "D", state: "CA" },
-    cosponsorsSummary: { D: 42, R: 2, I: 0 },
+    title: "21st Century ROAD to Housing Act",
+    status: "enacted",
+    lastAction: "Became Public Law No: 119-101.",
+    lastActionDate: "2026-07-11",
+    sponsor: { name: "J. French Hill", party: "R", state: "AR" },
+    cosponsorsSummary: { D: 28, R: 35, I: 0 },
+    votes: [
+      vote("house", "2026-06-23", "On Agreeing to Senate Amendment", partyVote(180, 25, 178, 7), 0, 43),
+    ],
     summary:
-      "House housing package expanding voucher flexibility, manufactured housing finance, and fair-housing enforcement resources.",
+      "Enacted housing-supply package modernizing HUD programs, streamlining reviews for residential construction, and expanding financing tools for affordable production.",
     whyItMatters:
-      "House and Senate housing vehicles will define whether Congress treats shelter as infrastructure or afterthought.",
+      "Largest bipartisan housing-supply rewrite of the 119th Congress — and the rare kitchen-table bill that actually became law.",
     progressiveTake:
-      "Demand enforceable fair-housing dollars and voucher funding levels in the CBO score. Messaging bills without budget authority are press releases.",
-    impactSeverity: 6,
-    topics: ["Housing", "Civil Rights", "Economy"],
+      "Celebrate the supply tools, then audit NEPA streamlining, Opportunity Zone weighting, and whether fair-housing enforcement dollars kept pace. Enactment is the start of implementation fights.",
+    impactSeverity: 8,
+    topics: ["Housing", "Economy", "Civil Rights"],
     congressGovUrl: cgov("house-bill", 6644),
+    sources: [
+      senateActive,
+      cite(
+        "plaw-119-101",
+        "Public Law 119-101: 21st Century ROAD to Housing Act",
+        "U.S. Congress",
+        "https://www.congress.gov/bill/119th-congress/house-bill/6644",
+        "Became Public Law No: 119-101 on July 11, 2026 (enacted by 10-day rule after presentment).",
+        "2026-07-11"
+      ),
+      govinfoCalendar,
+    ],
   }),
   bill({
     id: "hr-7613",
@@ -521,8 +537,8 @@ export const legislationBills: LegislationBill[] = [
     billNumber: "H.R. 7613",
     title: "Aviation Safety Enhancement Act",
     status: "floor",
-    lastAction: "Advanced action in the House.",
-    lastActionDate: "2026-06-11",
+    lastAction: "Advanced action in the House (Senate active-leg index).",
+    lastActionDate: "2026-07-15",
     sponsor: { name: "Sam Graves", party: "R", state: "MO" },
     cosponsorsSummary: { D: 15, R: 22, I: 0 },
     summary:
@@ -540,15 +556,16 @@ export const legislationBills: LegislationBill[] = [
     chamber: "senate",
     billNumber: "S. 1383",
     title: "SAVE America Act",
-    status: "committee",
-    lastAction: "Placed on Senate Legislative Calendar.",
-    lastActionDate: "2026-02-18",
+    status: "floor",
+    lastAction:
+      "Advanced action on Senate active-leg index; House hardliners blocked related floor packaging after the July recess fight.",
+    lastActionDate: "2026-07-15",
     sponsor: { name: "Mike Lee", party: "R", state: "UT" },
     cosponsorsSummary: { D: 0, R: 24, I: 0 },
     summary:
       "Election-administration package altering federal standards for voter list maintenance, proof-of-citizenship documentation, and related grants.",
     whyItMatters:
-      "Federal election conditionality can cascade into state purge practices and provisional-ballot rates.",
+      "Federal election conditionality can cascade into state purge practices and provisional-ballot rates — and it is live on the majority's must-pass wish list.",
     progressiveTake:
       "Compare text to Shelby County aftermath data. 'Integrity' branding that raises barriers without expanding access is suppression with better marketing.",
     impactSeverity: 9,
@@ -560,9 +577,9 @@ export const legislationBills: LegislationBill[] = [
     chamber: "house",
     billNumber: "H.R. 7296",
     title: "SAVE America Act (House)",
-    status: "committee",
-    lastAction: "Referred to House Administration.",
-    lastActionDate: "2026-02-24",
+    status: "floor",
+    lastAction: "Advanced action in the House; tied to the Senate SAVE America fight.",
+    lastActionDate: "2026-07-15",
     sponsor: { name: "Bryan Steil", party: "R", state: "WI" },
     cosponsorsSummary: { D: 0, R: 55, I: 0 },
     summary:
@@ -581,8 +598,8 @@ export const legislationBills: LegislationBill[] = [
     billNumber: "H.Con.Res. 86",
     title: "Iran War Powers Resolution",
     status: "floor",
-    lastAction: "Advanced action; privileged war-powers consideration track.",
-    lastActionDate: "2026-05-28",
+    lastAction: "Advanced action; privileged war-powers consideration track (Senate active-leg).",
+    lastActionDate: "2026-07-15",
     sponsor: { name: "Ro Khanna", party: "D", state: "CA" },
     cosponsorsSummary: { D: 62, R: 8, I: 0 },
     summary:
@@ -689,27 +706,70 @@ export const legislationBills: LegislationBill[] = [
     billNumber: "H.R. 8800",
     title: "National Defense Authorization Act for Fiscal Year 2027",
     status: "committee",
-    lastAction: "Introduced and referred to Armed Services.",
-    lastActionDate: "2026-06-18",
+    lastAction:
+      "Listed on Senate active-leg index; House leadership paused floor action after Freedom Caucus fights over SAVE America packaging.",
+    lastActionDate: "2026-07-15",
     sponsor: { name: "Mike Rogers", party: "R", state: "AL" },
     summary:
-      "Opening House NDAA vehicle for FY2027 policy authorizations.",
+      "House NDAA vehicle for FY2027 policy authorizations — must-pass defense policy that usually clears every year.",
     whyItMatters:
-      "Early NDAA drafts preview contractor priorities and culture-war amendments before conference.",
+      "NDAA drafts preview contractor priorities, force structure, and culture-war amendments before conference.",
     progressiveTake:
       "Organize amendments early. Once leadership locks the rule, the Christmas tree is mostly decorated.",
-    impactSeverity: 6,
+    impactSeverity: 8,
     topics: ["Defense", "National Security"],
     congressGovUrl: cgov("house-bill", 8800),
+  }),
+  bill({
+    id: "s-4784",
+    chamber: "senate",
+    billNumber: "S. 4784",
+    title: "National Defense Authorization Act for Fiscal Year 2027 (Senate)",
+    status: "floor",
+    lastAction:
+      "Cloture on the motion to proceed rejected 50–46 (July 14, 2026); Democrats blocked debate citing Iran war authorization and topline fights.",
+    lastActionDate: "2026-07-14",
+    sponsor: { name: "Roger Wicker", party: "R", state: "MS" },
+    cosponsorsSummary: { D: 0, R: 0, I: 0 },
+    votes: [
+      vote(
+        "senate",
+        "2026-07-14",
+        "On Cloture on the Motion to Proceed",
+        partyVote(0, 43, 50, 1, 0, 2),
+        0,
+        4
+      ),
+    ],
+    summary:
+      "Senate Armed Services FY2027 NDAA (~$1.15T authorization) that failed cloture on the motion to proceed along near party-line lines.",
+    whyItMatters:
+      "First time in modern practice the Senate blocked the motion to proceed on the annual NDAA — war powers and spending ceilings collided with a must-pass vehicle.",
+    progressiveTake:
+      "Do not let 'support the troops' branding erase the Article I question. If the White House resumes hostilities without authorization, force that fight onto the NDAA record.",
+    impactSeverity: 9,
+    topics: ["Defense", "National Security", "Democracy"],
+    congressGovUrl: cgov("senate-bill", 4784),
+    sources: [
+      senateActive,
+      cite(
+        "senate-vote-195-s4784",
+        "Roll Call Vote 195: Cloture on Motion to Proceed to S. 4784",
+        "U.S. Senate",
+        "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00195.htm",
+        "Cloture on the motion to proceed rejected July 14, 2026 (50–46; 3/5 required).",
+        "2026-07-14"
+      ),
+    ],
   }),
   bill({
     id: "hr-9022",
     chamber: "house",
     billNumber: "H.R. 9022",
     title: "Energy and Water Development Appropriations Act, 2027",
-    status: "floor",
-    lastAction: "Recently active on House calendar.",
-    lastActionDate: "2026-06-25",
+    status: "committee",
+    lastAction: "Listed on Senate active-leg index; not marked advanced action as of July 15, 2026.",
+    lastActionDate: "2026-07-15",
     sponsor: { name: "Chuck Fleischmann", party: "R", state: "TN" },
     summary:
       "FY2027 Energy and Water bill funding Army Corps, DOE, and related accounts.",
@@ -727,18 +787,78 @@ export const legislationBills: LegislationBill[] = [
     billNumber: "H.R. 8595",
     title: "National Security and State Appropriations Act, 2027",
     status: "floor",
-    lastAction: "Recently active on House calendar.",
-    lastActionDate: "2026-06-24",
+    lastAction:
+      "House leadership priority for the mid-July work period; rule packaging tied to daylight-saving and veterans riders.",
+    lastActionDate: "2026-07-15",
     sponsor: { name: "Mario Diaz-Balart", party: "R", state: "FL" },
     summary:
-      "FY2027 State and related national-security appropriations vehicle.",
+      "FY2027 State and related national-security appropriations vehicle — the House's preferred must-pass spending bill while NDAA is stalled.",
     whyItMatters:
       "State/ForeignOps bills are where diplomacy funding and refugee admissions get squeezed.",
     progressiveTake:
       "Track refugee ceilings, UN dues, and democracy programs. Soft power cuts show up as harder crises later.",
-    impactSeverity: 6,
+    impactSeverity: 7,
     topics: ["Appropriations", "Foreign Policy"],
     congressGovUrl: cgov("house-bill", 8595),
+  }),
+  bill({
+    id: "hr-8646",
+    chamber: "house",
+    billNumber: "H.R. 8646",
+    title: "Agriculture Appropriations Act, 2027",
+    status: "floor",
+    lastAction: "Advanced action in the House (Senate active-leg index).",
+    lastActionDate: "2026-07-15",
+    sponsor: { name: "Andy Harris", party: "R", state: "MD" },
+    summary:
+      "FY2027 Agriculture appropriations covering nutrition, food safety, and rural development accounts.",
+    whyItMatters:
+      "Ag appropriations decide WIC, inspection capacity, and rural investment — kitchen-table dollars.",
+    progressiveTake:
+      "Food assistance is health policy. Treat WIC and SNAP administrative funding as non-negotiable.",
+    impactSeverity: 6,
+    topics: ["Appropriations", "Agriculture", "Healthcare"],
+    congressGovUrl: cgov("house-bill", 8646),
+  }),
+  bill({
+    id: "hr-8469",
+    chamber: "house",
+    billNumber: "H.R. 8469",
+    title: "Military Construction and Veterans Affairs Appropriations Act, 2027",
+    status: "floor",
+    lastAction: "Advanced action in the House (Senate active-leg index).",
+    lastActionDate: "2026-07-15",
+    sponsor: { name: "John Carter", party: "R", state: "TX" },
+    summary:
+      "FY2027 MilCon-VA bill funding VA health care, benefits, and military construction accounts.",
+    whyItMatters:
+      "VA funding levels are the receipts behind 'support the troops' rhetoric.",
+    progressiveTake:
+      "Score VA medical care and disability claims backlogs, not ribbon-cuttings. Underfunded claims processing is a broken promise.",
+    impactSeverity: 7,
+    topics: ["Appropriations", "Veterans", "Defense"],
+    congressGovUrl: cgov("house-bill", 8469),
+  }),
+  bill({
+    id: "hr-139",
+    chamber: "house",
+    billNumber: "H.R. 139",
+    title: "Sunshine Protection Act (Permanent Daylight Saving Time)",
+    status: "floor",
+    lastAction:
+      "Rule providing for consideration filed; leadership seeking to attach to mid-July spending packaging.",
+    lastActionDate: "2026-07-13",
+    sponsor: { name: "Vern Buchanan", party: "R", state: "FL" },
+    cosponsorsSummary: { D: 40, R: 55, I: 0 },
+    summary:
+      "Would make daylight saving time permanent nationwide — a popular rider leaders are using to grease harder votes.",
+    whyItMatters:
+      "Popular riders are how controversial spending and election bills get packaged. Watch what this gets stapled to.",
+    progressiveTake:
+      "The clock change is not the story. The story is which election or foreign-aid riders hitch a ride.",
+    impactSeverity: 3,
+    topics: ["Government", "Economy"],
+    congressGovUrl: cgov("house-bill", 139),
   }),
   bill({
     id: "hr-14",

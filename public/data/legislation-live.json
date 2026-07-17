@@ -1,0 +1,18 @@
+{
+  "fetchedAt": "2026-07-17T15:02:55.333Z",
+  "congress": 119,
+  "source": "curated+probe",
+  "curatedLastUpdated": "2026-07-17",
+  "curatedBillCount": 64,
+  "curatedFloorCount": 12,
+  "senateActiveProbe": {
+    "ok": true,
+    "status": 200,
+    "note": "Senate active-leg reachable (Last Updated: July 15, 2026)"
+  },
+  "houseBills": [],
+  "senateBills": [],
+  "refreshDate": "2026-07-17",
+  "apiError": null,
+  "note": "No API key — live UI uses curated lib/data/legislation.ts. Probe + stamp written for updater audit."
+}

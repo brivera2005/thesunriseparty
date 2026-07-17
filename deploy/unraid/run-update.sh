@@ -64,8 +64,15 @@ install_deps() {
 
 refresh_data() {
   cd "$REPO_DIR" || return 1
+  # Tracker (Federal Register) — also invokes fetch-legislation at end of script
   log "npm run refresh:tracker"
   npm run refresh:tracker || return 1
+  # Explicit legislation refresh every cycle (API when keyed; curated probe otherwise)
+  log "npm run fetch-legislation"
+  npm run fetch-legislation || {
+    log "WARN: fetch-legislation failed (fail soft — continuing with curated data)"
+    return 0
+  }
 }
 
 build_site() {

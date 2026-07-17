@@ -2,7 +2,7 @@
 # Always-on loop for Unraid. Fail soft: bad runs do not kill the container.
 set -u
 
-UPDATE_HOURS="${UPDATE_HOURS:-2}"
+UPDATE_HOURS="${UPDATE_HOURS:-1}"
 RUN_ON_START="${RUN_ON_START:-1}"
 
 log() { echo "[$(date -u +%Y-%m-%dT%H:%M:%SZ)] $*"; }

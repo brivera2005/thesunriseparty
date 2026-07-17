@@ -16,7 +16,7 @@ RUN chmod +x entrypoint.sh run-update.sh
 ENV NODE_ENV=production \
     REPO_DIR=/workspace/sunrise \
     MOUNT_MODE=clone \
-    UPDATE_HOURS=2 \
+    UPDATE_HOURS=1 \
     RUN_ON_START=1 \
     PAGES_PROJECT=thesunriseparty \
     PAGES_BRANCH=main \

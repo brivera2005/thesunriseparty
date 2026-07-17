@@ -8,6 +8,17 @@
 /** Site iteration history - meta transparency for Project Sunrise builds */
 export const changelog: ChangelogEntry[] = [
   {
+    version: "0.54.0",
+    date: "2026-07-17",
+    title: "Pass 54 - Legislation live refresh + always-on updater",
+    highlights: [
+      "Legislation tracker refreshed from Senate active-leg (Jul 15): H.R. 6644 ROAD to Housing enacted as P.L. 119-101",
+      "S. 4784 NDAA cloture failure (50–46) on the floor; SAVE America + FY2027 appropriations marked floor LIVE",
+      "Unraid updater: every cycle refreshes tracker + legislation (API or curated probe), default UPDATE_HOURS=1",
+      "SW cache hard-bumped to sunrise-v54-20260717T1500-legislation",
+    ],
+  },
+  {
     version: "0.53.2",
     date: "2026-07-17",
     title: "Pass 53.2 - Quiz tap targets and honest framing",

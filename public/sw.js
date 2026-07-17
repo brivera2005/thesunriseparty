@@ -1,8 +1,8 @@
-/* Project Sunrise service worker - Pass 53.2 hard cache bust.
- * Quiz tap targets + tip framing + Trump comparison rewrite.
+/* Project Sunrise service worker - Pass 54 hard cache bust.
+ * Legislation refresh: ROAD housing enacted, NDAA cloture fight, floor LIVE.
  */
 
-const CACHE = "sunrise-v53.2-20260717T1000-quiz-tap";
+const CACHE = "sunrise-v54-20260717T1500-legislation";
 
 const PRECACHE = [
 
