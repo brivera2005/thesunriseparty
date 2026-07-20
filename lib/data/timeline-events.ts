@@ -4402,12 +4402,12 @@ const curatedTimelineEvents: TimelineEvent[] = [
 ];
 
 /**
- * Full tracker: curated events plus auto-ingested Federal Register stubs
- * from `npm run refresh:tracker` (lib/data/tracker-auto-events.ts).
+ * Full tracker: curated events plus optional high-signal FR autos
+ * from `npm run refresh:tracker` (empty unless TRACKER_FR_AUTO=1).
  */
 export const timelineEvents: TimelineEvent[] = [
   ...curatedTimelineEvents,
-  ...autoTimelineEvents,
+  ...autoTimelineEvents.filter((e) => !e.Event_ID.startsWith("EVT-AUTO-") || e.Description.length <= 120),
 ];
 
 /** Events grouped by calendar month (YYYY-MM), sorted chronologically */

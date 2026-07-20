@@ -65,15 +65,12 @@ function billLabel(
 function distractionFeedLabel(
   title: string,
   coveringUp: string,
-  distraction: string,
-  id: string
+  _distraction: string,
+  _id: string
 ): { label: string; bury?: string } {
   const bury = coveringUp ? clip(coveringUp, 64) : undefined;
   if (bury) {
     return { label: bury, bury };
-  }
-  if (id.startsWith("DIST-AUTO-") && distraction) {
-    return { label: clip(distraction, 88) };
   }
   return { label: clip(title, 88) };
 }
@@ -97,6 +94,8 @@ export function getRecentActivity(limit = 6): RecentActivityItem[] {
 
   for (const event of timelineEvents) {
     if (!event.Date) continue;
+    // Keep LIVE ticker on curated facts — skip FR auto title dumps.
+    if (event.Event_ID.startsWith("EVT-AUTO-")) continue;
     items.push({
       id: `tracker:${event.Event_ID}`,
       date: event.Date,
@@ -126,12 +125,18 @@ export function getRecentActivity(limit = 6): RecentActivityItem[] {
 
   for (const entry of distractions) {
     if (!entry.date) continue;
+    // Never put FR auto-stubs or template bury lines in the LIVE ticker.
+    if (entry.id.startsWith("DIST-AUTO-")) continue;
     const { label, bury } = distractionFeedLabel(
       entry.title,
       entry.coveringUp,
       entry.distraction,
       entry.id
     );
+    // Skip unresolved editorial placeholders
+    if (/editorial pending|this may bury|steals oxygen|auto-stub/i.test(label)) {
+      continue;
+    }
     items.push({
       id: `distracted:${entry.id}`,
       date: entry.date,

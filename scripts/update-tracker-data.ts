@@ -32,8 +32,12 @@ const OBSERVER_URL = "https://www.project2025.observer/";
 
 const FR_BASE = "https://www.federalregister.gov/api/v1/documents.json";
 const LOOKBACK_DAYS = Number(process.env.TRACKER_LOOKBACK_DAYS || "45");
-const MAX_NEW = Number(process.env.TRACKER_MAX_NEW || "40");
+const MAX_NEW = Number(process.env.TRACKER_MAX_NEW || "15");
 const FR_PRESIDENT = process.env.FR_PRESIDENT || "donald-trump";
+/** OFF by default — site stays curated-only unless explicitly enabled. */
+const FR_AUTO_ENABLED = process.env.TRACKER_FR_AUTO === "1";
+/** Reject FR titles longer than this (Section 301 dumps, etc.). */
+const MAX_TITLE_CHARS = Number(process.env.TRACKER_MAX_TITLE_CHARS || "120");
 
 type FrDoc = {
   title: string;
@@ -142,18 +146,6 @@ function collectCuratedUrls(): Set<string> {
   return urls;
 }
 
-function loadPriorAutoEvents(): TimelineEvent[] {
-  if (!existsSync(LIVE_FILE)) return [];
-  try {
-    const live = JSON.parse(readFileSync(LIVE_FILE, "utf8")) as {
-      autoEvents?: TimelineEvent[];
-    };
-    return live.autoEvents ?? [];
-  } catch {
-    return [];
-  }
-}
-
 async function fetchFrPage(url: string): Promise<{
   results: FrDoc[];
   next_page_url?: string | null;
@@ -219,26 +211,74 @@ async function probeObserver(): Promise<{ ok: boolean; status?: number; note: st
   }
 }
 
+/** Short plain title for display — never dump 300-char trade investigations. */
+function plainTitle(title: string): string {
+  const t = title.replace(/\s+/g, " ").trim();
+  if (t.length <= MAX_TITLE_CHARS) return t;
+  const cut = t.slice(0, MAX_TITLE_CHARS - 1);
+  const at = cut.lastIndexOf(" ");
+  return `${(at > 40 ? cut.slice(0, at) : cut).trimEnd()}…`;
+}
+
+/**
+ * High-signal presidential actions only. Reject ceremonial, trade dumps,
+ * emergency continuations, and anything without a real policy bite.
+ */
+function isHighSignalTrackerDoc(doc: FrDoc): boolean {
+  const title = (doc.title || "").trim();
+  const text = `${title} ${doc.abstract || ""}`.toLowerCase();
+  const actionType = classifyActionType(doc);
+
+  if (title.length > MAX_TITLE_CHARS) return false;
+  if (
+    /anniversary|flag day|honor|commemorat|mother.?s day|father.?s day|prayer|navy mess|golf course/.test(
+      text
+    )
+  ) {
+    return false;
+  }
+  if (
+    /section 301|trade act of 1974|investigation under|digital trade|ethanol market|illegal deforestation|phosphate fertilizer|duty-free importation/.test(
+      text
+    )
+  ) {
+    return false;
+  }
+  if (/continuation of the national emergency/.test(text)) return false;
+
+  // Prefer real EOs / memos / Schedule F / immigration / personnel bites
+  const highSignal =
+    /executive order|schedule (f|policy\/?career)|excepted service|civil service|personnel|doge|immigr|border|asylum|deport|birthright|tariff|emergency|suspend|revoke|rescind|foi(a)?|declass|pardon|immunity|inspector general|voting|election|dei\b|medicaid|medicare|epa|interior|defense production/.test(
+      text
+    );
+  if (!highSignal) return false;
+
+  // Determinations without the keywords above stay out
+  if (actionType === "Presidential Determination" && !highSignal) return false;
+  return true;
+}
+
 function toTimelineEvent(doc: FrDoc): TimelineEvent {
   const actionType = classifyActionType(doc);
   const category = guessCategory(doc.title, doc.abstract);
   const date = doc.publication_date;
   const citationId = `fr_auto_${doc.document_number.replace(/[^0-9A-Za-z]/g, "_")}`;
+  const title = plainTitle(doc.title);
   const excerpt =
-    (doc.abstract && doc.abstract.trim()) ||
-    `${actionType} published in the Federal Register (${doc.document_number}). Auto-ingested pending editorial pass.`;
+    (doc.abstract && doc.abstract.trim().slice(0, 280)) ||
+    `${actionType} (${doc.document_number}) published in the Federal Register.`;
 
   return {
     Event_ID: slugId(date, doc.document_number),
     Date: date,
     Action_Type: actionType,
-    Description: `${doc.title} — auto-ingested from Federal Register; severity and narrative pending editorial review.`,
+    Description: title,
     Severity_Score: guessSeverity(doc.title, actionType),
     Impacted_Sectors: [category],
     Sources: [
       {
         id: citationId,
-        title: doc.title,
+        title,
         publisher: "Federal Register",
         url: doc.html_url,
         waybackUrl: wayback(doc.html_url),
@@ -296,6 +336,9 @@ async function main() {
   mkdirSync(OUT_DIR, { recursive: true });
   const since = isoDateDaysAgo(LOOKBACK_DAYS);
   console.log(`[tracker] Lookback since ${since} (${LOOKBACK_DAYS} days)`);
+  console.log(
+    `[tracker] FR_AUTO=${FR_AUTO_ENABLED ? "ON" : "OFF (default curated-only)"} maxTitle=${MAX_TITLE_CHARS}`
+  );
 
   const curatedUrls = collectCuratedUrls();
   console.log(`[tracker] Curated Federal Register / WH URLs: ${curatedUrls.size}`);
@@ -303,60 +346,67 @@ async function main() {
   const observer = await probeObserver();
   console.log(`[tracker] project2025.observer: ${observer.note}`);
 
-  console.log("[tracker] Fetching Federal Register presidential documents…");
   let docs: FrDoc[] = [];
-  try {
-    docs = await fetchPresidentialDocs(since);
-    console.log(`[tracker] Fetched ${docs.length} presidential documents`);
-  } catch (err) {
-    console.warn(
-      `[tracker] Federal Register fetch failed (fail soft): ${
-        err instanceof Error ? err.message : String(err)
-      }`
+  let freshDocs: FrDoc[] = [];
+  let capped: FrDoc[] = [];
+  let autoEvents: TimelineEvent[] = [];
+  let newlyAdded: FrDoc[] = [];
+
+  if (!FR_AUTO_ENABLED) {
+    console.log(
+      "[tracker] Skipping FR auto-ingest (TRACKER_FR_AUTO!=1) — clearing EVT-AUTO stubs"
     );
-    docs = [];
+  } else {
+    console.log("[tracker] Fetching Federal Register presidential documents…");
+    try {
+      docs = await fetchPresidentialDocs(since);
+      console.log(`[tracker] Fetched ${docs.length} presidential documents`);
+    } catch (err) {
+      console.warn(
+        `[tracker] Federal Register fetch failed (fail soft): ${
+          err instanceof Error ? err.message : String(err)
+        }`
+      );
+      docs = [];
+    }
+
+    for (const doc of docs) {
+      const url = (doc.html_url || "").replace(/\/$/, "").toLowerCase();
+      if (!url || curatedUrls.has(url)) continue;
+      if (!isHighSignalTrackerDoc(doc)) continue;
+      freshDocs.push(doc);
+    }
+
+    capped = freshDocs.slice(0, MAX_NEW);
+    console.log(
+      `[tracker] High-signal not in curated: ${freshDocs.length} (keeping up to ${MAX_NEW}: ${capped.length})`
+    );
+
+    // Fresh run only — do not accumulate prior low-quality stubs.
+    const byId = new Map<string, TimelineEvent>();
+    for (const doc of capped) {
+      const event = toTimelineEvent(doc);
+      byId.set(event.Event_ID, event);
+    }
+    autoEvents = [...byId.values()].sort((a, b) => b.Date.localeCompare(a.Date));
+    newlyAdded = capped;
   }
-
-  const freshDocs: FrDoc[] = [];
-  for (const doc of docs) {
-    const url = (doc.html_url || "").replace(/\/$/, "").toLowerCase();
-    if (!url || curatedUrls.has(url)) continue;
-    freshDocs.push(doc);
-  }
-
-  // Cap growth per run but keep stable IDs for the freshest docs
-  const capped = freshDocs.slice(0, MAX_NEW);
-  console.log(
-    `[tracker] Not in curated set: ${freshDocs.length} (keeping up to ${MAX_NEW}: ${capped.length})`
-  );
-
-  const prior = loadPriorAutoEvents().filter((e) => {
-    const url = e.Sources?.[0]?.url?.replace(/\/$/, "").toLowerCase();
-    return url ? !curatedUrls.has(url) : true;
-  });
-
-  const byId = new Map<string, TimelineEvent>();
-  for (const e of prior) byId.set(e.Event_ID, e);
-  for (const doc of capped) {
-    const event = toTimelineEvent(doc);
-    byId.set(event.Event_ID, event);
-  }
-  const autoEvents = [...byId.values()].sort((a, b) => b.Date.localeCompare(a.Date));
-
-  const newlyAdded = capped.filter(
-    (d) => !prior.some((p) => p.Sources?.[0]?.url === d.html_url)
-  );
 
   const meta = {
     generatedAt: new Date().toISOString(),
     source: "federalregister.gov",
     president: FR_PRESIDENT,
     lookbackDays: LOOKBACK_DAYS,
+    frAutoEnabled: FR_AUTO_ENABLED,
+    maxTitleChars: MAX_TITLE_CHARS,
     fetchedCount: docs.length,
     notInCurated: freshDocs.length,
     newlyAddedCount: newlyAdded.length,
     autoEventCount: autoEvents.length,
     observer,
+    note: FR_AUTO_ENABLED
+      ? "Opt-in FR auto with high-signal + short-title filter"
+      : "Curated-only: FR→tracker auto disabled (TRACKER_FR_AUTO!=1)",
   };
 
   writeAutoEventsTs(autoEvents, meta);
@@ -380,13 +430,13 @@ async function main() {
   if (newlyAdded.length > 0) {
     console.log("   Newly added this run:");
     for (const d of newlyAdded.slice(0, 15)) {
-      console.log(`   · ${d.publication_date} ${d.document_number} — ${d.title}`);
+      console.log(`   · ${d.publication_date} ${d.document_number} — ${plainTitle(d.title)}`);
     }
     if (newlyAdded.length > 15) {
       console.log(`   · …and ${newlyAdded.length - 15} more`);
     }
   } else {
-    console.log("   No newly added presidential documents this run.");
+    console.log("   No auto tracker events this run (curated facts only).");
   }
 
   runLegislationRefresh();

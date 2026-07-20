@@ -1,4 +1,4 @@
-﻿export interface ChangelogEntry {
+export interface ChangelogEntry {
   version: string;
   date: string;
   title: string;
@@ -7,6 +7,18 @@
 
 /** Site iteration history - meta transparency for Project Sunrise builds */
 export const changelog: ChangelogEntry[] = [
+  {
+    version: "0.76.0",
+    date: "2026-07-20",
+    title: "Pass 76 - Scrub FR auto-noise",
+    highlights: [
+      "Distracted is curated-only: all DIST-AUTO stubs deleted; FR/RSS/Congress auto OFF unless explicit env opt-in",
+      "Tracker EVT-AUTO cleared and gated behind TRACKER_FR_AUTO=1 with short high-signal title filter",
+      "LIVE ticker excludes DIST-AUTO / EVT-AUTO and template bury gibberish",
+      "Unraid hourly cycle writes empty auto stubs by default so junk cannot regenerate",
+      "SW cache hard-bumped to sunrise-v76-20260720T1030-scrub-fr-auto",
+    ],
+  },
   {
     version: "0.75.0",
     date: "2026-07-20",

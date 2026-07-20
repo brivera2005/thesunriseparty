@@ -1,15 +1,17 @@
 /**
  * Refresh Distraction / Cover-up Watch auto stubs from public signals.
  *
- * Sources (fail soft):
- *   - Federal Register presidential documents (high-signal FOIA / emergency /
- *     personnel / immigration / tariff actions → distraction candidates)
- *   - Congress.gov recent bills when CONGRESS_API_KEY is set
- *   - NPR Politics RSS headlines (context stubs)
+ * DEFAULT: writes EMPTY auto stubs. Curated narrative in distractions.ts is
+ * the only Distracted content on the live site.
+ *
+ * Federal Register → Distracted is OFF by default forever
+ * (`DISTRACTED_FR_AUTO=1` required to opt in). Even when enabled, only
+ * hard distraction keywords (Epstein / Schedule F / culture-war flashbangs)
+ * pass — never trade investigations, emergency continuations, or title dumps.
  *
  * Writes:
  *   - public/data/distracted-live.json
- *   - lib/data/distracted-auto.ts  (DIST-AUTO-* stubs merged at build)
+ *   - lib/data/distracted-auto.ts  (DIST-AUTO-* stubs; empty unless opt-in)
  *
  * Usage:
  *   npm run refresh:distracted
@@ -32,11 +34,18 @@ const CURATED_TS = join(ROOT, "lib", "data", "distractions.ts");
 
 const FR_BASE = "https://www.federalregister.gov/api/v1/documents.json";
 const LOOKBACK_DAYS = Number(process.env.DISTRACTED_LOOKBACK_DAYS || "21");
-const MAX_NEW = Number(process.env.DISTRACTED_MAX_NEW || "25");
+const MAX_NEW = Number(process.env.DISTRACTED_MAX_NEW || "8");
 const FR_PRESIDENT = process.env.FR_PRESIDENT || "donald-trump";
 const NPR_RSS =
   process.env.DISTRACTED_RSS_URL ||
   "https://feeds.npr.org/1014/rss.xml";
+
+/** OFF by default — never pollute Distracted with FR title dumps. */
+const FR_AUTO_ENABLED = process.env.DISTRACTED_FR_AUTO === "1";
+/** Headline RSS also OFF by default (curated-only site). */
+const RSS_AUTO_ENABLED = process.env.DISTRACTED_RSS_AUTO === "1";
+/** Congress bill stubs OFF by default. */
+const CONGRESS_AUTO_ENABLED = process.env.DISTRACTED_CONGRESS_AUTO === "1";
 
 type FrDoc = {
   title: string;
@@ -63,21 +72,25 @@ function slugId(date: string, key: string): string {
   return `DIST-AUTO-${ymd}-${num}`;
 }
 
-/** High-signal FR titles that often coincide with news-cycle diversions. */
-function isDistractionSignal(title: string, abstract?: string | null): boolean {
+/**
+ * Ruthlessly narrow: only known distraction-pattern flashbangs.
+ * Trade / tariff / Section 301 / emergency continuations NEVER qualify.
+ */
+function isHardDistractionSignal(title: string, abstract?: string | null): boolean {
   const text = `${title} ${abstract || ""}`.toLowerCase();
-  // Skip pure ceremonial / commemorative proclamations
+
+  // Hard reject bureaucratic / ceremonial / trade noise
   if (
-    /anniversary|flag|honor|day of|commemorat|thanksgiving|mother.?s day|father.?s day|prayer/.test(
-      text
-    ) &&
-    !/emergency|suspend|revoke|schedule|personnel|excepted|tariff|immigr|border|pardon|immunity|foi|classif/.test(
+    /section 301|trade act|investigation under|preferential tariff|digital trade|ethanol|deforestation|phosphate|golf course|anniversary|flag day|commemorat|national emergency with respect to|continuation of the national emergency|duty-free importation|trafficking victims protection|determination on assistance|determination concerning/.test(
       text
     )
   ) {
     return false;
   }
-  return /emergency|executive order|memorandum|determination|emergency|tariff|trade|immigr|border|asylum|deport|schedule f|excepted service|personnel|civil service|doge|foi|freedom of information|classif|declass|pardon|immunity|special counsel|inspector general|ethics|lobby|sanctions|withdraw|rescind|suspend|national security|defense production|national guard|election|voting|census|medicaid|medicare|aca|climate|epa|doi|interior|land|forest|lease|drill/.test(
+  // Reject long title dumps (real flashbangs are short)
+  if (title.trim().length > 140) return false;
+
+  return /epstein|schedule (f|policy\/?career)|excepted service|civil service|personnel|doge|dei\b|woke|crt\b|critical race|groomer|trans athlete|pride month|book ban|replacement theory|deep state|hunter biden|whatabout|culture war|gender ideology|birthright|sanctuary|mass deport|inspector general|special counsel|foi(a)?\b|declassif|pardon of|immunity/.test(
     text
   );
 }
@@ -85,32 +98,28 @@ function isDistractionSignal(title: string, abstract?: string | null): boolean {
 function guessCategories(title: string, abstract?: string | null): string[] {
   const text = `${title} ${abstract || ""}`.toLowerCase();
   const cats: string[] = [];
-  if (/immigr|border|asylum|deport/.test(text)) cats.push("Immigration");
-  if (/tariff|trade|tax|econom|labor/.test(text)) cats.push("Economy");
-  if (/foi|classif|declass|pardon|immunity|special counsel|ethics|inspector/.test(text))
-    cats.push("Accountability");
+  if (/epstein|foi|declass|special counsel|pardon|immunity|inspector/.test(text))
+    cats.push("Epstein / Transparency");
   if (/schedule|personnel|excepted|civil service|doge/.test(text))
-    cats.push("Personnel");
-  if (/election|voting|census/.test(text)) cats.push("Democracy");
-  if (/health|medicaid|medicare|aca|fda|cdc/.test(text)) cats.push("Healthcare");
-  if (/climate|epa|energy|land|forest|drill|lease/.test(text))
-    cats.push("Environment");
-  if (/culture|dei|woke|gender|crt|pride|sports/.test(text)) cats.push("Culture War");
-  if (cats.length === 0) cats.push("News Cycle");
+    cats.push("Project 2025");
+  if (/dei|woke|crt|groomer|trans|pride|book ban|gender|culture/.test(text))
+    cats.push("Culture War");
+  if (/immigr|border|asylum|deport|sanctuary|birthright|replacement/.test(text))
+    cats.push("Immigration");
+  if (/election|voting|deep state|hunter|whatabout/.test(text))
+    cats.push("Whataboutism");
+  if (cats.length === 0) cats.push("Admin Pattern");
   return cats;
 }
 
 function guessSeverity(title: string): number {
   const text = title.toLowerCase();
-  let score = 5;
-  if (/emergency|suspend|revoke|pardon|immunity|schedule|excepted/.test(text))
-    score += 2;
-  if (/tariff|immigr|border|foi|classif|election/.test(text)) score += 1;
-  if (/commemorat|flag|honor|day of/.test(text)) score = Math.min(score, 3);
-  return Math.max(3, Math.min(9, score));
+  let score = 6;
+  if (/epstein|schedule|excepted|declass|pardon|immunity/.test(text)) score += 2;
+  if (/dei|woke|crt|groomer|trans/.test(text)) score += 1;
+  return Math.max(5, Math.min(9, score));
 }
 
-/** Keep auto stub distraction lines scannable (~15 words). */
 function shortTitle(title: string, maxWords = 12): string {
   const words = title.trim().split(/\s+/).filter(Boolean);
   if (words.length <= maxWords) return title.trim();
@@ -135,18 +144,6 @@ function collectCuratedSourceUrls(): Set<string> {
     urls.add(m[1].replace(/\/$/, "").toLowerCase());
   }
   return urls;
-}
-
-function loadPriorAuto(): DistractionEntry[] {
-  if (!existsSync(LIVE_FILE)) return [];
-  try {
-    const live = JSON.parse(readFileSync(LIVE_FILE, "utf8")) as {
-      autoEntries?: DistractionEntry[];
-    };
-    return live.autoEntries ?? [];
-  } catch {
-    return [];
-  }
 }
 
 async function fetchFrPage(url: string): Promise<{
@@ -194,26 +191,26 @@ function frToEntry(doc: FrDoc): DistractionEntry {
   const date = doc.publication_date;
   const abstract =
     (doc.abstract && doc.abstract.trim()) ||
-    "Federal Register presidential document - auto-stub pending editorial pass.";
+    "Federal Register document matching a known distraction-pattern keyword — pending editorial correlation.";
   return {
     id: slugId(date, doc.document_number),
     date,
-    title: doc.title,
-    distraction: `Official FR spotlight: ${shortTitle(doc.title)}`,
+    title: shortTitle(doc.title, 18),
+    distraction: shortTitle(doc.title, 14),
     coveringUp:
-      "Same-day tracker severity, disclosure fights, or floor votes this may bury.",
+      "Editorial pending: correlate against same-day tracker severity and disclosure fights before publishing a bury line.",
     whyTheyDoIt:
-      "A fresh official action steals oxygen from accountability stories.",
+      "Flashbang headlines and spectacle docs can redirect attention from costly structural moves.",
     whyPeopleBelieveIt:
-      "A Federal Register doc feels like the main story because it is dated and quotable.",
+      "A dated official document feels authoritative even when it is noise.",
     howToSpotIt:
-      "Ask what else moved the same day on tracker, Congress, FOIA, and dockets.",
+      "Ask what else moved the same day on tracker, Congress, FOIA, and dockets — then wait for a curated card.",
     severity: guessSeverity(doc.title),
     categories: guessCategories(doc.title, doc.abstract),
     sources: [
       {
         id: `fr_dist_${doc.document_number.replace(/[^0-9A-Za-z]/g, "_")}`,
-        title: doc.title,
+        title: shortTitle(doc.title, 18),
         publisher: "Federal Register",
         url: doc.html_url,
         waybackUrl: wayback(doc.html_url),
@@ -254,9 +251,8 @@ async function fetchRssHeadlines(): Promise<RssItem[]> {
 
 function rssToEntry(item: RssItem): DistractionEntry | null {
   const text = item.title.toLowerCase();
-  // Only keep headlines that look like outrage / culture-war / scandal bait
   if (
-    !/scandal|outrage|woke|dei|border|invasion|fraud|rigged|hoax|witch hunt|deep state|epstein|hunter|impeach|riot|antifa|crt|trans|migrant|caravan|groom|marxist|socialist|stolen|rigged/.test(
+    !/epstein|schedule f|excepted service|scandal|outrage|woke|dei\b|crt\b|groomer|trans athlete|deep state|hunter|witch hunt|stolen election|migrant crime|caravan|marxist|antifa|book ban|pride|replacement/.test(
       text
     )
   ) {
@@ -271,22 +267,22 @@ function rssToEntry(item: RssItem): DistractionEntry | null {
   return {
     id: slugId(date, key),
     date,
-    title: item.title,
-    distraction: shortTitle(item.title),
+    title: shortTitle(item.title, 16),
+    distraction: shortTitle(item.title, 12),
     coveringUp:
-      "Concurrent policy harm, disclosure fights, or tracker events pending review.",
+      "Editorial pending: check concurrent tracker harm and disclosure deadlines before a bury line.",
     whyTheyDoIt:
       "Headline gravity redirects attention from costly policy or disclosure deadlines.",
     whyPeopleBelieveIt:
       "Repetition and emotion make the shiny object feel more urgent than structural harm.",
     howToSpotIt:
-      "Check the same date on tracker and legislation; ask who benefits if you only talk about this.",
+      "Compare the headline date with same-week tracker and legislation spikes.",
     severity: guessSeverity(item.title),
     categories: guessCategories(item.title, null),
     sources: [
       {
         id: `rss_dist_${key}`,
-        title: item.title,
+        title: shortTitle(item.title, 16),
         publisher: "NPR Politics (RSS)",
         url: item.link,
         waybackUrl: wayback(item.link),
@@ -306,6 +302,7 @@ type CongressBill = {
 };
 
 async function fetchCongressBills(): Promise<DistractionEntry[]> {
+  if (!CONGRESS_AUTO_ENABLED) return [];
   const key =
     process.env.CONGRESS_API_KEY ||
     process.env.CONGRESS_GOV_API_KEY ||
@@ -324,6 +321,7 @@ async function fetchCongressBills(): Promise<DistractionEntry[]> {
     const out: DistractionEntry[] = [];
     for (const bill of data.bills ?? []) {
       const title = bill.title || bill.number || "Untitled bill";
+      if (!isHardDistractionSignal(title, bill.latestAction?.text)) continue;
       const date =
         bill.latestAction?.actionDate || new Date().toISOString().slice(0, 10);
       const billUrl =
@@ -333,22 +331,22 @@ async function fetchCongressBills(): Promise<DistractionEntry[]> {
       out.push({
         id: slugId(date, `bill-${num}`),
         date,
-        title: `${bill.number || "Bill"}: ${title}`,
-        distraction: `Legislative spotlight: ${shortTitle(title)}`,
+        title: shortTitle(`${bill.number || "Bill"}: ${title}`, 16),
+        distraction: shortTitle(title, 12),
         coveringUp:
-          "Higher-severity tracker actions or stalled accountability votes this cycle may bury.",
+          "Editorial pending: correlate against higher-severity tracker actions before a bury line.",
         whyTheyDoIt:
           "Floor theatrics and messaging bills can drown out harmful executive actions.",
         whyPeopleBelieveIt:
           "Congress.gov updates and cable chyron make legislation feel like the only real fight.",
         howToSpotIt:
-          "Compare the bill action date with same-week Federal Register and tracker spikes.",
-        severity: 5,
+          "Compare the bill action date with same-week tracker spikes.",
+        severity: 6,
         categories: ["Legislation", ...guessCategories(title, bill.latestAction?.text)],
         sources: [
           {
             id: `congress_dist_${num}`,
-            title: String(bill.number || title),
+            title: String(bill.number || shortTitle(title, 12)),
             publisher: "Congress.gov",
             url: billUrl,
             waybackUrl: wayback(billUrl),
@@ -371,8 +369,8 @@ function writeAutoTs(entries: DistractionEntry[], meta: Record<string, unknown>)
  * Auto-ingested Distraction Watch stubs (DIST-AUTO-*).
  * Regenerated by: npm run refresh:distracted (scripts/update-distracted-data.ts)
  *
- * Do not hand-edit — curated narrative entries live in distractions.ts
- * (merged there with autoDistractedEntries).
+ * DEFAULT: empty. FR→Distracted requires DISTRACTED_FR_AUTO=1.
+ * Curated narrative entries live in distractions.ts.
  */
 import type { DistractionEntry } from "@/lib/types";
 
@@ -383,10 +381,6 @@ export const autoDistractedMeta = ${metaBody} as const;
   writeFileSync(AUTO_TS, file, "utf8");
 }
 
-/**
- * Keep a thin re-export for scripts/docs. Canonical merge lives in distractions.ts.
- * Never overwrite curated lib/data/distractions.ts.
- */
 function ensureMergeHelper(): void {
   const helper = join(ROOT, "lib", "data", "distracted-with-auto.ts");
   writeFileSync(
@@ -394,6 +388,7 @@ function ensureMergeHelper(): void {
     `/**
  * Re-export of curated + auto Distraction Watch entries.
  * Canonical merge: lib/data/distractions.ts (imports distracted-auto.ts).
+ * Live site is curated-first; auto stubs stay empty unless explicitly enabled.
  */
 export {
   distractions as distractedEntries,
@@ -410,6 +405,9 @@ async function main() {
 
   const since = isoDateDaysAgo(LOOKBACK_DAYS);
   console.log(`[distracted] Lookback since ${since} (${LOOKBACK_DAYS} days)`);
+  console.log(
+    `[distracted] FR_AUTO=${FR_AUTO_ENABLED ? "ON" : "OFF (default)"} RSS_AUTO=${RSS_AUTO_ENABLED ? "ON" : "OFF (default)"} CONGRESS_AUTO=${CONGRESS_AUTO_ENABLED ? "ON" : "OFF (default)"}`
+  );
 
   const curatedIds = collectCuratedIds();
   const curatedUrls = collectCuratedSourceUrls();
@@ -418,70 +416,85 @@ async function main() {
   );
 
   let docs: FrDoc[] = [];
-  try {
-    docs = await fetchPresidentialDocs(since);
-    console.log(`[distracted] Federal Register docs: ${docs.length}`);
-  } catch (err) {
-    console.warn(
-      `[distracted] FR fetch failed (fail soft): ${
-        err instanceof Error ? err.message : String(err)
-      }`
+  let frCandidates: FrDoc[] = [];
+  if (FR_AUTO_ENABLED) {
+    try {
+      docs = await fetchPresidentialDocs(since);
+      console.log(`[distracted] Federal Register docs: ${docs.length}`);
+    } catch (err) {
+      console.warn(
+        `[distracted] FR fetch failed (fail soft): ${
+          err instanceof Error ? err.message : String(err)
+        }`
+      );
+    }
+    frCandidates = docs.filter((d) => isHardDistractionSignal(d.title, d.abstract));
+    console.log(`[distracted] Hard-signal FR candidates: ${frCandidates.length}`);
+  } else {
+    console.log(
+      "[distracted] Skipping Federal Register ingest (DISTRACTED_FR_AUTO!=1) — curated only"
     );
   }
 
-  const frCandidates = docs.filter((d) =>
-    isDistractionSignal(d.title, d.abstract)
-  );
-  console.log(`[distracted] High-signal FR candidates: ${frCandidates.length}`);
-
-  const rssItems = await fetchRssHeadlines();
-  console.log(`[distracted] RSS headlines fetched: ${rssItems.length}`);
+  let rssItems: RssItem[] = [];
+  if (RSS_AUTO_ENABLED) {
+    rssItems = await fetchRssHeadlines();
+    console.log(`[distracted] RSS headlines fetched: ${rssItems.length}`);
+  } else {
+    console.log("[distracted] Skipping RSS ingest (DISTRACTED_RSS_AUTO!=1)");
+  }
 
   const congressEntries = await fetchCongressBills();
-  console.log(`[distracted] Congress stubs: ${congressEntries.length}`);
+  if (CONGRESS_AUTO_ENABLED) {
+    console.log(`[distracted] Congress stubs: ${congressEntries.length}`);
+  }
 
+  // Do NOT carry forward prior auto junk — each run starts clean.
   const fresh: DistractionEntry[] = [];
-  for (const doc of frCandidates.slice(0, MAX_NEW)) {
-    const url = (doc.html_url || "").replace(/\/$/, "").toLowerCase();
-    if (url && curatedUrls.has(url)) continue;
-    const entry = frToEntry(doc);
-    if (curatedIds.has(entry.id)) continue;
-    fresh.push(entry);
+  if (FR_AUTO_ENABLED) {
+    for (const doc of frCandidates.slice(0, MAX_NEW)) {
+      const url = (doc.html_url || "").replace(/\/$/, "").toLowerCase();
+      if (url && curatedUrls.has(url)) continue;
+      const entry = frToEntry(doc);
+      if (curatedIds.has(entry.id)) continue;
+      fresh.push(entry);
+    }
   }
-  for (const item of rssItems) {
-    const entry = rssToEntry(item);
-    if (!entry) continue;
-    const url = entry.sources[0]?.url?.replace(/\/$/, "").toLowerCase();
-    if (url && curatedUrls.has(url)) continue;
-    if (curatedIds.has(entry.id)) continue;
-    fresh.push(entry);
+  if (RSS_AUTO_ENABLED) {
+    for (const item of rssItems) {
+      const entry = rssToEntry(item);
+      if (!entry) continue;
+      const url = entry.sources[0]?.url?.replace(/\/$/, "").toLowerCase();
+      if (url && curatedUrls.has(url)) continue;
+      if (curatedIds.has(entry.id)) continue;
+      fresh.push(entry);
+    }
   }
-  for (const entry of congressEntries.slice(0, 10)) {
+  for (const entry of congressEntries.slice(0, 5)) {
     if (curatedIds.has(entry.id)) continue;
     fresh.push(entry);
   }
 
-  const prior = loadPriorAuto().filter((e) => !curatedIds.has(e.id));
-  const byId = new Map<string, DistractionEntry>();
-  for (const e of prior) byId.set(e.id, e);
-  for (const e of fresh.slice(0, MAX_NEW)) byId.set(e.id, e);
-
-  const autoEntries = [...byId.values()].sort((a, b) =>
-    b.date.localeCompare(a.date)
-  );
-
-  const newlyAdded = fresh.filter((e) => !prior.some((p) => p.id === e.id));
+  const autoEntries = fresh
+    .slice(0, MAX_NEW)
+    .sort((a, b) => b.date.localeCompare(a.date));
 
   const meta = {
     generatedAt: new Date().toISOString(),
     lookbackDays: LOOKBACK_DAYS,
+    frAutoEnabled: FR_AUTO_ENABLED,
+    rssAutoEnabled: RSS_AUTO_ENABLED,
+    congressAutoEnabled: CONGRESS_AUTO_ENABLED,
     frFetched: docs.length,
     frCandidates: frCandidates.length,
     rssFetched: rssItems.length,
     congressCount: congressEntries.length,
-    newlyAddedCount: newlyAdded.length,
+    newlyAddedCount: autoEntries.length,
     autoEntryCount: autoEntries.length,
     curatedIdCount: curatedIds.size,
+    note: FR_AUTO_ENABLED
+      ? "Opt-in FR auto enabled with hard-signal filter only"
+      : "Curated-only: FR→Distracted disabled (DISTRACTED_FR_AUTO!=1)",
   };
 
   writeAutoTs(autoEntries, meta);
@@ -495,16 +508,13 @@ async function main() {
 
   console.log(`✅ Wrote ${LIVE_FILE}`);
   console.log(`✅ Wrote ${AUTO_TS} (${autoEntries.length} auto stubs)`);
-  if (newlyAdded.length > 0) {
-    console.log("   Newly added this run:");
-    for (const e of newlyAdded.slice(0, 12)) {
+  if (autoEntries.length > 0) {
+    console.log("   Auto stubs this run:");
+    for (const e of autoEntries.slice(0, 12)) {
       console.log(`   · ${e.date} ${e.id} — ${e.title}`);
     }
-    if (newlyAdded.length > 12) {
-      console.log(`   · …and ${newlyAdded.length - 12} more`);
-    }
   } else {
-    console.log("   No newly added distraction stubs this run.");
+    console.log("   No auto stubs — Distracted stays curated-only.");
   }
 }
 

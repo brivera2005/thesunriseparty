@@ -74,8 +74,8 @@ refresh_data() {
   npm run fetch-legislation || {
     log "WARN: fetch-legislation failed (fail soft — continuing with curated data)"
   }
-  # Distraction / Cover-up Watch auto stubs (DIST-AUTO-*)
-  log "npm run refresh:distracted"
+  # Distraction Watch: curated-only by default (DISTRACTED_FR_AUTO!=1 writes empty stubs)
+  log "npm run refresh:distracted (FR auto OFF unless DISTRACTED_FR_AUTO=1)"
   npm run refresh:distracted || {
     log "WARN: refresh:distracted failed (fail soft — continuing)"
     return 0

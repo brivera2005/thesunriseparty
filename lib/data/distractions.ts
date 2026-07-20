@@ -1189,8 +1189,8 @@ const curatedDistractions: DistractionEntry[] = [
 const curatedIds = new Set(curatedDistractions.map((d) => d.id));
 
 /**
- * Curated + auto stubs (`DIST-AUTO-*`) from `npm run refresh:distracted`.
- * Unraid updater refreshes auto stubs hourly; do not hand-edit those.
+ * Curated Distraction Watch entries only on the live site by default.
+ * autoDistractedEntries stays empty unless DISTRACTED_FR_AUTO=1 (hard-signal opt-in).
  */
 export const distractions: DistractionEntry[] = [
   ...curatedDistractions,

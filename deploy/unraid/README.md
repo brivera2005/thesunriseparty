@@ -1,6 +1,6 @@
 # Project Sunrise updater on unRAID
 
-Always-on container that keeps [Project Sunrise](https://thesunriseparty.pages.dev) fresh: pulls GitHub, refreshes Project 2025 tracker data from the Federal Register, refreshes legislation every cycle (Congress.gov API when keyed, otherwise curated probe + stamp), refreshes Distraction Watch auto stubs (`DIST-AUTO-*`), builds the static site, and deploys to Cloudflare Pages.
+Always-on container that keeps [Project Sunrise](https://thesunriseparty.pages.dev) fresh: pulls GitHub, refreshes legislation every cycle, clears Distracted/Tracker FR auto stubs by default (curated facts only unless opt-in flags), builds the static site, and deploys to Cloudflare Pages.
 
 **Canonical files:** `C:\Users\Benjamin\Projects\sunrise\deploy\unraid\`
 
@@ -12,9 +12,9 @@ Live site: https://thesunriseparty.pages.dev · Repo: https://github.com/brivera
 
 1. `git pull` / hard reset to `origin/master` (discards dirty generated `public/` artifacts so checkout never blocks)
 2. `npm ci --include=dev` (needed because the image sets `NODE_ENV=production`)
-3. `npm run refresh:tracker` — Federal Register presidential docs → `lib/data/tracker-auto-events.ts` + `public/data/tracker-live.json`
+3. `npm run refresh:tracker` — **curated-only by default** (writes empty `EVT-AUTO-*` unless `TRACKER_FR_AUTO=1`)
 4. `npm run fetch-legislation` — **every cycle**: member-level roll calls from House Clerk EVS + Senate LIS (no key required); Congress.gov bill list + action roll discovery when `CONGRESS_API_KEY` is set → `public/data/legislation-live.json` + `lib/data/legislation-votes-live.ts`
-5. `npm run refresh:distracted` — **every cycle**: FR / headline / Congress signals → `lib/data/distracted-auto.ts` + `public/data/distracted-live.json` (`DIST-AUTO-*` stubs)
+5. `npm run refresh:distracted` — **every cycle**: writes **empty** `DIST-AUTO-*` by default (curated Distracted only). FR/RSS/Congress auto require explicit `DISTRACTED_FR_AUTO=1` / `DISTRACTED_RSS_AUTO=1` / `DISTRACTED_CONGRESS_AUTO=1`
 6. `npm run build` (static export → `out/`)
 7. `npx wrangler pages deploy out --project-name=thesunriseparty --branch=main`
 8. Optional: commit + push auto data if `PUSH_DATA_UPDATES=1` and `GITHUB_TOKEN` is set
@@ -29,10 +29,10 @@ Failures are logged; the container **does not crash-loop** — it sleeps and ret
 
 | Artifact | Source | Notes |
 | --- | --- | --- |
-| Tracker stubs (`EVT-AUTO-*`) | Federal Register API | Merged into the live tracker at build time; editorial narrative still curated in `timeline-events.ts` |
-| `public/data/tracker-live.json` | Same fetch | Audit trail of docs seen / newly added |
+| Tracker stubs (`EVT-AUTO-*`) | **Disabled by default** | Empty unless `TRACKER_FR_AUTO=1` (short high-signal EOs only; rejects Section 301 / ceremonial dumps) |
+| `public/data/tracker-live.json` | Same refresh | Audit trail; empty autoEvents when FR auto is off |
 | `public/data/legislation-live.json` + `lib/data/legislation-votes-live.ts` | House Clerk + Senate LIS (+ Congress.gov when keyed) | Member Yea/Nay/Present merged into curated UI at build; commentary stays in `legislation.ts` |
-| Distracted stubs (`DIST-AUTO-*`) | Federal Register + NPR Politics RSS (+ Congress.gov when keyed) | Written to `lib/data/distracted-auto.ts` / `distracted-live.json`; merged in `lib/data/distractions.ts` — curated narrative stays there |
+| Distracted stubs (`DIST-AUTO-*`) | **Disabled by default** | Empty unless `DISTRACTED_FR_AUTO=1` (hard-signal flashbangs only). Live page = curated cards in `distractions.ts` |
 | Live Pages site | Wrangler | Redeployed every successful cycle |
 
 `project2025.observer` has no public JSON API — the updater probes reachability and keeps it as an external cross-reference on auto events.
@@ -173,7 +173,7 @@ docker compose up -d --build
 
 ## Notes
 
-- Auto tracker events are clearly marked (`EVT-AUTO-*`) and describe themselves as pending editorial review. Merge important ones into curated `timeline-events.ts` on a normal content pass when you want polished severity/narrative.
-- Auto distraction stubs (`DIST-AUTO-*`) are pending editorial correlation — curated Cover-up Watch narrative lives in `lib/data/distractions.ts` (imports `distracted-auto.ts`).
+- Tracker / Distracted FR auto is **OFF by default**. Hourly cycles clear `EVT-AUTO-*` / `DIST-AUTO-*` unless you explicitly set `TRACKER_FR_AUTO=1` or `DISTRACTED_FR_AUTO=1`.
+- Curated Cover-up Watch narrative lives in `lib/data/distractions.ts`. Curated tracker narrative lives in `lib/data/timeline-events.ts`.
 - Do not commit `.env` with real secrets. Only `.env.example` belongs in git.
 - Style matches other Unraid stacks under `rushify/deploy/unraid/` (compose + `.env.example` + README + always-on `restart: unless-stopped`).

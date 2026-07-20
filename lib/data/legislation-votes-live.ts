@@ -13,7 +13,7 @@ export type LegislationVotesLive = {
 };
 
 export const legislationVotesLive: LegislationVotesLive = {
-  "fetchedAt": "2026-07-20T15:06:28.159Z",
+  "fetchedAt": "2026-07-20T15:30:35.479Z",
   "congress": 119,
   "byBill": {
     "hr-1": [
