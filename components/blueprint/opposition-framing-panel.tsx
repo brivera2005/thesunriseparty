@@ -56,8 +56,7 @@ export function OppositionFramingPanel({ fields }: { fields: OppositionFields })
           aria-hidden
         />
         <p
-          className="text-xs font-bold tracking-[0.18em] uppercase"
-          style={{ color: "var(--section-blueprint)" }}
+          className="text-xs font-bold tracking-[0.18em] text-navy uppercase"
         >
           Opposition framing
         </p>
@@ -69,8 +68,7 @@ export function OppositionFramingPanel({ fields }: { fields: OppositionFields })
             className="rounded-lg border border-sky-200/80 bg-white/90 px-3 py-3"
           >
             <p
-              className="mb-1.5 inline-flex items-center gap-2 text-xs font-bold tracking-wide uppercase"
-              style={{ color: "var(--section-blueprint)" }}
+              className="mb-1.5 inline-flex items-center gap-2 text-xs font-bold tracking-wide text-navy/80 uppercase"
             >
               {section.icon}
               {section.label}

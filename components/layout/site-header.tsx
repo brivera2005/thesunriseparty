@@ -14,10 +14,14 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import {
+  BLUEPRINT_BLUE,
   blueprintAccent,
   sunriseAccent,
 } from "@/lib/sunrise-accent";
 import { cn } from "@/lib/utils";
+
+/** Nav / FIX bracket label — same light sky as Blueprint accent. */
+const BLUEPRINT_NAV_TEXT = BLUEPRINT_BLUE;
 
 type NavGroup = "live" | "learn" | "fix" | "meta";
 
@@ -180,12 +184,13 @@ function NavLink({
           active
             ? "font-semibold text-navy"
             : "font-medium text-navy/60 hover:bg-black/[0.04] hover:text-navy",
-          isBlueprint && !active && "text-navy/75 hover:text-navy",
-          isBlueprint && active && "text-navy"
+          isBlueprint && !active && "font-medium hover:opacity-90",
+          isBlueprint && active && "font-semibold"
         )}
-        style={
-          active ? undefined : { boxShadow: `inset 0 -2px 0 0 ${accent}` }
-        }
+        style={{
+          ...(isBlueprint ? { color: BLUEPRINT_NAV_TEXT } : null),
+          ...(active ? null : { boxShadow: `inset 0 -2px 0 0 ${accent}` }),
+        }}
         render={<Link href={item.href} />}
       >
         {item.label}
@@ -205,21 +210,37 @@ function NavLink({
 function GroupBracket({
   label,
   showLivePulse,
+  accentColor,
 }: {
   label: string;
   showLivePulse?: boolean;
+  /** When set (FIX), label uses Blueprint sky instead of muted navy. */
+  accentColor?: string;
 }) {
+  const ruleClass = accentColor
+    ? "h-px min-w-[0.5rem] flex-1"
+    : "h-px min-w-[0.5rem] flex-1 bg-navy/18";
+  const ruleStyle = accentColor
+    ? { backgroundColor: `color-mix(in oklab, ${accentColor} 45%, transparent)` }
+    : undefined;
+
   return (
     <div
       className="mt-0.5 flex h-3.5 w-full items-center gap-1.5"
       aria-hidden
     >
-      <span className="h-px min-w-[0.5rem] flex-1 bg-navy/18" />
-      <span className="inline-flex shrink-0 items-center gap-1 text-[9px] font-bold tracking-[0.16em] text-navy/40 uppercase">
+      <span className={ruleClass} style={ruleStyle} />
+      <span
+        className={cn(
+          "inline-flex shrink-0 items-center gap-1 text-[9px] font-bold tracking-[0.16em] uppercase",
+          !accentColor && "text-navy/40"
+        )}
+        style={accentColor ? { color: accentColor } : undefined}
+      >
         {showLivePulse ? <LiveRecordPulse size="sm" /> : null}
         {label}
       </span>
-      <span className="h-px min-w-[0.5rem] flex-1 bg-navy/18" />
+      <span className={ruleClass} style={ruleStyle} />
     </div>
   );
 }
@@ -298,6 +319,9 @@ export function SiteHeader() {
                   <GroupBracket
                     label={group.label}
                     showLivePulse={group.id === "live"}
+                    accentColor={
+                      group.id === "fix" ? BLUEPRINT_NAV_TEXT : undefined
+                    }
                   />
                 </div>
               </div>
@@ -414,7 +438,15 @@ export function SiteHeader() {
                     <li key={item.href}>
                       {showGroup ? (
                         <p
-                          className="flex items-center gap-1.5 px-4 pt-2.5 pb-1 text-[10px] font-bold tracking-[0.14em] text-navy/40 uppercase"
+                          className={cn(
+                            "flex items-center gap-1.5 px-4 pt-2.5 pb-1 text-[10px] font-bold tracking-[0.14em] uppercase",
+                            item.group === "fix" ? undefined : "text-navy/40"
+                          )}
+                          style={
+                            item.group === "fix"
+                              ? { color: BLUEPRINT_NAV_TEXT }
+                              : undefined
+                          }
                           aria-hidden
                         >
                           {item.group === "live" ? (
@@ -430,10 +462,11 @@ export function SiteHeader() {
                           active
                             ? "font-semibold text-navy"
                             : "font-medium text-navy/70 hover:text-navy",
-                          isBlueprint && !active && "text-navy/80",
-                          isBlueprint && active && "text-navy"
+                          isBlueprint && !active && "font-medium hover:opacity-90",
+                          isBlueprint && active && "font-semibold"
                         )}
                         style={{
+                          ...(isBlueprint ? { color: BLUEPRINT_NAV_TEXT } : null),
                           backgroundImage: active
                             ? `linear-gradient(90deg, ${wash} 0%, transparent 70%)`
                             : undefined,

@@ -286,7 +286,7 @@ export const sitemapSections: SitemapSection[] = [
     title: "Progressive Blueprint",
     description: "Evidence-based policy fixes with bill numbers and safeguards.",
     icon: BookOpen,
-    accent: "text-primary border-primary/30 bg-primary/5",
+    accent: "text-navy border-sky-300/60 bg-sky-50",
     links: [
       {
         href: "/blueprint",

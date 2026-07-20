@@ -9,6 +9,12 @@ import { startTourIntro, tourSteps } from "@/lib/data/start-tour-content";
 import { markWizardDone } from "@/lib/wizard";
 import { cn } from "@/lib/utils";
 import { PageShell } from "@/components/layout/page-shell";
+import {
+  BLUEPRINT_BLUE,
+  BLUEPRINT_SKY_MID,
+  BLUEPRINT_SKY_SOFT,
+  BLUEPRINT_TEXT,
+} from "@/lib/sunrise-accent";
 
 export function StartPage() {
   const router = useRouter();
@@ -162,7 +168,7 @@ export function StartPage() {
                   ? "border-white/20 bg-white/10 text-white shadow-black/20"
                   : "border-navy/10 bg-white/80 text-navy shadow-navy/10",
                 step.highlight &&
-                  "ring-2 ring-[#2563eb]/50 ring-offset-2 ring-offset-transparent"
+                  "ring-2 ring-[#38bdf8]/45 ring-offset-2 ring-offset-transparent"
               )}
             >
               <div className="mb-5 flex items-start gap-4">
@@ -172,14 +178,25 @@ export function StartPage() {
                     isLight
                       ? "border-white/30 bg-white/15 text-white"
                       : "border-navy/15 bg-navy/[0.06] text-navy",
-                    step.highlight && "border-[#2563eb]/40 bg-[#2563eb]/15 text-[#1d4ed8]"
+                    step.highlight && "border-[#38bdf8]/50 text-navy"
                   )}
+                  style={
+                    step.highlight
+                      ? { backgroundColor: BLUEPRINT_SKY_SOFT }
+                      : undefined
+                  }
                 >
                   <step.icon className="size-7" aria-hidden />
                 </div>
                 <div className="min-w-0 pt-0.5">
                   {step.highlight ? (
-                    <span className="mb-1.5 inline-block rounded bg-[#2563eb] px-2 py-0.5 text-[10px] font-bold tracking-wide text-white uppercase">
+                    <span
+                      className="mb-1.5 inline-block rounded px-2 py-0.5 text-[10px] font-bold tracking-wide uppercase"
+                      style={{
+                        backgroundColor: BLUEPRINT_SKY_MID,
+                        color: BLUEPRINT_TEXT,
+                      }}
+                    >
                       The Fix
                     </span>
                   ) : null}
@@ -188,7 +205,7 @@ export function StartPage() {
                     className={cn(
                       "text-2xl font-bold tracking-tight sm:text-3xl",
                       textPrimary,
-                      step.highlight && !isLight && "text-[#1d4ed8]"
+                      step.highlight && !isLight && "text-navy"
                     )}
                   >
                     {step.title}
@@ -217,11 +234,16 @@ export function StartPage() {
                       buttonVariants({ size: "lg" }),
                       "min-h-12 w-full gap-2 text-base font-semibold",
                       step.highlight
-                        ? "bg-[#2563eb] text-white hover:bg-[#1d4ed8]"
+                        ? "text-navy hover:opacity-90"
                         : isLight
                           ? "bg-white text-navy hover:bg-white/90"
                           : "bg-navy text-white hover:bg-navy/90"
                     )}
+                    style={
+                      step.highlight
+                        ? { backgroundColor: BLUEPRINT_BLUE }
+                        : undefined
+                    }
                   >
                     {step.cta}
                     <ArrowRight className="size-4" aria-hidden />

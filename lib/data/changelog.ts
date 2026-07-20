@@ -8,6 +8,28 @@
 /** Site iteration history - meta transparency for Project Sunrise builds */
 export const changelog: ChangelogEntry[] = [
   {
+    version: "0.75.0",
+    date: "2026-07-20",
+    title: "Pass 75 - Blueprint nav matches FIX sky",
+    highlights: [
+      "Blueprint desktop + hamburger link text uses #38bdf8 — same light sky as FIX under-bracket and Blueprint accent",
+      "FIX under-bracket label (and hairline rules) tinted #38bdf8 to match; LIVE/LEARN stay muted navy",
+      "Active Blueprint stays bold sky with accent underline for clear current-page state",
+      "SW cache hard-bumped to sunrise-v75-20260720T1535-blueprint-nav-sky",
+    ],
+  },
+  {
+    version: "0.74.0",
+    date: "2026-07-20",
+    title: "Pass 74 - Blueprint light sky THE FIX",
+    highlights: [
+      "Blueprint accent is light sky full-sunrise: #38bdf8 accent, #7dd3fc mid, #bae6fd soft wash, navy #0b1f3a on light fills",
+      "Nav FIX underline, homepage Blueprint card border/badge/wash, PageHero sky edge, start-tour THE FIX chip, section CSS tokens",
+      "THE FIX badge uses mid-sky fill + navy type; opposition framing labels stay navy-readable",
+      "SW cache hard-bumped to sunrise-v74-20260720T1530-blueprint-sky (UTF-8)",
+    ],
+  },
+  {
     version: "0.73.0",
     date: "2026-07-20",
     title: "Pass 73 - LIVE record pulse",

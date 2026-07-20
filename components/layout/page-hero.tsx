@@ -18,7 +18,7 @@ type PageHeroProps = {
   className?: string;
   /** Tighter vertical padding for content-heavy pages (e.g. Rebuttal) */
   compact?: boolean;
-  /** Kept for call-site compatibility; chrome is neutral navy/gray */
+  /** Blueprint THE FIX gets light sky left edge + soft wash. */
   section?: SectionId;
   /** @deprecated Prefer `section`; kept for call-site compatibility */
   tone?: "default" | "sunrise" | "amber" | "critical";
@@ -35,13 +35,25 @@ export function PageHero({
   eyebrowClassName,
   className,
   compact = false,
+  section,
 }: PageHeroProps) {
+  const isBlueprint = section === "blueprint";
+
   return (
     <section
       className={cn(
-        "border-b border-border border-l-4 border-l-navy/25 bg-white",
+        "border-b border-border border-l-4 bg-white",
+        isBlueprint ? "border-l-[#38bdf8]" : "border-l-navy/25",
         className
       )}
+      style={
+        isBlueprint
+          ? {
+              backgroundImage:
+                "linear-gradient(90deg, rgba(186, 230, 253, 0.45) 0%, transparent 42%)",
+            }
+          : undefined
+      }
     >
       <div
         className={cn(
@@ -63,7 +75,8 @@ export function PageHero({
           <div className="min-w-0 max-w-2xl">
             <p
               className={cn(
-                "mb-1 text-[10px] font-semibold tracking-[0.2em] text-navy/55 uppercase sm:mb-1.5 sm:text-xs sm:tracking-[0.22em]",
+                "mb-1 text-[10px] font-semibold tracking-[0.2em] uppercase sm:mb-1.5 sm:text-xs sm:tracking-[0.22em]",
+                isBlueprint ? "text-navy/70" : "text-navy/55",
                 eyebrowClassName
               )}
             >
