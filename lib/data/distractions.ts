@@ -65,7 +65,13 @@ export function filterDistractions(opts: {
         .toLowerCase();
       return hay.includes(q);
     })
-    .sort((a, b) => b.date.localeCompare(a.date) || b.severity - a.severity);
+    .sort((a, b) => {
+      // Curated cards first so the deck opens on readable flashbangs, not FR auto stubs.
+      const aAuto = a.id.startsWith("DIST-AUTO-") ? 1 : 0;
+      const bAuto = b.id.startsWith("DIST-AUTO-") ? 1 : 0;
+      if (aAuto !== bAuto) return aAuto - bAuto;
+      return b.date.localeCompare(a.date) || b.severity - a.severity;
+    });
 }
 
 const src = {
