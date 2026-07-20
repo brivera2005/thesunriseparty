@@ -32,7 +32,7 @@ Failures are logged; the container **does not crash-loop** — it sleeps and ret
 | Tracker stubs (`EVT-AUTO-*`) | Federal Register API | Merged into the live tracker at build time; editorial narrative still curated in `timeline-events.ts` |
 | `public/data/tracker-live.json` | Same fetch | Audit trail of docs seen / newly added |
 | `public/data/legislation-live.json` | Congress.gov and/or Senate probe | Always written each cycle; API skeleton when keyed; curated UI still from `lib/data/legislation.ts` until merged |
-| Distracted stubs (`DIST-AUTO-*`) | Federal Register + NPR Politics RSS (+ Congress.gov when keyed) | Written to `lib/data/distracted-auto.ts` / `distracted-live.json`; merge via `distracted-with-auto.ts` — curated narrative stays in `distracted.ts` |
+| Distracted stubs (`DIST-AUTO-*`) | Federal Register + NPR Politics RSS (+ Congress.gov when keyed) | Written to `lib/data/distracted-auto.ts` / `distracted-live.json`; merged in `lib/data/distractions.ts` — curated narrative stays there |
 | Live Pages site | Wrangler | Redeployed every successful cycle |
 
 `project2025.observer` has no public JSON API — the updater probes reachability and keeps it as an external cross-reference on auto events.
@@ -174,6 +174,6 @@ docker compose up -d --build
 ## Notes
 
 - Auto tracker events are clearly marked (`EVT-AUTO-*`) and describe themselves as pending editorial review. Merge important ones into curated `timeline-events.ts` on a normal content pass when you want polished severity/narrative.
-- Auto distraction stubs (`DIST-AUTO-*`) are pending editorial correlation — curated Cover-up Watch narrative lives in `lib/data/distracted.ts`; pages can import `distracted-with-auto.ts` for curated + auto.
+- Auto distraction stubs (`DIST-AUTO-*`) are pending editorial correlation — curated Cover-up Watch narrative lives in `lib/data/distractions.ts` (imports `distracted-auto.ts`).
 - Do not commit `.env` with real secrets. Only `.env.example` belongs in git.
 - Style matches other Unraid stacks under `rushify/deploy/unraid/` (compose + `.env.example` + README + always-on `restart: unless-stopped`).
