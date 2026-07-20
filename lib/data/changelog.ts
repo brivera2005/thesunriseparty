@@ -19,6 +19,18 @@ export const changelog: ChangelogEntry[] = [
     ],
   },
   {
+    version: "0.62.0",
+    date: "2026-07-20",
+    title: "Pass 62 - Ops feed + bury callouts",
+    highlights: [
+      "Homepage: navy LIVE 'What just happened' ticker under the hero, above the destination grid (Tracker / Bills / Distracted)",
+      "Distraction Watch: coveringUp is the primary crimson 'Pay attention to this / They're burying' callout; shiny distraction is secondary gray",
+      "Reusable glossary + TermTip / TipText (? hover/tap) for Schedule F, DOGE, Project 2025, CRA, Chevron, redaction, client list theater, and more",
+      "Ticker Distracted rows use a red BURY: prefix on the cover-up line",
+      "SW cache hard-bumped to sunrise-v62-20260720T0945-ops-bury-tips",
+    ],
+  },
+  {
     version: "0.61.0",
     date: "2026-07-20",
     title: "Pass 61 - Distraction Watch as flashcards",
