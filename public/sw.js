@@ -1,4 +1,4 @@
-/* Project Sunrise service worker - Pass 68 hard cache bust.
+﻿/* Project Sunrise service worker - Pass 68 hard cache bust.
  * Nav: dawn-to-sunrise accents on desktop + hamburger.
  */
 

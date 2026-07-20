@@ -18,10 +18,9 @@ import {
 } from "@/lib/sunrise-accent";
 import { cn } from "@/lib/utils";
 
-type NavGroup = "live" | "learn" | "fix";
+type NavGroup = "live" | "learn" | "fix" | "meta";
 
-/** Primary desktop nav. Tour lives in the hamburger (and footer) so tabs stay for power users. */
-const siteNav: {
+type NavItem = {
   label: string;
   href: string;
   description: string;
@@ -30,29 +29,14 @@ const siteNav: {
   highlight?: "blueprint";
   /** Extra path prefixes that count as active (About group). */
   activePrefixes?: string[];
-}[] = [
+};
+
+/** Primary desktop + hamburger order: LIVE → LEARN → FIX → About. */
+const siteNav: NavItem[] = [
   {
     label: "Tracker",
     href: "/tracker",
     description: "Project 2025 Tracker - admin actions scored by severity.",
-    group: "live",
-  },
-  {
-    label: "Rebuttal",
-    href: "/rebuttal",
-    description: "Rebuttal Desk - when they say X, you say Y.",
-    group: "live",
-  },
-  {
-    label: "Quiz",
-    href: "/quiz",
-    description: "Political Standing Quiz - find where you actually stand.",
-    group: "live",
-  },
-  {
-    label: "Distracted",
-    href: "/distracted",
-    description: "Distraction Watch - shiny object vs what it buries.",
     group: "live",
   },
   {
@@ -61,6 +45,24 @@ const siteNav: {
     description: "Live bills and party votes.",
     group: "live",
     activePrefixes: ["/bills"],
+  },
+  {
+    label: "Rebuttal",
+    href: "/rebuttal",
+    description: "Rebuttal Desk - when they say X, you say Y.",
+    group: "learn",
+  },
+  {
+    label: "Quiz",
+    href: "/quiz",
+    description: "Political Standing Quiz - find where you actually stand.",
+    group: "learn",
+  },
+  {
+    label: "Distracted",
+    href: "/distracted",
+    description: "Distraction Watch - shiny object vs what it buries.",
+    group: "learn",
   },
   {
     label: "History",
@@ -85,16 +87,40 @@ const siteNav: {
     label: "About",
     href: "/mission",
     description: "Mission, accountability, and methodology.",
-    group: "learn",
+    group: "meta",
     activePrefixes: ["/accountability", "/methodology"],
   },
 ];
 
-const GROUP_LABEL: Record<NavGroup, string> = {
+const GROUP_LABEL: Record<Exclude<NavGroup, "meta">, string> = {
   live: "Live",
   learn: "Learn",
   fix: "Fix",
 };
+
+const DESKTOP_GROUPS: {
+  id: Exclude<NavGroup, "meta">;
+  label: string;
+  items: NavItem[];
+}[] = [
+  {
+    id: "live",
+    label: "LIVE",
+    items: siteNav.filter((n) => n.group === "live"),
+  },
+  {
+    id: "learn",
+    label: "LEARN",
+    items: siteNav.filter((n) => n.group === "learn"),
+  },
+  {
+    id: "fix",
+    label: "FIX",
+    items: siteNav.filter((n) => n.group === "fix"),
+  },
+];
+
+const aboutNav = siteNav.find((n) => n.group === "meta")!;
 
 function pathActive(
   pathname: string,
@@ -111,9 +137,83 @@ function pathActive(
   return false;
 }
 
-function navAccentFor(item: (typeof siteNav)[number], sunriseIndex: number, sunriseTotal: number) {
+function navAccentFor(item: NavItem, sunriseIndex: number, sunriseTotal: number) {
   if (item.highlight === "blueprint") return blueprintAccent();
   return sunriseAccent(sunriseIndex, sunriseTotal);
+}
+
+function sunriseIndexFor(item: NavItem) {
+  let idx = 0;
+  for (const n of siteNav) {
+    if (n.href === item.href) return idx;
+    if (n.highlight !== "blueprint") idx += 1;
+  }
+  return idx;
+}
+
+function NavLink({
+  item,
+  sunriseTotal,
+  compact,
+}: {
+  item: NavItem;
+  sunriseTotal: number;
+  compact?: boolean;
+}) {
+  const pathname = usePathname();
+  const active = pathActive(pathname, item.href, item.activePrefixes);
+  const sunriseIndex = sunriseIndexFor(item);
+  const { accent } = navAccentFor(item, sunriseIndex, sunriseTotal);
+  const isBlueprint = item.highlight === "blueprint";
+
+  return (
+    <Tooltip>
+      <TooltipTrigger
+        delay={160}
+        closeOnClick
+        className={cn(
+          "relative rounded-md tracking-wide transition-colors",
+          compact
+            ? "px-1.5 py-1 text-[12px] xl:px-2 xl:text-[13px]"
+            : "px-1.5 py-1.5 text-[12px] xl:px-2 xl:text-[13px]",
+          active
+            ? "font-semibold text-navy"
+            : "font-medium text-navy/60 hover:bg-black/[0.04] hover:text-navy",
+          isBlueprint && !active && "text-[#1d4ed8]/80 hover:text-[#1d4ed8]",
+          isBlueprint && active && "text-[#1d4ed8]"
+        )}
+        style={
+          active ? undefined : { boxShadow: `inset 0 -2px 0 0 ${accent}` }
+        }
+        render={<Link href={item.href} />}
+      >
+        {item.label}
+        {active ? (
+          <span
+            aria-hidden
+            className="absolute inset-x-1.5 -bottom-0.5 h-0.5 rounded-full xl:inset-x-2"
+            style={{ backgroundColor: accent }}
+          />
+        ) : null}
+      </TooltipTrigger>
+      <TooltipContent side="bottom">{item.description}</TooltipContent>
+    </Tooltip>
+  );
+}
+
+function GroupBracket({ label }: { label: string }) {
+  return (
+    <div
+      className="mt-0.5 flex h-3.5 w-full items-center gap-1.5"
+      aria-hidden
+    >
+      <span className="h-px min-w-[0.5rem] flex-1 bg-navy/18" />
+      <span className="shrink-0 text-[9px] font-bold tracking-[0.16em] text-navy/40 uppercase">
+        {label}
+      </span>
+      <span className="h-px min-w-[0.5rem] flex-1 bg-navy/18" />
+    </div>
+  );
 }
 
 export function SiteHeader() {
@@ -149,8 +249,8 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-black/[0.06] bg-white/80 backdrop-blur-xl supports-[backdrop-filter]:bg-white/70">
-      {/* Single top bar: logo | nav (desktop) | hamburger + search (mobile) */}
-      <div className="page-container relative flex h-14 items-center gap-3 sm:h-16 sm:gap-4">
+      {/* Logo | grouped nav (desktop) | hamburger + search (mobile) */}
+      <div className="page-container relative flex h-14 items-center gap-3 sm:h-16 sm:gap-4 lg:h-[4.25rem]">
         <Link
           href="/"
           className="flex shrink-0 items-center"
@@ -159,68 +259,54 @@ export function SiteHeader() {
           <BrandLogo variant="header" priority />
         </Link>
 
-        {/* Desktop: inline section links on the same row */}
+        {/* Desktop: group clusters with LIVE / LEARN / FIX under-brackets */}
         <nav
-          className="hidden min-w-0 flex-1 items-center justify-center lg:flex"
+          className="hidden min-w-0 flex-1 items-end justify-center pb-1 lg:flex"
           aria-label="Site sections"
         >
-          <ul className="flex flex-wrap items-center justify-center gap-0">
-            {siteNav.map((item, i) => {
-              const active = pathActive(
-                pathname,
-                item.href,
-                item.activePrefixes
-              );
-              const sunriseIndex = siteNav
-                .slice(0, i)
-                .filter((n) => n.highlight !== "blueprint").length;
-              const { accent } = navAccentFor(item, sunriseIndex, sunriseTotal);
-              const isBlueprint = item.highlight === "blueprint";
-
-              return (
-                <li key={item.href} className="flex items-center">
-                  {i > 0 ? (
-                    <span
-                      aria-hidden
-                      className="mx-1 h-3 w-px shrink-0 bg-black/10 lg:mx-1.5"
-                    />
-                  ) : null}
-                  <Tooltip>
-                    <TooltipTrigger
-                      delay={160}
-                      closeOnClick
-                      className={cn(
-                        "relative rounded-md px-1.5 py-1.5 text-[12px] tracking-wide transition-colors xl:px-2 xl:text-[13px]",
-                        active
-                          ? "font-semibold text-navy"
-                          : "font-medium text-navy/60 hover:bg-black/[0.04] hover:text-navy",
-                        isBlueprint && !active && "text-[#1d4ed8]/80 hover:text-[#1d4ed8]",
-                        isBlueprint && active && "text-[#1d4ed8]"
-                      )}
-                      style={
-                        active
-                          ? undefined
-                          : { boxShadow: `inset 0 -2px 0 0 ${accent}` }
-                      }
-                      render={<Link href={item.href} />}
-                    >
-                      {item.label}
-                      {active ? (
-                        <span
-                          aria-hidden
-                          className="absolute inset-x-1.5 -bottom-0.5 h-0.5 rounded-full xl:inset-x-2"
-                          style={{ backgroundColor: accent }}
-                        />
-                      ) : null}
-                    </TooltipTrigger>
-                    <TooltipContent side="bottom">
-                      {item.description}
-                    </TooltipContent>
-                  </Tooltip>
-                </li>
-              );
-            })}
-          </ul>
+          <div className="flex flex-wrap items-end justify-center gap-x-2 gap-y-1 xl:gap-x-3">
+            {DESKTOP_GROUPS.map((group, gi) => (
+              <div key={group.id} className="flex items-end gap-x-2 xl:gap-x-3">
+                {gi > 0 ? (
+                  <span
+                    aria-hidden
+                    className="mb-5 h-3.5 w-px shrink-0 bg-black/12"
+                  />
+                ) : null}
+                <div className="flex min-w-0 flex-col items-stretch">
+                  <ul className="flex items-center justify-center gap-0">
+                    {group.items.map((item, i) => (
+                      <li key={item.href} className="flex items-center">
+                        {i > 0 ? (
+                          <span
+                            aria-hidden
+                            className="mx-0.5 h-3 w-px shrink-0 bg-black/8 xl:mx-1"
+                          />
+                        ) : null}
+                        <NavLink item={item} sunriseTotal={sunriseTotal} compact />
+                      </li>
+                    ))}
+                  </ul>
+                  <GroupBracket label={group.label} />
+                </div>
+              </div>
+            ))}
+            {/* About: after FIX, unlabeled */}
+            <div className="flex items-end gap-x-2 xl:gap-x-3">
+              <span
+                aria-hidden
+                className="mb-5 h-3.5 w-px shrink-0 bg-black/12"
+              />
+              <div className="flex flex-col items-stretch">
+                <ul className="flex items-center">
+                  <li>
+                    <NavLink item={aboutNav} sunriseTotal={sunriseTotal} compact />
+                  </li>
+                </ul>
+                <div className="mt-0.5 h-3.5" aria-hidden />
+              </div>
+            </div>
+          </div>
         </nav>
 
         {/* Spacer on mobile so actions sit far right */}
@@ -272,7 +358,7 @@ export function SiteHeader() {
             <Search className="size-3.5" />
           </Button>
 
-          {/* Mobile dropdown: flat list + group labels, dawn accents */}
+          {/* Mobile dropdown: LIVE / LEARN / FIX divider labels */}
           {mobileOpen ? (
             <nav
               id="mobile-site-nav"
@@ -299,9 +385,7 @@ export function SiteHeader() {
                     item.href,
                     item.activePrefixes
                   );
-                  const sunriseIndex = siteNav
-                    .slice(0, i)
-                    .filter((n) => n.highlight !== "blueprint").length;
+                  const sunriseIndex = sunriseIndexFor(item);
                   const { accent, wash } = navAccentFor(
                     item,
                     sunriseIndex,
@@ -309,11 +393,9 @@ export function SiteHeader() {
                   );
                   const isBlueprint = item.highlight === "blueprint";
                   const prevGroup = i > 0 ? siteNav[i - 1].group : null;
-                  // About follows Blueprint but stays Learn; only show label on first of each group
                   const showGroup =
-                    i === 0 ||
-                    (item.group !== prevGroup &&
-                      !(item.label === "About" && prevGroup === "fix"));
+                    item.group !== "meta" &&
+                    (i === 0 || item.group !== prevGroup);
 
                   return (
                     <li key={item.href}>

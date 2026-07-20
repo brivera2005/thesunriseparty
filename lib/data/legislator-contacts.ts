@@ -1449,7 +1449,7 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "fax": null,
     "office": "136 Hart Senate Office Building",
     "website": "https://www.murphy.senate.gov",
-    "contactUrl": "https://www.murphy.senate.gov/contact",
+    "contactUrl": "https://www.murphy.senate.gov/",
     "email": null
   },
   "chris murphy": {
@@ -1464,7 +1464,7 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "fax": null,
     "office": "136 Hart Senate Office Building",
     "website": "https://www.murphy.senate.gov",
-    "contactUrl": "https://www.murphy.senate.gov/contact",
+    "contactUrl": "https://www.murphy.senate.gov/",
     "email": null
   },
   "christopher murphy|CT": {
@@ -1479,7 +1479,7 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "fax": null,
     "office": "136 Hart Senate Office Building",
     "website": "https://www.murphy.senate.gov",
-    "contactUrl": "https://www.murphy.senate.gov/contact",
+    "contactUrl": "https://www.murphy.senate.gov/",
     "email": null
   },
   "christopher murphy": {
@@ -1494,7 +1494,7 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "fax": null,
     "office": "136 Hart Senate Office Building",
     "website": "https://www.murphy.senate.gov",
-    "contactUrl": "https://www.murphy.senate.gov/contact",
+    "contactUrl": "https://www.murphy.senate.gov/",
     "email": null
   },
   "steve womack|AR": {
@@ -3372,7 +3372,7 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "fax": null,
     "office": "136 Hart Senate Office Building",
     "website": "https://www.murphy.senate.gov",
-    "contactUrl": "https://www.murphy.senate.gov/contact",
+    "contactUrl": "https://www.murphy.senate.gov/",
     "email": null
   },
   {

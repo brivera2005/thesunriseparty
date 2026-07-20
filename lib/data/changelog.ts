@@ -8,6 +8,17 @@
 /** Site iteration history - meta transparency for Project Sunrise builds */
 export const changelog: ChangelogEntry[] = [
   {
+    version: "0.69.0",
+    date: "2026-07-20",
+    title: "Pass 69 - Link audit clean (1870/1870)",
+    highlights: [
+      "npm run validate-links: 1870 unique URLs, 0 broken after Murphy Senate contact fallback and full validated-urls refresh",
+      "Added scripts/check-internal-routes.mjs for live soft-404 scanning of nav, tracker, rebuttal, scenarios, legislation, blueprint",
+      "Soft-404 detector ignores Next.js embedded notFound RSC templates (false flag on /rebuttal fixed in Pass 66)",
+      "SW cache hard-bumped to sunrise-v69-20260720T1525-link-audit-clean",
+    ],
+  },
+  {
     version: "0.68.0",
     date: "2026-07-20",
     title: "Pass 68 - Nav dawn-to-sunrise accents",

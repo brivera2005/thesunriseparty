@@ -40,6 +40,12 @@ const platformCards: {
     icon: Activity,
   },
   {
+    href: "/legislation",
+    title: "Legislation",
+    description: "Live bills, sponsors, and party votes.",
+    icon: Landmark,
+  },
+  {
     href: "/rebuttal",
     title: "Rebuttal",
     description: "Sourced counters, ready to copy.",
@@ -56,12 +62,6 @@ const platformCards: {
     title: "Distraction Watch",
     description: "Shiny object vs what it buries.",
     icon: EyeOff,
-  },
-  {
-    href: "/legislation",
-    title: "Legislation",
-    description: "Live bills, sponsors, and party votes.",
-    icon: Landmark,
   },
   {
     href: "/history",
