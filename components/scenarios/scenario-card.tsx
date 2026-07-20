@@ -5,6 +5,7 @@ import { ArrowRight, Lightbulb, MapPin, Users } from "lucide-react";
 import type { ImpactScenario } from "@/lib/types";
 import { scenarioDetailPath } from "@/lib/data/scenarios";
 import { Badge } from "@/components/ui/badge";
+import { TipText } from "@/components/ui/term-tip";
 import { cn } from "@/lib/utils";
 
 function severityClass(score: number) {
@@ -44,7 +45,7 @@ export function ScenarioCard({ scenario, index = 0 }: ScenarioCardProps) {
       </div>
 
       <h3 className="text-base font-semibold leading-snug text-navy group-hover:text-primary sm:text-[1.05rem]">
-        {scenario.title}
+        <TipText>{scenario.title}</TipText>
       </h3>
 
       <div className="mt-3 flex flex-col gap-1.5 text-xs text-muted-foreground">
@@ -61,7 +62,7 @@ export function ScenarioCard({ scenario, index = 0 }: ScenarioCardProps) {
       </div>
 
       <p className="mt-3 line-clamp-2 text-sm leading-relaxed text-muted-foreground">
-        {scenario.persona.situation}
+        <TipText>{scenario.persona.situation}</TipText>
       </p>
 
       <div className="mt-4 rounded-xl border border-primary/25 bg-primary/5 p-3">
@@ -70,11 +71,11 @@ export function ScenarioCard({ scenario, index = 0 }: ScenarioCardProps) {
           Best solution
         </p>
         <p className="mt-1.5 line-clamp-3 text-sm leading-snug text-navy">
-          {scenario.bestSolution}
+          <TipText>{scenario.bestSolution}</TipText>
         </p>
         <p className="mt-2 line-clamp-2 text-xs leading-relaxed text-muted-foreground">
           <span className="font-medium text-navy/70">Why it works: </span>
-          {scenario.whyItWorks}
+          <TipText>{scenario.whyItWorks}</TipText>
         </p>
       </div>
 

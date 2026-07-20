@@ -8,6 +8,17 @@
 /** Site iteration history - meta transparency for Project Sunrise builds */
 export const changelog: ChangelogEntry[] = [
   {
+    version: "0.65.0",
+    date: "2026-07-20",
+    title: "Pass 65 - Jargon tips everywhere",
+    highlights: [
+      "Glossary massively expanded: enforcement militarization, watchdog erosion, Schedule F expansion, OPM, MSPB, FEC deadlock, dark money, cloture, rescission, impoundment, asylum backlog, mass deportation, and dozens more kitchen-table definitions",
+      "TipText / TermTip (? hover desktop, tap mobile, stopPropagation) auto-wraps jargon on Distracted cards (front bury + list + detail), LIVE ticker, Tracker descriptions, Scenarios, Legislation blurbs, and Blueprint policy copy",
+      "Longest-match-first so multi-word phrases like 'enforcement militarization' and 'Schedule Policy/Career' win over shorter aliases",
+      "SW cache hard-bumped to sunrise-v65-20260720T1100-jargon-tips",
+    ],
+  },
+  {
     version: "0.64.0",
     date: "2026-07-20",
     title: "Pass 64 - Sunrise guided wizard",

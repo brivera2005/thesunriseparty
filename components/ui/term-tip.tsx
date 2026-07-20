@@ -43,10 +43,12 @@ export function TermTip({
 }
 
 type TipTextProps = {
-  children: string;
+  children: string | null | undefined;
   className?: string;
   /** Extra class on matched jargon spans */
   termClassName?: string;
+  /** Icon colors for light cards (default) vs dark ticker */
+  tone?: "light" | "dark";
 };
 
 /**
@@ -57,6 +59,7 @@ export function TipText({
   children,
   className,
   termClassName,
+  tone = "light",
 }: TipTextProps) {
   const text = children ?? "";
   const matches = findGlossaryMatches(text);
@@ -67,6 +70,10 @@ export function TipText({
 
   const nodes: ReactNode[] = [];
   let cursor = 0;
+  const tipIcon =
+    tone === "dark"
+      ? "size-3.5 text-white/45 hover:bg-white/10 hover:text-white"
+      : "size-4";
 
   matches.forEach((m, i) => {
     if (m.start > cursor) {
@@ -83,7 +90,7 @@ export function TipText({
         <TermTip
           term={m.term.id}
           className="ml-0.5 translate-y-[-1px]"
-          iconClassName="size-4"
+          iconClassName={tipIcon}
         />
       </span>
     );

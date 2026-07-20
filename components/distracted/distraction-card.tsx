@@ -56,11 +56,11 @@ export function DistractionCard({ entry, index = 0 }: DistractionCardProps) {
         </span>
         <span className="min-w-0 flex-1">
           <span className="block text-sm font-semibold leading-snug text-navy">
-            {entry.title}
+            <TipText>{entry.title}</TipText>
           </span>
           {!open ? (
-            <span className="mt-1 line-clamp-1 text-[11px] font-medium text-[#b42318]">
-              Bury: {entry.coveringUp}
+            <span className="mt-1 line-clamp-2 text-[11px] font-medium text-[#b42318]">
+              Bury: <TipText>{entry.coveringUp}</TipText>
             </span>
           ) : null}
         </span>

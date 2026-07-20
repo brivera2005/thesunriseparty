@@ -21,6 +21,7 @@ import { policyFixPath } from "@/lib/data/policies";
 import { Citation } from "@/components/citation";
 import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
+import { TipText } from "@/components/ui/term-tip";
 import { cn } from "@/lib/utils";
 
 type ScenarioDetailProps = {
@@ -66,7 +67,7 @@ export function ScenarioDetail({ scenario }: ScenarioDetailProps) {
           </div>
 
           <h1 className="mt-3 max-w-3xl text-2xl font-bold tracking-tight text-navy sm:text-3xl">
-            {scenario.title}
+            <TipText>{scenario.title}</TipText>
           </h1>
 
           <div className="mt-4 flex flex-col gap-2 text-sm text-muted-foreground sm:flex-row sm:flex-wrap sm:gap-x-6">
@@ -83,7 +84,7 @@ export function ScenarioDetail({ scenario }: ScenarioDetailProps) {
           </div>
 
           <p className="mt-4 max-w-3xl text-sm leading-relaxed text-muted-foreground sm:text-[0.95rem]">
-            {scenario.persona.situation}
+            <TipText>{scenario.persona.situation}</TipText>
           </p>
         </div>
       </section>
@@ -95,7 +96,7 @@ export function ScenarioDetail({ scenario }: ScenarioDetailProps) {
               What they get now
             </p>
             <p className="mt-3 text-sm leading-relaxed text-navy sm:text-[0.95rem]">
-              {scenario.getsY}
+              <TipText>{scenario.getsY}</TipText>
             </p>
           </div>
           <div className="rounded-2xl border border-primary/30 bg-white p-5 shadow-sm">
@@ -103,7 +104,7 @@ export function ScenarioDetail({ scenario }: ScenarioDetailProps) {
               What they should get
             </p>
             <p className="mt-3 text-sm leading-relaxed text-navy sm:text-[0.95rem]">
-              {scenario.shouldGetZ}
+              <TipText>{scenario.shouldGetZ}</TipText>
             </p>
           </div>
         </div>
@@ -120,14 +121,14 @@ export function ScenarioDetail({ scenario }: ScenarioDetailProps) {
               Best solution
             </p>
             <p className="mt-3 text-base font-semibold leading-snug text-navy sm:text-lg">
-              {scenario.bestSolution}
+              <TipText>{scenario.bestSolution}</TipText>
             </p>
             <div className="mt-5 border-t border-border pt-4">
               <p className="text-xs font-semibold tracking-[0.18em] text-navy uppercase">
                 Why it works
               </p>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground sm:text-[0.95rem]">
-                {scenario.whyItWorks}
+                <TipText>{scenario.whyItWorks}</TipText>
               </p>
             </div>
             {scenario.linkedFixId ? (
@@ -193,11 +194,11 @@ export function ScenarioDetail({ scenario }: ScenarioDetailProps) {
                   </div>
 
                   <p className="mt-3 text-sm font-semibold text-navy sm:text-[0.95rem]">
-                    {step.action}
+                    <TipText>{step.action}</TipText>
                   </p>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                     <span className="font-medium text-navy/80">Effect: </span>
-                    {step.effect}
+                    <TipText>{step.effect}</TipText>
                   </p>
 
                   <div className="mt-4 flex flex-wrap gap-2">

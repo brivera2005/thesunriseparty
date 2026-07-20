@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { FadeIn } from "@/components/ui/fade-in";
+import { TipText } from "@/components/ui/term-tip";
 import { formatDateUS, formatRelativeUS } from "@/lib/format-date";
 import {
   getRecentActivity,
@@ -71,10 +72,12 @@ function ActivityRow({
             <span className="mr-1.5 font-bold tracking-wide text-[#f87171]">
               BURY:
             </span>
-            <span className="text-white/95">{item.label}</span>
+            <TipText tone="dark" className="text-white/95">
+              {item.label}
+            </TipText>
           </>
         ) : (
-          item.label
+          <TipText tone="dark">{item.label}</TipText>
         )}
       </span>
       <ArrowUpRight

@@ -21,6 +21,7 @@ import { BlueprintHashNav } from "./blueprint-hash-nav";
 import { PolicyEvidencePanel } from "./policy-evidence-panel";
 import { OppositionFramingPanel } from "./opposition-framing-panel";
 import { SITE_URL } from "@/lib/metadata";
+import { TipText } from "@/components/ui/term-tip";
 
 const safeguardIcons: Record<string, React.ReactNode> = {
   "SAFE-001": <Ban className="size-5 text-primary" />,
@@ -164,7 +165,9 @@ export function BlueprintSection({
                       </div>
                       <PolicyCopyLink policyId={policy.id} />
                     </div>
-                    <span className="text-base font-semibold">{policy.title}</span>
+                    <span className="text-base font-semibold">
+                      <TipText>{policy.title}</TipText>
+                    </span>
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="pb-6">
@@ -175,7 +178,7 @@ export function BlueprintSection({
                           Problem
                         </h4>
                         <p className="text-sm leading-relaxed text-muted-foreground">
-                          {policy.problem}{" "}
+                          <TipText>{policy.problem}</TipText>{" "}
                           <CitationList sources={policy.citations.slice(0, 2)} />
                         </p>
                       </div>
@@ -183,7 +186,9 @@ export function BlueprintSection({
                         <h4 className="mb-1.5 text-xs font-semibold tracking-wider text-primary uppercase">
                           Proposed Fix
                         </h4>
-                        <p className="text-sm leading-relaxed">{policy.proposedFix}</p>
+                        <p className="text-sm leading-relaxed">
+                          <TipText>{policy.proposedFix}</TipText>
+                        </p>
                       </div>
                     </div>
                     <div className="space-y-4">
@@ -192,7 +197,7 @@ export function BlueprintSection({
                           Economic Impact
                         </h4>
                         <p className="text-sm leading-relaxed text-muted-foreground">
-                          {policy.economicImpact}
+                          <TipText>{policy.economicImpact}</TipText>
                         </p>
                       </div>
                       <div>
@@ -200,7 +205,7 @@ export function BlueprintSection({
                           Cost of Inaction
                         </h4>
                         <p className="text-sm leading-relaxed text-muted-foreground">
-                          {policy.costOfInaction}{" "}
+                          <TipText>{policy.costOfInaction}</TipText>{" "}
                           <CitationList sources={policy.costOfInactionCitations} />
                         </p>
                       </div>
@@ -342,11 +347,13 @@ export function BlueprintSection({
                   </div>
                   <div className="min-w-0 flex-1">
                     <div className="flex flex-wrap items-center justify-between gap-2">
-                      <CardTitle className="text-base">{item.title}</CardTitle>
+                      <CardTitle className="text-base">
+                        <TipText>{item.title}</TipText>
+                      </CardTitle>
                       <PolicyCopyLink policyId={item.id} />
                     </div>
                     <p className="mt-1 text-sm text-muted-foreground">
-                      {item.description}
+                      <TipText>{item.description}</TipText>
                     </p>
                   </div>
                 </CardHeader>

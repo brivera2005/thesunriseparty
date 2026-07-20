@@ -9,6 +9,7 @@ import {
 import { LegislatorName } from "@/components/legislation/legislator-name";
 import { VoteBars } from "@/components/legislation/vote-bars";
 import { Badge } from "@/components/ui/badge";
+import { TipText } from "@/components/ui/term-tip";
 import { formatDateUS } from "@/lib/format-date";
 import { cn } from "@/lib/utils";
 
@@ -77,7 +78,7 @@ export function BillCard({ bill }: { bill: LegislationBill }) {
             {bill.title}
           </Link>
           <p className="mt-1.5 line-clamp-2 text-sm leading-relaxed text-muted-foreground">
-            {bill.summary}
+            <TipText>{bill.summary}</TipText>
           </p>
         </div>
 
@@ -89,7 +90,7 @@ export function BillCard({ bill }: { bill: LegislationBill }) {
 
         <p className="text-[11px] text-muted-foreground">
           <span className="font-medium text-navy">Last action:</span>{" "}
-          {bill.lastAction}{" "}
+          <TipText>{bill.lastAction}</TipText>{" "}
           <span className="tabular-nums">
             ({formatDateUS(bill.lastActionDate)})
           </span>

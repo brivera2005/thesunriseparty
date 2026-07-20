@@ -21,6 +21,7 @@ import { CitationList } from "@/components/citation";
 import { PageShell } from "@/components/layout/page-shell";
 import { Badge } from "@/components/ui/badge";
 import { Button, buttonVariants } from "@/components/ui/button";
+import { TipText } from "@/components/ui/term-tip";
 import { cn } from "@/lib/utils";
 import { SITE_URL } from "@/lib/metadata";
 
@@ -136,7 +137,9 @@ export function BillDetailPage({ bill }: { bill: LegislationBill }) {
               <dt className="text-[11px] font-semibold tracking-wide text-muted-foreground uppercase">
                 Last action
               </dt>
-              <dd className="mt-1 text-navy">{bill.lastAction}</dd>
+              <dd className="mt-1 text-navy">
+                <TipText>{bill.lastAction}</TipText>
+              </dd>
             </div>
             <div>
               <dt className="text-[11px] font-semibold tracking-wide text-muted-foreground uppercase">
@@ -155,7 +158,7 @@ export function BillDetailPage({ bill }: { bill: LegislationBill }) {
                 What it does
               </h2>
               <p className="text-sm leading-relaxed text-muted-foreground sm:text-[0.95rem]">
-                {bill.summary}
+                <TipText>{bill.summary}</TipText>
               </p>
             </section>
 
@@ -164,7 +167,7 @@ export function BillDetailPage({ bill }: { bill: LegislationBill }) {
                 Why it matters
               </h2>
               <p className="text-sm leading-relaxed text-muted-foreground sm:text-[0.95rem]">
-                {bill.whyItMatters}
+                <TipText>{bill.whyItMatters}</TipText>
               </p>
             </section>
 
@@ -174,7 +177,7 @@ export function BillDetailPage({ bill }: { bill: LegislationBill }) {
                 Progressive take
               </h2>
               <p className="text-sm leading-relaxed text-navy sm:text-[0.95rem]">
-                {bill.progressiveTake}
+                <TipText>{bill.progressiveTake}</TipText>
               </p>
             </section>
 

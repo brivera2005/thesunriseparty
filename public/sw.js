@@ -1,8 +1,8 @@
-/* Project Sunrise service worker - Pass 64 hard cache bust.
- * Guided sunrise wizard at /start.
+/* Project Sunrise service worker - Pass 65 hard cache bust.
+ * Kitchen-table jargon tips on every opaque card term.
  */
 
-const CACHE = "sunrise-v64-20260720T1035-wizard";
+const CACHE = "sunrise-v65-20260720T1100-jargon-tips";
 
 const PRECACHE = [
 
