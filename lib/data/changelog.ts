@@ -8,6 +8,18 @@
 /** Site iteration history - meta transparency for Project Sunrise builds */
 export const changelog: ChangelogEntry[] = [
   {
+    version: "0.68.0",
+    date: "2026-07-20",
+    title: "Pass 68 - Nav dawn-to-sunrise accents",
+    highlights: [
+      "Desktop header and mobile hamburger tabs share homepage dawn→sunrise accent path (navy/rose/dark orange → coral/gold → bright yellow)",
+      "Soft underline (desktop) and left border (hamburger) per index; navy text stays readable; active state uses accent underline/wash",
+      "Flat list kept (no More menu): LIVE / LEARN / FIX divider labels in hamburger only; Blueprint remains blue THE FIX",
+      "Shared sunriseAccent helper for homepage grid + nav",
+      "SW cache hard-bumped to sunrise-v68-20260720T1515-nav-dawn",
+    ],
+  },
+  {
     version: "0.67.0",
     date: "2026-07-20",
     title: "Pass 67 - Full disclosure legislation votes",

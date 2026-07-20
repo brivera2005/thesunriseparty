@@ -1,8 +1,8 @@
-/* Project Sunrise service worker - Pass 67 hard cache bust.
- * Legislation: full member roll calls + office contacts.
+/* Project Sunrise service worker - Pass 68 hard cache bust.
+ * Nav: dawn-to-sunrise accents on desktop + hamburger.
  */
 
-const CACHE = "sunrise-v67-20260720T1500-legislation-votes";
+const CACHE = "sunrise-v68-20260720T1515-nav-dawn";
 
 const PRECACHE = [
 

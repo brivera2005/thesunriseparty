@@ -12,13 +12,22 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import {
+  blueprintAccent,
+  sunriseAccent,
+} from "@/lib/sunrise-accent";
 import { cn } from "@/lib/utils";
+
+type NavGroup = "live" | "learn" | "fix";
 
 /** Primary desktop nav. Tour lives in the hamburger (and footer) so tabs stay for power users. */
 const siteNav: {
   label: string;
   href: string;
   description: string;
+  group: NavGroup;
+  /** Blueprint stays blue THE FIX (not in dawn sequence). */
+  highlight?: "blueprint";
   /** Extra path prefixes that count as active (About group). */
   activePrefixes?: string[];
 }[] = [
@@ -26,50 +35,66 @@ const siteNav: {
     label: "Tracker",
     href: "/tracker",
     description: "Project 2025 Tracker - admin actions scored by severity.",
+    group: "live",
   },
   {
     label: "Rebuttal",
     href: "/rebuttal",
     description: "Rebuttal Desk - when they say X, you say Y.",
+    group: "live",
   },
   {
     label: "Quiz",
     href: "/quiz",
     description: "Political Standing Quiz - find where you actually stand.",
+    group: "live",
   },
   {
     label: "Distracted",
     href: "/distracted",
     description: "Distraction Watch - shiny object vs what it buries.",
+    group: "live",
   },
   {
     label: "Legislation",
     href: "/legislation",
     description: "Live bills and party votes.",
+    group: "live",
     activePrefixes: ["/bills"],
   },
   {
     label: "History",
     href: "/history",
     description: "Hidden History - textbook vs. archives.",
+    group: "learn",
   },
   {
     label: "Scenarios",
     href: "/scenarios",
     description: "Family gets Y. Should get Z.",
+    group: "learn",
   },
   {
     label: "Blueprint",
     href: "/blueprint",
     description: "The fix and the gaslight exposed.",
+    group: "fix",
+    highlight: "blueprint",
   },
   {
     label: "About",
     href: "/mission",
     description: "Mission, accountability, and methodology.",
+    group: "learn",
     activePrefixes: ["/accountability", "/methodology"],
   },
 ];
+
+const GROUP_LABEL: Record<NavGroup, string> = {
+  live: "Live",
+  learn: "Learn",
+  fix: "Fix",
+};
 
 function pathActive(
   pathname: string,
@@ -86,11 +111,18 @@ function pathActive(
   return false;
 }
 
+function navAccentFor(item: (typeof siteNav)[number], sunriseIndex: number, sunriseTotal: number) {
+  if (item.highlight === "blueprint") return blueprintAccent();
+  return sunriseAccent(sunriseIndex, sunriseTotal);
+}
+
 export function SiteHeader() {
   const pathname = usePathname();
   const setCommandOpen = useAppStore((s) => s.setCommandOpen);
   const [mobileOpen, setMobileOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
+
+  const sunriseTotal = siteNav.filter((n) => n.highlight !== "blueprint").length;
 
   useEffect(() => {
     setMobileOpen(false);
@@ -139,6 +171,12 @@ export function SiteHeader() {
                 item.href,
                 item.activePrefixes
               );
+              const sunriseIndex = siteNav
+                .slice(0, i)
+                .filter((n) => n.highlight !== "blueprint").length;
+              const { accent } = navAccentFor(item, sunriseIndex, sunriseTotal);
+              const isBlueprint = item.highlight === "blueprint";
+
               return (
                 <li key={item.href} className="flex items-center">
                   {i > 0 ? (
@@ -155,15 +193,23 @@ export function SiteHeader() {
                         "relative rounded-md px-1.5 py-1.5 text-[12px] tracking-wide transition-colors xl:px-2 xl:text-[13px]",
                         active
                           ? "font-semibold text-navy"
-                          : "font-medium text-navy/60 hover:bg-black/[0.04] hover:text-navy"
+                          : "font-medium text-navy/60 hover:bg-black/[0.04] hover:text-navy",
+                        isBlueprint && !active && "text-[#1d4ed8]/80 hover:text-[#1d4ed8]",
+                        isBlueprint && active && "text-[#1d4ed8]"
                       )}
+                      style={
+                        active
+                          ? undefined
+                          : { boxShadow: `inset 0 -2px 0 0 ${accent}` }
+                      }
                       render={<Link href={item.href} />}
                     >
                       {item.label}
                       {active ? (
                         <span
                           aria-hidden
-                          className="absolute inset-x-1.5 -bottom-0.5 h-px bg-navy/80 xl:inset-x-2"
+                          className="absolute inset-x-1.5 -bottom-0.5 h-0.5 rounded-full xl:inset-x-2"
+                          style={{ backgroundColor: accent }}
                         />
                       ) : null}
                     </TooltipTrigger>
@@ -226,7 +272,7 @@ export function SiteHeader() {
             <Search className="size-3.5" />
           </Button>
 
-          {/* Mobile dropdown: all primary nav items, only when open */}
+          {/* Mobile dropdown: flat list + group labels, dawn accents */}
           {mobileOpen ? (
             <nav
               id="mobile-site-nav"
@@ -247,22 +293,67 @@ export function SiteHeader() {
                     Tour
                   </Link>
                 </li>
-                {siteNav.map((item) => {
+                {siteNav.map((item, i) => {
                   const active = pathActive(
                     pathname,
                     item.href,
                     item.activePrefixes
                   );
+                  const sunriseIndex = siteNav
+                    .slice(0, i)
+                    .filter((n) => n.highlight !== "blueprint").length;
+                  const { accent, wash } = navAccentFor(
+                    item,
+                    sunriseIndex,
+                    sunriseTotal
+                  );
+                  const isBlueprint = item.highlight === "blueprint";
+                  const prevGroup = i > 0 ? siteNav[i - 1].group : null;
+                  // About follows Blueprint but stays Learn; only show label on first of each group
+                  const showGroup =
+                    i === 0 ||
+                    (item.group !== prevGroup &&
+                      !(item.label === "About" && prevGroup === "fix"));
+
                   return (
                     <li key={item.href}>
+                      {showGroup ? (
+                        <p
+                          className="px-4 pt-2.5 pb-1 text-[10px] font-bold tracking-[0.14em] text-navy/40 uppercase"
+                          aria-hidden
+                        >
+                          {GROUP_LABEL[item.group]}
+                        </p>
+                      ) : null}
                       <Link
                         href={item.href}
                         className={cn(
                           "flex min-h-11 items-center px-4 text-[14px] tracking-wide transition-colors",
                           active
-                            ? "bg-navy/[0.06] font-semibold text-navy"
-                            : "font-medium text-navy/70 hover:bg-black/[0.03] hover:text-navy"
+                            ? "font-semibold text-navy"
+                            : "font-medium text-navy/70 hover:text-navy",
+                          isBlueprint && !active && "text-[#1d4ed8]/85",
+                          isBlueprint && active && "text-[#1d4ed8]"
                         )}
+                        style={{
+                          backgroundImage: active
+                            ? `linear-gradient(90deg, ${wash} 0%, transparent 70%)`
+                            : undefined,
+                          backgroundColor: active
+                            ? undefined
+                            : "transparent",
+                          boxShadow: `inset 3px 0 0 0 ${accent}`,
+                        }}
+                        onMouseEnter={(e) => {
+                          if (!active) {
+                            e.currentTarget.style.backgroundImage = `linear-gradient(90deg, ${wash} 0%, transparent 70%)`;
+                          }
+                        }}
+                        onMouseLeave={(e) => {
+                          if (!active) {
+                            e.currentTarget.style.backgroundImage = "";
+                          }
+                        }}
                       >
                         {item.label}
                       </Link>
