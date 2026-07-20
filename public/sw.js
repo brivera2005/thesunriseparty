@@ -1,8 +1,8 @@
-/* Project Sunrise service worker - Pass 65 hard cache bust.
- * Kitchen-table jargon tips on every opaque card term.
+/* Project Sunrise service worker - Pass 65.2 hard cache bust.
+ * Homepage grid: dawn → full sunrise card accents.
  */
 
-const CACHE = "sunrise-v65-20260720T1100-jargon-tips";
+const CACHE = "sunrise-v65.2-20260720T1445-dawn-grid";
 
 const PRECACHE = [
 

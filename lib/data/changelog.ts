@@ -8,6 +8,27 @@
 /** Site iteration history - meta transparency for Project Sunrise builds */
 export const changelog: ChangelogEntry[] = [
   {
+    version: "0.65.2",
+    date: "2026-07-20",
+    title: "Pass 65.2 - Dawn-to-sunrise grid accents",
+    highlights: [
+      "Homepage destination cards progress early dawn (deep navy, rose, dark orange) → mid sunrise (coral/gold) → full sunrise (bright gold/soft yellow)",
+      "About stays nav-only; gradient spans Tracker through Saved; Blueprint remains blue THE FIX",
+      "Navy #0b1f3a stroke kept; soft left wash + inset accent pattern unchanged",
+      "SW cache hard-bumped to sunrise-v65.2-20260720T1445-dawn-grid",
+    ],
+  },
+  {
+    version: "0.65.1",
+    date: "2026-07-20",
+    title: "Pass 65.1 - Single hero tour CTA",
+    highlights: [
+      "Homepage hero keeps only Take the tour (to /start); removed duplicate New here? Start button",
+      "First-visit WizardPrompt banner unchanged",
+      "SW cache hard-bumped to sunrise-v65.1-20260720T0945-hero-cta",
+    ],
+  },
+  {
     version: "0.65.0",
     date: "2026-07-20",
     title: "Pass 65 - Jargon tips everywhere",
