@@ -15,7 +15,8 @@ export const changelog: ChangelogEntry[] = [
       "Homepage destination cards progress early dawn (deep navy, rose, dark orange) → mid sunrise (coral/gold) → full sunrise (bright gold/soft yellow)",
       "About stays nav-only; gradient spans Tracker through Saved; Blueprint remains blue THE FIX",
       "Navy #0b1f3a stroke kept; soft left wash + inset accent pattern unchanged",
-      "SW cache hard-bumped to sunrise-v65.2-20260720T1445-dawn-grid",
+      "SW cache hard-bumped to sunrise-v65.2-20260720T1450-dawn-cta",
+      "Hero CTA: only Take the tour (/start); duplicate New here? Start removed; first-visit banner kept",
     ],
   },
   {

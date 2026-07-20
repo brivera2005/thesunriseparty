@@ -2,7 +2,7 @@
  * Homepage grid: dawn → full sunrise card accents.
  */
 
-const CACHE = "sunrise-v65.2-20260720T1445-dawn-grid";
+const CACHE = "sunrise-v65.2-20260720T1450-dawn-cta";
 
 const PRECACHE = [
 
