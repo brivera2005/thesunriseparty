@@ -48,7 +48,7 @@ type FrDoc = {
 };
 
 function wayback(url: string): string {
-  return `https://web.archive.org/web/${url}`;
+  return `https://web.archive.org/web/*/${url}`;
 }
 
 function isoDateDaysAgo(days: number): string {

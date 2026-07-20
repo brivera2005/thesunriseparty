@@ -128,7 +128,7 @@ export function LegislationPage() {
         eyebrow="Live Congress Tracker"
         title="Legislation"
         description="Live bills, sponsors, party votes. Analysis from the text."
-        tip="Filter bills, then open any card for sponsors and roll-call bars."
+        tip="Filter bills, then open any card for sponsors, party roll calls, and member-level Yea/Nay with office contacts."
         actions={
           <div className="flex flex-col items-end gap-1 text-right">
             <span className="inline-flex items-center gap-1.5 rounded-full border border-emerald-300/50 bg-emerald-50 px-2.5 py-1 text-[11px] font-semibold text-emerald-800">

@@ -1861,7 +1861,7 @@ export const conversationHelpers: ConversationHelper[] = [
         "edweek_crt",
         "What Is Critical Race Theory?",
         "Education Week",
-        "https://www.ed.gov/laws-and-policy/civil-rights-laws/title-ix-and-sex-discrimination/sex-discrimination-overview-of-law",
+        "https://www.edweek.org/leadership/what-is-critical-race-theory-and-why-is-it-under-attack/2021/05",
         "Education Week explains CRT as a legal framework and documents its absence from K-12 curricula.",
         "2021-06-01"
       ),
@@ -3087,16 +3087,16 @@ export const conversationHelpers: ConversationHelper[] = [
       cite(
         "ed_title_i",
         "Title I, Part A Program",
-        "U.S. Department of Education",
-        "https://www.ed.gov/",
+        "U.S. Department of Education (archived)",
+        "https://web.archive.org/web/20240415000000/https://www.ed.gov/",
         "The Department of Education administers Title I funding for schools serving low-income students.",
         "2025-01-01"
       ),
       cite(
         "ed_restructuring_rebut",
         "Department of Education Restructuring",
-        "U.S. Department of Education",
-        "https://www.ed.gov/",
+        "U.S. Department of Education (archived)",
+        "https://web.archive.org/web/20240415000000/https://www.ed.gov/",
         "Ed Department restructuring proposals would eliminate programs serving millions of students.",
         "2025-03-20"
       ),
@@ -5139,8 +5139,8 @@ export const conversationHelpers: ConversationHelper[] = [
       cite(
         "ed_dept_civics",
         "Civics and History Education",
-        "U.S. Department of Education",
-        "https://www.ed.gov/",
+        "U.S. Department of Education (archived)",
+        "https://web.archive.org/web/20240415000000/https://www.ed.gov/",
         "The Education Department publishes civics and history education resources and grants.",
         "2025-01-01"
       ),
@@ -5551,8 +5551,8 @@ export const conversationHelpers: ConversationHelper[] = [
       cite(
         "ed_dept_civics",
         "Civics and History Education",
-        "U.S. Department of Education",
-        "https://www.ed.gov/",
+        "U.S. Department of Education (archived)",
+        "https://web.archive.org/web/20240415000000/https://www.ed.gov/",
         "The Education Department publishes civics education standards and grant programs.",
         "2025-01-01"
       ),
@@ -14272,7 +14272,7 @@ export const conversationHelpers: ConversationHelper[] = [
     stab: "If football needs a national emergency, so does student debt.",
     sources: [
       cite("fr_college_sports", "Urgent National Action To Save College Sports", "Federal Register", "https://www.federalregister.gov/documents/2026/04/09/2026-06961/urgent-national-action-to-save-college-sports", "Executive order frames federal intervention in college sports.", "2026-04-09"),
-      cite("ed_titleix", "Title IX and Sex Discrimination", "U.S. Department of Education", "https://www.ed.gov/laws-and-policy/civil-rights-laws/title-ix-and-sex-discrimination/sex-discrimination-overview-of-law", "Title IX governs sex discrimination in education programs including athletics.", "2025-04-02"),
+      cite("ed_titleix", "Title IX and Sex Discrimination", "U.S. Code via Cornell LII", "https://www.law.cornell.edu/uscode/text/20/1681", "Title IX governs sex discrimination in education programs including athletics.", "2025-04-02"),
       cite("crs_home_reb", "Congressional Research Service", "CRS", "https://crsreports.congress.gov/", "CRS analyzes federal education and athletics-related authorities.", "2025-01-01")
     ],
     difficulty: "easy",

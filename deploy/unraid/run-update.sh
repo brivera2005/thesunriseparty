@@ -69,7 +69,7 @@ refresh_data() {
   # Tracker (Federal Register) — also invokes fetch-legislation at end of script
   log "npm run refresh:tracker"
   npm run refresh:tracker || return 1
-  # Explicit legislation refresh every cycle (API when keyed; curated probe otherwise)
+  // Explicit legislation refresh every cycle (Clerk/LIS member votes; API when keyed)
   log "npm run fetch-legislation"
   npm run fetch-legislation || {
     log "WARN: fetch-legislation failed (fail soft — continuing with curated data)"
@@ -129,6 +129,7 @@ maybe_push_data() {
     lib/data/tracker-auto-events.ts \
     lib/data/distracted-auto.ts \
     lib/data/distracted-with-auto.ts \
+    lib/data/legislation-votes-live.ts \
     public/data/tracker-live.json \
     public/data/legislation-live.json \
     public/data/distracted-live.json \

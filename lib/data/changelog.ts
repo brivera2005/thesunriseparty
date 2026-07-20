@@ -8,6 +8,30 @@
 /** Site iteration history - meta transparency for Project Sunrise builds */
 export const changelog: ChangelogEntry[] = [
   {
+    version: "0.67.0",
+    date: "2026-07-20",
+    title: "Pass 67 - Full disclosure legislation votes",
+    highlights: [
+      "Member-level Yea/Nay/Present/Not Voting on bill detail: expandable by party (Dem blue / GOP red) plus searchable voter list",
+      "Live refresh via GovTrack House CSV + Senate LIS XML every Unraid cycle (no API key required); Congress.gov optional for bill-action discovery",
+      "Sponsor and voter chips show office phone (tel:), email when published, otherwise official Contact form; never invent emails",
+      "Contacts regenerated from unitedstates/congress-legislators with phone, fax, and office address",
+      "SW cache hard-bumped to sunrise-v67-20260720T1500-legislation-votes",
+    ],
+  },
+  {
+    version: "0.66.0",
+    date: "2026-07-20",
+    title: "Pass 66 - Zero broken links",
+    highlights: [
+      "Fixed malformed Wayback archive links missing the calendar wildcard (web/https -> web/*/https) in tracker and distracted auto-feeds; generators now emit durable calendar URLs",
+      "Replaced dead legislator contact paths (Austin Scott, Clyburn, Fine typo hhttps, Sessions, Sewell, Armstrong, Graham, Stabenow) with verified office homepages or Senate directory",
+      "Replaced unreachable ed.gov citation primaries with Cornell LII Title IX (20 USC 1681), Education Week CRT article, and archived ed.gov snapshot",
+      "Hardened soft-404 detection so Next.js embedded notFound templates no longer false-flag live routes like /rebuttal",
+      "SW cache hard-bumped to sunrise-v66-20260720T1505-zero-broken-links",
+    ],
+  },
+  {
     version: "0.65.3",
     date: "2026-07-20",
     title: "Pass 65.3 - Fierce homepage hero purpose",

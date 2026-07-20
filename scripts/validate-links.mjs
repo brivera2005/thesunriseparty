@@ -57,6 +57,36 @@ function getAllUrls() {
 function looksLikeSoft404(html, url) {
   if (!html || html.length < 200) return false;
   const lower = html.slice(0, 8000).toLowerCase();
+
+  // Next.js App Router embeds the notFound UI template in every RSC payload.
+  // Only treat as soft-404 when that copy is the visible document title.
+  const titleMatch = lower.match(/<title>([^<]*)<\/title>/);
+  const title = titleMatch ? titleMatch[1] : "";
+  if (
+    title.includes("404") ||
+    title.includes("page not found") ||
+    title.includes("not found |")
+  ) {
+    return true;
+  }
+
+  // Ignore RSC/flight payloads that include the notFound template as dead code.
+  if (
+    lower.includes("bailout_to_client_side_rendering") ||
+    lower.includes("self.__next_f") ||
+    lower.includes("this page could not be found.\"}")
+  ) {
+    // Still catch real soft-404 shells that are mostly the error page.
+    const visibleStart = lower.slice(0, 1500);
+    if (
+      visibleStart.includes("next-error-h1") &&
+      (title.includes("404") || title.length < 3)
+    ) {
+      return true;
+    }
+    return false;
+  }
+
   const patterns = [
     "page not found",
     "404 error",
@@ -71,7 +101,6 @@ function looksLikeSoft404(html, url) {
     "hmmm, we couldn't find",
     "the requested url was not found",
     "error 404",
-    "not found |",
     "404 not found",
   ];
   if (patterns.some((p) => lower.includes(p))) return true;

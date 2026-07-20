@@ -13,7 +13,7 @@ Live site: https://thesunriseparty.pages.dev · Repo: https://github.com/brivera
 1. `git pull` / hard reset to `origin/master` (discards dirty generated `public/` artifacts so checkout never blocks)
 2. `npm ci --include=dev` (needed because the image sets `NODE_ENV=production`)
 3. `npm run refresh:tracker` — Federal Register presidential docs → `lib/data/tracker-auto-events.ts` + `public/data/tracker-live.json`
-4. `npm run fetch-legislation` — **every cycle**: Congress.gov when `CONGRESS_API_KEY` is set; otherwise Senate active-leg probe + curated audit stamp → `public/data/legislation-live.json`
+4. `npm run fetch-legislation` — **every cycle**: member-level roll calls from House Clerk EVS + Senate LIS (no key required); Congress.gov bill list + action roll discovery when `CONGRESS_API_KEY` is set → `public/data/legislation-live.json` + `lib/data/legislation-votes-live.ts`
 5. `npm run refresh:distracted` — **every cycle**: FR / headline / Congress signals → `lib/data/distracted-auto.ts` + `public/data/distracted-live.json` (`DIST-AUTO-*` stubs)
 6. `npm run build` (static export → `out/`)
 7. `npx wrangler pages deploy out --project-name=thesunriseparty --branch=main`
@@ -31,7 +31,7 @@ Failures are logged; the container **does not crash-loop** — it sleeps and ret
 | --- | --- | --- |
 | Tracker stubs (`EVT-AUTO-*`) | Federal Register API | Merged into the live tracker at build time; editorial narrative still curated in `timeline-events.ts` |
 | `public/data/tracker-live.json` | Same fetch | Audit trail of docs seen / newly added |
-| `public/data/legislation-live.json` | Congress.gov and/or Senate probe | Always written each cycle; API skeleton when keyed; curated UI still from `lib/data/legislation.ts` until merged |
+| `public/data/legislation-live.json` + `lib/data/legislation-votes-live.ts` | House Clerk + Senate LIS (+ Congress.gov when keyed) | Member Yea/Nay/Present merged into curated UI at build; commentary stays in `legislation.ts` |
 | Distracted stubs (`DIST-AUTO-*`) | Federal Register + NPR Politics RSS (+ Congress.gov when keyed) | Written to `lib/data/distracted-auto.ts` / `distracted-live.json`; merged in `lib/data/distractions.ts` — curated narrative stays there |
 | Live Pages site | Wrangler | Redeployed every successful cycle |
 
@@ -73,7 +73,7 @@ nano .env
 | Variable | Purpose |
 | --- | --- |
 | `UPDATE_HOURS` | Hours between runs (default `1`) |
-| `CONGRESS_API_KEY` | Refresh legislation live JSON + distracted Congress stubs |
+| `CONGRESS_API_KEY` | Optional: Congress.gov bill list + roll-call discovery from bill actions. Member votes still refresh from Clerk/LIS without a key. |
 | `GITHUB_TOKEN` | Authenticated clone / optional data push |
 
 **Optional**

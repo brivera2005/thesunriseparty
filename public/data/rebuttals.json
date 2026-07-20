@@ -1,7 +1,7 @@
 {
   "meta": {
     "site": "https://thesunriseparty.pages.dev",
-    "generated": "2026-07-20T14:48:01.873Z",
+    "generated": "2026-07-20T15:07:00.626Z",
     "count": 756,
     "license": "CC-BY-4.0 - cite Project Sunrise (thesunriseparty.pages.dev)"
   },
@@ -2069,7 +2069,7 @@
           "id": "edweek_crt",
           "title": "What Is Critical Race Theory?",
           "publisher": "Education Week",
-          "url": "https://www.ed.gov/laws-and-policy/civil-rights-laws/title-ix-and-sex-discrimination/sex-discrimination-overview-of-law",
+          "url": "https://www.edweek.org/leadership/what-is-critical-race-theory-and-why-is-it-under-attack/2021/05",
           "date": "2021-06-01"
         },
         {
@@ -3455,15 +3455,15 @@
         {
           "id": "ed_title_i",
           "title": "Title I, Part A Program",
-          "publisher": "U.S. Department of Education",
-          "url": "https://www.ed.gov/",
+          "publisher": "U.S. Department of Education (archived)",
+          "url": "https://web.archive.org/web/20240415000000/https://www.ed.gov/",
           "date": "2025-01-01"
         },
         {
           "id": "ed_restructuring_rebut",
           "title": "Department of Education Restructuring",
-          "publisher": "U.S. Department of Education",
-          "url": "https://www.ed.gov/",
+          "publisher": "U.S. Department of Education (archived)",
+          "url": "https://web.archive.org/web/20240415000000/https://www.ed.gov/",
           "date": "2025-03-20"
         }
       ]
@@ -5782,8 +5782,8 @@
         {
           "id": "ed_dept_civics",
           "title": "Civics and History Education",
-          "publisher": "U.S. Department of Education",
-          "url": "https://www.ed.gov/",
+          "publisher": "U.S. Department of Education (archived)",
+          "url": "https://web.archive.org/web/20240415000000/https://www.ed.gov/",
           "date": "2025-01-01"
         }
       ]
@@ -6255,8 +6255,8 @@
         {
           "id": "ed_dept_civics",
           "title": "Civics and History Education",
-          "publisher": "U.S. Department of Education",
-          "url": "https://www.ed.gov/",
+          "publisher": "U.S. Department of Education (archived)",
+          "url": "https://web.archive.org/web/20240415000000/https://www.ed.gov/",
           "date": "2025-01-01"
         },
         {
@@ -15648,8 +15648,8 @@
         {
           "id": "ed_titleix",
           "title": "Title IX and Sex Discrimination",
-          "publisher": "U.S. Department of Education",
-          "url": "https://www.ed.gov/laws-and-policy/civil-rights-laws/title-ix-and-sex-discrimination/sex-discrimination-overview-of-law",
+          "publisher": "U.S. Code via Cornell LII",
+          "url": "https://www.law.cornell.edu/uscode/text/20/1681",
           "date": "2025-04-02"
         },
         {

@@ -87,6 +87,17 @@ export function VoteBars({
           <span className="size-2 rounded-full" style={{ backgroundColor: partyColor("I") }} />
           Ind
         </span>
+        {vote.rollCallUrl ? (
+          <a
+            href={vote.rollCallUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="ml-auto font-medium text-[color:var(--section-legislation)] underline-offset-2 hover:underline"
+          >
+            Official roll call
+            {vote.rollCallNumber != null ? ` #${vote.rollCallNumber}` : ""}
+          </a>
+        ) : null}
       </div>
     </div>
   );

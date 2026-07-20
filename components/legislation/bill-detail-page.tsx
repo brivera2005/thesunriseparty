@@ -17,6 +17,7 @@ import {
 import { LegislatorName } from "@/components/legislation/legislator-name";
 import { formatDateUS } from "@/lib/format-date";
 import { VoteBars } from "@/components/legislation/vote-bars";
+import { MemberVoteList } from "@/components/legislation/member-vote-list";
 import { CitationList } from "@/components/citation";
 import { PageShell } from "@/components/layout/page-shell";
 import { Badge } from "@/components/ui/badge";
@@ -95,11 +96,17 @@ export function BillDetailPage({ bill }: { bill: LegislationBill }) {
               {bill.title}
             </h1>
             <div className="mt-4 flex flex-wrap items-center gap-3">
-              <LegislatorName
-                name={bill.sponsor.name}
-                party={bill.sponsor.party}
-                state={bill.sponsor.state}
-              />
+              <div>
+                <p className="mb-1 text-[10px] font-semibold tracking-wide text-muted-foreground uppercase">
+                  Sponsor
+                </p>
+                <LegislatorName
+                  name={bill.sponsor.name}
+                  party={bill.sponsor.party}
+                  state={bill.sponsor.state}
+                  bioguideId={bill.sponsor.bioguideId}
+                />
+              </div>
               {bill.cosponsorsSummary && (
                 <span className="text-xs text-muted-foreground">
                   Cosponsors ·{" "}
@@ -117,6 +124,26 @@ export function BillDetailPage({ bill }: { bill: LegislationBill }) {
                 </span>
               )}
             </div>
+            {bill.cosponsors && bill.cosponsors.length > 0 ? (
+              <div className="mt-4">
+                <p className="mb-2 text-[10px] font-semibold tracking-wide text-muted-foreground uppercase">
+                  Cosponsors ({bill.cosponsors.length})
+                </p>
+                <ul className="grid gap-2 sm:grid-cols-2">
+                  {bill.cosponsors.map((c) => (
+                    <li key={`${c.name}-${c.state}`}>
+                      <LegislatorName
+                        name={c.name}
+                        party={c.party}
+                        state={c.state}
+                        bioguideId={c.bioguideId}
+                        variant="vote"
+                      />
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
           </div>
 
           <div className="mb-8 flex flex-wrap gap-2">
@@ -189,10 +216,11 @@ export function BillDetailPage({ bill }: { bill: LegislationBill }) {
                 <div className="space-y-4">
                   {bill.votes.map((vote, i) => (
                     <div
-                      key={`${vote.chamber}-${vote.date}-${i}`}
-                      className="rounded-xl border border-border p-4"
+                      key={`${vote.chamber}-${vote.date}-${vote.rollCallNumber ?? i}`}
+                      className="space-y-3 rounded-xl border border-border p-4"
                     >
                       <VoteBars vote={vote} />
+                      <MemberVoteList vote={vote} />
                     </div>
                   ))}
                 </div>

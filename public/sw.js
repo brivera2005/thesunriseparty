@@ -1,8 +1,8 @@
-/* Project Sunrise service worker - Pass 65.3 hard cache bust.
- * Homepage hero: democracy fight purpose copy.
+/* Project Sunrise service worker - Pass 67 hard cache bust.
+ * Legislation: full member roll calls + office contacts.
  */
 
-const CACHE = "sunrise-v65.3-20260720T1455-hero-fight";
+const CACHE = "sunrise-v67-20260720T1500-legislation-votes";
 
 const PRECACHE = [
 

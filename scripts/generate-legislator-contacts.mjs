@@ -36,6 +36,8 @@ function parseEntry(block) {
   const url = lastTerm.match(/\n    url: (\S+)/)?.[1] ?? null;
   const contact_form = lastTerm.match(/\n    contact_form: (\S+)/)?.[1] ?? null;
   const phone = lastTerm.match(/\n    phone: (.+)/)?.[1]?.trim() ?? null;
+  const fax = lastTerm.match(/\n    fax: (.+)/)?.[1]?.trim() ?? null;
+  const office = lastTerm.match(/\n    office: (.+)/)?.[1]?.trim() ?? null;
   const party = partyRaw?.startsWith("Democrat")
     ? "D"
     : partyRaw?.startsWith("Republican")
@@ -56,6 +58,8 @@ function parseEntry(block) {
     url,
     contact_form,
     phone,
+    fax,
+    office,
   };
 }
 
@@ -169,6 +173,8 @@ function toRow(displayName, party, state, leg) {
     party: party || leg.party,
     state,
     phone: leg.phone || null,
+    fax: leg.fax || null,
+    office: leg.office || null,
     website: https(leg.url),
     contactUrl: contactUrl(leg),
     email: null,
@@ -244,6 +250,8 @@ for (const m of manualContacts) {
     party: m.party,
     state: m.state,
     phone: m.phone,
+    fax: m.fax || null,
+    office: m.office || null,
     website: m.website,
     contactUrl: m.contactUrl,
     email: null,
@@ -277,6 +285,8 @@ for (const m of manualContacts) {
     party: m.party,
     state: m.state,
     phone: m.phone,
+    fax: m.fax || null,
+    office: m.office || null,
     website: m.website,
     contactUrl: m.contactUrl,
     email: null,
@@ -287,8 +297,9 @@ const out = `/**
  * Official legislator contact map from unitedstates/congress-legislators
  * (legislators-current.yaml). Emails are NOT invented: most members only
  * publish web contact forms. Use contactUrl (mailto only when email is set).
+ * Includes phone, fax, and office address when published upstream.
  * Source: https://github.com/unitedstates/congress-legislators
- * Generated: Pass 43
+ * Generated: Pass 66
  */
 
 export interface LegislatorContact {
@@ -300,6 +311,9 @@ export interface LegislatorContact {
   party: "D" | "R" | "I" | null;
   state: string;
   phone: string | null;
+  fax: string | null;
+  /** Capitol / district office line from congress-legislators */
+  office: string | null;
   website: string | null;
   /** Official public contact form / email page */
   contactUrl: string | null;
@@ -313,6 +327,15 @@ export const allLegislatorContacts: LegislatorContact[] = ${JSON.stringify(allRo
 
 function normName(s: string): string {
   return s.toLowerCase().replace(/[^a-z0-9 ]/g, " ").replace(/\\s+/g, " ").trim();
+}
+
+export function lookupLegislatorByBioguide(
+  bioguideId: string | null | undefined
+): LegislatorContact | null {
+  if (!bioguideId) return null;
+  return (
+    allLegislatorContacts.find((l) => l.bioguide === bioguideId) ?? null
+  );
 }
 
 export function lookupLegislatorContact(
@@ -330,7 +353,8 @@ export function lookupLegislatorContact(
         l.state === state &&
         (normName(l.officialName) === n ||
           normName(l.displayName) === n ||
-          normName(l.officialName).split(" ").pop() === last)
+          normName(l.officialName).split(" ").pop() === last ||
+          normName(l.displayName).split(" ").pop() === last)
     );
     if (byLast) return byLast;
   }

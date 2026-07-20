@@ -90,7 +90,7 @@ Open [http://localhost:3000](http://localhost:3000).
 | `npm run start` | Serve production build (after build) |
 | `npm run lint` | ESLint |
 | `npm run refresh:tracker` | Pull Federal Register docs into auto tracker events (+ legislation if keyed) |
-| `npm run fetch-legislation` | Congress.gov → `public/data/legislation-live.json` (needs `CONGRESS_API_KEY`) |
+| `npm run fetch-legislation` | Member roll calls (GovTrack House + Senate LIS) → `legislation-votes-live.ts` + `legislation-live.json`; optional `CONGRESS_API_KEY` for Congress.gov discovery |
 | `npm run deploy:pages` | Deploy `out/` to Cloudflare Pages (`thesunriseparty`) |
 | `npm run validate-links` | Check all citation URLs in `lib/data/` |
 | `npm run generate-feed` | Regenerate RSS/iCal (runs in prebuild) |

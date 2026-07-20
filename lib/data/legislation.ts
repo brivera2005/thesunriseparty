@@ -6,16 +6,18 @@ import type {
   PartyCode,
 } from "@/lib/types";
 import { cite } from "@/lib/data/conversation-citations";
+import { legislationVotesLive } from "@/lib/data/legislation-votes-live";
 
 /** Hybrid live-tracker metadata (refresh via `npm run fetch-legislation`). */
 export const legislationMeta = {
   congress: 119,
   congressLabel: "119th Congress",
   session: "2nd Session",
-  lastUpdated: "2026-07-17",
-  dataSource: "curated" as "curated" | "congress-api",
+  lastUpdated: "2026-07-20",
+  dataSource: "curated+clerk+lis" as "curated" | "congress-api" | "curated+clerk+lis",
   refreshHint:
-    "Set CONGRESS_API_KEY and run `npm run fetch-legislation` before build to refresh from api.congress.gov. Without a key, the Unraid updater still probes Senate active-leg and redeploys curated data each cycle.",
+    "Hourly Unraid updater refreshes member roll calls from House Clerk EVS + Senate LIS (no API key required). Set CONGRESS_API_KEY for Congress.gov bill-action roll discovery. Narrative stays in lib/data/legislation.ts.",
+  votesLiveFetchedAt: legislationVotesLive.fetchedAt,
 };
 
 const senateActive = cite(
@@ -80,7 +82,7 @@ function bill(input: BillInput): LegislationBill {
 }
 
 /** Active + recently major 119th Congress bills for the live legislation tracker. */
-export const legislationBills: LegislationBill[] = [
+const curatedLegislationBills: LegislationBill[] = [
   bill({
     id: "hr-1",
     chamber: "both",
@@ -152,7 +154,7 @@ export const legislationBills: LegislationBill[] = [
     sponsor: { name: "Mike Collins", party: "R", state: "GA" },
     cosponsorsSummary: { D: 4, R: 140, I: 0 },
     votes: [
-      vote("house", "2025-01-22", "On Passage", partyVote(48, 164, 217, 0), 0, 4),
+      vote("house", "2025-01-22", "On Passage (S. 5 companion track)", partyVote(48, 164, 217, 0), 0, 4),
       vote("senate", "2025-01-20", "On Passage of the Bill (S. 5 companion track)", partyVote(12, 35, 51, 0), 0, 2),
     ],
     summary:
@@ -1458,6 +1460,65 @@ export const legislationBills: LegislationBill[] = [
     congressGovUrl: cgov("senate-bill", 3705),
   }),
 ];
+
+function mergeLiveVotes(bill: LegislationBill): LegislationBill {
+  const liveVotes = legislationVotesLive.byBill[bill.id];
+  if (!liveVotes?.length) return bill;
+  if (!bill.votes?.length) {
+    return { ...bill, votes: liveVotes };
+  }
+
+  const merged = bill.votes.map((curated) => {
+    const live =
+      liveVotes.find(
+        (v) =>
+          v.chamber === curated.chamber &&
+          v.date === curated.date &&
+          (v.members?.length ?? 0) > 0
+      ) ||
+      liveVotes.find(
+        (v) =>
+          v.chamber === curated.chamber && (v.members?.length ?? 0) > 0
+      );
+    if (!live) return curated;
+    return {
+      ...curated,
+      // Prefer live tallies when members present (official roll call)
+      yeas: live.yeas || curated.yeas,
+      nays: live.nays || curated.nays,
+      present: live.present ?? curated.present,
+      notVoting: live.notVoting ?? curated.notVoting,
+      byParty: live.byParty ?? curated.byParty,
+      question: live.question || curated.question,
+      date: live.date || curated.date,
+      rollCallNumber: live.rollCallNumber ?? curated.rollCallNumber,
+      session: live.session ?? curated.session,
+      year: live.year ?? curated.year,
+      rollCallUrl: live.rollCallUrl ?? curated.rollCallUrl,
+      members: live.members,
+    };
+  });
+
+  // Append any live votes not represented in curated (new floor votes)
+  for (const live of liveVotes) {
+    if (!(live.members?.length ?? 0)) continue;
+    const exists = merged.some(
+      (v) =>
+        v.chamber === live.chamber &&
+        v.date === live.date &&
+        (v.rollCallNumber
+          ? v.rollCallNumber === live.rollCallNumber
+          : true)
+    );
+    if (!exists) merged.push(live);
+  }
+
+  return { ...bill, votes: merged };
+}
+
+/** Curated narrative + live member roll calls from House Clerk / Senate LIS. */
+export const legislationBills: LegislationBill[] =
+  curatedLegislationBills.map(mergeLiveVotes);
 
 export const legislationTopics = Array.from(
   new Set(legislationBills.flatMap((b) => b.topics))

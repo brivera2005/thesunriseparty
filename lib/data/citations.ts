@@ -66,10 +66,10 @@ export const citations: Record<string, CitationSource> = {
   ed_dept_titleix: {
     id: "ed_dept_titleix",
     title: "Title IX Regulations: Overview of the Law",
-    publisher: "U.S. Department of Education",
-    url: "https://www.ed.gov/laws-and-policy/civil-rights-laws/title-ix-and-sex-discrimination/sex-discrimination-overview-of-law",
+    publisher: "U.S. Code via Cornell LII",
+    url: "https://www.law.cornell.edu/uscode/text/20/1681",
     waybackUrl: wayback(
-      "https://www.ed.gov/laws-and-policy/civil-rights-laws/title-ix-and-sex-discrimination/sex-discrimination-overview-of-law"
+      "https://www.law.cornell.edu/uscode/text/20/1681"
     ),
     excerpt:
       "The Department of Education issued final Title IX regulations in April 2024; subsequent court orders vacated the 2024 rule, restoring the 2020 regulations for OCR enforcement.",
@@ -1159,10 +1159,10 @@ export const citations: Record<string, CitationSource> = {
   ed_title_ix_sports_rule: {
     id: "ed_title_ix_sports_rule",
     title: "Title IX and Sex Discrimination",
-    publisher: "U.S. Department of Education",
-    url: "https://www.ed.gov/laws-and-policy/civil-rights-laws/title-ix-and-sex-discrimination/sex-discrimination-overview-of-law",
+    publisher: "U.S. Code via Cornell LII",
+    url: "https://www.law.cornell.edu/uscode/text/20/1681",
     waybackUrl: wayback(
-      "https://www.ed.gov/laws-and-policy/civil-rights-laws/title-ix-and-sex-discrimination/sex-discrimination-overview-of-law"
+      "https://www.law.cornell.edu/uscode/text/20/1681"
     ),
     excerpt:
       "Education Department advanced Title IX sports policies excluding transgender student-athletes - reversing inclusive participation rules adopted under the prior administration.",

@@ -233,6 +233,18 @@ export interface PartyVoteBreakdown {
   nay: number;
 }
 
+export type MemberVoteCast = "Yea" | "Nay" | "Present" | "Not Voting";
+
+/** Single member on a roll call (House Clerk / Senate LIS / Congress.gov). */
+export interface BillVoteMember {
+  bioguideId: string | null;
+  name: string;
+  party: PartyCode;
+  state: string;
+  vote: MemberVoteCast;
+  chamber: "house" | "senate";
+}
+
 export interface BillVote {
   chamber: "house" | "senate";
   date: string;
@@ -246,12 +258,21 @@ export interface BillVote {
     R: PartyVoteBreakdown;
     I: PartyVoteBreakdown;
   };
+  /** Official roll-call number when known */
+  rollCallNumber?: number;
+  session?: number;
+  year?: number;
+  /** Clerk / Senate / Congress.gov receipt URL */
+  rollCallUrl?: string;
+  /** Member-level Yea/Nay/Present/Not Voting when live fetch succeeded */
+  members?: BillVoteMember[];
 }
 
 export interface BillSponsor {
   name: string;
   party: PartyCode;
   state: string;
+  bioguideId?: string | null;
 }
 
 export interface LegislationBill {
@@ -263,6 +284,8 @@ export interface LegislationBill {
   lastAction: string;
   lastActionDate: string;
   sponsor: BillSponsor;
+  /** Named cosponsors when disclosed (not just party counts) */
+  cosponsors?: BillSponsor[];
   cosponsorsSummary?: { D: number; R: number; I: number };
   votes?: BillVote[];
   summary: string;

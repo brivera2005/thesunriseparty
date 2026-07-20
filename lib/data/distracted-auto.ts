@@ -28,7 +28,7 @@ export const autoDistractedEntries: DistractionEntry[] = [
         "title": "Action by the United States in the Investigation Under Section 301 of the Trade Act of 1974 of Brazil's Acts, Policies, and Practices Related to Digital Trade and Electronic Payment Services; Unfair, Preferential Tariffs; Anti-Corruption Enforcement; Intellectual Property Protection; Ethanol Market Access; and Illegal Deforestation",
         "publisher": "Federal Register",
         "url": "https://www.federalregister.gov/documents/2026/07/20/2026-14654/action-by-the-united-states-in-the-investigation-under-section-301-of-the-trade-act-of-1974-of",
-        "waybackUrl": "https://web.archive.org/web/https://www.federalregister.gov/documents/2026/07/20/2026-14654/action-by-the-united-states-in-the-investigation-under-section-301-of-the-trade-act-of-1974-of",
+        "waybackUrl": "https://web.archive.org/web/*/https://www.federalregister.gov/documents/2026/07/20/2026-14654/action-by-the-united-states-in-the-investigation-under-section-301-of-the-trade-act-of-1974-of",
         "excerpt": "Federal Register presidential document - auto-stub pending editorial pass.",
         "date": "2026-07-20"
       }
@@ -53,7 +53,7 @@ export const autoDistractedEntries: DistractionEntry[] = [
         "title": "Continuation of the National Emergency With Respect to Significant Transnational Criminal Organizations",
         "publisher": "Federal Register",
         "url": "https://www.federalregister.gov/documents/2026/07/16/2026-14454/continuation-of-the-national-emergency-with-respect-to-significant-transnational-criminal",
-        "waybackUrl": "https://web.archive.org/web/https://www.federalregister.gov/documents/2026/07/16/2026-14454/continuation-of-the-national-emergency-with-respect-to-significant-transnational-criminal",
+        "waybackUrl": "https://web.archive.org/web/*/https://www.federalregister.gov/documents/2026/07/16/2026-14454/continuation-of-the-national-emergency-with-respect-to-significant-transnational-criminal",
         "excerpt": "Federal Register presidential document - auto-stub pending editorial pass.",
         "date": "2026-07-16"
       }
@@ -78,7 +78,7 @@ export const autoDistractedEntries: DistractionEntry[] = [
         "title": "Continuation of the National Emergency With Respect to Hostage-Taking and the Wrongful Detention of United States Nationals Abroad",
         "publisher": "Federal Register",
         "url": "https://www.federalregister.gov/documents/2026/07/16/2026-14453/continuation-of-the-national-emergency-with-respect-to-hostage-taking-and-the-wrongful-detention-of",
-        "waybackUrl": "https://web.archive.org/web/https://www.federalregister.gov/documents/2026/07/16/2026-14453/continuation-of-the-national-emergency-with-respect-to-hostage-taking-and-the-wrongful-detention-of",
+        "waybackUrl": "https://web.archive.org/web/*/https://www.federalregister.gov/documents/2026/07/16/2026-14453/continuation-of-the-national-emergency-with-respect-to-hostage-taking-and-the-wrongful-detention-of",
         "excerpt": "Federal Register presidential document - auto-stub pending editorial pass.",
         "date": "2026-07-16"
       }
@@ -103,7 +103,7 @@ export const autoDistractedEntries: DistractionEntry[] = [
         "title": "Presidential Determination on Assistance to Venezuela Consistent With the Trafficking Victims Protection Act of 2000",
         "publisher": "Federal Register",
         "url": "https://www.federalregister.gov/documents/2026/07/06/2026-13631/presidential-determination-on-assistance-to-venezuela-consistent-with-the-trafficking-victims",
-        "waybackUrl": "https://web.archive.org/web/https://www.federalregister.gov/documents/2026/07/06/2026-13631/presidential-determination-on-assistance-to-venezuela-consistent-with-the-trafficking-victims",
+        "waybackUrl": "https://web.archive.org/web/*/https://www.federalregister.gov/documents/2026/07/06/2026-13631/presidential-determination-on-assistance-to-venezuela-consistent-with-the-trafficking-victims",
         "excerpt": "Federal Register presidential document - auto-stub pending editorial pass.",
         "date": "2026-07-06"
       }
@@ -128,7 +128,7 @@ export const autoDistractedEntries: DistractionEntry[] = [
         "title": "Declaration of Emergency and Authorization for Temporary Duty-Free Importation of Phosphate Fertilizer From Morocco",
         "publisher": "Federal Register",
         "url": "https://www.federalregister.gov/documents/2026/07/02/2026-13588/declaration-of-emergency-and-authorization-for-temporary-duty-free-importation-of-phosphate",
-        "waybackUrl": "https://web.archive.org/web/https://www.federalregister.gov/documents/2026/07/02/2026-13588/declaration-of-emergency-and-authorization-for-temporary-duty-free-importation-of-phosphate",
+        "waybackUrl": "https://web.archive.org/web/*/https://www.federalregister.gov/documents/2026/07/02/2026-13588/declaration-of-emergency-and-authorization-for-temporary-duty-free-importation-of-phosphate",
         "excerpt": "Federal Register presidential document - auto-stub pending editorial pass.",
         "date": "2026-07-02"
       }
@@ -153,7 +153,7 @@ export const autoDistractedEntries: DistractionEntry[] = [
         "title": "Presidential Determination Concerning the Department of the Air Force's Rehabilitation and Revitalization of the Joint Base Andrews Golf Course",
         "publisher": "Federal Register",
         "url": "https://www.federalregister.gov/documents/2026/07/01/2026-13408/presidential-determination-concerning-the-department-of-the-air-forces-rehabilitation-and",
-        "waybackUrl": "https://web.archive.org/web/https://www.federalregister.gov/documents/2026/07/01/2026-13408/presidential-determination-concerning-the-department-of-the-air-forces-rehabilitation-and",
+        "waybackUrl": "https://web.archive.org/web/*/https://www.federalregister.gov/documents/2026/07/01/2026-13408/presidential-determination-concerning-the-department-of-the-air-forces-rehabilitation-and",
         "excerpt": "Federal Register presidential document - auto-stub pending editorial pass.",
         "date": "2026-07-01"
       }

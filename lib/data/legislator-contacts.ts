@@ -2,8 +2,9 @@
  * Official legislator contact map from unitedstates/congress-legislators
  * (legislators-current.yaml). Emails are NOT invented: most members only
  * publish web contact forms. Use contactUrl (mailto only when email is set).
+ * Includes phone, fax, and office address when published upstream.
  * Source: https://github.com/unitedstates/congress-legislators
- * Generated: Pass 43
+ * Generated: Pass 66
  */
 
 export interface LegislatorContact {
@@ -15,6 +16,9 @@ export interface LegislatorContact {
   party: "D" | "R" | "I" | null;
   state: string;
   phone: string | null;
+  fax: string | null;
+  /** Capitol / district office line from congress-legislators */
+  office: string | null;
   website: string | null;
   /** Official public contact form / email page */
   contactUrl: string | null;
@@ -32,6 +36,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "TX",
     "phone": "202-225-4005",
+    "fax": null,
+    "office": "1111 Longworth House Office Building",
     "website": "https://arrington.house.gov",
     "contactUrl": "https://arrington.house.gov/contact",
     "email": null
@@ -45,6 +51,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "TX",
     "phone": "202-225-4005",
+    "fax": null,
+    "office": "1111 Longworth House Office Building",
     "website": "https://arrington.house.gov",
     "contactUrl": "https://arrington.house.gov/contact",
     "email": null
@@ -58,6 +66,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "TX",
     "phone": "202-225-4005",
+    "fax": null,
+    "office": "1111 Longworth House Office Building",
     "website": "https://arrington.house.gov",
     "contactUrl": "https://arrington.house.gov/contact",
     "email": null
@@ -71,6 +81,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "TX",
     "phone": "202-225-4005",
+    "fax": null,
+    "office": "1111 Longworth House Office Building",
     "website": "https://arrington.house.gov",
     "contactUrl": "https://arrington.house.gov/contact",
     "email": null
@@ -84,6 +96,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "GA",
     "phone": "202-225-4101",
+    "fax": null,
+    "office": "2351 Rayburn House Office Building",
     "website": "https://collins.house.gov",
     "contactUrl": "https://collins.house.gov/contact",
     "email": null
@@ -97,6 +111,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "GA",
     "phone": "202-225-4101",
+    "fax": null,
+    "office": "2351 Rayburn House Office Building",
     "website": "https://collins.house.gov",
     "contactUrl": "https://collins.house.gov/contact",
     "email": null
@@ -110,6 +126,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "AL",
     "phone": "202-224-5744",
+    "fax": null,
+    "office": "416 Russell Senate Office Building",
     "website": "https://www.britt.senate.gov",
     "contactUrl": "https://www.britt.senate.gov/contact/",
     "email": null
@@ -123,6 +141,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "AL",
     "phone": "202-224-5744",
+    "fax": null,
+    "office": "416 Russell Senate Office Building",
     "website": "https://www.britt.senate.gov",
     "contactUrl": "https://www.britt.senate.gov/contact/",
     "email": null
@@ -136,6 +156,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "AL",
     "phone": "202-224-5744",
+    "fax": null,
+    "office": "416 Russell Senate Office Building",
     "website": "https://www.britt.senate.gov",
     "contactUrl": "https://www.britt.senate.gov/contact/",
     "email": null
@@ -149,6 +171,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "AL",
     "phone": "202-224-5744",
+    "fax": null,
+    "office": "416 Russell Senate Office Building",
     "website": "https://www.britt.senate.gov",
     "contactUrl": "https://www.britt.senate.gov/contact/",
     "email": null
@@ -162,6 +186,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "KY",
     "phone": "202-225-3465",
+    "fax": null,
+    "office": "2371 Rayburn House Office Building",
     "website": "https://massie.house.gov",
     "contactUrl": "https://massie.house.gov/contact",
     "email": null
@@ -175,6 +201,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "KY",
     "phone": "202-225-3465",
+    "fax": null,
+    "office": "2371 Rayburn House Office Building",
     "website": "https://massie.house.gov",
     "contactUrl": "https://massie.house.gov/contact",
     "email": null
@@ -188,6 +216,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "OK",
     "phone": "202-225-6165",
+    "fax": null,
+    "office": "2207 Rayburn House Office Building",
     "website": "https://cole.house.gov",
     "contactUrl": "https://cole.house.gov/contact",
     "email": null
@@ -201,6 +231,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "OK",
     "phone": "202-225-6165",
+    "fax": null,
+    "office": "2207 Rayburn House Office Building",
     "website": "https://cole.house.gov",
     "contactUrl": "https://cole.house.gov/contact",
     "email": null
@@ -214,6 +246,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "NV",
     "phone": "202-225-6155",
+    "fax": null,
+    "office": "104 Cannon House Office Building",
     "website": "https://amodei.house.gov",
     "contactUrl": "https://amodei.house.gov/contact",
     "email": null
@@ -227,6 +261,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "NV",
     "phone": "202-225-6155",
+    "fax": null,
+    "office": "104 Cannon House Office Building",
     "website": "https://amodei.house.gov",
     "contactUrl": "https://amodei.house.gov/contact",
     "email": null
@@ -240,6 +276,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "NV",
     "phone": "202-225-6155",
+    "fax": null,
+    "office": "104 Cannon House Office Building",
     "website": "https://amodei.house.gov",
     "contactUrl": "https://amodei.house.gov/contact",
     "email": null
@@ -253,6 +291,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "NV",
     "phone": "202-225-6155",
+    "fax": null,
+    "office": "104 Cannon House Office Building",
     "website": "https://amodei.house.gov",
     "contactUrl": "https://amodei.house.gov/contact",
     "email": null
@@ -266,6 +306,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "KY",
     "phone": "202-225-4601",
+    "fax": null,
+    "office": "2406 Rayburn House Office Building",
     "website": "https://halrogers.house.gov",
     "contactUrl": "https://halrogers.house.gov/contact",
     "email": null
@@ -279,6 +321,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "KY",
     "phone": "202-225-4601",
+    "fax": null,
+    "office": "2406 Rayburn House Office Building",
     "website": "https://halrogers.house.gov",
     "contactUrl": "https://halrogers.house.gov/contact",
     "email": null
@@ -292,6 +336,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "KY",
     "phone": "202-225-4601",
+    "fax": null,
+    "office": "2406 Rayburn House Office Building",
     "website": "https://halrogers.house.gov",
     "contactUrl": "https://halrogers.house.gov/contact",
     "email": null
@@ -305,6 +351,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "KY",
     "phone": "202-225-4601",
+    "fax": null,
+    "office": "2406 Rayburn House Office Building",
     "website": "https://halrogers.house.gov",
     "contactUrl": "https://halrogers.house.gov/contact",
     "email": null
@@ -318,6 +366,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "MS",
     "phone": "202-224-6253",
+    "fax": null,
+    "office": "425 Russell Senate Office Building",
     "website": "https://www.wicker.senate.gov",
     "contactUrl": "https://www.wicker.senate.gov/public/index.cfm/contact",
     "email": null
@@ -331,6 +381,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "MS",
     "phone": "202-224-6253",
+    "fax": null,
+    "office": "425 Russell Senate Office Building",
     "website": "https://www.wicker.senate.gov",
     "contactUrl": "https://www.wicker.senate.gov/public/index.cfm/contact",
     "email": null
@@ -344,6 +396,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "MS",
     "phone": "202-224-6253",
+    "fax": null,
+    "office": "425 Russell Senate Office Building",
     "website": "https://www.wicker.senate.gov",
     "contactUrl": "https://www.wicker.senate.gov/public/index.cfm/contact",
     "email": null
@@ -357,6 +411,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "MS",
     "phone": "202-224-6253",
+    "fax": null,
+    "office": "425 Russell Senate Office Building",
     "website": "https://www.wicker.senate.gov",
     "contactUrl": "https://www.wicker.senate.gov/public/index.cfm/contact",
     "email": null
@@ -370,6 +426,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "TN",
     "phone": "202-224-4944",
+    "fax": null,
+    "office": "251 Russell Senate Office Building",
     "website": "https://www.hagerty.senate.gov",
     "contactUrl": "https://www.hagerty.senate.gov/email-me/",
     "email": null
@@ -383,6 +441,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "TN",
     "phone": "202-224-4944",
+    "fax": null,
+    "office": "251 Russell Senate Office Building",
     "website": "https://www.hagerty.senate.gov",
     "contactUrl": "https://www.hagerty.senate.gov/email-me/",
     "email": null
@@ -396,6 +456,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "AR",
     "phone": "202-224-2353",
+    "fax": null,
+    "office": "326 Russell Senate Office Building",
     "website": "https://www.cotton.senate.gov",
     "contactUrl": "https://www.cotton.senate.gov/contact/contact-tom",
     "email": null
@@ -409,6 +471,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "AR",
     "phone": "202-224-2353",
+    "fax": null,
+    "office": "326 Russell Senate Office Building",
     "website": "https://www.cotton.senate.gov",
     "contactUrl": "https://www.cotton.senate.gov/contact/contact-tom",
     "email": null
@@ -422,6 +486,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "AL",
     "phone": "202-225-3261",
+    "fax": null,
+    "office": "2469 Rayburn House Office Building",
     "website": "https://mikerogers.house.gov",
     "contactUrl": "https://mikerogers.house.gov/contact",
     "email": null
@@ -435,6 +501,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "AL",
     "phone": "202-225-3261",
+    "fax": null,
+    "office": "2469 Rayburn House Office Building",
     "website": "https://mikerogers.house.gov",
     "contactUrl": "https://mikerogers.house.gov/contact",
     "email": null
@@ -448,6 +516,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "D",
     "state": "VA",
     "phone": "202-224-2023",
+    "fax": null,
+    "office": "703 Hart Senate Office Building",
     "website": "https://www.warner.senate.gov",
     "contactUrl": "https://www.warner.senate.gov/public/index.cfm?p=Contact",
     "email": null
@@ -461,6 +531,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "D",
     "state": "VA",
     "phone": "202-224-2023",
+    "fax": null,
+    "office": "703 Hart Senate Office Building",
     "website": "https://www.warner.senate.gov",
     "contactUrl": "https://www.warner.senate.gov/public/index.cfm?p=Contact",
     "email": null
@@ -474,6 +546,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "D",
     "state": "VA",
     "phone": "202-224-2023",
+    "fax": null,
+    "office": "703 Hart Senate Office Building",
     "website": "https://www.warner.senate.gov",
     "contactUrl": "https://www.warner.senate.gov/public/index.cfm?p=Contact",
     "email": null
@@ -487,6 +561,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "D",
     "state": "VA",
     "phone": "202-224-2023",
+    "fax": null,
+    "office": "703 Hart Senate Office Building",
     "website": "https://www.warner.senate.gov",
     "contactUrl": "https://www.warner.senate.gov/public/index.cfm?p=Contact",
     "email": null
@@ -500,6 +576,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "PA",
     "phone": "202-225-5121",
+    "fax": null,
+    "office": "400 Cannon House Office Building",
     "website": "https://thompson.house.gov",
     "contactUrl": "https://thompson.house.gov/contact",
     "email": null
@@ -513,6 +591,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "PA",
     "phone": "202-225-5121",
+    "fax": null,
+    "office": "400 Cannon House Office Building",
     "website": "https://thompson.house.gov",
     "contactUrl": "https://thompson.house.gov/contact",
     "email": null
@@ -526,6 +606,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "PA",
     "phone": "202-225-5121",
+    "fax": null,
+    "office": "400 Cannon House Office Building",
     "website": "https://thompson.house.gov",
     "contactUrl": "https://thompson.house.gov/contact",
     "email": null
@@ -539,60 +621,70 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "PA",
     "phone": "202-225-5121",
+    "fax": null,
+    "office": "400 Cannon House Office Building",
     "website": "https://thompson.house.gov",
     "contactUrl": "https://thompson.house.gov/contact",
     "email": null
   },
-  "tina smith|MN": {
-    "displayName": "Tina Smith",
-    "officialName": "Tina Smith",
-    "bioguide": "S001203",
+  "tim scott|SC": {
+    "displayName": "Tim Scott",
+    "officialName": "Tim Scott",
+    "bioguide": "S001184",
     "chamber": "senate",
     "title": "Sen.",
-    "party": "D",
-    "state": "MN",
-    "phone": "202-224-5641",
-    "website": "https://www.smith.senate.gov",
-    "contactUrl": "https://www.smith.senate.gov/share-your-opinion/",
+    "party": "R",
+    "state": "SC",
+    "phone": "202-224-6121",
+    "fax": null,
+    "office": "104 Hart Senate Office Building",
+    "website": "https://www.scott.senate.gov",
+    "contactUrl": "https://www.scott.senate.gov/contact/email-me",
     "email": null
   },
-  "tina smith": {
-    "displayName": "Tina Smith",
-    "officialName": "Tina Smith",
-    "bioguide": "S001203",
+  "tim scott": {
+    "displayName": "Tim Scott",
+    "officialName": "Tim Scott",
+    "bioguide": "S001184",
     "chamber": "senate",
     "title": "Sen.",
-    "party": "D",
-    "state": "MN",
-    "phone": "202-224-5641",
-    "website": "https://www.smith.senate.gov",
-    "contactUrl": "https://www.smith.senate.gov/share-your-opinion/",
+    "party": "R",
+    "state": "SC",
+    "phone": "202-224-6121",
+    "fax": null,
+    "office": "104 Hart Senate Office Building",
+    "website": "https://www.scott.senate.gov",
+    "contactUrl": "https://www.scott.senate.gov/contact/email-me",
     "email": null
   },
-  "maxine waters|CA": {
-    "displayName": "Maxine Waters",
-    "officialName": "Maxine Waters",
-    "bioguide": "W000187",
+  "j french hill|AR": {
+    "displayName": "J. French Hill",
+    "officialName": "J. French Hill",
+    "bioguide": "H001072",
     "chamber": "house",
     "title": "Rep.",
-    "party": "D",
-    "state": "CA",
-    "phone": "202-225-2201",
-    "website": "https://waters.house.gov",
-    "contactUrl": "https://waters.house.gov/contact",
+    "party": "R",
+    "state": "AR",
+    "phone": "202-225-2506",
+    "fax": null,
+    "office": "1533 Longworth House Office Building",
+    "website": "https://hill.house.gov",
+    "contactUrl": "https://hill.house.gov/contact",
     "email": null
   },
-  "maxine waters": {
-    "displayName": "Maxine Waters",
-    "officialName": "Maxine Waters",
-    "bioguide": "W000187",
+  "j french hill": {
+    "displayName": "J. French Hill",
+    "officialName": "J. French Hill",
+    "bioguide": "H001072",
     "chamber": "house",
     "title": "Rep.",
-    "party": "D",
-    "state": "CA",
-    "phone": "202-225-2201",
-    "website": "https://waters.house.gov",
-    "contactUrl": "https://waters.house.gov/contact",
+    "party": "R",
+    "state": "AR",
+    "phone": "202-225-2506",
+    "fax": null,
+    "office": "1533 Longworth House Office Building",
+    "website": "https://hill.house.gov",
+    "contactUrl": "https://hill.house.gov/contact",
     "email": null
   },
   "sam graves|MO": {
@@ -604,6 +696,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "MO",
     "phone": "202-225-7041",
+    "fax": null,
+    "office": "1135 Longworth House Office Building",
     "website": "https://graves.house.gov",
     "contactUrl": "https://graves.house.gov/contact",
     "email": null
@@ -617,6 +711,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "MO",
     "phone": "202-225-7041",
+    "fax": null,
+    "office": "1135 Longworth House Office Building",
     "website": "https://graves.house.gov",
     "contactUrl": "https://graves.house.gov/contact",
     "email": null
@@ -630,6 +726,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "UT",
     "phone": "202-224-5444",
+    "fax": null,
+    "office": "363 Russell Senate Office Building",
     "website": "https://www.lee.senate.gov",
     "contactUrl": "https://www.lee.senate.gov/public/index.cfm/contact",
     "email": null
@@ -643,6 +741,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "UT",
     "phone": "202-224-5444",
+    "fax": null,
+    "office": "363 Russell Senate Office Building",
     "website": "https://www.lee.senate.gov",
     "contactUrl": "https://www.lee.senate.gov/public/index.cfm/contact",
     "email": null
@@ -656,6 +756,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "WI",
     "phone": "202-225-3031",
+    "fax": null,
+    "office": "1526 Longworth House Office Building",
     "website": "https://steil.house.gov",
     "contactUrl": "https://steil.house.gov/contact",
     "email": null
@@ -669,6 +771,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "WI",
     "phone": "202-225-3031",
+    "fax": null,
+    "office": "1526 Longworth House Office Building",
     "website": "https://steil.house.gov",
     "contactUrl": "https://steil.house.gov/contact",
     "email": null
@@ -682,6 +786,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "D",
     "state": "CA",
     "phone": "202-225-2631",
+    "fax": null,
+    "office": "306 Cannon House Office Building",
     "website": "https://khanna.house.gov",
     "contactUrl": "https://khanna.house.gov/contact",
     "email": null
@@ -695,6 +801,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "D",
     "state": "CA",
     "phone": "202-225-2631",
+    "fax": null,
+    "office": "306 Cannon House Office Building",
     "website": "https://khanna.house.gov",
     "contactUrl": "https://khanna.house.gov/contact",
     "email": null
@@ -708,6 +816,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "ME",
     "phone": "202-224-2523",
+    "fax": null,
+    "office": "413 Dirksen Senate Office Building",
     "website": "https://www.collins.senate.gov",
     "contactUrl": "https://www.collins.senate.gov/contact",
     "email": null
@@ -721,6 +831,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "ME",
     "phone": "202-224-2523",
+    "fax": null,
+    "office": "413 Dirksen Senate Office Building",
     "website": "https://www.collins.senate.gov",
     "contactUrl": "https://www.collins.senate.gov/contact",
     "email": null
@@ -734,6 +846,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "ME",
     "phone": "202-224-2523",
+    "fax": null,
+    "office": "413 Dirksen Senate Office Building",
     "website": "https://www.collins.senate.gov",
     "contactUrl": "https://www.collins.senate.gov/contact",
     "email": null
@@ -747,6 +861,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "ME",
     "phone": "202-224-2523",
+    "fax": null,
+    "office": "413 Dirksen Senate Office Building",
     "website": "https://www.collins.senate.gov",
     "contactUrl": "https://www.collins.senate.gov/contact",
     "email": null
@@ -760,6 +876,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "TN",
     "phone": "202-225-3271",
+    "fax": null,
+    "office": "2187 Rayburn House Office Building",
     "website": "https://fleischmann.house.gov",
     "contactUrl": "https://fleischmann.house.gov/contact",
     "email": null
@@ -773,6 +891,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "TN",
     "phone": "202-225-3271",
+    "fax": null,
+    "office": "2187 Rayburn House Office Building",
     "website": "https://fleischmann.house.gov",
     "contactUrl": "https://fleischmann.house.gov/contact",
     "email": null
@@ -786,6 +906,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "TN",
     "phone": "202-225-3271",
+    "fax": null,
+    "office": "2187 Rayburn House Office Building",
     "website": "https://fleischmann.house.gov",
     "contactUrl": "https://fleischmann.house.gov/contact",
     "email": null
@@ -799,6 +921,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "TN",
     "phone": "202-225-3271",
+    "fax": null,
+    "office": "2187 Rayburn House Office Building",
     "website": "https://fleischmann.house.gov",
     "contactUrl": "https://fleischmann.house.gov/contact",
     "email": null
@@ -812,6 +936,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "FL",
     "phone": "202-225-4211",
+    "fax": null,
+    "office": "374 Cannon House Office Building",
     "website": "https://mariodiazbalart.house.gov",
     "contactUrl": "https://mariodiazbalart.house.gov/contact",
     "email": null
@@ -825,684 +951,10 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "FL",
     "phone": "202-225-4211",
+    "fax": null,
+    "office": "374 Cannon House Office Building",
     "website": "https://mariodiazbalart.house.gov",
     "contactUrl": "https://mariodiazbalart.house.gov/contact",
-    "email": null
-  },
-  "terri sewell|AL": {
-    "displayName": "Terri Sewell",
-    "officialName": "Terri A. Sewell",
-    "bioguide": "S001185",
-    "chamber": "house",
-    "title": "Rep.",
-    "party": "D",
-    "state": "AL",
-    "phone": "202-225-2665",
-    "website": "https://sewell.house.gov",
-    "contactUrl": "https://sewell.house.gov/contact",
-    "email": null
-  },
-  "terri sewell": {
-    "displayName": "Terri Sewell",
-    "officialName": "Terri A. Sewell",
-    "bioguide": "S001185",
-    "chamber": "house",
-    "title": "Rep.",
-    "party": "D",
-    "state": "AL",
-    "phone": "202-225-2665",
-    "website": "https://sewell.house.gov",
-    "contactUrl": "https://sewell.house.gov/contact",
-    "email": null
-  },
-  "terri a sewell|AL": {
-    "displayName": "Terri Sewell",
-    "officialName": "Terri A. Sewell",
-    "bioguide": "S001185",
-    "chamber": "house",
-    "title": "Rep.",
-    "party": "D",
-    "state": "AL",
-    "phone": "202-225-2665",
-    "website": "https://sewell.house.gov",
-    "contactUrl": "https://sewell.house.gov/contact",
-    "email": null
-  },
-  "terri a sewell": {
-    "displayName": "Terri Sewell",
-    "officialName": "Terri A. Sewell",
-    "bioguide": "S001185",
-    "chamber": "house",
-    "title": "Rep.",
-    "party": "D",
-    "state": "AL",
-    "phone": "202-225-2665",
-    "website": "https://sewell.house.gov",
-    "contactUrl": "https://sewell.house.gov/contact",
-    "email": null
-  },
-  "amy klobuchar|MN": {
-    "displayName": "Amy Klobuchar",
-    "officialName": "Amy Klobuchar",
-    "bioguide": "K000367",
-    "chamber": "senate",
-    "title": "Sen.",
-    "party": "D",
-    "state": "MN",
-    "phone": "202-224-3244",
-    "website": "https://www.klobuchar.senate.gov",
-    "contactUrl": "https://www.klobuchar.senate.gov/public/index.cfm/contact",
-    "email": null
-  },
-  "amy klobuchar": {
-    "displayName": "Amy Klobuchar",
-    "officialName": "Amy Klobuchar",
-    "bioguide": "K000367",
-    "chamber": "senate",
-    "title": "Sen.",
-    "party": "D",
-    "state": "MN",
-    "phone": "202-224-3244",
-    "website": "https://www.klobuchar.senate.gov",
-    "contactUrl": "https://www.klobuchar.senate.gov/public/index.cfm/contact",
-    "email": null
-  },
-  "robert c scott|VA": {
-    "displayName": "Robert C. Scott",
-    "officialName": "Robert C. \"Bobby\" Scott",
-    "bioguide": "S000185",
-    "chamber": "house",
-    "title": "Rep.",
-    "party": "D",
-    "state": "VA",
-    "phone": "202-225-8351",
-    "website": "https://bobbyscott.house.gov",
-    "contactUrl": "https://bobbyscott.house.gov/contact",
-    "email": null
-  },
-  "robert c scott": {
-    "displayName": "Robert C. Scott",
-    "officialName": "Robert C. \"Bobby\" Scott",
-    "bioguide": "S000185",
-    "chamber": "house",
-    "title": "Rep.",
-    "party": "D",
-    "state": "VA",
-    "phone": "202-225-8351",
-    "website": "https://bobbyscott.house.gov",
-    "contactUrl": "https://bobbyscott.house.gov/contact",
-    "email": null
-  },
-  "robert c bobby scott|VA": {
-    "displayName": "Robert C. Scott",
-    "officialName": "Robert C. \"Bobby\" Scott",
-    "bioguide": "S000185",
-    "chamber": "house",
-    "title": "Rep.",
-    "party": "D",
-    "state": "VA",
-    "phone": "202-225-8351",
-    "website": "https://bobbyscott.house.gov",
-    "contactUrl": "https://bobbyscott.house.gov/contact",
-    "email": null
-  },
-  "robert c bobby scott": {
-    "displayName": "Robert C. Scott",
-    "officialName": "Robert C. \"Bobby\" Scott",
-    "bioguide": "S000185",
-    "chamber": "house",
-    "title": "Rep.",
-    "party": "D",
-    "state": "VA",
-    "phone": "202-225-8351",
-    "website": "https://bobbyscott.house.gov",
-    "contactUrl": "https://bobbyscott.house.gov/contact",
-    "email": null
-  },
-  "bernie sanders|VT": {
-    "displayName": "Bernie Sanders",
-    "officialName": "Bernard Sanders",
-    "bioguide": "S000033",
-    "chamber": "senate",
-    "title": "Sen.",
-    "party": "I",
-    "state": "VT",
-    "phone": "202-224-5141",
-    "website": "https://www.sanders.senate.gov",
-    "contactUrl": "https://www.sanders.senate.gov/contact/",
-    "email": null
-  },
-  "bernie sanders": {
-    "displayName": "Bernie Sanders",
-    "officialName": "Bernard Sanders",
-    "bioguide": "S000033",
-    "chamber": "senate",
-    "title": "Sen.",
-    "party": "I",
-    "state": "VT",
-    "phone": "202-224-5141",
-    "website": "https://www.sanders.senate.gov",
-    "contactUrl": "https://www.sanders.senate.gov/contact/",
-    "email": null
-  },
-  "bernard sanders|VT": {
-    "displayName": "Bernie Sanders",
-    "officialName": "Bernard Sanders",
-    "bioguide": "S000033",
-    "chamber": "senate",
-    "title": "Sen.",
-    "party": "I",
-    "state": "VT",
-    "phone": "202-224-5141",
-    "website": "https://www.sanders.senate.gov",
-    "contactUrl": "https://www.sanders.senate.gov/contact/",
-    "email": null
-  },
-  "bernard sanders": {
-    "displayName": "Bernie Sanders",
-    "officialName": "Bernard Sanders",
-    "bioguide": "S000033",
-    "chamber": "senate",
-    "title": "Sen.",
-    "party": "I",
-    "state": "VT",
-    "phone": "202-224-5141",
-    "website": "https://www.sanders.senate.gov",
-    "contactUrl": "https://www.sanders.senate.gov/contact/",
-    "email": null
-  },
-  "pramila jayapal|WA": {
-    "displayName": "Pramila Jayapal",
-    "officialName": "Pramila Jayapal",
-    "bioguide": "J000298",
-    "chamber": "house",
-    "title": "Rep.",
-    "party": "D",
-    "state": "WA",
-    "phone": "202-225-3106",
-    "website": "https://jayapal.house.gov",
-    "contactUrl": "https://jayapal.house.gov/contact",
-    "email": null
-  },
-  "pramila jayapal": {
-    "displayName": "Pramila Jayapal",
-    "officialName": "Pramila Jayapal",
-    "bioguide": "J000298",
-    "chamber": "house",
-    "title": "Rep.",
-    "party": "D",
-    "state": "WA",
-    "phone": "202-225-3106",
-    "website": "https://jayapal.house.gov",
-    "contactUrl": "https://jayapal.house.gov/contact",
-    "email": null
-  },
-  "jeff merkley|OR": {
-    "displayName": "Jeff Merkley",
-    "officialName": "Jeff Merkley",
-    "bioguide": "M001176",
-    "chamber": "senate",
-    "title": "Sen.",
-    "party": "D",
-    "state": "OR",
-    "phone": "202-224-3753",
-    "website": "https://www.merkley.senate.gov",
-    "contactUrl": "https://www.merkley.senate.gov/contact/",
-    "email": null
-  },
-  "jeff merkley": {
-    "displayName": "Jeff Merkley",
-    "officialName": "Jeff Merkley",
-    "bioguide": "M001176",
-    "chamber": "senate",
-    "title": "Sen.",
-    "party": "D",
-    "state": "OR",
-    "phone": "202-224-3753",
-    "website": "https://www.merkley.senate.gov",
-    "contactUrl": "https://www.merkley.senate.gov/contact/",
-    "email": null
-  },
-  "rosa delauro|CT": {
-    "displayName": "Rosa DeLauro",
-    "officialName": "Rosa L. DeLauro",
-    "bioguide": "D000216",
-    "chamber": "house",
-    "title": "Rep.",
-    "party": "D",
-    "state": "CT",
-    "phone": "202-225-3661",
-    "website": "https://delauro.house.gov",
-    "contactUrl": "https://delauro.house.gov/contact",
-    "email": null
-  },
-  "rosa delauro": {
-    "displayName": "Rosa DeLauro",
-    "officialName": "Rosa L. DeLauro",
-    "bioguide": "D000216",
-    "chamber": "house",
-    "title": "Rep.",
-    "party": "D",
-    "state": "CT",
-    "phone": "202-225-3661",
-    "website": "https://delauro.house.gov",
-    "contactUrl": "https://delauro.house.gov/contact",
-    "email": null
-  },
-  "rosa l delauro|CT": {
-    "displayName": "Rosa DeLauro",
-    "officialName": "Rosa L. DeLauro",
-    "bioguide": "D000216",
-    "chamber": "house",
-    "title": "Rep.",
-    "party": "D",
-    "state": "CT",
-    "phone": "202-225-3661",
-    "website": "https://delauro.house.gov",
-    "contactUrl": "https://delauro.house.gov/contact",
-    "email": null
-  },
-  "rosa l delauro": {
-    "displayName": "Rosa DeLauro",
-    "officialName": "Rosa L. DeLauro",
-    "bioguide": "D000216",
-    "chamber": "house",
-    "title": "Rep.",
-    "party": "D",
-    "state": "CT",
-    "phone": "202-225-3661",
-    "website": "https://delauro.house.gov",
-    "contactUrl": "https://delauro.house.gov/contact",
-    "email": null
-  },
-  "maria cantwell|WA": {
-    "displayName": "Maria Cantwell",
-    "officialName": "Maria Cantwell",
-    "bioguide": "C000127",
-    "chamber": "senate",
-    "title": "Sen.",
-    "party": "D",
-    "state": "WA",
-    "phone": "202-224-3441",
-    "website": "https://www.cantwell.senate.gov",
-    "contactUrl": "https://www.cantwell.senate.gov/public/index.cfm/email-maria",
-    "email": null
-  },
-  "maria cantwell": {
-    "displayName": "Maria Cantwell",
-    "officialName": "Maria Cantwell",
-    "bioguide": "C000127",
-    "chamber": "senate",
-    "title": "Sen.",
-    "party": "D",
-    "state": "WA",
-    "phone": "202-224-3441",
-    "website": "https://www.cantwell.senate.gov",
-    "contactUrl": "https://www.cantwell.senate.gov/public/index.cfm/email-maria",
-    "email": null
-  },
-  "chris murphy|CT": {
-    "displayName": "Chris Murphy",
-    "officialName": "Christopher Murphy",
-    "bioguide": "M001169",
-    "chamber": "senate",
-    "title": "Sen.",
-    "party": "D",
-    "state": "CT",
-    "phone": "202-224-4041",
-    "website": "https://www.murphy.senate.gov",
-    "contactUrl": "https://www.murphy.senate.gov/contact",
-    "email": null
-  },
-  "chris murphy": {
-    "displayName": "Chris Murphy",
-    "officialName": "Christopher Murphy",
-    "bioguide": "M001169",
-    "chamber": "senate",
-    "title": "Sen.",
-    "party": "D",
-    "state": "CT",
-    "phone": "202-224-4041",
-    "website": "https://www.murphy.senate.gov",
-    "contactUrl": "https://www.murphy.senate.gov/contact",
-    "email": null
-  },
-  "christopher murphy|CT": {
-    "displayName": "Chris Murphy",
-    "officialName": "Christopher Murphy",
-    "bioguide": "M001169",
-    "chamber": "senate",
-    "title": "Sen.",
-    "party": "D",
-    "state": "CT",
-    "phone": "202-224-4041",
-    "website": "https://www.murphy.senate.gov",
-    "contactUrl": "https://www.murphy.senate.gov/contact",
-    "email": null
-  },
-  "christopher murphy": {
-    "displayName": "Chris Murphy",
-    "officialName": "Christopher Murphy",
-    "bioguide": "M001169",
-    "chamber": "senate",
-    "title": "Sen.",
-    "party": "D",
-    "state": "CT",
-    "phone": "202-224-4041",
-    "website": "https://www.murphy.senate.gov",
-    "contactUrl": "https://www.murphy.senate.gov/contact",
-    "email": null
-  },
-  "steve womack|AR": {
-    "displayName": "Steve Womack",
-    "officialName": "Steve Womack",
-    "bioguide": "W000809",
-    "chamber": "house",
-    "title": "Rep.",
-    "party": "R",
-    "state": "AR",
-    "phone": "202-225-4301",
-    "website": "https://womack.house.gov",
-    "contactUrl": "https://womack.house.gov/contact",
-    "email": null
-  },
-  "steve womack": {
-    "displayName": "Steve Womack",
-    "officialName": "Steve Womack",
-    "bioguide": "W000809",
-    "chamber": "house",
-    "title": "Rep.",
-    "party": "R",
-    "state": "AR",
-    "phone": "202-225-4301",
-    "website": "https://womack.house.gov",
-    "contactUrl": "https://womack.house.gov/contact",
-    "email": null
-  },
-  "robert aderholt|AL": {
-    "displayName": "Robert Aderholt",
-    "officialName": "Robert B. Aderholt",
-    "bioguide": "A000055",
-    "chamber": "house",
-    "title": "Rep.",
-    "party": "R",
-    "state": "AL",
-    "phone": "202-225-4876",
-    "website": "https://aderholt.house.gov",
-    "contactUrl": "https://aderholt.house.gov/contact",
-    "email": null
-  },
-  "robert aderholt": {
-    "displayName": "Robert Aderholt",
-    "officialName": "Robert B. Aderholt",
-    "bioguide": "A000055",
-    "chamber": "house",
-    "title": "Rep.",
-    "party": "R",
-    "state": "AL",
-    "phone": "202-225-4876",
-    "website": "https://aderholt.house.gov",
-    "contactUrl": "https://aderholt.house.gov/contact",
-    "email": null
-  },
-  "robert b aderholt|AL": {
-    "displayName": "Robert Aderholt",
-    "officialName": "Robert B. Aderholt",
-    "bioguide": "A000055",
-    "chamber": "house",
-    "title": "Rep.",
-    "party": "R",
-    "state": "AL",
-    "phone": "202-225-4876",
-    "website": "https://aderholt.house.gov",
-    "contactUrl": "https://aderholt.house.gov/contact",
-    "email": null
-  },
-  "robert b aderholt": {
-    "displayName": "Robert Aderholt",
-    "officialName": "Robert B. Aderholt",
-    "bioguide": "A000055",
-    "chamber": "house",
-    "title": "Rep.",
-    "party": "R",
-    "state": "AL",
-    "phone": "202-225-4876",
-    "website": "https://aderholt.house.gov",
-    "contactUrl": "https://aderholt.house.gov/contact",
-    "email": null
-  },
-  "sarah mcbride|DE": {
-    "displayName": "Sarah McBride",
-    "officialName": "Sarah McBride",
-    "bioguide": "M001238",
-    "chamber": "house",
-    "title": "Rep.",
-    "party": "D",
-    "state": "DE",
-    "phone": "202-225-4165",
-    "website": "https://mcbride.house.gov",
-    "contactUrl": "https://mcbride.house.gov/contact",
-    "email": null
-  },
-  "sarah mcbride": {
-    "displayName": "Sarah McBride",
-    "officialName": "Sarah McBride",
-    "bioguide": "M001238",
-    "chamber": "house",
-    "title": "Rep.",
-    "party": "D",
-    "state": "DE",
-    "phone": "202-225-4165",
-    "website": "https://mcbride.house.gov",
-    "contactUrl": "https://mcbride.house.gov/contact",
-    "email": null
-  },
-  "tammy baldwin|WI": {
-    "displayName": "Tammy Baldwin",
-    "officialName": "Tammy Baldwin",
-    "bioguide": "B001230",
-    "chamber": "senate",
-    "title": "Sen.",
-    "party": "D",
-    "state": "WI",
-    "phone": "202-224-5653",
-    "website": "https://www.baldwin.senate.gov",
-    "contactUrl": "https://www.baldwin.senate.gov/feedback",
-    "email": null
-  },
-  "tammy baldwin": {
-    "displayName": "Tammy Baldwin",
-    "officialName": "Tammy Baldwin",
-    "bioguide": "B001230",
-    "chamber": "senate",
-    "title": "Sen.",
-    "party": "D",
-    "state": "WI",
-    "phone": "202-224-5653",
-    "website": "https://www.baldwin.senate.gov",
-    "contactUrl": "https://www.baldwin.senate.gov/feedback",
-    "email": null
-  },
-  "ayanna pressley|MA": {
-    "displayName": "Ayanna Pressley",
-    "officialName": "Ayanna Pressley",
-    "bioguide": "P000617",
-    "chamber": "house",
-    "title": "Rep.",
-    "party": "D",
-    "state": "MA",
-    "phone": "202-225-5111",
-    "website": "https://pressley.house.gov",
-    "contactUrl": "https://pressley.house.gov/contact",
-    "email": null
-  },
-  "ayanna pressley": {
-    "displayName": "Ayanna Pressley",
-    "officialName": "Ayanna Pressley",
-    "bioguide": "P000617",
-    "chamber": "house",
-    "title": "Rep.",
-    "party": "D",
-    "state": "MA",
-    "phone": "202-225-5111",
-    "website": "https://pressley.house.gov",
-    "contactUrl": "https://pressley.house.gov/contact",
-    "email": null
-  },
-  "chris van hollen|MD": {
-    "displayName": "Chris Van Hollen",
-    "officialName": "Chris Van Hollen",
-    "bioguide": "V000128",
-    "chamber": "senate",
-    "title": "Sen.",
-    "party": "D",
-    "state": "MD",
-    "phone": "202-224-4654",
-    "website": "https://www.vanhollen.senate.gov",
-    "contactUrl": "https://www.vanhollen.senate.gov/contact/email",
-    "email": null
-  },
-  "chris van hollen": {
-    "displayName": "Chris Van Hollen",
-    "officialName": "Chris Van Hollen",
-    "bioguide": "V000128",
-    "chamber": "senate",
-    "title": "Sen.",
-    "party": "D",
-    "state": "MD",
-    "phone": "202-224-4654",
-    "website": "https://www.vanhollen.senate.gov",
-    "contactUrl": "https://www.vanhollen.senate.gov/contact/email",
-    "email": null
-  },
-  "eleanor holmes norton|DC": {
-    "displayName": "Eleanor Holmes Norton",
-    "officialName": "Eleanor Holmes Norton",
-    "bioguide": "N000147",
-    "chamber": "house",
-    "title": "Rep.",
-    "party": "D",
-    "state": "DC",
-    "phone": "202-225-8050",
-    "website": "https://norton.house.gov",
-    "contactUrl": "https://norton.house.gov/contact",
-    "email": null
-  },
-  "eleanor holmes norton": {
-    "displayName": "Eleanor Holmes Norton",
-    "officialName": "Eleanor Holmes Norton",
-    "bioguide": "N000147",
-    "chamber": "house",
-    "title": "Rep.",
-    "party": "D",
-    "state": "DC",
-    "phone": "202-225-8050",
-    "website": "https://norton.house.gov",
-    "contactUrl": "https://norton.house.gov/contact",
-    "email": null
-  },
-  "gary peters|MI": {
-    "displayName": "Gary Peters",
-    "officialName": "Gary C. Peters",
-    "bioguide": "P000595",
-    "chamber": "senate",
-    "title": "Sen.",
-    "party": "D",
-    "state": "MI",
-    "phone": "202-224-6221",
-    "website": "https://www.peters.senate.gov",
-    "contactUrl": "https://www.peters.senate.gov/contact/email-gary",
-    "email": null
-  },
-  "gary peters": {
-    "displayName": "Gary Peters",
-    "officialName": "Gary C. Peters",
-    "bioguide": "P000595",
-    "chamber": "senate",
-    "title": "Sen.",
-    "party": "D",
-    "state": "MI",
-    "phone": "202-224-6221",
-    "website": "https://www.peters.senate.gov",
-    "contactUrl": "https://www.peters.senate.gov/contact/email-gary",
-    "email": null
-  },
-  "gary c peters|MI": {
-    "displayName": "Gary Peters",
-    "officialName": "Gary C. Peters",
-    "bioguide": "P000595",
-    "chamber": "senate",
-    "title": "Sen.",
-    "party": "D",
-    "state": "MI",
-    "phone": "202-224-6221",
-    "website": "https://www.peters.senate.gov",
-    "contactUrl": "https://www.peters.senate.gov/contact/email-gary",
-    "email": null
-  },
-  "gary c peters": {
-    "displayName": "Gary Peters",
-    "officialName": "Gary C. Peters",
-    "bioguide": "P000595",
-    "chamber": "senate",
-    "title": "Sen.",
-    "party": "D",
-    "state": "MI",
-    "phone": "202-224-6221",
-    "website": "https://www.peters.senate.gov",
-    "contactUrl": "https://www.peters.senate.gov/contact/email-gary",
-    "email": null
-  },
-  "ken calvert|CA": {
-    "displayName": "Ken Calvert",
-    "officialName": "Ken Calvert",
-    "bioguide": "C000059",
-    "chamber": "house",
-    "title": "Rep.",
-    "party": "R",
-    "state": "CA",
-    "phone": "202-225-1986",
-    "website": "https://calvert.house.gov",
-    "contactUrl": "https://calvert.house.gov/contact",
-    "email": null
-  },
-  "ken calvert": {
-    "displayName": "Ken Calvert",
-    "officialName": "Ken Calvert",
-    "bioguide": "C000059",
-    "chamber": "house",
-    "title": "Rep.",
-    "party": "R",
-    "state": "CA",
-    "phone": "202-225-1986",
-    "website": "https://calvert.house.gov",
-    "contactUrl": "https://calvert.house.gov/contact",
-    "email": null
-  },
-  "mitch mcconnell|KY": {
-    "displayName": "Mitch McConnell",
-    "officialName": "Mitch McConnell",
-    "bioguide": "M000355",
-    "chamber": "senate",
-    "title": "Sen.",
-    "party": "R",
-    "state": "KY",
-    "phone": "202-224-2541",
-    "website": "https://www.mcconnell.senate.gov",
-    "contactUrl": "https://www.mcconnell.senate.gov/public/index.cfm?p=contact",
-    "email": null
-  },
-  "mitch mcconnell": {
-    "displayName": "Mitch McConnell",
-    "officialName": "Mitch McConnell",
-    "bioguide": "M000355",
-    "chamber": "senate",
-    "title": "Sen.",
-    "party": "R",
-    "state": "KY",
-    "phone": "202-224-2541",
-    "website": "https://www.mcconnell.senate.gov",
-    "contactUrl": "https://www.mcconnell.senate.gov/public/index.cfm?p=contact",
     "email": null
   },
   "andy harris|MD": {
@@ -1514,6 +966,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "MD",
     "phone": "202-225-5311",
+    "fax": null,
+    "office": "1536 Longworth House Office Building",
     "website": "https://harris.house.gov",
     "contactUrl": "https://harris.house.gov/contact",
     "email": null
@@ -1527,8 +981,880 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "MD",
     "phone": "202-225-5311",
+    "fax": null,
+    "office": "1536 Longworth House Office Building",
     "website": "https://harris.house.gov",
     "contactUrl": "https://harris.house.gov/contact",
+    "email": null
+  },
+  "john carter|TX": {
+    "displayName": "John Carter",
+    "officialName": "John R. Carter",
+    "bioguide": "C001051",
+    "chamber": "house",
+    "title": "Rep.",
+    "party": "R",
+    "state": "TX",
+    "phone": "202-225-3864",
+    "fax": null,
+    "office": "2208 Rayburn House Office Building",
+    "website": "https://carter.house.gov",
+    "contactUrl": "https://carter.house.gov/contact",
+    "email": null
+  },
+  "john carter": {
+    "displayName": "John Carter",
+    "officialName": "John R. Carter",
+    "bioguide": "C001051",
+    "chamber": "house",
+    "title": "Rep.",
+    "party": "R",
+    "state": "TX",
+    "phone": "202-225-3864",
+    "fax": null,
+    "office": "2208 Rayburn House Office Building",
+    "website": "https://carter.house.gov",
+    "contactUrl": "https://carter.house.gov/contact",
+    "email": null
+  },
+  "john r carter|TX": {
+    "displayName": "John Carter",
+    "officialName": "John R. Carter",
+    "bioguide": "C001051",
+    "chamber": "house",
+    "title": "Rep.",
+    "party": "R",
+    "state": "TX",
+    "phone": "202-225-3864",
+    "fax": null,
+    "office": "2208 Rayburn House Office Building",
+    "website": "https://carter.house.gov",
+    "contactUrl": "https://carter.house.gov/contact",
+    "email": null
+  },
+  "john r carter": {
+    "displayName": "John Carter",
+    "officialName": "John R. Carter",
+    "bioguide": "C001051",
+    "chamber": "house",
+    "title": "Rep.",
+    "party": "R",
+    "state": "TX",
+    "phone": "202-225-3864",
+    "fax": null,
+    "office": "2208 Rayburn House Office Building",
+    "website": "https://carter.house.gov",
+    "contactUrl": "https://carter.house.gov/contact",
+    "email": null
+  },
+  "vern buchanan|FL": {
+    "displayName": "Vern Buchanan",
+    "officialName": "Vern Buchanan",
+    "bioguide": "B001260",
+    "chamber": "house",
+    "title": "Rep.",
+    "party": "R",
+    "state": "FL",
+    "phone": "202-225-5015",
+    "fax": null,
+    "office": "2409 Rayburn House Office Building",
+    "website": "https://buchanan.house.gov",
+    "contactUrl": "https://buchanan.house.gov/contact",
+    "email": null
+  },
+  "vern buchanan": {
+    "displayName": "Vern Buchanan",
+    "officialName": "Vern Buchanan",
+    "bioguide": "B001260",
+    "chamber": "house",
+    "title": "Rep.",
+    "party": "R",
+    "state": "FL",
+    "phone": "202-225-5015",
+    "fax": null,
+    "office": "2409 Rayburn House Office Building",
+    "website": "https://buchanan.house.gov",
+    "contactUrl": "https://buchanan.house.gov/contact",
+    "email": null
+  },
+  "terri sewell|AL": {
+    "displayName": "Terri Sewell",
+    "officialName": "Terri A. Sewell",
+    "bioguide": "S001185",
+    "chamber": "house",
+    "title": "Rep.",
+    "party": "D",
+    "state": "AL",
+    "phone": "202-225-2665",
+    "fax": null,
+    "office": "1035 Longworth House Office Building",
+    "website": "https://sewell.house.gov",
+    "contactUrl": "https://sewell.house.gov/",
+    "email": null
+  },
+  "terri sewell": {
+    "displayName": "Terri Sewell",
+    "officialName": "Terri A. Sewell",
+    "bioguide": "S001185",
+    "chamber": "house",
+    "title": "Rep.",
+    "party": "D",
+    "state": "AL",
+    "phone": "202-225-2665",
+    "fax": null,
+    "office": "1035 Longworth House Office Building",
+    "website": "https://sewell.house.gov",
+    "contactUrl": "https://sewell.house.gov/",
+    "email": null
+  },
+  "terri a sewell|AL": {
+    "displayName": "Terri Sewell",
+    "officialName": "Terri A. Sewell",
+    "bioguide": "S001185",
+    "chamber": "house",
+    "title": "Rep.",
+    "party": "D",
+    "state": "AL",
+    "phone": "202-225-2665",
+    "fax": null,
+    "office": "1035 Longworth House Office Building",
+    "website": "https://sewell.house.gov",
+    "contactUrl": "https://sewell.house.gov/",
+    "email": null
+  },
+  "terri a sewell": {
+    "displayName": "Terri Sewell",
+    "officialName": "Terri A. Sewell",
+    "bioguide": "S001185",
+    "chamber": "house",
+    "title": "Rep.",
+    "party": "D",
+    "state": "AL",
+    "phone": "202-225-2665",
+    "fax": null,
+    "office": "1035 Longworth House Office Building",
+    "website": "https://sewell.house.gov",
+    "contactUrl": "https://sewell.house.gov/",
+    "email": null
+  },
+  "amy klobuchar|MN": {
+    "displayName": "Amy Klobuchar",
+    "officialName": "Amy Klobuchar",
+    "bioguide": "K000367",
+    "chamber": "senate",
+    "title": "Sen.",
+    "party": "D",
+    "state": "MN",
+    "phone": "202-224-3244",
+    "fax": null,
+    "office": "425 Dirksen Senate Office Building",
+    "website": "https://www.klobuchar.senate.gov",
+    "contactUrl": "https://www.klobuchar.senate.gov/public/index.cfm/contact",
+    "email": null
+  },
+  "amy klobuchar": {
+    "displayName": "Amy Klobuchar",
+    "officialName": "Amy Klobuchar",
+    "bioguide": "K000367",
+    "chamber": "senate",
+    "title": "Sen.",
+    "party": "D",
+    "state": "MN",
+    "phone": "202-224-3244",
+    "fax": null,
+    "office": "425 Dirksen Senate Office Building",
+    "website": "https://www.klobuchar.senate.gov",
+    "contactUrl": "https://www.klobuchar.senate.gov/public/index.cfm/contact",
+    "email": null
+  },
+  "robert c scott|VA": {
+    "displayName": "Robert C. Scott",
+    "officialName": "Robert C. \"Bobby\" Scott",
+    "bioguide": "S000185",
+    "chamber": "house",
+    "title": "Rep.",
+    "party": "D",
+    "state": "VA",
+    "phone": "202-225-8351",
+    "fax": null,
+    "office": "2328 Rayburn House Office Building",
+    "website": "https://bobbyscott.house.gov",
+    "contactUrl": "https://bobbyscott.house.gov/contact",
+    "email": null
+  },
+  "robert c scott": {
+    "displayName": "Robert C. Scott",
+    "officialName": "Robert C. \"Bobby\" Scott",
+    "bioguide": "S000185",
+    "chamber": "house",
+    "title": "Rep.",
+    "party": "D",
+    "state": "VA",
+    "phone": "202-225-8351",
+    "fax": null,
+    "office": "2328 Rayburn House Office Building",
+    "website": "https://bobbyscott.house.gov",
+    "contactUrl": "https://bobbyscott.house.gov/contact",
+    "email": null
+  },
+  "robert c bobby scott|VA": {
+    "displayName": "Robert C. Scott",
+    "officialName": "Robert C. \"Bobby\" Scott",
+    "bioguide": "S000185",
+    "chamber": "house",
+    "title": "Rep.",
+    "party": "D",
+    "state": "VA",
+    "phone": "202-225-8351",
+    "fax": null,
+    "office": "2328 Rayburn House Office Building",
+    "website": "https://bobbyscott.house.gov",
+    "contactUrl": "https://bobbyscott.house.gov/contact",
+    "email": null
+  },
+  "robert c bobby scott": {
+    "displayName": "Robert C. Scott",
+    "officialName": "Robert C. \"Bobby\" Scott",
+    "bioguide": "S000185",
+    "chamber": "house",
+    "title": "Rep.",
+    "party": "D",
+    "state": "VA",
+    "phone": "202-225-8351",
+    "fax": null,
+    "office": "2328 Rayburn House Office Building",
+    "website": "https://bobbyscott.house.gov",
+    "contactUrl": "https://bobbyscott.house.gov/contact",
+    "email": null
+  },
+  "bernie sanders|VT": {
+    "displayName": "Bernie Sanders",
+    "officialName": "Bernard Sanders",
+    "bioguide": "S000033",
+    "chamber": "senate",
+    "title": "Sen.",
+    "party": "I",
+    "state": "VT",
+    "phone": "202-224-5141",
+    "fax": null,
+    "office": "332 Dirksen Senate Office Building",
+    "website": "https://www.sanders.senate.gov",
+    "contactUrl": "https://www.sanders.senate.gov/contact/",
+    "email": null
+  },
+  "bernie sanders": {
+    "displayName": "Bernie Sanders",
+    "officialName": "Bernard Sanders",
+    "bioguide": "S000033",
+    "chamber": "senate",
+    "title": "Sen.",
+    "party": "I",
+    "state": "VT",
+    "phone": "202-224-5141",
+    "fax": null,
+    "office": "332 Dirksen Senate Office Building",
+    "website": "https://www.sanders.senate.gov",
+    "contactUrl": "https://www.sanders.senate.gov/contact/",
+    "email": null
+  },
+  "bernard sanders|VT": {
+    "displayName": "Bernie Sanders",
+    "officialName": "Bernard Sanders",
+    "bioguide": "S000033",
+    "chamber": "senate",
+    "title": "Sen.",
+    "party": "I",
+    "state": "VT",
+    "phone": "202-224-5141",
+    "fax": null,
+    "office": "332 Dirksen Senate Office Building",
+    "website": "https://www.sanders.senate.gov",
+    "contactUrl": "https://www.sanders.senate.gov/contact/",
+    "email": null
+  },
+  "bernard sanders": {
+    "displayName": "Bernie Sanders",
+    "officialName": "Bernard Sanders",
+    "bioguide": "S000033",
+    "chamber": "senate",
+    "title": "Sen.",
+    "party": "I",
+    "state": "VT",
+    "phone": "202-224-5141",
+    "fax": null,
+    "office": "332 Dirksen Senate Office Building",
+    "website": "https://www.sanders.senate.gov",
+    "contactUrl": "https://www.sanders.senate.gov/contact/",
+    "email": null
+  },
+  "pramila jayapal|WA": {
+    "displayName": "Pramila Jayapal",
+    "officialName": "Pramila Jayapal",
+    "bioguide": "J000298",
+    "chamber": "house",
+    "title": "Rep.",
+    "party": "D",
+    "state": "WA",
+    "phone": "202-225-3106",
+    "fax": null,
+    "office": "2346 Rayburn House Office Building",
+    "website": "https://jayapal.house.gov",
+    "contactUrl": "https://jayapal.house.gov/contact",
+    "email": null
+  },
+  "pramila jayapal": {
+    "displayName": "Pramila Jayapal",
+    "officialName": "Pramila Jayapal",
+    "bioguide": "J000298",
+    "chamber": "house",
+    "title": "Rep.",
+    "party": "D",
+    "state": "WA",
+    "phone": "202-225-3106",
+    "fax": null,
+    "office": "2346 Rayburn House Office Building",
+    "website": "https://jayapal.house.gov",
+    "contactUrl": "https://jayapal.house.gov/contact",
+    "email": null
+  },
+  "jeff merkley|OR": {
+    "displayName": "Jeff Merkley",
+    "officialName": "Jeff Merkley",
+    "bioguide": "M001176",
+    "chamber": "senate",
+    "title": "Sen.",
+    "party": "D",
+    "state": "OR",
+    "phone": "202-224-3753",
+    "fax": null,
+    "office": "531 Hart Senate Office Building",
+    "website": "https://www.merkley.senate.gov",
+    "contactUrl": "https://www.merkley.senate.gov/contact/",
+    "email": null
+  },
+  "jeff merkley": {
+    "displayName": "Jeff Merkley",
+    "officialName": "Jeff Merkley",
+    "bioguide": "M001176",
+    "chamber": "senate",
+    "title": "Sen.",
+    "party": "D",
+    "state": "OR",
+    "phone": "202-224-3753",
+    "fax": null,
+    "office": "531 Hart Senate Office Building",
+    "website": "https://www.merkley.senate.gov",
+    "contactUrl": "https://www.merkley.senate.gov/contact/",
+    "email": null
+  },
+  "rosa delauro|CT": {
+    "displayName": "Rosa DeLauro",
+    "officialName": "Rosa L. DeLauro",
+    "bioguide": "D000216",
+    "chamber": "house",
+    "title": "Rep.",
+    "party": "D",
+    "state": "CT",
+    "phone": "202-225-3661",
+    "fax": null,
+    "office": "2413 Rayburn House Office Building",
+    "website": "https://delauro.house.gov",
+    "contactUrl": "https://delauro.house.gov/contact",
+    "email": null
+  },
+  "rosa delauro": {
+    "displayName": "Rosa DeLauro",
+    "officialName": "Rosa L. DeLauro",
+    "bioguide": "D000216",
+    "chamber": "house",
+    "title": "Rep.",
+    "party": "D",
+    "state": "CT",
+    "phone": "202-225-3661",
+    "fax": null,
+    "office": "2413 Rayburn House Office Building",
+    "website": "https://delauro.house.gov",
+    "contactUrl": "https://delauro.house.gov/contact",
+    "email": null
+  },
+  "rosa l delauro|CT": {
+    "displayName": "Rosa DeLauro",
+    "officialName": "Rosa L. DeLauro",
+    "bioguide": "D000216",
+    "chamber": "house",
+    "title": "Rep.",
+    "party": "D",
+    "state": "CT",
+    "phone": "202-225-3661",
+    "fax": null,
+    "office": "2413 Rayburn House Office Building",
+    "website": "https://delauro.house.gov",
+    "contactUrl": "https://delauro.house.gov/contact",
+    "email": null
+  },
+  "rosa l delauro": {
+    "displayName": "Rosa DeLauro",
+    "officialName": "Rosa L. DeLauro",
+    "bioguide": "D000216",
+    "chamber": "house",
+    "title": "Rep.",
+    "party": "D",
+    "state": "CT",
+    "phone": "202-225-3661",
+    "fax": null,
+    "office": "2413 Rayburn House Office Building",
+    "website": "https://delauro.house.gov",
+    "contactUrl": "https://delauro.house.gov/contact",
+    "email": null
+  },
+  "maria cantwell|WA": {
+    "displayName": "Maria Cantwell",
+    "officialName": "Maria Cantwell",
+    "bioguide": "C000127",
+    "chamber": "senate",
+    "title": "Sen.",
+    "party": "D",
+    "state": "WA",
+    "phone": "202-224-3441",
+    "fax": null,
+    "office": "511 Hart Senate Office Building",
+    "website": "https://www.cantwell.senate.gov",
+    "contactUrl": "https://www.cantwell.senate.gov/public/index.cfm/email-maria",
+    "email": null
+  },
+  "maria cantwell": {
+    "displayName": "Maria Cantwell",
+    "officialName": "Maria Cantwell",
+    "bioguide": "C000127",
+    "chamber": "senate",
+    "title": "Sen.",
+    "party": "D",
+    "state": "WA",
+    "phone": "202-224-3441",
+    "fax": null,
+    "office": "511 Hart Senate Office Building",
+    "website": "https://www.cantwell.senate.gov",
+    "contactUrl": "https://www.cantwell.senate.gov/public/index.cfm/email-maria",
+    "email": null
+  },
+  "chris murphy|CT": {
+    "displayName": "Chris Murphy",
+    "officialName": "Christopher Murphy",
+    "bioguide": "M001169",
+    "chamber": "senate",
+    "title": "Sen.",
+    "party": "D",
+    "state": "CT",
+    "phone": "202-224-4041",
+    "fax": null,
+    "office": "136 Hart Senate Office Building",
+    "website": "https://www.murphy.senate.gov",
+    "contactUrl": "https://www.murphy.senate.gov/contact",
+    "email": null
+  },
+  "chris murphy": {
+    "displayName": "Chris Murphy",
+    "officialName": "Christopher Murphy",
+    "bioguide": "M001169",
+    "chamber": "senate",
+    "title": "Sen.",
+    "party": "D",
+    "state": "CT",
+    "phone": "202-224-4041",
+    "fax": null,
+    "office": "136 Hart Senate Office Building",
+    "website": "https://www.murphy.senate.gov",
+    "contactUrl": "https://www.murphy.senate.gov/contact",
+    "email": null
+  },
+  "christopher murphy|CT": {
+    "displayName": "Chris Murphy",
+    "officialName": "Christopher Murphy",
+    "bioguide": "M001169",
+    "chamber": "senate",
+    "title": "Sen.",
+    "party": "D",
+    "state": "CT",
+    "phone": "202-224-4041",
+    "fax": null,
+    "office": "136 Hart Senate Office Building",
+    "website": "https://www.murphy.senate.gov",
+    "contactUrl": "https://www.murphy.senate.gov/contact",
+    "email": null
+  },
+  "christopher murphy": {
+    "displayName": "Chris Murphy",
+    "officialName": "Christopher Murphy",
+    "bioguide": "M001169",
+    "chamber": "senate",
+    "title": "Sen.",
+    "party": "D",
+    "state": "CT",
+    "phone": "202-224-4041",
+    "fax": null,
+    "office": "136 Hart Senate Office Building",
+    "website": "https://www.murphy.senate.gov",
+    "contactUrl": "https://www.murphy.senate.gov/contact",
+    "email": null
+  },
+  "steve womack|AR": {
+    "displayName": "Steve Womack",
+    "officialName": "Steve Womack",
+    "bioguide": "W000809",
+    "chamber": "house",
+    "title": "Rep.",
+    "party": "R",
+    "state": "AR",
+    "phone": "202-225-4301",
+    "fax": null,
+    "office": "2412 Rayburn House Office Building",
+    "website": "https://womack.house.gov",
+    "contactUrl": "https://womack.house.gov/contact",
+    "email": null
+  },
+  "steve womack": {
+    "displayName": "Steve Womack",
+    "officialName": "Steve Womack",
+    "bioguide": "W000809",
+    "chamber": "house",
+    "title": "Rep.",
+    "party": "R",
+    "state": "AR",
+    "phone": "202-225-4301",
+    "fax": null,
+    "office": "2412 Rayburn House Office Building",
+    "website": "https://womack.house.gov",
+    "contactUrl": "https://womack.house.gov/contact",
+    "email": null
+  },
+  "robert aderholt|AL": {
+    "displayName": "Robert Aderholt",
+    "officialName": "Robert B. Aderholt",
+    "bioguide": "A000055",
+    "chamber": "house",
+    "title": "Rep.",
+    "party": "R",
+    "state": "AL",
+    "phone": "202-225-4876",
+    "fax": null,
+    "office": "272 Cannon House Office Building",
+    "website": "https://aderholt.house.gov",
+    "contactUrl": "https://aderholt.house.gov/contact",
+    "email": null
+  },
+  "robert aderholt": {
+    "displayName": "Robert Aderholt",
+    "officialName": "Robert B. Aderholt",
+    "bioguide": "A000055",
+    "chamber": "house",
+    "title": "Rep.",
+    "party": "R",
+    "state": "AL",
+    "phone": "202-225-4876",
+    "fax": null,
+    "office": "272 Cannon House Office Building",
+    "website": "https://aderholt.house.gov",
+    "contactUrl": "https://aderholt.house.gov/contact",
+    "email": null
+  },
+  "robert b aderholt|AL": {
+    "displayName": "Robert Aderholt",
+    "officialName": "Robert B. Aderholt",
+    "bioguide": "A000055",
+    "chamber": "house",
+    "title": "Rep.",
+    "party": "R",
+    "state": "AL",
+    "phone": "202-225-4876",
+    "fax": null,
+    "office": "272 Cannon House Office Building",
+    "website": "https://aderholt.house.gov",
+    "contactUrl": "https://aderholt.house.gov/contact",
+    "email": null
+  },
+  "robert b aderholt": {
+    "displayName": "Robert Aderholt",
+    "officialName": "Robert B. Aderholt",
+    "bioguide": "A000055",
+    "chamber": "house",
+    "title": "Rep.",
+    "party": "R",
+    "state": "AL",
+    "phone": "202-225-4876",
+    "fax": null,
+    "office": "272 Cannon House Office Building",
+    "website": "https://aderholt.house.gov",
+    "contactUrl": "https://aderholt.house.gov/contact",
+    "email": null
+  },
+  "sarah mcbride|DE": {
+    "displayName": "Sarah McBride",
+    "officialName": "Sarah McBride",
+    "bioguide": "M001238",
+    "chamber": "house",
+    "title": "Rep.",
+    "party": "D",
+    "state": "DE",
+    "phone": "202-225-4165",
+    "fax": null,
+    "office": "1306 Longworth House Office Building",
+    "website": "https://mcbride.house.gov",
+    "contactUrl": "https://mcbride.house.gov/contact",
+    "email": null
+  },
+  "sarah mcbride": {
+    "displayName": "Sarah McBride",
+    "officialName": "Sarah McBride",
+    "bioguide": "M001238",
+    "chamber": "house",
+    "title": "Rep.",
+    "party": "D",
+    "state": "DE",
+    "phone": "202-225-4165",
+    "fax": null,
+    "office": "1306 Longworth House Office Building",
+    "website": "https://mcbride.house.gov",
+    "contactUrl": "https://mcbride.house.gov/contact",
+    "email": null
+  },
+  "tammy baldwin|WI": {
+    "displayName": "Tammy Baldwin",
+    "officialName": "Tammy Baldwin",
+    "bioguide": "B001230",
+    "chamber": "senate",
+    "title": "Sen.",
+    "party": "D",
+    "state": "WI",
+    "phone": "202-224-5653",
+    "fax": null,
+    "office": "141 Hart Senate Office Building",
+    "website": "https://www.baldwin.senate.gov",
+    "contactUrl": "https://www.baldwin.senate.gov/feedback",
+    "email": null
+  },
+  "tammy baldwin": {
+    "displayName": "Tammy Baldwin",
+    "officialName": "Tammy Baldwin",
+    "bioguide": "B001230",
+    "chamber": "senate",
+    "title": "Sen.",
+    "party": "D",
+    "state": "WI",
+    "phone": "202-224-5653",
+    "fax": null,
+    "office": "141 Hart Senate Office Building",
+    "website": "https://www.baldwin.senate.gov",
+    "contactUrl": "https://www.baldwin.senate.gov/feedback",
+    "email": null
+  },
+  "ayanna pressley|MA": {
+    "displayName": "Ayanna Pressley",
+    "officialName": "Ayanna Pressley",
+    "bioguide": "P000617",
+    "chamber": "house",
+    "title": "Rep.",
+    "party": "D",
+    "state": "MA",
+    "phone": "202-225-5111",
+    "fax": null,
+    "office": "402 Cannon House Office Building",
+    "website": "https://pressley.house.gov",
+    "contactUrl": "https://pressley.house.gov/contact",
+    "email": null
+  },
+  "ayanna pressley": {
+    "displayName": "Ayanna Pressley",
+    "officialName": "Ayanna Pressley",
+    "bioguide": "P000617",
+    "chamber": "house",
+    "title": "Rep.",
+    "party": "D",
+    "state": "MA",
+    "phone": "202-225-5111",
+    "fax": null,
+    "office": "402 Cannon House Office Building",
+    "website": "https://pressley.house.gov",
+    "contactUrl": "https://pressley.house.gov/contact",
+    "email": null
+  },
+  "chris van hollen|MD": {
+    "displayName": "Chris Van Hollen",
+    "officialName": "Chris Van Hollen",
+    "bioguide": "V000128",
+    "chamber": "senate",
+    "title": "Sen.",
+    "party": "D",
+    "state": "MD",
+    "phone": "202-224-4654",
+    "fax": null,
+    "office": "730 Hart Senate Office Building",
+    "website": "https://www.vanhollen.senate.gov",
+    "contactUrl": "https://www.vanhollen.senate.gov/contact/email",
+    "email": null
+  },
+  "chris van hollen": {
+    "displayName": "Chris Van Hollen",
+    "officialName": "Chris Van Hollen",
+    "bioguide": "V000128",
+    "chamber": "senate",
+    "title": "Sen.",
+    "party": "D",
+    "state": "MD",
+    "phone": "202-224-4654",
+    "fax": null,
+    "office": "730 Hart Senate Office Building",
+    "website": "https://www.vanhollen.senate.gov",
+    "contactUrl": "https://www.vanhollen.senate.gov/contact/email",
+    "email": null
+  },
+  "eleanor holmes norton|DC": {
+    "displayName": "Eleanor Holmes Norton",
+    "officialName": "Eleanor Holmes Norton",
+    "bioguide": "N000147",
+    "chamber": "house",
+    "title": "Rep.",
+    "party": "D",
+    "state": "DC",
+    "phone": "202-225-8050",
+    "fax": null,
+    "office": "2136 Rayburn House Office Building",
+    "website": "https://norton.house.gov",
+    "contactUrl": "https://norton.house.gov/contact",
+    "email": null
+  },
+  "eleanor holmes norton": {
+    "displayName": "Eleanor Holmes Norton",
+    "officialName": "Eleanor Holmes Norton",
+    "bioguide": "N000147",
+    "chamber": "house",
+    "title": "Rep.",
+    "party": "D",
+    "state": "DC",
+    "phone": "202-225-8050",
+    "fax": null,
+    "office": "2136 Rayburn House Office Building",
+    "website": "https://norton.house.gov",
+    "contactUrl": "https://norton.house.gov/contact",
+    "email": null
+  },
+  "gary peters|MI": {
+    "displayName": "Gary Peters",
+    "officialName": "Gary C. Peters",
+    "bioguide": "P000595",
+    "chamber": "senate",
+    "title": "Sen.",
+    "party": "D",
+    "state": "MI",
+    "phone": "202-224-6221",
+    "fax": null,
+    "office": "724 Hart Senate Office Building",
+    "website": "https://www.peters.senate.gov",
+    "contactUrl": "https://www.peters.senate.gov/contact/email-gary",
+    "email": null
+  },
+  "gary peters": {
+    "displayName": "Gary Peters",
+    "officialName": "Gary C. Peters",
+    "bioguide": "P000595",
+    "chamber": "senate",
+    "title": "Sen.",
+    "party": "D",
+    "state": "MI",
+    "phone": "202-224-6221",
+    "fax": null,
+    "office": "724 Hart Senate Office Building",
+    "website": "https://www.peters.senate.gov",
+    "contactUrl": "https://www.peters.senate.gov/contact/email-gary",
+    "email": null
+  },
+  "gary c peters|MI": {
+    "displayName": "Gary Peters",
+    "officialName": "Gary C. Peters",
+    "bioguide": "P000595",
+    "chamber": "senate",
+    "title": "Sen.",
+    "party": "D",
+    "state": "MI",
+    "phone": "202-224-6221",
+    "fax": null,
+    "office": "724 Hart Senate Office Building",
+    "website": "https://www.peters.senate.gov",
+    "contactUrl": "https://www.peters.senate.gov/contact/email-gary",
+    "email": null
+  },
+  "gary c peters": {
+    "displayName": "Gary Peters",
+    "officialName": "Gary C. Peters",
+    "bioguide": "P000595",
+    "chamber": "senate",
+    "title": "Sen.",
+    "party": "D",
+    "state": "MI",
+    "phone": "202-224-6221",
+    "fax": null,
+    "office": "724 Hart Senate Office Building",
+    "website": "https://www.peters.senate.gov",
+    "contactUrl": "https://www.peters.senate.gov/contact/email-gary",
+    "email": null
+  },
+  "ken calvert|CA": {
+    "displayName": "Ken Calvert",
+    "officialName": "Ken Calvert",
+    "bioguide": "C000059",
+    "chamber": "house",
+    "title": "Rep.",
+    "party": "R",
+    "state": "CA",
+    "phone": "202-225-1986",
+    "fax": null,
+    "office": "2205 Rayburn House Office Building",
+    "website": "https://calvert.house.gov",
+    "contactUrl": "https://calvert.house.gov/contact",
+    "email": null
+  },
+  "ken calvert": {
+    "displayName": "Ken Calvert",
+    "officialName": "Ken Calvert",
+    "bioguide": "C000059",
+    "chamber": "house",
+    "title": "Rep.",
+    "party": "R",
+    "state": "CA",
+    "phone": "202-225-1986",
+    "fax": null,
+    "office": "2205 Rayburn House Office Building",
+    "website": "https://calvert.house.gov",
+    "contactUrl": "https://calvert.house.gov/contact",
+    "email": null
+  },
+  "mitch mcconnell|KY": {
+    "displayName": "Mitch McConnell",
+    "officialName": "Mitch McConnell",
+    "bioguide": "M000355",
+    "chamber": "senate",
+    "title": "Sen.",
+    "party": "R",
+    "state": "KY",
+    "phone": "202-224-2541",
+    "fax": null,
+    "office": "317 Russell Senate Office Building",
+    "website": "https://www.mcconnell.senate.gov",
+    "contactUrl": "https://www.mcconnell.senate.gov/public/index.cfm?p=contact",
+    "email": null
+  },
+  "mitch mcconnell": {
+    "displayName": "Mitch McConnell",
+    "officialName": "Mitch McConnell",
+    "bioguide": "M000355",
+    "chamber": "senate",
+    "title": "Sen.",
+    "party": "R",
+    "state": "KY",
+    "phone": "202-224-2541",
+    "fax": null,
+    "office": "317 Russell Senate Office Building",
+    "website": "https://www.mcconnell.senate.gov",
+    "contactUrl": "https://www.mcconnell.senate.gov/public/index.cfm?p=contact",
     "email": null
   },
   "john hoeven|ND": {
@@ -1540,6 +1866,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "ND",
     "phone": "202-224-2551",
+    "fax": null,
+    "office": "338 Russell Senate Office Building",
     "website": "https://www.hoeven.senate.gov",
     "contactUrl": "https://www.hoeven.senate.gov/contact/contact-the-senator",
     "email": null
@@ -1553,6 +1881,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "ND",
     "phone": "202-224-2551",
+    "fax": null,
+    "office": "338 Russell Senate Office Building",
     "website": "https://www.hoeven.senate.gov",
     "contactUrl": "https://www.hoeven.senate.gov/contact/contact-the-senator",
     "email": null
@@ -1566,6 +1896,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "ID",
     "phone": "202-225-5531",
+    "fax": null,
+    "office": "2084 Rayburn House Office Building",
     "website": "https://simpson.house.gov",
     "contactUrl": "https://simpson.house.gov/contact",
     "email": null
@@ -1579,6 +1911,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "ID",
     "phone": "202-225-5531",
+    "fax": null,
+    "office": "2084 Rayburn House Office Building",
     "website": "https://simpson.house.gov",
     "contactUrl": "https://simpson.house.gov/contact",
     "email": null
@@ -1592,6 +1926,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "ID",
     "phone": "202-225-5531",
+    "fax": null,
+    "office": "2084 Rayburn House Office Building",
     "website": "https://simpson.house.gov",
     "contactUrl": "https://simpson.house.gov/contact",
     "email": null
@@ -1605,6 +1941,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "ID",
     "phone": "202-225-5531",
+    "fax": null,
+    "office": "2084 Rayburn House Office Building",
     "website": "https://simpson.house.gov",
     "contactUrl": "https://simpson.house.gov/contact",
     "email": null
@@ -1618,6 +1956,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "SC",
     "phone": "202-224-5972",
+    "fax": null,
+    "office": null,
     "website": "https://www.lgraham.senate.gov",
     "contactUrl": "https://www.lgraham.senate.gov/public/index.cfm/contact",
     "email": null
@@ -1631,6 +1971,8 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "R",
     "state": "SC",
     "phone": "202-224-5972",
+    "fax": null,
+    "office": null,
     "website": "https://www.lgraham.senate.gov",
     "contactUrl": "https://www.lgraham.senate.gov/public/index.cfm/contact",
     "email": null
@@ -1644,8 +1986,10 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "D",
     "state": "MI",
     "phone": "202-224-4822",
-    "website": "https://www.stabenow.senate.gov",
-    "contactUrl": "https://www.stabenow.senate.gov/contact",
+    "fax": null,
+    "office": null,
+    "website": "https://www.senate.gov/senators/index.htm",
+    "contactUrl": "https://www.senate.gov/senators/index.htm",
     "email": null
   },
   "debbie stabenow": {
@@ -1657,8 +2001,10 @@ export const legislatorContactsByKey: Record<string, LegislatorContact> = {
     "party": "D",
     "state": "MI",
     "phone": "202-224-4822",
-    "website": "https://www.stabenow.senate.gov",
-    "contactUrl": "https://www.stabenow.senate.gov/contact",
+    "fax": null,
+    "office": null,
+    "website": "https://www.senate.gov/senators/index.htm",
+    "contactUrl": "https://www.senate.gov/senators/index.htm",
     "email": null
   }
 };
@@ -1673,6 +2019,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "WA",
     "phone": "202-224-3441",
+    "fax": null,
+    "office": "511 Hart Senate Office Building",
     "website": "https://www.cantwell.senate.gov",
     "contactUrl": "https://www.cantwell.senate.gov/public/index.cfm/email-maria",
     "email": null
@@ -1686,6 +2034,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "MN",
     "phone": "202-224-3244",
+    "fax": null,
+    "office": "425 Dirksen Senate Office Building",
     "website": "https://www.klobuchar.senate.gov",
     "contactUrl": "https://www.klobuchar.senate.gov/public/index.cfm/contact",
     "email": null
@@ -1699,6 +2049,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "I",
     "state": "VT",
     "phone": "202-224-5141",
+    "fax": null,
+    "office": "332 Dirksen Senate Office Building",
     "website": "https://www.sanders.senate.gov",
     "contactUrl": "https://www.sanders.senate.gov/contact/",
     "email": null
@@ -1712,6 +2064,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "RI",
     "phone": "202-224-2921",
+    "fax": null,
+    "office": "530 Hart Senate Office Building",
     "website": "https://www.whitehouse.senate.gov",
     "contactUrl": "https://www.whitehouse.senate.gov/contact/email-sheldon",
     "email": null
@@ -1725,6 +2079,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "WY",
     "phone": "202-224-6441",
+    "fax": null,
+    "office": "307 Dirksen Senate Office Building",
     "website": "https://www.barrasso.senate.gov",
     "contactUrl": "https://www.barrasso.senate.gov/public/index.cfm/contact-form",
     "email": null
@@ -1738,6 +2094,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "MS",
     "phone": "202-224-6253",
+    "fax": null,
+    "office": "425 Russell Senate Office Building",
     "website": "https://www.wicker.senate.gov",
     "contactUrl": "https://www.wicker.senate.gov/public/index.cfm/contact",
     "email": null
@@ -1751,6 +2109,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "ME",
     "phone": "202-224-2523",
+    "fax": null,
+    "office": "413 Dirksen Senate Office Building",
     "website": "https://www.collins.senate.gov",
     "contactUrl": "https://www.collins.senate.gov/contact",
     "email": null
@@ -1764,6 +2124,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "TX",
     "phone": "202-224-2934",
+    "fax": null,
+    "office": "517 Hart Senate Office Building",
     "website": "https://www.cornyn.senate.gov",
     "contactUrl": "https://www.cornyn.senate.gov/contact",
     "email": null
@@ -1777,6 +2139,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "IL",
     "phone": "202-224-2152",
+    "fax": null,
+    "office": "711 Hart Senate Office Building",
     "website": "https://www.durbin.senate.gov",
     "contactUrl": "https://www.durbin.senate.gov/contact/",
     "email": null
@@ -1790,6 +2154,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "KY",
     "phone": "202-224-2541",
+    "fax": null,
+    "office": "317 Russell Senate Office Building",
     "website": "https://www.mcconnell.senate.gov",
     "contactUrl": "https://www.mcconnell.senate.gov/public/index.cfm?p=contact",
     "email": null
@@ -1803,6 +2169,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "OR",
     "phone": "202-224-3753",
+    "fax": null,
+    "office": "531 Hart Senate Office Building",
     "website": "https://www.merkley.senate.gov",
     "contactUrl": "https://www.merkley.senate.gov/contact/",
     "email": null
@@ -1816,6 +2184,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "RI",
     "phone": "202-224-4642",
+    "fax": null,
+    "office": "728 Hart Senate Office Building",
     "website": "https://www.reed.senate.gov",
     "contactUrl": "https://www.reed.senate.gov/contact/",
     "email": null
@@ -1829,6 +2199,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "ID",
     "phone": "202-224-2752",
+    "fax": null,
+    "office": "483 Russell Senate Office Building",
     "website": "https://www.risch.senate.gov",
     "contactUrl": "https://www.risch.senate.gov/public/index.cfm?p=Email",
     "email": null
@@ -1842,6 +2214,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "NH",
     "phone": "202-224-2841",
+    "fax": null,
+    "office": "506 Hart Senate Office Building",
     "website": "https://www.shaheen.senate.gov",
     "contactUrl": "https://www.shaheen.senate.gov/contact/contact-jeanne",
     "email": null
@@ -1855,6 +2229,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "VA",
     "phone": "202-224-2023",
+    "fax": null,
+    "office": "703 Hart Senate Office Building",
     "website": "https://www.warner.senate.gov",
     "contactUrl": "https://www.warner.senate.gov/public/index.cfm?p=Contact",
     "email": null
@@ -1868,6 +2244,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "NY",
     "phone": "202-224-4451",
+    "fax": null,
+    "office": "478 Russell Senate Office Building",
     "website": "https://www.gillibrand.senate.gov",
     "contactUrl": "https://www.gillibrand.senate.gov/contact/email-me",
     "email": null
@@ -1881,6 +2259,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "DE",
     "phone": "202-224-5042",
+    "fax": null,
+    "office": "218 Russell Senate Office Building",
     "website": "https://www.coons.senate.gov",
     "contactUrl": "https://www.coons.senate.gov/contact",
     "email": null
@@ -1894,6 +2274,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "AL",
     "phone": "202-225-4876",
+    "fax": null,
+    "office": "272 Cannon House Office Building",
     "website": "https://aderholt.house.gov",
     "contactUrl": "https://aderholt.house.gov/contact",
     "email": null
@@ -1907,6 +2289,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "WI",
     "phone": "202-224-5653",
+    "fax": null,
+    "office": "141 Hart Senate Office Building",
     "website": "https://www.baldwin.senate.gov",
     "contactUrl": "https://www.baldwin.senate.gov/feedback",
     "email": null
@@ -1920,6 +2304,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CO",
     "phone": "202-224-5852",
+    "fax": null,
+    "office": "261 Russell Senate Office Building",
     "website": "https://www.bennet.senate.gov",
     "contactUrl": "https://www.bennet.senate.gov/public/index.cfm/contact",
     "email": null
@@ -1933,6 +2319,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "FL",
     "phone": "202-225-5755",
+    "fax": null,
+    "office": "2306 Rayburn House Office Building",
     "website": "https://bilirakis.house.gov",
     "contactUrl": "https://bilirakis.house.gov/contact",
     "email": null
@@ -1946,6 +2334,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "GA",
     "phone": "202-225-3631",
+    "fax": null,
+    "office": "2407 Rayburn House Office Building",
     "website": "https://bishop.house.gov",
     "contactUrl": "https://bishop.house.gov/contact",
     "email": null
@@ -1959,6 +2349,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "TN",
     "phone": "202-224-3344",
+    "fax": null,
+    "office": "357 Dirksen Senate Office Building",
     "website": "https://www.blackburn.senate.gov",
     "contactUrl": "https://www.blackburn.senate.gov/email-me",
     "email": null
@@ -1972,6 +2364,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CT",
     "phone": "202-224-2823",
+    "fax": null,
+    "office": "503 Hart Senate Office Building",
     "website": "https://www.blumenthal.senate.gov",
     "contactUrl": "https://www.blumenthal.senate.gov/contact/",
     "email": null
@@ -1985,6 +2379,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "AR",
     "phone": "202-224-4843",
+    "fax": null,
+    "office": "555 Dirksen Senate Office Building",
     "website": "https://www.boozman.senate.gov/public",
     "contactUrl": "https://www.boozman.senate.gov/public/index.cfm/contact",
     "email": null
@@ -1998,6 +2394,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "FL",
     "phone": "202-225-5015",
+    "fax": null,
+    "office": "2409 Rayburn House Office Building",
     "website": "https://buchanan.house.gov",
     "contactUrl": "https://buchanan.house.gov/contact",
     "email": null
@@ -2011,6 +2409,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "CA",
     "phone": "202-225-1986",
+    "fax": null,
+    "office": "2205 Rayburn House Office Building",
     "website": "https://calvert.house.gov",
     "contactUrl": "https://calvert.house.gov/contact",
     "email": null
@@ -2024,6 +2424,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "WV",
     "phone": "202-224-6472",
+    "fax": null,
+    "office": "170 Russell Senate Office Building",
     "website": "https://www.capito.senate.gov",
     "contactUrl": "https://www.capito.senate.gov/contact/contact-shelley",
     "email": null
@@ -2037,6 +2439,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "IN",
     "phone": "202-225-4011",
+    "fax": null,
+    "office": "2135 Rayburn House Office Building",
     "website": "https://carson.house.gov",
     "contactUrl": "https://carson.house.gov/contact",
     "email": null
@@ -2050,6 +2454,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "TX",
     "phone": "202-225-3864",
+    "fax": null,
+    "office": "2208 Rayburn House Office Building",
     "website": "https://carter.house.gov",
     "contactUrl": "https://carter.house.gov/contact",
     "email": null
@@ -2063,6 +2469,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "LA",
     "phone": "202-224-5824",
+    "fax": null,
+    "office": "455 Dirksen Senate Office Building",
     "website": "https://www.cassidy.senate.gov",
     "contactUrl": "https://www.cassidy.senate.gov/contact",
     "email": null
@@ -2076,6 +2484,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "FL",
     "phone": "202-225-3376",
+    "fax": null,
+    "office": "2188 Rayburn House Office Building",
     "website": "https://castor.house.gov",
     "contactUrl": "https://castor.house.gov/contact",
     "email": null
@@ -2089,6 +2499,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CA",
     "phone": "202-225-5464",
+    "fax": null,
+    "office": "2423 Rayburn House Office Building",
     "website": "https://chu.house.gov",
     "contactUrl": "https://chu.house.gov/contact",
     "email": null
@@ -2102,6 +2514,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "NY",
     "phone": "202-225-6231",
+    "fax": null,
+    "office": "2058 Rayburn House Office Building",
     "website": "https://clarke.house.gov",
     "contactUrl": "https://clarke.house.gov/contact",
     "email": null
@@ -2115,6 +2529,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "MO",
     "phone": "202-225-4535",
+    "fax": null,
+    "office": "2217 Rayburn House Office Building",
     "website": "https://cleaver.house.gov",
     "contactUrl": "https://cleaver.house.gov/contact",
     "email": null
@@ -2128,8 +2544,10 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "SC",
     "phone": "202-225-3315",
+    "fax": null,
+    "office": "274 Cannon House Office Building",
     "website": "https://clyburn.house.gov",
-    "contactUrl": "https://clyburn.house.gov/contact",
+    "contactUrl": "https://clyburn.house.gov/",
     "email": null
   },
   {
@@ -2141,6 +2559,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "TN",
     "phone": "202-225-3265",
+    "fax": null,
+    "office": "2268 Rayburn House Office Building",
     "website": "https://cohen.house.gov",
     "contactUrl": "https://cohen.house.gov/contact",
     "email": null
@@ -2154,6 +2574,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "OK",
     "phone": "202-225-6165",
+    "fax": null,
+    "office": "2207 Rayburn House Office Building",
     "website": "https://cole.house.gov",
     "contactUrl": "https://cole.house.gov/contact",
     "email": null
@@ -2167,6 +2589,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CA",
     "phone": "202-225-3341",
+    "fax": null,
+    "office": "2081 Rayburn House Office Building",
     "website": "https://costa.house.gov",
     "contactUrl": "https://costa.house.gov/contact",
     "email": null
@@ -2180,6 +2604,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CT",
     "phone": "202-225-2076",
+    "fax": null,
+    "office": "2449 Rayburn House Office Building",
     "website": "https://courtney.house.gov",
     "contactUrl": "https://courtney.house.gov/contact",
     "email": null
@@ -2193,6 +2619,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "ID",
     "phone": "202-224-6142",
+    "fax": null,
+    "office": "239 Dirksen Senate Office Building",
     "website": "https://www.crapo.senate.gov",
     "contactUrl": "https://www.crapo.senate.gov/contact",
     "email": null
@@ -2206,6 +2634,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "AR",
     "phone": "202-225-4076",
+    "fax": null,
+    "office": "2422 Rayburn House Office Building",
     "website": "https://crawford.house.gov",
     "contactUrl": "https://crawford.house.gov/contact",
     "email": null
@@ -2219,6 +2649,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "TX",
     "phone": "202-225-1640",
+    "fax": null,
+    "office": "2308 Rayburn House Office Building",
     "website": "https://cuellar.house.gov",
     "contactUrl": "https://cuellar.house.gov/contact",
     "email": null
@@ -2232,6 +2664,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "IL",
     "phone": "202-225-5006",
+    "fax": null,
+    "office": "2159 Rayburn House Office Building",
     "website": "https://davis.house.gov",
     "contactUrl": "https://davis.house.gov/contact",
     "email": null
@@ -2245,6 +2679,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CO",
     "phone": "202-225-4431",
+    "fax": null,
+    "office": "2111 Rayburn House Office Building",
     "website": "https://degette.house.gov",
     "contactUrl": "https://degette.house.gov/contact",
     "email": null
@@ -2258,6 +2694,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CT",
     "phone": "202-225-3661",
+    "fax": null,
+    "office": "2413 Rayburn House Office Building",
     "website": "https://delauro.house.gov",
     "contactUrl": "https://delauro.house.gov/contact",
     "email": null
@@ -2271,6 +2709,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "TN",
     "phone": "202-225-6831",
+    "fax": null,
+    "office": "2304 Rayburn House Office Building",
     "website": "https://desjarlais.house.gov",
     "contactUrl": "https://desjarlais.house.gov/contact",
     "email": null
@@ -2284,6 +2724,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "FL",
     "phone": "202-225-4211",
+    "fax": null,
+    "office": "374 Cannon House Office Building",
     "website": "https://mariodiazbalart.house.gov",
     "contactUrl": "https://mariodiazbalart.house.gov/contact",
     "email": null
@@ -2297,6 +2739,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "TX",
     "phone": "202-225-4865",
+    "fax": null,
+    "office": "2307 Rayburn House Office Building",
     "website": "https://doggett.house.gov",
     "contactUrl": "https://doggett.house.gov/contact",
     "email": null
@@ -2310,6 +2754,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "TN",
     "phone": "202-225-3271",
+    "fax": null,
+    "office": "2187 Rayburn House Office Building",
     "website": "https://fleischmann.house.gov",
     "contactUrl": "https://fleischmann.house.gov/contact",
     "email": null
@@ -2323,6 +2769,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "NC",
     "phone": "202-225-2071",
+    "fax": null,
+    "office": "2462 Rayburn House Office Building",
     "website": "https://foxx.house.gov",
     "contactUrl": "https://foxx.house.gov/contact",
     "email": null
@@ -2336,6 +2784,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CA",
     "phone": "202-225-1880",
+    "fax": null,
+    "office": "2428 Rayburn House Office Building",
     "website": "https://garamendi.house.gov",
     "contactUrl": "https://garamendi.house.gov/contact",
     "email": null
@@ -2349,6 +2799,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "AZ",
     "phone": "202-225-2315",
+    "fax": null,
+    "office": "2057 Rayburn House Office Building",
     "website": "https://gosar.house.gov",
     "contactUrl": "https://gosar.house.gov/contact",
     "email": null
@@ -2362,6 +2814,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "IA",
     "phone": "202-224-3744",
+    "fax": null,
+    "office": "135 Hart Senate Office Building",
     "website": "https://www.grassley.senate.gov",
     "contactUrl": "https://www.grassley.senate.gov/contact",
     "email": null
@@ -2375,6 +2829,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "MO",
     "phone": "202-225-7041",
+    "fax": null,
+    "office": "1135 Longworth House Office Building",
     "website": "https://graves.house.gov",
     "contactUrl": "https://graves.house.gov/contact",
     "email": null
@@ -2388,6 +2844,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "TX",
     "phone": "202-225-7508",
+    "fax": null,
+    "office": "2347 Rayburn House Office Building",
     "website": "https://algreen.house.gov",
     "contactUrl": "https://algreen.house.gov/contact",
     "email": null
@@ -2401,6 +2859,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "VA",
     "phone": "202-225-3861",
+    "fax": null,
+    "office": "2110 Rayburn House Office Building",
     "website": "https://morgangriffith.house.gov",
     "contactUrl": "https://morgangriffith.house.gov/contact",
     "email": null
@@ -2414,6 +2874,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "KY",
     "phone": "202-225-3501",
+    "fax": null,
+    "office": "2161 Rayburn House Office Building",
     "website": "https://guthrie.house.gov",
     "contactUrl": "https://guthrie.house.gov/contact",
     "email": null
@@ -2427,6 +2889,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "MD",
     "phone": "202-225-5311",
+    "fax": null,
+    "office": "1536 Longworth House Office Building",
     "website": "https://harris.house.gov",
     "contactUrl": "https://harris.house.gov/contact",
     "email": null
@@ -2440,6 +2904,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "NM",
     "phone": "202-224-5521",
+    "fax": null,
+    "office": "709 Hart Senate Office Building",
     "website": "https://www.heinrich.senate.gov",
     "contactUrl": "https://www.heinrich.senate.gov/contact",
     "email": null
@@ -2453,6 +2919,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CT",
     "phone": "202-225-5541",
+    "fax": null,
+    "office": "2137 Rayburn House Office Building",
     "website": "https://himes.house.gov",
     "contactUrl": "https://himes.house.gov/contact",
     "email": null
@@ -2466,6 +2934,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "HI",
     "phone": "202-224-6361",
+    "fax": null,
+    "office": "109 Hart Senate Office Building",
     "website": "https://www.hirono.senate.gov",
     "contactUrl": "https://www.hirono.senate.gov/contact",
     "email": null
@@ -2479,6 +2949,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "ND",
     "phone": "202-224-2551",
+    "fax": null,
+    "office": "338 Russell Senate Office Building",
     "website": "https://www.hoeven.senate.gov",
     "contactUrl": "https://www.hoeven.senate.gov/contact/contact-the-senator",
     "email": null
@@ -2492,6 +2964,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "MD",
     "phone": "202-225-4131",
+    "fax": null,
+    "office": "1705 Longworth House Office Building",
     "website": "https://hoyer.house.gov",
     "contactUrl": "https://hoyer.house.gov/contact",
     "email": null
@@ -2505,6 +2979,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "MI",
     "phone": "202-225-4401",
+    "fax": null,
+    "office": "2232 Rayburn House Office Building",
     "website": "https://huizenga.house.gov",
     "contactUrl": "https://huizenga.house.gov/contact",
     "email": null
@@ -2518,6 +2994,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "GA",
     "phone": "202-225-1605",
+    "fax": null,
+    "office": "2240 Rayburn House Office Building",
     "website": "https://hankjohnson.house.gov",
     "contactUrl": "https://hankjohnson.house.gov/contact",
     "email": null
@@ -2531,6 +3009,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "WI",
     "phone": "202-224-5323",
+    "fax": null,
+    "office": "328 Hart Senate Office Building",
     "website": "https://www.ronjohnson.senate.gov",
     "contactUrl": "https://www.ronjohnson.senate.gov/public/index.cfm/email-the-senator",
     "email": null
@@ -2544,6 +3024,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "OH",
     "phone": "202-225-2676",
+    "fax": null,
+    "office": "2056 Rayburn House Office Building",
     "website": "https://jordan.house.gov",
     "contactUrl": "https://jordan.house.gov/contact",
     "email": null
@@ -2557,6 +3039,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "OH",
     "phone": "202-225-4146",
+    "fax": null,
+    "office": "2314 Rayburn House Office Building",
     "website": "https://kaptur.house.gov",
     "contactUrl": "https://kaptur.house.gov/contact",
     "email": null
@@ -2570,6 +3054,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "MA",
     "phone": "202-225-3111",
+    "fax": null,
+    "office": "2372 Rayburn House Office Building",
     "website": "https://keating.house.gov",
     "contactUrl": "https://keating.house.gov/contact",
     "email": null
@@ -2583,6 +3069,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "PA",
     "phone": "202-225-5406",
+    "fax": null,
+    "office": "1707 Longworth House Office Building",
     "website": "https://kelly.house.gov",
     "contactUrl": "https://kelly.house.gov/contact",
     "email": null
@@ -2596,6 +3084,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "OK",
     "phone": "202-224-5754",
+    "fax": null,
+    "office": "731 Hart Senate Office Building",
     "website": "https://www.lankford.senate.gov",
     "contactUrl": "https://www.lankford.senate.gov/contact/email",
     "email": null
@@ -2609,6 +3099,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "WA",
     "phone": "202-225-2605",
+    "fax": null,
+    "office": "2163 Rayburn House Office Building",
     "website": "https://larsen.house.gov",
     "contactUrl": "https://larsen.house.gov/contact",
     "email": null
@@ -2622,6 +3114,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CT",
     "phone": "202-225-2265",
+    "fax": null,
+    "office": "1501 Longworth House Office Building",
     "website": "https://larson.house.gov",
     "contactUrl": "https://larson.house.gov/contact",
     "email": null
@@ -2635,6 +3129,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "OH",
     "phone": "202-225-6405",
+    "fax": null,
+    "office": "2470 Rayburn House Office Building",
     "website": "https://latta.house.gov",
     "contactUrl": "https://latta.house.gov/contact",
     "email": null
@@ -2648,6 +3144,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "UT",
     "phone": "202-224-5444",
+    "fax": null,
+    "office": "363 Russell Senate Office Building",
     "website": "https://www.lee.senate.gov",
     "contactUrl": "https://www.lee.senate.gov/public/index.cfm/contact",
     "email": null
@@ -2661,6 +3159,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CA",
     "phone": "202-225-3072",
+    "fax": null,
+    "office": "1401 Longworth House Office Building",
     "website": "https://lofgren.house.gov",
     "contactUrl": "https://lofgren.house.gov/contact",
     "email": null
@@ -2674,6 +3174,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "OK",
     "phone": "202-225-5565",
+    "fax": null,
+    "office": "2405 Rayburn House Office Building",
     "website": "https://lucas.house.gov",
     "contactUrl": "https://lucas.house.gov/contact",
     "email": null
@@ -2687,6 +3189,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "NM",
     "phone": "202-224-6621",
+    "fax": null,
+    "office": "498 Russell Senate Office Building",
     "website": "https://www.lujan.senate.gov",
     "contactUrl": "https://www.lujan.senate.gov/contact/",
     "email": null
@@ -2700,6 +3204,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "MA",
     "phone": "202-225-8273",
+    "fax": null,
+    "office": "2109 Rayburn House Office Building",
     "website": "https://lynch.house.gov",
     "contactUrl": "https://lynch.house.gov/contact",
     "email": null
@@ -2713,6 +3219,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "MA",
     "phone": "202-224-2742",
+    "fax": "202-228-0769",
+    "office": "255 Dirksen Senate Office Building",
     "website": "https://www.markey.senate.gov",
     "contactUrl": "https://www.markey.senate.gov/contact",
     "email": null
@@ -2726,6 +3234,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CA",
     "phone": "202-225-7163",
+    "fax": null,
+    "office": "2206 Rayburn House Office Building",
     "website": "https://matsui.house.gov",
     "contactUrl": "https://matsui.house.gov/contact",
     "email": null
@@ -2739,6 +3249,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "TX",
     "phone": "202-225-2401",
+    "fax": null,
+    "office": "2300 Rayburn House Office Building",
     "website": "https://mccaul.house.gov",
     "contactUrl": "https://mccaul.house.gov/contact",
     "email": null
@@ -2752,6 +3264,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "CA",
     "phone": "202-225-2511",
+    "fax": null,
+    "office": "2256 Rayburn House Office Building",
     "website": "https://mcclintock.house.gov",
     "contactUrl": "https://mcclintock.house.gov/contact",
     "email": null
@@ -2765,6 +3279,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "MN",
     "phone": "202-225-6631",
+    "fax": null,
+    "office": "2426 Rayburn House Office Building",
     "website": "https://mccollum.house.gov",
     "contactUrl": "https://mccollum.house.gov/contact",
     "email": null
@@ -2778,6 +3294,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "MA",
     "phone": "202-225-6101",
+    "fax": null,
+    "office": "370 Cannon House Office Building",
     "website": "https://mcgovern.house.gov",
     "contactUrl": "https://mcgovern.house.gov/contact",
     "email": null
@@ -2791,6 +3309,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "NY",
     "phone": "202-225-3461",
+    "fax": null,
+    "office": "2310 Rayburn House Office Building",
     "website": "https://meeks.house.gov",
     "contactUrl": "https://meeks.house.gov/contact",
     "email": null
@@ -2804,6 +3324,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "WI",
     "phone": "202-225-4572",
+    "fax": null,
+    "office": "2252 Rayburn House Office Building",
     "website": "https://gwenmoore.house.gov",
     "contactUrl": "https://gwenmoore.house.gov/contact",
     "email": null
@@ -2817,6 +3339,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "KS",
     "phone": "202-224-6521",
+    "fax": null,
+    "office": "521 Dirksen Senate Office Building",
     "website": "https://www.moran.senate.gov",
     "contactUrl": "https://www.moran.senate.gov/public/index.cfm/e-mail-jerry",
     "email": null
@@ -2830,6 +3354,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "AK",
     "phone": "202-224-6665",
+    "fax": null,
+    "office": "522 Hart Senate Office Building",
     "website": "https://www.murkowski.senate.gov",
     "contactUrl": "https://www.murkowski.senate.gov/public/index.cfm/contact",
     "email": null
@@ -2843,6 +3369,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CT",
     "phone": "202-224-4041",
+    "fax": null,
+    "office": "136 Hart Senate Office Building",
     "website": "https://www.murphy.senate.gov",
     "contactUrl": "https://www.murphy.senate.gov/contact",
     "email": null
@@ -2856,6 +3384,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "WA",
     "phone": "202-224-2621",
+    "fax": null,
+    "office": "154 Russell Senate Office Building",
     "website": "https://www.murray.senate.gov",
     "contactUrl": "https://www.murray.senate.gov/write-to-patty/",
     "email": null
@@ -2869,6 +3399,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "NY",
     "phone": "202-225-5635",
+    "fax": null,
+    "office": "2132 Rayburn House Office Building",
     "website": "https://nadler.house.gov",
     "contactUrl": "https://nadler.house.gov/contact",
     "email": null
@@ -2882,6 +3414,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "MA",
     "phone": "202-225-5601",
+    "fax": null,
+    "office": "372 Cannon House Office Building",
     "website": "https://neal.house.gov",
     "contactUrl": "https://neal.house.gov/contact",
     "email": null
@@ -2895,6 +3429,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "DC",
     "phone": "202-225-8050",
+    "fax": null,
+    "office": "2136 Rayburn House Office Building",
     "website": "https://norton.house.gov",
     "contactUrl": "https://norton.house.gov/contact",
     "email": null
@@ -2908,6 +3444,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "NJ",
     "phone": "202-225-4671",
+    "fax": null,
+    "office": "2107 Rayburn House Office Building",
     "website": "https://pallone.house.gov",
     "contactUrl": "https://pallone.house.gov/contact",
     "email": null
@@ -2921,6 +3459,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "KY",
     "phone": "202-224-4343",
+    "fax": null,
+    "office": "295 Russell Senate Office Building",
     "website": "https://www.paul.senate.gov",
     "contactUrl": "https://www.paul.senate.gov/connect/email-rand",
     "email": null
@@ -2934,6 +3474,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CA",
     "phone": "202-225-4965",
+    "fax": null,
+    "office": "1236 Longworth House Office Building",
     "website": "https://pelosi.house.gov",
     "contactUrl": "https://pelosi.house.gov/contact",
     "email": null
@@ -2947,6 +3489,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "MI",
     "phone": "202-224-6221",
+    "fax": null,
+    "office": "724 Hart Senate Office Building",
     "website": "https://www.peters.senate.gov",
     "contactUrl": "https://www.peters.senate.gov/contact/email-gary",
     "email": null
@@ -2960,6 +3504,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "ME",
     "phone": "202-225-6116",
+    "fax": null,
+    "office": "2354 Rayburn House Office Building",
     "website": "https://pingree.house.gov",
     "contactUrl": "https://pingree.house.gov/contact",
     "email": null
@@ -2973,6 +3519,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "IL",
     "phone": "202-225-4061",
+    "fax": null,
+    "office": "2083 Rayburn House Office Building",
     "website": "https://quigley.house.gov",
     "contactUrl": "https://quigley.house.gov/contact",
     "email": null
@@ -2986,6 +3534,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "KY",
     "phone": "202-225-4601",
+    "fax": null,
+    "office": "2406 Rayburn House Office Building",
     "website": "https://halrogers.house.gov",
     "contactUrl": "https://halrogers.house.gov/contact",
     "email": null
@@ -2999,6 +3549,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "AL",
     "phone": "202-225-3261",
+    "fax": null,
+    "office": "2469 Rayburn House Office Building",
     "website": "https://mikerogers.house.gov",
     "contactUrl": "https://mikerogers.house.gov/contact",
     "email": null
@@ -3012,6 +3564,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "LA",
     "phone": "202-225-3015",
+    "fax": null,
+    "office": "266 Cannon House Office Building",
     "website": "https://scalise.house.gov",
     "contactUrl": "https://scalise.house.gov/contact",
     "email": null
@@ -3025,6 +3579,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "IL",
     "phone": "202-225-2111",
+    "fax": null,
+    "office": "2408 Rayburn House Office Building",
     "website": "https://schakowsky.house.gov",
     "contactUrl": "https://schakowsky.house.gov/contact",
     "email": null
@@ -3038,6 +3594,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CA",
     "phone": "202-224-3841",
+    "fax": "202-228-0026",
+    "office": "112 Hart Senate Office Building",
     "website": "https://www.schiff.senate.gov",
     "contactUrl": "https://www.schiff.senate.gov/contact",
     "email": null
@@ -3051,6 +3609,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "NY",
     "phone": "202-224-6542",
+    "fax": null,
+    "office": "322 Hart Senate Office Building",
     "website": "https://www.schumer.senate.gov",
     "contactUrl": "https://www.schumer.senate.gov/contact/email-chuck",
     "email": null
@@ -3064,6 +3624,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "AZ",
     "phone": "202-225-2190",
+    "fax": null,
+    "office": "166 Cannon House Office Building",
     "website": "https://schweikert.house.gov",
     "contactUrl": "https://schweikert.house.gov/contact",
     "email": null
@@ -3077,8 +3639,10 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "GA",
     "phone": "202-225-6531",
+    "fax": null,
+    "office": "2185 Rayburn House Office Building",
     "website": "https://austinscott.house.gov",
-    "contactUrl": "https://austinscott.house.gov/contact",
+    "contactUrl": "https://austinscott.house.gov/",
     "email": null
   },
   {
@@ -3090,6 +3654,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "VA",
     "phone": "202-225-8351",
+    "fax": null,
+    "office": "2328 Rayburn House Office Building",
     "website": "https://bobbyscott.house.gov",
     "contactUrl": "https://bobbyscott.house.gov/contact",
     "email": null
@@ -3103,6 +3669,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "SC",
     "phone": "202-224-6121",
+    "fax": null,
+    "office": "104 Hart Senate Office Building",
     "website": "https://www.scott.senate.gov",
     "contactUrl": "https://www.scott.senate.gov/contact/email-me",
     "email": null
@@ -3116,8 +3684,10 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "AL",
     "phone": "202-225-2665",
+    "fax": null,
+    "office": "1035 Longworth House Office Building",
     "website": "https://sewell.house.gov",
-    "contactUrl": "https://sewell.house.gov/contact",
+    "contactUrl": "https://sewell.house.gov/",
     "email": null
   },
   {
@@ -3129,6 +3699,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CA",
     "phone": "202-225-5911",
+    "fax": null,
+    "office": "2365 Rayburn House Office Building",
     "website": "https://sherman.house.gov",
     "contactUrl": "https://sherman.house.gov/contact",
     "email": null
@@ -3142,6 +3714,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "ID",
     "phone": "202-225-5531",
+    "fax": null,
+    "office": "2084 Rayburn House Office Building",
     "website": "https://simpson.house.gov",
     "contactUrl": "https://simpson.house.gov/contact",
     "email": null
@@ -3155,6 +3729,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "WA",
     "phone": "202-225-8901",
+    "fax": null,
+    "office": "2264 Rayburn House Office Building",
     "website": "https://adamsmith.house.gov",
     "contactUrl": "https://adamsmith.house.gov/contact",
     "email": null
@@ -3168,6 +3744,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "NE",
     "phone": "202-225-6435",
+    "fax": null,
+    "office": "502 Cannon House Office Building",
     "website": "https://adriansmith.house.gov",
     "contactUrl": "https://adriansmith.house.gov/contact",
     "email": null
@@ -3181,6 +3759,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "NJ",
     "phone": "202-225-3765",
+    "fax": "202-225-7768",
+    "office": "2373 Rayburn House Office Building",
     "website": "https://chrissmith.house.gov",
     "contactUrl": "https://chrissmith.house.gov/contact",
     "email": null
@@ -3194,6 +3774,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CA",
     "phone": "202-225-6676",
+    "fax": null,
+    "office": "2309 Rayburn House Office Building",
     "website": "https://lindasanchez.house.gov",
     "contactUrl": "https://lindasanchez.house.gov/contact",
     "email": null
@@ -3207,6 +3789,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "MS",
     "phone": "202-225-5876",
+    "fax": null,
+    "office": "2466 Rayburn House Office Building",
     "website": "https://benniethompson.house.gov",
     "contactUrl": "https://benniethompson.house.gov/contact",
     "email": null
@@ -3220,6 +3804,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CA",
     "phone": "202-225-3311",
+    "fax": null,
+    "office": "268 Cannon House Office Building",
     "website": "https://mikethompson.house.gov",
     "contactUrl": "https://mikethompson.house.gov/contact",
     "email": null
@@ -3233,6 +3819,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "PA",
     "phone": "202-225-5121",
+    "fax": null,
+    "office": "400 Cannon House Office Building",
     "website": "https://thompson.house.gov",
     "contactUrl": "https://thompson.house.gov/contact",
     "email": null
@@ -3246,6 +3834,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "SD",
     "phone": "202-224-2321",
+    "fax": null,
+    "office": "511 Dirksen Senate Office Building",
     "website": "https://www.thune.senate.gov",
     "contactUrl": "https://www.thune.senate.gov/public/index.cfm/contact",
     "email": null
@@ -3259,6 +3849,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "NY",
     "phone": "202-225-5076",
+    "fax": null,
+    "office": "2269 Rayburn House Office Building",
     "website": "https://tonko.house.gov",
     "contactUrl": "https://tonko.house.gov/contact",
     "email": null
@@ -3272,6 +3864,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "OH",
     "phone": "202-225-6465",
+    "fax": null,
+    "office": "2183 Rayburn House Office Building",
     "website": "https://turner.house.gov",
     "contactUrl": "https://turner.house.gov/contact",
     "email": null
@@ -3285,6 +3879,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "MD",
     "phone": "202-224-4654",
+    "fax": null,
+    "office": "730 Hart Senate Office Building",
     "website": "https://www.vanhollen.senate.gov",
     "contactUrl": "https://www.vanhollen.senate.gov/contact/email",
     "email": null
@@ -3298,6 +3894,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "NY",
     "phone": "202-225-2361",
+    "fax": null,
+    "office": "2302 Rayburn House Office Building",
     "website": "https://velazquez.house.gov",
     "contactUrl": "https://velazquez.house.gov/contact",
     "email": null
@@ -3311,6 +3909,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "MI",
     "phone": "202-225-6276",
+    "fax": null,
+    "office": "2266 Rayburn House Office Building",
     "website": "https://walberg.house.gov",
     "contactUrl": "https://walberg.house.gov/contact",
     "email": null
@@ -3324,6 +3924,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "FL",
     "phone": "202-225-7931",
+    "fax": null,
+    "office": "270 Cannon House Office Building",
     "website": "https://wassermanschultz.house.gov",
     "contactUrl": "https://wassermanschultz.house.gov/contact",
     "email": null
@@ -3337,6 +3939,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CA",
     "phone": "202-225-2201",
+    "fax": null,
+    "office": "2221 Rayburn House Office Building",
     "website": "https://waters.house.gov",
     "contactUrl": "https://waters.house.gov/contact",
     "email": null
@@ -3350,6 +3954,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "FL",
     "phone": "202-225-1002",
+    "fax": null,
+    "office": "2184 Rayburn House Office Building",
     "website": "https://webster.house.gov",
     "contactUrl": "https://webster.house.gov/contact",
     "email": null
@@ -3363,6 +3969,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "VT",
     "phone": "202-224-4242",
+    "fax": null,
+    "office": "115 Russell Senate Office Building",
     "website": "https://www.welch.senate.gov",
     "contactUrl": "https://www.welch.senate.gov/email-peter/",
     "email": null
@@ -3376,6 +3984,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "SC",
     "phone": "202-225-2452",
+    "fax": null,
+    "office": "1436 Longworth House Office Building",
     "website": "https://joewilson.house.gov",
     "contactUrl": "https://joewilson.house.gov/contact",
     "email": null
@@ -3389,6 +3999,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "FL",
     "phone": "202-225-4506",
+    "fax": null,
+    "office": "2080 Rayburn House Office Building",
     "website": "https://wilson.house.gov",
     "contactUrl": "https://wilson.house.gov/contact",
     "email": null
@@ -3402,6 +4014,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "VA",
     "phone": "202-225-4261",
+    "fax": null,
+    "office": "2055 Rayburn House Office Building",
     "website": "https://wittman.house.gov",
     "contactUrl": "https://wittman.house.gov/contact",
     "email": null
@@ -3415,6 +4029,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "AR",
     "phone": "202-225-4301",
+    "fax": null,
+    "office": "2412 Rayburn House Office Building",
     "website": "https://womack.house.gov",
     "contactUrl": "https://womack.house.gov/contact",
     "email": null
@@ -3428,6 +4044,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "OR",
     "phone": "202-224-5244",
+    "fax": null,
+    "office": "221 Dirksen Senate Office Building",
     "website": "https://www.wyden.senate.gov",
     "contactUrl": "https://www.wyden.senate.gov/contact/",
     "email": null
@@ -3441,6 +4059,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "IN",
     "phone": "202-224-5623",
+    "fax": null,
+    "office": "185 Dirksen Senate Office Building",
     "website": "https://www.young.senate.gov",
     "contactUrl": "https://www.young.senate.gov/contact",
     "email": null
@@ -3454,6 +4074,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "NV",
     "phone": "202-225-6155",
+    "fax": null,
+    "office": "104 Cannon House Office Building",
     "website": "https://amodei.house.gov",
     "contactUrl": "https://amodei.house.gov/contact",
     "email": null
@@ -3467,6 +4089,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "OR",
     "phone": "202-225-0855",
+    "fax": null,
+    "office": "2231 Rayburn House Office Building",
     "website": "https://bonamici.house.gov",
     "contactUrl": "https://bonamici.house.gov/contact",
     "email": null
@@ -3480,6 +4104,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "WA",
     "phone": "202-225-6311",
+    "fax": null,
+    "office": "2311 Rayburn House Office Building",
     "website": "https://delbene.house.gov",
     "contactUrl": "https://delbene.house.gov/contact",
     "email": null
@@ -3493,6 +4119,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "KY",
     "phone": "202-225-3465",
+    "fax": null,
+    "office": "2371 Rayburn House Office Building",
     "website": "https://massie.house.gov",
     "contactUrl": "https://massie.house.gov/contact",
     "email": null
@@ -3506,6 +4134,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "HI",
     "phone": "202-224-3934",
+    "fax": null,
+    "office": "722 Hart Senate Office Building",
     "website": "https://www.schatz.senate.gov",
     "contactUrl": "https://www.schatz.senate.gov/contact",
     "email": null
@@ -3519,6 +4149,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "IL",
     "phone": "202-225-3515",
+    "fax": null,
+    "office": "2366 Rayburn House Office Building",
     "website": "https://foster.house.gov",
     "contactUrl": "https://foster.house.gov/contact",
     "email": null
@@ -3532,6 +4164,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "NV",
     "phone": "202-225-5965",
+    "fax": null,
+    "office": "2370 Rayburn House Office Building",
     "website": "https://titus.house.gov",
     "contactUrl": "https://titus.house.gov/contact",
     "email": null
@@ -3545,6 +4179,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "AR",
     "phone": "202-224-2353",
+    "fax": null,
+    "office": "326 Russell Senate Office Building",
     "website": "https://www.cotton.senate.gov",
     "contactUrl": "https://www.cotton.senate.gov/contact/contact-tom",
     "email": null
@@ -3558,6 +4194,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CA",
     "phone": "202-225-5161",
+    "fax": null,
+    "office": "2330 Rayburn House Office Building",
     "website": "https://huffman.house.gov",
     "contactUrl": "https://huffman.house.gov/contact",
     "email": null
@@ -3571,6 +4209,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CA",
     "phone": "202-225-5716",
+    "fax": null,
+    "office": "172 Cannon House Office Building",
     "website": "https://bera.house.gov",
     "contactUrl": "https://bera.house.gov/contact",
     "email": null
@@ -3584,6 +4224,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CA",
     "phone": "202-225-5811",
+    "fax": null,
+    "office": "2262 Rayburn House Office Building",
     "website": "https://juliabrownley.house.gov",
     "contactUrl": "https://juliabrownley.house.gov/contact",
     "email": null
@@ -3597,6 +4239,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CA",
     "phone": "202-225-5330",
+    "fax": null,
+    "office": "2342 Rayburn House Office Building",
     "website": "https://ruiz.house.gov",
     "contactUrl": "https://ruiz.house.gov/contact",
     "email": null
@@ -3610,6 +4254,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CA",
     "phone": "202-225-2305",
+    "fax": null,
+    "office": "2078 Rayburn House Office Building",
     "website": "https://takano.house.gov",
     "contactUrl": "https://takano.house.gov/contact",
     "email": null
@@ -3623,6 +4269,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CA",
     "phone": "202-225-8045",
+    "fax": null,
+    "office": "2467 Rayburn House Office Building",
     "website": "https://vargas.house.gov",
     "contactUrl": "https://vargas.house.gov/contact",
     "email": null
@@ -3636,6 +4284,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CA",
     "phone": "202-225-0508",
+    "fax": null,
+    "office": "2369 Rayburn House Office Building",
     "website": "https://scottpeters.house.gov",
     "contactUrl": "https://scottpeters.house.gov/contact",
     "email": null
@@ -3649,6 +4299,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "FL",
     "phone": "202-225-9890",
+    "fax": null,
+    "office": "2305 Rayburn House Office Building",
     "website": "https://frankel.house.gov",
     "contactUrl": "https://frankel.house.gov/contact",
     "email": null
@@ -3662,6 +4314,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "IL",
     "phone": "202-224-2854",
+    "fax": null,
+    "office": "524 Hart Senate Office Building",
     "website": "https://www.duckworth.senate.gov",
     "contactUrl": "https://www.duckworth.senate.gov/content/contact-senator",
     "email": null
@@ -3675,6 +4329,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "KY",
     "phone": "202-225-4706",
+    "fax": null,
+    "office": "2430 Rayburn House Office Building",
     "website": "https://barr.house.gov",
     "contactUrl": "https://barr.house.gov/contact",
     "email": null
@@ -3688,6 +4344,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "MA",
     "phone": "202-224-4543",
+    "fax": null,
+    "office": "311 Hart Senate Office Building",
     "website": "https://www.warren.senate.gov",
     "contactUrl": "https://www.warren.senate.gov/?p=email_senator",
     "email": null
@@ -3701,6 +4359,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "I",
     "state": "ME",
     "phone": "202-224-5344",
+    "fax": null,
+    "office": "133 Hart Senate Office Building",
     "website": "https://www.king.senate.gov",
     "contactUrl": "https://www.king.senate.gov/contact",
     "email": null
@@ -3714,6 +4374,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "MO",
     "phone": "202-225-1621",
+    "fax": null,
+    "office": "2350 Rayburn House Office Building",
     "website": "https://wagner.house.gov",
     "contactUrl": "https://wagner.house.gov/contact",
     "email": null
@@ -3727,6 +4389,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "MT",
     "phone": "202-224-2651",
+    "fax": null,
+    "office": "320 Hart Senate Office Building",
     "website": "https://www.daines.senate.gov",
     "contactUrl": "https://www.daines.senate.gov/connect/email-steve",
     "email": null
@@ -3740,6 +4404,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "NC",
     "phone": "202-225-3715",
+    "fax": "202-225-4036",
+    "office": "2112 Rayburn House Office Building",
     "website": "https://hudson.house.gov",
     "contactUrl": "https://hudson.house.gov/contact",
     "email": null
@@ -3753,6 +4419,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "ND",
     "phone": "202-224-2043",
+    "fax": null,
+    "office": "313 Hart Senate Office Building",
     "website": "https://www.cramer.senate.gov",
     "contactUrl": "https://www.cramer.senate.gov/contact/contact-kevin",
     "email": null
@@ -3766,6 +4434,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "NE",
     "phone": "202-224-6551",
+    "fax": null,
+    "office": "448 Russell Senate Office Building",
     "website": "https://www.fischer.senate.gov",
     "contactUrl": "https://www.fischer.senate.gov/public/index.cfm/contact",
     "email": null
@@ -3779,6 +4449,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "NY",
     "phone": "202-225-2601",
+    "fax": null,
+    "office": "2468 Rayburn House Office Building",
     "website": "https://meng.house.gov",
     "contactUrl": "https://meng.house.gov/contact",
     "email": null
@@ -3792,6 +4464,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "NY",
     "phone": "202-225-5936",
+    "fax": null,
+    "office": "2267 Rayburn House Office Building",
     "website": "https://jeffries.house.gov",
     "contactUrl": "https://jeffries.house.gov/contact",
     "email": null
@@ -3805,6 +4479,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "OH",
     "phone": "202-225-4324",
+    "fax": null,
+    "office": "2079 Rayburn House Office Building",
     "website": "https://beatty.house.gov",
     "contactUrl": "https://beatty.house.gov/contact",
     "email": null
@@ -3818,6 +4494,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "OH",
     "phone": "202-225-5731",
+    "fax": null,
+    "office": "2065 Rayburn House Office Building",
     "website": "https://joyce.house.gov",
     "contactUrl": "https://joyce.house.gov/contact",
     "email": null
@@ -3831,6 +4509,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "PA",
     "phone": "202-225-5836",
+    "fax": null,
+    "office": "2160 Rayburn House Office Building",
     "website": "https://perry.house.gov",
     "contactUrl": "https://perry.house.gov/contact",
     "email": null
@@ -3844,6 +4524,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "TX",
     "phone": "202-224-5922",
+    "fax": null,
+    "office": "167 Russell Senate Office Building",
     "website": "https://www.cruz.senate.gov",
     "contactUrl": "https://www.cruz.senate.gov/?p=form&id=16",
     "email": null
@@ -3857,6 +4539,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "TX",
     "phone": "202-225-2831",
+    "fax": null,
+    "office": "107 Cannon House Office Building",
     "website": "https://weber.house.gov",
     "contactUrl": "https://weber.house.gov/contact",
     "email": null
@@ -3870,6 +4554,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "TX",
     "phone": "202-225-3236",
+    "fax": null,
+    "office": "2241 Rayburn House Office Building",
     "website": "https://castro.house.gov",
     "contactUrl": "https://castro.house.gov/contact",
     "email": null
@@ -3883,6 +4569,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "TX",
     "phone": "202-225-9896",
+    "fax": null,
+    "office": "2336 Rayburn House Office Building",
     "website": "https://williams.house.gov",
     "contactUrl": "https://williams.house.gov/contact",
     "email": null
@@ -3896,6 +4584,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "TX",
     "phone": "202-225-9897",
+    "fax": null,
+    "office": "2186 Rayburn House Office Building",
     "website": "https://veasey.house.gov",
     "contactUrl": "https://veasey.house.gov/contact",
     "email": null
@@ -3909,6 +4599,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "VA",
     "phone": "202-224-4024",
+    "fax": null,
+    "office": "231 Russell Senate Office Building",
     "website": "https://www.kaine.senate.gov",
     "contactUrl": "https://www.kaine.senate.gov/contact",
     "email": null
@@ -3922,6 +4614,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "WI",
     "phone": "202-225-2906",
+    "fax": null,
+    "office": "1026 Longworth House Office Building",
     "website": "https://pocan.house.gov",
     "contactUrl": "https://pocan.house.gov/contact",
     "email": null
@@ -3935,6 +4629,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "IL",
     "phone": "202-225-0773",
+    "fax": null,
+    "office": "2329 Rayburn House Office Building",
     "website": "https://robinkelly.house.gov",
     "contactUrl": "https://robinkelly.house.gov/contact",
     "email": null
@@ -3948,6 +4644,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "MO",
     "phone": "202-225-4404",
+    "fax": null,
+    "office": "1011 Longworth House Office Building",
     "website": "https://jasonsmith.house.gov",
     "contactUrl": "https://jasonsmith.house.gov/contact",
     "email": null
@@ -3961,6 +4659,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "NJ",
     "phone": "202-224-3224",
+    "fax": null,
+    "office": "306 Hart Senate Office Building",
     "website": "https://www.booker.senate.gov",
     "contactUrl": "https://www.booker.senate.gov/?p=contact",
     "email": null
@@ -3974,6 +4674,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "MA",
     "phone": "202-225-2836",
+    "fax": null,
+    "office": "2368 Rayburn House Office Building",
     "website": "https://katherineclark.house.gov",
     "contactUrl": "https://katherineclark.house.gov/contact",
     "email": null
@@ -3987,6 +4689,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "NJ",
     "phone": "202-225-6501",
+    "fax": null,
+    "office": "2427 Rayburn House Office Building",
     "website": "https://norcross.house.gov",
     "contactUrl": "https://norcross.house.gov/contact",
     "email": null
@@ -4000,6 +4704,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "NC",
     "phone": "202-225-1510",
+    "fax": null,
+    "office": "2436 Rayburn House Office Building",
     "website": "https://adams.house.gov",
     "contactUrl": "https://adams.house.gov/contact",
     "email": null
@@ -4013,6 +4719,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "AL",
     "phone": "202-225-4921",
+    "fax": null,
+    "office": "170 Cannon House Office Building",
     "website": "https://palmer.house.gov",
     "contactUrl": "https://palmer.house.gov/contact",
     "email": null
@@ -4026,6 +4734,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "AR",
     "phone": "202-225-2506",
+    "fax": null,
+    "office": "1533 Longworth House Office Building",
     "website": "https://hill.house.gov",
     "contactUrl": "https://hill.house.gov/contact",
     "email": null
@@ -4039,6 +4749,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "AR",
     "phone": "202-225-3772",
+    "fax": null,
+    "office": "202 Cannon House Office Building",
     "website": "https://westerman.house.gov",
     "contactUrl": "https://westerman.house.gov/contact",
     "email": null
@@ -4052,6 +4764,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "AZ",
     "phone": "202-224-4521",
+    "fax": null,
+    "office": "302 Hart Senate Office Building",
     "website": "https://www.gallego.senate.gov",
     "contactUrl": "https://www.gallego.senate.gov/contact",
     "email": null
@@ -4065,6 +4779,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CA",
     "phone": "202-225-2095",
+    "fax": null,
+    "office": "2134 Rayburn House Office Building",
     "website": "https://desaulnier.house.gov",
     "contactUrl": "https://desaulnier.house.gov/contact",
     "email": null
@@ -4078,6 +4794,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CA",
     "phone": "202-225-3201",
+    "fax": null,
+    "office": "108 Cannon House Office Building",
     "website": "https://aguilar.house.gov",
     "contactUrl": "https://aguilar.house.gov/contact",
     "email": null
@@ -4091,6 +4809,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CA",
     "phone": "202-225-3976",
+    "fax": null,
+    "office": "2454 Rayburn House Office Building",
     "website": "https://lieu.house.gov",
     "contactUrl": "https://lieu.house.gov/contact",
     "email": null
@@ -4104,6 +4824,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CA",
     "phone": "202-225-6161",
+    "fax": null,
+    "office": "2227 Rayburn House Office Building",
     "website": "https://torres.house.gov",
     "contactUrl": "https://torres.house.gov/contact",
     "email": null
@@ -4117,6 +4839,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "GA",
     "phone": "202-225-5831",
+    "fax": null,
+    "office": "2432 Rayburn House Office Building",
     "website": "https://buddycarter.house.gov",
     "contactUrl": "https://buddycarter.house.gov/contact",
     "email": null
@@ -4130,6 +4854,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "GA",
     "phone": "202-225-2931",
+    "fax": null,
+    "office": "2133 Rayburn House Office Building",
     "website": "https://loudermilk.house.gov",
     "contactUrl": "https://loudermilk.house.gov/contact",
     "email": null
@@ -4143,6 +4869,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "GA",
     "phone": "202-225-2823",
+    "fax": null,
+    "office": "462 Cannon House Office Building",
     "website": "https://allen.house.gov",
     "contactUrl": "https://allen.house.gov/contact",
     "email": null
@@ -4156,6 +4884,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "IL",
     "phone": "202-225-5661",
+    "fax": null,
+    "office": "352 Cannon House Office Building",
     "website": "https://bost.house.gov",
     "contactUrl": "https://bost.house.gov/contact",
     "email": null
@@ -4169,6 +4899,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "MA",
     "phone": "202-225-8020",
+    "fax": null,
+    "office": "1126 Longworth House Office Building",
     "website": "https://moulton.house.gov",
     "contactUrl": "https://moulton.house.gov/contact",
     "email": null
@@ -4182,6 +4914,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "MI",
     "phone": "202-225-3561",
+    "fax": null,
+    "office": "246 Cannon House Office Building",
     "website": "https://moolenaar.house.gov",
     "contactUrl": "https://moolenaar.house.gov/contact",
     "email": null
@@ -4195,6 +4929,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "MI",
     "phone": "202-225-4071",
+    "fax": null,
+    "office": "102 Cannon House Office Building",
     "website": "https://debbiedingell.house.gov",
     "contactUrl": "https://debbiedingell.house.gov/contact",
     "email": null
@@ -4208,6 +4944,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "MN",
     "phone": "202-225-2331",
+    "fax": null,
+    "office": "326 Cannon House Office Building",
     "website": "https://emmer.house.gov",
     "contactUrl": "https://emmer.house.gov/contact",
     "email": null
@@ -4221,6 +4959,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "NC",
     "phone": "202-225-2731",
+    "fax": null,
+    "office": "2333 Rayburn House Office Building",
     "website": "https://rouzer.house.gov",
     "contactUrl": "https://rouzer.house.gov/contact",
     "email": null
@@ -4234,6 +4974,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "NJ",
     "phone": "202-225-5801",
+    "fax": null,
+    "office": "168 Cannon House Office Building",
     "website": "https://watsoncoleman.house.gov",
     "contactUrl": "https://watsoncoleman.house.gov/contact",
     "email": null
@@ -4247,6 +4989,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "NY",
     "phone": "202-225-4611",
+    "fax": null,
+    "office": "2211 Rayburn House Office Building",
     "website": "https://stefanik.house.gov",
     "contactUrl": "https://stefanik.house.gov/contact",
     "email": null
@@ -4260,6 +5004,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "PA",
     "phone": "202-225-6111",
+    "fax": null,
+    "office": "1502 Longworth House Office Building",
     "website": "https://boyle.house.gov",
     "contactUrl": "https://boyle.house.gov/contact",
     "email": null
@@ -4273,6 +5019,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "TX",
     "phone": "202-225-1555",
+    "fax": null,
+    "office": "2236 Rayburn House Office Building",
     "website": "https://babin.house.gov",
     "contactUrl": "https://babin.house.gov/contact",
     "email": null
@@ -4286,6 +5034,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "VA",
     "phone": "202-225-4376",
+    "fax": null,
+    "office": "1226 Longworth House Office Building",
     "website": "https://beyer.house.gov",
     "contactUrl": "https://beyer.house.gov/contact",
     "email": null
@@ -4299,6 +5049,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "VI",
     "phone": "202-225-1790",
+    "fax": null,
+    "office": "2059 Rayburn House Office Building",
     "website": "https://plaskett.house.gov",
     "contactUrl": "https://plaskett.house.gov/contact",
     "email": null
@@ -4312,6 +5064,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "WA",
     "phone": "202-225-5816",
+    "fax": null,
+    "office": "460 Cannon House Office Building",
     "website": "https://newhouse.house.gov",
     "contactUrl": "https://newhouse.house.gov/contact",
     "email": null
@@ -4325,6 +5079,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "WI",
     "phone": "202-225-2476",
+    "fax": null,
+    "office": "1211 Longworth House Office Building",
     "website": "https://grothman.house.gov",
     "contactUrl": "https://grothman.house.gov/contact",
     "email": null
@@ -4338,6 +5094,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "AS",
     "phone": "202-225-8577",
+    "fax": null,
+    "office": "2001 Rayburn House Office Building",
     "website": "https://radewagen.house.gov",
     "contactUrl": "https://radewagen.house.gov/contact",
     "email": null
@@ -4351,6 +5109,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "AK",
     "phone": "202-224-3004",
+    "fax": null,
+    "office": "706 Hart Senate Office Building",
     "website": "https://www.sullivan.senate.gov",
     "contactUrl": "https://www.sullivan.senate.gov/contact/email",
     "email": null
@@ -4364,6 +5124,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "IA",
     "phone": "202-224-3254",
+    "fax": null,
+    "office": "260 Russell Senate Office Building",
     "website": "https://www.ernst.senate.gov",
     "contactUrl": "https://www.ernst.senate.gov/public/index.cfm/contact",
     "email": null
@@ -4377,6 +5139,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "NC",
     "phone": "202-224-6342",
+    "fax": "202-228-2563",
+    "office": "113 Dirksen Senate Office Building",
     "website": "https://www.tillis.senate.gov",
     "contactUrl": "https://www.tillis.senate.gov/public/index.cfm/email-me",
     "email": null
@@ -4390,6 +5154,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "SD",
     "phone": "202-224-5842",
+    "fax": null,
+    "office": "716 Hart Senate Office Building",
     "website": "https://www.rounds.senate.gov",
     "contactUrl": "https://www.rounds.senate.gov/contact/email-mike",
     "email": null
@@ -4403,6 +5169,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "MS",
     "phone": "202-225-4306",
+    "fax": null,
+    "office": "2243 Rayburn House Office Building",
     "website": "https://trentkelly.house.gov",
     "contactUrl": "https://trentkelly.house.gov/contact",
     "email": null
@@ -4416,6 +5184,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "IL",
     "phone": "202-225-6201",
+    "fax": null,
+    "office": "503 Cannon House Office Building",
     "website": "https://lahood.house.gov",
     "contactUrl": "https://lahood.house.gov/contact",
     "email": null
@@ -4429,6 +5199,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "OH",
     "phone": "202-225-6205",
+    "fax": null,
+    "office": "2113 Rayburn House Office Building",
     "website": "https://davidson.house.gov",
     "contactUrl": "https://davidson.house.gov/contact",
     "email": null
@@ -4442,6 +5214,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "KY",
     "phone": "202-225-3115",
+    "fax": null,
+    "office": "2410 Rayburn House Office Building",
     "website": "https://comer.house.gov",
     "contactUrl": "https://comer.house.gov/contact",
     "email": null
@@ -4455,6 +5229,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "PA",
     "phone": "202-225-4001",
+    "fax": null,
+    "office": "1105 Longworth House Office Building",
     "website": "https://evans.house.gov",
     "contactUrl": "https://evans.house.gov/contact",
     "email": null
@@ -4468,6 +5244,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "LA",
     "phone": "202-224-4623",
+    "fax": null,
+    "office": "437 Russell Senate Office Building",
     "website": "https://www.kennedy.senate.gov/public",
     "contactUrl": "https://www.kennedy.senate.gov/public/email-me",
     "email": null
@@ -4481,6 +5259,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "NH",
     "phone": "202-224-3324",
+    "fax": null,
+    "office": "324 Hart Senate Office Building",
     "website": "https://www.hassan.senate.gov",
     "contactUrl": "https://www.hassan.senate.gov/content/contact-senator",
     "email": null
@@ -4494,6 +5274,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "NV",
     "phone": "202-224-3542",
+    "fax": null,
+    "office": "309 Hart Senate Office Building",
     "website": "https://www.cortezmasto.senate.gov",
     "contactUrl": "https://www.cortezmasto.senate.gov/contact",
     "email": null
@@ -4507,6 +5289,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "IL",
     "phone": "202-225-4835",
+    "fax": null,
+    "office": "300 Cannon House Office Building",
     "website": "https://schneider.house.gov",
     "contactUrl": "https://schneider.house.gov/contact",
     "email": null
@@ -4520,6 +5304,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "AZ",
     "phone": "202-225-2635",
+    "fax": null,
+    "office": "464 Cannon House Office Building",
     "website": "https://biggs.house.gov",
     "contactUrl": "https://biggs.house.gov/contact",
     "email": null
@@ -4533,6 +5319,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CA",
     "phone": "202-225-2631",
+    "fax": null,
+    "office": "306 Cannon House Office Building",
     "website": "https://khanna.house.gov",
     "contactUrl": "https://khanna.house.gov/contact",
     "email": null
@@ -4546,6 +5334,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CA",
     "phone": "202-225-2861",
+    "fax": null,
+    "office": "200 Cannon House Office Building",
     "website": "https://panetta.house.gov",
     "contactUrl": "https://panetta.house.gov/contact",
     "email": null
@@ -4559,6 +5349,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CA",
     "phone": "202-225-3601",
+    "fax": null,
+    "office": "2331 Rayburn House Office Building",
     "website": "https://carbajal.house.gov",
     "contactUrl": "https://carbajal.house.gov/contact",
     "email": null
@@ -4572,6 +5364,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CA",
     "phone": "202-225-8220",
+    "fax": null,
+    "office": "2312 Rayburn House Office Building",
     "website": "https://barragan.house.gov",
     "contactUrl": "https://barragan.house.gov/contact",
     "email": null
@@ -4585,6 +5379,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CA",
     "phone": "202-225-2965",
+    "fax": null,
+    "office": "2082 Rayburn House Office Building",
     "website": "https://correa.house.gov",
     "contactUrl": "https://correa.house.gov/contact",
     "email": null
@@ -4598,6 +5394,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "DE",
     "phone": "202-224-2441",
+    "fax": null,
+    "office": "513 Hart Senate Office Building",
     "website": "https://www.bluntrochester.senate.gov",
     "contactUrl": "https://www.bluntrochester.senate.gov/contact",
     "email": null
@@ -4611,6 +5409,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "FL",
     "phone": "202-225-5235",
+    "fax": null,
+    "office": "466 Cannon House Office Building",
     "website": "https://dunn.house.gov",
     "contactUrl": "https://dunn.house.gov/contact",
     "email": null
@@ -4624,6 +5424,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "FL",
     "phone": "202-225-2501",
+    "fax": null,
+    "office": "1711 Longworth House Office Building",
     "website": "https://rutherford.house.gov",
     "contactUrl": "https://rutherford.house.gov/contact",
     "email": null
@@ -4637,6 +5439,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "FL",
     "phone": "202-225-9889",
+    "fax": null,
+    "office": "2353 Rayburn House Office Building",
     "website": "https://soto.house.gov",
     "contactUrl": "https://soto.house.gov/contact",
     "email": null
@@ -4650,6 +5454,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "FL",
     "phone": "202-225-3026",
+    "fax": null,
+    "office": "2182 Rayburn House Office Building",
     "website": "https://mast.house.gov",
     "contactUrl": "https://mast.house.gov/contact",
     "email": null
@@ -4663,6 +5469,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "IL",
     "phone": "202-225-3711",
+    "fax": null,
+    "office": "2367 Rayburn House Office Building",
     "website": "https://krishnamoorthi.house.gov",
     "contactUrl": "https://krishnamoorthi.house.gov/contact",
     "email": null
@@ -4676,6 +5484,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "IN",
     "phone": "202-224-4814",
+    "fax": null,
+    "office": "303 Hart Senate Office Building",
     "website": "https://www.banks.senate.gov",
     "contactUrl": "https://www.banks.senate.gov/contact",
     "email": null
@@ -4689,6 +5499,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "KS",
     "phone": "202-224-4774",
+    "fax": null,
+    "office": "479a Russell Senate Office Building",
     "website": "https://www.marshall.senate.gov",
     "contactUrl": "https://www.marshall.senate.gov/contact/",
     "email": null
@@ -4702,6 +5514,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "LA",
     "phone": "202-225-2031",
+    "fax": null,
+    "office": "572 Cannon House Office Building",
     "website": "https://clayhiggins.house.gov",
     "contactUrl": "https://clayhiggins.house.gov/contact",
     "email": null
@@ -4715,6 +5529,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "LA",
     "phone": "202-225-2777",
+    "fax": null,
+    "office": "521 Cannon House Office Building",
     "website": "https://mikejohnson.house.gov",
     "contactUrl": "https://mikejohnson.house.gov/contact",
     "email": null
@@ -4728,6 +5544,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "MD",
     "phone": "202-225-5341",
+    "fax": null,
+    "office": "2242 Rayburn House Office Building",
     "website": "https://raskin.house.gov",
     "contactUrl": "https://raskin.house.gov/contact",
     "email": null
@@ -4741,6 +5559,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "MI",
     "phone": "202-225-4735",
+    "fax": null,
+    "office": "566 Cannon House Office Building",
     "website": "https://bergman.house.gov",
     "contactUrl": "https://bergman.house.gov/contact",
     "email": null
@@ -4754,6 +5574,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "NC",
     "phone": "202-224-3154",
+    "fax": null,
+    "office": "354 Russell Senate Office Building",
     "website": "https://www.budd.senate.gov",
     "contactUrl": "https://www.budd.senate.gov/contact/",
     "email": null
@@ -4767,6 +5589,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "NE",
     "phone": "202-225-4155",
+    "fax": null,
+    "office": "2104 Rayburn House Office Building",
     "website": "https://bacon.house.gov",
     "contactUrl": "https://bacon.house.gov/contact",
     "email": null
@@ -4780,6 +5604,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "NJ",
     "phone": "202-225-4465",
+    "fax": null,
+    "office": "106 Cannon House Office Building",
     "website": "https://gottheimer.house.gov",
     "contactUrl": "https://gottheimer.house.gov/contact",
     "email": null
@@ -4793,6 +5619,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "NV",
     "phone": "202-224-6244",
+    "fax": null,
+    "office": "713 Hart Senate Office Building",
     "website": "https://www.rosen.senate.gov",
     "contactUrl": "https://www.rosen.senate.gov/contact_jacky",
     "email": null
@@ -4806,6 +5634,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "NY",
     "phone": "202-225-4365",
+    "fax": null,
+    "office": "2332 Rayburn House Office Building",
     "website": "https://espaillat.house.gov",
     "contactUrl": "https://espaillat.house.gov/contact",
     "email": null
@@ -4819,6 +5649,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "PA",
     "phone": "202-225-4276",
+    "fax": null,
+    "office": "271 Cannon House Office Building",
     "website": "https://fitzpatrick.house.gov",
     "contactUrl": "https://fitzpatrick.house.gov/contact",
     "email": null
@@ -4832,6 +5664,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "PA",
     "phone": "202-225-2411",
+    "fax": null,
+    "office": "302 Cannon House Office Building",
     "website": "https://smucker.house.gov",
     "contactUrl": "https://smucker.house.gov/contact",
     "email": null
@@ -4845,6 +5679,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "TN",
     "phone": "202-225-4714",
+    "fax": null,
+    "office": "560 Cannon House Office Building",
     "website": "https://kustoff.house.gov",
     "contactUrl": "https://kustoff.house.gov/contact",
     "email": null
@@ -4858,6 +5694,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "TX",
     "phone": "202-225-2531",
+    "fax": null,
+    "office": "1201 Longworth House Office Building",
     "website": "https://gonzalez.house.gov",
     "contactUrl": "https://gonzalez.house.gov/contact",
     "email": null
@@ -4871,6 +5709,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "TX",
     "phone": "202-225-4005",
+    "fax": null,
+    "office": "1111 Longworth House Office Building",
     "website": "https://arrington.house.gov",
     "contactUrl": "https://arrington.house.gov/contact",
     "email": null
@@ -4884,6 +5724,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "WA",
     "phone": "202-225-3106",
+    "fax": null,
+    "office": "2346 Rayburn House Office Building",
     "website": "https://jayapal.house.gov",
     "contactUrl": "https://jayapal.house.gov/contact",
     "email": null
@@ -4897,6 +5739,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "KS",
     "phone": "202-225-6216",
+    "fax": null,
+    "office": "2234 Rayburn House Office Building",
     "website": "https://estes.house.gov",
     "contactUrl": "https://estes.house.gov/contact",
     "email": null
@@ -4910,6 +5754,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "SC",
     "phone": "202-225-5501",
+    "fax": null,
+    "office": "569 Cannon House Office Building",
     "website": "https://norman.house.gov",
     "contactUrl": "https://norman.house.gov/contact",
     "email": null
@@ -4923,6 +5769,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CA",
     "phone": "202-225-6235",
+    "fax": null,
+    "office": "506 Cannon House Office Building",
     "website": "https://gomez.house.gov",
     "contactUrl": "https://gomez.house.gov/contact",
     "email": null
@@ -4936,6 +5784,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "UT",
     "phone": "202-224-5251",
+    "fax": null,
+    "office": "502 Hart Senate Office Building",
     "website": "https://www.curtis.senate.gov",
     "contactUrl": "https://www.curtis.senate.gov/contact",
     "email": null
@@ -4949,6 +5799,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "MN",
     "phone": "202-224-5641",
+    "fax": null,
+    "office": "720 Hart Senate Office Building",
     "website": "https://www.smith.senate.gov",
     "contactUrl": "https://www.smith.senate.gov/share-your-opinion/",
     "email": null
@@ -4962,6 +5814,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "MS",
     "phone": "202-224-5054",
+    "fax": null,
+    "office": "528 Hart Senate Office Building",
     "website": "https://www.hydesmith.senate.gov",
     "contactUrl": "https://www.hydesmith.senate.gov/contact-senator",
     "email": null
@@ -4975,6 +5829,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "TX",
     "phone": "202-225-7742",
+    "fax": null,
+    "office": "304 Cannon House Office Building",
     "website": "https://cloud.house.gov",
     "contactUrl": "https://cloud.house.gov/contact",
     "email": null
@@ -4988,6 +5844,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "OH",
     "phone": "202-225-5355",
+    "fax": null,
+    "office": "2429 Rayburn House Office Building",
     "website": "https://balderson.house.gov",
     "contactUrl": "https://balderson.house.gov/contact",
     "email": null
@@ -5001,6 +5859,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "OK",
     "phone": "202-225-2211",
+    "fax": null,
+    "office": "171 Cannon House Office Building",
     "website": "https://hern.house.gov",
     "contactUrl": "https://hern.house.gov/contact",
     "email": null
@@ -5014,6 +5874,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "NY",
     "phone": "202-225-3615",
+    "fax": null,
+    "office": "570 Cannon House Office Building",
     "website": "https://morelle.house.gov",
     "contactUrl": "https://morelle.house.gov/contact",
     "email": null
@@ -5027,6 +5889,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "PA",
     "phone": "202-225-2011",
+    "fax": null,
+    "office": "1214 Longworth House Office Building",
     "website": "https://scanlon.house.gov",
     "contactUrl": "https://scanlon.house.gov/contact",
     "email": null
@@ -5040,6 +5904,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "HI",
     "phone": "202-225-2726",
+    "fax": null,
+    "office": "2210 Rayburn House Office Building",
     "website": "https://case.house.gov",
     "contactUrl": "https://case.house.gov/contact",
     "email": null
@@ -5053,6 +5919,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "NV",
     "phone": "202-225-9894",
+    "fax": null,
+    "office": "406 Cannon House Office Building",
     "website": "https://horsford.house.gov",
     "contactUrl": "https://horsford.house.gov/contact",
     "email": null
@@ -5066,6 +5934,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "AZ",
     "phone": "202-225-9888",
+    "fax": null,
+    "office": "207 Cannon House Office Building",
     "website": "https://stanton.house.gov",
     "contactUrl": "https://stanton.house.gov/contact",
     "email": null
@@ -5079,6 +5949,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CA",
     "phone": "202-225-4540",
+    "fax": null,
+    "office": "209 Cannon House Office Building",
     "website": "https://harder.house.gov",
     "contactUrl": "https://harder.house.gov/contact",
     "email": null
@@ -5092,6 +5964,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CA",
     "phone": "202-225-3906",
+    "fax": null,
+    "office": "2352 Rayburn House Office Building",
     "website": "https://levin.house.gov",
     "contactUrl": "https://levin.house.gov/contact",
     "email": null
@@ -5105,6 +5979,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CO",
     "phone": "202-225-2161",
+    "fax": null,
+    "office": "2400 Rayburn House Office Building",
     "website": "https://neguse.house.gov",
     "contactUrl": "https://neguse.house.gov/contact",
     "email": null
@@ -5118,6 +5994,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CO",
     "phone": "202-225-7882",
+    "fax": null,
+    "office": "1323 Longworth House Office Building",
     "website": "https://crow.house.gov",
     "contactUrl": "https://crow.house.gov/contact",
     "email": null
@@ -5131,6 +6009,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CT",
     "phone": "202-225-4476",
+    "fax": null,
+    "office": "2049 Rayburn House Office Building",
     "website": "https://hayes.house.gov",
     "contactUrl": "https://hayes.house.gov/contact",
     "email": null
@@ -5144,6 +6024,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "FL",
     "phone": "202-225-5792",
+    "fax": null,
+    "office": "2457 Rayburn House Office Building",
     "website": "https://steube.house.gov",
     "contactUrl": "https://steube.house.gov/contact",
     "email": null
@@ -5157,6 +6039,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "GA",
     "phone": "202-225-4501",
+    "fax": null,
+    "office": "2246 Rayburn House Office Building",
     "website": "https://mcbath.house.gov",
     "contactUrl": "https://mcbath.house.gov/contact",
     "email": null
@@ -5170,6 +6054,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "ID",
     "phone": "202-225-6611",
+    "fax": null,
+    "office": "1514 Longworth House Office Building",
     "website": "https://fulcher.house.gov",
     "contactUrl": "https://fulcher.house.gov/contact",
     "email": null
@@ -5183,6 +6069,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "IL",
     "phone": "202-225-8203",
+    "fax": null,
+    "office": "2334 Rayburn House Office Building",
     "website": "https://chuygarcia.house.gov",
     "contactUrl": "https://chuygarcia.house.gov/contact",
     "email": null
@@ -5196,6 +6084,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "IL",
     "phone": "202-225-4561",
+    "fax": null,
+    "office": "2440 Rayburn House Office Building",
     "website": "https://casten.house.gov",
     "contactUrl": "https://casten.house.gov/contact",
     "email": null
@@ -5209,6 +6099,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "IL",
     "phone": "202-225-2976",
+    "fax": null,
+    "office": "2228 Rayburn House Office Building",
     "website": "https://underwood.house.gov",
     "contactUrl": "https://underwood.house.gov/contact",
     "email": null
@@ -5222,6 +6114,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "IN",
     "phone": "202-225-5037",
+    "fax": null,
+    "office": "2303 Rayburn House Office Building",
     "website": "https://baird.house.gov",
     "contactUrl": "https://baird.house.gov/contact",
     "email": null
@@ -5235,6 +6129,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "KS",
     "phone": "202-225-2865",
+    "fax": null,
+    "office": "2435 Rayburn House Office Building",
     "website": "https://davids.house.gov",
     "contactUrl": "https://davids.house.gov/contact",
     "email": null
@@ -5248,6 +6144,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "MA",
     "phone": "202-225-3411",
+    "fax": null,
+    "office": "2233 Rayburn House Office Building",
     "website": "https://trahan.house.gov",
     "contactUrl": "https://trahan.house.gov/contact",
     "email": null
@@ -5261,6 +6159,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "MA",
     "phone": "202-225-5111",
+    "fax": null,
+    "office": "402 Cannon House Office Building",
     "website": "https://pressley.house.gov",
     "contactUrl": "https://pressley.house.gov/contact",
     "email": null
@@ -5274,6 +6174,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "MI",
     "phone": "202-224-4822",
+    "fax": null,
+    "office": "291 Russell Senate Office Building",
     "website": "https://www.slotkin.senate.gov",
     "contactUrl": "https://www.slotkin.senate.gov/contact",
     "email": null
@@ -5287,6 +6189,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "MI",
     "phone": "202-225-8171",
+    "fax": null,
+    "office": "2411 Rayburn House Office Building",
     "website": "https://stevens.house.gov",
     "contactUrl": "https://stevens.house.gov/contact",
     "email": null
@@ -5300,6 +6204,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "MI",
     "phone": "202-225-5126",
+    "fax": null,
+    "office": "2438 Rayburn House Office Building",
     "website": "https://tlaib.house.gov",
     "contactUrl": "https://tlaib.house.gov/contact",
     "email": null
@@ -5313,6 +6219,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "MN",
     "phone": "202-225-2271",
+    "fax": null,
+    "office": "2052 Rayburn House Office Building",
     "website": "https://craig.house.gov",
     "contactUrl": "https://craig.house.gov/contact",
     "email": null
@@ -5326,6 +6234,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "MN",
     "phone": "202-225-4755",
+    "fax": null,
+    "office": "1730 Longworth House Office Building",
     "website": "https://omar.house.gov",
     "contactUrl": "https://omar.house.gov/contact",
     "email": null
@@ -5339,6 +6249,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "MN",
     "phone": "202-225-6211",
+    "fax": null,
+    "office": "145 Cannon House Office Building",
     "website": "https://stauber.house.gov",
     "contactUrl": "https://stauber.house.gov/contact",
     "email": null
@@ -5352,6 +6264,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "MS",
     "phone": "202-225-5031",
+    "fax": null,
+    "office": "450 Cannon House Office Building",
     "website": "https://guest.house.gov",
     "contactUrl": "https://guest.house.gov/contact",
     "email": null
@@ -5365,6 +6279,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "NH",
     "phone": "202-225-5456",
+    "fax": null,
+    "office": "452 Cannon House Office Building",
     "website": "https://pappas.house.gov",
     "contactUrl": "https://pappas.house.gov/contact",
     "email": null
@@ -5378,6 +6294,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "NJ",
     "phone": "202-225-6572",
+    "fax": null,
+    "office": "2447 Rayburn House Office Building",
     "website": "https://vandrew.house.gov",
     "contactUrl": "https://vandrew.house.gov/contact",
     "email": null
@@ -5391,6 +6309,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "NJ",
     "phone": "202-224-4744",
+    "fax": null,
+    "office": "520 Hart Senate Office Building",
     "website": "https://www.kim.senate.gov",
     "contactUrl": "https://www.kim.senate.gov/contact",
     "email": null
@@ -5404,6 +6324,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "NV",
     "phone": "202-225-3252",
+    "fax": null,
+    "office": "365 Cannon House Office Building",
     "website": "https://susielee.house.gov",
     "contactUrl": "https://susielee.house.gov/contact",
     "email": null
@@ -5417,6 +6339,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "NY",
     "phone": "202-225-3965",
+    "fax": null,
+    "office": "250 Cannon House Office Building",
     "website": "https://ocasio-cortez.house.gov",
     "contactUrl": "https://ocasio-cortez.house.gov/contact",
     "email": null
@@ -5430,6 +6354,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "PA",
     "phone": "202-225-4731",
+    "fax": null,
+    "office": "150 Cannon House Office Building",
     "website": "https://dean.house.gov",
     "contactUrl": "https://dean.house.gov/contact",
     "email": null
@@ -5443,6 +6369,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "PA",
     "phone": "202-225-4315",
+    "fax": null,
+    "office": "1727 Longworth House Office Building",
     "website": "https://houlahan.house.gov",
     "contactUrl": "https://houlahan.house.gov/contact",
     "email": null
@@ -5456,6 +6384,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "PA",
     "phone": "202-225-6511",
+    "fax": null,
+    "office": "350 Cannon House Office Building",
     "website": "https://meuser.house.gov",
     "contactUrl": "https://meuser.house.gov/contact",
     "email": null
@@ -5469,6 +6399,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "PA",
     "phone": "202-225-2431",
+    "fax": null,
+    "office": "2102 Rayburn House Office Building",
     "website": "https://johnjoyce.house.gov",
     "contactUrl": "https://johnjoyce.house.gov/contact",
     "email": null
@@ -5482,6 +6414,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "PA",
     "phone": "202-225-2065",
+    "fax": null,
+    "office": "2209 Rayburn House Office Building",
     "website": "https://reschenthaler.house.gov",
     "contactUrl": "https://reschenthaler.house.gov/contact",
     "email": null
@@ -5495,6 +6429,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "SC",
     "phone": "202-225-6030",
+    "fax": null,
+    "office": "267 Cannon House Office Building",
     "website": "https://timmons.house.gov",
     "contactUrl": "https://timmons.house.gov/contact",
     "email": null
@@ -5508,6 +6444,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "SD",
     "phone": "202-225-2801",
+    "fax": null,
+    "office": "1714 Longworth House Office Building",
     "website": "https://dustyjohnson.house.gov",
     "contactUrl": "https://dustyjohnson.house.gov/contact",
     "email": null
@@ -5521,6 +6459,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "TN",
     "phone": "202-225-5435",
+    "fax": null,
+    "office": "1122 Longworth House Office Building",
     "website": "https://burchett.house.gov",
     "contactUrl": "https://burchett.house.gov/contact",
     "email": null
@@ -5534,6 +6474,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "TN",
     "phone": "202-225-4231",
+    "fax": null,
+    "office": "2238 Rayburn House Office Building",
     "website": "https://johnrose.house.gov",
     "contactUrl": "https://johnrose.house.gov/contact",
     "email": null
@@ -5547,6 +6489,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "TX",
     "phone": "202-225-6565",
+    "fax": null,
+    "office": "248 Cannon House Office Building",
     "website": "https://crenshaw.house.gov",
     "contactUrl": "https://crenshaw.house.gov/contact",
     "email": null
@@ -5560,6 +6504,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "TX",
     "phone": "202-225-3484",
+    "fax": null,
+    "office": "2431 Rayburn House Office Building",
     "website": "https://gooden.house.gov",
     "contactUrl": "https://gooden.house.gov/contact",
     "email": null
@@ -5573,6 +6519,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "TX",
     "phone": "202-225-2571",
+    "fax": null,
+    "office": "2004 Rayburn House Office Building",
     "website": "https://fletcher.house.gov",
     "contactUrl": "https://fletcher.house.gov/contact",
     "email": null
@@ -5586,6 +6534,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "TX",
     "phone": "202-225-4831",
+    "fax": null,
+    "office": "2448 Rayburn House Office Building",
     "website": "https://escobar.house.gov",
     "contactUrl": "https://escobar.house.gov/contact",
     "email": null
@@ -5599,6 +6549,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "TX",
     "phone": "202-225-4236",
+    "fax": null,
+    "office": "103 Cannon House Office Building",
     "website": "https://roy.house.gov",
     "contactUrl": "https://roy.house.gov/contact",
     "email": null
@@ -5612,6 +6564,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "TX",
     "phone": "202-225-1688",
+    "fax": null,
+    "office": "2419 Rayburn House Office Building",
     "website": "https://sylviagarcia.house.gov",
     "contactUrl": "https://sylviagarcia.house.gov/contact",
     "email": null
@@ -5625,6 +6579,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "VA",
     "phone": "202-225-5431",
+    "fax": null,
+    "office": "2443 Rayburn House Office Building",
     "website": "https://cline.house.gov",
     "contactUrl": "https://cline.house.gov/contact",
     "email": null
@@ -5638,6 +6594,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "WA",
     "phone": "202-225-7761",
+    "fax": null,
+    "office": "1110 Longworth House Office Building",
     "website": "https://schrier.house.gov",
     "contactUrl": "https://schrier.house.gov/contact",
     "email": null
@@ -5651,6 +6609,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "WI",
     "phone": "202-225-3031",
+    "fax": null,
+    "office": "1526 Longworth House Office Building",
     "website": "https://steil.house.gov",
     "contactUrl": "https://steil.house.gov/contact",
     "email": null
@@ -5664,6 +6624,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "WV",
     "phone": "202-225-3452",
+    "fax": null,
+    "office": "465 Cannon House Office Building",
     "website": "https://miller.house.gov",
     "contactUrl": "https://miller.house.gov/contact",
     "email": null
@@ -5677,6 +6639,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "FL",
     "phone": "202-224-5274",
+    "fax": "202-228-4535",
+    "office": "110 Hart Senate Office Building",
     "website": "https://www.rickscott.senate.gov",
     "contactUrl": "https://www.rickscott.senate.gov/contact/contact",
     "email": null
@@ -5690,6 +6654,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "MO",
     "phone": "202-224-6154",
+    "fax": null,
+    "office": "381 Russell Senate Office Building",
     "website": "https://www.hawley.senate.gov",
     "contactUrl": "https://www.hawley.senate.gov/contact-senator-hawley",
     "email": null
@@ -5703,6 +6669,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "ME",
     "phone": "202-225-6306",
+    "fax": null,
+    "office": "1107 Longworth House Office Building",
     "website": "https://golden.house.gov",
     "contactUrl": "https://golden.house.gov/contact",
     "email": null
@@ -5716,6 +6684,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "NC",
     "phone": "202-225-3415",
+    "fax": null,
+    "office": "407 Cannon House Office Building",
     "website": "https://murphy.house.gov",
     "contactUrl": "https://murphy.house.gov/contact",
     "email": null
@@ -5729,6 +6699,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "MD",
     "phone": "202-225-4741",
+    "fax": null,
+    "office": "2263 Rayburn House Office Building",
     "website": "https://mfume.house.gov",
     "contactUrl": "https://mfume.house.gov/contact",
     "email": null
@@ -5742,6 +6714,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "WI",
     "phone": "202-225-3365",
+    "fax": null,
+    "office": "451 Cannon House Office Building",
     "website": "https://tiffany.house.gov",
     "contactUrl": "https://tiffany.house.gov/contact",
     "email": null
@@ -5755,6 +6729,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "AZ",
     "phone": "202-224-2235",
+    "fax": null,
+    "office": "516 Hart Senate Office Building",
     "website": "https://www.kelly.senate.gov",
     "contactUrl": "https://www.kelly.senate.gov/contact/contact-form/",
     "email": null
@@ -5768,6 +6744,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "WY",
     "phone": "202-224-3424",
+    "fax": null,
+    "office": "127a Russell Senate Office Building",
     "website": "https://www.lummis.senate.gov",
     "contactUrl": "https://www.lummis.senate.gov/contact/contact-form/",
     "email": null
@@ -5781,6 +6759,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "CA",
     "phone": "202-225-5672",
+    "fax": null,
+    "office": "2108 Rayburn House Office Building",
     "website": "https://issa.house.gov",
     "contactUrl": "https://issa.house.gov/contact",
     "email": null
@@ -5794,8 +6774,10 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "TX",
     "phone": "202-225-6105",
+    "fax": null,
+    "office": "2204 Rayburn House Office Building",
     "website": "https://sessions.house.gov",
-    "contactUrl": "https://sessions.house.gov/contact",
+    "contactUrl": "https://sessions.house.gov/",
     "email": null
   },
   {
@@ -5807,6 +6789,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "CA",
     "phone": "202-225-4695",
+    "fax": null,
+    "office": "2465 Rayburn House Office Building",
     "website": "https://valadao.house.gov",
     "contactUrl": "https://valadao.house.gov/contact",
     "email": null
@@ -5820,6 +6804,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "AL",
     "phone": "202-224-4124",
+    "fax": "202-225-0562",
+    "office": "455 Russell Senate Office Building",
     "website": "https://www.tuberville.senate.gov",
     "contactUrl": "https://www.tuberville.senate.gov/contact/contact-form/",
     "email": null
@@ -5833,6 +6819,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CO",
     "phone": "202-224-5941",
+    "fax": "202-224-3115",
+    "office": "316 Hart Senate Office Building",
     "website": "https://www.hickenlooper.senate.gov",
     "contactUrl": "https://www.hickenlooper.senate.gov/contact/",
     "email": null
@@ -5846,6 +6834,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "TN",
     "phone": "202-224-4944",
+    "fax": null,
+    "office": "251 Russell Senate Office Building",
     "website": "https://www.hagerty.senate.gov",
     "contactUrl": "https://www.hagerty.senate.gov/email-me/",
     "email": null
@@ -5859,6 +6849,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "AL",
     "phone": "202-225-2901",
+    "fax": null,
+    "office": "1511 Longworth House Office Building",
     "website": "https://barrymoore.house.gov",
     "contactUrl": "https://barrymoore.house.gov/contact",
     "email": null
@@ -5872,6 +6864,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "CA",
     "phone": "202-225-5861",
+    "fax": null,
+    "office": "2433 Rayburn House Office Building",
     "website": "https://obernolte.house.gov",
     "contactUrl": "https://obernolte.house.gov/contact",
     "email": null
@@ -5885,6 +6879,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "CA",
     "phone": "202-225-4111",
+    "fax": null,
+    "office": "2439 Rayburn House Office Building",
     "website": "https://youngkim.house.gov",
     "contactUrl": "https://youngkim.house.gov/contact",
     "email": null
@@ -5898,6 +6894,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CA",
     "phone": "202-225-2040",
+    "fax": null,
+    "office": "2348 Rayburn House Office Building",
     "website": "https://sarajacobs.house.gov",
     "contactUrl": "https://sarajacobs.house.gov/contact",
     "email": null
@@ -5911,6 +6909,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "CO",
     "phone": "202-225-4761",
+    "fax": null,
+    "office": "1713 Longworth House Office Building",
     "website": "https://boebert.house.gov",
     "contactUrl": "https://boebert.house.gov/contact",
     "email": null
@@ -5924,6 +6924,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "FL",
     "phone": "202-225-5744",
+    "fax": null,
+    "office": "2421 Rayburn House Office Building",
     "website": "https://cammack.house.gov",
     "contactUrl": "https://cammack.house.gov/contact",
     "email": null
@@ -5937,6 +6939,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "FL",
     "phone": "202-225-1252",
+    "fax": null,
+    "office": "2301 Rayburn House Office Building",
     "website": "https://franklin.house.gov",
     "contactUrl": "https://franklin.house.gov/contact",
     "email": null
@@ -5950,6 +6954,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "FL",
     "phone": "202-225-2536",
+    "fax": null,
+    "office": "1710 Longworth House Office Building",
     "website": "https://donalds.house.gov",
     "contactUrl": "https://donalds.house.gov/contact",
     "email": null
@@ -5963,6 +6969,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "FL",
     "phone": "202-225-2778",
+    "fax": null,
+    "office": "448 Cannon House Office Building",
     "website": "https://gimenez.house.gov",
     "contactUrl": "https://gimenez.house.gov/contact",
     "email": null
@@ -5976,6 +6984,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "FL",
     "phone": "202-225-3931",
+    "fax": null,
+    "office": "2162 Rayburn House Office Building",
     "website": "https://salazar.house.gov",
     "contactUrl": "https://salazar.house.gov/contact",
     "email": null
@@ -5989,6 +6999,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "GA",
     "phone": "202-225-3801",
+    "fax": null,
+    "office": "1406 Longworth House Office Building",
     "website": "https://nikemawilliams.house.gov",
     "contactUrl": "https://nikemawilliams.house.gov/contact",
     "email": null
@@ -6002,6 +7014,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "GA",
     "phone": "202-225-9893",
+    "fax": null,
+    "office": "445 Cannon House Office Building",
     "website": "https://clyde.house.gov",
     "contactUrl": "https://clyde.house.gov/contact",
     "email": null
@@ -6015,6 +7029,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "IA",
     "phone": "202-225-2911",
+    "fax": null,
+    "office": "2458 Rayburn House Office Building",
     "website": "https://hinson.house.gov",
     "contactUrl": "https://hinson.house.gov/contact",
     "email": null
@@ -6028,6 +7044,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "IA",
     "phone": "202-225-6576",
+    "fax": null,
+    "office": "504 Cannon House Office Building",
     "website": "https://millermeeks.house.gov",
     "contactUrl": "https://millermeeks.house.gov/contact",
     "email": null
@@ -6041,6 +7059,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "IA",
     "phone": "202-225-4426",
+    "fax": null,
+    "office": "2434 Rayburn House Office Building",
     "website": "https://feenstra.house.gov",
     "contactUrl": "https://feenstra.house.gov/contact",
     "email": null
@@ -6054,6 +7074,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "IL",
     "phone": "202-225-5271",
+    "fax": null,
+    "office": "1740 Longworth House Office Building",
     "website": "https://marymiller.house.gov",
     "contactUrl": "https://marymiller.house.gov/contact",
     "email": null
@@ -6067,6 +7089,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "IN",
     "phone": "202-225-2461",
+    "fax": null,
+    "office": "2441 Rayburn House Office Building",
     "website": "https://mrvan.house.gov",
     "contactUrl": "https://mrvan.house.gov/contact",
     "email": null
@@ -6080,6 +7104,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "IN",
     "phone": "202-225-2276",
+    "fax": null,
+    "office": "1609 Longworth House Office Building",
     "website": "https://spartz.house.gov",
     "contactUrl": "https://spartz.house.gov/contact",
     "email": null
@@ -6093,6 +7119,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "KS",
     "phone": "202-225-2715",
+    "fax": null,
+    "office": "344 Cannon House Office Building",
     "website": "https://mann.house.gov",
     "contactUrl": "https://mann.house.gov/contact",
     "email": null
@@ -6106,6 +7134,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "MA",
     "phone": "202-225-5931",
+    "fax": null,
+    "office": "1524 Longworth House Office Building",
     "website": "https://auchincloss.house.gov",
     "contactUrl": "https://auchincloss.house.gov/contact",
     "email": null
@@ -6119,6 +7149,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "MI",
     "phone": "202-225-2106",
+    "fax": null,
+    "office": "562 Cannon House Office Building",
     "website": "https://mcclain.house.gov",
     "contactUrl": "https://mcclain.house.gov/contact",
     "email": null
@@ -6132,6 +7164,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "MN",
     "phone": "202-225-2165",
+    "fax": null,
+    "office": "2229 Rayburn House Office Building",
     "website": "https://fischbach.house.gov",
     "contactUrl": "https://fischbach.house.gov/contact",
     "email": null
@@ -6145,6 +7179,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "NC",
     "phone": "202-225-3032",
+    "fax": null,
+    "office": "1221 Longworth House Office Building",
     "website": "https://ross.house.gov",
     "contactUrl": "https://ross.house.gov/contact",
     "email": null
@@ -6158,6 +7194,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "NM",
     "phone": "202-225-6190",
+    "fax": null,
+    "office": "2417 Rayburn House Office Building",
     "website": "https://fernandez.house.gov",
     "contactUrl": "https://fernandez.house.gov/contact",
     "email": null
@@ -6171,6 +7209,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "NY",
     "phone": "202-225-7896",
+    "fax": null,
+    "office": "2344 Rayburn House Office Building",
     "website": "https://garbarino.house.gov",
     "contactUrl": "https://garbarino.house.gov/contact",
     "email": null
@@ -6184,6 +7224,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "NY",
     "phone": "202-225-3371",
+    "fax": null,
+    "office": "1124 Longworth House Office Building",
     "website": "https://malliotakis.house.gov",
     "contactUrl": "https://malliotakis.house.gov/contact",
     "email": null
@@ -6197,6 +7239,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "NY",
     "phone": "202-225-4361",
+    "fax": null,
+    "office": "1414 Longworth House Office Building",
     "website": "https://ritchietorres.house.gov",
     "contactUrl": "https://ritchietorres.house.gov/contact",
     "email": null
@@ -6210,6 +7254,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "OK",
     "phone": "202-225-2132",
+    "fax": null,
+    "office": "2402 Rayburn House Office Building",
     "website": "https://bice.house.gov",
     "contactUrl": "https://bice.house.gov/contact",
     "email": null
@@ -6223,6 +7269,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "OR",
     "phone": "202-225-6730",
+    "fax": "202-225-5774",
+    "office": "409 Cannon House Office Building",
     "website": "https://bentz.house.gov",
     "contactUrl": "https://bentz.house.gov/contact",
     "email": null
@@ -6236,6 +7284,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "SC",
     "phone": "202-225-3176",
+    "fax": null,
+    "office": "1728 Longworth House Office Building",
     "website": "https://mace.house.gov",
     "contactUrl": "https://mace.house.gov/contact",
     "email": null
@@ -6249,6 +7299,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "TN",
     "phone": "202-225-6356",
+    "fax": null,
+    "office": "167 Cannon House Office Building",
     "website": "https://harshbarger.house.gov",
     "contactUrl": "https://harshbarger.house.gov/contact",
     "email": null
@@ -6262,6 +7314,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "TX",
     "phone": "202-225-6673",
+    "fax": null,
+    "office": "2416 Rayburn House Office Building",
     "website": "https://fallon.house.gov",
     "contactUrl": "https://fallon.house.gov/contact",
     "email": null
@@ -6275,6 +7329,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "TX",
     "phone": "202-225-3605",
+    "fax": null,
+    "office": "2202 Rayburn House Office Building",
     "website": "https://pfluger.house.gov",
     "contactUrl": "https://pfluger.house.gov/contact",
     "email": null
@@ -6288,6 +7344,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "TX",
     "phone": "202-225-3706",
+    "fax": null,
+    "office": "125 Cannon House Office Building",
     "website": "https://jackson.house.gov",
     "contactUrl": "https://jackson.house.gov/contact",
     "email": null
@@ -6301,6 +7359,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "TX",
     "phone": "202-225-5951",
+    "fax": null,
+    "office": "1104 Longworth House Office Building",
     "website": "https://nehls.house.gov",
     "contactUrl": "https://nehls.house.gov/contact",
     "email": null
@@ -6314,6 +7374,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "TX",
     "phone": "202-225-6605",
+    "fax": null,
+    "office": "1725 Longworth House Office Building",
     "website": "https://vanduyne.house.gov",
     "contactUrl": "https://vanduyne.house.gov/contact",
     "email": null
@@ -6327,6 +7389,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "UT",
     "phone": "202-225-0453",
+    "fax": null,
+    "office": "1131 Longworth House Office Building",
     "website": "https://blakemoore.house.gov",
     "contactUrl": "https://blakemoore.house.gov/contact",
     "email": null
@@ -6340,6 +7404,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "UT",
     "phone": "202-225-3011",
+    "fax": null,
+    "office": "309 Cannon House Office Building",
     "website": "https://owens.house.gov",
     "contactUrl": "https://owens.house.gov/contact",
     "email": null
@@ -6353,6 +7419,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "WA",
     "phone": "202-225-9740",
+    "fax": null,
+    "office": "1724 Longworth House Office Building",
     "website": "https://strickland.house.gov",
     "contactUrl": "https://strickland.house.gov/contact",
     "email": null
@@ -6366,6 +7434,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "WI",
     "phone": "202-225-5101",
+    "fax": null,
+    "office": "2444 Rayburn House Office Building",
     "website": "https://fitzgerald.house.gov",
     "contactUrl": "https://fitzgerald.house.gov/contact",
     "email": null
@@ -6379,6 +7449,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CA",
     "phone": "202-224-3553",
+    "fax": null,
+    "office": "331 Hart Senate Office Building",
     "website": "https://www.padilla.senate.gov",
     "contactUrl": "https://www.padilla.senate.gov/contact/",
     "email": null
@@ -6392,6 +7464,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "GA",
     "phone": "202-224-3521",
+    "fax": null,
+    "office": "317 Hart Senate Office Building",
     "website": "https://www.ossoff.senate.gov",
     "contactUrl": "https://www.ossoff.senate.gov/contact-us/",
     "email": null
@@ -6405,6 +7479,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "GA",
     "phone": "202-224-3643",
+    "fax": "202-228-0724",
+    "office": "717 Hart Senate Office Building",
     "website": "https://www.warnock.senate.gov",
     "contactUrl": "https://www.warnock.senate.gov/contact/",
     "email": null
@@ -6418,6 +7494,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "NY",
     "phone": "202-225-3665",
+    "fax": null,
+    "office": "2230 Rayburn House Office Building",
     "website": "https://tenney.house.gov",
     "contactUrl": "https://tenney.house.gov/contact",
     "email": null
@@ -6431,6 +7509,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "LA",
     "phone": "202-225-8490",
+    "fax": null,
+    "office": "142 Cannon House Office Building",
     "website": "https://letlow.house.gov",
     "contactUrl": "https://letlow.house.gov/contact",
     "email": null
@@ -6444,6 +7524,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "LA",
     "phone": "202-225-6636",
+    "fax": null,
+    "office": "442 Cannon House Office Building",
     "website": "https://troycarter.house.gov",
     "contactUrl": "https://troycarter.house.gov/contact",
     "email": null
@@ -6457,6 +7539,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "NM",
     "phone": "202-225-6316",
+    "fax": null,
+    "office": "1421 Longworth House Office Building",
     "website": "https://stansbury.house.gov",
     "contactUrl": "https://stansbury.house.gov/contact",
     "email": null
@@ -6470,6 +7554,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "TX",
     "phone": "202-225-2002",
+    "fax": null,
+    "office": "1721 Longworth House Office Building",
     "website": "https://ellzey.house.gov",
     "contactUrl": "https://ellzey.house.gov/contact",
     "email": null
@@ -6483,6 +7569,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "OH",
     "phone": "202-225-7032",
+    "fax": null,
+    "office": "2455 Rayburn House Office Building",
     "website": "https://shontelbrown.house.gov",
     "contactUrl": "https://shontelbrown.house.gov/contact",
     "email": null
@@ -6496,6 +7584,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "OH",
     "phone": "202-225-2015",
+    "fax": null,
+    "office": "1433 Longworth House Office Building",
     "website": "https://carey.house.gov",
     "contactUrl": "https://carey.house.gov/contact",
     "email": null
@@ -6509,6 +7599,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "NE",
     "phone": "202-225-4806",
+    "fax": null,
+    "office": "343 Cannon House Office Building",
     "website": "https://flood.house.gov",
     "contactUrl": "https://flood.house.gov/contact",
     "email": null
@@ -6522,6 +7614,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "MN",
     "phone": "202-225-2472",
+    "fax": null,
+    "office": "2418 Rayburn House Office Building",
     "website": "https://finstad.house.gov",
     "contactUrl": "https://finstad.house.gov/contact",
     "email": null
@@ -6535,6 +7629,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "NY",
     "phone": "202-225-5614",
+    "fax": null,
+    "office": "1708 Longworth House Office Building",
     "website": "https://patryan.house.gov",
     "contactUrl": "https://patryan.house.gov/contact",
     "email": null
@@ -6548,6 +7644,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "IN",
     "phone": "202-225-3915",
+    "fax": null,
+    "office": "349 Cannon House Office Building",
     "website": "https://yakym.house.gov",
     "contactUrl": "https://yakym.house.gov/contact",
     "email": null
@@ -6561,6 +7659,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "MT",
     "phone": "202-225-5628",
+    "fax": null,
+    "office": "512 Cannon House Office Building",
     "website": "https://zinke.house.gov",
     "contactUrl": "https://zinke.house.gov/contact",
     "email": null
@@ -6574,6 +7674,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "AL",
     "phone": "202-224-5744",
+    "fax": null,
+    "office": "416 Russell Senate Office Building",
     "website": "https://www.britt.senate.gov",
     "contactUrl": "https://www.britt.senate.gov/contact/",
     "email": null
@@ -6587,6 +7689,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "MO",
     "phone": "202-224-5721",
+    "fax": null,
+    "office": "404 Russell Senate Office Building",
     "website": "https://www.schmitt.senate.gov",
     "contactUrl": "https://www.schmitt.senate.gov/contact/",
     "email": null
@@ -6600,6 +7704,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "PA",
     "phone": "202-224-4254",
+    "fax": null,
+    "office": "142 Russell Senate Office Building",
     "website": "https://www.fetterman.senate.gov",
     "contactUrl": "https://www.fetterman.senate.gov/contact/",
     "email": null
@@ -6613,6 +7719,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "AL",
     "phone": "202-225-4801",
+    "fax": null,
+    "office": "449 Cannon House Office Building",
     "website": "https://strong.house.gov",
     "contactUrl": "https://strong.house.gov/contact",
     "email": null
@@ -6626,6 +7734,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "AZ",
     "phone": "202-225-3361",
+    "fax": null,
+    "office": "307 Cannon House Office Building",
     "website": "https://crane.house.gov",
     "contactUrl": "https://crane.house.gov/contact",
     "email": null
@@ -6639,6 +7749,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "AZ",
     "phone": "202-225-2542",
+    "fax": null,
+    "office": "461 Cannon House Office Building",
     "website": "https://ciscomani.house.gov",
     "contactUrl": "https://ciscomani.house.gov/contact",
     "email": null
@@ -6652,6 +7764,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "I",
     "state": "CA",
     "phone": "202-225-2523",
+    "fax": null,
+    "office": "2445 Rayburn House Office Building",
     "website": "https://kiley.house.gov",
     "contactUrl": "https://kiley.house.gov/contact",
     "email": null
@@ -6665,6 +7779,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CA",
     "phone": "202-225-3531",
+    "fax": null,
+    "office": "1404 Longworth House Office Building",
     "website": "https://kevinmullin.house.gov",
     "contactUrl": "https://kevinmullin.house.gov/contact",
     "email": null
@@ -6678,6 +7794,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CA",
     "phone": "202-225-7084",
+    "fax": null,
+    "office": "144 Cannon House Office Building",
     "website": "https://kamlager-dove.house.gov",
     "contactUrl": "https://kamlager-dove.house.gov/contact",
     "email": null
@@ -6691,6 +7809,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CA",
     "phone": "202-225-7924",
+    "fax": null,
+    "office": "109 Cannon House Office Building",
     "website": "https://robertgarcia.house.gov",
     "contactUrl": "https://robertgarcia.house.gov/contact",
     "email": null
@@ -6704,6 +7824,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CO",
     "phone": "202-225-2645",
+    "fax": null,
+    "office": "348 Cannon House Office Building",
     "website": "https://pettersen.house.gov",
     "contactUrl": "https://pettersen.house.gov/contact",
     "email": null
@@ -6717,6 +7839,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "FL",
     "phone": "202-225-0123",
+    "fax": null,
+    "office": "2459 Rayburn House Office Building",
     "website": "https://bean.house.gov",
     "contactUrl": "https://bean.house.gov/contact",
     "email": null
@@ -6730,6 +7854,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "FL",
     "phone": "202-225-4035",
+    "fax": null,
+    "office": "346 Cannon House Office Building",
     "website": "https://mills.house.gov",
     "contactUrl": "https://mills.house.gov/contact",
     "email": null
@@ -6743,6 +7869,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "FL",
     "phone": "202-225-2176",
+    "fax": null,
+    "office": "1224 Longworth House Office Building",
     "website": "https://frost.house.gov",
     "contactUrl": "https://frost.house.gov/contact",
     "email": null
@@ -6756,6 +7884,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "FL",
     "phone": "202-225-5961",
+    "fax": null,
+    "office": "226 Cannon House Office Building",
     "website": "https://luna.house.gov",
     "contactUrl": "https://luna.house.gov/contact",
     "email": null
@@ -6769,6 +7899,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "FL",
     "phone": "202-225-5626",
+    "fax": null,
+    "office": "2464 Rayburn House Office Building",
     "website": "https://laurellee.house.gov",
     "contactUrl": "https://laurellee.house.gov/contact",
     "email": null
@@ -6782,6 +7914,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "FL",
     "phone": "202-225-3001",
+    "fax": null,
+    "office": "242 Cannon House Office Building",
     "website": "https://moskowitz.house.gov",
     "contactUrl": "https://moskowitz.house.gov/contact",
     "email": null
@@ -6795,6 +7929,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "GA",
     "phone": "202-225-4272",
+    "fax": null,
+    "office": "1719 Longworth House Office Building",
     "website": "https://mccormick.house.gov",
     "contactUrl": "https://mccormick.house.gov/contact",
     "email": null
@@ -6808,6 +7944,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "GA",
     "phone": "202-225-4101",
+    "fax": null,
+    "office": "2351 Rayburn House Office Building",
     "website": "https://collins.house.gov",
     "contactUrl": "https://collins.house.gov/contact",
     "email": null
@@ -6821,6 +7959,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "GU",
     "phone": "202-225-1188",
+    "fax": null,
+    "office": "228 Cannon House Office Building",
     "website": "https://moylan.house.gov",
     "contactUrl": "https://moylan.house.gov/contact",
     "email": null
@@ -6834,6 +7974,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "HI",
     "phone": "202-225-4906",
+    "fax": null,
+    "office": "1027 Longworth House Office Building",
     "website": "https://tokuda.house.gov",
     "contactUrl": "https://tokuda.house.gov/contact",
     "email": null
@@ -6847,6 +7989,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "IA",
     "phone": "202-225-5476",
+    "fax": null,
+    "office": "1410 Longworth House Office Building",
     "website": "https://nunn.house.gov",
     "contactUrl": "https://nunn.house.gov/contact",
     "email": null
@@ -6860,6 +8004,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "IL",
     "phone": "202-225-4372",
+    "fax": null,
+    "office": "1632 Longworth House Office Building",
     "website": "https://jonathanjackson.house.gov",
     "contactUrl": "https://jonathanjackson.house.gov/contact",
     "email": null
@@ -6873,6 +8019,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "IL",
     "phone": "202-225-5701",
+    "fax": null,
+    "office": "1523 Longworth House Office Building",
     "website": "https://ramirez.house.gov",
     "contactUrl": "https://ramirez.house.gov/contact",
     "email": null
@@ -6886,6 +8034,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "IL",
     "phone": "202-225-2371",
+    "fax": null,
+    "office": "1717 Longworth House Office Building",
     "website": "https://budzinski.house.gov",
     "contactUrl": "https://budzinski.house.gov/contact",
     "email": null
@@ -6899,6 +8049,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "IL",
     "phone": "202-225-5905",
+    "fax": null,
+    "office": "1314 Longworth House Office Building",
     "website": "https://sorensen.house.gov",
     "contactUrl": "https://sorensen.house.gov/contact",
     "email": null
@@ -6912,6 +8064,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "IN",
     "phone": "202-225-5315",
+    "fax": null,
+    "office": "342 Cannon House Office Building",
     "website": "https://houchin.house.gov",
     "contactUrl": "https://houchin.house.gov/contact",
     "email": null
@@ -6925,6 +8079,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "KY",
     "phone": "202-225-5401",
+    "fax": null,
+    "office": "1527 Longworth House Office Building",
     "website": "https://mcgarvey.house.gov",
     "contactUrl": "https://mcgarvey.house.gov/contact",
     "email": null
@@ -6938,6 +8094,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "MD",
     "phone": "202-225-8699",
+    "fax": null,
+    "office": "1610 Longworth House Office Building",
     "website": "https://ivey.house.gov",
     "contactUrl": "https://ivey.house.gov/contact",
     "email": null
@@ -6951,6 +8109,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "MI",
     "phone": "202-225-3831",
+    "fax": null,
+    "office": "1317 Longworth House Office Building",
     "website": "https://scholten.house.gov",
     "contactUrl": "https://scholten.house.gov/contact",
     "email": null
@@ -6964,6 +8124,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "MI",
     "phone": "202-225-4961",
+    "fax": null,
+    "office": "1519 Longworth House Office Building",
     "website": "https://james.house.gov",
     "contactUrl": "https://james.house.gov/contact",
     "email": null
@@ -6977,6 +8139,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "MI",
     "phone": "202-225-5802",
+    "fax": null,
+    "office": "154 Cannon House Office Building",
     "website": "https://thanedar.house.gov",
     "contactUrl": "https://thanedar.house.gov/contact",
     "email": null
@@ -6990,6 +8154,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "MO",
     "phone": "202-225-2876",
+    "fax": null,
+    "office": "328 Cannon House Office Building",
     "website": "https://alford.house.gov",
     "contactUrl": "https://alford.house.gov/contact",
     "email": null
@@ -7003,6 +8169,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "MO",
     "phone": "202-225-6536",
+    "fax": null,
+    "office": "1108 Longworth House Office Building",
     "website": "https://burlison.house.gov",
     "contactUrl": "https://burlison.house.gov/contact",
     "email": null
@@ -7016,6 +8184,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "MS",
     "phone": "202-225-5772",
+    "fax": null,
+    "office": "443 Cannon House Office Building",
     "website": "https://ezell.house.gov",
     "contactUrl": "https://ezell.house.gov/contact",
     "email": null
@@ -7029,6 +8199,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "NC",
     "phone": "202-225-3101",
+    "fax": null,
+    "office": "1123 Longworth House Office Building",
     "website": "https://dondavis.house.gov",
     "contactUrl": "https://dondavis.house.gov/contact",
     "email": null
@@ -7042,6 +8214,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "NC",
     "phone": "202-225-1784",
+    "fax": null,
+    "office": "2452 Rayburn House Office Building",
     "website": "https://foushee.house.gov",
     "contactUrl": "https://foushee.house.gov/contact",
     "email": null
@@ -7055,6 +8229,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "NC",
     "phone": "202-225-6401",
+    "fax": null,
+    "office": "1505 Longworth House Office Building",
     "website": "https://edwards.house.gov",
     "contactUrl": "https://edwards.house.gov/contact",
     "email": null
@@ -7068,6 +8244,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "NJ",
     "phone": "202-225-5361",
+    "fax": null,
+    "office": "251 Cannon House Office Building",
     "website": "https://kean.house.gov",
     "contactUrl": "https://kean.house.gov/contact",
     "email": null
@@ -7081,6 +8259,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "NJ",
     "phone": "202-225-7919",
+    "fax": null,
+    "office": "2453 Rayburn House Office Building",
     "website": "https://menendez.house.gov",
     "contactUrl": "https://menendez.house.gov/contact",
     "email": null
@@ -7094,6 +8274,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "NM",
     "phone": "202-225-2365",
+    "fax": null,
+    "office": "322 Cannon House Office Building",
     "website": "https://vasquez.house.gov",
     "contactUrl": "https://vasquez.house.gov/contact",
     "email": null
@@ -7107,6 +8289,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "NY",
     "phone": "202-225-3826",
+    "fax": null,
+    "office": "122 Cannon House Office Building",
     "website": "https://lalota.house.gov",
     "contactUrl": "https://lalota.house.gov/contact",
     "email": null
@@ -7120,6 +8304,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "NY",
     "phone": "202-225-7944",
+    "fax": null,
+    "office": "245 Cannon House Office Building",
     "website": "https://goldman.house.gov",
     "contactUrl": "https://goldman.house.gov/contact",
     "email": null
@@ -7133,6 +8319,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "NY",
     "phone": "202-225-6506",
+    "fax": null,
+    "office": "324 Cannon House Office Building",
     "website": "https://lawler.house.gov",
     "contactUrl": "https://lawler.house.gov/contact",
     "email": null
@@ -7146,6 +8334,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "NY",
     "phone": "202-225-3161",
+    "fax": null,
+    "office": "422 Cannon House Office Building",
     "website": "https://langworthy.house.gov",
     "contactUrl": "https://langworthy.house.gov/contact",
     "email": null
@@ -7159,6 +8349,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "OH",
     "phone": "202-225-2216",
+    "fax": null,
+    "office": "2244 Rayburn House Office Building",
     "website": "https://landsman.house.gov",
     "contactUrl": "https://landsman.house.gov/contact",
     "email": null
@@ -7172,6 +8364,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "OH",
     "phone": "202-225-3876",
+    "fax": null,
+    "office": "143 Cannon House Office Building",
     "website": "https://maxmiller.house.gov",
     "contactUrl": "https://maxmiller.house.gov/contact",
     "email": null
@@ -7185,6 +8379,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "OH",
     "phone": "202-225-6265",
+    "fax": null,
+    "office": "1217 Longworth House Office Building",
     "website": "https://sykes.house.gov",
     "contactUrl": "https://sykes.house.gov/contact",
     "email": null
@@ -7198,6 +8394,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "OK",
     "phone": "202-225-2701",
+    "fax": null,
+    "office": "351 Cannon House Office Building",
     "website": "https://brecheen.house.gov",
     "contactUrl": "https://brecheen.house.gov/contact",
     "email": null
@@ -7211,6 +8409,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "OR",
     "phone": "202-225-6416",
+    "fax": null,
+    "office": "1620 Longworth House Office Building",
     "website": "https://hoyle.house.gov",
     "contactUrl": "https://hoyle.house.gov/contact",
     "email": null
@@ -7224,6 +8424,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "OR",
     "phone": "202-225-5643",
+    "fax": null,
+    "office": "403 Cannon House Office Building",
     "website": "https://salinas.house.gov",
     "contactUrl": "https://salinas.house.gov/contact",
     "email": null
@@ -7237,6 +8439,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "PA",
     "phone": "202-225-2135",
+    "fax": null,
+    "office": "2437 Rayburn House Office Building",
     "website": "https://summerlee.house.gov",
     "contactUrl": "https://summerlee.house.gov/contact",
     "email": null
@@ -7250,6 +8454,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "PA",
     "phone": "202-225-2301",
+    "fax": null,
+    "office": "1222 Longworth House Office Building",
     "website": "https://deluzio.house.gov",
     "contactUrl": "https://deluzio.house.gov/contact",
     "email": null
@@ -7263,6 +8469,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "RI",
     "phone": "202-225-2735",
+    "fax": null,
+    "office": "252 Cannon House Office Building",
     "website": "https://magaziner.house.gov",
     "contactUrl": "https://magaziner.house.gov/contact",
     "email": null
@@ -7276,6 +8484,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "SC",
     "phone": "202-225-9895",
+    "fax": null,
+    "office": "345 Cannon House Office Building",
     "website": "https://fry.house.gov",
     "contactUrl": "https://fry.house.gov/contact",
     "email": null
@@ -7289,6 +8499,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "TN",
     "phone": "202-225-4311",
+    "fax": null,
+    "office": "151 Cannon House Office Building",
     "website": "https://ogles.house.gov",
     "contactUrl": "https://ogles.house.gov/contact",
     "email": null
@@ -7302,6 +8514,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "TX",
     "phone": "202-225-3035",
+    "fax": null,
+    "office": "1605 Longworth House Office Building",
     "website": "https://moran.house.gov",
     "contactUrl": "https://moran.house.gov/contact",
     "email": null
@@ -7315,6 +8529,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "TX",
     "phone": "202-225-4201",
+    "fax": null,
+    "office": "1030 Longworth House Office Building",
     "website": "https://keithself.house.gov",
     "contactUrl": "https://keithself.house.gov/contact",
     "email": null
@@ -7328,6 +8544,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "TX",
     "phone": "202-225-4901",
+    "fax": null,
+    "office": "444 Cannon House Office Building",
     "website": "https://luttrell.house.gov",
     "contactUrl": "https://luttrell.house.gov/contact",
     "email": null
@@ -7341,6 +8559,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "TX",
     "phone": "202-225-9901",
+    "fax": null,
+    "office": "1415 Longworth House Office Building",
     "website": "https://delacruz.house.gov",
     "contactUrl": "https://delacruz.house.gov/contact",
     "email": null
@@ -7354,6 +8574,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "TX",
     "phone": "202-225-8885",
+    "fax": null,
+    "office": "1616 Longworth House Office Building",
     "website": "https://crockett.house.gov",
     "contactUrl": "https://crockett.house.gov/contact",
     "email": null
@@ -7367,6 +8589,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "TX",
     "phone": "202-225-5645",
+    "fax": null,
+    "office": "446 Cannon House Office Building",
     "website": "https://casar.house.gov",
     "contactUrl": "https://casar.house.gov/contact",
     "email": null
@@ -7380,6 +8604,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "TX",
     "phone": "202-225-5646",
+    "fax": null,
+    "office": "1520 Longworth House Office Building",
     "website": "https://hunt.house.gov",
     "contactUrl": "https://hunt.house.gov/contact",
     "email": null
@@ -7393,6 +8619,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "VA",
     "phone": "202-225-4215",
+    "fax": null,
+    "office": "152 Cannon House Office Building",
     "website": "https://kiggans.house.gov",
     "contactUrl": "https://kiggans.house.gov/contact",
     "email": null
@@ -7406,6 +8634,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "VT",
     "phone": "202-225-4115",
+    "fax": null,
+    "office": "1510 Longworth House Office Building",
     "website": "https://balint.house.gov",
     "contactUrl": "https://balint.house.gov/contact",
     "email": null
@@ -7419,6 +8649,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "WA",
     "phone": "202-225-3536",
+    "fax": null,
+    "office": "1431 Longworth House Office Building",
     "website": "https://gluesenkampperez.house.gov",
     "contactUrl": "https://gluesenkampperez.house.gov/contact",
     "email": null
@@ -7432,6 +8664,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "WI",
     "phone": "202-225-5506",
+    "fax": null,
+    "office": "1513 Longworth House Office Building",
     "website": "https://vanorden.house.gov",
     "contactUrl": "https://vanorden.house.gov/contact",
     "email": null
@@ -7445,6 +8679,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "WY",
     "phone": "202-225-2311",
+    "fax": null,
+    "office": "1227 Longworth House Office Building",
     "website": "https://hageman.house.gov",
     "contactUrl": "https://hageman.house.gov/contact",
     "email": null
@@ -7458,6 +8694,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "NE",
     "phone": "202-224-4224",
+    "fax": null,
+    "office": "139 Russell Senate Office Building",
     "website": "https://www.ricketts.senate.gov",
     "contactUrl": "https://www.ricketts.senate.gov/contact/",
     "email": null
@@ -7471,6 +8709,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "VA",
     "phone": "202-225-6365",
+    "fax": null,
+    "office": "1628 Longworth House Office Building",
     "website": "https://mcclellan.house.gov",
     "contactUrl": "https://mcclellan.house.gov/contact",
     "email": null
@@ -7484,6 +8724,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "RI",
     "phone": "202-225-4911",
+    "fax": null,
+    "office": "1119 Longworth House Office Building",
     "website": "https://amo.house.gov",
     "contactUrl": "https://amo.house.gov/contact",
     "email": null
@@ -7497,6 +8739,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "UT",
     "phone": "202-225-9730",
+    "fax": null,
+    "office": "249 Cannon House Office Building",
     "website": "https://maloy.house.gov",
     "contactUrl": "https://maloy.house.gov/contact",
     "email": null
@@ -7510,6 +8754,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "NY",
     "phone": "202-225-3335",
+    "fax": null,
+    "office": "203 Cannon House Office Building",
     "website": "https://suozzi.house.gov",
     "contactUrl": "https://suozzi.house.gov/contact",
     "email": null
@@ -7523,6 +8769,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "NY",
     "phone": "202-225-3306",
+    "fax": null,
+    "office": "423 Cannon House Office Building",
     "website": "https://kennedy.house.gov",
     "contactUrl": "https://kennedy.house.gov/contact",
     "email": null
@@ -7536,6 +8784,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "CA",
     "phone": "202-225-2915",
+    "fax": null,
+    "office": "243 Cannon House Office Building",
     "website": "https://fong.house.gov",
     "contactUrl": "https://fong.house.gov/contact",
     "email": null
@@ -7549,6 +8799,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "OH",
     "phone": "202-225-5705",
+    "fax": null,
+    "office": "421 Cannon House Office Building",
     "website": "https://rulli.house.gov",
     "contactUrl": "https://rulli.house.gov/contact",
     "email": null
@@ -7562,6 +8814,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "NJ",
     "phone": "202-225-3436",
+    "fax": null,
+    "office": "426 Cannon House Office Building",
     "website": "https://mciver.house.gov",
     "contactUrl": "https://mciver.house.gov/contact",
     "email": null
@@ -7575,6 +8829,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "WI",
     "phone": "202-225-5665",
+    "fax": null,
+    "office": "424 Cannon House Office Building",
     "website": "https://wied.house.gov",
     "contactUrl": "https://wied.house.gov/contact",
     "email": null
@@ -7588,6 +8844,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "LA",
     "phone": "202-225-3901",
+    "fax": null,
+    "office": "2349 Rayburn House Office Building",
     "website": "https://fields.house.gov",
     "contactUrl": "https://fields.house.gov/contact",
     "email": null
@@ -7601,6 +8859,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "IN",
     "phone": "202-225-4436",
+    "fax": null,
+    "office": "404 Cannon House Office Building",
     "website": "https://stutzman.house.gov",
     "contactUrl": "https://stutzman.house.gov/contact",
     "email": null
@@ -7614,6 +8874,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CA",
     "phone": "202-225-5256",
+    "fax": null,
+    "office": "2463 Rayburn House Office Building",
     "website": "https://cisneros.house.gov",
     "contactUrl": "https://cisneros.house.gov/contact",
     "email": null
@@ -7627,6 +8889,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "MD",
     "phone": "202-224-4524",
+    "fax": null,
+    "office": "374 Russell Senate Office Building",
     "website": "https://www.alsobrooks.senate.gov",
     "contactUrl": "https://alsobrooks.senate.gov/",
     "email": null
@@ -7640,6 +8904,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "MT",
     "phone": "202-224-2644",
+    "fax": null,
+    "office": "124 Russell Senate Office Building",
     "website": "https://www.sheehy.senate.gov",
     "contactUrl": "https://www.sheehy.senate.gov/contact",
     "email": null
@@ -7653,6 +8919,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "OH",
     "phone": "202-224-2315",
+    "fax": null,
+    "office": "284 Russell Senate Office Building",
     "website": "https://www.moreno.senate.gov",
     "contactUrl": "https://www.moreno.senate.gov/contact",
     "email": null
@@ -7666,6 +8934,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "PA",
     "phone": "202-224-6324",
+    "fax": null,
+    "office": "702 Hart Senate Office Building",
     "website": "https://www.mccormick.senate.gov",
     "contactUrl": "https://mccormick.senate.gov/",
     "email": null
@@ -7679,6 +8949,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "AK",
     "phone": "202-225-5765",
+    "fax": null,
+    "office": "153 Cannon House Office Building",
     "website": "https://begich.house.gov",
     "contactUrl": "https://begich.house.gov/contact",
     "email": null
@@ -7692,6 +8964,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "AL",
     "phone": "202-225-4931",
+    "fax": null,
+    "office": "225 Cannon House Office Building",
     "website": "https://figures.house.gov",
     "contactUrl": "https://figures.house.gov/contact",
     "email": null
@@ -7705,6 +8979,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "AZ",
     "phone": "202-225-4065",
+    "fax": null,
+    "office": "1432 Longworth House Office Building",
     "website": "https://ansari.house.gov",
     "contactUrl": "https://ansari.house.gov/contact",
     "email": null
@@ -7718,6 +8994,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "AZ",
     "phone": "202-225-4576",
+    "fax": null,
+    "office": "1722 Longworth House Office Building",
     "website": "https://hamadeh.house.gov",
     "contactUrl": "https://hamadeh.house.gov/contact",
     "email": null
@@ -7731,6 +9009,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CA",
     "phone": "202-225-2661",
+    "fax": null,
+    "office": "1023 Longworth House Office Building",
     "website": "https://simon.house.gov",
     "contactUrl": "https://simon.house.gov/contact",
     "email": null
@@ -7744,6 +9024,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CA",
     "phone": "202-225-1947",
+    "fax": null,
+    "office": "1230 Longworth House Office Building",
     "website": "https://gray.house.gov",
     "contactUrl": "https://gray.house.gov/contact",
     "email": null
@@ -7757,6 +9039,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CA",
     "phone": "202-225-8104",
+    "fax": null,
+    "office": "1117 Longworth House Office Building",
     "website": "https://liccardo.house.gov",
     "contactUrl": "https://liccardo.house.gov/contact",
     "email": null
@@ -7770,6 +9054,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CA",
     "phone": "202-225-1956",
+    "fax": null,
+    "office": "1504 Longworth House Office Building",
     "website": "https://whitesides.house.gov",
     "contactUrl": "https://whitesides.house.gov/contact",
     "email": null
@@ -7783,6 +9069,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CA",
     "phone": "202-225-6131",
+    "fax": null,
+    "office": "1319 Longworth House Office Building",
     "website": "https://rivas.house.gov",
     "contactUrl": "https://rivas.house.gov/contact",
     "email": null
@@ -7796,6 +9084,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CA",
     "phone": "202-225-4176",
+    "fax": null,
+    "office": "1517 Longworth House Office Building",
     "website": "https://friedman.house.gov",
     "contactUrl": "https://friedman.house.gov/contact",
     "email": null
@@ -7809,6 +9099,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CA",
     "phone": "202-225-2415",
+    "fax": null,
+    "office": "1127 Longworth House Office Building",
     "website": "https://tran.house.gov",
     "contactUrl": "https://tran.house.gov/contact",
     "email": null
@@ -7822,6 +9114,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "CA",
     "phone": "202-225-5611",
+    "fax": null,
+    "office": "1034 Longworth House Office Building",
     "website": "https://min.house.gov",
     "contactUrl": "https://min.house.gov/contact",
     "email": null
@@ -7835,6 +9129,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "CO",
     "phone": "202-225-4676",
+    "fax": null,
+    "office": "1641 Longworth House Office Building",
     "website": "https://hurd.house.gov",
     "contactUrl": "https://hurd.house.gov/contact",
     "email": null
@@ -7848,6 +9144,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "CO",
     "phone": "202-225-4422",
+    "fax": null,
+    "office": "1029 Longworth House Office Building",
     "website": "https://crank.house.gov",
     "contactUrl": "https://crank.house.gov/contact",
     "email": null
@@ -7861,6 +9159,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "CO",
     "phone": "202-225-5625",
+    "fax": null,
+    "office": "1229 Longworth House Office Building",
     "website": "https://gabeevans.house.gov",
     "contactUrl": "https://gabeevans.house.gov/contact",
     "email": null
@@ -7874,6 +9174,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "DE",
     "phone": "202-225-4165",
+    "fax": null,
+    "office": "1306 Longworth House Office Building",
     "website": "https://mcbride.house.gov",
     "contactUrl": "https://mcbride.house.gov/contact",
     "email": null
@@ -7887,6 +9189,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "FL",
     "phone": "202-225-3671",
+    "fax": null,
+    "office": "1039 Longworth House Office Building",
     "website": "https://haridopolos.house.gov",
     "contactUrl": "https://haridopolos.house.gov/contact",
     "email": null
@@ -7900,6 +9204,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "GA",
     "phone": "202-225-5901",
+    "fax": null,
+    "office": "1320 Longworth House Office Building",
     "website": "https://jack.house.gov",
     "contactUrl": "https://jack.house.gov/contact",
     "email": null
@@ -7913,6 +9219,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "IN",
     "phone": "202-225-3021",
+    "fax": null,
+    "office": "224 Cannon House Office Building",
     "website": "https://shreve.house.gov",
     "contactUrl": "https://shreve.house.gov/contact",
     "email": null
@@ -7926,6 +9234,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "IN",
     "phone": "202-225-4636",
+    "fax": null,
+    "office": "1208 Longworth House Office Building",
     "website": "https://messmer.house.gov",
     "contactUrl": "https://messmer.house.gov/contact",
     "email": null
@@ -7939,6 +9249,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "KS",
     "phone": "202-225-6601",
+    "fax": null,
+    "office": "1223 Longworth House Office Building",
     "website": "https://schmidt.house.gov",
     "contactUrl": "https://schmidt.house.gov/contact",
     "email": null
@@ -7952,6 +9264,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "MD",
     "phone": "202-225-3061",
+    "fax": null,
+    "office": "1339 Longworth House Office Building",
     "website": "https://olszewski.house.gov",
     "contactUrl": "https://olszewski.house.gov/contact",
     "email": null
@@ -7965,6 +9279,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "MD",
     "phone": "202-225-4016",
+    "fax": null,
+    "office": "1213 Longworth House Office Building",
     "website": "https://elfreth.house.gov",
     "contactUrl": "https://elfreth.house.gov/contact",
     "email": null
@@ -7978,6 +9294,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "MD",
     "phone": "202-225-2721",
+    "fax": null,
+    "office": "1130 Longworth House Office Building",
     "website": "https://mcclaindelaney.house.gov",
     "contactUrl": "https://mcclaindelaney.house.gov/contact",
     "email": null
@@ -7991,6 +9309,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "MI",
     "phone": "202-225-4872",
+    "fax": null,
+    "office": "1232 Longworth House Office Building",
     "website": "https://barrett.house.gov",
     "contactUrl": "https://barrett.house.gov/contact",
     "email": null
@@ -8004,6 +9324,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "MI",
     "phone": "202-225-3611",
+    "fax": null,
+    "office": "1408 Longworth House Office Building",
     "website": "https://mcdonaldrivet.house.gov",
     "contactUrl": "https://mcdonaldrivet.house.gov/contact",
     "email": null
@@ -8017,6 +9339,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "MN",
     "phone": "202-225-2871",
+    "fax": null,
+    "office": "1205 Longworth House Office Building",
     "website": "https://morrison.house.gov",
     "contactUrl": "https://morrison.house.gov/contact",
     "email": null
@@ -8030,6 +9354,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "MO",
     "phone": "202-225-2406",
+    "fax": null,
+    "office": "1429 Longworth House Office Building",
     "website": "https://bell.house.gov",
     "contactUrl": "https://bell.house.gov/contact",
     "email": null
@@ -8043,6 +9369,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "MO",
     "phone": "202-225-2956",
+    "fax": null,
+    "office": "1113 Longworth House Office Building",
     "website": "https://onder.house.gov",
     "contactUrl": "https://onder.house.gov/contact",
     "email": null
@@ -8056,6 +9384,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "MP",
     "phone": "202-225-2646",
+    "fax": null,
+    "office": "425 Cannon House Office Building",
     "website": "https://king-hinds.house.gov",
     "contactUrl": "https://king-hinds.house.gov/contact",
     "email": null
@@ -8069,6 +9399,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "MT",
     "phone": "202-225-3211",
+    "fax": null,
+    "office": "1529 Longworth House Office Building",
     "website": "https://downing.house.gov",
     "contactUrl": "https://downing.house.gov/contact",
     "email": null
@@ -8082,6 +9414,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "NC",
     "phone": "202-225-3065",
+    "fax": null,
+    "office": "1032 Longworth House Office Building",
     "website": "https://mcdowell.house.gov",
     "contactUrl": "https://mcdowell.house.gov/contact",
     "email": null
@@ -8095,6 +9429,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "NC",
     "phone": "202-225-1976",
+    "fax": null,
+    "office": "126 Cannon House Office Building",
     "website": "https://markharris.house.gov",
     "contactUrl": "https://markharris.house.gov/contact",
     "email": null
@@ -8108,6 +9444,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "NC",
     "phone": "202-225-2576",
+    "fax": null,
+    "office": "1233 Longworth House Office Building",
     "website": "https://harrigan.house.gov",
     "contactUrl": "https://harrigan.house.gov/contact",
     "email": null
@@ -8121,6 +9459,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "NC",
     "phone": "202-225-4531",
+    "fax": null,
+    "office": "1239 Longworth House Office Building",
     "website": "https://knott.house.gov",
     "contactUrl": "https://knott.house.gov/contact",
     "email": null
@@ -8134,6 +9474,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "NC",
     "phone": "202-225-5634",
+    "fax": null,
+    "office": "1424 Longworth House Office Building",
     "website": "https://timmoore.house.gov",
     "contactUrl": "https://timmoore.house.gov/contact",
     "email": null
@@ -8147,6 +9489,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "ND",
     "phone": "202-225-2611",
+    "fax": null,
+    "office": "1607 Longworth House Office Building",
     "website": "https://fedorchak.house.gov",
     "contactUrl": "https://fedorchak.house.gov/contact",
     "email": null
@@ -8160,6 +9504,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "NH",
     "phone": "202-225-5206",
+    "fax": null,
+    "office": "223 Cannon House Office Building",
     "website": "https://goodlander.house.gov",
     "contactUrl": "https://goodlander.house.gov/contact",
     "email": null
@@ -8173,6 +9519,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "NJ",
     "phone": "202-225-4765",
+    "fax": null,
+    "office": "1022 Longworth House Office Building",
     "website": "https://conaway.house.gov",
     "contactUrl": "https://conaway.house.gov/contact",
     "email": null
@@ -8186,6 +9534,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "NJ",
     "phone": "202-225-5751",
+    "fax": null,
+    "office": "1007 Longworth House Office Building",
     "website": "https://pou.house.gov",
     "contactUrl": "https://pou.house.gov/contact",
     "email": null
@@ -8199,6 +9549,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "NY",
     "phone": "202-225-5516",
+    "fax": null,
+    "office": "428 Cannon House Office Building",
     "website": "https://gillen.house.gov",
     "contactUrl": "https://gillen.house.gov/contact",
     "email": null
@@ -8212,6 +9564,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "NY",
     "phone": "202-225-2464",
+    "fax": null,
+    "office": "1507 Longworth House Office Building",
     "website": "https://latimer.house.gov",
     "contactUrl": "https://latimer.house.gov/contact",
     "email": null
@@ -8225,6 +9579,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "NY",
     "phone": "202-225-5441",
+    "fax": null,
+    "office": "128 Cannon House Office Building",
     "website": "https://riley.house.gov",
     "contactUrl": "https://riley.house.gov/contact",
     "email": null
@@ -8238,6 +9594,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "NY",
     "phone": "202-225-3701",
+    "fax": null,
+    "office": "1516 Longworth House Office Building",
     "website": "https://mannion.house.gov",
     "contactUrl": "https://mannion.house.gov/contact",
     "email": null
@@ -8251,6 +9609,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "OH",
     "phone": "202-225-3164",
+    "fax": null,
+    "office": "325 Cannon House Office Building",
     "website": "https://taylor.house.gov",
     "contactUrl": "https://taylor.house.gov/contact",
     "email": null
@@ -8264,6 +9624,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "OR",
     "phone": "202-225-4811",
+    "fax": null,
+    "office": "1207 Longworth House Office Building",
     "website": "https://dexter.house.gov",
     "contactUrl": "https://dexter.house.gov/contact",
     "email": null
@@ -8277,6 +9639,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "OR",
     "phone": "202-225-5711",
+    "fax": null,
+    "office": "1508 Longworth House Office Building",
     "website": "https://bynum.house.gov",
     "contactUrl": "https://bynum.house.gov/contact",
     "email": null
@@ -8290,6 +9654,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "PA",
     "phone": "202-225-6411",
+    "fax": null,
+    "office": "121 Cannon House Office Building",
     "website": "https://mackenzie.house.gov",
     "contactUrl": "https://mackenzie.house.gov/contact",
     "email": null
@@ -8303,6 +9669,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "PA",
     "phone": "202-225-5546",
+    "fax": null,
+    "office": "1133 Longworth House Office Building",
     "website": "https://bresnahan.house.gov",
     "contactUrl": "https://bresnahan.house.gov/contact",
     "email": null
@@ -8316,6 +9684,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "PR",
     "phone": "202-225-2615",
+    "fax": null,
+    "office": "1419 Longworth House Office Building",
     "website": "https://hernandez.house.gov",
     "contactUrl": "https://hernandez.house.gov/contact",
     "email": null
@@ -8329,6 +9699,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "SC",
     "phone": "202-225-5301",
+    "fax": null,
+    "office": "1530 Longworth House Office Building",
     "website": "https://sheribiggs.house.gov",
     "contactUrl": "https://sheribiggs.house.gov/contact",
     "email": null
@@ -8342,6 +9714,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "TX",
     "phone": "202-225-5071",
+    "fax": null,
+    "office": "1716 Longworth House Office Building",
     "website": "https://craiggoldman.house.gov",
     "contactUrl": "https://craiggoldman.house.gov/contact",
     "email": null
@@ -8355,6 +9729,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "TX",
     "phone": "202-225-7772",
+    "fax": null,
+    "office": "1305 Longworth House Office Building",
     "website": "https://gill.house.gov",
     "contactUrl": "https://gill.house.gov/contact",
     "email": null
@@ -8368,6 +9744,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "TX",
     "phone": "202-225-2231",
+    "fax": null,
+    "office": "221 Cannon House Office Building",
     "website": "https://juliejohnson.house.gov",
     "contactUrl": "https://juliejohnson.house.gov/contact",
     "email": null
@@ -8381,6 +9759,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "UT",
     "phone": "202-225-7751",
+    "fax": null,
+    "office": "1626 Longworth House Office Building",
     "website": "https://mikekennedy.house.gov",
     "contactUrl": "https://mikekennedy.house.gov/contact",
     "email": null
@@ -8394,6 +9774,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "VA",
     "phone": "202-225-4711",
+    "fax": null,
+    "office": "1013 Longworth House Office Building",
     "website": "https://mcguire.house.gov",
     "contactUrl": "https://mcguire.house.gov/contact",
     "email": null
@@ -8407,6 +9789,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "VA",
     "phone": "202-225-2815",
+    "fax": null,
+    "office": "1005 Longworth House Office Building",
     "website": "https://vindman.house.gov",
     "contactUrl": "https://vindman.house.gov/contact",
     "email": null
@@ -8420,6 +9804,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "VA",
     "phone": "202-225-5136",
+    "fax": null,
+    "office": "1009 Longworth House Office Building",
     "website": "https://subramanyam.house.gov",
     "contactUrl": "https://subramanyam.house.gov/contact",
     "email": null
@@ -8433,6 +9819,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "WA",
     "phone": "202-225-2006",
+    "fax": null,
+    "office": "124 Cannon House Office Building",
     "website": "https://baumgartner.house.gov",
     "contactUrl": "https://baumgartner.house.gov/contact",
     "email": null
@@ -8446,6 +9834,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "WA",
     "phone": "202-225-5916",
+    "fax": null,
+    "office": "1531 Longworth House Office Building",
     "website": "https://randall.house.gov",
     "contactUrl": "https://randall.house.gov/contact",
     "email": null
@@ -8459,6 +9849,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "WV",
     "phone": "202-225-2711",
+    "fax": null,
+    "office": "1337 Longworth House Office Building",
     "website": "https://rileymoore.house.gov",
     "contactUrl": "https://rileymoore.house.gov/contact",
     "email": null
@@ -8472,6 +9864,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "WV",
     "phone": "202-224-3954",
+    "fax": null,
+    "office": "509 Hart Senate Office Building",
     "website": "https://www.justice.senate.gov",
     "contactUrl": "https://www.justice.senate.gov/contact",
     "email": null
@@ -8485,6 +9879,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "OH",
     "phone": "202-224-3353",
+    "fax": null,
+    "office": "304 Russell Senate Office Building",
     "website": "https://www.husted.senate.gov",
     "contactUrl": "https://www.husted.senate.gov/contact",
     "email": null
@@ -8498,6 +9894,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "FL",
     "phone": "202-224-3041",
+    "fax": null,
+    "office": "387 Russell Senate Office Building",
     "website": "https://www.moody.senate.gov",
     "contactUrl": "https://www.moody.senate.gov/contact",
     "email": null
@@ -8511,6 +9909,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "FL",
     "phone": "202-225-4136",
+    "fax": null,
+    "office": "2021 Rayburn House Office Building",
     "website": "https://patronis.house.gov",
     "contactUrl": "https://patronis.house.gov/contact/email-me",
     "email": null
@@ -8524,8 +9924,10 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "FL",
     "phone": "202-225-2706",
+    "fax": null,
+    "office": "244 Cannon House Office Building",
     "website": "https://fine.house.gov",
-    "contactUrl": "hhttps://fine.house.gov/address_authentication?form=/contact/email-me",
+    "contactUrl": "https://fine.house.gov/",
     "email": null
   },
   {
@@ -8537,6 +9939,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "VA",
     "phone": "202-225-1492",
+    "fax": null,
+    "office": "2265 Rayburn House Office Building",
     "website": "https://walkinshaw.house.gov",
     "contactUrl": "https://walkinshaw.house.gov/contact",
     "email": null
@@ -8550,6 +9954,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "AZ",
     "phone": "202-225-2435",
+    "fax": null,
+    "office": "1203 Longworth House Office Building",
     "website": "https://grijalva.house.gov",
     "contactUrl": "https://grijalva.house.gov/contact",
     "email": null
@@ -8563,6 +9969,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "TN",
     "phone": "202-225-2811",
+    "fax": null,
+    "office": "2446 Rayburn House Office Building",
     "website": "https://vanepps.house.gov",
     "contactUrl": "https://vanepps.house.gov/contact",
     "email": null
@@ -8576,6 +9984,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "TX",
     "phone": "202-225-3816",
+    "fax": null,
+    "office": "1318 Longworth House Office Building",
     "website": "https://menefee.house.gov",
     "contactUrl": "https://menefee.house.gov/contact",
     "email": null
@@ -8589,8 +9999,10 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "OK",
     "phone": "202-224-4721",
+    "fax": "202-228-0380",
+    "office": "330 Hart Senate Office Building",
     "website": "https://www.armstrong.senate.gov",
-    "contactUrl": "https://www.armstrong.senate.gov/contact",
+    "contactUrl": "https://www.armstrong.senate.gov/",
     "email": null
   },
   {
@@ -8602,8 +10014,55 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "GA",
     "phone": "202-225-5211",
+    "fax": null,
+    "office": "2201 Rayburn House Office Building",
     "website": "https://fuller.house.gov",
     "contactUrl": "https://fuller.house.gov/contact",
+    "email": null
+  },
+  {
+    "displayName": "Analilia Mejia",
+    "officialName": "Analilia Mejia",
+    "bioguide": "M001246",
+    "chamber": "house",
+    "title": "Rep.",
+    "party": "D",
+    "state": "NJ",
+    "phone": "202-225-5034",
+    "fax": "202-225-3186",
+    "office": "1427 Longworth House Office Building",
+    "website": "https://mejia.house.gov",
+    "contactUrl": "https://mejia.house.gov/contact",
+    "email": null
+  },
+  {
+    "displayName": "James Gallagher",
+    "officialName": "James Gallagher",
+    "bioguide": "G000607",
+    "chamber": "house",
+    "title": "Rep.",
+    "party": "R",
+    "state": "CA",
+    "phone": "202-225-3076",
+    "fax": null,
+    "office": "408 Cannon House Office Building",
+    "website": null,
+    "contactUrl": null,
+    "email": null
+  },
+  {
+    "displayName": "Darline Graham",
+    "officialName": "Darline Graham",
+    "bioguide": "G000608",
+    "chamber": "senate",
+    "title": "Sen.",
+    "party": "R",
+    "state": "SC",
+    "phone": "202-224-5972",
+    "fax": null,
+    "office": "B33 Russell Senate Office Building",
+    "website": "https://www.dgraham.senate.gov",
+    "contactUrl": "https://www.dgraham.senate.gov/",
     "email": null
   },
   {
@@ -8615,6 +10074,8 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "R",
     "state": "SC",
     "phone": "202-224-5972",
+    "fax": null,
+    "office": null,
     "website": "https://www.lgraham.senate.gov",
     "contactUrl": "https://www.lgraham.senate.gov/public/index.cfm/contact",
     "email": null
@@ -8628,14 +10089,25 @@ export const allLegislatorContacts: LegislatorContact[] = [
     "party": "D",
     "state": "MI",
     "phone": "202-224-4822",
-    "website": "https://www.stabenow.senate.gov",
-    "contactUrl": "https://www.stabenow.senate.gov/contact",
+    "fax": null,
+    "office": null,
+    "website": "https://www.senate.gov/senators/index.htm",
+    "contactUrl": "https://www.senate.gov/senators/index.htm",
     "email": null
   }
 ];
 
 function normName(s: string): string {
   return s.toLowerCase().replace(/[^a-z0-9 ]/g, " ").replace(/\s+/g, " ").trim();
+}
+
+export function lookupLegislatorByBioguide(
+  bioguideId: string | null | undefined
+): LegislatorContact | null {
+  if (!bioguideId) return null;
+  return (
+    allLegislatorContacts.find((l) => l.bioguide === bioguideId) ?? null
+  );
 }
 
 export function lookupLegislatorContact(
@@ -8653,7 +10125,8 @@ export function lookupLegislatorContact(
         l.state === state &&
         (normName(l.officialName) === n ||
           normName(l.displayName) === n ||
-          normName(l.officialName).split(" ").pop() === last)
+          normName(l.officialName).split(" ").pop() === last ||
+          normName(l.displayName).split(" ").pop() === last)
     );
     if (byLast) return byLast;
   }
