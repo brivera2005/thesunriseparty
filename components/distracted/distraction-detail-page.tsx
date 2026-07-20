@@ -1,13 +1,21 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowLeft, ExternalLink } from "lucide-react";
+import { ArrowLeft, ExternalLink, Link2 } from "lucide-react";
 import type { DistractionEntry } from "@/lib/types";
 import { PageShell } from "@/components/layout/page-shell";
 import { PageHero } from "@/components/layout/page-hero";
 import { Badge } from "@/components/ui/badge";
-import { buttonVariants } from "@/components/ui/button";
-import { Citation } from "@/components/citation";
+import { Button, buttonVariants } from "@/components/ui/button";
+import { CitationList } from "@/components/citation";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 import { formatDateUS } from "@/lib/format-date";
 import { cn } from "@/lib/utils";
 
@@ -17,24 +25,6 @@ function severityClass(score: number) {
   if (score >= 5) return "text-severity-moderate";
   return "text-severity-low";
 }
-
-const blocks: {
-  key: keyof Pick<
-    DistractionEntry,
-    | "distraction"
-    | "coveringUp"
-    | "whyTheyDoIt"
-    | "whyPeopleBelieveIt"
-    | "howToSpotIt"
-  >;
-  label: string;
-}[] = [
-  { key: "distraction", label: "Distraction" },
-  { key: "coveringUp", label: "Covering up" },
-  { key: "whyTheyDoIt", label: "Why they do it" },
-  { key: "whyPeopleBelieveIt", label: "Why people buy it" },
-  { key: "howToSpotIt", label: "How to spot it" },
-];
 
 export function DistractionDetailPage({ entry }: { entry: DistractionEntry }) {
   return (
@@ -60,7 +50,7 @@ export function DistractionDetailPage({ entry }: { entry: DistractionEntry }) {
       />
 
       <section className="section-y bg-muted/10">
-        <div className="page-container max-w-3xl space-y-4">
+        <div className="page-container max-w-xl space-y-4">
           <div className="flex flex-wrap gap-1.5">
             {entry.categories.map((cat) => (
               <Badge key={cat} variant="secondary" className="text-[10px]">
@@ -69,39 +59,81 @@ export function DistractionDetailPage({ entry }: { entry: DistractionEntry }) {
             ))}
           </div>
 
-          {blocks.map((block) => (
-            <article
-              key={block.key}
-              className="rounded-xl border border-black/[0.08] bg-white p-4 sm:p-5"
-            >
-              <h2 className="text-[11px] font-semibold tracking-[0.14em] text-navy/50 uppercase">
-                {block.label}
-              </h2>
-              <p className="mt-2 text-sm leading-relaxed text-navy/90 sm:text-[15px]">
-                {entry[block.key]}
-              </p>
-            </article>
-          ))}
+          <article className="rounded-xl border border-black/[0.08] bg-white p-4 sm:p-5">
+            <dl className="space-y-4 text-sm leading-snug">
+              <div>
+                <dt className="text-[10px] font-semibold tracking-[0.14em] text-navy/45 uppercase">
+                  Distraction
+                </dt>
+                <dd className="mt-1 text-navy/90">{entry.distraction}</dd>
+              </div>
+              <div>
+                <dt className="text-[10px] font-semibold tracking-[0.14em] text-[#e16323] uppercase">
+                  Covering up
+                </dt>
+                <dd className="mt-1 text-navy/90">{entry.coveringUp}</dd>
+              </div>
+            </dl>
+          </article>
 
           <article className="rounded-xl border border-black/[0.08] bg-white p-4 sm:p-5">
-            <h2 className="text-[11px] font-semibold tracking-[0.14em] text-navy/50 uppercase">
-              Sources
+            <h2 className="text-[10px] font-semibold tracking-[0.14em] text-navy/45 uppercase">
+              Why
             </h2>
-            <ul className="mt-3 space-y-2">
-              {entry.sources.map((source, i) => (
-                <li key={source.id} className="text-sm">
-                  <Citation source={source} index={i + 1} />
-                  <span className="ml-1 text-muted-foreground">
-                    {source.title} · {source.publisher}
-                  </span>
-                </li>
-              ))}
+            <ul className="mt-3 space-y-3 text-sm leading-snug text-navy/90">
+              <li>
+                <span className="font-semibold text-navy">Motive. </span>
+                {entry.whyTheyDoIt}
+              </li>
+              <li>
+                <span className="font-semibold text-navy">Why it sticks. </span>
+                {entry.whyPeopleBelieveIt}
+              </li>
+              <li>
+                <span className="font-semibold text-navy">Tell. </span>
+                {entry.howToSpotIt}
+              </li>
             </ul>
           </article>
 
+          <Dialog>
+            <DialogTrigger asChild>
+              <Button
+                type="button"
+                variant="outline"
+                size="sm"
+                className="gap-1.5"
+              >
+                <Link2 className="size-3.5" />
+                Citations
+              </Button>
+            </DialogTrigger>
+            <DialogContent className="max-w-md">
+              <DialogHeader>
+                <DialogTitle className="text-left text-base">
+                  Citations
+                </DialogTitle>
+                <DialogDescription className="text-left text-sm">
+                  {entry.title}
+                </DialogDescription>
+              </DialogHeader>
+              <div className="space-y-2 text-sm">
+                <CitationList sources={entry.sources} />
+                <ul className="mt-3 space-y-1.5 text-muted-foreground">
+                  {entry.sources.map((s, i) => (
+                    <li key={s.id}>
+                      [{i + 1}] {s.title}
+                      {s.publisher ? ` · ${s.publisher}` : ""}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </DialogContent>
+          </Dialog>
+
           {(entry.relatedEventIds?.length || entry.relatedRebuttalIds?.length) ? (
             <article className="rounded-xl border border-black/[0.08] bg-white p-4 sm:p-5">
-              <h2 className="text-[11px] font-semibold tracking-[0.14em] text-navy/50 uppercase">
+              <h2 className="text-[10px] font-semibold tracking-[0.14em] text-navy/45 uppercase">
                 Cross-links
               </h2>
               <ul className="mt-3 space-y-2 text-sm">

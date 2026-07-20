@@ -1,8 +1,8 @@
-/* Project Sunrise service worker - Pass 60 hard cache bust.
- * Distraction Watch: /distracted cover-up patterns.
+/* Project Sunrise service worker - Pass 61 hard cache bust.
+ * Distraction Watch: flashcard deck default, concise copy.
  */
 
-const CACHE = "sunrise-v60-20260720T0900-distraction-watch";
+const CACHE = "sunrise-v61-20260720T0915-distraction-deck";
 
 const PRECACHE = [
 

@@ -2,10 +2,11 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
-import { EyeOff, Share2 } from "lucide-react";
+import { EyeOff, LayoutList, Share2, SquareStack } from "lucide-react";
 import { PageShell } from "@/components/layout/page-shell";
 import { PageHero } from "@/components/layout/page-hero";
 import { DistractionCard } from "@/components/distracted/distraction-card";
+import { DistractionDeck } from "@/components/distracted/distraction-deck";
 import { FilterChips } from "@/components/ui/filter-chips";
 import {
   CollapsibleFilters,
@@ -28,6 +29,8 @@ const severityOptions = [
   { value: "7", label: "7+" },
   { value: "9", label: "9+" },
 ];
+
+type ViewMode = "deck" | "list";
 
 function ShareButton() {
   const [copied, setCopied] = useState(false);
@@ -70,6 +73,7 @@ export function DistractedPage() {
   const [category, setCategory] = useState<DistractionCategoryFilter>("All");
   const [minSeverity, setMinSeverity] = useState("1");
   const [query, setQuery] = useState("");
+  const [view, setView] = useState<ViewMode>("deck");
   const stats = getDistractionStats();
 
   const filtered = useMemo(
@@ -104,8 +108,8 @@ export function DistractedPage() {
         section="distracted"
         eyebrow="Cover-up Watch"
         title="Distraction Watch"
-        description="Shiny object in, accountability out. Spot the MAGA flashbang, then look at what it buries."
-        tip="Filter by category or severity, search a keyword, then open a card for the full tell."
+        description="One flashbang at a time. Spot the shiny object, then the bury."
+        tip="Deck is default. Flip for Why. List mode for a compact scan."
         actions={
           <HeroActions>
             <span
@@ -124,6 +128,43 @@ export function DistractedPage() {
 
       <section className="border-b border-border bg-white">
         <div className="page-container py-4 sm:py-5">
+          <div className="mb-3 flex flex-wrap items-center gap-2">
+            <div
+              className="inline-flex rounded-md border border-border bg-muted/30 p-0.5"
+              role="group"
+              aria-label="View mode"
+            >
+              <Button
+                type="button"
+                size="sm"
+                variant={view === "deck" ? "default" : "ghost"}
+                className={cn(
+                  "h-9 gap-1.5 px-3",
+                  view === "deck" && "bg-navy text-white hover:bg-navy/90"
+                )}
+                onClick={() => setView("deck")}
+                aria-pressed={view === "deck"}
+              >
+                <SquareStack className="size-3.5" />
+                Deck
+              </Button>
+              <Button
+                type="button"
+                size="sm"
+                variant={view === "list" ? "default" : "ghost"}
+                className={cn(
+                  "h-9 gap-1.5 px-3",
+                  view === "list" && "bg-navy text-white hover:bg-navy/90"
+                )}
+                onClick={() => setView("list")}
+                aria-pressed={view === "list"}
+              >
+                <LayoutList className="size-3.5" />
+                List
+              </Button>
+            </div>
+          </div>
+
           <CollapsibleFilters
             sticky
             activeCount={activeFilterCount}
@@ -135,7 +176,7 @@ export function DistractedPage() {
                 type="search"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
-                placeholder="Search distractions…"
+                placeholder="Search…"
                 className="h-9 max-w-sm"
                 aria-label="Search distractions"
               />
@@ -174,16 +215,23 @@ export function DistractedPage() {
               Quiz
             </Link>
           </div>
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {filtered.map((entry, i) => (
-              <DistractionCard key={entry.id} entry={entry} index={i} />
-            ))}
-          </div>
-          {filtered.length === 0 ? (
-            <p className="py-12 text-center text-sm text-muted-foreground">
-              No distractions match these filters.
-            </p>
-          ) : null}
+
+          {view === "deck" ? (
+            <DistractionDeck entries={filtered} />
+          ) : (
+            <>
+              <div className="mx-auto max-w-2xl space-y-1.5">
+                {filtered.map((entry, i) => (
+                  <DistractionCard key={entry.id} entry={entry} index={i} />
+                ))}
+              </div>
+              {filtered.length === 0 ? (
+                <p className="py-12 text-center text-sm text-muted-foreground">
+                  No distractions match these filters.
+                </p>
+              ) : null}
+            </>
+          )}
         </div>
       </section>
     </PageShell>

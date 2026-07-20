@@ -1,11 +1,22 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
-import { ArrowRight, Eye } from "lucide-react";
+import { ChevronDown, ExternalLink, Link2 } from "lucide-react";
 import type { DistractionEntry } from "@/lib/types";
 import { distractionDetailPath } from "@/lib/data/distractions";
 import { formatDateUS } from "@/lib/format-date";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { CitationList } from "@/components/citation";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 import { cn } from "@/lib/utils";
 
 function severityClass(score: number) {
@@ -21,62 +32,126 @@ type DistractionCardProps = {
 };
 
 export function DistractionCard({ entry, index = 0 }: DistractionCardProps) {
+  const [open, setOpen] = useState(false);
+
   return (
-    <Link
-      href={distractionDetailPath(entry.id)}
+    <article
       id={entry.id}
       className={cn(
-        "group surface-card-interactive flex h-full flex-col scroll-mt-24 p-4 sm:p-5",
-        "animate-in fade-in slide-in-from-bottom-2 fill-mode-both"
+        "scroll-mt-24 rounded-lg border border-black/[0.08] bg-white",
+        "animate-in fade-in fill-mode-both"
       )}
-      style={{ animationDelay: `${Math.min(index, 12) * 40}ms` }}
+      style={{ animationDelay: `${Math.min(index, 12) * 30}ms` }}
     >
-      <div className="mb-3 flex flex-wrap items-center gap-2">
+      <button
+        type="button"
+        onClick={() => setOpen((v) => !v)}
+        aria-expanded={open}
+        className="flex w-full items-start gap-3 px-3 py-2.5 text-left touch-manipulation sm:px-4 sm:py-3"
+      >
+        <span className="w-[4.5rem] shrink-0 pt-0.5 text-[11px] tabular-nums text-muted-foreground">
+          {formatDateUS(entry.date)}
+        </span>
+        <span className="min-w-0 flex-1">
+          <span className="block text-sm font-semibold leading-snug text-navy">
+            {entry.title}
+          </span>
+        </span>
         <span
           className={cn(
-            "text-xs font-bold tabular-nums tracking-wide",
+            "shrink-0 pt-0.5 text-xs font-bold tabular-nums",
             severityClass(entry.severity)
           )}
         >
-          Severity {entry.severity}/10
+          {entry.severity}
         </span>
-        <span className="text-[11px] text-muted-foreground">
-          {formatDateUS(entry.date)}
-        </span>
-      </div>
+        <ChevronDown
+          className={cn(
+            "mt-0.5 size-4 shrink-0 text-navy/40 transition-transform",
+            open && "rotate-180"
+          )}
+          aria-hidden
+        />
+      </button>
 
-      <h3 className="text-base font-semibold leading-snug text-navy group-hover:text-primary sm:text-[1.05rem]">
-        {entry.title}
-      </h3>
-
-      <div className="mt-3 space-y-2 text-sm leading-relaxed">
-        <p>
-          <span className="font-semibold text-navy">Distraction: </span>
-          <span className="text-muted-foreground line-clamp-2">
-            {entry.distraction}
-          </span>
-        </p>
-        <p>
-          <span className="font-semibold text-navy">Covering up: </span>
-          <span className="text-muted-foreground line-clamp-2">
-            {entry.coveringUp}
-          </span>
-        </p>
-      </div>
-
-      <div className="mt-4 flex flex-wrap gap-1.5">
-        {entry.categories.slice(0, 3).map((cat) => (
-          <Badge key={cat} variant="secondary" className="text-[10px] font-medium">
-            {cat}
-          </Badge>
-        ))}
-      </div>
-
-      <span className="mt-4 inline-flex min-h-10 items-center gap-1.5 text-sm font-semibold text-primary">
-        <Eye className="size-4" aria-hidden />
-        How to spot it
-        <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
-      </span>
-    </Link>
+      {open ? (
+        <div className="border-t border-black/[0.06] px-3 pb-3 pt-2 sm:px-4">
+          <dl className="space-y-2 text-sm leading-snug">
+            <div>
+              <dt className="text-[10px] font-semibold tracking-[0.12em] text-navy/45 uppercase">
+                Distraction
+              </dt>
+              <dd className="mt-0.5 text-navy/90">{entry.distraction}</dd>
+            </div>
+            <div>
+              <dt className="text-[10px] font-semibold tracking-[0.12em] text-[#e16323] uppercase">
+                Covering up
+              </dt>
+              <dd className="mt-0.5 text-navy/90">{entry.coveringUp}</dd>
+            </div>
+            <div>
+              <dt className="text-[10px] font-semibold tracking-[0.12em] text-navy/45 uppercase">
+                Tell
+              </dt>
+              <dd className="mt-0.5 text-navy/90">{entry.howToSpotIt}</dd>
+            </div>
+          </dl>
+          <div className="mt-2 flex flex-wrap gap-1">
+            {entry.categories.slice(0, 3).map((cat) => (
+              <Badge
+                key={cat}
+                variant="secondary"
+                className="text-[10px] font-medium"
+              >
+                {cat}
+              </Badge>
+            ))}
+          </div>
+          <div className="mt-2 flex flex-wrap items-center gap-2">
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button
+                  type="button"
+                  variant="ghost"
+                  size="sm"
+                  className="h-8 gap-1.5 px-2 text-xs text-navy/60"
+                >
+                  <Link2 className="size-3.5" />
+                  Citations
+                </Button>
+              </DialogTrigger>
+              <DialogContent className="max-w-md">
+                <DialogHeader>
+                  <DialogTitle className="text-left text-base">
+                    Citations
+                  </DialogTitle>
+                  <DialogDescription className="text-left text-sm">
+                    {entry.title}
+                  </DialogDescription>
+                </DialogHeader>
+                <div className="space-y-2 text-sm">
+                  <CitationList sources={entry.sources} />
+                  <ul className="mt-3 space-y-1.5 text-muted-foreground">
+                    {entry.sources.map((s, i) => (
+                      <li key={s.id}>
+                        [{i + 1}] {s.title}
+                        {s.publisher ? ` · ${s.publisher}` : ""}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </DialogContent>
+            </Dialog>
+            <Link
+              href={distractionDetailPath(entry.id)}
+              className="inline-flex h-8 items-center gap-1 text-xs font-semibold text-navy/60 hover:text-navy"
+            >
+              Open
+              <ExternalLink className="size-3.5" />
+            </Link>
+          </div>
+        </div>
+      ) : null}
+    </article>
   );
 }

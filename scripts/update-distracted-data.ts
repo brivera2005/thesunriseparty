@@ -110,6 +110,13 @@ function guessSeverity(title: string): number {
   return Math.max(3, Math.min(9, score));
 }
 
+/** Keep auto stub distraction lines scannable (~15 words). */
+function shortTitle(title: string, maxWords = 12): string {
+  const words = title.trim().split(/\s+/).filter(Boolean);
+  if (words.length <= maxWords) return title.trim();
+  return `${words.slice(0, maxWords).join(" ")}…`;
+}
+
 function collectCuratedIds(): Set<string> {
   const ids = new Set<string>();
   if (!existsSync(CURATED_TS)) return ids;
@@ -187,20 +194,20 @@ function frToEntry(doc: FrDoc): DistractionEntry {
   const date = doc.publication_date;
   const abstract =
     (doc.abstract && doc.abstract.trim()) ||
-    "Federal Register presidential document — auto-stub pending editorial pass.";
+    "Federal Register presidential document - auto-stub pending editorial pass.";
   return {
     id: slugId(date, doc.document_number),
     date,
     title: doc.title,
-    distraction: `Official spotlight / news-cycle gravity around: ${doc.title}`,
+    distraction: `Official FR spotlight: ${shortTitle(doc.title)}`,
     coveringUp:
-      "Auto-stub: check same-day tracker severity, disclosure fights, and floor votes this action may bury. Pending editorial correlation.",
+      "Same-day tracker severity, disclosure fights, or floor votes this may bury.",
     whyTheyDoIt:
-      "Flood the zone with a fresh official action or framing so accountability stories lose oxygen.",
+      "A fresh official action steals oxygen from accountability stories.",
     whyPeopleBelieveIt:
-      "A Federal Register document feels like the main story — authoritative, dated, and endlessly quotable.",
+      "A Federal Register doc feels like the main story because it is dated and quotable.",
     howToSpotIt:
-      "Ask what else moved the same day: tracker events, Congress calendar, FOIA fights, and court dockets.",
+      "Ask what else moved the same day on tracker, Congress, FOIA, and dockets.",
     severity: guessSeverity(doc.title),
     categories: guessCategories(doc.title, doc.abstract),
     sources: [
@@ -265,15 +272,15 @@ function rssToEntry(item: RssItem): DistractionEntry | null {
     id: slugId(date, key),
     date,
     title: item.title,
-    distraction: item.title,
+    distraction: shortTitle(item.title),
     coveringUp:
-      "Auto-stub from headline signal — correlate with concurrent policy harm, disclosure fights, or tracker events. Pending editorial review.",
+      "Concurrent policy harm, disclosure fights, or tracker events pending review.",
     whyTheyDoIt:
-      "Headline gravity redirects attention from costly policy, corruption, or disclosure deadlines.",
+      "Headline gravity redirects attention from costly policy or disclosure deadlines.",
     whyPeopleBelieveIt:
-      "Repetition + emotional charge make the shiny object feel more urgent than structural harm.",
+      "Repetition and emotion make the shiny object feel more urgent than structural harm.",
     howToSpotIt:
-      "Search the same date on the Project Sunrise tracker and legislation pages; ask who benefits if you only talk about this.",
+      "Check the same date on tracker and legislation; ask who benefits if you only talk about this.",
     severity: guessSeverity(item.title),
     categories: guessCategories(item.title, null),
     sources: [
@@ -327,15 +334,15 @@ async function fetchCongressBills(): Promise<DistractionEntry[]> {
         id: slugId(date, `bill-${num}`),
         date,
         title: `${bill.number || "Bill"}: ${title}`,
-        distraction: `Legislative spotlight: ${title}`,
+        distraction: `Legislative spotlight: ${shortTitle(title)}`,
         coveringUp:
-          "Auto-stub: check whether this bill’s news cycle coincides with higher-severity tracker actions or stalled accountability votes.",
+          "Higher-severity tracker actions or stalled accountability votes this cycle may bury.",
         whyTheyDoIt:
-          "Floor theatrics and messaging bills can drown out implementation of harmful executive actions.",
+          "Floor theatrics and messaging bills can drown out harmful executive actions.",
         whyPeopleBelieveIt:
-          "Congress.gov updates and cable chyron make legislation feel like the only ‘real’ fight.",
+          "Congress.gov updates and cable chyron make legislation feel like the only real fight.",
         howToSpotIt:
-          "Compare the bill’s latest action date with same-week Federal Register and tracker severity spikes.",
+          "Compare the bill action date with same-week Federal Register and tracker spikes.",
         severity: 5,
         categories: ["Legislation", ...guessCategories(title, bill.latestAction?.text)],
         sources: [

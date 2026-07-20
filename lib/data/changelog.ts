@@ -8,6 +8,17 @@
 /** Site iteration history - meta transparency for Project Sunrise builds */
 export const changelog: ChangelogEntry[] = [
   {
+    version: "0.61.0",
+    date: "2026-07-20",
+    title: "Pass 61 - Distraction Watch as flashcards",
+    highlights: [
+      "Distraction Watch default is a review deck: one card at a time, Prev/Next, swipe, flip for Why",
+      "Optional List mode: compact date | title | severity rows with short expand",
+      "Rewrote all curated entry fields to scannable limits (distraction/cover ~15 words; Why as 3 short lines); Citations behind a small link",
+      "SW cache hard-bumped to sunrise-v61-20260720T0915-distraction-deck",
+    ],
+  },
+  {
     version: "0.60.0",
     date: "2026-07-20",
     title: "Pass 60 - Distraction Watch",
