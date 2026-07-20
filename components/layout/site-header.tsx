@@ -393,8 +393,10 @@ export function SiteHeader() {
                   );
                   const isBlueprint = item.highlight === "blueprint";
                   const prevGroup = i > 0 ? siteNav[i - 1].group : null;
+                  const groupLabel =
+                    item.group !== "meta" ? GROUP_LABEL[item.group] : null;
                   const showGroup =
-                    item.group !== "meta" &&
+                    groupLabel != null &&
                     (i === 0 || item.group !== prevGroup);
 
                   return (
@@ -404,7 +406,7 @@ export function SiteHeader() {
                           className="px-4 pt-2.5 pb-1 text-[10px] font-bold tracking-[0.14em] text-navy/40 uppercase"
                           aria-hidden
                         >
-                          {GROUP_LABEL[item.group]}
+                          {groupLabel}
                         </p>
                       ) : null}
                       <Link

@@ -8,6 +8,18 @@
 /** Site iteration history - meta transparency for Project Sunrise builds */
 export const changelog: ChangelogEntry[] = [
   {
+    version: "0.70.0",
+    date: "2026-07-20",
+    title: "Pass 70 - LIVE / LEARN / FIX nav brackets",
+    highlights: [
+      "Desktop nav reorder: Tracker, Legislation | Rebuttal, Quiz, Distracted, History, Scenarios | Blueprint | About",
+      "Under-bracket labels LIVE / LEARN / FIX under each group; About sits unlabeled after FIX",
+      "Hamburger section dividers match; Rebuttal/Quiz/Distracted are LEARN not LIVE",
+      "Homepage destination grid matches nav order; dawn accents follow new index",
+      "SW cache hard-bumped to sunrise-v70-20260720T1517-nav-brackets",
+    ],
+  },
+  {
     version: "0.69.0",
     date: "2026-07-20",
     title: "Pass 69 - Link audit clean (1870/1870)",

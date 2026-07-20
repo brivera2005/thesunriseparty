@@ -1,8 +1,8 @@
-﻿/* Project Sunrise service worker - Pass 68 hard cache bust.
- * Nav: dawn-to-sunrise accents on desktop + hamburger.
+﻿/* Project Sunrise service worker - Pass 70 hard cache bust.
+ * Nav: LIVE / LEARN / FIX under-brackets + reorder.
  */
 
-const CACHE = "sunrise-v68-20260720T1515-nav-dawn";
+const CACHE = "sunrise-v70-20260720T1517-nav-brackets";
 
 const PRECACHE = [
 
