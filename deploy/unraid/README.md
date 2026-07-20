@@ -1,6 +1,6 @@
 # Project Sunrise updater on unRAID
 
-Always-on container that keeps [Project Sunrise](https://thesunriseparty.pages.dev) fresh: pulls GitHub, refreshes Project 2025 tracker data from the Federal Register, refreshes legislation every cycle (Congress.gov API when keyed, otherwise curated probe + stamp), builds the static site, and deploys to Cloudflare Pages.
+Always-on container that keeps [Project Sunrise](https://thesunriseparty.pages.dev) fresh: pulls GitHub, refreshes Project 2025 tracker data from the Federal Register, refreshes legislation every cycle (Congress.gov API when keyed, otherwise curated probe + stamp), refreshes Distraction Watch auto stubs (`DIST-AUTO-*`), builds the static site, and deploys to Cloudflare Pages.
 
 **Canonical files:** `C:\Users\Benjamin\Projects\sunrise\deploy\unraid\`
 
@@ -10,17 +10,18 @@ Live site: https://thesunriseparty.pages.dev · Repo: https://github.com/brivera
 
 ## What each cycle does
 
-1. `git pull` (or shallow clone on first run)
+1. `git pull` / hard reset to `origin/master` (discards dirty generated `public/` artifacts so checkout never blocks)
 2. `npm ci --include=dev` (needed because the image sets `NODE_ENV=production`)
 3. `npm run refresh:tracker` — Federal Register presidential docs → `lib/data/tracker-auto-events.ts` + `public/data/tracker-live.json`
 4. `npm run fetch-legislation` — **every cycle**: Congress.gov when `CONGRESS_API_KEY` is set; otherwise Senate active-leg probe + curated audit stamp → `public/data/legislation-live.json`
-5. `npm run build` (static export → `out/`)
-6. `npx wrangler pages deploy out --project-name=thesunriseparty --branch=main`
-7. Optional: commit + push auto data if `PUSH_DATA_UPDATES=1` and `GITHUB_TOKEN` is set
+5. `npm run refresh:distracted` — **every cycle**: FR / headline / Congress signals → `lib/data/distracted-auto.ts` + `public/data/distracted-live.json` (`DIST-AUTO-*` stubs)
+6. `npm run build` (static export → `out/`)
+7. `npx wrangler pages deploy out --project-name=thesunriseparty --branch=main`
+8. Optional: commit + push auto data if `PUSH_DATA_UPDATES=1` and `GITHUB_TOKEN` is set
 
 Failures are logged; the container **does not crash-loop** — it sleeps and retries on the next schedule.
 
-**Default schedule:** every **1 hour** (`UPDATE_HOURS=1`) for near-live tracker + legislation.
+**Default schedule:** every **1 hour** (`UPDATE_HOURS=1`) so Tracker + Legislation + Distracted stay live without manual daily updates.
 
 ---
 
@@ -31,6 +32,7 @@ Failures are logged; the container **does not crash-loop** — it sleeps and ret
 | Tracker stubs (`EVT-AUTO-*`) | Federal Register API | Merged into the live tracker at build time; editorial narrative still curated in `timeline-events.ts` |
 | `public/data/tracker-live.json` | Same fetch | Audit trail of docs seen / newly added |
 | `public/data/legislation-live.json` | Congress.gov and/or Senate probe | Always written each cycle; API skeleton when keyed; curated UI still from `lib/data/legislation.ts` until merged |
+| Distracted stubs (`DIST-AUTO-*`) | Federal Register + NPR Politics RSS (+ Congress.gov when keyed) | Written to `lib/data/distracted-auto.ts` / `distracted-live.json`; merge via `distracted-with-auto.ts` — curated narrative stays in `distracted.ts` |
 | Live Pages site | Wrangler | Redeployed every successful cycle |
 
 `project2025.observer` has no public JSON API — the updater probes reachability and keeps it as an external cross-reference on auto events.
@@ -57,15 +59,13 @@ cp .env.example .env
 nano .env
 ```
 
-
-**Do not rely on interactive Wrangler OAuth** inside the container � those tokens expire. Set a long-lived **CLOUDFLARE_API_TOKEN** (Pages Edit) in /mnt/user/appdata/project-sunrise-updater/.env on the NAS. The token is not stored in this repo; create it in the Cloudflare dashboard (see below).
-
+**Do not rely on interactive Wrangler OAuth** inside the container — those tokens expire (`cfoat_*` OAuth tokens → Wrangler auth error 10000). Set a long-lived **CLOUDFLARE_API_TOKEN** (Pages Edit) in `/mnt/user/appdata/project-sunrise-updater/.env` on the NAS. The token is not stored in this repo; create it in the Cloudflare dashboard (see below).
 
 **Required for publish**
 
 | Variable | Purpose |
 | --- | --- |
-| `CLOUDFLARE_API_TOKEN` | Pages Edit token |
+| `CLOUDFLARE_API_TOKEN` | Pages Edit token (API Token, not OAuth) |
 | `CLOUDFLARE_ACCOUNT_ID` | Cloudflare account id |
 
 **Recommended**
@@ -73,16 +73,18 @@ nano .env
 | Variable | Purpose |
 | --- | --- |
 | `UPDATE_HOURS` | Hours between runs (default `1`) |
-| `CONGRESS_API_KEY` | Refresh legislation live JSON |
+| `CONGRESS_API_KEY` | Refresh legislation live JSON + distracted Congress stubs |
 | `GITHUB_TOKEN` | Authenticated clone / optional data push |
 
 **Optional**
 
 | Variable | Purpose |
 | --- | --- |
-| `PUSH_DATA_UPDATES=1` | Commit auto tracker files back to GitHub |
+| `PUSH_DATA_UPDATES=1` | Commit auto tracker/distracted files back to GitHub |
 | `MOUNT_MODE=mount` | Use a host-mounted checkout instead of clone |
 | `SKIP_DEPLOY=1` | Build/refresh only (dry run) |
+| `DISTRACTED_LOOKBACK_DAYS` | FR lookback for distraction stubs (default `21`) |
+| `DISTRACTED_MAX_NEW` | Cap new distraction stubs per run (default `25`) |
 
 ### 3. Start
 
@@ -101,6 +103,8 @@ project-sunrise-updater starting (UPDATE_HOURS=1 …
 [tracker] Fetching Federal Register presidential documents…
 ── Legislation refresh (fetch-legislation) ──
 ✅ Wrote …/legislation-live.json
+[distracted] Federal Register docs: …
+✅ Wrote …/distracted-live.json
 npx wrangler pages deploy out …
 ======== Project Sunrise update cycle OK ========
 ```
@@ -112,7 +116,7 @@ npx wrangler pages deploy out …
 ### Default: clone inside container (`MOUNT_MODE=clone`)
 
 - Repo lives on the `sunrise_workspace` Docker volume at `/workspace/sunrise`
-- Each cycle: shallow fetch + reset to `origin/master`
+- Each cycle: shallow fetch + **hard reset** to `origin/master`
 - Best for headless Unraid — no Windows path mounts required
 - Set `GITHUB_TOKEN` if the repo is private or you enable data push
 
@@ -135,6 +139,8 @@ REPO_DIR=/workspace/sunrise
 ```bash
 cd /path/to/sunrise
 npm run refresh:tracker
+npm run fetch-legislation
+npm run refresh:distracted
 npm run build
 npm run deploy:pages
 ```
@@ -151,6 +157,8 @@ Requires `CLOUDFLARE_API_TOKEN` (and usually `CLOUDFLARE_ACCOUNT_ID`) in the env
 4. Paste into `.env` as `CLOUDFLARE_API_TOKEN`
 5. Account ID: dashboard right sidebar / Workers & Pages overview → `CLOUDFLARE_ACCOUNT_ID`
 
+If deploy logs show `Authentication error [code: 10000]`, the token is expired or OAuth-scoped — replace it with a fresh **API Token** (not `wrangler login` OAuth).
+
 ---
 
 ## Stop / rebuild
@@ -165,6 +173,7 @@ docker compose up -d --build
 
 ## Notes
 
-- Auto events are clearly marked (`EVT-AUTO-*`) and describe themselves as pending editorial review. Merge important ones into curated `timeline-events.ts` on a normal content pass when you want polished severity/narrative.
+- Auto tracker events are clearly marked (`EVT-AUTO-*`) and describe themselves as pending editorial review. Merge important ones into curated `timeline-events.ts` on a normal content pass when you want polished severity/narrative.
+- Auto distraction stubs (`DIST-AUTO-*`) are pending editorial correlation — curated Cover-up Watch narrative lives in `lib/data/distracted.ts`; pages can import `distracted-with-auto.ts` for curated + auto.
 - Do not commit `.env` with real secrets. Only `.env.example` belongs in git.
 - Style matches other Unraid stacks under `rushify/deploy/unraid/` (compose + `.env.example` + README + always-on `restart: unless-stopped`).

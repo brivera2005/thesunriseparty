@@ -313,3 +313,26 @@ export interface ImpactScenario {
   topics: string[];
   severity: number;
 }
+
+/** Distraction / Cover-up Watch entry: shiny object vs what it buries */
+export interface DistractionEntry {
+  id: string;
+  /** ISO date YYYY-MM-DD; display as MM/DD/YYYY */
+  date: string;
+  title: string;
+  /** The shiny object / outrage / fake scandal */
+  distraction: string;
+  /** What they do not want you looking at */
+  coveringUp: string;
+  /** Motive: files, corruption, policy pain, polls, etc. */
+  whyTheyDoIt: string;
+  /** Psychology / media incentives / slogan traps */
+  whyPeopleBelieveIt: string;
+  /** Kitchen-table tell */
+  howToSpotIt: string;
+  severity: number;
+  categories: string[];
+  relatedEventIds?: string[];
+  relatedRebuttalIds?: string[];
+  sources: CitationSource[];
+}

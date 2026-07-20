@@ -100,7 +100,7 @@ The `prebuild` hook runs feed generation, SEO artifacts, and data exports automa
 
 ### Always-on Unraid updater
 
-See [`deploy/unraid/README.md`](./deploy/unraid/README.md) for the `project-sunrise-updater` container (scheduled pull → refresh tracker → build → Wrangler deploy).
+See [`deploy/unraid/README.md`](./deploy/unraid/README.md) for the `project-sunrise-updater` container. On a **1-hour** schedule (`UPDATE_HOURS=1`) it keeps **Tracker + Legislation + Distracted** live: pull → `refresh:tracker` → `fetch-legislation` → `refresh:distracted` → build → Wrangler deploy. You should not need to update those sections manually every day.
 
 ---
 

@@ -8,7 +8,9 @@ export type SectionId =
   | "tracker"
   | "legislation"
   | "scenarios"
+  | "distracted"
   | "blueprint"
+  | "quiz"
   | "mission"
   | "accountability"
   | "methodology"
@@ -105,6 +107,34 @@ export const sectionThemes: Record<SectionId, SectionTheme> = {
       "bg-[color:var(--section-scenarios)] text-white hover:bg-[color:var(--section-scenarios)]/90",
     navActive:
       "text-[color:var(--section-scenarios)] border-[color:var(--section-scenarios)]",
+  },
+  distracted: {
+    id: "distracted",
+    label: "Distraction Watch",
+    hex: "#c2410c",
+    soft: "#fff7ed",
+    text: "text-[color:var(--section-distracted)]",
+    border: "border-[color:var(--section-distracted)]/35",
+    bgSoft: "bg-[color:var(--section-distracted-soft)]",
+    ring: "ring-[color:var(--section-distracted)]/30",
+    button:
+      "bg-[color:var(--section-distracted)] text-white hover:bg-[color:var(--section-distracted)]/90",
+    navActive:
+      "text-[color:var(--section-distracted)] border-[color:var(--section-distracted)]",
+  },
+  quiz: {
+    id: "quiz",
+    label: "Quiz",
+    hex: "#e16323",
+    soft: "#fff4ec",
+    text: "text-[color:var(--section-rebuttal)]",
+    border: "border-[color:var(--section-rebuttal)]/35",
+    bgSoft: "bg-[color:var(--section-rebuttal-soft)]",
+    ring: "ring-[color:var(--section-rebuttal)]/30",
+    button:
+      "bg-[color:var(--section-rebuttal)] text-white hover:bg-[color:var(--section-rebuttal)]/90",
+    navActive:
+      "text-[color:var(--section-rebuttal)] border-[color:var(--section-rebuttal)]",
   },
   blueprint: {
     id: "blueprint",
@@ -253,6 +283,8 @@ const pathToSection: { prefix: string; id: SectionId }[] = [
   { prefix: "/legislation", id: "legislation" },
   { prefix: "/bills", id: "legislation" },
   { prefix: "/scenarios", id: "scenarios" },
+  { prefix: "/distracted", id: "distracted" },
+  { prefix: "/quiz", id: "quiz" },
   { prefix: "/blueprint", id: "blueprint" },
   { prefix: "/mission", id: "mission" },
   { prefix: "/accountability", id: "accountability" },

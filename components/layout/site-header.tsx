@@ -38,6 +38,11 @@ const siteNav: {
     description: "Political Standing Quiz - find where you actually stand.",
   },
   {
+    label: "Distracted",
+    href: "/distracted",
+    description: "Distraction Watch - shiny object vs what it buries.",
+  },
+  {
     label: "Legislation",
     href: "/legislation",
     description: "Live bills and party votes.",

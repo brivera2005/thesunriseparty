@@ -47,6 +47,7 @@
   --color-section-tracker: var(--section-tracker);
   --color-section-legislation: var(--section-legislation);
   --color-section-scenarios: var(--section-scenarios);
+  --color-section-distracted: var(--section-distracted);
   --color-section-blueprint: var(--section-blueprint);
   --color-section-mission: var(--section-mission);
   --color-section-accountability: var(--section-accountability);
@@ -121,6 +122,8 @@
   --section-legislation-soft: #eff6ff;
   --section-scenarios: #7c3aed;
   --section-scenarios-soft: #f5f3ff;
+  --section-distracted: #c2410c;
+  --section-distracted-soft: #fff7ed;
   --section-blueprint: #0284c7;
   --section-blueprint-soft: #f0f9ff;
   --section-mission: #334155;

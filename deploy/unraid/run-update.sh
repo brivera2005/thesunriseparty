@@ -1,5 +1,5 @@
 #!/bin/bash
-# One update cycle: pull → refresh tracker/legislation → build → deploy → optional push.
+# One update cycle: pull → refresh tracker/legislation/distracted → build → deploy → optional push.
 # Fail soft: non-zero steps log and return (caller keeps looping).
 set -u
 
@@ -41,14 +41,16 @@ git_pull() {
     return 0
   fi
   cd "$REPO_DIR" || return 1
-  log "git fetch / reset to origin/$REPO_BRANCH"
+  log "git fetch / hard reset to origin/$REPO_BRANCH"
   if [[ -n "${GITHUB_TOKEN:-}" ]]; then
     git remote set-url origin \
       "https://x-access-token:${GITHUB_TOKEN}@github.com/brivera2005/thesunriseparty.git" || true
   fi
   git fetch --depth 1 origin "$REPO_BRANCH" || return 1
-  # Preserve local auto-data if we will refresh after pull
-  git checkout -B "$REPO_BRANCH" "origin/$REPO_BRANCH" || return 1
+  # Discard dirty generated artifacts from prior builds (events.json, feed.xml, etc.)
+  # so checkout cannot block; refreshed every cycle after pull.
+  git reset --hard "origin/$REPO_BRANCH" || return 1
+  git clean -fd -- public/data public/feed.xml public/feed.ics public/sitemap.xml 2>/dev/null || true
 }
 
 install_deps() {
@@ -71,6 +73,11 @@ refresh_data() {
   log "npm run fetch-legislation"
   npm run fetch-legislation || {
     log "WARN: fetch-legislation failed (fail soft — continuing with curated data)"
+  }
+  # Distraction / Cover-up Watch auto stubs (DIST-AUTO-*)
+  log "npm run refresh:distracted"
+  npm run refresh:distracted || {
+    log "WARN: refresh:distracted failed (fail soft — continuing)"
     return 0
   }
 }
@@ -120,8 +127,11 @@ maybe_push_data() {
 
   git add \
     lib/data/tracker-auto-events.ts \
+    lib/data/distracted-auto.ts \
+    lib/data/distracted-with-auto.ts \
     public/data/tracker-live.json \
     public/data/legislation-live.json \
+    public/data/distracted-live.json \
     2>/dev/null || true
 
   if git diff --cached --quiet; then
@@ -131,7 +141,7 @@ maybe_push_data() {
 
   local count
   count="$(git diff --cached --numstat | wc -l | tr -d ' ')"
-  git commit -m "chore(tracker): auto-refresh Federal Register / legislation data
+  git commit -m "chore(data): auto-refresh tracker / legislation / distracted
 
 Synced by project-sunrise-updater on Unraid."
   log "Pushing data commit ($count files) to origin/$REPO_BRANCH"
