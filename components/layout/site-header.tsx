@@ -7,6 +7,7 @@ import { Menu, Search, X } from "lucide-react";
 import { useAppStore } from "@/lib/store";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { BrandLogo } from "@/components/brand-logo";
+import { LiveRecordPulse } from "@/components/layout/live-record-pulse";
 import {
   Tooltip,
   TooltipContent,
@@ -179,8 +180,8 @@ function NavLink({
           active
             ? "font-semibold text-navy"
             : "font-medium text-navy/60 hover:bg-black/[0.04] hover:text-navy",
-          isBlueprint && !active && "text-[#1d4ed8]/80 hover:text-[#1d4ed8]",
-          isBlueprint && active && "text-[#1d4ed8]"
+          isBlueprint && !active && "text-navy/75 hover:text-navy",
+          isBlueprint && active && "text-navy"
         )}
         style={
           active ? undefined : { boxShadow: `inset 0 -2px 0 0 ${accent}` }
@@ -201,14 +202,21 @@ function NavLink({
   );
 }
 
-function GroupBracket({ label }: { label: string }) {
+function GroupBracket({
+  label,
+  showLivePulse,
+}: {
+  label: string;
+  showLivePulse?: boolean;
+}) {
   return (
     <div
       className="mt-0.5 flex h-3.5 w-full items-center gap-1.5"
       aria-hidden
     >
       <span className="h-px min-w-[0.5rem] flex-1 bg-navy/18" />
-      <span className="shrink-0 text-[9px] font-bold tracking-[0.16em] text-navy/40 uppercase">
+      <span className="inline-flex shrink-0 items-center gap-1 text-[9px] font-bold tracking-[0.16em] text-navy/40 uppercase">
+        {showLivePulse ? <LiveRecordPulse size="sm" /> : null}
         {label}
       </span>
       <span className="h-px min-w-[0.5rem] flex-1 bg-navy/18" />
@@ -248,7 +256,7 @@ export function SiteHeader() {
   }, [mobileOpen]);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-black/[0.06] bg-white/80 backdrop-blur-xl supports-[backdrop-filter]:bg-white/70">
+    <header className="sticky top-0 z-50 border-b border-black/[0.06] bg-white/80 backdrop-blur-xl supports-[backdrop-filter]:bg-white/70">
       {/* Logo | grouped nav (desktop) | hamburger + search (mobile) */}
       <div className="page-container relative flex h-14 items-center gap-3 sm:h-16 sm:gap-4 lg:h-[4.25rem]">
         <Link
@@ -287,7 +295,10 @@ export function SiteHeader() {
                       </li>
                     ))}
                   </ul>
-                  <GroupBracket label={group.label} />
+                  <GroupBracket
+                    label={group.label}
+                    showLivePulse={group.id === "live"}
+                  />
                 </div>
               </div>
             ))}
@@ -403,9 +414,12 @@ export function SiteHeader() {
                     <li key={item.href}>
                       {showGroup ? (
                         <p
-                          className="px-4 pt-2.5 pb-1 text-[10px] font-bold tracking-[0.14em] text-navy/40 uppercase"
+                          className="flex items-center gap-1.5 px-4 pt-2.5 pb-1 text-[10px] font-bold tracking-[0.14em] text-navy/40 uppercase"
                           aria-hidden
                         >
+                          {item.group === "live" ? (
+                            <LiveRecordPulse size="sm" />
+                          ) : null}
                           {groupLabel}
                         </p>
                       ) : null}
@@ -416,8 +430,8 @@ export function SiteHeader() {
                           active
                             ? "font-semibold text-navy"
                             : "font-medium text-navy/70 hover:text-navy",
-                          isBlueprint && !active && "text-[#1d4ed8]/85",
-                          isBlueprint && active && "text-[#1d4ed8]"
+                          isBlueprint && !active && "text-navy/80",
+                          isBlueprint && active && "text-navy"
                         )}
                         style={{
                           backgroundImage: active

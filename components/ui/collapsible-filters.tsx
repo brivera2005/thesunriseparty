@@ -1,6 +1,14 @@
 "use client";
 
-import { useEffect, useId, useRef, useState, type ReactNode } from "react";
+import {
+  useEffect,
+  useId,
+  useLayoutEffect,
+  useRef,
+  useState,
+  type ReactNode,
+} from "react";
+import { createPortal } from "react-dom";
 import { ChevronDown, SlidersHorizontal, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useCanHover } from "@/hooks/use-can-hover";
@@ -62,13 +70,25 @@ export function CollapsibleFilters({
   const panelId = useId();
   const rootRef = useRef<HTMLDivElement>(null);
   const sheetRef = useRef<HTMLDivElement>(null);
+  const panelRef = useRef<HTMLDivElement>(null);
+  const [mounted, setMounted] = useState(false);
+  const [panelBox, setPanelBox] = useState<{
+    top: number;
+    left: number;
+    width: number;
+  } | null>(null);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     if (!open || !canHover) return;
     const handler = (event: MouseEvent) => {
-      if (rootRef.current && !rootRef.current.contains(event.target as Node)) {
-        setOpen(false);
-      }
+      const t = event.target as Node;
+      if (rootRef.current?.contains(t)) return;
+      if (panelRef.current?.contains(t)) return;
+      setOpen(false);
     };
     document.addEventListener("mousedown", handler);
     return () => document.removeEventListener("mousedown", handler);
@@ -100,6 +120,32 @@ export function CollapsibleFilters({
     return () => cancelAnimationFrame(id);
   }, [open, canHover]);
 
+  useLayoutEffect(() => {
+    if (!open || !canHover || !rootRef.current) {
+      setPanelBox(null);
+      return;
+    }
+    const update = () => {
+      const el = rootRef.current;
+      if (!el) return;
+      const rect = el.getBoundingClientRect();
+      const width = Math.min(Math.max(rect.width, 320), 36 * 16, window.innerWidth - 16);
+      const left = Math.min(rect.left, window.innerWidth - width - 8);
+      setPanelBox({
+        top: rect.bottom + 8,
+        left: Math.max(8, left),
+        width,
+      });
+    };
+    update();
+    window.addEventListener("scroll", update, true);
+    window.addEventListener("resize", update);
+    return () => {
+      window.removeEventListener("scroll", update, true);
+      window.removeEventListener("resize", update);
+    };
+  }, [open, canHover]);
+
   const toggleLabel = activeCount > 0 ? `${label} (${activeCount})` : label;
 
   const panelBody = <div className="space-y-4">{children}</div>;
@@ -116,6 +162,29 @@ export function CollapsibleFilters({
         Clear all
       </Button>
     ) : null;
+
+  const desktopPanel =
+    canHover && open && panelBox && mounted
+      ? createPortal(
+          <div
+            ref={panelRef}
+            id={panelId}
+            className="fixed z-[9999] rounded-xl border border-border bg-white p-4 shadow-lg animate-in fade-in zoom-in-95 duration-150"
+            style={{
+              top: panelBox.top,
+              left: panelBox.left,
+              width: panelBox.width,
+              maxWidth: "36rem",
+            }}
+          >
+            {panelBody}
+            {clearRow ? (
+              <div className="mt-4 border-t border-border pt-3">{clearRow}</div>
+            ) : null}
+          </div>,
+          document.body
+        )
+      : null;
 
   return (
     <div
@@ -215,15 +284,7 @@ export function CollapsibleFilters({
         </>
       ) : null}
 
-      {canHover && open ? (
-        <div
-          id={panelId}
-          className="absolute top-full left-0 z-50 mt-2 w-full min-w-[min(100%,20rem)] max-w-xl rounded-xl border border-border bg-white p-4 shadow-lg animate-in fade-in zoom-in-95 duration-150"
-        >
-          {panelBody}
-          {clearRow ? <div className="mt-4 border-t border-border pt-3">{clearRow}</div> : null}
-        </div>
-      ) : null}
+      {desktopPanel}
     </div>
   );
 }

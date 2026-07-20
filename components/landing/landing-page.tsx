@@ -20,7 +20,11 @@ import { FadeIn } from "@/components/ui/fade-in";
 import { buttonVariants } from "@/components/ui/button";
 import {
   BLUEPRINT_BLUE,
+  BLUEPRINT_SKY_MID,
+  BLUEPRINT_SKY_SOFT,
+  BLUEPRINT_TEXT,
   LOGO_NAVY,
+  blueprintAccent,
   sunriseAccent,
 } from "@/lib/sunrise-accent";
 import { cn } from "@/lib/utils";
@@ -138,7 +142,7 @@ export function LandingPage() {
                 .slice(0, i)
                 .filter((c) => c.highlight !== "blueprint").length;
               const { accent, wash } = isBlueprint
-                ? { accent: BLUEPRINT_BLUE, wash: "rgba(37, 99, 235, 0.12)" }
+                ? blueprintAccent()
                 : sunriseAccent(sunriseIndex, sunriseTotal);
 
               return (
@@ -147,13 +151,13 @@ export function LandingPage() {
                     href={card.href}
                     className={cn(
                       "group relative flex h-full flex-col overflow-hidden rounded-xl border bg-white p-3 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md sm:p-3.5",
-                      isBlueprint && "ring-2 ring-[#2563eb]/35"
+                      isBlueprint && "ring-2 ring-[#38bdf8]/40"
                     )}
                     style={{
                       borderColor: isBlueprint ? BLUEPRINT_BLUE : LOGO_NAVY,
                       backgroundImage: `linear-gradient(90deg, ${wash} 0%, transparent 55%)`,
                       boxShadow: isBlueprint
-                        ? `inset 4px 0 0 0 ${BLUEPRINT_BLUE}, 0 2px 12px rgba(37,99,235,0.12)`
+                        ? `inset 4px 0 0 0 ${BLUEPRINT_BLUE}, 0 2px 12px rgba(125,211,252,0.28)`
                         : `inset 3px 0 0 0 ${accent}`,
                     }}
                   >
@@ -162,21 +166,27 @@ export function LandingPage() {
                         className={cn(
                           "inline-flex size-7 shrink-0 items-center justify-center rounded-md transition-transform duration-300 group-hover:scale-105",
                           isBlueprint
-                            ? "bg-[#2563eb]/15 text-[#2563eb]"
+                            ? "text-navy"
                             : "bg-navy/[0.06] text-navy"
                         )}
+                        style={
+                          isBlueprint
+                            ? { backgroundColor: BLUEPRINT_SKY_SOFT }
+                            : undefined
+                        }
                       >
                         <card.icon className="size-3.5" strokeWidth={1.75} />
                       </span>
-                      <h2
-                        className={cn(
-                          "min-w-0 flex-1 truncate text-sm font-semibold",
-                          isBlueprint ? "text-[#1d4ed8]" : "text-navy"
-                        )}
-                      >
+                      <h2 className="min-w-0 flex-1 truncate text-sm font-semibold text-navy">
                         {card.title}
                         {isBlueprint ? (
-                          <span className="ml-1.5 rounded bg-[#2563eb] px-1.5 py-0.5 text-[9px] font-bold tracking-wide text-white uppercase">
+                          <span
+                            className="ml-1.5 rounded px-1.5 py-0.5 text-[9px] font-bold tracking-wide uppercase"
+                            style={{
+                              backgroundColor: BLUEPRINT_SKY_MID,
+                              color: BLUEPRINT_TEXT,
+                            }}
+                          >
                             The Fix
                           </span>
                         ) : null}
@@ -184,9 +194,7 @@ export function LandingPage() {
                       <span
                         className={cn(
                           "inline-flex shrink-0 items-center gap-0.5 text-xs font-semibold transition-colors",
-                          isBlueprint
-                            ? "text-[#2563eb] group-hover:text-[#1d4ed8]"
-                            : "text-navy/70 group-hover:text-navy"
+                          "text-navy/70 group-hover:text-navy"
                         )}
                       >
                         Open

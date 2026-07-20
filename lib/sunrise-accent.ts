@@ -1,8 +1,17 @@
 /** Logo navy: PROJECT SUNRISE mark (~#0b1f3a). */
 export const LOGO_NAVY = "#0b1f3a";
-export const BLUEPRINT_BLUE = "#2563eb";
 
-/** Dawn → full sunrise keyframes (excl. Blueprint THE FIX blue). */
+/**
+ * Blueprint THE FIX — light sky after gold (full sunrise).
+ * Accent #38bdf8, mid wash #7dd3fc, soft #bae6fd; navy text on light fills.
+ */
+export const BLUEPRINT_BLUE = "#38bdf8";
+export const BLUEPRINT_SKY_MID = "#7dd3fc";
+export const BLUEPRINT_SKY_SOFT = "#bae6fd";
+export const BLUEPRINT_TEXT = LOGO_NAVY;
+export const BLUEPRINT_WASH = "rgba(186, 230, 253, 0.55)";
+
+/** Dawn → full sunrise keyframes (excl. Blueprint THE FIX sky). */
 const SUNRISE_STOPS: { t: number; h: number; s: number; l: number }[] = [
   { t: 0, h: 220, s: 58, l: 28 }, // early dawn — deep navy
   { t: 0.14, h: 338, s: 52, l: 42 }, // rose / pink dawn
@@ -48,5 +57,5 @@ export function sunriseAccent(index: number, total: number) {
 }
 
 export function blueprintAccent() {
-  return { accent: BLUEPRINT_BLUE, wash: "rgba(37, 99, 235, 0.12)" };
+  return { accent: BLUEPRINT_BLUE, wash: BLUEPRINT_WASH };
 }

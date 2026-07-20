@@ -139,16 +139,16 @@ export const sectionThemes: Record<SectionId, SectionTheme> = {
   blueprint: {
     id: "blueprint",
     label: "Blueprint",
-    hex: "#0284c7",
-    soft: "#f0f9ff",
-    text: "text-[color:var(--section-blueprint)]",
-    border: "border-[color:var(--section-blueprint)]/35",
+    hex: "#38bdf8",
+    soft: "#e0f2fe",
+    text: "text-[color:var(--section-blueprint-text)]",
+    border: "border-[color:var(--section-blueprint)]/45",
     bgSoft: "bg-[color:var(--section-blueprint-soft)]",
-    ring: "ring-[color:var(--section-blueprint)]/30",
+    ring: "ring-[color:var(--section-blueprint)]/35",
     button:
-      "bg-[color:var(--section-blueprint)] text-white hover:bg-[color:var(--section-blueprint)]/90",
+      "bg-[color:var(--section-blueprint)] text-[color:var(--section-blueprint-text)] hover:bg-[color:var(--section-blueprint)]/90",
     navActive:
-      "text-[color:var(--section-blueprint)] border-[color:var(--section-blueprint)]",
+      "text-[color:var(--section-blueprint-text)] border-[color:var(--section-blueprint)]",
   },
   mission: {
     id: "mission",

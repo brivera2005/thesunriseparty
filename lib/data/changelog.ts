@@ -8,6 +8,28 @@
 /** Site iteration history - meta transparency for Project Sunrise builds */
 export const changelog: ChangelogEntry[] = [
   {
+    version: "0.73.0",
+    date: "2026-07-20",
+    title: "Pass 73 - LIVE record pulse",
+    highlights: [
+      "Pulsing red ON AIR record circle beside LIVE under-bracket (desktop) and LIVE hamburger divider",
+      "Same pulse on homepage OPS // LIVE ticker badge for consistency",
+      "Decorative aria-hidden; prefers-reduced-motion disables animation",
+      "SW cache hard-bumped to sunrise-v73-20260720T1535-live-record-pulse",
+    ],
+  },
+  {
+    version: "0.72.0",
+    date: "2026-07-20",
+    title: "Pass 72 - Tips always above chrome",
+    highlights: [
+      "Tooltip Positioner + Popup z-[9999] (was z-50) so hover tips clear sticky header and LIVE/LEARN/FIX brackets",
+      "InfoTip / TermTip touch popovers portal to document.body with fixed positioning — no more clip under sticky nav or filter bars",
+      "CollapsibleFilters desktop panel portals to body at z-[9999]; sticky header stays z-50",
+      "SW cache hard-bumped to sunrise-v72-20260720T1530-tip-z",
+    ],
+  },
+  {
     version: "0.70.0",
     date: "2026-07-20",
     title: "Pass 70 - LIVE / LEARN / FIX nav brackets",

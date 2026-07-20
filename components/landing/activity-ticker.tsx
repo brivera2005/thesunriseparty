@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { FadeIn } from "@/components/ui/fade-in";
 import { TipText } from "@/components/ui/term-tip";
+import { LiveRecordPulse } from "@/components/layout/live-record-pulse";
 import { formatDateUS, formatRelativeUS } from "@/lib/format-date";
 import {
   getRecentActivity,
@@ -116,8 +117,10 @@ export function ActivityTicker({ limit = 6 }: { limit?: number }) {
                 <p className="truncate text-[11px] font-bold tracking-[0.14em] text-white uppercase sm:text-xs">
                   What just happened
                 </p>
-                <span className="hidden font-mono text-[10px] tracking-wide text-white/35 sm:inline">
-                  OPS // LIVE
+                <span className="hidden items-center gap-1.5 font-mono text-[10px] tracking-wide text-white/35 sm:inline-flex">
+                  OPS //
+                  <LiveRecordPulse size="sm" className="bg-[#ef4444]" />
+                  LIVE
                 </span>
               </div>
               <div className="flex shrink-0 items-center gap-2 text-[10px] font-medium tracking-wide text-white/40 sm:text-[11px]">

@@ -1,6 +1,14 @@
 "use client";
 
-import { useId, useState, type ReactNode } from "react";
+import {
+  useEffect,
+  useId,
+  useLayoutEffect,
+  useRef,
+  useState,
+  type ReactNode,
+} from "react";
+import { createPortal } from "react-dom";
 import { CircleHelp } from "lucide-react";
 import { useCanHover } from "@/hooks/use-can-hover";
 import {
@@ -19,6 +27,9 @@ type InfoTipProps = {
   iconClassName?: string;
 };
 
+const tipPanelClass =
+  "w-72 max-w-[min(20rem,calc(100vw-2rem))] rounded-lg border border-border bg-white px-3 py-2.5 text-left text-xs leading-relaxed text-foreground shadow-md";
+
 /**
  * Progressive disclosure: hover tooltip on fine pointers; tap-to-toggle on touch.
  * Critical copy should not live only here; use for secondary descriptions.
@@ -33,6 +44,58 @@ export function InfoTip({
   const canHover = useCanHover();
   const [open, setOpen] = useState(false);
   const tipId = useId();
+  const triggerRef = useRef<HTMLButtonElement>(null);
+  const [coords, setCoords] = useState<{ top: number; left: number } | null>(
+    null
+  );
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  useLayoutEffect(() => {
+    if (!open || !triggerRef.current) {
+      setCoords(null);
+      return;
+    }
+    const update = () => {
+      const el = triggerRef.current;
+      if (!el) return;
+      const rect = el.getBoundingClientRect();
+      const halfW = Math.min(144, (window.innerWidth - 16) / 2);
+      const left = Math.min(
+        Math.max(rect.left + rect.width / 2, halfW + 8),
+        window.innerWidth - halfW - 8
+      );
+      const top = side === "top" ? rect.top - 8 : rect.bottom + 8;
+      setCoords({ top, left });
+    };
+    update();
+    window.addEventListener("scroll", update, true);
+    window.addEventListener("resize", update);
+    return () => {
+      window.removeEventListener("scroll", update, true);
+      window.removeEventListener("resize", update);
+    };
+  }, [open, side]);
+
+  useEffect(() => {
+    if (!open) return;
+    const onPointer = (event: MouseEvent | TouchEvent) => {
+      const t = event.target as Node;
+      if (triggerRef.current?.contains(t)) return;
+      const tip = document.getElementById(tipId);
+      if (tip?.contains(t)) return;
+      setOpen(false);
+    };
+    document.addEventListener("mousedown", onPointer);
+    document.addEventListener("touchstart", onPointer);
+    return () => {
+      document.removeEventListener("mousedown", onPointer);
+      document.removeEventListener("touchstart", onPointer);
+    };
+  }, [open, tipId]);
 
   const trigger = children ?? (
     <span
@@ -64,9 +127,29 @@ export function InfoTip({
     );
   }
 
+  const tipNode =
+    open && coords && mounted
+      ? createPortal(
+          <span
+            id={tipId}
+            role="tooltip"
+            className={cn(
+              "pointer-events-auto fixed z-[9999] -translate-x-1/2",
+              tipPanelClass,
+              side === "top" && "-translate-y-full"
+            )}
+            style={{ top: coords.top, left: coords.left }}
+          >
+            {label}
+          </span>,
+          document.body
+        )
+      : null;
+
   return (
     <span className={cn("relative inline-flex", className)}>
       <button
+        ref={triggerRef}
         type="button"
         className="inline-flex border-0 bg-transparent p-0"
         aria-expanded={open}
@@ -80,15 +163,7 @@ export function InfoTip({
       >
         {trigger}
       </button>
-      {open && (
-        <span
-          id={tipId}
-          role="tooltip"
-          className="absolute top-full left-1/2 z-40 mt-2 w-72 max-w-[min(20rem,calc(100vw-2rem))] -translate-x-1/2 rounded-lg border border-border bg-white px-3 py-2.5 text-left text-xs leading-relaxed text-foreground shadow-md"
-        >
-          {label}
-        </span>
-      )}
+      {tipNode}
     </span>
   );
 }
@@ -114,7 +189,9 @@ export function ExpandableHint({
       <p
         className={cn(
           "text-sm leading-relaxed text-muted-foreground transition-colors",
-          previewLines === 1 ? "line-clamp-1 group-hover:line-clamp-none" : "line-clamp-2 group-hover:line-clamp-none",
+          previewLines === 1
+            ? "line-clamp-1 group-hover:line-clamp-none"
+            : "line-clamp-2 group-hover:line-clamp-none",
           className
         )}
       >
@@ -137,7 +214,15 @@ export function ExpandableHint({
         setExpanded((v) => !v);
       }}
     >
-      <span className={expanded ? undefined : previewLines === 1 ? "line-clamp-1" : "line-clamp-2"}>
+      <span
+        className={
+          expanded
+            ? undefined
+            : previewLines === 1
+              ? "line-clamp-1"
+              : "line-clamp-2"
+        }
+      >
         {text}
       </span>
       <span className="mt-1 block text-[11px] font-medium text-primary">

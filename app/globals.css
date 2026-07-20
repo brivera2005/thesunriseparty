@@ -49,6 +49,7 @@
   --color-section-scenarios: var(--section-scenarios);
   --color-section-distracted: var(--section-distracted);
   --color-section-blueprint: var(--section-blueprint);
+  --color-section-blueprint-text: var(--section-blueprint-text);
   --color-section-mission: var(--section-mission);
   --color-section-accountability: var(--section-accountability);
   --color-section-methodology: var(--section-methodology);
@@ -124,8 +125,9 @@
   --section-scenarios-soft: #f5f3ff;
   --section-distracted: #c2410c;
   --section-distracted-soft: #fff7ed;
-  --section-blueprint: #0284c7;
-  --section-blueprint-soft: #f0f9ff;
+  --section-blueprint: #38bdf8;
+  --section-blueprint-soft: #e0f2fe;
+  --section-blueprint-text: #0b1f3a;
   --section-mission: #334155;
   --section-mission-soft: #f1f5f9;
   --section-accountability: #475569;
@@ -248,6 +250,31 @@
 
 .animate-fade-in-up {
   animation: fade-in-up 0.5s ease-out forwards;
+}
+
+/* Broadcast “ON AIR” record light — used next to LIVE nav labels */
+@keyframes live-record-pulse {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(0.72);
+  }
+}
+
+.animate-live-record {
+  animation: live-record-pulse 1.35s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-live-record {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
 }
 
 @layer base {

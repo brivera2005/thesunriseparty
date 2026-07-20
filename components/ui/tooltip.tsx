@@ -3,6 +3,9 @@
 import { Tooltip as TooltipPrimitive } from "@base-ui/react/tooltip";
 import { cn } from "@/lib/utils";
 
+/** Above sticky header (z-50), filter bars, and flashcard chrome. */
+const TIP_Z = "z-[9999]";
+
 function TooltipProvider({
   delay = 280,
   ...props
@@ -28,11 +31,16 @@ function TooltipContent({
   Pick<TooltipPrimitive.Positioner.Props, "side" | "sideOffset" | "align">) {
   return (
     <TooltipPrimitive.Portal>
-      <TooltipPrimitive.Positioner side={side} sideOffset={sideOffset}>
+      <TooltipPrimitive.Positioner
+        side={side}
+        sideOffset={sideOffset}
+        className={TIP_Z}
+      >
         <TooltipPrimitive.Popup
           data-slot="tooltip-content"
           className={cn(
-            "z-50 max-w-xs rounded-lg border border-border bg-white px-3 py-2 text-xs leading-relaxed text-foreground shadow-md origin-[var(--transform-origin)] transition-[transform,opacity] duration-100 data-ending-style:scale-95 data-ending-style:opacity-0 data-starting-style:scale-95 data-starting-style:opacity-0",
+            TIP_Z,
+            "max-w-xs rounded-lg border border-border bg-white px-3 py-2 text-xs leading-relaxed text-foreground shadow-md origin-[var(--transform-origin)] transition-[transform,opacity] duration-100 data-ending-style:scale-95 data-ending-style:opacity-0 data-starting-style:scale-95 data-starting-style:opacity-0",
             className
           )}
           {...props}
