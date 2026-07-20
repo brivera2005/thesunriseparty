@@ -2,6 +2,7 @@ import {
   Activity,
   BookOpen,
   Compass,
+  EyeOff,
   GitBranch,
   Heart,
   History,
@@ -24,6 +25,7 @@ import { hiddenHistoryEntries, getHistoryStats } from "./hidden-history";
 import { policyFixes, safeguardItems } from "./policies";
 import { legislationBills, getLegislationStats } from "./legislation";
 import { impactScenarios, getScenarioStats } from "./scenarios";
+import { distractions, getDistractionStats } from "./distractions";
 import { validatedUrls } from "./validated-urls";
 import { trackerSources } from "./tracker-sources";
 
@@ -48,6 +50,7 @@ const trackerStats = getTrackerStats();
 const historyStats = getHistoryStats();
 const legislationStats = getLegislationStats();
 const scenarioStats = getScenarioStats();
+const distractionStats = getDistractionStats();
 const rebuttalCats = rebuttalCategories.filter((c) => c !== "All");
 
 export const sitemapIntro = {
@@ -181,6 +184,32 @@ export const sitemapSections: SitemapSection[] = [
         href: "/scenarios/SCN-FEMA-009",
         label: "Featured: Hurricane wait times",
         description: "FEMA cuts meet climate disasters.",
+      },
+    ],
+  },
+  {
+    id: "distracted",
+    title: "Distraction Watch",
+    description: "Shiny object vs what it buries - MAGA cover-up patterns with how to spot them.",
+    icon: EyeOff,
+    accent: "text-orange-800 border-orange-300/50 bg-orange-50",
+    links: [
+      {
+        href: "/distracted",
+        label: "All distractions",
+        count: distractions.length,
+        description: `${distractionStats.total} entries · avg severity ${distractionStats.avgSeverity}/10`,
+        badge: "New",
+      },
+      {
+        href: "/distracted/DST-EPSTEIN-THEATER",
+        label: "Featured: Epstein Files Theater",
+        description: "Promise release, deliver delay.",
+      },
+      {
+        href: "/distracted/DST-SPRINGFIELD-PETS",
+        label: "Featured: Springfield pet-eating panic",
+        description: "Disgust flashbang over immigration policy.",
       },
     ],
   },

@@ -8,6 +8,17 @@
 /** Site iteration history - meta transparency for Project Sunrise builds */
 export const changelog: ChangelogEntry[] = [
   {
+    version: "0.60.0",
+    date: "2026-07-20",
+    title: "Pass 60 - Distraction Watch",
+    highlights: [
+      "New /distracted: Distraction / Cover-up Watch with 48 sourced MAGA flashbang patterns (Epstein theater, culture-war, election fraud myths, border invasion rhetoric, Hunter whataboutism, deep state, Project 2025 drown-outs, 2025-2026 admin patterns)",
+      "Cards: Distraction → Covering up → Why → Why people buy it → How to spot; CollapsibleFilters for category, severity, search; shareable /distracted/[id] pages",
+      "Wired into nav, homepage grid, footer, sitemap, command search, quiz results explore CTA; Tracker/Rebuttal/Quiz cross-links",
+      "SW cache hard-bumped to sunrise-v60-20260720T0900-distraction-watch",
+    ],
+  },
+  {
     version: "0.59.0",
     date: "2026-07-17",
     title: "Pass 59 - Quiz compass reaches real extremes",

@@ -14,6 +14,8 @@ import {
 
   BookOpen,
 
+  EyeOff,
+
   GitBranch,
 
   History,
@@ -83,6 +85,18 @@ const platformCards: {
     description: "Find where you actually stand.",
 
     icon: Compass,
+
+  },
+
+  {
+
+    href: "/distracted",
+
+    title: "Distraction Watch",
+
+    description: "Shiny object vs what it buries.",
+
+    icon: EyeOff,
 
   },
 

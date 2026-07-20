@@ -479,6 +479,13 @@ export function QuizPage() {
               >
                 Rebuttal Desk
               </Link>
+              {" · "}
+              <Link
+                href="/distracted"
+                className={cn(buttonVariants({ variant: "link" }), "h-auto p-0 text-xs")}
+              >
+                Distraction Watch
+              </Link>
               .
             </p>
           ) : null}

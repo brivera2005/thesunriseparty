@@ -6,6 +6,7 @@ import Link from "next/link";
 import {
   AlertTriangle,
   Compass,
+  EyeOff,
   GitBranch,
   History,
   Landmark,
@@ -60,6 +61,7 @@ const typeIcons: Record<SearchResultType, React.ReactNode> = {
   History: <History className="size-4 text-amber-600" />,
   Legislation: <Landmark className="size-4 text-sky-600" />,
   Scenario: <GitBranch className="size-4 text-violet-600" />,
+  Distraction: <EyeOff className="size-4 text-orange-700" />,
 };
 
 function toSearchResult(pin: PalettePin): SearchResult {
@@ -127,6 +129,7 @@ export function CommandPalette() {
       History: [],
       Legislation: [],
       Scenario: [],
+      Distraction: [],
     };
     for (const r of results) {
       groups[r.type].push(r);
@@ -235,6 +238,7 @@ export function CommandPalette() {
             "Tracker",
             "Legislation",
             "Scenario",
+            "Distraction",
             "Blueprint",
             "Rebuttal",
             "Safeguard",

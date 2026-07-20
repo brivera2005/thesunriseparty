@@ -11,6 +11,7 @@ import { eventDetailPath } from "../lib/data/timeline-events";
 import { rebuttalDetailPath, rebuttalCategorySlugs } from "../lib/data/conversation-helpers";
 import { legislationBills, legislationDetailPath } from "../lib/data/legislation";
 import { impactScenarios, scenarioDetailPath } from "../lib/data/scenarios";
+import { distractions, distractionDetailPath } from "../lib/data/distractions";
 
 const SITE = "https://thesunriseparty.pages.dev";
 
@@ -34,6 +35,7 @@ const STATIC_PAGES: SitemapEntry[] = [
   { loc: `${SITE}/legislation`, changefreq: "daily", priority: 0.9 },
   { loc: `${SITE}/bills`, changefreq: "daily", priority: 0.75 },
   { loc: `${SITE}/scenarios`, changefreq: "weekly", priority: 0.88 },
+  { loc: `${SITE}/distracted`, changefreq: "weekly", priority: 0.88 },
   { loc: `${SITE}/events`, changefreq: "daily", priority: 0.85 },
   { loc: `${SITE}/blueprint`, changefreq: "monthly", priority: 0.85 },
   { loc: `${SITE}/rebuttal`, changefreq: "weekly", priority: 0.85 },
@@ -121,6 +123,13 @@ const scenarioPages: SitemapEntry[] = impactScenarios.map((scenario) => ({
   priority: 0.74,
 }));
 
+const distractionPages: SitemapEntry[] = distractions.map((entry) => ({
+  loc: `${SITE}${distractionDetailPath(entry.id)}`,
+  lastmod: toLastmod(entry.date),
+  changefreq: "monthly",
+  priority: 0.74,
+}));
+
 const allEntries = [
   ...STATIC_PAGES,
   ...eventPages,
@@ -129,6 +138,7 @@ const allEntries = [
   ...blueprintPages,
   ...legislationPages,
   ...scenarioPages,
+  ...distractionPages,
 ];
 const sitemap = buildSitemap(allEntries);
 

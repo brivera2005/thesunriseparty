@@ -57,10 +57,10 @@ export const sectionOg = {
   distracted: {
     title: "Distraction Watch | Project Sunrise",
     description:
-      "Dated MAGA distraction and cover-up patterns: shiny object vs what it buries, why it sticks, and how to spot it — with sources.",
+      "MAGA distraction and cover-up patterns: shiny object vs what it buries, why people buy it, and how to spot it - with sources.",
     images: [
       {
-        url: `${SITE_URL}/og/sunrise-tracker.svg`,
+        url: `${SITE_URL}/og/sunrise-default.svg`,
         width: 1200,
         height: 630,
         alt: "Project Sunrise - Distraction Watch",
@@ -181,19 +181,6 @@ export const sectionOg = {
         width: 1200,
         height: 630,
         alt: "Project Sunrise - Impact Scenarios",
-      },
-    ],
-  },
-  distracted: {
-    title: "Distraction Watch | Project Sunrise",
-    description:
-      "MAGA distraction and cover-up patterns: shiny object vs what it buries, why people buy it, and how to spot it - with sources.",
-    images: [
-      {
-        url: `${SITE_URL}/og/sunrise-default.svg`,
-        width: 1200,
-        height: 630,
-        alt: "Project Sunrise - Distraction Watch",
       },
     ],
   },

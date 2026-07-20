@@ -644,6 +644,11 @@ export function ResultsReviewDeck({
 
   const explore = [
     {
+      href: "/distracted",
+      title: "Distraction Watch",
+      blurb: "Shiny object vs what it buries - spot the cover-up.",
+    },
+    {
       href: "/rebuttal",
       title: "Rebuttal",
       blurb: "Sourced counters when slogans collide with facts.",
@@ -657,11 +662,6 @@ export function ResultsReviewDeck({
       href: "/blueprint",
       title: "Blueprint",
       blurb: "The fix: policy pillars with receipts.",
-    },
-    {
-      href: "/scenarios",
-      title: "Scenarios",
-      blurb: "How policy hits a real family.",
     },
   ];
 

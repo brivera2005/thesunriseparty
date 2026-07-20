@@ -12,6 +12,10 @@ import {
   impactScenarios,
   scenarioDetailPath,
 } from "@/lib/data/scenarios";
+import {
+  distractionDetailPath,
+  distractions,
+} from "@/lib/data/distractions";
 
 export { highlightMatches } from "@/lib/search-highlight";
 
@@ -22,7 +26,8 @@ export type SearchResultType =
   | "Safeguard"
   | "History"
   | "Legislation"
-  | "Scenario";
+  | "Scenario"
+  | "Distraction";
 
 export interface SearchResult {
   id: string;
@@ -228,6 +233,28 @@ export function buildSearchIndex(): SearchResult[] {
     });
   }
 
+  for (const entry of distractions) {
+    const body = [
+      entry.title,
+      entry.distraction,
+      entry.coveringUp,
+      entry.whyTheyDoIt,
+      entry.whyPeopleBelieveIt,
+      entry.howToSpotIt,
+      ...entry.categories,
+      entry.id,
+    ].join(" ");
+    results.push({
+      id: entry.id,
+      type: "Distraction",
+      title: entry.title,
+      subtitle: `${entry.date} · severity ${entry.severity}/10`,
+      body,
+      score: 0,
+      href: distractionDetailPath(entry.id),
+    });
+  }
+
   return results;
 }
 
@@ -256,4 +283,5 @@ export const searchTypeBadgeStyles: Record<SearchResultType, string> = {
   History: "border-amber-500/40 bg-amber-500/10 text-amber-700 dark:text-amber-400",
   Legislation: "border-sky-500/40 bg-sky-500/10 text-sky-700 dark:text-sky-400",
   Scenario: "border-violet-500/40 bg-violet-500/10 text-violet-700 dark:text-violet-400",
+  Distraction: "border-orange-600/40 bg-orange-500/10 text-orange-800 dark:text-orange-400",
 };

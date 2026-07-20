@@ -1,8 +1,8 @@
-/* Project Sunrise service worker - Pass 58 hard cache bust.
- * Quiz results: unified Your review flashcard deck.
+/* Project Sunrise service worker - Pass 60 hard cache bust.
+ * Distraction Watch: /distracted cover-up patterns.
  */
 
-const CACHE = "sunrise-v59-20260717T1600-quiz-compass-scale";
+const CACHE = "sunrise-v60-20260720T0900-distraction-watch";
 
 const PRECACHE = [
 
