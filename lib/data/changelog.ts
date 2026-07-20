@@ -8,6 +8,17 @@
 /** Site iteration history - meta transparency for Project Sunrise builds */
 export const changelog: ChangelogEntry[] = [
   {
+    version: "0.65.3",
+    date: "2026-07-20",
+    title: "Pass 65.3 - Fierce homepage hero purpose",
+    highlights: [
+      "Hero: They are dismantling democracy in public. / We track it, counter it, and build the fix. Fight until we win.",
+      "Sentence-case wrapping headline (no nowrap slogan); single Take the tour CTA kept",
+      "Home meta description + OG updated to match",
+      "SW cache hard-bumped to sunrise-v65.3-20260720T1455-hero-fight",
+    ],
+  },
+  {
     version: "0.65.2",
     date: "2026-07-20",
     title: "Pass 65.2 - Dawn-to-sunrise grid accents",

@@ -1,8 +1,8 @@
-/* Project Sunrise service worker - Pass 65.2 hard cache bust.
- * Homepage grid: dawn → full sunrise card accents.
+/* Project Sunrise service worker - Pass 65.3 hard cache bust.
+ * Homepage hero: democracy fight purpose copy.
  */
 
-const CACHE = "sunrise-v65.2-20260720T1450-dawn-cta";
+const CACHE = "sunrise-v65.3-20260720T1455-hero-fight";
 
 const PRECACHE = [
 

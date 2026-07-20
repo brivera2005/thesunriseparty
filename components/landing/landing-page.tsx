@@ -20,7 +20,7 @@ import { FadeIn } from "@/components/ui/fade-in";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
-/** Short grid labels; hero has the punchy line only. */
+/** Short grid labels; hero carries the purpose + fight line. */
 const platformCards: {
   href: string;
   title: string;
@@ -149,11 +149,11 @@ export function LandingPage() {
         />
         <div className="page-container relative flex flex-col items-center py-12 text-center sm:py-16 lg:py-20">
           <FadeIn>
-            <h1 className="mx-auto max-w-full overflow-hidden px-2 text-[clamp(1.05rem,5.5vw,1.875rem)] font-bold tracking-[0.03em] text-navy uppercase whitespace-nowrap sm:px-0 sm:text-4xl sm:tracking-[0.06em] lg:text-5xl">
-              Track. Counter. Fix.
+            <h1 className="mx-auto max-w-3xl px-2 text-[clamp(1.35rem,5.4vw,2.75rem)] font-bold leading-[1.15] tracking-tight text-navy text-balance sm:px-0 sm:text-4xl lg:text-5xl">
+              They are dismantling democracy in public.
             </h1>
-            <p className="mx-auto mt-3 max-w-full overflow-hidden px-2 text-[clamp(9px,2.65vw,0.875rem)] font-semibold tracking-[0.04em] text-navy/55 uppercase whitespace-nowrap sm:mt-4 sm:tracking-[0.08em] md:text-base md:tracking-[0.1em]">
-              Live bills. Sourced answers. Real impact. Right now.
+            <p className="mx-auto mt-3 max-w-2xl px-2 text-[clamp(0.95rem,3.4vw,1.125rem)] font-medium leading-snug text-navy/70 text-balance sm:mt-4 sm:text-lg">
+              We track it, counter it, and build the fix. Fight until we win.
             </p>
             <div className="mt-6 flex flex-wrap items-center justify-center gap-2.5 sm:mt-8">
               <Link
