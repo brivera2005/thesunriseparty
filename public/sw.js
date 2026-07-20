@@ -1,8 +1,8 @@
-/* Project Sunrise service worker - Pass 63 hard cache bust.
- * Scenario best solutions + why on cards and detail.
+/* Project Sunrise service worker - Pass 64 hard cache bust.
+ * Guided sunrise wizard at /start.
  */
 
-const CACHE = "sunrise-v63-20260720T1000-scenario-solutions";
+const CACHE = "sunrise-v64-20260720T1035-wizard";
 
 const PRECACHE = [
 

@@ -14,8 +14,10 @@ import {
   Compass,
 } from "lucide-react";
 import { ActivityTicker } from "@/components/landing/activity-ticker";
+import { WizardPrompt } from "@/components/start/wizard-prompt";
 import { PageShell } from "@/components/layout/page-shell";
 import { FadeIn } from "@/components/ui/fade-in";
+import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 /** Short grid labels; hero has the punchy line only. */
@@ -107,6 +109,7 @@ export function LandingPage() {
 
   return (
     <PageShell>
+      <WizardPrompt />
       <section className="relative overflow-hidden border-b border-border bg-white">
         <div
           aria-hidden
@@ -120,6 +123,27 @@ export function LandingPage() {
             <p className="mx-auto mt-3 max-w-full overflow-hidden px-2 text-[clamp(9px,2.65vw,0.875rem)] font-semibold tracking-[0.04em] text-navy/55 uppercase whitespace-nowrap sm:mt-4 sm:tracking-[0.08em] md:text-base md:tracking-[0.1em]">
               Live bills. Sourced answers. Real impact. Right now.
             </p>
+            <div className="mt-6 flex flex-wrap items-center justify-center gap-2.5 sm:mt-8">
+              <Link
+                href="/start"
+                className={cn(
+                  buttonVariants({ size: "lg" }),
+                  "min-h-11 gap-2 bg-navy text-white hover:bg-navy/90"
+                )}
+              >
+                <Compass className="size-4" aria-hidden />
+                Take the tour
+              </Link>
+              <Link
+                href="/start"
+                className={cn(
+                  buttonVariants({ variant: "outline", size: "lg" }),
+                  "min-h-11 border-navy/20 text-navy hover:bg-navy/[0.04]"
+                )}
+              >
+                New here? Start
+              </Link>
+            </div>
           </FadeIn>
         </div>
       </section>

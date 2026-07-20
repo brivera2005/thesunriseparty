@@ -68,8 +68,8 @@ export const sitemapSections: SitemapSection[] = [
     links: [
       {
         href: "/start",
-        label: "Start Here - Guided Tour",
-        description: "A quick walkthrough of every tool.",
+        label: "Tour - Guided Wizard",
+        description: "Ten plain-English stops. Skip anytime.",
         badge: "New",
       },
       {

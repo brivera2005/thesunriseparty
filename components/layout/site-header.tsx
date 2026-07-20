@@ -14,7 +14,7 @@ import {
 } from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
 
-/** Primary nav only - Start / Contribute / Donate live in the footer. */
+/** Primary desktop nav. Tour lives in the hamburger (and footer) so tabs stay for power users. */
 const siteNav: {
   label: string;
   href: string;
@@ -234,6 +234,19 @@ export function SiteHeader() {
               aria-label="Site sections"
             >
               <ul className="flex flex-col">
+                <li>
+                  <Link
+                    href="/start"
+                    className={cn(
+                      "flex min-h-11 items-center px-4 text-[14px] tracking-wide transition-colors",
+                      pathActive(pathname, "/start")
+                        ? "bg-navy/[0.06] font-semibold text-navy"
+                        : "font-medium text-navy/70 hover:bg-black/[0.03] hover:text-navy"
+                    )}
+                  >
+                    Tour
+                  </Link>
+                </li>
                 {siteNav.map((item) => {
                   const active = pathActive(
                     pathname,

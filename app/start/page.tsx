@@ -5,10 +5,10 @@ import { defaultOg, SITE_URL } from "@/lib/metadata";
 export const metadata: Metadata = {
   title: "Start Here | Project Sunrise",
   description:
-    "A quick walkthrough of Project Sunrise: Rebuttal Desk, History, Tracker, Legislation, Scenarios, Blueprint, and Mission.",
+    "A short guided tour of Project Sunrise: Tracker, Rebuttal, Legislation, Distracted, Scenarios, Quiz, Hidden History, and Blueprint.",
   openGraph: {
     title: "Start Here | Project Sunrise",
-    description: "Here's what you can do. Open any tool. Skip anytime.",
+    description: "New here? Ten plain-English stops. Skip anytime.",
     url: `${SITE_URL}/start`,
     siteName: defaultOg.siteName,
     type: "website",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Start Here | Project Sunrise",
-    description: "Here's what you can do. Open any tool. Skip anytime.",
+    description: "New here? Ten plain-English stops. Skip anytime.",
     images: [defaultOg.images[0].url],
   },
 };

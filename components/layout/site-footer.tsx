@@ -16,7 +16,7 @@ const sitePages = [
   { href: "/mission", label: "About (Mission)" },
   { href: "/accountability", label: "Accountability" },
   { href: "/methodology", label: "Methodology" },
-  { href: "/start", label: "Start Here" },
+  { href: "/start", label: "Tour" },
   { href: "/donate", label: "Donate" },
   { href: "/contribute", label: "Contribute" },
   { href: "/sitemap", label: "Site Map" },

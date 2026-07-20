@@ -8,6 +8,18 @@
 /** Site iteration history - meta transparency for Project Sunrise builds */
 export const changelog: ChangelogEntry[] = [
   {
+    version: "0.64.0",
+    date: "2026-07-20",
+    title: "Pass 64 - Sunrise guided wizard",
+    highlights: [
+      "/start is a full-viewport kitchen-table tour: Welcome → Tracker → Rebuttal → Legislation → Distracted → Scenarios → Quiz → Hidden History → Blueprint (THE FIX) → Done",
+      "Per-step dawn-to-day gradients (navy/orange/pink → gold → yellow → sky blue) with Explore this now / Next / Close; localStorage sunrise-wizard-done skips re-prompt",
+      "Homepage: Take the tour + New here? Start CTAs; first-visit dismissible banner; hamburger Tour link",
+      "Mission / About / Donate stay out of the main wizard path (footer and hamburger only)",
+      "SW cache hard-bumped to sunrise-v64-20260720T1035-wizard",
+    ],
+  },
+  {
     version: "0.63.0",
     date: "2026-07-20",
     title: "Pass 63 - Scenario best solutions",
