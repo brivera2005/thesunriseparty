@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, MapPin, Users } from "lucide-react";
+import { ArrowRight, Lightbulb, MapPin, Users } from "lucide-react";
 import type { ImpactScenario } from "@/lib/types";
 import { scenarioDetailPath } from "@/lib/data/scenarios";
 import { Badge } from "@/components/ui/badge";
@@ -60,9 +60,23 @@ export function ScenarioCard({ scenario, index = 0 }: ScenarioCardProps) {
         ) : null}
       </div>
 
-      <p className="mt-3 line-clamp-3 flex-1 text-sm leading-relaxed text-muted-foreground">
+      <p className="mt-3 line-clamp-2 text-sm leading-relaxed text-muted-foreground">
         {scenario.persona.situation}
       </p>
+
+      <div className="mt-4 rounded-xl border border-primary/25 bg-primary/5 p-3">
+        <p className="inline-flex items-center gap-1.5 text-[11px] font-semibold tracking-[0.14em] text-primary uppercase">
+          <Lightbulb className="size-3.5" aria-hidden />
+          Best solution
+        </p>
+        <p className="mt-1.5 line-clamp-3 text-sm leading-snug text-navy">
+          {scenario.bestSolution}
+        </p>
+        <p className="mt-2 line-clamp-2 text-xs leading-relaxed text-muted-foreground">
+          <span className="font-medium text-navy/70">Why it works: </span>
+          {scenario.whyItWorks}
+        </p>
+      </div>
 
       <div className="mt-4 flex flex-wrap gap-1.5">
         {scenario.topics.slice(0, 3).map((topic) => (

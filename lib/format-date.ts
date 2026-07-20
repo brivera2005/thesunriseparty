@@ -40,6 +40,31 @@ export function formatDateUS(date: string | Date): string {
   return raw;
 }
 
+/** Relative age for live feeds: "today", "1d ago", "2d ago", or MM/DD/YYYY when older. */
+export function formatRelativeUS(
+  date: string | Date,
+  now: Date = new Date()
+): string {
+  const absolute = formatDateUS(date);
+  if (!absolute || !/^\d{2}\/\d{2}\/\d{4}$/.test(absolute)) return absolute;
+
+  const [mm, dd, yyyy] = absolute.split("/").map(Number);
+  const then = new Date(yyyy, mm - 1, dd);
+  if (Number.isNaN(then.getTime())) return absolute;
+
+  const startNow = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  const startThen = new Date(then.getFullYear(), then.getMonth(), then.getDate());
+  const days = Math.round(
+    (startNow.getTime() - startThen.getTime()) / 86_400_000
+  );
+
+  if (days < 0) return absolute;
+  if (days === 0) return "today";
+  if (days === 1) return "1d ago";
+  if (days < 14) return `${days}d ago`;
+  return absolute;
+}
+
 /** Month headers: MM/YYYY */
 export function formatMonthUS(date: string | Date): string {
   if (date instanceof Date) {

@@ -6,6 +6,7 @@ import {
   ArrowRight,
   BookOpen,
   ExternalLink,
+  Lightbulb,
   Link2,
   MapPin,
   Scale,
@@ -16,6 +17,7 @@ import {
   actorColorClass,
   actorDotClass,
 } from "@/lib/data/scenarios";
+import { policyFixPath } from "@/lib/data/policies";
 import { Citation } from "@/components/citation";
 import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
@@ -103,6 +105,41 @@ export function ScenarioDetail({ scenario }: ScenarioDetailProps) {
             <p className="mt-3 text-sm leading-relaxed text-navy sm:text-[0.95rem]">
               {scenario.shouldGetZ}
             </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        className="border-b border-border bg-primary/5"
+        aria-label="Best solution and why it works"
+      >
+        <div className="page-container py-8 sm:py-10">
+          <div className="mx-auto max-w-3xl rounded-2xl border border-primary/30 bg-white p-5 shadow-sm sm:p-7">
+            <p className="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.18em] text-primary uppercase">
+              <Lightbulb className="size-3.5" aria-hidden />
+              Best solution
+            </p>
+            <p className="mt-3 text-base font-semibold leading-snug text-navy sm:text-lg">
+              {scenario.bestSolution}
+            </p>
+            <div className="mt-5 border-t border-border pt-4">
+              <p className="text-xs font-semibold tracking-[0.18em] text-navy uppercase">
+                Why it works
+              </p>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground sm:text-[0.95rem]">
+                {scenario.whyItWorks}
+              </p>
+            </div>
+            {scenario.linkedFixId ? (
+              <Link
+                href={policyFixPath(scenario.linkedFixId)}
+                className="mt-5 inline-flex h-10 items-center gap-2 rounded-md border border-primary/30 bg-primary/5 px-3 text-sm font-semibold text-primary hover:bg-primary/10"
+              >
+                <BookOpen className="size-4" />
+                Blueprint {scenario.linkedFixId}
+                <ArrowRight className="size-3.5" />
+              </Link>
+            ) : null}
           </div>
         </div>
       </section>

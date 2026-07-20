@@ -5,6 +5,7 @@ import { ArrowLeft, ExternalLink, Link2 } from "lucide-react";
 import type { DistractionEntry } from "@/lib/types";
 import { PageShell } from "@/components/layout/page-shell";
 import { PageHero } from "@/components/layout/page-hero";
+import { BuryStack } from "@/components/distracted/bury-callout";
 import { Badge } from "@/components/ui/badge";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { CitationList } from "@/components/citation";
@@ -16,6 +17,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import { TipText } from "@/components/ui/term-tip";
 import { formatDateUS } from "@/lib/format-date";
 import { cn } from "@/lib/utils";
 
@@ -60,20 +62,10 @@ export function DistractionDetailPage({ entry }: { entry: DistractionEntry }) {
           </div>
 
           <article className="rounded-xl border border-black/[0.08] bg-white p-4 sm:p-5">
-            <dl className="space-y-4 text-sm leading-snug">
-              <div>
-                <dt className="text-[10px] font-semibold tracking-[0.14em] text-navy/45 uppercase">
-                  Distraction
-                </dt>
-                <dd className="mt-1 text-navy/90">{entry.distraction}</dd>
-              </div>
-              <div>
-                <dt className="text-[10px] font-semibold tracking-[0.14em] text-[#e16323] uppercase">
-                  Covering up
-                </dt>
-                <dd className="mt-1 text-navy/90">{entry.coveringUp}</dd>
-              </div>
-            </dl>
+            <BuryStack
+              coveringUp={entry.coveringUp}
+              distraction={entry.distraction}
+            />
           </article>
 
           <article className="rounded-xl border border-black/[0.08] bg-white p-4 sm:p-5">
@@ -83,15 +75,15 @@ export function DistractionDetailPage({ entry }: { entry: DistractionEntry }) {
             <ul className="mt-3 space-y-3 text-sm leading-snug text-navy/90">
               <li>
                 <span className="font-semibold text-navy">Motive. </span>
-                {entry.whyTheyDoIt}
+                <TipText>{entry.whyTheyDoIt}</TipText>
               </li>
               <li>
                 <span className="font-semibold text-navy">Why it sticks. </span>
-                {entry.whyPeopleBelieveIt}
+                <TipText>{entry.whyPeopleBelieveIt}</TipText>
               </li>
               <li>
                 <span className="font-semibold text-navy">Tell. </span>
-                {entry.howToSpotIt}
+                <TipText>{entry.howToSpotIt}</TipText>
               </li>
             </ul>
           </article>

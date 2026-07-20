@@ -8,6 +8,17 @@
 /** Site iteration history - meta transparency for Project Sunrise builds */
 export const changelog: ChangelogEntry[] = [
   {
+    version: "0.63.0",
+    date: "2026-07-20",
+    title: "Pass 63 - Scenario best solutions",
+    highlights: [
+      "Every Impact Scenario now has bestSolution, whyItWorks, and optional linkedFixId tied to Blueprint FIX pages",
+      "Scenarios list cards and detail pages surface Best solution + Why it works with Blueprint deep links",
+      "Kitchen-table fixes cover Medicare for All, PRO Act, housing, childcare, voting, Schedule F reversal, and related pillars",
+      "SW cache hard-bumped to sunrise-v63-20260720T1000-scenario-solutions",
+    ],
+  },
+  {
     version: "0.61.0",
     date: "2026-07-20",
     title: "Pass 61 - Distraction Watch as flashcards",

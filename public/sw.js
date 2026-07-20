@@ -1,8 +1,8 @@
-/* Project Sunrise service worker - Pass 61 hard cache bust.
- * Distraction Watch: flashcard deck default, concise copy.
+/* Project Sunrise service worker - Pass 63 hard cache bust.
+ * Scenario best solutions + why on cards and detail.
  */
 
-const CACHE = "sunrise-v61-20260720T0915-distraction-deck";
+const CACHE = "sunrise-v63-20260720T1000-scenario-solutions";
 
 const PRECACHE = [
 

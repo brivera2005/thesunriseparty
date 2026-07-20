@@ -17,6 +17,7 @@ import { SaveButton } from "@/components/ui/save-button";
 import { CitationList } from "@/components/citation";
 import { SeverityGauge } from "@/components/tracker/severity-gauge";
 import { EventEmbedSnippet } from "@/components/tracker/event-embed-snippet";
+import { TipText } from "@/components/ui/term-tip";
 import { Badge } from "@/components/ui/badge";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -96,7 +97,7 @@ export function EventDetailPage({ event }: { event: TimelineEvent }) {
             <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
               <div className="flex-1">
                 <h1 className="text-2xl font-bold leading-snug tracking-tight sm:text-3xl">
-                  {event.Description}
+                  <TipText>{event.Description}</TipText>
                 </h1>
                 <p className="mt-3 flex items-center gap-1.5 text-sm text-muted-foreground">
                   <Calendar className="size-3.5" />

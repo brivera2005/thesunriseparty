@@ -20,6 +20,7 @@ import { distractionDetailPath } from "@/lib/data/distractions";
 import { formatDateUS } from "@/lib/format-date";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { BuryStack } from "@/components/distracted/bury-callout";
 import { CitationList } from "@/components/citation";
 import {
   Dialog,
@@ -29,6 +30,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import { TipText } from "@/components/ui/term-tip";
 import { cn } from "@/lib/utils";
 
 function severityClass(score: number) {
@@ -54,9 +56,16 @@ function FlipShell({
 
   return (
     <div className="[perspective:1200px]">
-      <button
-        type="button"
+      <div
+        role="button"
+        tabIndex={0}
         onClick={onToggle}
+        onKeyDown={(e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            onToggle();
+          }
+        }}
         aria-pressed={flipped}
         aria-controls={`${frontId} ${backId}`}
         className={cn(
@@ -91,7 +100,7 @@ function FlipShell({
             </p>
           </div>
         </div>
-      </button>
+      </div>
     </div>
   );
 }
@@ -171,27 +180,14 @@ function CardFace({
               </Badge>
             ))}
           </div>
-          <h3 className="text-lg font-bold leading-snug text-navy sm:text-xl">
-            {entry.title}
+          <h3 className="text-base font-bold leading-snug text-navy sm:text-lg">
+            <TipText>{entry.title}</TipText>
           </h3>
-          <dl className="mt-4 space-y-3 text-sm">
-            <div>
-              <dt className="text-[10px] font-semibold tracking-[0.14em] text-navy/45 uppercase">
-                Distraction
-              </dt>
-              <dd className="mt-1 leading-snug text-navy/90">
-                {entry.distraction}
-              </dd>
-            </div>
-            <div>
-              <dt className="text-[10px] font-semibold tracking-[0.14em] text-[#e16323]/uppercase">
-                Covering up
-              </dt>
-              <dd className="mt-1 leading-snug text-navy/90">
-                {entry.coveringUp}
-              </dd>
-            </div>
-          </dl>
+          <BuryStack
+            className="mt-3"
+            coveringUp={entry.coveringUp}
+            distraction={entry.distraction}
+          />
         </>
       }
       back={
@@ -200,20 +196,20 @@ function CardFace({
             Why
           </p>
           <h3 className="mt-1 line-clamp-2 text-base font-bold text-navy">
-            {entry.title}
+            <TipText>{entry.title}</TipText>
           </h3>
           <ul className="mt-4 space-y-3 text-sm leading-snug text-navy/90">
             <li>
               <span className="font-semibold text-navy">Motive. </span>
-              {entry.whyTheyDoIt}
+              <TipText>{entry.whyTheyDoIt}</TipText>
             </li>
             <li>
               <span className="font-semibold text-navy">Why it sticks. </span>
-              {entry.whyPeopleBelieveIt}
+              <TipText>{entry.whyPeopleBelieveIt}</TipText>
             </li>
             <li>
               <span className="font-semibold text-navy">Tell. </span>
-              {entry.howToSpotIt}
+              <TipText>{entry.howToSpotIt}</TipText>
             </li>
           </ul>
         </>

@@ -151,6 +151,11 @@ export const impactScenarios: ImpactScenario[] = [
       "Rationing doses, crowdfunding, and ER visits when sugar crashes. Out-of-pocket insulin still spikes between refills.",
     shouldGetZ:
       "Negotiated insulin at near-cost, automatic coverage under Medicare for All / national drug negotiation, and no medical bankruptcy threat (Blueprint FIX-DRUG-001 and FIX-HC-001).",
+    bestSolution:
+      "Pass Medicare for All with national insulin negotiation (FIX-DRUG-001 + FIX-HC-001): one public payer sets near-cost insulin prices, covers Diego automatically, and bans rebate games that mark up a century-old medicine.",
+    whyItWorks:
+      "Insulin is cheap to make. The U.S. price is a monopoly and coverage problem. One buyer plus automatic enrollment ends rationing faster than state coupon theater.",
+    linkedFixId: "FIX-DRUG-001",
     whyNotZ: {
       steps: [
         {
@@ -214,6 +219,11 @@ export const impactScenarios: ImpactScenario[] = [
     getsY: "Collections calls, damaged credit, and skipped follow-up care.",
     shouldGetZ:
       "Universal coverage with no deductible surprise bills, plus primary care before the ER (FIX-HC-001).",
+    bestSolution:
+      "Enact Medicare for All (FIX-HC-001) so primary care is free at the point of use and ER bills cannot become collections. Kill the subsidy cliff that forced Aisha onto a plan she could not use.",
+    whyItWorks:
+      "People delay care when premiums and deductibles are rent-sized. Universal coverage moves the first visit to a clinic, not a bankruptcy.",
+    linkedFixId: "FIX-HC-001",
     whyNotZ: {
       steps: [
         {
@@ -269,6 +279,11 @@ export const impactScenarios: ImpactScenario[] = [
     getsY: "Court summons, storage unit living, and school disruption for their kid.",
     shouldGetZ:
       "Social housing supply, tenant protections, and fair-housing enforcement with teeth (FIX-HOUS-001).",
+    bestSolution:
+      "Build social housing at scale and pass a Tenant Protection Compact (FIX-HOUS-001): rent caps on corporate portfolios, just-cause eviction, and public units that break the shortage landlords price.",
+    whyItWorks:
+      "A 28% hike is market power meeting scarcity. Public supply plus tenant rights change the landlord's math, not the family's character.",
+    linkedFixId: "FIX-HOUS-001",
     whyNotZ: {
       steps: [
         {
@@ -324,6 +339,11 @@ export const impactScenarios: ImpactScenario[] = [
     getsY: "Career exit, lost benefits, and long-term wage scarring.",
     shouldGetZ:
       "Universal childcare and paid family leave so work and caregiving can coexist (FIX-CC-001).",
+    bestSolution:
+      "Universal childcare and paid family leave (FIX-CC-001), funded by tax fairness (FIX-TAX-001), so daycare is a public good like K-12 instead of a second mortgage.",
+    whyItWorks:
+      "When care costs more than the paycheck, quitting is rational. Cap costs and fund slots, and employment stops being a penalty for parenting.",
+    linkedFixId: "FIX-CC-001",
     whyNotZ: {
       steps: [
         {
@@ -378,6 +398,11 @@ export const impactScenarios: ImpactScenario[] = [
     getsY: "Wrong payment amounts, credit anxiety, and delayed forgiveness progress.",
     shouldGetZ:
       "College for All / debt relief architecture plus a staffed Federal Student Aid office (FIX-ED-001).",
+    bestSolution:
+      "College for All plus a fully staffed Federal Student Aid office (FIX-ED-001), and reverse Schedule F purges (SAFE-002) that hollow out the people who process income-driven repayment.",
+    whyItWorks:
+      "Marcus's loan is a spreadsheet problem with a staffing crisis. Guaranteed public college and a protected civil service fix both the debt and the hold music.",
+    linkedFixId: "FIX-ED-001",
     whyNotZ: {
       steps: [
         {
@@ -432,6 +457,11 @@ export const impactScenarios: ImpactScenario[] = [
     getsY: "Trade-downs to cheaper calories, skipped fresh produce, and credit-card float.",
     shouldGetZ:
       "Trade policy that does not tax working-class carts, living wages, and antitrust against food monopolies (FIX-WAGE-001, FIX-AT-001).",
+    bestSolution:
+      "Living wage and overtime restoration (FIX-WAGE-001) plus antitrust breakups of food middlemen (FIX-AT-001), and end working-class tariff taxes that pad the grocery cart.",
+    whyItWorks:
+      "Prices rise when wages stall and four firms set the aisle. Raise the floor and smash the fortress middlemen so milk stops tracking lobbyists.",
+    linkedFixId: "FIX-AT-001",
     whyNotZ: {
       steps: [
         {
@@ -488,6 +518,11 @@ export const impactScenarios: ImpactScenario[] = [
     getsY: "Retaliation fear, stalled raises, and safety issues that stay memos.",
     shouldGetZ:
       "PRO Act card-check / first-contract rules and a worker-protecting NLRB (FIX-ECO-001).",
+    bestSolution:
+      "Pass the PRO Act: card-check recognition, first-contract arbitration, and real NLRB penalties (FIX-ECO-001) so a winning vote becomes a contract on a clock, not a stall forever.",
+    whyItWorks:
+      "Employers win by delaying. Mandatory timelines and card-check remove the delay weapon that turns democracy at work into theater.",
+    linkedFixId: "FIX-ECO-001",
     whyNotZ: {
       steps: [
         {
@@ -542,6 +577,11 @@ export const impactScenarios: ImpactScenario[] = [
     getsY: "Provisional ballot chaos, missed deadlines, and silenced midterm voice.",
     shouldGetZ:
       "Automatic registration and restored Voting Rights Act preclearance (FIX-VR-001).",
+    bestSolution:
+      "Automatic voter registration at DMV/SSA, same-day registration, and restored Voting Rights Act preclearance (FIX-VR-001). Pair with Election Day as a holiday so paperwork stops being a poll tax.",
+    whyItWorks:
+      "Elena is a citizen; birth-certificate scavenger hunts are the policy. Default registration flips the burden onto the state where it belongs.",
+    linkedFixId: "FIX-VR-001",
     whyNotZ: {
       steps: [
         {
@@ -597,6 +637,11 @@ export const impactScenarios: ImpactScenario[] = [
     getsY: "Delayed inspections, mold, and kids out of school.",
     shouldGetZ:
       "Climate mobilization, fully staffed disaster response, and just-transition jobs (FIX-ENV-001, FIX-CJ-001).",
+    bestSolution:
+      "Climate Emergency Mobilization with fully staffed disaster response (FIX-ENV-001), climate jobs that rebuild (FIX-CJ-001), and SAFE-002 constraints so loyalty tests cannot slow aid after a hurricane.",
+    whyItWorks:
+      "Storms are weather. Multi-week waits are understaffing and politicized aid. Fund capacity before landfall and keep career responders off Schedule F chopping blocks.",
+    linkedFixId: "FIX-ENV-001",
     whyNotZ: {
       steps: [
         {
@@ -651,6 +696,11 @@ export const impactScenarios: ImpactScenario[] = [
     getsY: "Chronic fear, missed wages, and kids with trauma symptoms.",
     shouldGetZ:
       "Humane immigration modernization, asylum capacity, and an end to mass-deportation theater (FIX-IMM-001).",
+    bestSolution:
+      "Humane immigration modernization with a path to status, asylum capacity, and an end to mass-deportation theater (FIX-IMM-001) so citizen kids do not keep go-bags by the door.",
+    whyItWorks:
+      "Fear is the product of enforcement spectacle without legal pathways. Status plus due process ends the goodbye-drill economy.",
+    linkedFixId: "FIX-IMM-001",
     whyNotZ: {
       steps: [
         {
@@ -706,6 +756,11 @@ export const impactScenarios: ImpactScenario[] = [
     getsY: "Ambulance births, higher complications, and families leaving town.",
     shouldGetZ:
       "Rural hospital and broadband compact with stable Medicaid financing (FIX-RUR-001).",
+    bestSolution:
+      "Rural Hospitals & Broadband Compact (FIX-RUR-001): stable Medicaid financing, obstetric-care guarantees, and telehealth backbone so maternity wards are not the first cut.",
+    whyItWorks:
+      "Wards close when reimbursement and coverage shrink. Guaranteed rural financing treats distance as a design input, not a death sentence.",
+    linkedFixId: "FIX-RUR-001",
     whyNotZ: {
       steps: [
         {
@@ -761,6 +816,11 @@ export const impactScenarios: ImpactScenario[] = [
     getsY: "Pain, missed work, and distrust of the system he served under.",
     shouldGetZ:
       "Fully staffed VA care and benefits guarantee without fraud-prone outsourcing (FIX-VET-001).",
+    bestSolution:
+      "Veterans Care & Benefits Guarantee (FIX-VET-001): staff the VA, kill fraud-prone outsourcing gimmicks, and set enforceable wait-time standards for specialty care.",
+    whyItWorks:
+      "Outsourcing sells speed in ads and delivers denials in practice. Public capacity with wait-time teeth matches the promise made at enlistment.",
+    linkedFixId: "FIX-VET-001",
     whyNotZ: {
       steps: [
         {
@@ -815,6 +875,11 @@ export const impactScenarios: ImpactScenario[] = [
     getsY: "Interrupted care, mental-health crisis risk, and clinic closures.",
     shouldGetZ:
       "Federal civil-rights protection for LGBTQ healthcare access and an end to political medicine (civil-rights + FIX-MH-001 framing).",
+    bestSolution:
+      "Federal civil-rights shield for LGBTQ healthcare plus Mental Health Parity & Community Care (FIX-MH-001) so gender-affirming and mental-health care cannot be yanked mid-treatment by state bans.",
+    whyItWorks:
+      "Medicine should follow the chart, not the culture war. Federal rights plus parity stop politicians from practicing without a license.",
+    linkedFixId: "FIX-MH-001",
     whyNotZ: {
       steps: [
         {
@@ -868,6 +933,11 @@ export const impactScenarios: ImpactScenario[] = [
     getsY: "Burnout, larger classes, and exits to private tutoring.",
     shouldGetZ:
       "Fully funded public education, living wages, and College for All pathways (FIX-ED-001, FIX-WAGE-001).",
+    bestSolution:
+      "Fund public schools through tax fairness (FIX-TAX-001), pay a living wage with overtime honesty (FIX-WAGE-001), and open College for All pathways (FIX-ED-001) so teaching is not a side-hustle career.",
+    whyItWorks:
+      "If the classroom requires a second job, the public is freeloading. Progressive revenue plus wage floors make the job match the mission.",
+    linkedFixId: "FIX-ED-001",
     whyNotZ: {
       steps: [
         {
@@ -923,6 +993,11 @@ export const impactScenarios: ImpactScenario[] = [
     getsY: "Impoverishment spend-down, caregiver burnout, and delayed placement.",
     shouldGetZ:
       "Medicare for All with integrated long-term care and disability home-care guarantees (FIX-HC-001, FIX-DIS-001).",
+    bestSolution:
+      "Medicare for All with integrated long-term care (FIX-HC-001) and Disability Freedom home-care hours (FIX-DIS-001) so Mom is not stuck on a waitlist while Rosa burns out.",
+    whyItWorks:
+      "Long-term care is the hole in American insurance. Fold it into universal coverage and fund home care so institutions are a choice, not a trap.",
+    linkedFixId: "FIX-HC-001",
     whyNotZ: {
       steps: [
         {
@@ -977,6 +1052,11 @@ export const impactScenarios: ImpactScenario[] = [
     getsY: "Stolen evenings, skipped kids' games, and no time-and-a-half.",
     shouldGetZ:
       "Restored overtime thresholds and a living wage floor (FIX-WAGE-001).",
+    bestSolution:
+      "Restore overtime salary thresholds and a living wage floor (FIX-WAGE-001) so 50-hour weeks pay time-and-a-half, not a flat 'manager' title sticker.",
+    whyItWorks:
+      "Misclassification is unpaid overtime with better stationery. Raise the threshold and enforce it, and the store pays for the hours it needs.",
+    linkedFixId: "FIX-WAGE-001",
     whyNotZ: {
       steps: [
         {
@@ -1025,6 +1105,11 @@ export const impactScenarios: ImpactScenario[] = [
     getsY: "Empty fridge weeks and ER visits for conditions food insecurity worsens.",
     shouldGetZ:
       "Nutrition assistance tied to reality, plus a jobs guarantee (FIX-ECO-001).",
+    bestSolution:
+      "Tie SNAP to local unemployment reality and stand up a federal jobs guarantee (FIX-ECO-001) so work requirements cannot demand jobs that left the county.",
+    whyItWorks:
+      "You cannot paperwork a factory back into town. Food aid plus a real public job option replaces hunger theater with income.",
+    linkedFixId: "FIX-ECO-001",
     whyNotZ: {
       steps: [
         {
@@ -1078,6 +1163,11 @@ export const impactScenarios: ImpactScenario[] = [
     getsY: "Higher prices, worse schools, and quieter wealth building.",
     shouldGetZ:
       "Aggressive Fair Housing Act enforcement and social housing that breaks segregation (FIX-HOUS-001).",
+    bestSolution:
+      "Aggressive Fair Housing enforcement plus social housing that breaks segregation (FIX-HOUS-001): testers, real penalties, and public units outside redlined maps.",
+    whyItWorks:
+      "Steering is illegal until nobody enforces it. Public supply plus teeth turns civil-rights paper into neighborhood choice.",
+    linkedFixId: "FIX-HOUS-001",
     whyNotZ: {
       steps: [
         {
@@ -1125,6 +1215,11 @@ export const impactScenarios: ImpactScenario[] = [
     getsY: "Delayed care, infection risk, and medical trauma.",
     shouldGetZ:
       "Reproductive Freedom Restoration and nationwide access (FIX-RR-001).",
+    bestSolution:
+      "Reproductive Freedom Restoration Act (FIX-RR-001): nationwide abortion and miscarriage care access, telehealth shields, and an end to forced six-hour drives for medicine.",
+    whyItWorks:
+      "Geography is not a clinical guideline. Federal rights restore care where state bans turned complications into road trips.",
+    linkedFixId: "FIX-RR-001",
     whyNotZ: {
       steps: [
         {
@@ -1178,6 +1273,11 @@ export const impactScenarios: ImpactScenario[] = [
     getsY: "Family crisis, institutionalization risk, and lost independence.",
     shouldGetZ:
       "Disability Freedom and home-care guarantee (FIX-DIS-001).",
+    bestSolution:
+      "Disability Freedom & Home Care Guarantee (FIX-DIS-001): paid attendant hours that follow the person past school age so aging out of IDEA is not aging into isolation.",
+    whyItWorks:
+      "Independence is a budget line. Fund home care as infrastructure and the 'clinical' waitlist becomes a solvable staffing plan.",
+    linkedFixId: "FIX-DIS-001",
     whyNotZ: {
       steps: [
         {
@@ -1224,6 +1324,11 @@ export const impactScenarios: ImpactScenario[] = [
     getsY: "Stuck in lower-pay daytime work and longer poverty spells.",
     shouldGetZ:
       "Infrastructure and public transit buildout that matches shift work (FIX-INF-001).",
+    bestSolution:
+      "Infrastructure & Public Transit Buildout (FIX-INF-001): night and weekend service that matches shift work, funded like roads, not like a charity hobby.",
+    whyItWorks:
+      "A job offer after 8pm is fiction without a bus. Frequency is economic mobility with a schedule.",
+    linkedFixId: "FIX-INF-001",
     whyNotZ: {
       steps: [
         {
@@ -1270,6 +1375,11 @@ export const impactScenarios: ImpactScenario[] = [
     getsY: "Toxic local politics and policy captured by national culture war.",
     shouldGetZ:
       "Dark money bans and public financing (FIX-CORR-001, SAFE transparency).",
+    bestSolution:
+      "Dark money ban and public financing for local races (FIX-CORR-001), plus SAFE-004 disclosure timelines so school-board ads show the real paymasters.",
+    whyItWorks:
+      "Anonymous national money drowns parent volunteers. Small-donor public matches and donor sunlight make local races local again.",
+    linkedFixId: "FIX-CORR-001",
     whyNotZ: {
       steps: [
         {
@@ -1317,6 +1427,11 @@ export const impactScenarios: ImpactScenario[] = [
     getsY: "Underemployment, out-migration pressure, and political resentment.",
     shouldGetZ:
       "Climate jobs just-transition compact with wage floors (FIX-CJ-001, FIX-ENV-001).",
+    bestSolution:
+      "Climate Jobs Just Transition Compact (FIX-CJ-001) with wage floors and placement into clean-energy builds under the Climate Emergency Mobilization (FIX-ENV-001).",
+    whyItWorks:
+      "Transition without a paycheck is abandonment. Guaranteed union-scale climate jobs turn a mechanic's skills into the next grid, not a slogan.",
+    linkedFixId: "FIX-CJ-001",
     whyNotZ: {
       steps: [
         {
@@ -1363,6 +1478,11 @@ export const impactScenarios: ImpactScenario[] = [
     getsY: "Crisis ER visits instead of weekly therapy.",
     shouldGetZ:
       "Mental health parity with community care capacity (FIX-MH-001).",
+    bestSolution:
+      "Mental Health Parity & Community Care (FIX-MH-001): enforceable parity, network adequacy, and public clinics so 'not medically necessary' cannot mean 'not profitable.'",
+    whyItWorks:
+      "Insurers deny what they can outsource to despair. Parity with real capacity makes therapy as normal as a blood-pressure check.",
+    linkedFixId: "FIX-MH-001",
     whyNotZ: {
       steps: [
         {
@@ -1410,6 +1530,11 @@ export const impactScenarios: ImpactScenario[] = [
     getsY: "Larger classes, lost arts, and a longer bus ride after consolidation talk.",
     shouldGetZ:
       "Tax fairness funding public goods and education investment (FIX-TAX-001, FIX-ED-001).",
+    bestSolution:
+      "Tax Fairness & Wealth Loophole Closure (FIX-TAX-001) funding education investment (FIX-ED-001) so art teachers are not the patch for billionaire underpayment.",
+    whyItWorks:
+      "Districts did not run out of kids who need art. Progressive revenue closes the hole that austerity cuts first.",
+    linkedFixId: "FIX-TAX-001",
     whyNotZ: {
       steps: [
         {
@@ -1456,6 +1581,11 @@ export const impactScenarios: ImpactScenario[] = [
     getsY: "Anxiety-driven early claiming and a permanently smaller benefit.",
     shouldGetZ:
       "Solvency compact that expands revenue without cutting benefits (FIX-SS-001).",
+    bestSolution:
+      "Social Security & Medicare Solvency Compact (FIX-SS-001): lift the payroll tax cap on high earners and expand revenue without cutting benefits Helen already earned.",
+    whyItWorks:
+      "Solvency is arithmetic, not fate. Taxing income above the current cap closes the gap without turning seniors into the deficit mascot.",
+    linkedFixId: "FIX-SS-001",
     whyNotZ: {
       steps: [
         {
@@ -1503,6 +1633,11 @@ export const impactScenarios: ImpactScenario[] = [
     getsY: "Homework gaps, missed telehealth, and fewer remote-work options for parents.",
     shouldGetZ:
       "Rural broadband as infrastructure with public options (FIX-RUR-001, FIX-INF-001).",
+    bestSolution:
+      "Treat rural broadband as public infrastructure (FIX-RUR-001 + FIX-INF-001): public options and buildout mandates so homework does not require a grocery parking lot.",
+    whyItWorks:
+      "Monopoly ISPs skip thin markets. A public backbone makes connectivity the modern school bus, not a luxury add-on.",
+    linkedFixId: "FIX-RUR-001",
     whyNotZ: {
       steps: [
         {
@@ -1549,6 +1684,11 @@ export const impactScenarios: ImpactScenario[] = [
     getsY: "Squeeze on both ends of the supply chain.",
     shouldGetZ:
       "Antitrust revival and monopoly breakups (FIX-AT-001).",
+    bestSolution:
+      "Antitrust revival and monopoly breakups (FIX-AT-001): unwind meatpacker and grocery concentration, ban predatory mergers, and fund DOJ/FTC enforcement that actually files cases.",
+    whyItWorks:
+      "When cattle prices fall and grocery prices rise, a fortress middleman is the answer. Breakups restore competition that coupons cannot fake.",
+    linkedFixId: "FIX-AT-001",
     whyNotZ: {
       steps: [
         {
@@ -1596,6 +1736,11 @@ export const impactScenarios: ImpactScenario[] = [
     getsY: "Trauma, lost wages, and a chilled workforce that cannot organize.",
     shouldGetZ:
       "Labor standards enforcement against employers, not spectacle raids (FIX-IMM-001, FIX-ECO-001).",
+    bestSolution:
+      "Enforce labor standards against employers (wage theft, misclassification) under FIX-ECO-001, and replace raid theater with humane immigration modernization (FIX-IMM-001).",
+    whyItWorks:
+      "Zip-tie press conferences do not raise wages. Fining the boss and offering status remove the exploitation model raids pretend to solve.",
+    linkedFixId: "FIX-IMM-001",
     whyNotZ: {
       steps: [
         {
@@ -1644,6 +1789,11 @@ export const impactScenarios: ImpactScenario[] = [
     getsY: "Isolation, higher dropout risk, and silenced peer support.",
     shouldGetZ:
       "Civil-rights consistent Title IX enforcement that protects students, not culture-war scoreboards.",
+    bestSolution:
+      "Civil-rights-consistent Title IX enforcement under education equity (FIX-ED-001): protect students from harassment and discrimination without turning clubs into culture-war scoreboards.",
+    whyItWorks:
+      "Belonging should not flip with every OCR memo. Stable civil-rights rules keep schools focused on safety and learning, not party loyalty tests.",
+    linkedFixId: "FIX-ED-001",
     whyNotZ: {
       steps: [
         {
@@ -1690,6 +1840,11 @@ export const impactScenarios: ImpactScenario[] = [
     getsY: "Readmission risk and family caregiving overload.",
     shouldGetZ:
       "Medicare for All / traditional Medicare strength and an end to Advantage overpayments (FIX-HC-001).",
+    bestSolution:
+      "End Medicare Advantage overpayments and strengthen traditional Medicare on the path to Medicare for All (FIX-HC-001) so a surgeon's rehab order beats a TV-ad prior auth.",
+    whyItWorks:
+      "Advantage profits from denial. Cap overpayments and restore public Medicare incentives so care follows the chart, not the network spreadsheet.",
+    linkedFixId: "FIX-HC-001",
     whyNotZ: {
       steps: [
         {
@@ -1736,6 +1891,11 @@ export const impactScenarios: ImpactScenario[] = [
     getsY: "Heat illness, ER trips, and silent deaths in the fields.",
     shouldGetZ:
       "Climate mobilization plus enforceable heat standards and labor power (FIX-ENV-001, FIX-ECO-001).",
+    bestSolution:
+      "Enforce federal heat standards under Climate Emergency Mobilization (FIX-ENV-001) and back them with labor power and jobs guarantees (FIX-ECO-001) so 105° workdays have water, shade, and stop-work rights.",
+    whyItWorks:
+      "The forecast is public. Heat deaths are a missing rule plus weak unions. Standards plus organizing make survival non-negotiable.",
+    linkedFixId: "FIX-ENV-001",
     whyNotZ: {
       steps: [
         {

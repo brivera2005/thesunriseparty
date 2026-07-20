@@ -306,6 +306,12 @@ export interface ImpactScenario {
   };
   getsY: string;
   shouldGetZ: string;
+  /** Concrete kitchen-table fix; prefer Blueprint FIX language */
+  bestSolution?: string;
+  /** Short mechanism: why this fix ends the harm */
+  whyItWorks?: string;
+  /** Primary Blueprint deep link (/blueprint/[id]) */
+  linkedFixId?: string;
   whyNotZ: {
     steps: ScenarioCausalStep[];
   };

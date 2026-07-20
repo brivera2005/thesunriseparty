@@ -52,6 +52,10 @@ export function InfoTip({
           className={cn("inline-flex border-0 bg-transparent p-0", className)}
           aria-label={label}
           delay={200}
+          onClick={(e) => {
+            e.preventDefault();
+            e.stopPropagation();
+          }}
         >
           {trigger}
         </TooltipTrigger>

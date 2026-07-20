@@ -24,6 +24,7 @@ import {
 } from "@/components/ui/collapsible-filters";
 import { cn } from "@/lib/utils";
 import { formatMonthUS } from "@/lib/format-date";
+import { TipText } from "@/components/ui/term-tip";
 
 type SortMode = "date-desc" | "date-asc" | "severity-desc" | "severity-asc";
 
@@ -318,7 +319,7 @@ export function TrackerTimelineFeed() {
                               </span>
                             </div>
                             <p className="text-[15px] leading-snug font-medium text-navy sm:text-base">
-                              {event.Description}
+                              <TipText>{event.Description}</TipText>
                             </p>
                             <div className="mt-3 flex flex-wrap items-center gap-1.5">
                               <Badge

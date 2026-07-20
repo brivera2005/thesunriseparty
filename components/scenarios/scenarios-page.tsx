@@ -78,7 +78,7 @@ export function ScenariosPage() {
         eyebrow="Lived Outcomes"
         title="Impact Scenarios"
         description="Family gets Y. Should get Z. Trace who blocked the fix."
-        tip="Filter by topic, then open a card for the full causal chain."
+        tip="Filter by topic, then open a card for the best solution, why it works, and the full causal chain."
         actions={
           <HeroActions>
             <span className={cn(heroActionClass, "rounded-md border border-border bg-white text-muted-foreground")}>

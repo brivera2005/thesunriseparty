@@ -8,6 +8,7 @@ import { distractionDetailPath } from "@/lib/data/distractions";
 import { formatDateUS } from "@/lib/format-date";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { BuryCallout, BaitLine } from "@/components/distracted/bury-callout";
 import { CitationList } from "@/components/citation";
 import {
   Dialog,
@@ -17,6 +18,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import { TipText } from "@/components/ui/term-tip";
 import { cn } from "@/lib/utils";
 
 function severityClass(score: number) {
@@ -56,6 +58,11 @@ export function DistractionCard({ entry, index = 0 }: DistractionCardProps) {
           <span className="block text-sm font-semibold leading-snug text-navy">
             {entry.title}
           </span>
+          {!open ? (
+            <span className="mt-1 line-clamp-1 text-[11px] font-medium text-[#b42318]">
+              Bury: {entry.coveringUp}
+            </span>
+          ) : null}
         </span>
         <span
           className={cn(
@@ -76,24 +83,16 @@ export function DistractionCard({ entry, index = 0 }: DistractionCardProps) {
 
       {open ? (
         <div className="border-t border-black/[0.06] px-3 pb-3 pt-2 sm:px-4">
-          <dl className="space-y-2 text-sm leading-snug">
-            <div>
-              <dt className="text-[10px] font-semibold tracking-[0.12em] text-navy/45 uppercase">
-                Distraction
-              </dt>
-              <dd className="mt-0.5 text-navy/90">{entry.distraction}</dd>
-            </div>
-            <div>
-              <dt className="text-[10px] font-semibold tracking-[0.12em] text-[#e16323] uppercase">
-                Covering up
-              </dt>
-              <dd className="mt-0.5 text-navy/90">{entry.coveringUp}</dd>
-            </div>
+          <dl className="space-y-3 text-sm leading-snug">
+            <BuryCallout text={entry.coveringUp} compact />
+            <BaitLine text={entry.distraction} />
             <div>
               <dt className="text-[10px] font-semibold tracking-[0.12em] text-navy/45 uppercase">
                 Tell
               </dt>
-              <dd className="mt-0.5 text-navy/90">{entry.howToSpotIt}</dd>
+              <dd className="mt-0.5 text-navy/90">
+                <TipText>{entry.howToSpotIt}</TipText>
+              </dd>
             </div>
           </dl>
           <div className="mt-2 flex flex-wrap gap-1">

@@ -9,6 +9,7 @@ import { CitationList } from "@/components/citation";
 import { Badge } from "@/components/ui/badge";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { SeverityGauge } from "./severity-gauge";
+import { TipText } from "@/components/ui/term-tip";
 import { cn } from "@/lib/utils";
 import { formatDateUS, formatMonthUS } from "@/lib/format-date";
 
@@ -62,7 +63,9 @@ export function EventDetailSlideover({
             </span>
           </div>
 
-          <h3 className="text-lg font-semibold leading-snug">{event.Description}</h3>
+          <h3 className="text-lg font-semibold leading-snug">
+            <TipText>{event.Description}</TipText>
+          </h3>
           <p className="mt-2 flex items-center gap-1.5 text-sm text-muted-foreground">
             <Calendar className="size-3.5" />
             {formatDate(event.Date)}

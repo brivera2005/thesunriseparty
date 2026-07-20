@@ -1,6 +1,6 @@
 "use client";
 
-import { ExternalLink, AlertTriangle } from "lucide-react";
+import { AlertTriangle, ExternalLink } from "lucide-react";
 import {
   scheduleFAgencies,
   scheduleFOverview,
@@ -14,6 +14,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { TermTip } from "@/components/ui/term-tip";
 import { cn } from "@/lib/utils";
 
 const statusStyles = {
@@ -29,7 +30,10 @@ export function ScheduleFDeepDive() {
         <div className="mb-4 flex items-start gap-3">
           <AlertTriangle className="mt-0.5 size-5 shrink-0 text-destructive" />
           <div>
-            <h3 className="text-lg font-bold">{scheduleFOverview.title}</h3>
+            <h3 className="inline-flex flex-wrap items-center gap-1 text-lg font-bold">
+              Schedule F Deep Dive
+              <TermTip term="schedule-f" />
+            </h3>
             <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
               {scheduleFOverview.summary}
             </p>
